@@ -1,0 +1,31 @@
+---
+output:
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+    citation_package: biblatex
+bib-humanities: true
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+<!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
+<!-- \chaptermark{Citations and cross-refs} -->
+
+# Theoretical and practical implications
+
+## Potential limitations of predictive processing
+
+## Attention, adaptation and processing speech: Moderator, mediator or subsumed factor in rediction?
+
+## Implications for clinical audiology
+
+### Materials used in hearing tests
+
+### Rehabilitative training of cochlear implantees
+
+#### Active attention to speech materials
+
+ 
+\minitoc <!-- this will include a mini table of contents-->

@@ -1,0 +1,53 @@
+---
+#########################################
+# options for knitting a single chapter #
+#########################################
+output:
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+<!-- ```{block type='savequote', include=knitr::opts_knit$get('rmarkdown.pandoc.to') == 'latex', quote_author='(ref:goethe-quote)'} -->
+<!-- Alles Gescheite ist schon gedacht worden.\ -->
+<!-- Man muss nur versuchen, es noch einmal zu denken. -->
+
+<!-- All intelligent thoughts have already been thought;\ -->
+<!-- what is necessary is only to try to think them again. -->
+
+<!-- <!-- ending a line with a lonely backslash inserts a linebreak --> -->
+<!-- ``` -->
+<!-- (ref:goethe-quote) --- Johann Wolfgang von Goethe [@von_goethe_wilhelm_1829] -->
+
+# Experiment 3: Comprehension of degraded speech is modulated by the rate of speech
+
+\minitoc
+
+## Introduction
+
+### Comprehension of degraded speech 
+
+### Perception of (degraded) speech presented at different rates
+
+### Predictive processing, degraded speech, and different rates of presentation of peech
+
+### Current study 
+
+## Materials and methods
+
+### Participants
+
+### Stimuli
+
+### Task and procedure
+
+## Analyses
+
+## Results
+
+## Discussion
+
+## Conclusions

@@ -1,0 +1,167 @@
+---
+output:
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+  bookdown::pdf_document2: 
+    template: templates/brief_template.tex
+    citation_package: biblatex
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+<!-- ```{block type='savequote', include=knitr::is_latex_output(), quote_author='(ref:darwin-quote)'} -->
+<!-- There is grandeur in this view of life, with its several powers, having been originally breathed into a few forms or into one; and that, whilst this planet has gone cycling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being, evolved. -->
+
+<!-- ``` -->
+<!-- (ref:darwin-quote) --- Charles Darwin [@Darwin1859] -->
+
+
+# Experiment 1: Predictability effect of degraded speech are reduced as a function of attention
+
+\minitoc <!-- this will include a mini table of contents-->
+
+
+
+<!-- LaTeX normally does not indent the first line after a heading - however, it does so after the mini table of contents. You can manually tell it not to with \noindent -->
+
+\noindent This chapter comes from the manuscript that is under prep for JML.
+
+
+
+## Introduction
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+
+### Predictive processing and language comprehension under degraded speech
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+### Attention, predictability and processing of degraded speech
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+### Current study
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+## Experiment 1A *[Attending only to the target word]*
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+## Materials and methods
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+### Participants
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+### Stimuli
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+### Task and procedure
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+## Analyses
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+## Results
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+
+## Experiment 1B *[Attending to the entire sentence]*
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+## Materials and methods
+
+### Participants
+
+### Stimuli
+
+### Task and procedure
+
+## Analyses
+
+## Results
+
+## Discussion
+
+## Conclusions

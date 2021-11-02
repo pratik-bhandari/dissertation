@@ -1,0 +1,42 @@
+---
+output:
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+  bookdown::pdf_document2: 
+    template: templates/brief_template.tex
+    citation_package: biblatex
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+  
+# Experiment 2: Semantic predictability facilitates comprehension of degraded speech in a graded manner
+
+\minitoc 
+
+## Introduction
+
+### Language comprehension and sentence context
+
+### Language comprehension under reduced quality of speech
+
+### Predictive processing and language comprehension under degraded speech
+
+### Adaptation to degraded speech
+
+### Measurement of language comprehension
+
+## Materials and methods
+
+### Participants
+
+### Stimuli
+
+### Task and procedure
+
+## Analyses
+
+## Results
+
+## Discussion
+
+## Conclusion

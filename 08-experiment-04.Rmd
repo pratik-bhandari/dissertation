@@ -1,0 +1,16 @@
+---
+#########################################
+# options for knitting a single chapter #
+#########################################
+output:
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+# Experiment 4: Older adults rely more on sentence context than on the auditory signal in comprehension of moderately degraded speech
+
+\minitoc

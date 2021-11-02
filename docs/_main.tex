@@ -1,0 +1,743 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OXFORD THESIS TEMPLATE
+
+% Use this template to produce a standard thesis that meets the Oxford University requirements for DPhil submission
+%
+% Originally by Keith A. Gillow (gillow@maths.ox.ac.uk), 1997
+% Modified by Sam Evans (sam@samuelevansresearch.org), 2007
+% Modified by John McManigle (john@oxfordechoes.com), 2015
+% Modified by Ulrik Lyngs (ulrik.lyngs@cs.ox.ac.uk), 2018-, for use with R Markdown
+%
+% Ulrik Lyngs, 25 Nov 2018: Following John McManigle, broad permissions are granted to use, modify, and distribute this software
+% as specified in the MIT License included in this distribution's LICENSE file.
+%
+% John commented this file extensively, so read through to see how to use the various options.  Remember that in LaTeX,
+% any line starting with a % is NOT executed.  Several places below, you have a choice of which line to use
+% out of multiple options (eg draft vs final, for PDF vs for binding, etc.)  When you pick one, add a % to the beginning of
+% the lines you don't want.
+
+
+%%%%% PAGE LAYOUT
+% The most common choices should be below.  You can also do other things, like replacing "a4paper" with "letterpaper", etc.
+
+% This one formats for two-sided binding (ie left and right pages have mirror margins; blank pages inserted where needed):
+%\documentclass[a4paper,twoside]{templates/ociamthesis}
+% This one formats for one-sided binding (ie left margin > right margin; no extra blank pages):
+%\documentclass[a4paper]{ociamthesis}
+% This one formats for PDF output (ie equal margins, no extra blank pages):
+%\documentclass[a4paper,nobind]{templates/ociamthesis}
+
+% As you can see from the uncommented line below, oxforddown template uses the a4paper size, 
+% and passes in the binding option from the YAML header in index.Rmd:
+\documentclass[a4paper, nobind]{templates/ociamthesis}
+
+
+%%%%% ADDING LATEX PACKAGES
+% add hyperref package with options from YAML %
+\usepackage[pdfpagelabels]{hyperref}
+% change the default coloring of links to something sensible
+\usepackage{xcolor}
+
+\definecolor{mylinkcolor}{RGB}{0,0,139}
+\definecolor{myurlcolor}{RGB}{0,0,139}
+\definecolor{mycitecolor}{RGB}{0,33,71}
+
+\hypersetup{
+  hidelinks,
+  colorlinks,
+  linktocpage=true,
+  linkcolor=mylinkcolor,
+  urlcolor=myurlcolor,
+  citecolor=mycitecolor
+}
+
+
+
+% add float package to allow manual control of figure positioning %
+\usepackage{float}
+
+% enable strikethrough
+\usepackage[normalem]{ulem}
+
+% use soul package for correction highlighting
+\usepackage{color, soul}
+\definecolor{correctioncolor}{HTML}{CCCCFF}
+\sethlcolor{correctioncolor}
+\newcommand{\ctext}[3][RGB]{%
+  \begingroup
+  \definecolor{hlcolor}{#1}{#2}\sethlcolor{hlcolor}%
+  \hl{#3}%
+  \endgroup
+}
+\soulregister\ref7
+\soulregister\cite7
+\soulregister\autocite7
+\soulregister\textcite7
+\soulregister\pageref7
+
+%%%%% FIXING / ADDING THINGS THAT'S SPECIAL TO R MARKDOWN'S USE OF LATEX TEMPLATES
+% pandoc puts lists in 'tightlist' command when no space between bullet points in Rmd file,
+% so we add this command to the template
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+ 
+% UL 1 Dec 2018, fix to include code in shaded environments
+
+% User-included things with header_includes or in_header will appear here
+% kableExtra packages will appear here if you use library(kableExtra)
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+
+%UL set section header spacing
+\usepackage{titlesec}
+% 
+\titlespacing\subsubsection{0pt}{24pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+%UL set whitespace around verbatim environments
+\usepackage{etoolbox}
+\makeatletter
+\preto{\@verbatim}{\topsep=0pt \partopsep=0pt }
+\makeatother
+
+
+
+%%%%%%% PAGE HEADERS AND FOOTERS %%%%%%%%%
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\fancyhf{} % clear the header and footers
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter. #1}{\thechapter. #1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection. #1}} 
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyhead[LO]{\emph{\leftmark}} 
+\fancyhead[RE]{\emph{\rightmark}} 
+
+% UL page number position 
+\fancyfoot[C]{\emph{\thepage}} %regular pages
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\emph{\thepage}}} %chapter pages
+
+% JEM fix header on cleared pages for openright
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+   \hbox{}
+   \fancyfoot[C]{}
+   \newpage
+   \if@twocolumn\hbox{}\newpage
+   \fi
+   \fancyhead[LO]{\emph{\leftmark}} 
+   \fancyhead[RE]{\emph{\rightmark}} 
+   \fi\fi}
+
+
+%%%%% SELECT YOUR DRAFT OPTIONS
+% This adds a "DRAFT" footer to every normal page.  (The first page of each chapter is not a "normal" page.)
+
+% IP feb 2021: option to include line numbers in PDF
+
+% for line wrapping in code blocks
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+
+% This highlights (in blue) corrections marked with (for words) \mccorrect{blah} or (for whole
+% paragraphs) \begin{mccorrection} . . . \end{mccorrection}.  This can be useful for sending a PDF of
+% your corrected thesis to your examiners for review.  Turn it off, and the blue disappears.
+\correctionstrue
+
+
+%%%%% BIBLIOGRAPHY SETUP
+% Note that your bibliography will require some tweaking depending on your department, preferred format, etc.
+% If you've not used LaTeX before, I recommend reading a little about biblatex/biber and getting started with it.
+% If you're already a LaTeX pro and are used to natbib or something, modify as necessary.
+% Either way, you'll have to choose and configure an appropriate bibliography format...
+
+
+\usepackage[style=authoryear, sorting=nyt, backend=biber, maxcitenames=2, useprefix, doi=true, isbn=false, uniquename=false]{biblatex}
+\newcommand*{\bibtitle}{Works Cited}
+
+\addbibresource{bibliography/references.bib}
+\addbibresource{bibliography/additional-references.bib}
+
+
+% This makes the bibliography left-aligned (not 'justified') and slightly smaller font.
+\renewcommand*{\bibfont}{\raggedright\small}
+
+
+% Uncomment this if you want equation numbers per section (2.3.12), instead of per chapter (2.18):
+%\numberwithin{equation}{subsection}
+
+
+%%%%% THESIS / TITLE PAGE INFORMATION
+% Everybody needs to complete the following:
+\title{Comprehension of degraded speech:\\
+Exploring the role of attention and speed of processing in top-down prediction}
+\author{Pratik Bhandari}
+\college{Department of}
+
+% Master's candidates who require the alternate title page (with candidate number and word count)
+% must also un-comment and complete the following three lines:
+
+% Uncomment the following line if your degree also includes exams (eg most masters):
+%\renewcommand{\submittedtext}{Submitted in partial completion of the}
+% Your full degree name.  (But remember that DPhils aren't "in" anything.  They're just DPhils.)
+\degree{Doctor of Philosophy}
+% Term and year of submission, or date if your board requires (eg most masters)
+\degreedate{xxxx 2021}
+
+
+%%%%% YOUR OWN PERSONAL MACROS
+% This is a good place to dump your own LaTeX macros as they come up.
+
+% To make text superscripts shortcuts
+	\renewcommand{\th}{\textsuperscript{th}} % ex: I won 4\th place
+	\newcommand{\nd}{\textsuperscript{nd}}
+	\renewcommand{\st}{\textsuperscript{st}}
+	\newcommand{\rd}{\textsuperscript{rd}}
+
+%%%%% THE ACTUAL DOCUMENT STARTS HERE
+\begin{document}
+
+%%%%% CHOOSE YOUR LINE SPACING HERE
+% This is the official option.  Use it for your submission copy and library copy:
+\setlength{\textbaselineskip}{22pt plus2pt}
+% This is closer spacing (about 1.5-spaced) that you might prefer for your personal copies:
+%\setlength{\textbaselineskip}{18pt plus2pt minus1pt}
+
+% You can set the spacing here for the roman-numbered pages (acknowledgements, table of contents, etc.)
+\setlength{\frontmatterbaselineskip}{17pt plus1pt minus1pt}
+
+% UL: You can set the line and paragraph spacing here for the separate abstract page to be handed in to Examination schools
+\setlength{\abstractseparatelineskip}{13pt plus1pt minus1pt}
+\setlength{\abstractseparateparskip}{0pt plus 1pt}
+
+% UL: You can set the general paragraph spacing here - I've set it to 2pt (was 0) so
+% it's less claustrophobic
+\setlength{\parskip}{2pt plus 1pt}
+
+%
+% Customise title page
+%
+\def\crest{{\includegraphics[width=5cm]{templates/beltcrest.png}}}
+\renewcommand{\university}{Saarland University}
+\renewcommand{\submittedtext}{A thesis submitted for the degree of}
+\renewcommand{\thesistitlesize}{\fontsize{22pt}{28pt}\selectfont}
+\renewcommand{\gapbeforecrest}{25mm}
+\renewcommand{\gapaftercrest}{25mm}
+
+
+% Leave this line alone; it gets things started for the real document.
+\setlength{\baselineskip}{\textbaselineskip}
+
+
+%%%%% CHOOSE YOUR SECTION NUMBERING DEPTH HERE
+% You have two choices.  First, how far down are sections numbered?  (Below that, they're named but
+% don't get numbers.)  Second, what level of section appears in the table of contents?  These don't have
+% to match: you can have numbered sections that don't show up in the ToC, or unnumbered sections that
+% do.  Throughout, 0 = chapter; 1 = section; 2 = subsection; 3 = subsubsection, 4 = paragraph...
+
+% The level that gets a number:
+\setcounter{secnumdepth}{2}
+% The level that shows up in the ToC:
+\setcounter{tocdepth}{2}
+
+
+%%%%% ABSTRACT SEPARATE
+% This is used to create the separate, one-page abstract that you are required to hand into the Exam
+% Schools.  You can comment it out to generate a PDF for printing or whatnot.
+
+% JEM: Pages are roman numbered from here, though page numbers are invisible until ToC.  This is in
+% keeping with most typesetting conventions.
+\begin{romanpages}
+
+% Title page is created here
+\maketitle
+
+%%%%% DEDICATION -- If you'd like one, un-comment the following.
+\begin{dedication}
+  Dedicated to \ldots{}
+\end{dedication}
+
+%%%%% ACKNOWLEDGEMENTS -- Nothing to do here except comment out if you don't want it.
+\begin{acknowledgements}
+ 	Here I acknowledge lots of people including my GP, neurologists and counselors.
+
+  \begin{flushright}
+  Pratik Bhandari \\
+  Universität des Saarlandes,\\
+  Saarbrücken \\
+  10 March 2021
+  \end{flushright}
+\end{acknowledgements}
+
+
+%%%%% ABSTRACT -- Nothing to do here except comment out if you don't want it.
+\begin{abstract}
+	This thesis investigates the dynamic interactions between top-down predictive processing and bottom-up auditory processing in comprehension of degraded speech and adds three aspects to the existing theoretical framework of predictive language processing:
+ 1. attention to context, 2. rate of flow of information, and 3. concurrent processing of secondary information along with language processing.
+ First, it empirically establishes that listeners' attention to and realization of the context of a sentence is essential in the forming top-down semantic predictions in the comprehension of spectrally degraded speech. Then it shows that the facilitatory effect of semantic context appears in a graded manner when the speech is moderately degraded, while the comprehension of least degraded speech is overall better than the moderately degraded speech. That is, the difficulty of processing degraded speech is higher than processing less degraded speech. This further leads to two questions: 1. Does the difficulty in the processing of degraded speech change with a change in the rate of information flow as it affects the time of processing the speech. If so, how does the speech rate interact with semantic predictability of degraded sentences? 2. Does concurrent cognitive processing of a secondary task impair the processing of degraded speech differentially for different levels of degradation.
+ These questions are further investigated in this thesis and found that when the rate of speech \ldots{} It was also found that when the secondary task is performed along with listening to degraded speech of different levels \ldots{}
+ ---
+\end{abstract}
+
+%%%%% MINI TABLES
+% This lays the groundwork for per-chapter, mini tables of contents.  Comment the following line
+% (and remove \minitoc from the chapter files) if you don't want this.  Un-comment either of the
+% next two lines if you want a per-chapter list of figures or tables.
+  \dominitoc % include a mini table of contents
+
+% This aligns the bottom of the text of each page.  It generally makes things look better.
+\flushbottom
+
+% This is where the whole-document ToC appears:
+\tableofcontents
+
+\listoffigures
+	\mtcaddchapter
+  	% \mtcaddchapter is needed when adding a non-chapter (but chapter-like) entity to avoid confusing minitoc
+
+% Uncomment to generate a list of tables:
+\listoftables
+  \mtcaddchapter
+%%%%% LIST OF ABBREVIATIONS
+% This example includes a list of abbreviations.  Look at text/abbreviations.tex to see how that file is
+% formatted.  The template can handle any kind of list though, so this might be a good place for a
+% glossary, etc.
+% First parameter can be changed eg to "Glossary" or something.
+% Second parameter is the max length of bold terms.
+\begin{mclistof}{List of Abbreviations}{3.2cm}
+
+\item[HP, MP, LP]
+
+High-, Medium-, or Low-predictability
+
+\item[YA, OA]
+
+Younger, or Older adults
+
+\item[ch]
+
+channels
+
+\end{mclistof} 
+
+
+% The Roman pages, like the Roman Empire, must come to its inevitable close.
+\end{romanpages}
+
+%%%%% CHAPTERS
+% Add or remove any chapters you'd like here, by file name (excluding '.tex'):
+\flushbottom
+
+% all your chapters and appendices will appear here
+\hypertarget{general-introduction}{%
+\chapter{General Introduction}\label{general-introduction}}
+
+\minitoc 
+
+\hypertarget{predictive-processing}{%
+\section{Predictive processing}\label{predictive-processing}}
+
+\hypertarget{predictive-language-processing}{%
+\subsection{Predictive language processing}\label{predictive-language-processing}}
+
+\hypertarget{speech-degradation}{%
+\section{Speech degradation}\label{speech-degradation}}
+
+\hypertarget{comprehension-of-degraded-speech}{%
+\subsection{Comprehension of degraded speech}\label{comprehension-of-degraded-speech}}
+
+\hypertarget{overview-of-the-thesis}{%
+\section{Overview of the thesis}\label{overview-of-the-thesis}}
+
+\hypertarget{general-methods}{%
+\chapter{General Methods}\label{general-methods}}
+
+\minitoc 
+
+\hypertarget{stimulus-sentences}{%
+\section{Stimulus sentences}\label{stimulus-sentences}}
+
+\hypertarget{speech-processing}{%
+\section{Speech processing}\label{speech-processing}}
+
+\hypertarget{noise-vocoding}{%
+\subsection{Noise-vocoding}\label{noise-vocoding}}
+
+\hypertarget{speech-compression}{%
+\subsection{Speech compression}\label{speech-compression}}
+
+\hypertarget{measurement-of-language-comprehension}{%
+\section{Measurement of language comprehension}\label{measurement-of-language-comprehension}}
+
+\hypertarget{general-data-collection-methods}{%
+\chapter{General data collection methods}\label{general-data-collection-methods}}
+
+\minitoc 
+
+\hypertarget{data-collection-in-the-laboratory}{%
+\section{Data collection in the laboratory}\label{data-collection-in-the-laboratory}}
+
+\hypertarget{online-data-collection}{%
+\section{Online data collection}\label{online-data-collection}}
+
+\hypertarget{general-statistical-approach}{%
+\chapter{General statistical approach}\label{general-statistical-approach}}
+
+\hypertarget{linear-mixed-effects-modeling}{%
+\section{Linear mixed effects modeling}\label{linear-mixed-effects-modeling}}
+
+\hypertarget{bayesian-statistical-methods}{%
+\section{Bayesian statistical methods}\label{bayesian-statistical-methods}}
+
+\minitoc 
+
+\hypertarget{experiment-1-predictability-effect-of-degraded-speech-are-reduced-as-a-function-of-attention}{%
+\chapter{Experiment 1: Predictability effect of degraded speech are reduced as a function of attention}\label{experiment-1-predictability-effect-of-degraded-speech-are-reduced-as-a-function-of-attention}}
+
+\minitoc 
+
+\noindent This chapter comes from the manuscript that is under prep for JML.
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{predictive-processing-and-language-comprehension-under-degraded-speech}{%
+\subsection{Predictive processing and language comprehension under degraded speech}\label{predictive-processing-and-language-comprehension-under-degraded-speech}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{attention-predictability-and-processing-of-degraded-speech}{%
+\subsection{Attention, predictability and processing of degraded speech}\label{attention-predictability-and-processing-of-degraded-speech}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{current-study}{%
+\subsection{Current study}\label{current-study}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{experiment-1a-attending-only-to-the-target-word}{%
+\section{\texorpdfstring{Experiment 1A \emph{{[}Attending only to the target word{]}}}{Experiment 1A {[}Attending only to the target word{]}}}\label{experiment-1a-attending-only-to-the-target-word}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{materials-and-methods}{%
+\section{Materials and methods}\label{materials-and-methods}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{participants}{%
+\subsection{Participants}\label{participants}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{stimuli}{%
+\subsection{Stimuli}\label{stimuli}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{task-and-procedure}{%
+\subsection{Task and procedure}\label{task-and-procedure}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{analyses}{%
+\section{Analyses}\label{analyses}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{experiment-1b-attending-to-the-entire-sentence}{%
+\section{\texorpdfstring{Experiment 1B \emph{{[}Attending to the entire sentence{]}}}{Experiment 1B {[}Attending to the entire sentence{]}}}\label{experiment-1b-attending-to-the-entire-sentence}}
+
+dfafadfadfa f
+dfadfa
+fdfafafdfafadfadfa f
+dfadfa
+fdfafaf
+dfafadfadfa f
+dfadfa
+fdfafaf
+
+\hypertarget{materials-and-methods-1}{%
+\section{Materials and methods}\label{materials-and-methods-1}}
+
+\hypertarget{participants-1}{%
+\subsection{Participants}\label{participants-1}}
+
+\hypertarget{stimuli-1}{%
+\subsection{Stimuli}\label{stimuli-1}}
+
+\hypertarget{task-and-procedure-1}{%
+\subsection{Task and procedure}\label{task-and-procedure-1}}
+
+\hypertarget{analyses-1}{%
+\section{Analyses}\label{analyses-1}}
+
+\hypertarget{results-1}{%
+\section{Results}\label{results-1}}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
+
+\hypertarget{experiment-2-semantic-predictability-facilitates-comprehension-of-degraded-speech-in-a-graded-manner}{%
+\chapter{Experiment 2: Semantic predictability facilitates comprehension of degraded speech in a graded manner}\label{experiment-2-semantic-predictability-facilitates-comprehension-of-degraded-speech-in-a-graded-manner}}
+
+\minitoc
+
+\hypertarget{introduction-1}{%
+\section{Introduction}\label{introduction-1}}
+
+\hypertarget{language-comprehension-and-sentence-context}{%
+\subsection{Language comprehension and sentence context}\label{language-comprehension-and-sentence-context}}
+
+\hypertarget{language-comprehension-under-reduced-quality-of-speech}{%
+\subsection{Language comprehension under reduced quality of speech}\label{language-comprehension-under-reduced-quality-of-speech}}
+
+\hypertarget{predictive-processing-and-language-comprehension-under-degraded-speech-1}{%
+\subsection{Predictive processing and language comprehension under degraded speech}\label{predictive-processing-and-language-comprehension-under-degraded-speech-1}}
+
+\hypertarget{adaptation-to-degraded-speech}{%
+\subsection{Adaptation to degraded speech}\label{adaptation-to-degraded-speech}}
+
+\hypertarget{measurement-of-language-comprehension-1}{%
+\subsection{Measurement of language comprehension}\label{measurement-of-language-comprehension-1}}
+
+\hypertarget{materials-and-methods-2}{%
+\section{Materials and methods}\label{materials-and-methods-2}}
+
+\hypertarget{participants-2}{%
+\subsection{Participants}\label{participants-2}}
+
+\hypertarget{stimuli-2}{%
+\subsection{Stimuli}\label{stimuli-2}}
+
+\hypertarget{task-and-procedure-2}{%
+\subsection{Task and procedure}\label{task-and-procedure-2}}
+
+\hypertarget{analyses-2}{%
+\section{Analyses}\label{analyses-2}}
+
+\hypertarget{results-2}{%
+\section{Results}\label{results-2}}
+
+\hypertarget{discussion-1}{%
+\section{Discussion}\label{discussion-1}}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+--\textgreater{}
+
+\hypertarget{experiment-3-comprehension-of-degraded-speech-is-modulated-by-the-rate-of-speech}{%
+\chapter{Experiment 3: Comprehension of degraded speech is modulated by the rate of speech}\label{experiment-3-comprehension-of-degraded-speech-is-modulated-by-the-rate-of-speech}}
+
+\minitoc
+
+\hypertarget{introduction-2}{%
+\section{Introduction}\label{introduction-2}}
+
+\hypertarget{comprehension-of-degraded-speech-1}{%
+\subsection{Comprehension of degraded speech}\label{comprehension-of-degraded-speech-1}}
+
+\hypertarget{perception-of-degraded-speech-presented-at-different-rates}{%
+\subsection{Perception of (degraded) speech presented at different rates}\label{perception-of-degraded-speech-presented-at-different-rates}}
+
+\hypertarget{predictive-processing-degraded-speech-and-different-rates-of-presentation-of-peech}{%
+\subsection{Predictive processing, degraded speech, and different rates of presentation of peech}\label{predictive-processing-degraded-speech-and-different-rates-of-presentation-of-peech}}
+
+\hypertarget{current-study-1}{%
+\subsection{Current study}\label{current-study-1}}
+
+\hypertarget{materials-and-methods-3}{%
+\section{Materials and methods}\label{materials-and-methods-3}}
+
+\hypertarget{participants-3}{%
+\subsection{Participants}\label{participants-3}}
+
+\hypertarget{stimuli-3}{%
+\subsection{Stimuli}\label{stimuli-3}}
+
+\hypertarget{task-and-procedure-3}{%
+\subsection{Task and procedure}\label{task-and-procedure-3}}
+
+\hypertarget{analyses-3}{%
+\section{Analyses}\label{analyses-3}}
+
+\hypertarget{results-3}{%
+\section{Results}\label{results-3}}
+
+\hypertarget{discussion-2}{%
+\section{Discussion}\label{discussion-2}}
+
+\hypertarget{conclusions-1}{%
+\section{Conclusions}\label{conclusions-1}}
+
+\hypertarget{experiment-4-older-adults-rely-more-on-sentence-context-than-on-the-auditory-signal-in-comprehension-of-moderately-degraded-speech}{%
+\chapter{Experiment 4: Older adults rely more on sentence context than on the auditory signal in comprehension of moderately degraded speech}\label{experiment-4-older-adults-rely-more-on-sentence-context-than-on-the-auditory-signal-in-comprehension-of-moderately-degraded-speech}}
+
+\minitoc
+
+--\textgreater{}
+
+\hypertarget{experiment-5-neural-markers-of-age-differences-in-reliance-on-top-down-prediction-in-comprehension-of-degraded-speech}{%
+\chapter{Experiment 5: Neural markers of age differences in reliance on top-down prediction in comprehension of degraded speech}\label{experiment-5-neural-markers-of-age-differences-in-reliance-on-top-down-prediction-in-comprehension-of-degraded-speech}}
+
+\minitoc
+
+\hypertarget{general-discussion}{%
+\chapter{General discussion}\label{general-discussion}}
+
+\hypertarget{summary-of-the-experiments}{%
+\section{Summary of the experiments}\label{summary-of-the-experiments}}
+
+\hypertarget{a-new-framework-on-the-interaction-between-top-down-predictive-and-bottom-up-auditory-processes-in-perception-and-comprehension-of-degraded-speech}{%
+\section{A new framework on the interaction between top-down predictive and bottom-up auditory processes in perception and comprehension of degraded speech}\label{a-new-framework-on-the-interaction-between-top-down-predictive-and-bottom-up-auditory-processes-in-perception-and-comprehension-of-degraded-speech}}
+
+\minitoc 
+
+\hypertarget{theoretical-and-practical-implications}{%
+\chapter{Theoretical and practical implications}\label{theoretical-and-practical-implications}}
+
+\hypertarget{potential-limitations-of-predictive-processing}{%
+\section{Potential limitations of predictive processing}\label{potential-limitations-of-predictive-processing}}
+
+\hypertarget{attention-adaptation-and-processing-speech-moderator-mediator-or-subsumed-factor-in-rediction}{%
+\section{Attention, adaptation and processing speech: Moderator, mediator or subsumed factor in rediction?}\label{attention-adaptation-and-processing-speech-moderator-mediator-or-subsumed-factor-in-rediction}}
+
+\hypertarget{implications-for-clinical-audiology}{%
+\section{Implications for clinical audiology}\label{implications-for-clinical-audiology}}
+
+\hypertarget{materials-used-in-hearing-tests}{%
+\subsection{Materials used in hearing tests}\label{materials-used-in-hearing-tests}}
+
+\hypertarget{rehabilitative-training-of-cochlear-implantees}{%
+\subsection{Rehabilitative training of cochlear implantees}\label{rehabilitative-training-of-cochlear-implantees}}
+
+\hypertarget{active-attention-to-speech-materials}{%
+\subsubsection{Active attention to speech materials}\label{active-attention-to-speech-materials}}
+
+\minitoc 
+
+\startappendices
+
+\hypertarget{the-first-appendix}{%
+\chapter{The First Appendix}\label{the-first-appendix}}
+
+This first appendix includes an R chunk that was hidden in the document (using \texttt{echo\ =\ FALSE}) to help with readibility:
+
+\textbf{In 02-rmd-basics-code.Rmd}
+
+\textbf{And here's another one from the same chapter, i.e.~Chapter \ref{code}:}
+
+\hypertarget{the-second-appendix-for-fun}{%
+\chapter{The Second Appendix, for Fun}\label{the-second-appendix-for-fun}}
+
+
+%%%%% REFERENCES
+\setlength{\baselineskip}{0pt} % JEM: Single-space References
+
+{\renewcommand*\MakeUppercase[1]{#1}%
+\printbibliography[heading=bibintoc,title={\bibtitle}]}
+
+
+\end{document}
