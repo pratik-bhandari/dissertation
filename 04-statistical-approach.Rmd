@@ -7,7 +7,7 @@ output:
     citation_package: biblatex
 bib-humanities: true
 documentclass: book
-#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
 ---
 
 <!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
@@ -15,8 +15,148 @@ documentclass: book
 
 # General statistical approach
 
-## Linear mixed effects modeling
+## Linear regression
 
-## Bayesian statistical methods
+<!-- Analysis of Variance (ANOVA) has been one of the very commonly used statistical tools in psychology, and psycholinguistics [...CITE...], specifically for continuous data. -->
+<!-- It is still a common method for continuous data like response times. -->
+<!-- However, as early as 19XX, ABC ...CITE... had pointed out one problem in using ANOVA in psycholingusitics. -->
+<!-- He pointed out that considering all items to have similar effect on the participants is indeed a fallacy. -->
+<!-- Although this helped understand that items are also as different as participants, it did not solve the problem inherent in ANOVA (CITE). -->
+In this thesis, we use binomial mixed effects logistic regression models with crossed random effects [@Baayen2008].
+These models are, simply speaking, extensions of logistic regression models.
+A logistic regression models a dependent variable (or an *outcome*, or a *response* variable) as a function of one or more independent predictor variables (or *factors*, or *explanatory* variables).
+That is, an outcome $y$ is modeled as a function of explanatory variables $x_1, x_2, x_3..., x_n$, and an error term $\varepsilon$.
+
+
+\begin{align} \label{eq:linear_regression}
+y =
+\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon 
+\end{align}
+
+The intercept $\alpha$, and the regression coefficients $\beta_1, \beta_2,$ and $\beta_3$ for each explanatory variable are estimated to achieve the model that best fits the data.
+Analysis of Variance (ANOVA) is a special case of logistic regression (Chatterjee in Jaeger's thesis page 40; Shravan's book and blog) that is one of the most common statistical tools in psychology and psycholinguistics [...CITE...].
+These linear regressions as shown above (Equation \ref{eq:linear_regression}) and ANOVAS however, are not well suited for categorical data like response to multiple choice questions or yes/no questions, confidence ratings, etc.
+For example, in all the experiments in the current thesis, the response variables are responce accuracy given correct/incorrect response.
+Output of linear regression model ranges from $+\infty$ to $-\infty$ while accuracy (or probability) ranges fro, 0 to 1.
+Additionally, simple regression models do not take into account the variability across individual participants and items.
+These problems in psychological sciences and psycholinguistics research has been long pointed out as early as 19XX [ ...CITE language as a fixed effects fallacy... ], and later [ ... ].
+They are addressed to some extent by binomial logistic regression, and for our purpose by incorporating mixed effects model to binomial logistic regression.
+
+Below we briefly introduce binomial logistic regression and mixed effects model.
+Then we show a simple example of how binomial logistic mixed effects model is used in the experiments in this thesis.
+
+## Binomial logistic regression
+
+The response variable in this experiments in this thesis are binary.
+Participants' written response to what they hear are coded as either correct or incorrect.
+A binomial logistic regression model is best suited for such a categorical data [@Jaeger2008].
+We will use the term logistic regression model and binomial logistic regression model interchangeably henceforth.
+
+As the name suggests, the output variable in a logistic regression model is in logit scale.
+The model therefore predicts logits of an outcome variable.
+Logits are $\log$ with base $e$, i.e. $\ln$.
+
+*Probability* ranges from 0 to 1 only while *odds* ranges from 0 to $+\infty$.
+Fitting a linear regression model with probability or odds would assume the range to be between 0 and 1, and between 0 and $+\infty$ respectively.
+This restricts the range, and is incorrect for a linear model.
+Therefore, in a binomial logistic regression model, log-odds are used which range from $-\infty$ to $+\infty$.
+
+A simple binomial logistic regression model is shown in Equation \ref{eq:simple_logistic}:
+
+\begin{align} \label{eq:simple_logistic}
+\ln(\frac{p}{1-p}) =
+\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon
+\end{align}
+
+This is equivalent to,
+
+\begin{align} \label{eq:logit-to-prob_long}
+p &=
+{\frac{exp(\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon)}
+{1 + exp (\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon)}}\\ \label{eq:logit-to-prob_short}
+&= {\frac{exp(\ln(\frac{p}{1-p}))}{1 + exp (\ln(\frac{p}{1-p}))}}
+\end{align}
+
+where,
+
+\begin{align} \label{eq:logiteq}
+\ln(\frac{p}{1-p}) =
+{logit}(p)
+\end{align}
+
+<!-- \begin{align} \label{eq:logit-to-prob} -->
+<!-- Pr(Y_i=1|X_i) = -->
+<!-- {\frac{exp(\beta_0 + \beta_1X_i + \beta_2X_2 + ... + \beta_3X_{n})} -->
+<!-- {1 + exp (\beta_0 + \beta_1X_i + \beta_2X_2 + ... + \beta_3X_{n})}} -->
+<!-- \end{align} -->
+Log-odds of correct response obtained from Equation \ref{eq:simple_logistic} can be transformed to probability of correct response. Equations \ref{eq:logit-to-prob_short}, and \ref{eq:logiteq} provide the relationship between probability, logit (or log-odds), and odds ($\frac{p}{1-p})$).
+
+Some of the assumptions made for binomial logistic regression models are violated in our data.
+One of them being non-independence of observations, i.e., all data points are independent from one another.
+This assumption is violated in unbalanced design, and at times even for balanced design.
+Same participant responds multiple trials of same experimental condition within an experiment.
+Although the design itself is balanced, after removal of outliers and/or trials which are not appropriate for comprhension measures (see section XXX for details), number of trials in analyses are unequal for each participant, item, and experimental condition.
+This introduces a bias in the model [Jaeger2008; other papers on GLMM].
+
+Another intrinsic property or feature of logistic regression is that it assumes a common mean for each predictors.
+It has been shown that this is in fact not true: the effect of a predictor can vary depending on different random variables like participants, or items.
+To account for these variances, mixed effects models are used.
+In recent days, these models are frequently used and advocated for by psycholingustis and statisticians [ ... cite ... ]. 
+
+## Mixed effects modeling
+
+To overcome the limitations of logistic models, like violation of assumption of non-dependence of observations, and to account for the variability in the subject and/or item related parameter, mixed effects models are used.
+Mixed effects models contain 1) both linear and logistic regressions, and 2) *fixed effects* and *random effects*, hence the name *mixed effects*.
+Fixed effects term, e.g., levels of degradation assumes that all levels of degradation used in the experiment are independent from one another and they share a common residual variance.
+The random effects term with only varying intercept, e.g., subject as intercept, assumes that if there are 100 subjects then the mean accuracy of those 100 subjects are only a subset of possible global accuracies drawn from a set of population mean.
+When a slope, e.g., levels of predictability, is included to the random effects structure in addition to the varying intercept (e.g., subjects), then the model assumes that the effect of predictability on response accuracy varies across subjects.
+
+## Binomial logistic mixed effects modeling
+
+A binomial logistic mixed effects model with varying intercepts and slopes for items and subjects is shown in Equation \ref{eq:mixed_effects} below.
+<!-- \begin{align} -->
+<!-- \ln (\frac{p}{1-p}) = \nonumber\\ -->
+<!-- \alpha + u_{\alpha} + w_{\alpha} + \nonumber\\ -->
+<!-- (\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\ -->
+<!-- (\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + ... + \nonumber\\ -->
+<!-- (\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n} -->
+<!-- \end{align} -->
+\begin{align} \label{eq:mixed_effects}
+\ln (\frac{p}{1-p}) = \alpha + u_{\alpha} + w_{\alpha} +
+                      (\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\
+                      (\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + ... +
+                      (\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n} 
+\end{align}
+
+where,
+
+- $\alpha$ is the Intercept.
+- Fixed effects: $\beta_{1}, \beta_{2}, ..., \beta_{n}$ are the coefficients (or effects) of $x_1, x_2, ...,x_n$.
+- $\boldsymbol{u} = \langle u_{\alpha}, u_{\beta_1}, u_{\beta_2}, ..., u_{\beta_n} \rangle$ : Varying intercept and slopes for random effect term like, *subject*.
+- $\boldsymbol{w} = \langle w_{\alpha}, w_{\beta_1}, w_{\beta_2}, ..., w_{\beta_n} \rangle$ : Varying intercept and slopes for random effect term like, *item*.
+
+
+In this thesis, statistically, we examine the effect of predictability, speech degradation and speech rate (see section X.X, X.X, X.X) on response accuracy.
+And hence we use these variables in the fixed effects term.
+Subjects and items are used as random intercepts with by-subject and by-item slopes.
+The details of the models fitted to data from each experiment are given in Chapter X, X, X and X.
+
+We therefore use binomial logistic mixed effects model as our primary statistical analysis tool in all the experiments reported in this thesis. We primarily follow the recommendations of @Baayen2008, @Barr2013, and @Bates2015a.
+
+<!-- ## Bayesian statistical methods -->
  
 \minitoc <!-- this will include a mini table of contents-->
+
+<!-- https://tex.stackexchange.com/questions/75764/how-do-you-make-numbered-equations-in-latex -->

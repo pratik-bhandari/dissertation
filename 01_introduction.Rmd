@@ -1,0 +1,98 @@
+---
+#########################################
+# options for knitting a single chapter #
+#########################################
+output:
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+    citation_package: biblatex
+  bookdown::html_document2: default
+  bookdown::word_document2: default
+documentclass: book
+bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+# General Introduction
+
+\minitoc <!-- this will include a mini table of contents-->
+
+<!-- # Introduction {.unnumbered} -->
+
+<!-- ```{=tex} -->
+<!-- \adjustmtc -->
+<!-- \markboth{Introduction}{} -->
+<!-- ``` -->
+<!-- For PDF output, include these two LaTeX commands after unnumbered chapter headings, otherwise the mini table of contents and the running header will show the previous chapter -->
+
+## Overview of the thesis
+
+## Theories of language comprehension
+
+### Predictive language processing
+
+## Speech degradation
+
+Speech can be distorted by variability in speakers’ production, like, accented speech, soft/rapid speech, or it can arise from listener-related factors like, hearing loss, auditory processing disorder.
+It can also be a result of noise from transmission, like ambient noise, or distortion in the transmission (e.g., telephone line).
+All these sources of distortion make listening condition adverse.
+In laboratory setup, the effect of speech distortion, and the mechanism of listening in adverse listening condition is studied using artificial distortion of speech.
+For example, white or pink noise signal is superimposed on the top of speech signal so as to add a background noise.\
+
+In the early 1950s, plastic tapes with magnetic recorder were mechanically cut, spliced and pasted (named as *chop-splice method*) to increase the rate of speech [@Garvey1953].
+Such a method was developed used to overcome the effect of frequency shift on intelligibility that was an undesired result of accelerated speech recorded on sound film or discs in the late 1920s [@Fletcher1929].
+In recent days, algorithms like Pitch Synchronous Overlap-Add Technique [PSOLA; @Charpentier1986; @Moulines1990] and Overlap-Add Technique Based on Waveform Similarity [WSOLA; @Verhelst1993] are used to compress or elongate an auditory signal so as to change the rate of speech.
+These methods preserve the phonemic properties of speech to a large extent (see Section X.X.X).
+
+In the same vein, noise-vocoding is used to remove the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section X.X.X).
+Noise-vocoding was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line [@Dudley1939; @Vocoder1940] --- [Re-read this thoroughly].
+Shannon and colleagues later used the same technique as an analogue to cochlear implant [@Shannon1995; @Loizou1999; @Shannon2004] – number of channels used in a cochlear implant are similar to the number of noise-vocoding channels in terms of their speech output and intelligibility [… cite probably Wagner et al. …].
+
+## Comprehension of degraded speech
+
+The first factor that determines the intelligibility of noise-vocoded speech is the number of channels.
+With an increase in noise-vocoding channels, speech intelligibility increases [e.g., @Davis2005; @Shannon1995].
+For example, speech processed through 8 channels noise vocoding is more intelligible than the speech processed through 4 channels noise vocoding [@Loizou1999].
+Participant related variables (age, vocabulary), test materials (words, sentences, accented speech), and listening conditions (quiet, background noise) also influence the intelligibility of noise vocoding speech.
+Accuracy is higher for sentences than for words in isolation (CITE).
+Compared to quiet, response accuracy was reduced when listeners were presented with vocoded speech in the presence of a background noise.
+At the same level of degradation, accuracy is higher for younger adults than for older adults, i.e., with age, keeping all other variables constant, comprehension of degraded speech decreases.
+Other factors like sentence context and vocabulary also play a role, which will be discussed below.
+In sum, comprehension of degraded speech is a not only the amount of spectral details available, but also other listener and speaker related factors.
+How a listener utilizes available context information to 'make-up' for the impoverished auditory information is the critical factor determining intelligibility and comprehension of degraded speech.
+
+### Role of sentence context
+
+Literature from sentence reading provides us with an insight how readers use the information available as the words are presented to them to make predictions about what word they'll see next.
+In visual world paradigm, @Altmann1999 showed that a listeners predict upcoming word of a sentence using the cue provide by the sentence context.
+For example, they presented participants a picture of four objects: cake, XXX, XXX, and XXX while the participants were listening to the sentence '*The boy will eat the* ...'.
+Even before hearing *cake*, participants fixated at the picture of cake.
+This finding has been replicated multiple times [@Kamide2003; @Altmann2007; CITE other recent papers] in different languages [@MISHRA...].
+This is observable in behavioral measures as well as electrophysiological measures.\
+@Kutas1984 reported smaller N400 amplitude for highly probable sentence endings than for less probable sentence endings given different sentence contexts.
+They found that the N400 amplitude was more sensitive to sentence ending than to the constrain imposed by the preceding words.
+-- Check new studies on this line --
+@Delong2005 showed that listeners form probabilistic predictions about upcoming words in a sentence.
+In a highly predictable sentence context like 'The day was breezy so the boy went outside to fly …', N400 amplitude was much smaller for an expected continuation 'a kite' than for an unexpected continuation 'an airplane'.
+This study has been further replicated in Spanish-English bilinguals [CITE] showing that when presented with ... ... ...
+Similarly, it has been observed that readers tend to skip the predictable words more than unpredictable words while reading, and predictable words are read faster than unpredictable words [@Frisson2005; @Rayner2011].
+Semantic context already provides listeners information about what the predictable word is going to be, therefore their fixation time on the predictable words is lesser than unpredictable words, and it takes lesser time to read the predictable words.\
+Taken together, these studies show that as the sentence unfolds, a human comprehender forms the meaning representation of the available context information, and generates prediction about what linguistic input is going to come next.\
+
+In a noisy environment, however, it is difficult to understand the context itself.
+While reading text that is visually degraded, readers rely on the available context information [e.g., @Clark2021].
+Listeners generally rely on sentence context moreso in an adverse listening condition than in a clear listening environment.
+For example, @Sheldon2008a showed that when the speech signal is degraded, word recognition is improved by sentence context in both younger and older adults.
+They presented listeners with senteces with high and low context information, noise-vocoded at different levels of spectral degradation.
+They found that response accuracy was higher for sentences with high context information than for the sentences with low context information.
+In cochlear implantees, XYZ et al., have shown that high predictability sentences result in higher accuracy than low predictability sentences in a word recognition task.
+Contrary to the findings of most of the studies using clean speech and reading clean text, sentence context does not *always* help in comprehension of all noise-vocoded speech.
+When the noise-vocoded speech is least degraded, listeners might rely mostly on the bottom-up auditory input than on top-down predictions generated from the sentence context; hence, context does not render benefit in this case.
+For example, in the 32-channels noise-vocoded speech in @Obleser2010, sentence context, and consecutively top-down semantic prediction does not yield any benefit in sentence comprehension when compared to 4-channels noise-vocoded speech.\
+
+In summary, sentence context provides information necessary to generate top-down predictions.
+Listeners use this context information and form predictions to better comprehend degraded speech.
+
+### Effect of aging
+
+## Research motivation
+

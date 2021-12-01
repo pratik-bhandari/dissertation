@@ -1,0 +1,74 @@
+---
+#########################################
+# options for knitting a single chapter #
+#########################################
+output:
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+    citation_package: biblatex
+  bookdown::html_document2: default
+  bookdown::word_document2: default
+documentclass: book
+bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+# General Methods
+
+\minitoc <!-- this will include a mini table of contents-->
+
+## Stimulus sentences
+………
+- Sy How sentences were constructed.
+- Say how cloze probabilites were collected.
+- Say how 120 and then 360 auditory stimuli are created.
+
+
+## Speech processing
+
+All 360 sentences used in the experiments in this thesis were first recorded and digitized at 44.1 kHz with 32 bit linear encoding.
+The quality of auditory stimuli -- in chapters 5 through 8 -- are manipulated by noise-vocoding (chapter 5 to 8), and speech compression algorithm PSOLA (chapter 7).
+These speech processing ... ……………………
+
+
+### Noise-vocoding
+
+Noise-vocoding is used to parametrically vary and control the quality of speech signal and a graded manner.
+It largely removes the spectral details of the speech signal but preserves the temporal and preiodicity cues [@Rosen1999].
+
+Noise-vocoding distorts speech by dividing a speech signal into specific frequency bands corresponding to the number of vocoder channels.
+The frequency bands are analogous to the electrodes of cochlear implant [@Shannon1995; @Loizou1999; @Shannon2004].
+The amplitude envelope -- fluctuations of amplitude -- within each band is extracted and is used to modulate noise of the same bandwidth.
+It renders vocoded speech harder to understand by replacing the fine structure of the speech signal with noise while preserving the temporal characteristics and periodicity of perceptual cues [@Rosen1999].
+
+If the cut-off frequencies of the bandwidth of the speech signal (i.e., the analysis band) and the bandwidth of the noise do not match then the resulting noise-vocoded speech becomes spectrally shifted [e.g., @Faulkner2012].
+The cut-off frequencies of the speech signal and the to-be-modulated noisebands are identical for all the speech stimuli in the current study.
+
+Sentences were noise-vocoded through 1-, 4-, 6- and 8-channels in Experiment 1, 2, and 4 using custom scripts originally written by @Darwin2005.
+In Experiment 3, they were vocoded only through 4-channels.
+The cut-off boundary frequencies were set between 70 Hz and 9000 Hz.
+Upper and lower bounds for band extraction within each bandwidth of each noise-vocoding condition are shown in Table X.X which follows Greenwood's cochlear frequency position function [@Greenwood1990; @Erb2014].
+Scaling was performed to equate the root-mean-square values of the original undistorted signal and the final noise-vocoded sentences.
+
+Spectrograms of clear speech and noise-vocoded speech (1-, 4-, 6- and 8-channels) for the word 'Aufgabe' are shown in Figure X.X. It shows that with a decrease in the number of noise-vocoding channels, speech signal becomes more and more similar to noise.
+
+<!-- In all the experiments discussed in this thesis, noise-vocoding is implemented the same way -- the frequency boundaries were determined by cochlear-frequency position functions, and the boundary frequencies were approximately logarithmically spaced [@Greenwood1990; @Erb2014]. -->
+
+### Speech compression
+
+Uniform time-compression algorithms like pitch-synchronous overlap-add technique [PSOLA, @Charpentier1986; @Moulines1990) are used to compress the speech signal and increase the rate of speech.
+<!-- PSOLA first analyzes the pitch of an auditory signal, in the time domain of its digital waveform, to set pitch marks and then segments the signal into successive overlapping chunks of short-term signals. -->
+<!-- When the signal is periodic, these chunks are synchronized to pitch periods and when it is not periodic, they are distributed regularly. -->
+<!-- Then a single chunk is created by superimposing and averaging the neighboring chunks. -->
+<!-- Thus, the resulting speech signal is compressed and it is perceived to be faster than the original speech. -->
+PSOLA analyzes the pitch of an auditory signal, in the time domain of its digital waveform, to set pitch marks and then segments the signal into successive analysis windows centered around those pitch marks.
+To create synthesized speech, a new set of pitch marks are calculated and the analysis windows are rearranged.
+Depending on the time-compression factor, some analysis windows are deleted, and the remaining windows are concatenated by superimposing and averaging the neighboring analysis windows.
+Hence the resulting speech signal is compressed, i.e., it is perceived to be faster than the original speech [e.g., CITE ]
+The distortion of phonemic properties of speech signals are minimal when accelerating and slowing down within the range of factor 2 or below [@Moulines1990].
+In Experiment 3, PSOLA algorithm in Praat software is used to increase the rate of speech by a factor of 0.65 before passing it through 4-channels noise-vocoding.
+
+Spectrograms of clear speech, speeded speech, and noise-vocoded speeded speech for the word 'Aufgabe' are shown in Figure X.X. It shows that …………
+
+## Measurement of language comprehension
+ 
+ 
