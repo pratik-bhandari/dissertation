@@ -10,6 +10,8 @@ documentclass: book
 bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
 ---
 
+\minitoc <!-- this will include a mini table of contents-->
+
 <!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
 <!-- \chaptermark{Citations and cross-refs} -->
 
@@ -39,7 +41,7 @@ y =
 The intercept $\alpha$, and the regression coefficients $\beta_1, \beta_2,$ and $\beta_3$ for each explanatory variable are estimated to achieve the model that best fits the data.
 Analysis of Variance (ANOVA) is a special case of logistic regression (Chatterjee in Jaeger's thesis page 40; Shravan's book and blog) that is one of the most common statistical tools in psychology and psycholinguistics [...CITE...].
 These linear regressions as shown above (Equation \ref{eq:linear_regression}) and ANOVAS however, are not well suited for categorical data like response to multiple choice questions or yes/no questions, confidence ratings, etc.
-For example, in all the experiments in the current thesis, the response variables are responce accuracy given correct/incorrect response.
+For example, in all the experiments in the current thesis, the response variables are response accuracy, given binary correct/incorrect responses.
 Output of linear regression model ranges from $+\infty$ to $-\infty$ while accuracy (or probability) ranges fro, 0 to 1.
 Additionally, simple regression models do not take into account the variability across individual participants and items.
 These problems in psychological sciences and psycholinguistics research has been long pointed out as early as 19XX [ ...CITE language as a fixed effects fallacy... ], and later [ ... ].
@@ -123,7 +125,7 @@ Fixed effects term, e.g., levels of degradation assumes that all levels of degra
 The random effects term with only varying intercept, e.g., subject as intercept, assumes that if there are 100 subjects then the mean accuracy of those 100 subjects are only a subset of possible global accuracies drawn from a set of population mean.
 When a slope, e.g., levels of predictability, is included to the random effects structure in addition to the varying intercept (e.g., subjects), then the model assumes that the effect of predictability on response accuracy varies across subjects.
 
-## Binomial logistic mixed effects modeling
+## Binomial logistic mixed effects modeling {#binomial-logistic-mixed-effects-model}
 
 A binomial logistic mixed effects model with varying intercepts and slopes for items and subjects is shown in Equation \ref{eq:mixed_effects} below.
 <!-- \begin{align} -->
@@ -155,8 +157,20 @@ The details of the models fitted to data from each experiment are given in Chapt
 
 We therefore use binomial logistic mixed effects model as our primary statistical analysis tool in all the experiments reported in this thesis. We primarily follow the recommendations of @Baayen2008, @Barr2013, and @Bates2015a.
 
+## Running the model in R {#analysis-main}
+
+Data preprocessing and analyses were performed in R-Studio (Version 3.6.1; R Core Team, 2019; ...).
+Accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lmerTest [@Kuznetsova2017] and lme4 [@Bates2015] packages.
+Binary responses (correct responses coded as 1 and incorrect responses coded as 0) for all participants were fit with a binomial logistic mixed-effects model.
+<!-- Noise condition (categorical; 4-, 6-, and 8-bands), target word predictability (categorical; HP, MP, LP), global noise context (categorical; predictable channel context and unpredictable channel context), and the interaction of noise condition and target word predictability were included in the fixed effects. -->
+
+On the data in from each experiment, we fitted models with maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
+By-participant and by-item slopes included in the model are discussed in the Analysis sections of Chapter X, X, X.
+<!-- To find the optimal model for the data, non-significant higher-order interactions were excluded from the fixed-effects structure (and from the random-effects structure) in a stepwise manner. -->
+Model selection was based on Akaike Information Criterion (AIC) [@Grueber2011; @Richards2011] unless otherwise stated.
+Random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization.
+This gave a more parsimonious model [@Bates2015a] which was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameter, and iii) both item- and participant-related correlation parameters.
+The best fitting model among the parsimonious and extended models was then selected as the optimal model for our data.
 <!-- ## Bayesian statistical methods -->
  
-\minitoc <!-- this will include a mini table of contents-->
-
 <!-- https://tex.stackexchange.com/questions/75764/how-do-you-make-numbered-equations-in-latex -->
