@@ -285,11 +285,10 @@ Exploring the role of attention and speed of processing in top-down prediction}
 
 %%%%% ABSTRACT -- Nothing to do here except comment out if you don't want it.
 \begin{abstract}
-	This thesis investigates the dynamic interactions between top-down predictive processing and bottom-up auditory processing in comprehension of degraded speech and adds three aspects to the existing theoretical framework of predictive language processing:
- 1. attention to context, 2. rate of flow of information, and 3. concurrent processing of secondary information along with language processing.
- First, it empirically establishes that listeners' attention to and realization of the context of a sentence is essential in the forming top-down semantic predictions in the comprehension of spectrally degraded speech. Then it shows that the facilitatory effect of semantic context appears in a graded manner when the speech is moderately degraded, while the comprehension of least degraded speech is overall better than the moderately degraded speech. That is, the difficulty of processing degraded speech is higher than processing less degraded speech. This further leads to two questions: 1. Does the difficulty in the processing of degraded speech change with a change in the rate of information flow as it affects the time of processing the speech. If so, how does the speech rate interact with semantic predictability of degraded sentences? 2. Does concurrent cognitive processing of a secondary task impair the processing of degraded speech differentially for different levels of degradation.
- These questions are further investigated in this thesis and found that when the rate of speech \ldots{} It was also found that when the secondary task is performed along with listening to degraded speech of different levels \ldots{}
- ---
+	Listening in an adverse environment poses a challenge -- it is difficult to understand what is being said when there is background noise, or when the speaker's speech signal is distorted. Nevertheless, listeners show remarkable success in understanding the distorted speech by utilizing context information to form predictions about upcoming linguistic events. The extent to which such top-down predictions are useful is still a matter of debate. Additionally, the role of other factors such as attention and rate of flow of information in degraded speech comprehension are understudied. In this thesis, I present a broader overview of the role of semantic predictions on degraded speech comprehension across lifespan, and how it interplays with attention, and rate of flow of information.
+ In the first experiment (Chapter 4.1), I show that listeners can flexibly pay attention to a portion of speech stream; and attending to the sentence context is necessary to utilize the context and form top-down predictions. I show in the second experiment (Chapter 4.2) that as listeners utilize the context information, they form semantic predictions about upcoming linguistic events in a graded manner when the speech is moderately degraded. Semantic predictions are not restricted to only most highly likely sentence endings. I also argue for a novel metric to measure language comprehension, and show that sensory adaptation to degraded speech is disrupted by change in higher-level semantic features of speech.
+ Perception, processing and comprehension of degraded speech is difficult and effortful. In the third experiment (Chapter 4.3), I show that when the rate of flow of information is changed by increasing the speed of speech, the facilitatory effect of predictability is observed even at a mildly degraded speech. That is, earlier (in Chapter 4.2), mild degradation was easier to process; but increase in speed rendered the speech processing difficult such that predictability had a facilitatory effect. To examine the general age differences in the facilitatory effect of predictability, I conducted a fourth experiment (Chapter 4.4) where younger adults (age range 18-30) and older adults (age range = \ldots) were recruited. Highest age difference in the use of sentence context for language comprehension was observed at the moderate level of speech degradation. This supported the hypothesis that sensory decline with aging tips older adults to rely on context information more than younger adults do. I show the neural markers of these age differences in the fifth experiment (Chapter 4.5) \ldots{} \ldots{} \ldots{}
+ Taken together, this thesis and the results herein support the views that sentence context and semantic prediction facilitate comprehension of moderately degraded speech in a graded manner, and reliance on context increases with age.
 \end{abstract}
 
 %%%%% MINI TABLES
@@ -347,8 +346,11 @@ channels
 
 \minitoc 
 
-\hypertarget{predictive-processing}{%
-\section{Predictive processing}\label{predictive-processing}}
+\hypertarget{overview-of-the-thesis}{%
+\section{Overview of the thesis}\label{overview-of-the-thesis}}
+
+\hypertarget{theories-of-language-comprehension}{%
+\section{Theories of language comprehension}\label{theories-of-language-comprehension}}
 
 \hypertarget{predictive-language-processing}{%
 \subsection{Predictive language processing}\label{predictive-language-processing}}
@@ -356,11 +358,73 @@ channels
 \hypertarget{speech-degradation}{%
 \section{Speech degradation}\label{speech-degradation}}
 
-\hypertarget{comprehension-of-degraded-speech}{%
-\subsection{Comprehension of degraded speech}\label{comprehension-of-degraded-speech}}
+Speech can be distorted by variability in speakers' production, like, accented speech, soft/rapid speech, or it can arise from listener-related factors like, hearing loss, auditory processing disorder.
+It can also be a result of noise from transmission, like ambient noise, or distortion in the transmission (e.g., telephone line).
+All these sources of distortion make listening condition adverse.
+In laboratory setup, the effect of speech distortion, and the mechanism of listening in adverse listening condition is studied using artificial distortion of speech.
+For example, white or pink noise signal is superimposed on the top of speech signal so as to add a background noise.\\
 
-\hypertarget{overview-of-the-thesis}{%
-\section{Overview of the thesis}\label{overview-of-the-thesis}}
+In the early 1950s, plastic tapes with magnetic recorder were mechanically cut, spliced and pasted (named as \emph{chop-splice method}) to increase the rate of speech \autocite{Garvey1953}.
+Such a method was developed used to overcome the effect of frequency shift on intelligibility that was an undesired result of accelerated speech recorded on sound film or discs in the late 1920s \autocite{Fletcher1929}.
+In recent days, algorithms like Pitch Synchronous Overlap-Add Technique {[}PSOLA; \textcite{Charpentier1986}; \textcite{Moulines1990}{]} and Overlap-Add Technique Based on Waveform Similarity {[}WSOLA; \textcite{Verhelst1993}{]} are used to compress or elongate an auditory signal so as to change the rate of speech.
+These methods preserve the phonemic properties of speech to a large extent (see Section X.X.X).
+
+In the same vein, noise-vocoding is used to remove the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section X.X.X).
+Noise-vocoding was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line \autocite{Dudley1939,Vocoder1940} --- {[}Re-read this thoroughly{]}.
+Shannon and colleagues later used the same technique as an analogue to cochlear implant \autocite{Shannon1995,Loizou1999,Shannon2004} -- number of channels used in a cochlear implant are similar to the number of noise-vocoding channels in terms of their speech output and intelligibility {[}\ldots{} cite probably Wagner et al.~\ldots{]}.
+
+\hypertarget{comprehension-of-degraded-speech}{%
+\section{Comprehension of degraded speech}\label{comprehension-of-degraded-speech}}
+
+The first factor that determines the intelligibility of noise-vocoded speech is the number of channels.
+With an increase in noise-vocoding channels, speech intelligibility increases \autocites[e.g.,][]{Davis2005,Shannon1995}.
+For example, speech processed through 8 channels noise vocoding is more intelligible than the speech processed through 4 channels noise vocoding \autocite{Loizou1999}.
+Participant related variables (age, vocabulary), test materials (words, sentences, accented speech), and listening conditions (quiet, background noise) also influence the intelligibility of noise vocoding speech.
+Accuracy is higher for sentences than for words in isolation (CITE).
+Compared to quiet, response accuracy was reduced when listeners were presented with vocoded speech in the presence of a background noise.
+At the same level of degradation, accuracy is higher for younger adults than for older adults, i.e., with age, keeping all other variables constant, comprehension of degraded speech decreases.
+Other factors like sentence context and vocabulary also play a role, which will be discussed below.
+In sum, comprehension of degraded speech is a not only the amount of spectral details available, but also other listener and speaker related factors.
+How a listener utilizes available context information to `make-up' for the impoverished auditory information is the critical factor determining intelligibility and comprehension of degraded speech.
+
+\hypertarget{role-of-sentence-context}{%
+\subsection{Role of sentence context}\label{role-of-sentence-context}}
+
+Literature from sentence reading provides us with an insight how readers use the information available as the words are presented to them to make predictions about what word they'll see next.
+In visual world paradigm, \textcite{Altmann1999} showed that a listeners predict upcoming word of a sentence using the cue provide by the sentence context.
+For example, they presented participants a picture of four objects: cake, XXX, XXX, and XXX while the participants were listening to the sentence `\emph{The boy will eat the} \ldots{}'.
+Even before hearing \emph{cake}, participants fixated at the picture of cake.
+This finding has been replicated multiple times {[}\textcite{Kamide2003}; \textcite{Altmann2007}; CITE other recent papers{]} in different languages \autocite{MISHRA}.
+This is observable in behavioral measures as well as electrophysiological measures.\\
+\textcite{Kutas1984} reported smaller N400 amplitude for highly probable sentence endings than for less probable sentence endings given different sentence contexts.
+They found that the N400 amplitude was more sensitive to sentence ending than to the constrain imposed by the preceding words.
+-- Check new studies on this line --
+\textcite{Delong2005} showed that listeners form probabilistic predictions about upcoming words in a sentence.
+In a highly predictable sentence context like `The day was breezy so the boy went outside to fly \ldots{}', N400 amplitude was much smaller for an expected continuation `a kite' than for an unexpected continuation `an airplane'.
+This study has been further replicated in Spanish-English bilinguals {[}CITE{]} showing that when presented with \ldots{} \ldots{} \ldots{}
+Similarly, it has been observed that readers tend to skip the predictable words more than unpredictable words while reading, and predictable words are read faster than unpredictable words \autocite{Frisson2005,Rayner2011}.
+Semantic context already provides listeners information about what the predictable word is going to be, therefore their fixation time on the predictable words is lesser than unpredictable words, and it takes lesser time to read the predictable words.\\
+Taken together, these studies show that as the sentence unfolds, a human comprehender forms the meaning representation of the available context information, and generates prediction about what linguistic input is going to come next.\\
+
+In a noisy environment, however, it is difficult to understand the context itself.
+While reading text that is visually degraded, readers rely on the available context information \autocite[e.g.,][]{Clark2021}.
+Listeners generally rely on sentence context moreso in an adverse listening condition than in a clear listening environment.
+For example, \textcite{Sheldon2008a} showed that when the speech signal is degraded, word recognition is improved by sentence context in both younger and older adults.
+They presented listeners with senteces with high and low context information, noise-vocoded at different levels of spectral degradation.
+They found that response accuracy was higher for sentences with high context information than for the sentences with low context information.
+In cochlear implantees, XYZ et al., have shown that high predictability sentences result in higher accuracy than low predictability sentences in a word recognition task.
+Contrary to the findings of most of the studies using clean speech and reading clean text, sentence context does not \emph{always} help in comprehension of all noise-vocoded speech.
+When the noise-vocoded speech is least degraded, listeners might rely mostly on the bottom-up auditory input than on top-down predictions generated from the sentence context; hence, context does not render benefit in this case.
+For example, in the 32-channels noise-vocoded speech in \textcite{Obleser2010}, sentence context, and consecutively top-down semantic prediction does not yield any benefit in sentence comprehension when compared to 4-channels noise-vocoded speech.\\
+
+In summary, sentence context provides information necessary to generate top-down predictions.
+Listeners use this context information and form predictions to better comprehend degraded speech.
+
+\hypertarget{effect-of-aging}{%
+\subsection{Effect of aging}\label{effect-of-aging}}
+
+\hypertarget{research-motivation}{%
+\section{Research motivation}\label{research-motivation}}
 
 \hypertarget{general-methods}{%
 \chapter{General Methods}\label{general-methods}}
@@ -370,14 +434,52 @@ channels
 \hypertarget{stimulus-sentences}{%
 \section{Stimulus sentences}\label{stimulus-sentences}}
 
+\ldots\ldots\ldots{}
+- Sy How sentences were constructed.
+- Say how cloze probabilites were collected.
+- Say how 120 and then 360 auditory stimuli are created.
+
 \hypertarget{speech-processing}{%
 \section{Speech processing}\label{speech-processing}}
+
+All 360 sentences used in the experiments in this thesis were first recorded and digitized at 44.1 kHz with 32 bit linear encoding.
+The quality of auditory stimuli -- in chapters 5 through 8 -- are manipulated by noise-vocoding (chapter 5 to 8), and speech compression algorithm PSOLA (chapter 7).
+These speech processing \ldots{} \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots{}
 
 \hypertarget{noise-vocoding}{%
 \subsection{Noise-vocoding}\label{noise-vocoding}}
 
+Noise-vocoding is used to parametrically vary and control the quality of speech signal and a graded manner.
+It largely removes the spectral details of the speech signal but preserves the temporal and preiodicity cues \autocite{Rosen1999}.
+
+Noise-vocoding distorts speech by dividing a speech signal into specific frequency bands corresponding to the number of vocoder channels.
+The frequency bands are analogous to the electrodes of cochlear implant \autocite{Shannon1995,Loizou1999,Shannon2004}.
+The amplitude envelope -- fluctuations of amplitude -- within each band is extracted and is used to modulate noise of the same bandwidth.
+It renders vocoded speech harder to understand by replacing the fine structure of the speech signal with noise while preserving the temporal characteristics and periodicity of perceptual cues \autocite{Rosen1999}.
+
+If the cut-off frequencies of the bandwidth of the speech signal (i.e., the analysis band) and the bandwidth of the noise do not match then the resulting noise-vocoded speech becomes spectrally shifted \autocite[e.g.,][]{Faulkner2012}.
+The cut-off frequencies of the speech signal and the to-be-modulated noisebands are identical for all the speech stimuli in the current study.
+
+Sentences were noise-vocoded through 1-, 4-, 6- and 8-channels in Experiment 1, 2, and 4 using custom scripts originally written by \textcite{Darwin2005}.
+In Experiment 3, they were vocoded only through 4-channels.
+The cut-off boundary frequencies were set between 70 Hz and 9000 Hz.
+Upper and lower bounds for band extraction within each bandwidth of each noise-vocoding condition are shown in Table X.X which follows Greenwood's cochlear frequency position function \autocite{Greenwood1990,Erb2014}.
+Scaling was performed to equate the root-mean-square values of the original undistorted signal and the final noise-vocoded sentences.
+
+Spectrograms of clear speech and noise-vocoded speech (1-, 4-, 6- and 8-channels) for the word `Aufgabe' are shown in Figure X.X. It shows that with a decrease in the number of noise-vocoding channels, speech signal becomes more and more similar to noise.
+
 \hypertarget{speech-compression}{%
 \subsection{Speech compression}\label{speech-compression}}
+
+Uniform time-compression algorithms like pitch-synchronous overlap-add technique {[}PSOLA, \textcite{Charpentier1986}; \textcite{Moulines1990}) are used to compress the speech signal and increase the rate of speech.
+PSOLA analyzes the pitch of an auditory signal, in the time domain of its digital waveform, to set pitch marks and then segments the signal into successive analysis windows centered around those pitch marks.
+To create synthesized speech, a new set of pitch marks are calculated and the analysis windows are rearranged.
+Depending on the time-compression factor, some analysis windows are deleted, and the remaining windows are concatenated by superimposing and averaging the neighboring analysis windows.
+Hence the resulting speech signal is compressed, i.e., it is perceived to be faster than the original speech {[}e.g., CITE {]}
+The distortion of phonemic properties of speech signals are minimal when accelerating and slowing down within the range of factor 2 or below \autocite{Moulines1990}.
+In Experiment 3, PSOLA algorithm in Praat software is used to increase the rate of speech by a factor of 0.65 before passing it through 4-channels noise-vocoding.
+
+Spectrograms of clear speech, speeded speech, and noise-vocoded speeded speech for the word `Aufgabe' are shown in Figure X.X. It shows that \ldots\ldots\ldots\ldots{}
 
 \hypertarget{measurement-of-language-comprehension}{%
 \section{Measurement of language comprehension}\label{measurement-of-language-comprehension}}
@@ -393,131 +495,295 @@ channels
 \hypertarget{online-data-collection}{%
 \section{Online data collection}\label{online-data-collection}}
 
+\hypertarget{designing-experiments}{%
+\subsection{Designing experiments}\label{designing-experiments}}
+
+\hypertarget{hosting-platform}{%
+\subsection{Hosting platform}\label{hosting-platform}}
+
+\hypertarget{recruiting-participants}{%
+\subsection{Recruiting participants}\label{recruiting-participants}}
+
+\minitoc 
+
 \hypertarget{general-statistical-approach}{%
 \chapter{General statistical approach}\label{general-statistical-approach}}
 
-\hypertarget{linear-mixed-effects-modeling}{%
-\section{Linear mixed effects modeling}\label{linear-mixed-effects-modeling}}
+\hypertarget{linear-regression}{%
+\section{Linear regression}\label{linear-regression}}
 
-\hypertarget{bayesian-statistical-methods}{%
-\section{Bayesian statistical methods}\label{bayesian-statistical-methods}}
+In this thesis, we use binomial mixed effects logistic regression models with crossed random effects \autocite{Baayen2008}.
+These models are, simply speaking, extensions of logistic regression models.
+A logistic regression models a dependent variable (or an \emph{outcome}, or a \emph{response} variable) as a function of one or more independent predictor variables (or \emph{factors}, or \emph{explanatory} variables).
+That is, an outcome \(y\) is modeled as a function of explanatory variables \(x_1, x_2, x_3..., x_n\), and an error term \(\varepsilon\).
 
-\minitoc 
+\begin{align} \label{eq:linear_regression}
+y =
+\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon 
+\end{align}
+
+The intercept \(\alpha\), and the regression coefficients \(\beta_1, \beta_2,\) and \(\beta_3\) for each explanatory variable are estimated to achieve the model that best fits the data.
+Analysis of Variance (ANOVA) is a special case of logistic regression (Chatterjee in Jaeger's thesis page 40; Shravan's book and blog) that is one of the most common statistical tools in psychology and psycholinguistics {[}\ldots CITE\ldots{]}.
+These linear regressions as shown above (Equation \ref{eq:linear_regression}) and ANOVAS however, are not well suited for categorical data like response to multiple choice questions or yes/no questions, confidence ratings, etc.
+For example, in all the experiments in the current thesis, the response variables are response accuracy, given binary correct/incorrect responses.
+Output of linear regression model ranges from \(+\infty\) to \(-\infty\) while accuracy (or probability) ranges from, 0 to 1.
+Additionally, simple regression models do not take into account the variability across individual participants and items.
+These problems in psychological sciences and psycholinguistics research has been long pointed out as early as 19XX {[} \ldots CITE language as a fixed effects fallacy\ldots{} {]}, and later {[} \ldots{} {]}.
+They are addressed to some extent by binomial logistic regression, and for our purpose by incorporating mixed effects model to binomial logistic regression.
+
+Below we briefly introduce binomial logistic regression and mixed effects model.
+Then we show a simple example of how binomial logistic mixed effects model is used in the experiments in this thesis.
+
+\hypertarget{binomial-logistic-regression}{%
+\section{Binomial logistic regression}\label{binomial-logistic-regression}}
+
+The response variable in this experiments in this thesis are binary.
+Participants' written response to what they hear are coded as either correct or incorrect.
+A binomial logistic regression model is best suited for such a categorical data \autocite{Jaeger2008}.
+We will use the term logistic regression model and binomial logistic regression model interchangeably henceforth.
+
+As the name suggests, the output variable in a logistic regression model is in logit scale.
+The model therefore predicts logits of an outcome variable.
+Logits are \(\log\) with base \(e\), i.e.~\(\ln\).
+
+\emph{Probability} ranges from 0 to 1 only while \emph{odds} ranges from 0 to \(+\infty\).
+Fitting a linear regression model with probability or odds would assume the range to be between 0 and 1, and between 0 and \(+\infty\) respectively.
+This restricts the range, and is incorrect for a linear model.
+Therefore, in a binomial logistic regression model, log-odds are used which range from \(-\infty\) to \(+\infty\).
+
+A simple binomial logistic regression model is shown in Equation \ref{eq:simple_logistic}:
+
+\begin{align} \label{eq:simple_logistic}
+\ln(\frac{p}{1-p}) =
+\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon
+\end{align}
+
+This is equivalent to,
+
+\begin{align} \label{eq:logit-to-prob_long}
+p &=
+{\frac{exp(\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon)}
+{1 + exp (\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon)}}\\ \label{eq:logit-to-prob_short}
+&= {\frac{exp(\ln(\frac{p}{1-p}))}{1 + exp (\ln(\frac{p}{1-p}))}}
+\end{align}
+
+where,
+
+\begin{align} \label{eq:logiteq}
+\ln(\frac{p}{1-p}) =
+{logit}(p)
+\end{align}
+
+Log-odds of correct response obtained from Equation \ref{eq:simple_logistic} can be transformed to probability of correct response. Equations \ref{eq:logit-to-prob_short}, and \ref{eq:logiteq} provide the relationship between probability, logit (or log-odds), and odds (\(\frac{p}{1-p})\)).
+
+Some of the assumptions made for binomial logistic regression models are violated in our data.
+One of them being non-independence of observations, i.e., all data points are independent from one another.
+This assumption is violated in unbalanced design, and at times even for balanced design.
+Same participant responds multiple trials of same experimental condition within an experiment.
+Although the design itself is balanced, after removal of outliers and/or trials which are not appropriate for comprhension measures (see section XXX for details), number of trials in analyses are unequal for each participant, item, and experimental condition.
+This introduces a bias in the model {[}Jaeger2008; other papers on GLMM{]}.
+
+Another intrinsic property or feature of logistic regression is that it assumes a common mean for each predictors.
+It has been shown that this is in fact not true: the effect of a predictor can vary depending on different random variables like participants, or items.
+To account for these variances, mixed effects models are used.
+In recent days, these models are frequently used and advocated for by psycholingustis and statisticians {[} \ldots{} cite \ldots{} {]}.
+
+\hypertarget{mixed-effects-modeling}{%
+\section{Mixed effects modeling}\label{mixed-effects-modeling}}
+
+To overcome the limitations of logistic models, like violation of assumption of non-dependence of observations, and to account for the variability in the subject and/or item related parameter, mixed effects models are used.
+Mixed effects models contain 1) both linear and logistic regressions, and 2) \emph{fixed effects} and \emph{random effects}, hence the name \emph{mixed effects}.
+Fixed effects term, e.g., levels of degradation assumes that all levels of degradation used in the experiment are independent from one another and they share a common residual variance.
+The random effects term with only varying intercept, e.g., subject as intercept, assumes that if there are 100 subjects then the mean accuracy of those 100 subjects are only a subset of possible global accuracies drawn from a set of population mean.
+When a slope, e.g., levels of predictability, is included to the random effects structure in addition to the varying intercept (e.g., subjects), then the model assumes that the effect of predictability on response accuracy varies across subjects.
+
+\hypertarget{binomial-logistic-mixed-effects-model}{%
+\section{Binomial logistic mixed effects modeling}\label{binomial-logistic-mixed-effects-model}}
+
+A binomial logistic mixed effects model with varying intercepts and slopes for items and subjects is shown in Equation \ref{eq:mixed_effects} below.
+\begin{align} \label{eq:mixed_effects}
+\ln (\frac{p}{1-p}) = \alpha + u_{\alpha} + w_{\alpha} +
+                      (\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\
+                      (\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + ... +
+                      (\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n} 
+\end{align}
+
+where,
+
+\begin{itemize}
+\tightlist
+\item
+  \(\alpha\) is the Intercept.
+\item
+  Fixed effects: \(\beta_{1}, \beta_{2}, ..., \beta_{n}\) are the coefficients (or effects) of \(x_1, x_2, ...,x_n\).
+\item
+  \(\boldsymbol{u} = \langle u_{\alpha}, u_{\beta_1}, u_{\beta_2}, ..., u_{\beta_n} \rangle\) : Varying intercept and slopes for random effect term like, \emph{subject}.
+\item
+  \(\boldsymbol{w} = \langle w_{\alpha}, w_{\beta_1}, w_{\beta_2}, ..., w_{\beta_n} \rangle\) : Varying intercept and slopes for random effect term like, \emph{item}.
+\end{itemize}
+
+In this thesis, statistically, we examine the effect of predictability, speech degradation and speech rate (see section X.X, X.X, X.X) on response accuracy.
+And hence we use these variables in the fixed effects term.
+Subjects and items are used as random intercepts with by-subject and by-item slopes.
+The details of the models fitted to data from each experiment are given in Chapter X, X, X and X.
+
+We therefore use binomial logistic mixed effects model as our primary statistical analysis tool in all the experiments reported in this thesis. We primarily follow the recommendations of \textcite{Baayen2008}, \textcite{Barr2013}, and \textcite{Bates2015a}.
+
+\hypertarget{analysis-main}{%
+\section{Running the model in R}\label{analysis-main}}
+
+Data preprocessing and analyses were performed in R-Studio (Version 3.6.1; R Core Team, 2019; \ldots).
+Accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lmerTest \autocite{Kuznetsova2017} and lme4 \autocite{Bates2015} packages.
+Binary responses (correct responses coded as 1 and incorrect responses coded as 0) for all participants were fit with a binomial logistic mixed-effects model.
+
+On the data in from each experiment, we fitted models with maximal random effects structure that included random intercepts for each participant and item \autocite{Barr2013}.
+By-participant and by-item slopes included in the model are discussed in the Analysis sections of Chapter X, X, X.
+Model selection was based on Akaike Information Criterion (AIC) \autocite{Grueber2011,Richards2011} unless otherwise stated.
+Random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization.
+This gave a more parsimonious model \autocite{Bates2015a} which was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameter, and iii) both item- and participant-related correlation parameters.
+The best fitting model among the parsimonious and extended models was then selected as the optimal model for our data.
+
+\begin{savequote}
+Everyone knows what attention is.
+\qauthor{--- William James \autocite{James1890}}\end{savequote}
+
+
 
 \hypertarget{experiment-1-predictability-effect-of-degraded-speech-are-reduced-as-a-function-of-attention}{%
 \chapter{Experiment 1: Predictability effect of degraded speech are reduced as a function of attention}\label{experiment-1-predictability-effect-of-degraded-speech-are-reduced-as-a-function-of-attention}}
 
 \minitoc 
-
 \noindent This chapter comes from the manuscript that is under prep for JML.
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
+In this chapter we examine how attention modulates the facilitatory effect of predictability in an adverse listening condition.
+When listening condition is adverse, for example, due to speech degradation, listeners utilize context information.
+It can be information about a topic of conversation, semantic and syntactic information of a sentence structure, world knowledge, visual information, etc. \autocites{Kaiser2004,Knoeferle2005,Altmann2007,Xiang2015}[for reviews,][]{Stilp2020}.
+To utilize the context information, listeners must attend to it and build up a meaning representation of what has been said.
+Listeners attend to the context information in clear speech with minimal effort, but processing and comprehending degraded speech is more effortful and requires more attentional resources \autocite{Eckert2016,Peelle2018,Wild2012}.
+However, it is less clear how listeners distribute attentional resources:
+On the one hand, listeners can attend throughout the whole stream of speech and may thereby profit from the context information to predict sentence endings.
+On the other hand, listeners can focus their attention on linguistic material at a particular time point in the speech stream and, as a result, miss critical parts of the sentence context.
+If the goal is to understand a specific word in an utterance, there is a trade-off between allocating attentional resources to the perception of that word vs.~allocating resources also to the understanding of the linguistic context and generating predictions.
+
+The aim of the study in this chapter was to investigate how the allocation of attentional resources induced by different task instructions influence language comprehension and, in particular, the use of context information under adverse listening conditions.
+To examine the role of attention on predictive processing under degraded speech, we conducted two experiments in which we manipulated task instructions.
+In Experiment 1, participants were instructed to only repeat the final word of the sentence they have heard,
+while in Experiment 2, they were instructed to repeat the whole sentence, and by this drawing attention to the entire sentence including the context.
+In both experiments we varied the degree of predictability of sentence endings as well as the degree of speech degradation.
 
 \hypertarget{predictive-processing-and-language-comprehension-under-degraded-speech}{%
 \subsection{Predictive processing and language comprehension under degraded speech}\label{predictive-processing-and-language-comprehension-under-degraded-speech}}
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
+It is broadly agreed that human comprehenders generate expectations about upcoming linguistic material based on context information \autocites[for reviews, see][]{Kuperberg2016,Nieuwland2019,Pickering2018,Staub2015}.
+These expectations are formed while sentence unfolds. The claims about the predictive nature of language comprehension are based on a variety of behavioral and electrophysiological experimental measures including eye-tracking and electroencephalography (EEG).
+For instance, in the well-known visual world paradigm, listeners fixate at a picture of an object (e.g., the cake) that is predictable based on the prior sentence context (e.g., `The boy will eat the \ldots{}') even before hearing the final target word \autocites[e.g.,][]{Altmann1999,Altmann2007,Ankener2018}.
+Moreover, highly predictable words are read faster and are skipped more often compared to less predictable words \autocite{Frisson2005,Rayner2011}.
 
-\hypertarget{attention-predictability-and-processing-of-degraded-speech}{%
-\subsection{Attention, predictability and processing of degraded speech}\label{attention-predictability-and-processing-of-degraded-speech}}
+In EEG studies, the N400, a negative going EEG component, that usually peaks around 400 ms post-stimulus is considered as a neural marker of semantic unexpectedness \autocite{Kutas2011}.
+For instance, in the highly predictable sentence context `The day was breezy so the boy went outside to fly \ldots,' \textcite{Delong2005} found that the amplitude of the N400 component for the expected continuation `a kite' was much smaller than for the unexpected continuation `an airplane'.
+Although these studies demonstrated that as the sentence context builds up, listeners form predictions about upcoming words in the sentence, the universality and ubiquity of predictive language processing has been questioned \autocite[see][]{Huettig2016}.
+Also, the use of context for top-down prediction can be limited by factors like literacy \autocite{Mishra2012}, age, and working memory \autocite{Federmeier2010,Federmeier2002}, as well as by the experimental setup \autocite{Huettig2019}.
+While these language comprehension studies investigating predictive processing have used clean speech and sentence reading, the present study focuses on examining how attention influences the use of context to form top-down prediction under adverse listening conditions
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
+There is already some evidence that when the bottom-up speech signal is less reliable due to degradation, listeners tend to rely more on the context information to support language comprehension \autocite{Amichetti2018,Obleser2010,Sheldon2008a}.
+For example, \textcite{Sheldon2008a} (Figure 2) estimated that for both younger and older adults, the number of noise-vocoding channels required to achieve 50\% accuracy varied as a function of sentence context.
+Compared to highly predictable sentences, a greater number of channels (i.e., more bottom-up information) was required in lowly predictable sentences to achieve the same level of accuracy.
+Therefore, they concluded that when speech is degraded, predictable sentence context facilitates word recognition.
+\textcite{Obleser2007} found that at a moderate level of spectral degradation, listeners' word recognition accuracy was higher for highly predictable sentence contexts than for less predictable ones.
+However, while listening to the least degraded speech, there was no such beneficial effect of sentence context \autocite[see also][]{Obleser2010}.
+Hence, especially when the bottom-up speech signal is less reliable due to moderate degradation, information available from the sentence context is used to enhance language comprehension, suggesting that there is a dynamic interaction between top-down predictive and bottom-up sensory processes in language comprehension \autocite{Bhandari2021}.
 
-\hypertarget{current-study}{%
-\subsection{Current study}\label{current-study}}
+\hypertarget{attention-and-predictive-language-processing}{%
+\subsection{Attention and predictive language processing}\label{attention-and-predictive-language-processing}}
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
+Not only the quality of speech signal influences the reliance and use of predictive processing but also attention to auditory input is important.
+Auditory attention allows a listener to focus on the speech signal of interest \autocites[for reviews, see][]{Fritz2007}[see also][]{Lange2013}.
+For instance, it has been shown that a listener can attend to and derive information from one stream of sound among many competing streams as demonstrated in the well-known \emph{cocktail party effect} \autocite{Cherry1953,Hafter2007}.
+When a participant is instructed to attend to only one of the two or more competing speech streams in a diotic or dichotic presentation, response accuracy to the attended speech stream is higher than to the unattended speech \autocite[e.g.,][]{Toth2020}.
+Similarly, when a listener is presented with a stream of tones (e.g., musical notes varying in pitch, pure tones of different harmonics) but attends to any one of the tones appearing at a specified time point, this is reflected in a larger amplitude of N1 \autocites[e.g.,][]{Lange2010}[see also][]{Sanders2008}
+which is the first negative going ERP component peaking around 100 ms post-stimulus considered as a marker of auditory selective attention \autocite{Naatanen1987,Thorton2007}.
+Hence, listeners can draw attention to and process one among multiple competing speech streams.
 
-\hypertarget{experiment-1a-attending-only-to-the-target-word}{%
-\section{\texorpdfstring{Experiment 1A \emph{{[}Attending only to the target word{]}}}{Experiment 1A {[}Attending only to the target word{]}}}\label{experiment-1a-attending-only-to-the-target-word}}
+So far, most previous studies investigated listeners' attention within a single speech stream by using acoustic cues like accentuation and prosodic emphasis.
+For example, \textcite{Li2014} examined whether the comprehension of critical words in a sentence context was influenced by a linguistic attention probe such as ``ba'' presented together with accented or de-accented critical word.
+The N1 amplitude was larger for words with such attention probe than for words without a probe.
+These findings support the view that attention can be flexibly directed either by instructions towards a specific signal or by linguistic probes \autocite[see also, \textcite{Brunelliere2019}]{Li2017}.
+Thus, listeners are able to select a part or segment of stream of auditory stimuli to pay attention to.
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
+The findings on the interplay of attention and prediction mentioned above come from studies most of which used a stream of clean speech or multiple streams of clean speech in their experiments.
+They cannot tell us about the attention-prediction interplay in degraded speech comprehension.
+Specifically, we do not know what role attention to a segment of speech stream plays in the contextual facilitation of degraded speech comprehension,
+although separate lines of research show that listeners attend to most informative portion of speech stream \autocite[e.g.,][]{Astheimer2011}, and semantic predictability facilitates comprehension of degraded speech \autocite[e.g.,][]{Obleser2010}.
+In two experiments, we therefore examined whether context-based semantic predictions are automatic during effortful listening to degraded speech, when participants are instructed to report only the final word of the sentence, or the entire sentence.
+We varied the task instructions to the listeners from Experiment 1 to Experiment 2 which required them to differentially attend to the target word, or to the target word including the context.
+We hypothesized that when listeners pay attention only to the contextually predicted target word, they do not form top-down predictions, i.e., there should not be a facilitatory effect of target word predictability.
+In contrast, when listeners attend to the whole sentence, they do form expectations such that the facilitatory effect of target word predictability will be observed.
+
+\hypertarget{experiment-1a}{%
+\section{Experiment 1A}\label{experiment-1a}}
+
+This experiment was designed such that processing the context was not strictly necessary for the task.
+Listeners were asked to report the noun of the sentence that they heard which was in the final position of the sentence.
+This instruction did not require listeners to pay attention to the context which preceded the target word.
 
 \hypertarget{materials-and-methods}{%
 \section{Materials and methods}\label{materials-and-methods}}
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
-
 \hypertarget{participants}{%
 \subsection{Participants}\label{participants}}
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
+We recruited 50 participants online via Prolific Academic.
+One participant whose response accuracy was less than 50\% across all experimental conditions was removed.
+Among the remaining 49 participants (\(\bar{x}\) \(\pm\) SD = 23.31 \(\pm\) 3.53 years; age range = 18 - 30 years), 27 were male and 22 were female.
+All participants were native speakers of German residing in Germany, and did not have any speech-language disorder, hearing loss, or neurological disorder (all self-reported).
+All participants received 6.20 Euro as monetary compensation for their participation.
+The experiment was approximately 40 minutes long.
+The German Society for Language Science ethics committee approved the study and participants provided an informed consent in accordance with the declaration of Helsinki.
 
 \hypertarget{stimuli}{%
 \subsection{Stimuli}\label{stimuli}}
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
+We used the same stimuli described in Section X.X.X in Chapter X.X.
+They consist of 360 German sentences spoken by a female native German speaker in an unaccented normal rate of speech.
+The sentences were recorded and digitized at 44.1 kHz with 32-bit linear encoding.
+For each of the 360 recorded sentences, speech signal was then divided into 1, 4, 6 and 8 frequency bands between 70 and 9000 Hz to create four different levels of speech degradation.
+Frequency boundaries were approximately logarithmically spaced, determined by cochlear-frequency position functions (Erb, 2014; Greenwood, 1990).
+Boundary frequencies for each noise-vocoding condition are given in Table X.X.
+
+All sentences consisted of pronoun, verb, determiner, and object (noun).
+We used 120 nouns to create three categories of sentences differing in the cloze probability of the target words (nouns) which mostly appeared as the final word of the sentence.
+Thus, we compared high, medium and low predictability sentences which were sentences with low, medium, and high cloze target words respectively.
+Their mean cloze probabilities of target words for low, medium and high predictability sentences were 0.022 \(\pm\) 0.027 (\(\bar{x}\) \(\pm\) SD; range = 0.00 - 0.09), 0.274 \(\pm\) 0.134 (\(\bar{x}\) \(\pm\) SD; range = 0.1 - 0.55), and 0.752 \(\pm\) 0.123 (\(\bar{x}\) \(\pm\) SD; range = 0.56 - 1.00) respectively.
+The distribution of cloze probability across the sentences are shown in Figure X.X.
+
+Each participant were presented with 40 high predictability, 40 medium predictability, and 40 low predictability sentences.
+Levels of speech degradation were also balanced across each predictability level, so that for each of the three predictability conditions (high, medium and low predictability), ten 1 channel, ten 4 channels, ten 6 channels, and ten 8 channels noise-vocoded sentences were presented, resulting in 12 experimental lists.
+The sentences in each list were pseudo-randomized so that no more than three sentences of same degradation and predictability condition appeared consecutively.
 
 \hypertarget{task-and-procedure}{%
 \subsection{Task and procedure}\label{task-and-procedure}}
 
-dfafadfadfa f
-dfadfa
-fdfafafdfafadfadfa f
-dfadfa
-fdfafaf
-dfafadfadfa f
-dfadfa
-fdfafaf
+Participants were asked to use headphones or earphones.
+A sample of vocoded speech not used in the practice trial and the main experiment was provided so that the participants could adjust the loudness to a preferred level of comfort at the beginning of the experiment.
+The participants were instructed to listen to the sentences and to type in the target word (noun) by using the keyboard.
+The time for typing in the response was not limited.
+They were also informed at the beginning of the experiment that some of the sentences would be `noisy' and not easy to understand, and in these cases, they were encouraged to guess what they might have heard.
+Eight practice trials with different levels of speech degradation were given to familiarize the participants with the task before presenting all 120 experimental trials with an inter-trial interval of 1000 ms.
 
 \hypertarget{analyses}{%
 \section{Analyses}\label{analyses}}
@@ -584,47 +850,233 @@ fdfafaf
 
 \minitoc
 
-\hypertarget{introduction-1}{%
-\section{Introduction}\label{introduction-1}}
+\hypertarget{background}{%
+\section{Background}\label{background}}
 
-\hypertarget{language-comprehension-and-sentence-context}{%
-\subsection{Language comprehension and sentence context}\label{language-comprehension-and-sentence-context}}
+In the previous chapter, we showed that semantic predictability facilitates comprehension of degraded speech.
+There was a significant difference in word recognition accuracies between low and high predictability sentences (i.e., contextual facilitation), when listeners were instructed to attend to the entire sentence including the context.
+In this chapter, we examine if semantic predictability facilitates comprehension of degraded speech in a graded manner; whether prediction is probabilistic, or if it is an all-or-none phenomenon.
+To do so, we determine if listeners' are able to decode the context, at all instances, when they are attending to the entire sentence.
+We also examine if such facilitatory effect is influenced or modulated by adaptation to degraded speech.
 
-\hypertarget{language-comprehension-under-reduced-quality-of-speech}{%
-\subsection{Language comprehension under reduced quality of speech}\label{language-comprehension-under-reduced-quality-of-speech}}
+\hypertarget{nature-of-predictability-probabilistic-or-all-or-none}{%
+\subsection{Nature of predictability: Probabilistic or all-or-none?}\label{nature-of-predictability-probabilistic-or-all-or-none}}
 
-\hypertarget{predictive-processing-and-language-comprehension-under-degraded-speech-1}{%
-\subsection{Predictive processing and language comprehension under degraded speech}\label{predictive-processing-and-language-comprehension-under-degraded-speech-1}}
+There are two thoughts, or debate about the nature of predictability effects.
+One line of studies argue that prediction is all-or-none and deterministic {[}\ldots CITE\ldots{]}.
+For example, in garden path phenomenon, a parser first tries to predict the simplistic structure of a sentence.
+If this parsing is disconfirmed by the bottom-up input then the parser backs off and restarts -- it reinterprets the context and predicts a new sentence structure.
+Therefore, according to XYZ, how a parser resolves garden path sentences is an evidence for all-or-none prediction.
+
+Humans use only one of many possible continuations in a sentence.
+XYZ argue that it is metabolically expensive to predict many parallel linguistic units when only most of them are going to be discarded.
+Therefore, evolution would not pick a language processing system that predicts multiple parallel linguistic units.
+Another line of studies show that predictions are probabilistic, or graded.
+\textcite{Nieuwland2018} showed in a large-scale replication study of \textcite{Delong2005} that the N400 amplitude at the sentence-final noun is directly proportional to its cloze probability across a range of high- and low-cloze words.
+\textcite{Heilbron2020} also showed that a probabilistic prediction model outperforms a constrained guessing model, suggesting that linguistic prediction is not limited to highly predictable sentence endings, but it operates broadly in a wide range of probable sentence endings.
+The studies mentioned above were either reading studies, or were conducted with clean speech.
+
+To our knowledge, only one study by \textcite{Strauss2013} has directly studied the nature of prediction in degraded speech comprehension.
+Severely degraded (4 channels noise vocoded), moderately degraded (8 channels noise vocoded), and clear (non-degraded) speech were presented to the participants.
+Target word predictability was varied by manipulating its expectancy (i.e., how expected the target word is given the verb) and typicality (i.e., co-occurrence of target word and the preceding verb).
+\textcite{Strauss2013} reported that at a moderate level of spectral degradation, N400 responses at strong-context, low-typical words and weak-context, low-typical words were largest.
+N400 responses at the latter two were not statistically different from each other.
+However, the N400 response was smallest at highly predictable (strong-context, high-typical) words.
+The authors interpreted these findings as a facilitatory effect of sentence predictability which might be limited to only highly predictable sentence endings at a moderate level of spectral degradation.
+Based on these findings, \textcite{Strauss2013} proposed an `expectancy searchlight model'.
+According to the expectancy searchlight model, listeners form `narrowed expectations' from a restricted semantic space when the sentence endings are highly predictable.
+For less predictable sentence endings, listeners cannot preactivate those less predictable sentence endings in an adverse listening condition.
+Therefore, the expectancy searchlight model of \textcite{Strauss2013} is in line with all-or-none prediction account.
+These theoretical accounts have not been further explored in degraded speech comprehension.
+However, it has been shown that listeners rely on context when speech is moderately degraded {[}CITE{]}.
+
+\hypertarget{predictability-effects-in-degraded-speech-comprehension}{%
+\subsection{Predictability effects in degraded speech comprehension}\label{predictability-effects-in-degraded-speech-comprehension}}
+
+When the bottom-up perceptual input is difficult to understand, listeners rely more on top-down predictions in adverse listening conditions like noisy environment with background noise {[}\ldots CITE\ldots{]}, reverberation {[}\ldots CITE\ldots{]}, and degraded speech \autocites[e.g.,][]{Sheldon2008a,Corps2020}.
+
+In their studies, Obleser and colleagues \autocite{Obleser2007,Obleser2010,Obleser2011}, used sentences of two levels of semantic predictability (high and low) and systematically degraded the speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies.
+They found that semantic predictability facilitated language comprehension at a moderate level of speech degradation (at 4 channels, or 8 channels noise vocoding).
+That is, participants relied on the sentence context when the speech signal was degraded but intelligible enough.
+Accuracy of word recognition was found to be higher for highly predictable target words than for lowly predictable target words at such moderate levels of speech degradation \autocite{Obleser2010}.
+For the extremes, i.e., when the speech signal was highly degraded or when it was clearly intelligible, the word recognition accuracy was similar across both levels of sentence predictability, meaning that predictability did not facilitate language comprehension.
+It can be safely concluded from these findings that at moderate levels of degradation, participants rely more on the top-down prediction generated by the sentence context and less on the bottom-up processing of unclear, less intelligible (but intelligible enough), and degraded speech signal \autocite{Obleser2014}.
+In other words, reliance on prediction results in higher word recognition accuracy for high-cloze probability target words than for low-cloze probability target words.
+In the case of a heavily degraded speech signal, participants may not be able to understand the sentence context and, therefore, they are unable to predict the target word; or their cognitive resources may already be occupied by decoding the signal, leaving little room for making predictions {[}\ldots CITE\ldots{} look Ryskin2021{]}.
+Thus, there is no differential effect of levels of sentence predictability.
+On the other extreme, when the speech is clear and intelligible (at the behavioral level, i.e., when the participants respond what the target word of the sentence is), participants recognize the intelligible target word across all levels of sentence predictability.
+Hence, no differential effect of levels of predictability of target word can be expected.
+
+In contrast to clear speech perception, listeners adapt to degrade speech and their performance has been shown to improve over the course of experiment {[}e.g., CITE{]}.
+Therefore, \emph{adaptation} has to be considered when we review and examine predictability effects on degraded speech.
 
 \hypertarget{adaptation-to-degraded-speech}{%
 \subsection{Adaptation to degraded speech}\label{adaptation-to-degraded-speech}}
 
-\hypertarget{measurement-of-language-comprehension-1}{%
-\subsection{Measurement of language comprehension}\label{measurement-of-language-comprehension-1}}
+Listeners quickly adapt to novel speech with artificial acoustic distortions \autocite[e.g.,][]{Dupoux1997}.
+Repeated exposure to degraded speech leads to improved comprehension over time \autocites[for a review,][]{Samuel2009,Guediche2014}.
+When the noise condition is constant throughout the experiment, listeners adapt to it and the performance (e.g., word recognition) improves with as little as 20 minutes of exposure \autocite[e.g.,][]{Rosen1999}.
+For example, \textcite[Experiment 1]{Davis2005} presented listeners with only 6 channels noise vocoded sentences and found an increase in the proportion of correctly reported words over the course of experiment.
+Similarly, \textcite{Erb2013} presented participants with only 4 channels noise vocoded sentences and reached a similar conclusion.
+In these experiments, a single noise condition (6 channels or 4 channels) was presented in one block.
+Therefore, from the participants' perspective, the next-trial speech degradation level was predictable.
+Additionally, target word predictability of the sentences were not varied by any measures.
+
+When multiple noise conditions are presented in a (pseudo-)randomized order within a block then a listener is uncertain about any upcoming trial's noise condition, i.e., if such multiple levels of degradation are due to presentation of multiple channels of noise vocoded speech, then the global channel context is unpredictable or uncertain.
+This can potentially influence perceptual adaptation.
+For instance, \textcite{Mattys2012} note the possibility of total absence of perceptual adaptation, when the characteristics of auditory signal change throughout an experiment.
+We also know from \textcite{Sommers1994} that trial-by-trial variability in the characteristics of distorted speech impairs word recognition \autocite[see also,][]{Dahan2006}.
+We thus speculated that if the noise vocoded speech varies from one trial to the next then the adaptation to noise in this scenario might be different from the earlier case in which the noise condition is constant throughout the experiment.
+Perceptual adaptation, however, is not limited to trial-by-trial variability of stimulus property.
+Listeners can adapt to auditory signal at different time courses and time scales \autocites{Atienza2002}[see also,][]{Whitmire2016}.
+In addition to differences in intrinsic trial-by-trial variability and resulting short timescale trial-by-trial adaptation in two channel contexts, the global differences in the presentation of vocoded speech can result in a difference in the general adaptation at a longer timescale between predictable and unpredictable channel contexts.
+
+There is a limited number of studies that has looked at how next-trial noise-uncertainty and global context of speech property influence adaptation.
+For example, words were presented at +3 dB SNR and +10 dB SNR in a word recognition task in a pseudorandom order \autocite{Vaden2013}.
+The authors wanted to minimize the certainty about the noise conditions in the block.
+The same group of authors \autocite{Vaden2015a,Vaden2015b,Eckert2016} proposed that an adaptive control system (cingulo opercular circuit) might be involved to optimize task performance when listeners are uncertain about upcoming trial.
+However, we cannot make a firm conclusion about perceptual adaptation \emph{per se} from their studies as they do not report the change in performance over the course of experiment.
+Similarly, Obleser and colleagues \autocite{Obleser2007,Obleser2011,Hartwigsen2015} also presented listeners with noise vocoded sentences (ranging from 2 to 32 channels of noise vocoding) in a pseudo-randomized order but did not report presence or absence of perceptual adaptation to noise vocoded speech.
+In the abovementioned studies, the authors did not compare participants' task performance in the blocked design against the presentation in a pseudorandomized block of different noise conditions to make an inference about general adaptation to degraded speech at a longer timescale.
+To examine the influence of uncertainty about next trial speech features and the global context of speech features on perceptual adaptation, we therefore compared language comprehension with a trial-by-trial variation of sentence predictability and speech degradation either in blocks, in which the noise vocoded channels were blocked, or in a randomized order.
 
 \hypertarget{materials-and-methods-2}{%
-\section{Materials and methods}\label{materials-and-methods-2}}
+\section{Materials and Methods}\label{materials-and-methods-2}}
 
 \hypertarget{participants-2}{%
 \subsection{Participants}\label{participants-2}}
 
+We recruited two groups of participants via Prolific Academic and assigned them to one of the two groups:
+\emph{unpredictable channel context} (n=48; \(\bar{x}\) \(\pm\) SD = 24.44 \(\pm\) 3.5 years; age range = 18-31 years; 16 females) and \emph{predictable channel context} (n=50; \(\pm\) SD = 23.6 \(\pm\) 3.2 years; age range = 18-30 years; 14 females).
+All participants were native speakers of German residing in Germany.
+Exclusion criteria for participating in this study were self-reported hearing disorder, speech-language disorder, or any neurological disorder.
+All participants received monetary compensation for their participation.
+The study was approved by Deutsche Gesellschaft für Sprachwissenschaft (DGfS) Ethics Committee, and the participants provided consent in accordance with the Declaration of Helsinki.
+
 \hypertarget{stimuli-2}{%
 \subsection{Stimuli}\label{stimuli-2}}
 
-\hypertarget{task-and-procedure-2}{%
-\subsection{Task and procedure}\label{task-and-procedure-2}}
+We used the same stimuli described in Section X.X.X in Chapter X.X.
+The stimuli were digital recordings of 360 German sentences spoken by a female native speaker of German in a normal rate of speech.
+All sentences were in present tense consisting of pronoun, verb, determiner, and object (noun) in the Subject-Verb-Object form.
+We used 120 nouns to create three categorizes of sentences -- high predictability sentences (HP sentencs), medium predictability sentences (MP sentences) and low predictability sentences (LP sentences) -- that differed in cloze probability of sentence final target words.
+(See Appendix A for examples.)
+Their mean cloze probabilities were 0.022 \(\pm\) 0.027 (\(\bar{x}\) \(\pm\) SD; range = 0.00 - 0.09) for LP sentences, 0.274 \(\pm\) 0.134 (\(\bar{x}\) \(\pm\) SD; range = 0.1 - 0.55) for MP sentences, and 0.752 \(\pm\) 0.123 (\(\bar{x}\) \(\pm\) SD; range = 0.56 - 1.00) for HP sentences.
+The distribution of cloze probability across LP, MP and HP sentences are shown in Figure X.X.
+
+In the unpredictable channel context, each participant was presented with 120 unique sentences: 40 HP, 40 MP and 40 LP sentences. Channel condition was also balanced across each sentence type, i.e., in each of HP, MP, and LP sentences, ten sentences passed through each noise vocoding channels -- 1, 4, 6, and 8 -- were presented.
+This resulted into 12 experimental lists.
+The sentences in each list were pseudo-randomized, that is, not more than 3 sentences of same noise condition (i.e., same noise vocoding channel), or same predictability condition appeared consecutively.
+This randomization confirmed the uncertainty of next-trial speech quality (or degradation) in the global context of the experiment.
+
+The same set of stimuli and experimental lists were used in the predictable channel context.
+Each participant was presented with 120 unique sentences blocked by channel conditions, i.e., blocked by noise vocoding channels.
+There were four blocks of stimuli.
+Thirty sentences were presented in each of the four blocks.
+In the first block, all sentences were 8 channels noise vocoded, followed by blocks of 6 channels, 4 channels, and 1 channel noise vocoded speech consecutively \autocite{Sheldon2008a}.
+Within each block, 10 HP, 10 MP and 10 LP sentences were presented.
+All the sentences were pseudo-randomized so that not more than three sentences of the same predictability condition appeared consecutively in each block.
+This ascertained there was a certainty of next-trial speech quality (within each block) and an uncertianty of next-trial sentence predictability across all four blocks.
+
+\hypertarget{procedure}{%
+\subsection{Procedure}\label{procedure}}
+
+Participants were asked to use headphones or earphones.
+A prompt to adjust loudness was displayed at the beginning of the experiment: A noise vocoded sound not used in the main experiment was presented, and participants were asked to adjust the loudness at their level of comfort.
+One spoken sentence was presented in each trial.
+Eight practice trials were presented before presenting 120 experimental trials.
+They were asked to enter what they had heard (i.e., to type in the entire sentence) \emph{via} keyboard.
+Guessing was encouraged.
+The response was not timed.
+The experiment was about 40 minutes long.
 
 \hypertarget{analyses-2}{%
 \section{Analyses}\label{analyses-2}}
 
+In the sentences used in our experiment, verbs evoke predictability of the sentence-final noun.
+Therefore, the effect of predictability (evoked by the verb) on language comprehension can be rightfully measured if we consider only those trials in which participants identify the verbs correctly.
+Verb-correct trials were considered as the sentence in which participants realized the context independent of whether they correctly understood the sentence final target noun.
+Morphological inflections and typos were considered as correct.
+We first filtered out those trials in which verbs were not identified correctly, i.e., trials with incorrect verbs.
+Therefore, we included 2469 out of 5760 trials in unpredictable channel context and 2374 out of 6000 trials in predictable channel context from the analyses.
+The 1 channel noise vocoding condition was dropped from the analyses as there were no correct responses in any of the trials in this condition.
+
+We preprocessed and analysed data in R-Studio (Version 3.6.1; R Core Team, 2019) following the procedure described in Chapter 4.4.4.
+Response accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lme4 \autocite{Bates2015} and lmerTest \autocite{Kuznetsova2017} packages.
+Binary responses (correct/incorrect) for all participants in both groups (predictable channel context and unpredictable channel context) were fit with a binomial logistic mixed-effects model.
+Noise condition (categorical; 4, 6, and 8 channels noise vocoding), target word predictability (categorical; HP, MP, LP), global channel context (categorical; predictable channel context and unpredictable channel context), and the interaction of noise condition and target word predictability were included in the fixed effects.
+
+We first fitted a model with maximal random effects structure that included random intercepts for each participant and item \autocite{Barr2013}.
+Both, by-participant and by-item random slopes were included for noise condition, target word predictability and their interaction.
+To find the optimal model for the data, non-significant higher-order interactions were excluded from the fixed-effects structure (and from the random-effects structure) in a stepwise manner.
+Model selection was based on Akaike Information Criterion (AIC) \autocite{Grueber2011,Richards2011} unless otherwise stated.
+Random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization.
+This gave a more parsimonious model \autocite{Bates2015a}.
+Such a model was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameter, and iii) both item- and participant-related correlation parameters.
+The best fitting model among the parsimonious and extended models, based on AIC, was then selected as the optimal model for our data.
+
+We applied treatment contrast for noise condition (8 channels as a baseline; factor levels: 8 channels, 4 channels, 6 channels) and sliding difference contrast for target word predictability (factor levels: MP, LP, HP) and channel context (factor levels: unpredictable, predictable).
+The results from the optimal model are shown in Table X.X.X, and are reported below in the Results section.
+
 \hypertarget{results-2}{%
 \section{Results}\label{results-2}}
+
+In this experiment, we tested i) whether predictability facilitates language comprehension only at a moderate level of spectral degradation, and ii) whether adaptation to degraded speech influences language comprehension.
+We observed that the mean response accuracy increased with an increase in number of noise vocoding channels from 4 to 6 to 8, and with an increase in target word predictability from low to medium to high (see Figure X.X).
+This trend is consistent across both the channel contexts; Figure X.X and Figure Y.Y show this trend for predictable channel context (i.e., blocked design) and unpredictable channel context (i.e., randomized design) respectively.
+Mean accuracies across all conditions are given in Table X and Y, and Figure X.X.
+
+These observations are confirmed by the results of statistical analyses.
+We found a significant main effect of channel condition indicating that the response accuracy was higher in the 8 channels than in the 4 channels (\(\beta\) = -2.87, SE = 0.22, \emph{z} (6917) = -13.1, \emph{p} \textless.001) and 6 channels (\(\beta\) = -0.66, SE = 0.19, \emph{z} (6917) = -3.42, \emph{p} \textless{} .001).
+There was a significant main effect of target word predictability suggesting that response accuracy was lower at low predictability sentences than both high predictability sentences (\(\beta\) = 2.18, SE = 0.3, \emph{z} (6917) = 7.2, \emph{p} \textless{} .001) and medium predictability sentences (\(\beta\) = -0.52, SE = 0.27, \emph{z} (6917) = -1.97, \emph{p} = .049).
+We also found a significant interaction between channel condition and target word predictability (\(\beta\) = -0.71, SE = 0.29, \emph{z} (6917) = -2.44, \emph{p} = .015).
+
+We performed a subsequent subgroup analyses on each noise channel condition.
+They revealed that the interaction was driven by the effect of predictability at 4 channels:
+The accuracy at high predictability sentences was higher than medium predictability sentences (\(\beta\) = 1.14, SE = 0.37, \emph{z} (1608) = 3.1, p \textless{} .001),
+which in turn was also higher than low predictability sentences (\(\beta\) = 1, SE = 0.24, \emph{z} (1608) = 4.2, p \textless{} .001).
+There was no significant difference in response accuracy between low predictability and high predictability sentences at both 6 channels (\(\beta\) = 0.33, SE = 0.32, \emph{z} (2590) = 1.04, \emph{p} = .3) and 8 channels (\(\beta\) = -0.014, SE = 0. 32, \emph{z} (2719) = -0.04, \emph{p} = .97).
+However, response accuracy was higher in high predictability than in medium predictability sentences at both 6 channels (\(\beta\) = 1.83, SE = 0.65, \emph{z} (2590) = 2.83, p \textless{} .005) and 8 channels (\(\beta\) = 1.54, SE = 0.61, \emph{z} (2719) = 2.54, \emph{p} = .011).
+
+We also found a significant main effect of global channel context which showed that the response accuracy was higher in predictable channel context than in unpredictable channel context (\(\beta\) = -0.27, SE = 0.14, \emph{z} (6917) = -2.02, \emph{p} = .04).
+
+Further, to test the effect of practice on adaptation to degraded speech, we added trial number as a fixed effect in the maximal model.
+Note that there were 30 trials in each block in the predictable channel context (i.e., blocked design).
+For comparability, we divided unpredictable channel context (i.e., randomized design) into four blocks.
+Then following the same procedure as above, we obtained an optimal model.
+We did not find a significant main effect of trial number indicating that the response accuracy did not change throughout the experiment (\(\beta\) = -0.0004, SE = 0.01, \emph{z} (6917) = -0.05, \emph{p} = 0.97).
+It remained constant within each block in the predictable channel context (\(\beta\) = -0.02, SE = 0.01, \emph{z} (3291) = -1.43, \emph{p} = 0.15) as well as in the unpredictable channel context (\(\beta\) = 0.01 SE = 0.01, \emph{z} (3291) = 1.05, \emph{p} = 0.29).
 
 \hypertarget{discussion-1}{%
 \section{Discussion}\label{discussion-1}}
 
+The present study had three goals: i) to examine if previously reported facilitatory effect of semantic predictability is restricted to only highly predictable sentence endings;
+ii) to assess the role of perceptual adaptation on the facilitation of language comprehension by sentence predictability; and
+iii) to use and establish a sensitive metric to measure language comprehension that takes into account whether listeners benefited from the semantic context of the sentence they have listened to.
+
+Results of our study showed the expected interaction between predictability and degraded speech, that is, language comprehension was better for high-cloze than for low-cloze target words when the speech signal was moderately degraded by noise-vocoding through 4 channels, while the effect of predictability was absent when speech was not intelligible (noise-vocoding through 1 channel).
+These results are fully in line with \textcite{Obleser2010};
+we partly included identical sentences from their study in the present study (see Appendix A).
+Importantly, in contrast to their study, we had also created sentences with medium-cloze target words (which were intermediate between high-cloze and low-cloze target words) and found that the effect of predictability was also significant when comparing sentences with medium-cloze target words against sentences with low-cloze target words at 4 channels noise-vocoding condition.
+Recognition of a target word was dependent on its level of predictability (measured by cloze probability), and correct recognition was not just limited to high-cloze target words.
+These significant differences in response accuracy between medium-cloze and low-cloze target words, and between medium-cloze and high-cloze target words at noise-vocoding through 4 channels show that the sentence-final word recognition is facilitated by semantic predictability in a graded manner.
+This is in line with the findings from the ERP literature where it has been observed that semantic predictability, in terms of cloze probability of target word of a sentence, modulates semantic processing, indexed by N400, in a graded manner \autocite{Delong2005,Wlotko2012,Nieuwland2018}.
+
+The interpretation of the observed graded effect of semantic predictability at the moderate level of spectral degradation (i.e., at noise-vocoding through 4 channels) provides a novel insight into how listeners form prediction when the bottom-up input is compromised.
+That is, in an adverse listening condition, listeners rely more on top-down semantic prediction than on bottom-up acoustic-phonetic cues.
+However, such a reliance on top-down prediction is not an all-or-none phenomenon; instead, listeners form a probabilistic prediction of the target word.
+The effect of target word predictability on comprehension is not sharply focused solely on high-cloze target words like a `searchlight'.
+But rather it is spread across a wide range including low-cloze and medium-cloze target words. As the cloze probability of the target words decreases from high to low, the focus of the searchlight becomes less precise.
+
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
+
+In conclusion, this study provides novel insights into predictive language processing when bottom-up signal quality is compromised and uncertain:
+We show that while processing moderately degraded speech, listeners form top-down predictions across a wide range of semantic space that is not restricted within highly predictable sentence endings.
+In contrast to the narrowed expectation view, comprehension of words ranging from low- to high-cloze probability, including medium-cloze probability, is facilitated in a graded manner while listening to a moderately degraded speech.
+We also found better speech comprehension when individuals were likely to have adapted to the noise condition in the blocked design compared to the randomized design.
+We did not find learning effects at the trial-to-trial level of perceptual adaption -- it may be that the adaptation was hampered by variation in higher-level semantic features (i.e., target word predictability).
+We also argue that for the examination of semantic predictability effects during language comprehension, the analyses of response accuracy should be based on the trials in which context evoking words are correctly identified in the first place to make sure that listeners make use of the contextual cues instead of analyzing general word recognition scores.
 
 --\textgreater{}
 
@@ -633,8 +1085,8 @@ fdfafaf
 
 \minitoc
 
-\hypertarget{introduction-2}{%
-\section{Introduction}\label{introduction-2}}
+\hypertarget{introduction-1}{%
+\section{Introduction}\label{introduction-1}}
 
 \hypertarget{comprehension-of-degraded-speech-1}{%
 \subsection{Comprehension of degraded speech}\label{comprehension-of-degraded-speech-1}}
@@ -645,8 +1097,8 @@ fdfafaf
 \hypertarget{predictive-processing-degraded-speech-and-different-rates-of-presentation-of-peech}{%
 \subsection{Predictive processing, degraded speech, and different rates of presentation of peech}\label{predictive-processing-degraded-speech-and-different-rates-of-presentation-of-peech}}
 
-\hypertarget{current-study-1}{%
-\subsection{Current study}\label{current-study-1}}
+\hypertarget{current-study}{%
+\subsection{Current study}\label{current-study}}
 
 \hypertarget{materials-and-methods-3}{%
 \section{Materials and methods}\label{materials-and-methods-3}}
@@ -657,8 +1109,8 @@ fdfafaf
 \hypertarget{stimuli-3}{%
 \subsection{Stimuli}\label{stimuli-3}}
 
-\hypertarget{task-and-procedure-3}{%
-\subsection{Task and procedure}\label{task-and-procedure-3}}
+\hypertarget{task-and-procedure-2}{%
+\subsection{Task and procedure}\label{task-and-procedure-2}}
 
 \hypertarget{analyses-3}{%
 \section{Analyses}\label{analyses-3}}
@@ -677,13 +1129,6 @@ fdfafaf
 
 \minitoc
 
---\textgreater{}
-
-\hypertarget{experiment-5-neural-markers-of-age-differences-in-reliance-on-top-down-prediction-in-comprehension-of-degraded-speech}{%
-\chapter{Experiment 5: Neural markers of age differences in reliance on top-down prediction in comprehension of degraded speech}\label{experiment-5-neural-markers-of-age-differences-in-reliance-on-top-down-prediction-in-comprehension-of-degraded-speech}}
-
-\minitoc
-
 \hypertarget{general-discussion}{%
 \chapter{General discussion}\label{general-discussion}}
 
@@ -694,6 +1139,12 @@ fdfafaf
 \section{A new framework on the interaction between top-down predictive and bottom-up auditory processes in perception and comprehension of degraded speech}\label{a-new-framework-on-the-interaction-between-top-down-predictive-and-bottom-up-auditory-processes-in-perception-and-comprehension-of-degraded-speech}}
 
 \minitoc 
+
+\begin{savequote}
+A conclusion is the place where you got tired of thining.
+\qauthor{--- Martin H. Fischer \autocite{Darwin1859}}\end{savequote}
+
+
 
 \hypertarget{theoretical-and-practical-implications}{%
 \chapter{Theoretical and practical implications}\label{theoretical-and-practical-implications}}

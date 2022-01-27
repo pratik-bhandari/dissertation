@@ -42,7 +42,7 @@ The intercept $\alpha$, and the regression coefficients $\beta_1, \beta_2,$ and 
 Analysis of Variance (ANOVA) is a special case of logistic regression (Chatterjee in Jaeger's thesis page 40; Shravan's book and blog) that is one of the most common statistical tools in psychology and psycholinguistics [...CITE...].
 These linear regressions as shown above (Equation \ref{eq:linear_regression}) and ANOVAS however, are not well suited for categorical data like response to multiple choice questions or yes/no questions, confidence ratings, etc.
 For example, in all the experiments in the current thesis, the response variables are response accuracy, given binary correct/incorrect responses.
-Output of linear regression model ranges from $+\infty$ to $-\infty$ while accuracy (or probability) ranges fro, 0 to 1.
+Output of linear regression model ranges from $+\infty$ to $-\infty$ while accuracy (or probability) ranges from, 0 to 1.
 Additionally, simple regression models do not take into account the variability across individual participants and items.
 These problems in psychological sciences and psycholinguistics research has been long pointed out as early as 19XX [ ...CITE language as a fixed effects fallacy... ], and later [ ... ].
 They are addressed to some extent by binomial logistic regression, and for our purpose by incorporating mixed effects model to binomial logistic regression.

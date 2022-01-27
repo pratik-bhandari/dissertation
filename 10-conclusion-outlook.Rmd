@@ -9,6 +9,11 @@ bib-humanities: true
 documentclass: book
 #bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
 ---
+```{block type='savequote', include=knitr::is_latex_output(), quote_author='(ref:fischer-quote)'}
+A conclusion is the place where you got tired of thining.
+
+```
+(ref:fischer-quote) --- Martin H. Fischer [@Darwin1859]
 
 <!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
 <!-- \chaptermark{Citations and cross-refs} -->
