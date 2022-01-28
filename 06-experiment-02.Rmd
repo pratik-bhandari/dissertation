@@ -119,7 +119,7 @@ Similarly, Obleser and colleagues [@Obleser2007; @Obleser2011; @Hartwigsen2015] 
 In the abovementioned studies, the authors did not compare participants' task performance in the blocked design against the presentation in a pseudorandomized block of different noise conditions to make an inference about general adaptation to degraded speech at a longer timescale.
 To examine the influence of uncertainty about next trial speech features and the global context of speech features on perceptual adaptation, we therefore compared language comprehension with a trial-by-trial variation of sentence predictability and speech degradation either in blocks, in which the noise vocoded channels were blocked, or in a randomized order.
 
-## Materials and Methods
+## Methods
 
 ### Participants
 
@@ -130,7 +130,7 @@ Exclusion criteria for participating in this study were self-reported hearing di
 All participants received monetary compensation for their participation.
 The study was approved by Deutsche Gesellschaft für Sprachwissenschaft (DGfS) Ethics Committee, and the participants provided consent in accordance with the Declaration of Helsinki.
 
-### Stimuli
+### Materials
 
 We used the same stimuli described in Section X.X.X in Chapter X.X.
 The stimuli were digital recordings of 360 German sentences spoken by a female native speaker of German in a normal rate of speech.
@@ -178,7 +178,7 @@ The 1 channel noise vocoding condition was dropped from the analyses as there we
 
 We preprocessed and analysed data in R-Studio (Version 3.6.1; R Core Team, 2019) following the procedure described in [Chapter 4.4.4]{#analysis-main}.
 Response accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lme4 [@Bates2015] and lmerTest [@Kuznetsova2017] packages.
-Binary responses (correct/incorrect) for all participants in both groups (predictable channel context and unpredictable channel context) were fit with a [binomial logistic mixed-effects model]{#binomial-logistic-mixed-effects-model}.
+Binary responses (correct/incorrect) for all participants in both groups (predictable channel context and unpredictable channel context) were fit with a [binomial logistic mixed-effects model]{#binomial-logistic-mixed-effects-model}[@Jaeger2006; @Jaeger2008].
 Noise condition (categorical; 4, 6, and 8 channels noise vocoding), target word predictability (categorical; HP, MP, LP), global channel context (categorical; predictable channel context and unpredictable channel context), and the interaction of noise condition and target word predictability were included in the fixed effects.
 
 We first fitted a model with maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
@@ -243,6 +243,7 @@ The effect of target word predictability on comprehension is not sharply focused
 But rather it is spread across a wide range including low-cloze and medium-cloze target words. As the cloze probability of the target words decreases from high to low, the focus of the searchlight becomes less precise.
 
 ## Conclusion
+
 In conclusion, this study provides novel insights into predictive language processing when bottom-up signal quality is compromised and uncertain:
 We show that while processing moderately degraded speech, listeners form top-down predictions across a wide range of semantic space that is not restricted within highly predictable sentence endings.
 In contrast to the narrowed expectation view, comprehension of words ranging from low- to high-cloze probability, including medium-cloze probability, is facilitated in a graded manner while listening to a moderately degraded speech.
