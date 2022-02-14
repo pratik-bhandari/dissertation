@@ -807,7 +807,7 @@ We applied treatment contrast for number of channels (8 channels as a baseline) 
 We report the results from the optimal model, and are shown in Table X.X.X.
 
 \hypertarget{results-and-discussion}{%
-\section{Results and discussion}\label{results-and-discussion}}
+\section{Results and Discussion}\label{results-and-discussion}}
 
 Mean response accuracies for all experimental conditions are shown in Table X.X.X and Figure X.X.X.
 It shows that accuracy increases with an increase in the number of noise vocoding channels, i.e., with the decrease in speech degradation.
@@ -856,7 +856,7 @@ We only considered the final words of the sentences (i.e., the target words) to 
 Like Experiment 1A, the results from the optimal model are reported.
 
 \hypertarget{results-and-discussion-1}{%
-\section{Results and discussion}\label{results-and-discussion-1}}
+\section{Results and Discussion}\label{results-and-discussion-1}}
 
 Mean response accuracy for different conditions are shown in Table X.X.X. and are presented in Figure X.X.X.
 It shows that the accuracy increased with an increase in both the number of noise vocoding channels, and the target word predictability.
@@ -880,7 +880,7 @@ The model revealed that the critical interaction between experimental manipulati
 Together, these findings suggest that the change in task instruction, which draws attention either to the entire sentence or only to the final word, is critical for making use of the context information under degraded speech.
 
 \hypertarget{general-discussion}{%
-\section{General discussion}\label{general-discussion}}
+\section{General Discussion}\label{general-discussion}}
 
 The main goals of the present study were to investigate whether online semantic predictions are formed in comprehension of degraded speech when task instructions encourage attention to the processing of the context information, or only to the critical target word.
 The results of two experiments revealed that attentional processes clearly modulate the use of context information for predicting sentence endings when the speech signal is moderately degraded.
@@ -1080,7 +1080,7 @@ Therefore, the effect of predictability (evoked by the verb) on language compreh
 Verb-correct trials were considered as the sentence in which participants realized the context independent of whether they correctly understood the sentence final target noun.
 Morphological inflections and typos were considered as correct.
 We first filtered out those trials in which verbs were not identified correctly, i.e., trials with incorrect verbs.
-Therefore, we included 2469 out of 5760 trials in unpredictable channel context and 2374 out of 6000 trials in predictable channel context from the analyses.
+Therefore, we excluded 2469 out of 5760 trials in unpredictable channel context and 2374 out of 6000 trials in predictable channel context from the analyses.
 The 1 channel noise vocoding condition was dropped from the analyses as there were no correct responses in any of the trials in this condition.
 
 We preprocessed and analysed data in R-Studio (Version 3.6.1; R Core Team, 2019) following the procedure described in Chapter 4.4.4.
@@ -1170,11 +1170,47 @@ We also argue that for the examination of semantic predictability effects during
 \hypertarget{introduction-1}{%
 \section{Introduction}\label{introduction-1}}
 
+Language comprehension depends on the features and quality of speech signal
+which is hampered in adverse listening conditions when speech is distorted, for example, due to change in rate of speech, and spectral degradation of speech.
+Studies have shown that individuals can benefit from sentence context to compensate for distorted speech, at least when the level of speech degradation is at an intermediate level \autocites[e.g.,][]{Bhandari2021,Obleser2010}, and at varying speech rate \autocites{Aydelott2004}[cf.][]{Goy2013}.
+The goal of the present study is to examine if sentence context can provide benefit when speech that is degraded at an intermediate level is presented at different rates (from slow, normal, and fast); speech in day-to-day conversation is distorted and presents itself at varying rate \autocite[e.g.,][]{Krause2004}.
+In the following, we first summarize the impact of speech degradation in language comprehension, and its interaction with sentence context, and then the influence of speech rate on language comprehension, and its interaction with sentence context.
+
 \hypertarget{comprehension-of-degraded-speech-1}{%
 \subsection{Comprehension of degraded speech}\label{comprehension-of-degraded-speech-1}}
 
-\hypertarget{perception-of-degraded-speech-presented-at-different-rates}{%
-\subsection{Perception of (degraded) speech presented at different rates}\label{perception-of-degraded-speech-presented-at-different-rates}}
+There are a number of studies showing that speech intelligibility and language comprehension is hampered when the bottom-up input is less intelligible due to spectral degradation of the speech signal \autocite{Shannon1995,Davis2005}.
+These studies have used noise vocoding as a methods of speech degradation. Here the speech signal is first divided into a specific number of frequency bands that corresponds to the number of vocoder channels.
+The amplitude envelope within each frequency band is extracted, and the spectral information within it is replaced by noise.
+The resulting vocoded speech contains temporal cues of the original speech, but it is difficult to understand -- the lesser the number of vocoder channels, the lesser is the intelligibility.
+More attentional resources are required to process and comprehend such degraded speech as compared to clean speech \autocites[e.g.,][]{Eckert2016,Wild2012}.
+
+Listeners rely more on top-down predictions when the speech signal is less intelligible due to spectral degradation.
+Hence, they use the context information of the sentence to narrow down their predictions to a smaller set of semantic categories or words \autocites{Strauss2013}[see also,][]{Corps2020}.
+However, it is important that the context itself is `intelligible enough' which is the case when the speech is only moderately degraded.
+For example, Obleser and colleagues \autocite{Obleser2007,Obleser2010,Obleser2011} found that at moderate levels of speech degradation, target words (the sentence final words) were better recognized when it was predictable from the sentence context than when it was unpredictable.
+When the speech signal is clear or only very mildly degraded, there is typically no effect of predictability on comprehension, as even unpredictable words can be understood well in this condition (intelligibility is at ceiling).
+In contrast, when the speech signal is extremely degraded (for instance at 1 channel noise vocoding), no facilitation from the context can be observed as the context itself cannot be understood and hence it cannot help with comprehension \autocite{Bhandari2021,Obleser2007,Obleser2010,Obleser2011}.
+
+These studies also found that semantic predictability facilitated comprehension of degraded speech at a moderate level of spectral degradation, i.e., at 4 channels noise vocoding.
+At the moderate degradation level, most speech is intelligible enough for listeners to understand and form meaning representation of the context to generate predictions about upcoming word in the sentence.
+In sum, xxxx
+
+\hypertarget{comprehension-of-fast-and-slow-speech}{%
+\subsection{Comprehension of fast and slow speech}\label{comprehension-of-fast-and-slow-speech}}
+
+A change in speech rate manipulates the speech signal without producing any spectral degradation.
+Compared to normal and slow speech, understanding fast speech is more effortful (e.g., Müller et al., 2019; Winn \& Teece, 2021; see also, Simantiraki \& Cooke, 2019, 2020), with reduced intelligibility and comprehension (Fairbanks \& Kodman Jr., 1957; Garvey, 1953; Goldstein, 1941; Konkle et al., 1977; Liu \& Zeng, 2006; Peelle \& Wingfield, 2005; Schlueter et al., 2014).
+The comprehension deficit in fast speech has been linked to speed of processing (Gordon-Salant \& Fitzgibbons, 1995; Tun, 1998; see also, Rönnberg et al., 2013).
+Decoding speech signal and processing language does not occur in vacuum; they take place within the limited cognitive resources and memory that we have (Riggs et al., 1993).
+When the speech rate is fast, the flow of information is also fast. There is a limited time available to decode and understand the information in the fast speech.
+Decoding and identification of incoming information in the fast speech puts a high demand on available cognitive resources (e.g., Rodero, 2016).
+Processing rapidly flowing information exhausts the cognitive resource that is required for language processing (Gordon-Salant \& Fitzgibbons, 2004; Janse, 2009).
+Hence, intelligibility and comprehension of fast speech is reduced compared to normal speech.
+
+In contrast, the evidence on the effect of decrease in speech rate on intelligibility and language comprehension is mixed.
+\textcite{Shobha2009} showed that expansion of speech signal benefits word recognition in noise at different signal to noise ratio (SNR) ranging from 6dB SNR to 12 dB SNR.
+In a sample of younger adults and middle aged adults, slowing down the speech rate facilitated word recognition when listeners had to segregate the speech from background talkers, i.e., in speech masking \autocite{Brungart2007}.
 
 \hypertarget{predictive-processing-degraded-speech-and-different-rates-of-presentation-of-peech}{%
 \subsection{Predictive processing, degraded speech, and different rates of presentation of peech}\label{predictive-processing-degraded-speech-and-different-rates-of-presentation-of-peech}}
@@ -1182,26 +1218,125 @@ We also argue that for the examination of semantic predictability effects during
 \hypertarget{current-study}{%
 \subsection{Current study}\label{current-study}}
 
-\hypertarget{materials-and-methods}{%
-\section{Materials and methods}\label{materials-and-methods}}
+\hypertarget{experiment-3a}{%
+\section{Experiment 3A}\label{experiment-3a}}
+
+\hypertarget{methods-3}{%
+\section{Methods}\label{methods-3}}
 
 \hypertarget{participants-2}{%
 \subsection{Participants}\label{participants-2}}
 
-\hypertarget{stimuli-1}{%
-\subsection{Stimuli}\label{stimuli-1}}
+We recruited one group of participant (n=101; \(\bar{x}\) \(\pm\) SD = 23.14 \(\pm\) XX years; age range = 18-31 years; 66 females, 1 preferred not to say) online via Prolific Academic.
+All participants were native speakers of German residing in Germany.
+Exclusion criteria for participating in this study were self-reported hearing disorder, speech-language disorder, or any neurological disorder.
+All participants received monetary compensation for their participation.
+The German Society for Language Science ethics committee approved the study and participants provided an informed consent in accordance with the declaration of Helsinki.
 
-\hypertarget{task-and-procedure}{%
-\subsection{Task and procedure}\label{task-and-procedure}}
+\hypertarget{materials-1}{%
+\subsection{Materials}\label{materials-1}}
+
+We used the stimuli created by the method described in Section X.X.X in Chapter X.X which consisted of 360 German sentences spoken by a female native German speaker in an unaccented normal rate of speech.
+Two categories of sentences that differed in the cloze probability of the target words (nouns) appearing the final word of the sentence were created from 120 nouns.
+Thus, we compared high and low predictability sentences (abbreviated as HP and LP henceforth) which were sentences with low and high cloze target words respectively.
+This gave 240 sentences that consisted of pronoun, verb, determiner, and object (noun).
+The mean cloze probabilities of target words for low and high predictability sentences were 0.022 \(\pm\) 0.027 (\(\bar{x}\) \(\pm\) SD; range = 0.00 - 0.09) and 0.752 \(\pm\) 0.123 (\(\bar{x}\) \(\pm\) SD; range = 0.56 - 1.00) respectively.
+
+These 240 sentences were passed compressed by a factor of 0.65 using PSOLA built-in in Praat to create fast and slow speech respectively.
+Speech degradation of all normal, slow and fast speech was achieved by noise vocoding through 4 channels.
+
+Each participant was presented with 120 unique sentences: 60 HP and 60 LP sentences.
+Speech rate was also balanced across each predictability level.
+The participants received 30 sentences with normal speed and 30 with fast speed in each of the predictability conditions resulting into 4 experimental lists.
+The sentences in each list were pseudo-randomized, that is, not more than 3 sentences of same speed, or same predictability condition appeared consecutively.
+
+\hypertarget{procedure-3}{%
+\subsection{Procedure}\label{procedure-3}}
+
+Participants were asked to use headphones or earphones.
+A sample of noise vocoded speech not used in the practice trial and the main experiment was provided so that the participants could adjust the loudness to a preferred level of comfort at the beginning of the experiment.
+The participants were instructed to listen to the sentences and to type in the entire sentence by using the keyboard.
+The time for typing in the response was not limited.
+They were also informed at the beginning of the experiment that some of the sentences would be `noisy' and not easy to understand, and in these cases, they were encouraged to guess what they might have heard.
+They were not informed about the speed of speech being slow/fast or normal.
+Eight practice trials with different levels of speech degradation were given to familiarize the participants with the task before presenting all 120 experimental trials with an inter-trial interval of 1000 ms.
 
 \hypertarget{analyses-3}{%
 \section{Analyses}\label{analyses-3}}
 
-\hypertarget{results-1}{%
-\section{Results}\label{results-1}}
+We have already conceded in the previous chapter X.X.X that ``the effect of predictability (evoked by the verb) on language comprehension can be rightfully measured if we consider only those trials in which participants identify the verbs correctly.''
+Therefore, we discarded the trials in which verbs were identified incorrectly -- XXXX out of XXXX trials.
 
-\hypertarget{discussion-1}{%
-\section{Discussion}\label{discussion-1}}
+We preprocessed and analysed data in R-Studio (Version 4.1.1; R Core Team, 2021) following the procedure described in Chapter 4.4.4.
+
+Response accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lme4 \autocite{Bates2015} and lmerTest \autocite{Kuznetsova2017} packages.
+Binary responses (correct/incorrect) for all participants were fit with a binomial logistic mixed-effects model\autocite{Jaeger2006,Jaeger2008}.
+Target word predictability (categorical; low and high), speech rate, or speed (categorical; xxx and xxx), and the interaction of predictability and speed were included in the fixed effects.
+
+We fitted a model with maximal random effects structure that included random intercepts for each participant and item \autocite{Barr2013}.
+Both, by-participant and by-item random slopes were included for target word predictability, speed and their interaction.
+
+We applied treatment contrast for target word predictability (XX as a baseline; factor levels: XX, XX) and speed (XXX as a baseline; factor levels: XX, XX).
+The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
+
+\hypertarget{results-and-discussion-2}{%
+\section{Results and Discussion}\label{results-and-discussion-2}}
+
+\hypertarget{experiment-3b}{%
+\section{Experiment 3B}\label{experiment-3b}}
+
+\hypertarget{methods-4}{%
+\section{Methods}\label{methods-4}}
+
+\hypertarget{participants-and-materials-1}{%
+\subsection{Participants and Materials}\label{participants-and-materials-1}}
+
+We recruited 48 participants (n=101; \(\pm\) SD = 23.6 \(\pm\) 3.2 years; age range = 18-30 years; 14 females) online via Prolific Academic.
+Same procedure as Experiment 3A was followed.
+
+Stimuli were created following the same procedure described in Experiment 3A, the difference being instead of fast speech, here we created slow speech.
+Slow speech was created by expanding the 240 sentences (120 HP and 120 LP sentences) by a factor of 1.35 using PSOLA built-in in Praat.
+All resulting slow speech recordings were then passed through 4 channels noise vocoding.
+
+We followed the same steps as Experiment 3A to balance speech rate and predictability conditions and to pseudo-randomize these experimental conditions.
+
+\hypertarget{procedure-4}{%
+\subsection{Procedure}\label{procedure-4}}
+
+Same procedure as Experiment 3A was followed.
+We asked participants to report the entire sentence typing in what they heard.
+Guessing was encouraged too.
+
+\hypertarget{analyses-4}{%
+\section{Analyses}\label{analyses-4}}
+
+We followed the same data analyses procedure as in Experiment 3A.
+Only the trials with verb-correct responses were considered in the analyses of accuracy of sentence-final target-words (i.e., nouns); 5495 out of 12120 trials were removed before the final analyses.
+
+Target word predictability (categorical; low and high), speech rate, or speed (categorical; normal and slow), and the interaction of predictability and speed were included in the fixed effects.
+Treatment contrast was applied to both target word predictability (LP as a baseline; factor levels: LP, HP) and speed (slow as a baseline; factor levels: slow, normal).
+The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
+
+\hypertarget{results-and-discussion-3}{%
+\section{Results and Discussion}\label{results-and-discussion-3}}
+
+Mean response accuracy for different conditions are shown in Table X.X.X. and are presented in Figure X.X.X.
+It shows that the accuracy increased with an increase in target word predictability from low to high.
+These observations are confirmed by the results of statistical analyses (Table X.X.X):
+We again found a main effect of number of noise vocoding channels such that response accuracy at 8 channels was higher than both 4 channels (\(\beta\) = -3.49, SE = .23, \emph{z} (4320) = -15.29, \emph{p} \textless{} .001), and 6 channels noise vocoding (\(\beta\) = -0.61, SE = .20, \emph{z} (4320) = -3.07, \emph{p} = .002).
+
+In contrast to Experiment 1A, there was also a main effect of target word predictability:
+Response accuracy in high predictability sentences was significantly higher than in low predictability sentences (\(\beta\) = 1.25, SE = .28, \emph{z} (4320) = 4.50, \emph{p} \textless{} .001).
+We also found a statistically significant interaction between speech degradation and target word predictability (\(\beta\) = -.95, SE = .30, \emph{z} (4320) = -3.14, \emph{p} = .002).
+Subsequent subgroup analyses of each channel condition showed that the interaction was driven by the difference in response accuracy between high predictability sentences and low predictability sentences at 8 channels (\(\beta\) = 1.42, SE = .62, \emph{z} (1440) = 2.30, \emph{p} = .02), and 6 channels noise vocoding conditions (\(\beta\) = 1.14, SE = .34, \emph{z} (1440) = 3.31, \emph{p} \textless{} .001);
+at 4 channels noise vocoding condition, the difference between high and low predictability sentences was not significant (\(\beta\) = .28, SE = .18, \emph{z} (1440) = 1.59, \emph{p} = .11).
+
+In contrast to Experiment 1A, these results indicate an effect of target word predictability, that is, response accuracy was higher when the target word predictability was high as compared to low.
+Also, the interaction between predictability and speech degradation, which was not observed in Experiment 1, showed that semantic predictability facilitated the comprehension of degraded speech already at moderate degradation levels (like, 6 and 8 noise vocoding channels).
+In line with the findings from Experiment !a, response accuracy was better with a higher number of channels.
+
+\hypertarget{general-discussion-1}{%
+\section{General Discussion}\label{general-discussion-1}}
 
 \hypertarget{conclusions-1}{%
 \section{Conclusions}\label{conclusions-1}}
@@ -1211,8 +1346,8 @@ We also argue that for the examination of semantic predictability effects during
 
 \minitoc
 
-\hypertarget{general-discussion-1}{%
-\chapter{General discussion}\label{general-discussion-1}}
+\hypertarget{general-discussion-2}{%
+\chapter{General discussion}\label{general-discussion-2}}
 
 \hypertarget{summary-of-the-experiments}{%
 \section{Summary of the experiments}\label{summary-of-the-experiments}}

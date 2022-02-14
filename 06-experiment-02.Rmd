@@ -173,7 +173,7 @@ Therefore, the effect of predictability (evoked by the verb) on language compreh
 Verb-correct trials were considered as the sentence in which participants realized the context independent of whether they correctly understood the sentence final target noun.
 Morphological inflections and typos were considered as correct.
 We first filtered out those trials in which verbs were not identified correctly, i.e., trials with incorrect verbs.
-Therefore, we included 2469 out of 5760 trials in unpredictable channel context and 2374 out of 6000 trials in predictable channel context from the analyses.
+Therefore, we excluded 2469 out of 5760 trials in unpredictable channel context and 2374 out of 6000 trials in predictable channel context from the analyses.
 The 1 channel noise vocoding condition was dropped from the analyses as there were no correct responses in any of the trials in this condition.
 
 We preprocessed and analysed data in R-Studio (Version 3.6.1; R Core Team, 2019) following the procedure described in [Chapter 4.4.4]{#analysis-main}.

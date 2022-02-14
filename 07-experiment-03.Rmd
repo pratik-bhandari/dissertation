@@ -73,12 +73,13 @@ In a sample of younger adults and middle aged adults, slowing down the speech ra
 
 ### Current study 
 
+## Experiment 3A
+
 ## Methods
 
 ### Participants
 
-We recruited two groups of participants via Prolific Academic and assigned them to one of the two groups:
-*fast speech group* (n=101; $\bar{x}$  $\pm$ SD = 23.14 $\pm$ XX years; age range = 18-31 years; 66 females, 1 preferred not to say) and *slow speech group* (n=101; $\pm$ SD = 23.6 $\pm$ 3.2 years; age range = 18-30 years; 14 females).
+We recruited one group of participant (n=101; $\bar{x}$  $\pm$ SD = 23.14 $\pm$ XX years; age range = 18-31 years; 66 females, 1 preferred not to say) online via Prolific Academic.
 All participants were native speakers of German residing in Germany.
 Exclusion criteria for participating in this study were self-reported hearing disorder, speech-language disorder, or any neurological disorder.
 All participants received monetary compensation for their participation.
@@ -92,14 +93,12 @@ Thus, we compared high and low predictability sentences (abbreviated as HP and L
 This gave 240 sentences that consisted of pronoun, verb, determiner, and object (noun).
 The mean cloze probabilities of target words for low and high predictability sentences were 0.022 $\pm$ 0.027 ($\bar{x}$  $\pm$ SD; range = 0.00 - 0.09) and 0.752 $\pm$ 0.123 ($\bar{x}$  $\pm$ SD; range = 0.56 - 1.00) respectively.
 
-These 240 sentences were passed compressed by a factor of 0.65, and expanded by a factor of 1.35 using PSOLA built-in in Praat to create fast and slow speech respectively.
+These 240 sentences were passed compressed by a factor of 0.65 using PSOLA built-in in Praat to create fast and slow speech respectively.
 Speech degradation of all normal, slow and fast speech was achieved by noise vocoding through 4 channels.
 
-In both the groups, fast speech group and slow speech group, each participant was presented with 120 unique sentences: 60 HP and 60 LP sentences.
+Each participant was presented with 120 unique sentences: 60 HP and 60 LP sentences.
 Speech rate was also balanced across each predictability level.
-The fast speech group received 30 sentences with normal speed and 30 with fast speed in each of the predictability conditions.
-Similarly, the slow speech group received 30 sentences with normal speed and 30 with slow speed in each of the predictability conditions.
-This resulted into 4 experimenal lists for each group.
+The participants received 30 sentences with normal speed and 30 with fast speed in each of the predictability conditions resulting into 4 experimental lists.
 The sentences in each list were pseudo-randomized, that is, not more than 3 sentences of same speed, or same predictability condition appeared consecutively.
 
 ### Procedure
@@ -114,8 +113,70 @@ Eight practice trials with different levels of speech degradation were given to 
 
 ## Analyses
 
-## Results
+We have already conceded in the previous chapter X.X.X that "the effect of predictability (evoked by the verb) on language comprehension can be rightfully measured if we consider only those trials in which participants identify the verbs correctly."
+Therefore, we discarded the trials in which verbs were identified incorrectly -- XXXX out of XXXX trials.
 
-## Discussion
+We preprocessed and analysed data in R-Studio (Version 4.1.1; R Core Team, 2021) following the procedure described in [Chapter 4.4.4]{#analysis-main}.
+
+Response accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lme4 [@Bates2015] and lmerTest [@Kuznetsova2017] packages.
+Binary responses (correct/incorrect) for all participants were fit with a [binomial logistic mixed-effects model]{#binomial-logistic-mixed-effects-model}[@Jaeger2006; @Jaeger2008].
+Target word predictability (categorical; low and high), speech rate, or speed (categorical; xxx and xxx), and the interaction of predictability and speed were included in the fixed effects.
+
+We fitted a model with maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
+Both, by-participant and by-item random slopes were included for target word predictability, speed and their interaction.
+
+We applied treatment contrast for target word predictability (XX as a baseline; factor levels: XX, XX) and speed (XXX as a baseline; factor levels: XX, XX).
+The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
+
+## Results and Discussion
+
+## Experiment 3B
+
+## Methods
+
+### Participants and Materials
+
+We recruited 48 participants (n=101; $\pm$ SD = 23.6 $\pm$ 3.2 years; age range = 18-30 years; 14 females) online via Prolific Academic.
+Same procedure as Experiment 3A was followed.
+
+Stimuli were created following the same procedure described in Experiment 3A, the difference being instead of fast speech, here we created slow speech.
+Slow speech was created by expanding the 240 sentences (120 HP and 120 LP sentences) by a factor of 1.35 using PSOLA built-in in Praat.
+All resulting slow speech recordings were then passed through 4 channels noise vocoding.
+
+We followed the same steps as Experiment 3A to balance speech rate and predictability conditions and to pseudo-randomize these experimental conditions.
+
+### Procedure
+
+Same procedure as Experiment 3A was followed.
+We asked participants to report the entire sentence typing in what they heard.
+Guessing was encouraged too.
+
+## Analyses
+
+We followed the same data analyses procedure as in Experiment 3A.
+Only the trials with verb-correct responses were considered in the analyses of accuracy of sentence-final target-words (i.e., nouns); 5495 out of 12120 trials were removed before the final analyses.
+
+Target word predictability (categorical; low and high), speech rate, or speed (categorical; normal and slow), and the interaction of predictability and speed were included in the fixed effects.
+Treatment contrast was applied to both target word predictability (LP as a baseline; factor levels: LP, HP) and speed (slow as a baseline; factor levels: slow, normal).
+The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
+
+## Results and Discussion
+
+Mean response accuracy for different conditions are shown in Table X.X.X. and are presented in Figure X.X.X.
+It shows that the accuracy increased with an increase in target word predictability from low to high.
+These observations are confirmed by the results of statistical analyses (Table X.X.X):
+We again found a main effect of number of noise vocoding channels such that response accuracy at 8 channels was higher than both 4 channels ($\beta$ = -3.49, SE = .23, *z* (4320) = -15.29, *p* < .001), and 6 channels noise vocoding ($\beta$ = -0.61, SE = .20, *z* (4320) = -3.07, *p* = .002).
+
+In contrast to Experiment 1A, there was also a main effect of target word predictability:
+Response accuracy in high predictability sentences was significantly higher than in low predictability sentences ($\beta$ = 1.25, SE = .28, *z* (4320) = 4.50, *p* < .001).
+We also found a statistically significant interaction between speech degradation and target word predictability ($\beta$ = -.95, SE = .30, *z* (4320) = -3.14, *p* = .002).
+Subsequent subgroup analyses of each channel condition showed that the interaction was driven by the difference in response accuracy between high predictability sentences and low predictability sentences at 8 channels ($\beta$ = 1.42, SE = .62, *z* (1440) = 2.30, *p* = .02), and 6 channels noise vocoding conditions ($\beta$ = 1.14, SE = .34, *z* (1440) = 3.31, *p* < .001);
+at 4 channels noise vocoding condition, the difference between high and low predictability sentences was not significant ($\beta$ = .28, SE = .18, *z* (1440) = 1.59, *p* = .11).
+
+In contrast to Experiment 1A, these results indicate an effect of target word predictability, that is, response accuracy was higher when the target word predictability was high as compared to low.
+Also, the interaction between predictability and speech degradation, which was not observed in Experiment 1, showed that semantic predictability facilitated the comprehension of degraded speech already at moderate degradation levels (like, 6 and 8 noise vocoding channels).
+In line with the findings from Experiment !a, response accuracy was better with a higher number of channels.
+
+## General Discussion
 
 ## Conclusions

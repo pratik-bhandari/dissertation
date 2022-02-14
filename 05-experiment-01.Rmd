@@ -160,7 +160,7 @@ Aiming for model parsimony, the best fitting model among the parsimonious and ex
 We applied treatment contrast for number of channels (8 channels as a baseline) and sliding difference contrast for target word predictability (low predictability vs. medium predictability, and low predictability vs. high predictability sentences).
 We report the results from the optimal model, and are shown in Table X.X.X.
 
-## Results and discussion
+## Results and Discussion
 
 Mean response accuracies for all experimental conditions are shown in Table X.X.X and Figure X.X.X.
 It shows that accuracy increases with an increase in the number of noise vocoding channels, i.e., with the decrease in speech degradation.
@@ -203,7 +203,7 @@ The 1 channel noise vocoding condition was excluded from the analysis.
 We only considered the final words of the sentences (i.e., the target words) to be either correct or incorrect; other words were not considered in the analyses.
 Like Experiment 1A, the results from the optimal model are reported.
 
-## Results and discussion
+## Results and Discussion
 
 Mean response accuracy for different conditions are shown in Table X.X.X. and are presented in Figure X.X.X.
 It shows that the accuracy increased with an increase in both the number of noise vocoding channels, and the target word predictability.
@@ -226,7 +226,7 @@ The model summary is shown in Table X.X.X.
 The model revealed that the critical interaction between experimental manipulation and target word predictability was indeed statistically significant ($\beta$ = -.45, SE = .18, *z* (8566) = -2.55, *p* = .011);, i.e., the effect of predictability was larger in the group that was asked to type in the whole sentence.
 Together, these findings suggest that the change in task instruction, which draws attention either to the entire sentence or only to the final word, is critical for making use of the context information under degraded speech.
 
-## General discussion
+## General Discussion
 
 The main goals of the present study were to investigate whether online semantic predictions are formed in comprehension of degraded speech when task instructions encourage attention to the processing of the context information, or only to the critical target word.
 The results of two experiments revealed that attentional processes clearly modulate the use of context information for predicting sentence endings when the speech signal is moderately degraded.
