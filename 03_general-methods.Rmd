@@ -9,17 +9,17 @@ output:
   bookdown::html_document2: default
   bookdown::word_document2: default
 documentclass: book
-bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
 ---
 
-# General Methods
+# General methods
 
-\minitoc <!-- this will include a mini table of contents-->
+## Experimental materials
 
 ## Stimulus sentences
 ………
-- Sy How sentences were constructed.
-- Say how cloze probabilites were collected.
+- Say how sentences were constructed.
+- Say how cloze probabilities were collected.
 - Say how 120 and then 360 auditory stimuli are created.
 
 
@@ -55,7 +55,7 @@ Spectrograms of clear speech and noise-vocoded speech (1-, 4-, 6- and 8-channels
 
 ### Speech compression
 
-Uniform time-compression algorithms like pitch-synchronous overlap-add technique [PSOLA, @Charpentier1986; @Moulines1990) are used to compress the speech signal and increase the rate of speech.
+Uniform time-compression algorithms like pitch-synchronous overlap-add technique [PSOLA, @Charpentier1986; @Moulines1990] are used to compress the speech signal and increase the rate of speech.
 <!-- PSOLA first analyzes the pitch of an auditory signal, in the time domain of its digital waveform, to set pitch marks and then segments the signal into successive overlapping chunks of short-term signals. -->
 <!-- When the signal is periodic, these chunks are synchronized to pitch periods and when it is not periodic, they are distributed regularly. -->
 <!-- Then a single chunk is created by superimposing and averaging the neighboring chunks. -->
@@ -69,6 +69,14 @@ In Experiment 3, PSOLA algorithm in Praat software is used to increase the rate 
 
 Spectrograms of clear speech, speeded speech, and noise-vocoded speeded speech for the word 'Aufgabe' are shown in Figure X.X. It shows that …………
 
-## Measurement of language comprehension
+## Data collection
+
+Write a few sentences about similarity and dissimilarity about online and lab data collection.
+Cite the papers that have done such comparisons.
+Cite specifically the auditory modalities ones.
+Then mention Lingoturk, and Prolific.
+Mention screening in Prolific.
+
+
  
  
