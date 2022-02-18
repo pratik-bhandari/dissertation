@@ -12,7 +12,7 @@ documentclass: book
 bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
 ---
 
-# General Introduction
+# Introduction
 
 \minitoc <!-- this will include a mini table of contents-->
 
@@ -36,7 +36,7 @@ Despite any or all of these, the peripheral auditory processing, and the central
 How does the cognitive system achieve this feat of understanding speech that is distorted by so many internal and external factors?
 One of the 'tactics' that our brain utilizes is the use of preexisting linguistic knowledge, information about the world, and importantly, the context information to form predictions about linguistic events that are yet to be encountered.\
 
-Let's take the following sentence, for example:\
+Let's take the following sentence, for example:
 
     1.    It was a breezy day and the by went out do fly a ...
 
@@ -61,9 +61,10 @@ To better understand language comprehension in this section of population, and t
 Therefore, we study both top-down predictive processes as well as bottom-up auditory processes and their interactions in comprhension of degraded speech.
 While doing so, we address 564 challenges in the field:
 
-    (i)   The limitation of predictive processing account of language comprehension:\
-    There are plenty of research findings that show prediction to be inherent to language processing.
-    At the same time, there is a set of studies showing limitations in *prediction* in specific experimental paradigms, a special population (e.g., older adults, children, etc.). Limited studies in degraded speech comprehension are mostly in agreement that language comprehension is predictive in nature. It is to be tested whether prediction is inherent even in this adverse listening condition. Any finding, for or against the account of predictive language processing, would provide an insight to the overall framework of *prediction as cognition*.
+    -   The limitation of predictive processing account of language comprehension:
+    
+There are plenty of research findings that show prediction to be inherent to language processing.
+At the same time, there is a set of studies showing limitations in *prediction* in specific experimental paradigms, a special population (e.g., older adults, children, etc.). Limited studies in degraded speech comprehension are mostly in agreement that language comprehension is predictive in nature. It is to be tested whether prediction is inherent even in this adverse listening condition. Any finding, for or against the account of predictive language processing, would provide an insight to the overall framework of *prediction as cognition*.
     
     (ii)    Replication, and the nature of prediction:\
     Existing evidence in favor of predictive processing in comprehension of degraded speech comes from a handful of studies that have treated predictability only as high and low. There is a lack of replication, and theoretical proposition. It is of utmost importance to first replicate existing findings, given the replication crisis in neuroscience, psychology and psycholinguistics, and emperically test the assertions made by any theoretical account.\ 

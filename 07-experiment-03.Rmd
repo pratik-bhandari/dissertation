@@ -7,24 +7,13 @@ output:
   #bookdown::word_document2: default
   bookdown::pdf_document2:
     template: templates/brief_template.tex
+    citation_package: biblatex
 documentclass: book
-#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+citation: apa.csl
 ---
 
-<!-- ```{block type='savequote', include=knitr::opts_knit$get('rmarkdown.pandoc.to') == 'latex', quote_author='(ref:goethe-quote)'} -->
-<!-- Alles Gescheite ist schon gedacht worden.\ -->
-<!-- Man muss nur versuchen, es noch einmal zu denken. -->
-
-<!-- All intelligent thoughts have already been thought;\ -->
-<!-- what is necessary is only to try to think them again. -->
-
-<!-- <!-- ending a line with a lonely backslash inserts a linebreak --> -->
-<!-- ``` -->
-<!-- (ref:goethe-quote) --- Johann Wolfgang von Goethe [@von_goethe_wilhelm_1829] -->
-
 # Experiment 3: Comprehension of degraded speech is modulated by the rate of speech
-
-\minitoc
 
 ## Introduction
 
@@ -56,18 +45,14 @@ when the speech is intelligible enough for the listeners to understand and form 
 ### Comprehension of fast and slow speech
 
 A change in speech rate manipulates the speech signal without producing any spectral degradation [@Charpentier1986; @Moulines1990; @Schlueter2014].
-Understanding fast speech is more effortful compared to normal and slow speech, [e.g., @Mueller20192019; @Winn2021; see also, @Simantiraki2020], and its intelligibility and comprehension are reducec [@Fairbanks1957; @Peelle2005; @Schlueter2014].
+Understanding fast speech is more effortful compared to normal and slow speech, [e.g., @Mueller2019; @Winn2021b; see also, @Simantiraki2020], and its intelligibility and comprehension are reducec [@Fairbanks1957; @Peelle2005; @Schlueter2014].
 The comprehension deficit in fast speech has been linked to speed of processing [@Gordonsalant1995; @Tun1998; see also, @Roennberg2013] given the limited time available to decode and understand the information in the fast speech.
 It has also been suggested that the decoding and identification of incoming information in the fast speech puts a high demand on available cognitive resources [e.g., @Rodero2016] such that processing rapidly flowing information exhausts the cognitive resource required for language processing [@Gordonsalant2004; @Janse2009].
 Hence, intelligibility and comprehension of fast speech is reduced compared to normal speech.
-In contrast, the central auditory-language comprehension system is shown to be flexible to process slow speech without reducing intelligibility [@Lernet2014; see also, @Vagharchakian2012].
-However, some earlier studies have casted doubt on the processing advantage of slow speech [e.g., @Nijime1998; @Kember1999; see also, @Liu2006; @Love2009].
+In contrast, the central auditory-language comprehension system is shown to be flexible to process slow speech without reducing intelligibility [@Lerner2014a; see also, @Vagharchakian2012].
+However, some earlier studies have casted doubt on the processing advantage of slow speech [e.g., @Nejime1998; @Kemper1999; see also, @Liu2006; @Love2009].
 In sum, compression and expansion of speech have differential effects on speech intelligibility and language comprehension.
 Intelligibility and comprehension of fast speech is reduced while that of slow speech is generally increased compared to normal speech.
-<!--In contrast, the evidence on the effect of decrease in speech rate on intelligibility and language comprehension is mixed.
-@Shobha2009 showed that expansion of speech signal benefits word recognition in noise at different signal to noise ratio (SNR) ranging from 6dB SNR to 12 dB SNR.
-In a sample of younger adults and middle aged adults, slowing down the speech rate facilitated word recognition when listeners had to segregate the speech from background talkers, i.e., in speech masking [@Brungart2007].-->
-<!-- However, when noise masking is presented, reduced speech rate did not help in understanding speech. -->
 
 There are also a few studies so far that examined the role of predictability for understanding language when speech is fast or slow.
 For instance, @Aydelott2004 used a priming paradigm to examine the effects of contextual cues, which were target words embedded in sentences, and compared fast speech to normal speech.
@@ -77,8 +62,8 @@ They argued that the constrained sentence context was easy to process – fast s
 In contrast, the inhibition effect was reduced because there was less time to build up the representation of words in implausible sentence contexts so that less inhibition of the incongruent target word was needed.
 However, in a replication study of @Aydelott2004, @Goy2013 found that the facilitatory effect was reduced in fast speech compared to normal speech.
 They argued that the fast speech slowed down the activation of potential target words that matched the context, which effectively reduced the contextual facilitation.
-In a recent study, @Winn2021 did not observe an increase in contextual facilitation for slow speech compared to normal speech, although the intelligibility was higher for slow speech.
-In another experiment, @Koch2016 presented participants with a question-answer sequence of varying length across a wide range of normal and fast speech from Spoken Dutch Corpus [@Oostdijk2000].
+In a recent study, @Winn2021b did not observe an increase in contextual facilitation for slow speech compared to normal speech, although the intelligibility was higher for slow speech.
+In another experiment, @Koch2016a presented participants with a question-answer sequence of varying length across a wide range of normal and fast speech from Spoken Dutch Corpus [@Oostdijk2000].
 They did not find any effect of predictability on word recognition. However, target word predictability and target word position in the sentences were not systematically controlled for in their study.
 
 The effects of predictability at varying rates of presentation have been also investigated with self-paced reading studies.
@@ -89,7 +74,7 @@ In the same study, however, when the fast presentation was followed by slow pres
 That is, increase in the flow of information did not always impair the ability to predict   [see also, @Cole2020].
 They argued that once the brain is engaged in predictive comprehension mode, for example, first in the slow presentation rate, it can then continue to allocate resources in the same mode under faster presentation rate.
 
-In sum, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the speech rate [@Aydelott2004; @Sharit2003; @Winn2021; @Wlotko2015].
+In sum, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the speech rate [@Aydelott2004; @Sharit2003; @Winn2021b; @Wlotko2015].
 Benefits of using context information is not only limited under varying speech rates, but also when it is degraded [@Bhandari2021; @Obleser2010; @Sheldon2008a; @Sheldon2008b].
 In the present study we will examine whether context information is still useful when the speech rate is fast (or slow) and degraded at the same time.
 
@@ -100,7 +85,7 @@ For example, speakers’ speech rate is variable, and there is a concurrent dist
 Some of the earliest studies examined the ‘devastating’ effects of ‘combinations of speech wave distortions’, but the combination of multiple distortions was not controlled for [@Harris1960; @Martin1956].
 @Gordonsalant1995 systematically tested the effect of multiple, combined speech distortions.
 They found that when fast speech was presented in a background noise, or with a reverberation then the word recognition accuracy in these combined distortions was lower than when the speech was presented in any single distortion condition.
-@Adams2009; @Adams2012 also showed that the addition of background noise had a detrimental effect on fast speech comprehension.
+@Adams2009 and @Adams2012 also showed that the addition of background noise had a detrimental effect on fast speech comprehension.
 With an increase in speech rate, listeners required higher signal-to-noise ratio (SNR) to achieve 50% word recognition accuracy across a wide range of speech rate (90 to 250 words per minute, in a step of 9 words per minute) and background noise (+15 dB SNR, +5 dB SNR, and 0 dB SNR).
 These studies showed that a combination of multiple distortions is worse than a single distortion.
 It is noteworthy that neither of the distortions mentioned above (e.g., reverberation, background noise) interfere with fine structure of a speech signal which spectral degradation does.
@@ -113,7 +98,7 @@ They found that an increase in speech rate had much severe effect at spectrally 
 To achieve the same level of accuracy, listeners required degraded speech to be much slower than the normal speech.
 All of these studies indicated that when speech rate is increased, intelligibility and comprehension of degraded speech is reduced.
 However, these studies did not examine the utility of context information when speech is distorted by more than one means, although the role of context and predictability in any one of these multiple distortions has been extensively discussed in the literature
-[@Aydelott2004; @Sheldon2008a; @Sheldon2008b @Obleser2010; @Goy2013; @Corps2020; @Bhandari2021; @Clark2021; @vanOs2021].
+[@Aydelott2004; @Sheldon2008a; @Sheldon2008b; @Obleser2010; @Goy2013; @Corps2020; @Bhandari2021; @Clark2021; @vanOs2021].
 
 Taken together, the utility of semantic predictability in comprehension of degraded speech is fairly established whereas its effects in comprehension of both fast speech as well as slow speech is inconsistent.
 Whether semantic predictability is beneficial even for degraded speech presented at different rates (fast and slow) has not been investigated yet.
@@ -129,7 +114,7 @@ Speech rate was manipulated by compression (or expansion) of the moderately degr
 To achieve the goal, we conducted two experiments in which listeners were required to listen to the sentences and type in the entire sentence they hear.
 Sentence comprehension (word recognition accuracy) for high and low predictability sentences were assessed in fast speech (Experiment 1), and slow speech (Experiment 2).
 Because the processing demand increases, and a limited time is to be available to process the context and form predictions [e.g., @Aydelott2004; @Wlotko2015], we expected that the contextual facilitation (i.e., the difference between high and low predictability sentences) will be reduced for fast speech compared to normal speech (Experiment 3A).
-However, for slow speech due to abundance of time to process the degraded speech and the context, and reduction in effortful processing [e.g., @Winn2021], we expected contextual facilitation to be increased compared to normal speech (Experiment 3B).
+However, for slow speech due to abundance of time to process the degraded speech and the context, and reduction in effortful processing [e.g., @Winn2021b], we expected contextual facilitation to be increased compared to normal speech (Experiment 3B).
 We expected that both increase and decrease in contextual facilitation will be primarily driven by the ease of processing high predictability sentences as compared to low predictability sentences [@Aydelott2004; @Goy2013].
 
 ## Experiment 3A
@@ -184,23 +169,23 @@ Target word predictability (categorical; low and high), speech rate, or speed (c
 We fitted a model with maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
 Both, by-participant and by-item random slopes were included for target word predictability, speed and their interaction.
 
-We applied treatment contrast for target word predictability (XX as a baseline; factor levels: XX, XX) and speed (XXX as a baseline; factor levels: XX, XX).
+We applied treatment contrast for target word predictability (low predictability as a baseline; factor levels: low predictability, high predictability) and speed (normal speed as a baseline; factor levels: normal speed, fast speed).
 The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
 
 ## Results and Discussion
 
 Mean response accuracies across all conditions are presented in Table 2.
-We found a significant main effect of target word predictability (β = 2.42, SE = .28, z = 8.55, p < .001) and a significant main effect of speech rate (β = -0.98, SE = .24, z = 4.16, p < .001).
+We found a significant main effect of target word predictability ($\beta$ = 2.42, SE = .28, *z* = 8.55, *p* < .001) and a significant main effect of speech rate ($\beta$ = -0.98, SE = .24, *z* = 4.16, *p* < .001).
 These suggested that participants’ response accuracy was higher for the high predictability sentences than for the low predictability sentences, and for normal speech than for fast speech.
-We also found a significant interaction between target word predictability and speech rate (β = 1.06, SE = .42, z = 2.50, p = .01). As it can be seen in Figure 1, the effect of target word predictability was reduced at fast speech. These results are shown in Table 3.
+We also found a significant interaction between target word predictability and speech rate ($\beta$ = 1.06, SE = .42, *z* = 2.50, *p* = .01). As it can be seen in Figure 1, the effect of target word predictability was reduced at fast speech. These results are shown in Table 3.
 
 Separate planned analyses of each predictability level were performed following the same procedure described above in the Analysis section.
-The results shown in Table 4 and Table 5 revealed that there was no significant main effect of speech rate at high predictability condition (β = .02, SE = .34, z = .05, p = .96).
-At low predictability condition, in contrast, we found a significant main effect of speech rate (β = -.99, SE = .27, z = -3.72, p < .001).
+The results shown in Table 4 and Table 5 revealed that there was no significant main effect of speech rate at high predictability condition ($\beta$ = .02, SE = .34, *z* = .05, *p* = .96).
+At low predictability condition, in contrast, we found a significant main effect of speech rate ($\beta$ = -.99, SE = .27, *z* = -3.72, *p* < .001).
 Hence, response accuracy decreased at fast speech only for the low predictability condition. 
 
-Separate planned analyses of each speech rate shown in Table 6 and Table 7 revealed that there was significant main effect of predictability in both normal speech (β = 1.98, SE = 0.28, z = 7.05, p < .001) and fast speech conditions (β = 2.67, SE = .37, z = 7.14, p < .001),
-but the effect appeared to be higher for fast speech (β = 2.67) than for normal speech (β = 1.98).
+Separate planned analyses of each speech rate shown in Table 6 and Table 7 revealed that there was significant main effect of predictability in both normal speech ($\beta$ = 1.98, SE = 0.28, *z* = 7.05, *p* < .001) and fast speech conditions ($\beta$ = 2.67, SE = .37, *z* = 7.14, *p* < .001),
+but the effect appeared to be higher for fast speech ($\beta$ = 2.67) than for normal speech ($\beta$ = 1.98).
 This, however, is a result of significant reduction in accuracy at low predictability condition at fast speech rather than due to an increase in accuracy at high predictability condition. This can also be seen in Table 2 and Figure 1.
 
 These results indicated an increase in response accuracy with an increase in target word predictability only at a normal speech rate.
@@ -215,7 +200,7 @@ We conducted another experiment to examine if slowing down the speech rate eases
 
 ### Participants and Materials
 
-We recruited 101 participants ($\pm$ SD = 23.49 $\pm$ 3.26 years; age range = 18-30 years; 60 females, 1 preferred not to say) online via Prolific Academic.
+We recruited 101 participants ($\bar{x}$ $\pm$ SD = 23.49 $\pm$ 3.26 years; age range = 18-30 years; 60 females, 1 preferred not to say) online via Prolific Academic.
 Same procedure as Experiment 3A was followed.
 
 We used the same sentences that were used in Experiment 1. However, the auditory recordings were expanded by a factor of 1.35 to create slow speech. All other procedure to create stimuli were identical to Experiment 1 resulting in two sets (one set of normal and one set of slow speech) of 240 sentences (120 high and 120 low predictability sentences) which were passed through 4 channels noise vocoding.
@@ -234,25 +219,25 @@ We followed the same data analyses procedure as in Experiment 3A.
 Only the trials with verb-correct responses were considered in the analyses of accuracy of sentence-final target-words (i.e., nouns); 5495 out of 12120 trials were removed before the final analyses.
 
 Target word predictability (categorical; low and high), speech rate, or speed (categorical; normal and slow), and the interaction of predictability and speed were included in the fixed effects.
-Treatment contrast was applied to both target word predictability (LP as a baseline; factor levels: LP, HP) and speed (slow as a baseline; factor levels: slow, normal).
+Treatment contrast was applied to both target word predictability (low predictability as a baseline; factor levels: low predictability, high predictability) and speed (normal speed as a baseline; factor levels: normal speed, slow speed).
 The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
 
 ## Results and Discussion
 
 Mean response accuracies for all experimental conditions are shown in Table 8.
-There was a significant main effect of target word predictability indicating that participants’ response accuracy was higher for the high predictability condition than for the low predictability condition (β = 2.58, SE = .30, z = 8.65, p < .001).
-In contrast to Experiment 1, we did not find a significant main effect of speech rate (β = -.08, SE = .15, z = .57, p = .568), nor there was a significant interaction between speech rate and target word predictability (β = .44, SE = .27, z = 1.65, p = .099).
+There was a significant main effect of target word predictability indicating that participants’ response accuracy was higher for the high predictability condition than for the low predictability condition ($\beta$ = 2.58, SE = .30, *z* = 8.65, *p* < .001).
+In contrast to Experiment 1, we did not find a significant main effect of speech rate ($\beta$ = -.08, SE = .15, *z* = .57, *p* = .568), nor there was a significant interaction between speech rate and target word predictability ($\beta$ = .44, SE = .27, *z* = 1.65, *p* = .099).
 These suggested that there was no change in participants’ response accuracy with a reduction in speech rate, nor did the contextual facilitation significantly increase or decrease with slowing down of the speech rate.
 It can be seen in Figure 2 that the effect of target word predictability did not change with speech rate.
 These results are shown in Table 9.
 
 We conducted separate planned analyses of each predictability level; the procedure was identical to the analyses in Experiment 1.
-The results presented in Table 10 and Table 11 confirmed the findings of the main analysis reported above – there was no significant main effect of speech rate at both high predictability condition (β = .39, SE = .22, z = 1.79, p = .073), as well as at low predictability condition (β = -.11, SE = .16, z = -.71, p = .48).
+The results presented in Table 10 and Table 11 confirmed the findings of the main analysis reported above – there was no significant main effect of speech rate at both high predictability condition ($\beta$ = .39, SE = .22, *z* = 1.79, *p* = .073), as well as at low predictability condition ($\beta$ = -.11, SE = .16, *z* = -.71, *p* = .48).
 Hence, as opposed to the findings of Experiment 1, response accuracy was not affected by change in speech rate at both high and low predictability sentences.
 
 As in Experiment 1, we conducted separate planned analyses of each speech rate.
-The results as shown in Table 12 and Table 13 revealed that there was a significant main effect of target word predictability at both slow speech rate (β = 2.55, SE = .31, z = 8.14, p < .001) and normal speech rate (β = 2.08, SE = .27, z = 7.68, p < .001);
-the effect appeared to be higher for slow speech (β = 2.55) than for normal speech (β = 2.08).
+The results as shown in Table 12 and Table 13 revealed that there was a significant main effect of target word predictability at both slow speech rate ($\beta$ = 2.55, SE = .31, *z* = 8.14, *p* < .001) and normal speech rate ($\beta$ = 2.08, SE = .27, *z* = 7.68, *p* < .001);
+the effect appeared to be higher for slow speech ($\beta$ = 2.55) than for normal speech ($\beta$ = 2.08).
 This, however, was a result of smaller accuracy at low predictability condition at slow speech rather than due to a higher accuracy at high predictability condition. This can also be seen in Table 8 and Figure 2.
 
 In contrast to Experiment 1, the findings of Experiment 2 did not indicate differential effect of speech rates in the comprehension of high and low predictability sentences.
@@ -283,9 +268,9 @@ i.e., decrease in speech rate did not differentially affect the comprehension of
 As opposed to Experiment 1, we did not observe a significant change in contextual facilitation at slow speech rate at a moderate degradation level in Experiment 2.
 Slowing down the speech provides listeners more time to process the information, including the context that is important to generate predictions.
 However, our findings show that this ease of processing does not benefit intelligibility and comprehension of sentences with highly predictable target words any more than the sentences with less predictable target words.
-This claim is in line with the results of @Winn2021] who reported that intelligibility does not increase when the speech is slowed down even though there is a difference in the intelligibility between high and low predictability sentences at both normal and slow speech rates.
+This claim is in line with the results of @Winn2021b] who reported that intelligibility does not increase when the speech is slowed down even though there is a difference in the intelligibility between high and low predictability sentences at both normal and slow speech rates.
 
-Accounts from speech perception, and predictive language processing point to a common expectation: contextual facilitation is enhanced when listeners have more time to process the incoming information [@].
+Accounts from speech perception, and predictive language processing point to a common expectation: contextual facilitation is enhanced when listeners have more time to process the incoming information [CITE].
 Additionally, there are conflicting empirical evidence whether increase or decrease of speech rate provides benefit in intelligibility, comprehension, and contextual facilitation.
 Given these state of affairs, our findings add new theoretical insights with empirical support into the interplay among spectral degradation, speech rate, and semantic prediction.
 Although reducing the speech rate provides time to process the information (including the context) in the degraded speech, this eases the processing of both high and low predictability to a similar extent.

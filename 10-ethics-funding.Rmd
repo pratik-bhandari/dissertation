@@ -1,0 +1,32 @@
+---
+output:
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+    citation_package: biblatex
+bib-humanities: true
+documentclass: book
+bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+```{block type='savequote', include=knitr::is_latex_output(), quote_author='(ref:fischer-quote)'}
+A conclusion is the place where you got tired of thining.
+
+```
+(ref:fischer-quote) --- Martin H. Fischer [@Darwin1859]
+
+<!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
+<!-- \chaptermark{Citations and cross-refs} -->
+
+# Ethics and funding
+
+\noindent 
+
+**Ethics**: The studies presented in this thesis involved human subjects.
+All subjects were recruited following the recommendations of the American Psychological Association.
+All subjects provided an informed consent in accordance with the Declaration of Helsinki.
+The ethics committee of the Deutsche Gesellschaft für Sprache (DGfS; English: German Society for Language Science) provided ethical approval for the experiments conducted.
+
+**Funding**: The research presented in this thesis was funded by the Deutsche Forschungsgemeinschaft (DFG; English: German Research Foundation) under the research grant SFB1102 (....; English: Collaborative Research Center), Project ID 232722074.
+
+\minitoc <!-- this will include a mini table of contents-->

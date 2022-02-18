@@ -166,7 +166,7 @@
 
 
 \usepackage[style=authoryear, sorting=nyt, backend=biber, maxcitenames=2, useprefix, doi=true, isbn=false, uniquename=false]{biblatex}
-\newcommand*{\bibtitle}{Works Cited}
+\newcommand*{\bibtitle}{Bibliography}
 
 \addbibresource{bibliography/references.bib}
 \addbibresource{bibliography/additional-references.bib}
@@ -341,22 +341,84 @@ channels
 \flushbottom
 
 % all your chapters and appendices will appear here
-\hypertarget{general-introduction}{%
-\chapter{General Introduction}\label{general-introduction}}
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
 
 \minitoc 
+
+One of the features that distinguishes us humans from other species is our ability to communicate using verbal language.
+We speak. We listen. We understand.
+This seemingly straight forward path of communication (i.e., speak-listen-understand) goes through a plenty of hindrances.
+One of them being adverse listening condition.
+We are hardly in a silent environment.
+There can be noise in the background during a conversation,
+the speaker can be on the other side of a Zoom call rendering his speech distorted, or
+the listener can have hearing difficulty, or can be wearing hearing prosthesis, like cochlear implant and hearing aid.
+Despite any or all of these, the peripheral auditory processing, and the central language processing systems function such that most of the times we understand what is being said despite the background noise, distorted speech, or hearing difficulty and hearing prosthesis (like, cochlear implant and hearing aid).
+How does the cognitive system achieve this feat of understanding speech that is distorted by so many internal and external factors?
+One of the `tactics' that our brain utilizes is the use of preexisting linguistic knowledge, information about the world, and importantly, the context information to form predictions about linguistic events that are yet to be encountered.\\
+
+Let's take the following sentence, for example:
+
+\begin{verbatim}
+1.    It was a breezy day and the by went out do fly a ...
+\end{verbatim}
+
+Most of the listeners would expect the final word to be \emph{kite} in this sentence.
+The preceding words up to the blank space provide a context about how the day was.
+A listener can utilize their knowledge about what a boy would ideally do in a breezy day going outside.
+This would lead them to expect that the sentence continuation is most likely \emph{kite} and not any other word.
+This particular sentence was used by \textcite{ZYCG} in a reading study, but it applies to listening too \autocite[see][]{Altmann2007}.
+
+In this thesis, we study comprehension of degraded speech.
+A question arises, why should we study degraded speech when we are not faced with degraded speech on a day-to-day basis?
+There are two facets of answer to this question.
+First, to fully understand the how the prediction mechanisms in the brain operate, especially how they interact with bottom-up, peripheral auditory processes,
+it is important to understand if, and how, context aids comprehension when novel sounds are encountered.
+When the novel sounds are difficult to understand standalone, then intuitively, the predictive processing mechanism appears to be more important.
+But are there limits to the predictive nature of language comprehension system, as it has been shown in other different paradigms?
+Degraded speech comprehension provides an insight to question like this.
+Secondly, a X\% of population has hearing difficulty, and y\% receives cochlear implant.
+Degraded speech mimics the auditory input that cochlear implantees receive.
+To better understand language comprehension in this section of population, and to explore the difficulties that they face compared to normal hearing population, the use of degraded speech is important.
+
+Therefore, we study both top-down predictive processes as well as bottom-up auditory processes and their interactions in comprhension of degraded speech.
+While doing so, we address 564 challenges in the field:
+
+\begin{verbatim}
+-   The limitation of predictive processing account of language comprehension:
+\end{verbatim}
+
+There are plenty of research findings that show prediction to be inherent to language processing.
+At the same time, there is a set of studies showing limitations in \emph{prediction} in specific experimental paradigms, a special population (e.g., older adults, children, etc.). Limited studies in degraded speech comprehension are mostly in agreement that language comprehension is predictive in nature. It is to be tested whether prediction is inherent even in this adverse listening condition. Any finding, for or against the account of predictive language processing, would provide an insight to the overall framework of \emph{prediction as cognition}.
+
+\begin{verbatim}
+(ii)    Replication, and the nature of prediction:\
+Existing evidence in favor of predictive processing in comprehension of degraded speech comes from a handful of studies that have treated predictability only as high and low. There is a lack of replication, and theoretical proposition. It is of utmost importance to first replicate existing findings, given the replication crisis in neuroscience, psychology and psycholinguistics, and emperically test the assertions made by any theoretical account.\ 
+
+(iii)   Assessing multitudes of sensory degradations:\
+In real lifel, we face more than one form of adversity while listening to speech. For example, a speech can be spoken very fast while there is a background noise at the same time. In this thesis, we had to test the adversity created by more than one factor
+\end{verbatim}
+
+\hypertarget{research-goals}{%
+\section{Research goals}\label{research-goals}}
+
+\hypertarget{research-contributions}{%
+\section{Research contributions}\label{research-contributions}}
 
 \hypertarget{overview-of-the-thesis}{%
 \section{Overview of the thesis}\label{overview-of-the-thesis}}
 
-\hypertarget{theories-of-language-comprehension}{%
-\section{Theories of language comprehension}\label{theories-of-language-comprehension}}
+\hypertarget{dissimination-of-research-findings}{%
+\section{Dissimination of research findings}\label{dissimination-of-research-findings}}
 
-\hypertarget{predictive-language-processing}{%
-\subsection{Predictive language processing}\label{predictive-language-processing}}
+\hypertarget{background}{%
+\chapter{Background}\label{background}}
 
-\hypertarget{speech-degradation}{%
-\section{Speech degradation}\label{speech-degradation}}
+\minitoc 
+
+\hypertarget{perception-and-comprehension-of-degraded-speech}{%
+\section{Perception and comprehension of degraded speech}\label{perception-and-comprehension-of-degraded-speech}}
 
 Speech can be distorted by variability in speakers' production, like, accented speech, soft/rapid speech, or it can arise from listener-related factors like, hearing loss, auditory processing disorder.
 It can also be a result of noise from transmission, like ambient noise, or distortion in the transmission (e.g., telephone line).
@@ -373,9 +435,6 @@ In the same vein, noise-vocoding is used to remove the spectral detail of the sp
 Noise-vocoding was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line \autocite{Dudley1939,Vocoder1940} --- {[}Re-read this thoroughly{]}.
 Shannon and colleagues later used the same technique as an analogue to cochlear implant \autocite{Shannon1995,Loizou1999,Shannon2004} -- number of channels used in a cochlear implant are similar to the number of noise-vocoding channels in terms of their speech output and intelligibility {[}\ldots{} cite probably Wagner et al.~\ldots{]}.
 
-\hypertarget{comprehension-of-degraded-speech}{%
-\section{Comprehension of degraded speech}\label{comprehension-of-degraded-speech}}
-
 The first factor that determines the intelligibility of noise-vocoded speech is the number of channels.
 With an increase in noise-vocoding channels, speech intelligibility increases \autocites[e.g.,][]{Davis2005,Shannon1995}.
 For example, speech processed through 8 channels noise vocoding is more intelligible than the speech processed through 4 channels noise vocoding \autocite{Loizou1999}.
@@ -387,8 +446,12 @@ Other factors like sentence context and vocabulary also play a role, which will 
 In sum, comprehension of degraded speech is a not only the amount of spectral details available, but also other listener and speaker related factors.
 How a listener utilizes available context information to `make-up' for the impoverished auditory information is the critical factor determining intelligibility and comprehension of degraded speech.
 
-\hypertarget{role-of-sentence-context}{%
-\subsection{Role of sentence context}\label{role-of-sentence-context}}
+\hypertarget{prediction-in-language-comprehension}{%
+\section{Prediction in language comprehension}\label{prediction-in-language-comprehension}}
+
+Continue from the previous paragraph that context helps in comprehension of degraded speech.
+While listening to speech, listeners use the available context information and form predictions about upcoming linguistic event.
+One of the earliest evidences on this predictive nature of language comprehension comes from
 
 Literature from sentence reading provides us with an insight how readers use the information available as the words are presented to them to make predictions about what word they'll see next.
 In visual world paradigm, \textcite{Altmann1999} showed that a listeners predict upcoming word of a sentence using the cue provide by the sentence context.
@@ -420,23 +483,24 @@ For example, in the 32-channels noise-vocoded speech in \textcite{Obleser2010}, 
 In summary, sentence context provides information necessary to generate top-down predictions.
 Listeners use this context information and form predictions to better comprehend degraded speech.
 
-\hypertarget{effect-of-aging}{%
-\subsection{Effect of aging}\label{effect-of-aging}}
+\hypertarget{measurement-of-language-comprehension}{%
+\section{Measurement of language comprehension}\label{measurement-of-language-comprehension}}
 
-\hypertarget{research-motivation}{%
-\section{Research motivation}\label{research-motivation}}
+\hypertarget{section}{%
+\section{}\label{section}}
 
 \hypertarget{general-methods}{%
-\chapter{General Methods}\label{general-methods}}
+\chapter{General methods}\label{general-methods}}
 
-\minitoc 
+\hypertarget{experimental-materials}{%
+\section{Experimental materials}\label{experimental-materials}}
 
 \hypertarget{stimulus-sentences}{%
 \section{Stimulus sentences}\label{stimulus-sentences}}
 
 \ldots\ldots\ldots{}
-- Sy How sentences were constructed.
-- Say how cloze probabilites were collected.
+- Say how sentences were constructed.
+- Say how cloze probabilities were collected.
 - Say how 120 and then 360 auditory stimuli are created.
 
 \hypertarget{speech-processing}{%
@@ -471,7 +535,7 @@ Spectrograms of clear speech and noise-vocoded speech (1-, 4-, 6- and 8-channels
 \hypertarget{speech-compression}{%
 \subsection{Speech compression}\label{speech-compression}}
 
-Uniform time-compression algorithms like pitch-synchronous overlap-add technique {[}PSOLA, \textcite{Charpentier1986}; \textcite{Moulines1990}) are used to compress the speech signal and increase the rate of speech.
+Uniform time-compression algorithms like pitch-synchronous overlap-add technique \autocites[PSOLA,][]{Charpentier1986,Moulines1990} are used to compress the speech signal and increase the rate of speech.
 PSOLA analyzes the pitch of an auditory signal, in the time domain of its digital waveform, to set pitch marks and then segments the signal into successive analysis windows centered around those pitch marks.
 To create synthesized speech, a new set of pitch marks are calculated and the analysis windows are rearranged.
 Depending on the time-compression factor, some analysis windows are deleted, and the remaining windows are concatenated by superimposing and averaging the neighboring analysis windows.
@@ -481,28 +545,14 @@ In Experiment 3, PSOLA algorithm in Praat software is used to increase the rate 
 
 Spectrograms of clear speech, speeded speech, and noise-vocoded speeded speech for the word `Aufgabe' are shown in Figure X.X. It shows that \ldots\ldots\ldots\ldots{}
 
-\hypertarget{measurement-of-language-comprehension}{%
-\section{Measurement of language comprehension}\label{measurement-of-language-comprehension}}
+\hypertarget{data-collection}{%
+\section{Data collection}\label{data-collection}}
 
-\hypertarget{general-data-collection-methods}{%
-\chapter{General data collection methods}\label{general-data-collection-methods}}
-
-\minitoc 
-
-\hypertarget{data-collection-in-the-laboratory}{%
-\section{Data collection in the laboratory}\label{data-collection-in-the-laboratory}}
-
-\hypertarget{online-data-collection}{%
-\section{Online data collection}\label{online-data-collection}}
-
-\hypertarget{designing-experiments}{%
-\subsection{Designing experiments}\label{designing-experiments}}
-
-\hypertarget{hosting-platform}{%
-\subsection{Hosting platform}\label{hosting-platform}}
-
-\hypertarget{recruiting-participants}{%
-\subsection{Recruiting participants}\label{recruiting-participants}}
+Write a few sentences about similarity and dissimilarity about online and lab data collection.
+Cite the papers that have done such comparisons.
+Cite specifically the auditory modalities ones.
+Then mention Lingoturk, and Prolific.
+Mention screening in Prolific.
 
 \minitoc 
 
@@ -667,8 +717,8 @@ Everyone knows what attention is.
 \minitoc 
 \noindent This chapter comes from the manuscript that is under prep for JML.
 
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\hypertarget{introduction-1}{%
+\section{Introduction}\label{introduction-1}}
 
 Understanding speech is highly automatized and seemingly easy when conditions are optimal.
 However, in our day-to-day communication, conditions are often far from being optimal.
@@ -932,8 +982,8 @@ The findings of this study indicate limitations to predictive processing account
 
 \minitoc
 
-\hypertarget{background}{%
-\section{Background}\label{background}}
+\hypertarget{background-1}{%
+\section{Background}\label{background-1}}
 
 In the previous chapter, we showed that semantic predictability facilitates comprehension of degraded speech.
 There was a significant difference in word recognition accuracies between low and high predictability sentences (i.e., contextual facilitation), when listeners were instructed to attend to the entire sentence including the context.
@@ -1160,15 +1210,11 @@ We also found better speech comprehension when individuals were likely to have a
 We did not find learning effects at the trial-to-trial level of perceptual adaption -- it may be that the adaptation was hampered by variation in higher-level semantic features (i.e., target word predictability).
 We also argue that for the examination of semantic predictability effects during language comprehension, the analyses of response accuracy should be based on the trials in which context evoking words are correctly identified in the first place to make sure that listeners make use of the contextual cues instead of analyzing general word recognition scores.
 
---\textgreater{}
-
 \hypertarget{experiment-3-comprehension-of-degraded-speech-is-modulated-by-the-rate-of-speech}{%
 \chapter{Experiment 3: Comprehension of degraded speech is modulated by the rate of speech}\label{experiment-3-comprehension-of-degraded-speech-is-modulated-by-the-rate-of-speech}}
 
-\minitoc
-
-\hypertarget{introduction-1}{%
-\section{Introduction}\label{introduction-1}}
+\hypertarget{introduction-2}{%
+\section{Introduction}\label{introduction-2}}
 
 Language comprehension depends on the features and quality of speech signal
 which is hampered in adverse listening conditions when speech is distorted, for example, due to change in rate of speech, and spectral degradation of speech.
@@ -1176,8 +1222,8 @@ Studies have shown that individuals can benefit from sentence context to compens
 The goal of the present study is to examine if sentence context can provide benefit when speech that is degraded at an intermediate level is presented at different rates (from slow, normal, and fast); speech in day-to-day conversation is distorted and presents itself at varying rate \autocite[e.g.,][]{Krause2004}.
 In the following, we first summarize the impact of speech degradation in language comprehension, and its interaction with sentence context, and then the influence of speech rate on language comprehension, and its interaction with sentence context.
 
-\hypertarget{comprehension-of-degraded-speech-1}{%
-\subsection{Comprehension of degraded speech}\label{comprehension-of-degraded-speech-1}}
+\hypertarget{comprehension-of-degraded-speech}{%
+\subsection{Comprehension of degraded speech}\label{comprehension-of-degraded-speech}}
 
 There are a number of studies showing that speech intelligibility and language comprehension is hampered when the bottom-up input is less intelligible due to spectral degradation of the speech signal \autocite{Shannon1995,Davis2005}.
 These studies have used noise vocoding as a methods of speech degradation. Here the speech signal is first divided into a specific number of frequency bands that corresponds to the number of vocoder channels.
@@ -1190,33 +1236,89 @@ Hence, they use the context information of the sentence to narrow down their pre
 However, it is important that the context itself is `intelligible enough' which is the case when the speech is only moderately degraded.
 For example, Obleser and colleagues \autocite{Obleser2007,Obleser2010,Obleser2011} found that at moderate levels of speech degradation, target words (the sentence final words) were better recognized when it was predictable from the sentence context than when it was unpredictable.
 When the speech signal is clear or only very mildly degraded, there is typically no effect of predictability on comprehension, as even unpredictable words can be understood well in this condition (intelligibility is at ceiling).
-In contrast, when the speech signal is extremely degraded (for instance at 1 channel noise vocoding), no facilitation from the context can be observed as the context itself cannot be understood and hence it cannot help with comprehension \autocite{Bhandari2021,Obleser2007,Obleser2010,Obleser2011}.
+In contrast, when the speech signal is extremely degraded (for instance at 1 channel noise vocoding), no facilitation from the context can be observed as the context itself cannot be understood and hence it cannot help with comprehension \autocite{Bhandari2021,Obleser2010}.
 
-These studies also found that semantic predictability facilitated comprehension of degraded speech at a moderate level of spectral degradation, i.e., at 4 channels noise vocoding.
-At the moderate degradation level, most speech is intelligible enough for listeners to understand and form meaning representation of the context to generate predictions about upcoming word in the sentence.
-In sum, xxxx
+Taken together, these studies show that semantic predictability facilitates comprehension of degraded speech at a moderate level of spectral degradation,
+for example, at 4 channels noise vocoding,
+when the speech is intelligible enough for the listeners to understand and form meaning representation of the context to generate predictions about upcoming word in a sentence.
 
 \hypertarget{comprehension-of-fast-and-slow-speech}{%
 \subsection{Comprehension of fast and slow speech}\label{comprehension-of-fast-and-slow-speech}}
 
-A change in speech rate manipulates the speech signal without producing any spectral degradation.
-Compared to normal and slow speech, understanding fast speech is more effortful (e.g., Müller et al., 2019; Winn \& Teece, 2021; see also, Simantiraki \& Cooke, 2019, 2020), with reduced intelligibility and comprehension (Fairbanks \& Kodman Jr., 1957; Garvey, 1953; Goldstein, 1941; Konkle et al., 1977; Liu \& Zeng, 2006; Peelle \& Wingfield, 2005; Schlueter et al., 2014).
-The comprehension deficit in fast speech has been linked to speed of processing (Gordon-Salant \& Fitzgibbons, 1995; Tun, 1998; see also, Rönnberg et al., 2013).
-Decoding speech signal and processing language does not occur in vacuum; they take place within the limited cognitive resources and memory that we have (Riggs et al., 1993).
-When the speech rate is fast, the flow of information is also fast. There is a limited time available to decode and understand the information in the fast speech.
-Decoding and identification of incoming information in the fast speech puts a high demand on available cognitive resources (e.g., Rodero, 2016).
-Processing rapidly flowing information exhausts the cognitive resource that is required for language processing (Gordon-Salant \& Fitzgibbons, 2004; Janse, 2009).
+A change in speech rate manipulates the speech signal without producing any spectral degradation \autocite{Charpentier1986,Moulines1990,Schlueter2014}.
+Understanding fast speech is more effortful compared to normal and slow speech, \autocites[e.g.,][]{Mueller2019,Winn2021b}[see also,][]{Simantiraki2020}, and its intelligibility and comprehension are reducec \autocite{Fairbanks1957,Peelle2005,Schlueter2014}.
+The comprehension deficit in fast speech has been linked to speed of processing \autocites{Gordonsalant1995,Tun1998}[see also,][]{Roennberg2013} given the limited time available to decode and understand the information in the fast speech.
+It has also been suggested that the decoding and identification of incoming information in the fast speech puts a high demand on available cognitive resources \autocite[e.g.,][]{Rodero2016} such that processing rapidly flowing information exhausts the cognitive resource required for language processing \autocite{Gordonsalant2004,Janse2009}.
 Hence, intelligibility and comprehension of fast speech is reduced compared to normal speech.
+In contrast, the central auditory-language comprehension system is shown to be flexible to process slow speech without reducing intelligibility \autocites{Lerner2014a}[see also,][]{Vagharchakian2012}.
+However, some earlier studies have casted doubt on the processing advantage of slow speech \autocites[e.g.,][]{Nejime1998,Kemper1999}[see also,][]{Liu2006,Love2009}.
+In sum, compression and expansion of speech have differential effects on speech intelligibility and language comprehension.
+Intelligibility and comprehension of fast speech is reduced while that of slow speech is generally increased compared to normal speech.
 
-In contrast, the evidence on the effect of decrease in speech rate on intelligibility and language comprehension is mixed.
-\textcite{Shobha2009} showed that expansion of speech signal benefits word recognition in noise at different signal to noise ratio (SNR) ranging from 6dB SNR to 12 dB SNR.
-In a sample of younger adults and middle aged adults, slowing down the speech rate facilitated word recognition when listeners had to segregate the speech from background talkers, i.e., in speech masking \autocite{Brungart2007}.
+There are also a few studies so far that examined the role of predictability for understanding language when speech is fast or slow.
+For instance, \textcite{Aydelott2004} used a priming paradigm to examine the effects of contextual cues, which were target words embedded in sentences, and compared fast speech to normal speech.
+Target words were either congruent to the sentence context (100\% cloze probability, i.e., in a constraining sentence context), incongruent (0\% cloze probability, i.e., in an implausible sentence), or neutral (cloze probability not mentioned). Results indicated no reduction in facilitatory effect of contextual cues (congruent versus neutral target words) at fast speech compared to normal speech.
+In contrast, they found a reduced inhibitory effect (incongruent versus neutral target words).
+They argued that the constrained sentence context was easy to process -- fast speech did not interfere with the earlier stage of activation of words that matched the context (i.e., in congruent trials).
+In contrast, the inhibition effect was reduced because there was less time to build up the representation of words in implausible sentence contexts so that less inhibition of the incongruent target word was needed.
+However, in a replication study of \textcite{Aydelott2004}, \textcite{Goy2013} found that the facilitatory effect was reduced in fast speech compared to normal speech.
+They argued that the fast speech slowed down the activation of potential target words that matched the context, which effectively reduced the contextual facilitation.
+In a recent study, \textcite{Winn2021b} did not observe an increase in contextual facilitation for slow speech compared to normal speech, although the intelligibility was higher for slow speech.
+In another experiment, \textcite{Koch2016a} presented participants with a question-answer sequence of varying length across a wide range of normal and fast speech from Spoken Dutch Corpus \autocite{Oostdijk2000}.
+They did not find any effect of predictability on word recognition. However, target word predictability and target word position in the sentences were not systematically controlled for in their study.
 
-\hypertarget{predictive-processing-degraded-speech-and-different-rates-of-presentation-of-peech}{%
-\subsection{Predictive processing, degraded speech, and different rates of presentation of peech}\label{predictive-processing-degraded-speech-and-different-rates-of-presentation-of-peech}}
+The effects of predictability at varying rates of presentation have been also investigated with self-paced reading studies.
+For example, \textcite{Wlotko2015} presented participants with context evoking sentences followed by sentences containing a target word that was either expected (mean cloze probability of 74\%) or unexpected (either same or different semantic category, both with cloze probability of approximately 0\%).
+They found that the facilitation effect (as reflected in the N400 amplitude) was reduced at the sentences that were presented fast compared to the ones that were presented slow.
+They suggested that at fast rate of presentation, predictive preactivation of words was not common: There was not enough time to activate proper representation for processing of upcoming word.
+In the same study, however, when the fast presentation was followed by slow presentation in separate blocks, semantic facilitation effect was not reduced.
+That is, increase in the flow of information did not always impair the ability to predict \autocite[see also,][]{Cole2020}.
+They argued that once the brain is engaged in predictive comprehension mode, for example, first in the slow presentation rate, it can then continue to allocate resources in the same mode under faster presentation rate.
 
-\hypertarget{current-study}{%
-\subsection{Current study}\label{current-study}}
+In sum, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the speech rate \autocite{Aydelott2004,Sharit2003,Winn2021b,Wlotko2015}.
+Benefits of using context information is not only limited under varying speech rates, but also when it is degraded \autocite{Bhandari2021,Obleser2010,Sheldon2008a,Sheldon2008b}.
+In the present study we will examine whether context information is still useful when the speech rate is fast (or slow) and degraded at the same time.
+
+\hypertarget{comprehension-of-degraded-speech-at-varying-rates-of-presentation}{%
+\subsection{Comprehension of degraded speech at varying rates of presentation}\label{comprehension-of-degraded-speech-at-varying-rates-of-presentation}}
+
+Real world listening is often a combination of more than one form of degradation and distortion of speech \autocites{Gordonsalant1995}[see also,][]{Cooke2014}.
+For example, speakers' speech rate is variable, and there is a concurrent distortion due to background noise, reverberation, loss of spectral details in transmission, etc.
+Some of the earliest studies examined the `devastating' effects of `combinations of speech wave distortions', but the combination of multiple distortions was not controlled for \autocite{Harris1960,Martin1956}.
+\textcite{Gordonsalant1995} systematically tested the effect of multiple, combined speech distortions.
+They found that when fast speech was presented in a background noise, or with a reverberation then the word recognition accuracy in these combined distortions was lower than when the speech was presented in any single distortion condition.
+\textcite{Adams2009} and \textcite{Adams2012} also showed that the addition of background noise had a detrimental effect on fast speech comprehension.
+With an increase in speech rate, listeners required higher signal-to-noise ratio (SNR) to achieve 50\% word recognition accuracy across a wide range of speech rate (90 to 250 words per minute, in a step of 9 words per minute) and background noise (+15 dB SNR, +5 dB SNR, and 0 dB SNR).
+These studies showed that a combination of multiple distortions is worse than a single distortion.
+It is noteworthy that neither of the distortions mentioned above (e.g., reverberation, background noise) interfere with fine structure of a speech signal which spectral degradation does.
+
+So far, the evidence for the detrimental effects of combination of spectral degradation and speech compression is sparse. Most of the evidence on this comes from cochlear implant users \autocites[e.g.,][]{Li2011,Su2016} as they are the group of listeners whose auditory input is spectrally degraded.
+\textcite{Iwasaki2002} found that a change in speech rate from slow to fast reduced word recognition accuracy in cochlear implantees.
+Similarly, their speech perception was impaired with increased rate of speech, and it was improved when the speech rate was decreased \autocite[e.g.,][]{Dincer2018}.
+\textcite{Meng2019} used both clean speech and spectrally degraded speech from MSP (Mandarin speech perception) and MHINT (Mandarin hearing in noise test) corpora in normal-hearing listeners and cochlear implant users.
+They found that an increase in speech rate had much severe effect at spectrally degraded speech (4 channels sine-wave vocoded) than at clean speech.
+To achieve the same level of accuracy, listeners required degraded speech to be much slower than the normal speech.
+All of these studies indicated that when speech rate is increased, intelligibility and comprehension of degraded speech is reduced.
+However, these studies did not examine the utility of context information when speech is distorted by more than one means, although the role of context and predictability in any one of these multiple distortions has been extensively discussed in the literature
+\autocite{Aydelott2004,Sheldon2008a,Sheldon2008b,Obleser2010,Goy2013,Corps2020,Bhandari2021,Clark2021,vanOs2021}.
+
+Taken together, the utility of semantic predictability in comprehension of degraded speech is fairly established whereas its effects in comprehension of both fast speech as well as slow speech is inconsistent.
+Whether semantic predictability is beneficial even for degraded speech presented at different rates (fast and slow) has not been investigated yet.
+
+\hypertarget{study-aims}{%
+\subsection{Study aims}\label{study-aims}}
+
+We systematically examined if contextual facilitation at a moderate level of degradation varies with a change in speech rate.
+The aim was to investigate if the increase (or decrease) in speech rate decreases (or increases) the facilitatory effect of semantic predictability that has been observed for moderately degraded speech at a normal speech rate.
+Semantic predictability was manipulated by varying the cloze probability of target words, and moderate degradation was achieved by noise vocoding of speech through 4 channels;
+\textcite{Obleser2010} and \textcite{Bhandari2021} have reported 4 channels noise vocoding to be the moderate degradation level at which contextual facilitation is observed.
+Speech rate was manipulated by compression (or expansion) of the moderately degraded speech, by uniform pitch synchronous overlap-add technique that acts upon the temporal envelope of the speech signal, to make it fast (or slow).
+
+To achieve the goal, we conducted two experiments in which listeners were required to listen to the sentences and type in the entire sentence they hear.
+Sentence comprehension (word recognition accuracy) for high and low predictability sentences were assessed in fast speech (Experiment 1), and slow speech (Experiment 2).
+Because the processing demand increases, and a limited time is to be available to process the context and form predictions \autocites[e.g.,][]{Aydelott2004,Wlotko2015}, we expected that the contextual facilitation (i.e., the difference between high and low predictability sentences) will be reduced for fast speech compared to normal speech (Experiment 3A).
+However, for slow speech due to abundance of time to process the degraded speech and the context, and reduction in effortful processing \autocite[e.g.,][]{Winn2021b}, we expected contextual facilitation to be increased compared to normal speech (Experiment 3B).
+We expected that both increase and decrease in contextual facilitation will be primarily driven by the ease of processing high predictability sentences as compared to low predictability sentences \autocite{Aydelott2004,Goy2013}.
 
 \hypertarget{experiment-3a}{%
 \section{Experiment 3A}\label{experiment-3a}}
@@ -1276,11 +1378,31 @@ Target word predictability (categorical; low and high), speech rate, or speed (c
 We fitted a model with maximal random effects structure that included random intercepts for each participant and item \autocite{Barr2013}.
 Both, by-participant and by-item random slopes were included for target word predictability, speed and their interaction.
 
-We applied treatment contrast for target word predictability (XX as a baseline; factor levels: XX, XX) and speed (XXX as a baseline; factor levels: XX, XX).
+We applied treatment contrast for target word predictability (low predictability as a baseline; factor levels: low predictability, high predictability) and speed (normal speed as a baseline; factor levels: normal speed, fast speed).
 The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
 
 \hypertarget{results-and-discussion-2}{%
 \section{Results and Discussion}\label{results-and-discussion-2}}
+
+Mean response accuracies across all conditions are presented in Table 2.
+We found a significant main effect of target word predictability (\(\beta\) = 2.42, SE = .28, \emph{z} = 8.55, \emph{p} \textless{} .001) and a significant main effect of speech rate (\(\beta\) = -0.98, SE = .24, \emph{z} = 4.16, \emph{p} \textless{} .001).
+These suggested that participants' response accuracy was higher for the high predictability sentences than for the low predictability sentences, and for normal speech than for fast speech.
+We also found a significant interaction between target word predictability and speech rate (\(\beta\) = 1.06, SE = .42, \emph{z} = 2.50, \emph{p} = .01). As it can be seen in Figure 1, the effect of target word predictability was reduced at fast speech. These results are shown in Table 3.
+
+Separate planned analyses of each predictability level were performed following the same procedure described above in the Analysis section.
+The results shown in Table 4 and Table 5 revealed that there was no significant main effect of speech rate at high predictability condition (\(\beta\) = .02, SE = .34, \emph{z} = .05, \emph{p} = .96).
+At low predictability condition, in contrast, we found a significant main effect of speech rate (\(\beta\) = -.99, SE = .27, \emph{z} = -3.72, \emph{p} \textless{} .001).
+Hence, response accuracy decreased at fast speech only for the low predictability condition.
+
+Separate planned analyses of each speech rate shown in Table 6 and Table 7 revealed that there was significant main effect of predictability in both normal speech (\(\beta\) = 1.98, SE = 0.28, \emph{z} = 7.05, \emph{p} \textless{} .001) and fast speech conditions (\(\beta\) = 2.67, SE = .37, \emph{z} = 7.14, \emph{p} \textless{} .001),
+but the effect appeared to be higher for fast speech (\(\beta\) = 2.67) than for normal speech (\(\beta\) = 1.98).
+This, however, is a result of significant reduction in accuracy at low predictability condition at fast speech rather than due to an increase in accuracy at high predictability condition. This can also be seen in Table 2 and Figure 1.
+
+These results indicated an increase in response accuracy with an increase in target word predictability only at a normal speech rate.
+Fast speech rate significantly affected accuracy at low predictability condition such that the contextual facilitation was essentially reduced.
+These findings align with previous studies conducted with clean speech that found fast speech to reduce contextual facilitation \autocite[e.g.,][]{Aydelott2004}.
+The results of the first experiment showed ease of processing high predictability sentences compared to low predictability sentences at moderately degraded fast speech.
+We conducted another experiment to examine if slowing down the speech rate eases processing of both low and high predictability sentences and increases the contextual facilitation in comprehension of moderately degraded speech.
 
 \hypertarget{experiment-3b}{%
 \section{Experiment 3B}\label{experiment-3b}}
@@ -1291,21 +1413,19 @@ The results from the maximal model are shown in Table X.X.X, and are reported be
 \hypertarget{participants-and-materials-1}{%
 \subsection{Participants and Materials}\label{participants-and-materials-1}}
 
-We recruited 48 participants (n=101; \(\pm\) SD = 23.6 \(\pm\) 3.2 years; age range = 18-30 years; 14 females) online via Prolific Academic.
+We recruited 101 participants (\(\bar{x}\) \(\pm\) SD = 23.49 \(\pm\) 3.26 years; age range = 18-30 years; 60 females, 1 preferred not to say) online via Prolific Academic.
 Same procedure as Experiment 3A was followed.
 
-Stimuli were created following the same procedure described in Experiment 3A, the difference being instead of fast speech, here we created slow speech.
-Slow speech was created by expanding the 240 sentences (120 HP and 120 LP sentences) by a factor of 1.35 using PSOLA built-in in Praat.
-All resulting slow speech recordings were then passed through 4 channels noise vocoding.
+We used the same sentences that were used in Experiment 1. However, the auditory recordings were expanded by a factor of 1.35 to create slow speech. All other procedure to create stimuli were identical to Experiment 1 resulting in two sets (one set of normal and one set of slow speech) of 240 sentences (120 high and 120 low predictability sentences) which were passed through 4 channels noise vocoding.
 
-We followed the same steps as Experiment 3A to balance speech rate and predictability conditions and to pseudo-randomize these experimental conditions.
+We followed the same steps as Experiment 3A to balance speech rate and predictability conditions and to pseudo-randomize these experimental conditions across all 4 lists.
 
 \hypertarget{procedure-4}{%
 \subsection{Procedure}\label{procedure-4}}
 
 Same procedure as Experiment 3A was followed.
 We asked participants to report the entire sentence typing in what they heard.
-Guessing was encouraged too.
+And guessing was encouraged.
 
 \hypertarget{analyses-4}{%
 \section{Analyses}\label{analyses-4}}
@@ -1314,29 +1434,72 @@ We followed the same data analyses procedure as in Experiment 3A.
 Only the trials with verb-correct responses were considered in the analyses of accuracy of sentence-final target-words (i.e., nouns); 5495 out of 12120 trials were removed before the final analyses.
 
 Target word predictability (categorical; low and high), speech rate, or speed (categorical; normal and slow), and the interaction of predictability and speed were included in the fixed effects.
-Treatment contrast was applied to both target word predictability (LP as a baseline; factor levels: LP, HP) and speed (slow as a baseline; factor levels: slow, normal).
+Treatment contrast was applied to both target word predictability (low predictability as a baseline; factor levels: low predictability, high predictability) and speed (normal speed as a baseline; factor levels: normal speed, slow speed).
 The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
 
 \hypertarget{results-and-discussion-3}{%
 \section{Results and Discussion}\label{results-and-discussion-3}}
 
-Mean response accuracy for different conditions are shown in Table X.X.X. and are presented in Figure X.X.X.
-It shows that the accuracy increased with an increase in target word predictability from low to high.
-These observations are confirmed by the results of statistical analyses (Table X.X.X):
-We again found a main effect of number of noise vocoding channels such that response accuracy at 8 channels was higher than both 4 channels (\(\beta\) = -3.49, SE = .23, \emph{z} (4320) = -15.29, \emph{p} \textless{} .001), and 6 channels noise vocoding (\(\beta\) = -0.61, SE = .20, \emph{z} (4320) = -3.07, \emph{p} = .002).
+Mean response accuracies for all experimental conditions are shown in Table 8.
+There was a significant main effect of target word predictability indicating that participants' response accuracy was higher for the high predictability condition than for the low predictability condition (\(\beta\) = 2.58, SE = .30, \emph{z} = 8.65, \emph{p} \textless{} .001).
+In contrast to Experiment 1, we did not find a significant main effect of speech rate (\(\beta\) = -.08, SE = .15, \emph{z} = .57, \emph{p} = .568), nor there was a significant interaction between speech rate and target word predictability (\(\beta\) = .44, SE = .27, \emph{z} = 1.65, \emph{p} = .099).
+These suggested that there was no change in participants' response accuracy with a reduction in speech rate, nor did the contextual facilitation significantly increase or decrease with slowing down of the speech rate.
+It can be seen in Figure 2 that the effect of target word predictability did not change with speech rate.
+These results are shown in Table 9.
 
-In contrast to Experiment 1A, there was also a main effect of target word predictability:
-Response accuracy in high predictability sentences was significantly higher than in low predictability sentences (\(\beta\) = 1.25, SE = .28, \emph{z} (4320) = 4.50, \emph{p} \textless{} .001).
-We also found a statistically significant interaction between speech degradation and target word predictability (\(\beta\) = -.95, SE = .30, \emph{z} (4320) = -3.14, \emph{p} = .002).
-Subsequent subgroup analyses of each channel condition showed that the interaction was driven by the difference in response accuracy between high predictability sentences and low predictability sentences at 8 channels (\(\beta\) = 1.42, SE = .62, \emph{z} (1440) = 2.30, \emph{p} = .02), and 6 channels noise vocoding conditions (\(\beta\) = 1.14, SE = .34, \emph{z} (1440) = 3.31, \emph{p} \textless{} .001);
-at 4 channels noise vocoding condition, the difference between high and low predictability sentences was not significant (\(\beta\) = .28, SE = .18, \emph{z} (1440) = 1.59, \emph{p} = .11).
+We conducted separate planned analyses of each predictability level; the procedure was identical to the analyses in Experiment 1.
+The results presented in Table 10 and Table 11 confirmed the findings of the main analysis reported above -- there was no significant main effect of speech rate at both high predictability condition (\(\beta\) = .39, SE = .22, \emph{z} = 1.79, \emph{p} = .073), as well as at low predictability condition (\(\beta\) = -.11, SE = .16, \emph{z} = -.71, \emph{p} = .48).
+Hence, as opposed to the findings of Experiment 1, response accuracy was not affected by change in speech rate at both high and low predictability sentences.
 
-In contrast to Experiment 1A, these results indicate an effect of target word predictability, that is, response accuracy was higher when the target word predictability was high as compared to low.
-Also, the interaction between predictability and speech degradation, which was not observed in Experiment 1, showed that semantic predictability facilitated the comprehension of degraded speech already at moderate degradation levels (like, 6 and 8 noise vocoding channels).
-In line with the findings from Experiment !a, response accuracy was better with a higher number of channels.
+As in Experiment 1, we conducted separate planned analyses of each speech rate.
+The results as shown in Table 12 and Table 13 revealed that there was a significant main effect of target word predictability at both slow speech rate (\(\beta\) = 2.55, SE = .31, \emph{z} = 8.14, \emph{p} \textless{} .001) and normal speech rate (\(\beta\) = 2.08, SE = .27, \emph{z} = 7.68, \emph{p} \textless{} .001);
+the effect appeared to be higher for slow speech (\(\beta\) = 2.55) than for normal speech (\(\beta\) = 2.08).
+This, however, was a result of smaller accuracy at low predictability condition at slow speech rather than due to a higher accuracy at high predictability condition. This can also be seen in Table 8 and Figure 2.
+
+In contrast to Experiment 1, the findings of Experiment 2 did not indicate differential effect of speech rates in the comprehension of high and low predictability sentences.
+While the results of Experiment 1 showed that speeding up the speech rate significantly reduced the accuracy of low predictability sentences, such a reduction was not observed in Experiment 2 when the speech rate was slowed down.
+Although listeners' response accuracy was reduced at both fast and slow speech rates as compared to normal speech rate, their ability to utilize context information was only impaired by fast speech.
 
 \hypertarget{general-discussion-1}{%
 \section{General Discussion}\label{general-discussion-1}}
+
+The main goals of the present study were to examine if semantic predictability facilitates comprehension of moderately degraded speech at different speech rates given that the ease of processing the sentences varies with their predictability and speed.
+The results of the two experiments revealed that fast speech selectively impedes the comprehension of low predictability sentences, while slow speech has no effect on contextual facilitation at a moderate level of degradation.
+
+In both the experiments, our results showed a significant main effect of predictability at normal speech rate,
+i.e., we observed a facilitatory effect of semantic predictability at normal speech rate under moderate degradation level of 4 channels noise vocoding.
+This replicates the findings from earlier studies like \textcite{Obleser2010} and \textcite{Bhandari2021} in which participants were presented only with normal speech rate, and contextual facilitation was observed at 4 channels noise vocoding.
+At this moderate degradation level, listeners were able to decode the context and form its meaning representation.
+Consequently, they generated predictions about the upcoming target word in a sentence even in low predictability condition depending on the contextual constrain of the sentences \autocites{Bhandari2021}[see also,][]{Strauss2013}.
+
+The expected interaction between speech rate and target word predictability in Experiment 1 showed that comprehension of degraded speech was significantly impaired for low predictability sentences at fast speech rate. In contrast, there was a little to no effect in comprehension of high predictability sentences at fast speech rate under moderate degradation level.
+Listening to degraded speech itself requires more attentional resources compared to clean speech \autocite{Wild2012}.
+When presented as a fast speech, spectral degradation imposes additional cognitive demands; and less time is available to process the auditory signal.
+In such a rapidly unfolding event, it is difficult to decode the context information and form its meaning representation from the degraded speech to form predictions about upcoming target word.
+This difficulty is heightened when target words are not easily predictable from the context \autocite{Aydelott2004}.
+As a result, language comprehension in low predictability condition is impaired more than that in high predictability condition.
+This detrimental effect on low predictability condition also results in the reduced contextual facilitation in fast speech compared to normal speech observed in Experiment 1.
+
+In contrast to Experiment 1, we did not find the expected interaction between speech rate and target word predictability in Experiment 2,
+i.e., decrease in speech rate did not differentially affect the comprehension of high or low predictability sentences although the comprehension tended to decrease at slow speech rate compared to normal speech rate.
+As opposed to Experiment 1, we did not observe a significant change in contextual facilitation at slow speech rate at a moderate degradation level in Experiment 2.
+Slowing down the speech provides listeners more time to process the information, including the context that is important to generate predictions.
+However, our findings show that this ease of processing does not benefit intelligibility and comprehension of sentences with highly predictable target words any more than the sentences with less predictable target words.
+This claim is in line with the results of \textcite{Winn2021b}{]} who reported that intelligibility does not increase when the speech is slowed down even though there is a difference in the intelligibility between high and low predictability sentences at both normal and slow speech rates.
+
+Accounts from speech perception, and predictive language processing point to a common expectation: contextual facilitation is enhanced when listeners have more time to process the incoming information {[}CITE{]}.
+Additionally, there are conflicting empirical evidence whether increase or decrease of speech rate provides benefit in intelligibility, comprehension, and contextual facilitation.
+Given these state of affairs, our findings add new theoretical insights with empirical support into the interplay among spectral degradation, speech rate, and semantic prediction.
+Although reducing the speech rate provides time to process the information (including the context) in the degraded speech, this eases the processing of both high and low predictability to a similar extent.
+And thus, no increased facilitatory effect is observed at slow speech rate. In contrast, increasing the speech rate adds more cognitive load on the top of the effort required to process degraded speech.
+This results in difficulty in processing and understanding the rapidly unfolding sentences among which this difficulty is further increased when the target words are not easily predictable.
+
+We note a limitation in our study. We tested only with one expansion factor of 1.35, and one compression factor of 0.65.
+Although less likely, it can be speculated that when the speech is expanded to a greater degree by including other expansion factors, an increase in facilitatory effect could be observed {[}cf.~{]} which was not the case in the current study.
+
+To conclude, we show that processing speed and constrains in attentional and cognitive resources are key factors that influence contextual facilitation of moderately degraded speech.
+When enough time is available to process information, i.e., at slow speech, contextual facilitation does neither increase nor decrease.
+However, at a time crunch of information processing, i.e., at fast speech, contextual facilitation is reduced such that the fast speech is detrimental to understanding words that are not easily predictable from the context.
 
 \hypertarget{conclusions-1}{%
 \section{Conclusions}\label{conclusions-1}}
@@ -1346,14 +1509,17 @@ In line with the findings from Experiment !a, response accuracy was better with 
 
 \minitoc
 
-\hypertarget{general-discussion-2}{%
-\chapter{General discussion}\label{general-discussion-2}}
+\hypertarget{discussion-and-conclusion}{%
+\chapter{Discussion and conclusion}\label{discussion-and-conclusion}}
 
-\hypertarget{summary-of-the-experiments}{%
-\section{Summary of the experiments}\label{summary-of-the-experiments}}
+\hypertarget{summary-of-the-main-findings}{%
+\section{Summary of the main findings}\label{summary-of-the-main-findings}}
 
-\hypertarget{a-new-framework-on-the-interaction-between-top-down-predictive-and-bottom-up-auditory-processes-in-perception-and-comprehension-of-degraded-speech}{%
-\section{A new framework on the interaction between top-down predictive and bottom-up auditory processes in perception and comprehension of degraded speech}\label{a-new-framework-on-the-interaction-between-top-down-predictive-and-bottom-up-auditory-processes-in-perception-and-comprehension-of-degraded-speech}}
+\hypertarget{theoretical-and-practical-implications}{%
+\section{Theoretical and practical implications}\label{theoretical-and-practical-implications}}
+
+\hypertarget{conclusion-1}{%
+\section{Conclusion}\label{conclusion-1}}
 
 \minitoc 
 
@@ -1363,26 +1529,17 @@ A conclusion is the place where you got tired of thining.
 
 
 
-\hypertarget{theoretical-and-practical-implications}{%
-\chapter{Theoretical and practical implications}\label{theoretical-and-practical-implications}}
+\hypertarget{ethics-and-funding}{%
+\chapter{Ethics and funding}\label{ethics-and-funding}}
 
-\hypertarget{potential-limitations-of-predictive-processing}{%
-\section{Potential limitations of predictive processing}\label{potential-limitations-of-predictive-processing}}
+\noindent 
 
-\hypertarget{attention-adaptation-and-processing-speech-moderator-mediator-or-subsumed-factor-in-rediction}{%
-\section{Attention, adaptation and processing speech: Moderator, mediator or subsumed factor in rediction?}\label{attention-adaptation-and-processing-speech-moderator-mediator-or-subsumed-factor-in-rediction}}
+\textbf{Ethics}: The studies presented in this thesis involved human subjects.
+All subjects were recruited following the recommendations of the American Psychological Association.
+All subjects provided an informed consent in accordance with the Declaration of Helsinki.
+The ethics committee of the Deutsche Gesellschaft für Sprache (DGfS; English: German Society for Language Science) provided ethical approval for the experiments conducted.
 
-\hypertarget{implications-for-clinical-audiology}{%
-\section{Implications for clinical audiology}\label{implications-for-clinical-audiology}}
-
-\hypertarget{materials-used-in-hearing-tests}{%
-\subsection{Materials used in hearing tests}\label{materials-used-in-hearing-tests}}
-
-\hypertarget{rehabilitative-training-of-cochlear-implantees}{%
-\subsection{Rehabilitative training of cochlear implantees}\label{rehabilitative-training-of-cochlear-implantees}}
-
-\hypertarget{active-attention-to-speech-materials}{%
-\subsubsection{Active attention to speech materials}\label{active-attention-to-speech-materials}}
+\textbf{Funding}: The research presented in this thesis was funded by the Deutsche Forschungsgemeinschaft (DFG; English: German Research Foundation) under the research grant SFB1102 (\ldots.; English: Collaborative Research Center), Project ID 232722074.
 
 \minitoc 
 

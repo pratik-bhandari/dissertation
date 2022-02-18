@@ -7,16 +7,18 @@ output:
     citation_package: biblatex
 bib-humanities: true
 documentclass: book
-#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
 ---
 
 <!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
 <!-- \chaptermark{Citations and cross-refs} -->
 
-# General discussion
+# Discussion and conclusion
 
-## Summary of the experiments
+## Summary of the main findings
 
-## A new framework on the interaction between top-down predictive and bottom-up auditory processes in perception and comprehension of degraded speech
+## Theoretical and practical implications
+
+## Conclusion
  
 \minitoc <!-- this will include a mini table of contents-->
