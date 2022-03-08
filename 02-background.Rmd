@@ -16,77 +16,101 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 
 \minitoc <!-- this will include a mini table of contents-->
 
-## Perception and comprehension of degraded speech
+In the previous chapter we outlined the research questions and goals of the studies in this dissertation.
+In so doing, we presented our motivation and relevant theoretical questions.
+To further elaborate on these motives, this chapter provides some background on the current understanding on the theoretical aspects of the research questions.
+We introduce speech degradation, and predictive language processing in the context of speech degradation.
+In addition, we also provide a background on the effects of speech degradation, and the measurement of speech perception and language comprehension.
+Understanding these fundamental concepts of top-down and bottom-up processes are essential for the chapters that follow.
+These concepts are briefly reiterated in the following chapters wherever relevant.
 
-<!--Mention about difficulties, effort, reduced intelligibility.
-Last sentence: context helps.-->
+## Speech distortion and degradation
 
-Speech can be distorted by variability in speakers’ production, like, accented speech, soft/rapid speech, or it can arise from listener-related factors like, hearing loss, auditory processing disorder.
-It can also be a result of noise from transmission, like ambient noise, or distortion in the transmission (e.g., telephone line).
-All these sources of distortion make listening condition adverse.
-In laboratory setup, the effect of speech distortion, and the mechanism of listening in adverse listening condition is studied using artificial distortion of speech.
-For example, white or pink noise signal is superimposed on the top of speech signal so as to add a background noise.\
+In an ideal situation, spoken perception is a seamless process: a speaker produces an utterance, the speech signal transmits via some medium like air, and a listener perceives the signal as speech waves which enter her ears and start a cascade of mechanical-neural processes of hearing.
+However, speech perception is not so simple. <!-- hardly as simple as it is described in the preceding sentence.-->
+There are primarily three sources distortion.
+Speech can be distorted by variability in speakers’ production, like, accented speech, or soft and rapid speech.
+Distortion can arise from listener-related factors like, hearing loss, or auditory processing disorder.
+It can also be a result of noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
+All these sources of distortion make listening conditions adverse.
+In laboratory setup, the effects of speech distortion, and the mechanism of listening in adverse listening condition are studied using artificial distortion of speech.
+<!--The use of such artificial distortion is also helps us understand the cognitive architecture of human speech-language processing.-->
+Different forms of distorted speech manipulate different properties of speech signal.
+For example, speeding or slowing a speech signal (i.e. speech compression or expansion) manipulates its temporal property.
+Similarly, noise vocoding manipulates its spectral property.
+Noise vocoding removes the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section X.X.X).
+This method of speech degradation was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line [@Dudley1939; @Vocoder1940] --- [Re-read this thoroughly].
+Shannon and colleagues later used the same technique as an analogue to cochlear implant [@Shannon1995; @Loizou1999; @Shannon2004] -- number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility [… cite probably Wagner et al. …].
+Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal graded manner, noise vocoding also is a method of distortion that helps us understand the speech perception and language comprehension in cochlear implantees.
 
-In the early 1950s, plastic tapes with magnetic recorder were mechanically cut, spliced and pasted (named as *chop-splice method*) to increase the rate of speech [@Garvey1953].
-Such a method was developed used to overcome the effect of frequency shift on intelligibility that was an undesired result of accelerated speech recorded on sound film or discs in the late 1920s [@Fletcher1929].
-In recent days, algorithms like Pitch Synchronous Overlap-Add Technique [PSOLA; @Charpentier1986; @Moulines1990] and Overlap-Add Technique Based on Waveform Similarity [WSOLA; @Verhelst1993] are used to compress or elongate an auditory signal so as to change the rate of speech.
-These methods preserve the phonemic properties of speech to a large extent (see Section X.X.X).
+One of the main factors that determine the intelligibility of degraded speech is the number of noise vocoding channels.^[Throughout this thesis, speech distortion by noise vocoding is referred to as speech degradation, or spectral degradation of speech.]
+The higher the number of noise vocoding channels, the more is the frequency specific information available in the degraded speech,
+consequently, higher is the intelligibility compared to the speech that is degraded with lesser number of noise vocoding channels.
+For example, listeners rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech.
 
-In the same vein, noise-vocoding is used to remove the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section X.X.X).
-Noise-vocoding was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line [@Dudley1939; @Vocoder1940] --- [Re-read this thoroughly].
-Shannon and colleagues later used the same technique as an analogue to cochlear implant [@Shannon1995; @Loizou1999; @Shannon2004] – number of channels used in a cochlear implant are similar to the number of noise-vocoding channels in terms of their speech output and intelligibility [… cite probably Wagner et al. …].
+## Prediction and comprehension of degraded speech
+<!-- We have stated above that the quality of speech signal determines the speech intelligibility. -->
+Listeners do not just rely on the quality of speech signal to understand degraded speech.
+That is, it is not just the number of noise vocoding channels that determines how well a person understand degraded speech.
+In addition to the bottom-up signal, listeners rely also on the context information.
+Before discussing on the role of top-down predictive processes on the comprehension of degraded speech, we first review the role of predictions in language comprehension in general.
 
-<!-- ### Comprehension of degraded speech -->
-The first factor that determines the intelligibility of noise-vocoded speech is the number of channels.
-With an increase in noise-vocoding channels, speech intelligibility increases [e.g., @Davis2005; @Shannon1995].
-For example, speech processed through 8 channels noise vocoding is more intelligible than the speech processed through 4 channels noise vocoding [@Loizou1999].
-Participant related variables (age, vocabulary), test materials (words, sentences, accented speech), and listening conditions (quiet, background noise) also influence the intelligibility of noise vocoding speech.
-Accuracy is higher for sentences than for words in isolation (CITE).
-Compared to quiet, response accuracy was reduced when listeners were presented with vocoded speech in the presence of a background noise.
-At the same level of degradation, accuracy is higher for younger adults than for older adults, i.e., with age, keeping all other variables constant, comprehension of degraded speech decreases.
-Other factors like sentence context and vocabulary also play a role, which will be discussed below.
-In sum, comprehension of degraded speech is a not only the amount of spectral details available, but also other listener and speaker related factors.
-How a listener utilizes available context information to 'make-up' for the impoverished auditory information is the critical factor determining intelligibility and comprehension of degraded speech.
+### Predictive processing and language comprehension
 
-## Prediction in language comprehension
+Research from various domains of cognitive (neuro)science, like emotion, vision, odor, and proprioception, has shown that perception and cognition primarily operates by predicting upcoming events [@Stadler2012; @Clark2013; @Seth2013; @Marques2018].
+Human language comprehension too has been claimed to be predictive in nature from as early as mid-twentieth century [e.g., @Miller1951; @Mccullough1958; @Morton1964]. <!-- @Bruce1958 for context in noise -->
+which in recent days has received overwhelming support from studies in psycholinguistics and cognitive neuroscience of language [@Delong2005; @Lupyan2015; @Pickering2018; cf. @Huettig2016].
+Empirical evidence from a number of studies suggests that readers and listeners predict upcoming words in a sentence when the words are predictable from the preceding context [for reviews @Staub2015; @Kuperberg2016].
+For instance, such words are read faster and are skipped compared to the words that are less predictable from the context [@Ehrlich1981; @Frisson2005; @Staub2011].
+Applying the visual world paradigm, several studies have demonstrated that individuals show anticipatory eye movements towards the picture of the word that is predictable from the sentence context [@Altmann1999; @Kamide2003; @Ankener2018].
+The sentence-final word in a highly constraining sentence (e.g., *"She dribbles a ball."*) elicits a smaller N400 amplitude -- a negative going EEG component that peaks around 400 ms post-stimulus and is considered as a neural marker of context-based semantic unexpectedness [@Kutas2011] -- than that in a less constraining sentence (e.g., *"She buys a ball."*; @Kutas1984; @Federmeier2007).
+Similarly, event-related words (e.g., *"luggage"*) elicited reduced N400 compared to event-unrelated words (e.g., *"vegetables"*) which were not predictable from the context (e.g., in an event of *"travel"*; @Metusalem2012).
+<!-- ALSO ADD PAPER BY MAIRE STAUDE ON GRADED PREDICTION, i think it was an EEG and eye-tracking paper in 2020/21. -->
+In sum, as the sentence context builds up, listeners make predictions about upcoming words in the sentence, and these in turn facilitate language comprehension.
+That is, individuals use the context available to them to generate predictions which aids understanding written and spoken language.
 
-Continue from the previous paragraph that context helps in comprehension of degraded speech.
-While listening to speech, listeners use the available context information and form predictions about upcoming linguistic event.
-One of the earliest evidences on this predictive nature of language comprehension comes from 
+**Limits of predictive language processing**:
+It is important to note, and acknowledge that the ubiquity and universality of predictive language processing has not gone unquestioned.
+Apart from the debate on the nature of prediction, which we will come to later in this chapter, there are compelling evidence that question if prediction is necessary, even present at all in language comprehension.
+For example, @Mishra2012 showed that literacy is a key factor that limits listeners' prediction about upcoming word.
+In a visual word paradigm study, they found that individuals with low literacy score showed less anticipatory eye movements compared to the individuals with high literacy score.
+They bolstered their finding in a neuroimaging study claiming that learning to read fundamentally changes the neural circuitry.
+It is therefore plausible that such structural change in the brain is manifested in linguistic behavior too.
+Similarly, cognitive aging has been shown to be a limiting factor in generating predictions.
+Smaller N400 amplitude and latency in older adults compared to younger adults have been shown as an evidence of inability of older adults in predictive processing in language processing.
+Among older adults, those with lower working working memory scores are shown to be further disadvantaged when it comes to the use of context information.
+A different line of argument that critiques the entire predictive processing domain comes from observations by HuettingXYZ.
+They claim that most of the studies in support of predictions are *artificial* which encourage participants to predict in a laboratory setup which does not apply to a real life interactions.
+They analyzed XYZ number of eye tracking studies and found that XYZ did not even mention the preview time; ZYC presented speech at a slow rate.
+Despite these critiques, there are plenty of experiments that have been replicated in pre-registerd multi-lab replication studies.
+Computational modeling of language processing also support the claim that language processing is predictive in nature.
+We are, nonetheless, aware of the critiques.
+And, in this thesis, we will study other factors (e.g., auditory temporal attention) that can interact with, and potentially limit top-down semantic predictions.
 
-<!-- ### Role of sentence context -->
-Literature from sentence reading provides us with an insight how readers use the information available as the words are presented to them to make predictions about what word they'll see next.
-In visual world paradigm, @Altmann1999 showed that a listeners predict upcoming word of a sentence using the cue provide by the sentence context.
-For example, they presented participants a picture of four objects: cake, XXX, XXX, and XXX while the participants were listening to the sentence '*The boy will eat the* ...'.
-Even before hearing *cake*, participants fixated at the picture of cake.
-This finding has been replicated multiple times [@Kamide2003; @Altmann2007; CITE other recent papers] in different languages [@MISHRA...].
-This is observable in behavioral measures as well as electrophysiological measures.\
-@Kutas1984 reported smaller N400 amplitude for highly probable sentence endings than for less probable sentence endings given different sentence contexts.
-They found that the N400 amplitude was more sensitive to sentence ending than to the constrain imposed by the preceding words.
--- Check new studies on this line --
-@Delong2005 showed that listeners form probabilistic predictions about upcoming words in a sentence.
-In a highly predictable sentence context like 'The day was breezy so the boy went outside to fly …', N400 amplitude was much smaller for an expected continuation 'a kite' than for an unexpected continuation 'an airplane'.
-This study has been further replicated in Spanish-English bilinguals [CITE] showing that when presented with ... ... ...
-Similarly, it has been observed that readers tend to skip the predictable words more than unpredictable words while reading, and predictable words are read faster than unpredictable words [@Frisson2005; @Rayner2011].
-Semantic context already provides listeners information about what the predictable word is going to be, therefore their fixation time on the predictable words is lesser than unpredictable words, and it takes lesser time to read the predictable words.\
-Taken together, these studies show that as the sentence unfolds, a human comprehender forms the meaning representation of the available context information, and generates prediction about what linguistic input is going to come next.\
+### Predictive processing and comprehension of degraded speech
 
-In a noisy environment, however, it is difficult to understand the context itself.
-While reading text that is visually degraded, readers rely on the available context information [e.g., @Clark2021].
-Listeners generally rely on sentence context moreso in an adverse listening condition than in a clear listening environment.
-For example, @Sheldon2008a showed that when the speech signal is degraded, word recognition is improved by sentence context in both younger and older adults.
-They presented listeners with senteces with high and low context information, noise-vocoded at different levels of spectral degradation.
-They found that response accuracy was higher for sentences with high context information than for the sentences with low context information.
-In cochlear implantees, XYZ et al., have shown that high predictability sentences result in higher accuracy than low predictability sentences in a word recognition task.
-Contrary to the findings of most of the studies using clean speech and reading clean text, sentence context does not *always* help in comprehension of all noise-vocoded speech.
-When the noise-vocoded speech is least degraded, listeners might rely mostly on the bottom-up auditory input than on top-down predictions generated from the sentence context; hence, context does not render benefit in this case.
-For example, in the 32-channels noise-vocoded speech in @Obleser2010, sentence context, and consecutively top-down semantic prediction does not yield any benefit in sentence comprehension when compared to 4-channels noise-vocoded speech.\
+We have discussed above that individuals make predictions about not-yet-encountered linguistic unit based on available context information as the sentence unfolds:
+Top-down predictive and bottom-up perceptual processes interact dynamically in language comprehension.
+When the bottom-up perceptual input is less reliable, for example, in adverse listening conditions, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words (e.g., @Strauss2013; see also @Corps2020).
+Obleser and colleagues [@Obleser2007; @Obleser2010; @Obleser2011], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also @Hunter2018].
+They found that semantic predictability facilitated language comprehension only at moderate levels of speech degradation.
+That is, participants relied more on the sentence context when the speech signal was degraded but it was *intelligible enough* than when it was not degraded, or when it was highly degraded.
+At such moderate levels of speech degradation, accuracy of word recognition was found to be higher for words in high predictability sentences than the words in low predictability sentences [@Obleser2010].
+For the extremes, i.e., when the speech signal was highly degraded (making the speech almost completely unintelligible) or when it was the least degraded (rendering the speech intelligible),
+the word recognition accuracy was similar across both levels of sentence predictability, meaning that predictability did not facilitate language comprehension.
+@Sheldon2008b estimated that for both younger and older adults, the number of noise vocoding channels required to achieve 50\% accuracy varied as a function of sentence context.
+Compared to highly constraining sentences, a higher number of channels (i.e., more bottom-up information) was required in less constraining sentences to achieve the same level of accuracy.
+They also concluded that when speech is degraded, word recognition is facilitated by predictability and sentence context.
+Taken together, these studies conclude that at moderate levels of degradation, participants rely more on the top-down predictions generated by the sentence context and less on the bottom-up perceptual processing of unclear, less reliable and degraded speech signal [@Obleser2014].
+<!--Reliance on prediction results in higher word recognition accuracy for target words high cloze probability than for target words with low cloze probability.
+In the case of a heavily degraded speech signal, participants may not be able to understand the sentence context and, therefore, be unable to form predictions of the target word, or their cognitive resources may already be occupied by decoding the signal, leaving little room for making predictions.
+Thus, there is no differential effect of levels of sentence predictability.
+On the other extreme, when the speech is clear and intelligible, participants recognize the intelligible target word across all levels of sentence predictability.
+Hence, no differential effect of levels of predictability of target word can be expected.-->
 
-In summary, sentence context provides information necessary to generate top-down predictions.
-Listeners use this context information and form predictions to better comprehend degraded speech.
+**Nature of prediction**:
+One of the many debates in the literature of predictive language processing pertains this question: Is prediction probabilistic or is it an all-or-nothing phenomenon?
+This is a longstanding debate in sentence processing, and *clear* speech comprehension.
 
-## Measurement of language comprehension
 
-##
- 
- 
+Whether the nature of prediction is similar in adverse listening condition has not come under theoretical questions among psycholinguists and cognitive scientists (cf. @Strauss2013; @Corps2020).
