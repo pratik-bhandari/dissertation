@@ -13,4 +13,3 @@ documentclass: book
 
 # Experiment 4: Older adults rely more on sentence context than on the auditory signal in comprehension of moderately degraded speech
 
-\minitoc

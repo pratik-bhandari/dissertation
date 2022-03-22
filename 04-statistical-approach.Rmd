@@ -10,8 +10,6 @@ documentclass: book
 bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
 ---
 
-\minitoc <!-- this will include a mini table of contents-->
-
 <!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
 <!-- \chaptermark{Citations and cross-refs} -->
 
@@ -19,11 +17,11 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 
 ## Linear regression
 
-<!-- Analysis of Variance (ANOVA) has been one of the very commonly used statistical tools in psychology, and psycholinguistics [...CITE...], specifically for continuous data. -->
-<!-- It is still a common method for continuous data like response times. -->
-<!-- However, as early as 19XX, ABC ...CITE... had pointed out one problem in using ANOVA in psycholingusitics. -->
-<!-- He pointed out that considering all items to have similar effect on the participants is indeed a fallacy. -->
-<!-- Although this helped understand that items are also as different as participants, it did not solve the problem inherent in ANOVA (CITE). -->
+<!-- Analysis of Variance (ANOVA) has been one of the very commonly used statistical tools in psychology, and psycholinguistics [...CITE...], specifically for continuous data.
+It is still a common method for continuous data like response times.
+However, as early as 19XX, ABC ...CITE... had pointed out one problem in using ANOVA in psycholingusitics.
+He pointed out that considering all items to have similar effect on the participants is indeed a fallacy.
+Although this helped understand that items are also as different as participants, it did not solve the problem inherent in ANOVA (CITE). -->
 In this thesis, we use binomial mixed effects logistic regression models with crossed random effects [@Baayen2008].
 These models are, simply speaking, extensions of logistic regression models.
 A logistic regression models a dependent variable (or an *outcome*, or a *response* variable) as a function of one or more independent predictor variables (or *factors*, or *explanatory* variables).
@@ -39,30 +37,30 @@ y =
 \end{align}
 
 The intercept $\alpha$, and the regression coefficients $\beta_1, \beta_2,$ and $\beta_3$ for each explanatory variable are estimated to achieve the model that best fits the data.
-Analysis of Variance (ANOVA) is a special case of logistic regression (Chatterjee in Jaeger's thesis page 40; Shravan's book and blog) that is one of the most common statistical tools in psychology and psycholinguistics [...CITE...].
+Analysis of Variance (ANOVA) is a special case of logistic regression [@Chatterjee2012; @Vasishth2022] that is one of the most common statistical tools in psychology and psycholinguistics.
 These linear regressions as shown above (Equation \ref{eq:linear_regression}) and ANOVAS however, are not well suited for categorical data like response to multiple choice questions or yes/no questions, confidence ratings, etc.
 For example, in all the experiments in the current thesis, the response variables are response accuracy, given binary correct/incorrect responses.
 Output of linear regression model ranges from $+\infty$ to $-\infty$ while accuracy (or probability) ranges from, 0 to 1.
 Additionally, simple regression models do not take into account the variability across individual participants and items.
-These problems in psychological sciences and psycholinguistics research has been long pointed out as early as 19XX [ ...CITE language as a fixed effects fallacy... ], and later [ ... ].
-They are addressed to some extent by binomial logistic regression, and for our purpose by incorporating mixed effects model to binomial logistic regression.
+These problems in language sciences have been pointed out since as early as 1960s [@Coleman1964; @Clark1973]. <!-- ...CITE language as a fixed effects fallacy... ], and later [ ... ]. -->
+They are addressed to some extent by binomial logistic regression, and for our purpose by incorporating mixed effects model to binomial logistic regression [@Baayen2008].
 
 Below we briefly introduce binomial logistic regression and mixed effects model.
 Then we show a simple example of how binomial logistic mixed effects model is used in the experiments in this thesis.
 
 ## Binomial logistic regression
 
-The response variable in this experiments in this thesis are binary.
+The response variable in the experiments in this thesis are binary.
 Participants' written response to what they hear are coded as either correct or incorrect.
 A binomial logistic regression model is best suited for such a categorical data [@Jaeger2008].
-We will use the term logistic regression model and binomial logistic regression model interchangeably henceforth.
+We use the term logistic regression model and binomial logistic regression model interchangeably henceforth.
 
 As the name suggests, the output variable in a logistic regression model is in logit scale.
 The model therefore predicts logits of an outcome variable.
 Logits are $\log$ with base $e$, i.e. $\ln$.
 
-*Probability* ranges from 0 to 1 only while *odds* ranges from 0 to $+\infty$.
-Fitting a linear regression model with probability or odds would assume the range to be between 0 and 1, and between 0 and $+\infty$ respectively.
+*Probability* ranges from 0 to 1 only while *odds* range from 0 to $+\infty$.
+Fitting a linear regression model with probability, or odds would assume the range to be between 0 and 1, or between 0 and $+\infty$ respectively.
 This restricts the range, and is incorrect for a linear model.
 Therefore, in a binomial logistic regression model, log-odds are used which range from $-\infty$ to $+\infty$.
 
@@ -103,19 +101,19 @@ where,
 <!-- {\frac{exp(\beta_0 + \beta_1X_i + \beta_2X_2 + ... + \beta_3X_{n})} -->
 <!-- {1 + exp (\beta_0 + \beta_1X_i + \beta_2X_2 + ... + \beta_3X_{n})}} -->
 <!-- \end{align} -->
-Log-odds of correct response obtained from Equation \ref{eq:simple_logistic} can be transformed to probability of correct response. Equations \ref{eq:logit-to-prob_short}, and \ref{eq:logiteq} provide the relationship between probability, logit (or log-odds), and odds ($\frac{p}{1-p})$).
+Log-odds of correct response obtained from Equation \ref{eq:simple_logistic} can be transformed to probability of correct response. Equations \ref{eq:logit-to-prob_short}, and \ref{eq:logiteq} provide the relationship between probability, logit (or log-odds), and odds ($\frac{p}{1-p}$).
 
 Some of the assumptions made for binomial logistic regression models are violated in our data.
 One of them being non-independence of observations, i.e., all data points are independent from one another.
 This assumption is violated in unbalanced design, and at times even for balanced design.
-Same participant responds multiple trials of same experimental condition within an experiment.
-Although the design itself is balanced, after removal of outliers and/or trials which are not appropriate for comprhension measures (see section XXX for details), number of trials in analyses are unequal for each participant, item, and experimental condition.
-This introduces a bias in the model [Jaeger2008; other papers on GLMM].
+Same participant responds to multiple trials of same experimental condition within an experiment.
+Although the design itself is balanced, after removal of outliers and/or trials which are not appropriate for comprehension measures (see section XXX for details), number of trials in analyses are unequal for each participant, item, and experimental condition.
+This introduces a bias in the model [@Jaeger2008].
 
 Another intrinsic property or feature of logistic regression is that it assumes a common mean for each predictors.
 It has been shown that this is in fact not true: the effect of a predictor can vary depending on different random variables like participants, or items.
 To account for these variances, mixed effects models are used.
-In recent days, these models are frequently used and advocated for by psycholingustis and statisticians [ ... cite ... ]. 
+In recent days, such statistical models are frequently used and advocated for by psycholingustis and statisticians [@Gries2015; @Meteyard2020]. 
 
 ## Mixed effects modeling
 

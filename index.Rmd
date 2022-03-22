@@ -26,7 +26,7 @@ university-logo: templates/beltcrest.png
 university-logo-width: 5cm
 submitted-text: A thesis submitted for the degree of
 degree: Doctor of Philosophy
-degreedate: xxxx 2021
+degreedate: xxxx 2022
 abstract: |
   `r paste(readLines("front-and-back-matter/_abstract.Rmd"), collapse = '\n  ')`
 acknowledgements: |
@@ -65,7 +65,7 @@ bibliography-heading-in-pdf: Bibliography
 # biblatex options #
 # unless you run into 'biber' error messages, use biblatex as it lets you customise your bibliography directly
 use-biblatex: true
-bib-latex-options: "style=authoryear, sorting=nyt, backend=biber, maxcitenames=2, useprefix, doi=true, isbn=false, uniquename=false" #for science, you might want style=numeric-comp, sorting=none for numerical in-text citation with references in order of appearance
+bib-latex-options: "style=authoryear, sorting=nyt, backend=biber, maxcitenames=2, useprefix, doi=true, isbn=false, uniquename=false, dashed=false, url=false" #for science, you might want style=numeric-comp, sorting=none for numerical in-text citation with references in order of appearance
 
 # natbib options #
 # natbib runs into fewer errors than biblatex, but to customise your bibliography you need to fiddle with .bst files
@@ -118,7 +118,7 @@ section-numbering-depth: 2 # to which depth should headings be numbered?
 toc-depth: 2 # to which depth should headings be included in table of contents?
 lof: true # include list of figures in front matter?
 lot: true # include list of tables in front matter?
-mini-toc: true  # include mini-table of contents at start of each chapter? (this just prepares it; you must also add \minitoc after the chapter titles)
+mini-toc: false  # include mini-table of contents at start of each chapter? (this just prepares it; you must also add \minitoc after the chapter titles)
 mini-lot: false  # include mini-list of tables by start of each chapter?
 mini-lof: false  # include mini-list of figures by start of each chapter?
 

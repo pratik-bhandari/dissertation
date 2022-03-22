@@ -14,8 +14,6 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 
 # Background
 
-\minitoc <!-- this will include a mini table of contents-->
-
 In the previous chapter we outlined the research questions and goals of the studies in this dissertation.
 In so doing, we presented our motivation and relevant theoretical questions.
 To further elaborate on these motives, this chapter provides some background on the current understanding on the theoretical aspects of the research questions.
@@ -60,7 +58,7 @@ Before discussing on the role of top-down predictive processes on the comprehens
 Research from various domains of cognitive (neuro)science, like emotion, vision, odor, and proprioception, has shown that perception and cognition primarily operates by predicting upcoming events [@Stadler2012; @Clark2013; @Seth2013; @Marques2018].
 Human language comprehension too has been claimed to be predictive in nature from as early as mid-twentieth century [e.g., @Miller1951; @Mccullough1958; @Morton1964]. <!-- @Bruce1958 for context in noise -->
 which in recent days has received overwhelming support from studies in psycholinguistics and cognitive neuroscience of language [@Delong2005; @Lupyan2015; @Pickering2018; cf. @Huettig2016].
-Empirical evidence from a number of studies suggests that readers and listeners predict upcoming words in a sentence when the words are predictable from the preceding context [for reviews @Staub2015; @Kuperberg2016].
+Empirical evidence from a number of studies suggests that readers and listeners predict upcoming words in a sentence when the words are predictable from the preceding context [for reviews @Staub2015; @Kuperberg2016; @Nieuwland2019].
 For instance, such words are read faster and are skipped compared to the words that are less predictable from the context [@Ehrlich1981; @Frisson2005; @Staub2011].
 Applying the visual world paradigm, several studies have demonstrated that individuals show anticipatory eye movements towards the picture of the word that is predictable from the sentence context [@Altmann1999; @Kamide2003; @Ankener2018].
 The sentence-final word in a highly constraining sentence (e.g., *"She dribbles a ball."*) elicits a smaller N400 amplitude -- a negative going EEG component that peaks around 400 ms post-stimulus and is considered as a neural marker of context-based semantic unexpectedness [@Kutas2011] -- than that in a less constraining sentence (e.g., *"She buys a ball."*; @Kutas1984; @Federmeier2007).
@@ -70,7 +68,7 @@ In sum, as the sentence context builds up, listeners make predictions about upco
 That is, individuals use the context available to them to generate predictions which aids understanding written and spoken language.
 
 **Limits of predictive language processing**:
-It is important to note, and acknowledge that the ubiquity and universality of predictive language processing has not gone unquestioned.
+It is important to note, and acknowledge that the ubiquity and universality of predictive language processing has not gone unquestioned [@Huettig2016].
 Apart from the debate on the nature of prediction, which we will come to later in this chapter, there are compelling evidence that question if prediction is necessary, even present at all in language comprehension.
 For example, @Mishra2012 showed that literacy is a key factor that limits listeners' prediction about upcoming word.
 In a visual word paradigm study, they found that individuals with low literacy score showed less anticipatory eye movements compared to the individuals with high literacy score.
@@ -78,8 +76,8 @@ They bolstered their finding in a neuroimaging study claiming that learning to r
 It is therefore plausible that such structural change in the brain is manifested in linguistic behavior too.
 Similarly, cognitive aging has been shown to be a limiting factor in generating predictions.
 Smaller N400 amplitude and latency in older adults compared to younger adults have been shown as an evidence of inability of older adults in predictive processing in language processing.
-Among older adults, those with lower working working memory scores are shown to be further disadvantaged when it comes to the use of context information.
-A different line of argument that critiques the entire predictive processing domain comes from observations by HuettingXYZ.
+Among older adults, those with lower working working memory scores are shown to be further disadvantaged when it comes to the use of context information [@Federmeier2002; @Federmeier2010].
+A different line of argument that critiques the entire predictive processing domain comes from observations by @Huettig2019.
 They claim that most of the studies in support of predictions are *artificial* which encourage participants to predict in a laboratory setup which does not apply to a real life interactions.
 They analyzed XYZ number of eye tracking studies and found that XYZ did not even mention the preview time; ZYC presented speech at a slow rate.
 Despite these critiques, there are plenty of experiments that have been replicated in pre-registerd multi-lab replication studies.
@@ -91,7 +89,7 @@ And, in this thesis, we will study other factors (e.g., auditory temporal attent
 
 We have discussed above that individuals make predictions about not-yet-encountered linguistic unit based on available context information as the sentence unfolds:
 Top-down predictive and bottom-up perceptual processes interact dynamically in language comprehension.
-When the bottom-up perceptual input is less reliable, for example, in adverse listening conditions, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words (e.g., @Strauss2013; see also @Corps2020).
+When the bottom-up perceptual input is less reliable, for example, in adverse listening conditions, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also @Corps2020].
 Obleser and colleagues [@Obleser2007; @Obleser2010; @Obleser2011], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also @Hunter2018].
 They found that semantic predictability facilitated language comprehension only at moderate levels of speech degradation.
 That is, participants relied more on the sentence context when the speech signal was degraded but it was *intelligible enough* than when it was not degraded, or when it was highly degraded.
@@ -113,4 +111,4 @@ One of the many debates in the literature of predictive language processing pert
 This is a longstanding debate in sentence processing, and *clear* speech comprehension.
 
 
-Whether the nature of prediction is similar in adverse listening condition has not come under theoretical questions among psycholinguists and cognitive scientists (cf. @Strauss2013; @Corps2020).
+Whether the nature of prediction is similar in adverse listening condition has not come under theoretical questions among psycholinguists and cognitive scientists [cf. @Strauss2013; @Corps2020].

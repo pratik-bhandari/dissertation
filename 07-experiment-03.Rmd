@@ -19,7 +19,7 @@ citation: apa.csl
 
 Language comprehension depends on the features and quality of speech signal
 which is hampered in adverse listening conditions when speech is distorted, for example, due to change in rate of speech, and spectral degradation of speech.
-Studies have shown that individuals can benefit from sentence context to compensate for distorted speech, at least when the level of speech degradation is at an intermediate level [e.g., @Bhandari2021; @Obleser2010], and at varying speech rate [@Aydelott2004; cf. @Goy2013].
+Studies have shown that individuals can benefit from sentence context to compensate for distorted speech, at least when the level of speech degradation is at an intermediate level [e.g., @Obleser2010; @Bhandari2021], and at varying speech rate [@Aydelott2004; cf. @Goy2013].
 The goal of the present study is to examine if sentence context can provide benefit when speech that is degraded at an intermediate level is presented at different rates (from slow, normal, and fast); speech in day-to-day conversation is distorted and presents itself at varying rate [e.g., @Krause2004].
 In the following, we first summarize the impact of speech degradation in language comprehension, and its interaction with sentence context, and then the influence of speech rate on language comprehension, and its interaction with sentence context.
 
@@ -29,14 +29,14 @@ There are a number of studies showing that speech intelligibility and language c
 These studies have used noise vocoding as a methods of speech degradation. Here the speech signal is first divided into a specific number of frequency bands that corresponds to the number of vocoder channels.
 The amplitude envelope within each frequency band is extracted, and the spectral information within it is replaced by noise.
 The resulting vocoded speech contains temporal cues of the original speech, but it is difficult to understand – the lesser the number of vocoder channels, the lesser is the intelligibility.
-More attentional resources are required to process and comprehend such degraded speech as compared to clean speech [e.g., @Eckert2016; @Wild2012].
+More attentional resources are required to process and comprehend such degraded speech as compared to clean speech [e.g., @Wild2012; @Eckert2016].
 
 Listeners rely more on top-down predictions when the speech signal is less intelligible due to spectral degradation.
 Hence, they use the context information of the sentence to narrow down their predictions to a smaller set of semantic categories or words [@Strauss2013; see also, @Corps2020].
 However, it is important that the context itself is ‘intelligible enough’ which is the case when the speech is only moderately degraded.
 For example, Obleser and colleagues [@Obleser2007; @Obleser2010; @Obleser2011] found that at moderate levels of speech degradation, target words (the sentence final words) were better recognized when it was predictable from the sentence context than when it was unpredictable.
 When the speech signal is clear or only very mildly degraded, there is typically no effect of predictability on comprehension, as even unpredictable words can be understood well in this condition (intelligibility is at ceiling).
-In contrast, when the speech signal is extremely degraded (for instance at 1 channel noise vocoding), no facilitation from the context can be observed as the context itself cannot be understood and hence it cannot help with comprehension [@Bhandari2021; @Obleser2010].
+In contrast, when the speech signal is extremely degraded (for instance at 1 channel noise vocoding), no facilitation from the context can be observed as the context itself cannot be understood and hence it cannot help with comprehension [@Obleser2010; @Bhandari2021].
 
 Taken together, these studies show that semantic predictability facilitates comprehension of degraded speech at a moderate level of spectral degradation,
 for example, at 4 channels noise vocoding,
@@ -74,15 +74,15 @@ In the same study, however, when the fast presentation was followed by slow pres
 That is, increase in the flow of information did not always impair the ability to predict   [see also, @Cole2020].
 They argued that once the brain is engaged in predictive comprehension mode, for example, first in the slow presentation rate, it can then continue to allocate resources in the same mode under faster presentation rate.
 
-In sum, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the speech rate [@Aydelott2004; @Sharit2003; @Winn2021b; @Wlotko2015].
-Benefits of using context information is not only limited under varying speech rates, but also when it is degraded [@Bhandari2021; @Obleser2010; @Sheldon2008a; @Sheldon2008b].
+In sum, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the speech rate [@Sharit2003; @Aydelott2004; @Wlotko2015; @Winn2021b].
+Benefits of using context information is not only limited under varying speech rates, but also when it is degraded [@Sheldon2008a; @Sheldon2008b; @Obleser2010; @Bhandari2021].
 In the present study we will examine whether context information is still useful when the speech rate is fast (or slow) and degraded at the same time.
 
 ### Comprehension of degraded speech at varying rates of presentation
 
 Real world listening is often a combination of more than one form of degradation and distortion of speech [@Gordonsalant1995; see also, @Cooke2014].
 For example, speakers’ speech rate is variable, and there is a concurrent distortion due to background noise, reverberation, loss of spectral details in transmission, etc.
-Some of the earliest studies examined the ‘devastating’ effects of ‘combinations of speech wave distortions’, but the combination of multiple distortions was not controlled for [@Harris1960; @Martin1956].
+Some of the earliest studies examined the ‘devastating’ effects of ‘combinations of speech wave distortions’, but the combination of multiple distortions was not controlled for [@Martin1956; @Harris1960].
 @Gordonsalant1995 systematically tested the effect of multiple, combined speech distortions.
 They found that when fast speech was presented in a background noise, or with a reverberation then the word recognition accuracy in these combined distortions was lower than when the speech was presented in any single distortion condition.
 @Adams2009 and @Adams2012 also showed that the addition of background noise had a detrimental effect on fast speech comprehension.

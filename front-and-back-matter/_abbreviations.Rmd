@@ -6,3 +6,5 @@
 
 \item[ch] channels
 
+\item[EN] English
+

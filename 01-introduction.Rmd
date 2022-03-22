@@ -45,7 +45,7 @@ The words preceding the ellipses provide a context.
 <!--It says that the day is pleasant and windy. <!--regarding the breeziness of the *day*.-->
 A reader, or a listener can utilize their knowledge about what a *boy* would ideally do *outside* when a day is *breezy*.
 This would lead the reader/listener to predict that the sentence continuation is most likely *a kite* and not any other word like a rocket [@Delong2005; cf. @Nieuwland2020a].
-This particular sentence was used by @Delong2005 in a reading study which also applies to the auditory domain [see @Altmann2007].
+This particular sentence was used by @Delong2005 in a reading study which also applies to the auditory domain [@Altmann2007].
 
 While listening to a degraded speech, listeners can use the context information and form predictions.
 The nature of prediction in comprehension of speech that is degraded by noise vocoding is not a settled issue:
@@ -72,8 +72,8 @@ This thesis attempts to test if predictability effect in degraded speech compreh
  -->
 
 (ii)    **Limitations of predictive processing**\
-A number of authors claim that predictive processing is the fundamental nature of human cognition, and thus, by definition, also of language processing [@Clark2013; @Friston2020; @Friston2020b; @Lupyan2015].
-At the same time, many studies have shown limitations in predictive language processing, for example, due to memory, aging, experimental paradigm, literacy, etc. [@Huettig2016; @Mishra2012; @Federmeier2010; @Huettig2019]. 
+A number of authors claim that predictive processing is the fundamental nature of human cognition, and thus, by definition, also of language processing [@Clark2013; @Lupyan2015; @Friston2020; @Friston2020b].
+At the same time, many studies have shown limitations in predictive language processing, for example, due to memory, aging, experimental paradigm, literacy, etc. [@Federmeier2010; @Mishra2012; @Huettig2016; @Huettig2019]. 
 <!-- This theoretical aspect of predictive language processing is not clear in the case of degraded speech comprehension. -->
 This thesis examines the factors like, auditory attention and speed of information flow, that can be prerequisites and limitations of semantic prediction in understanding degraded speech.
 
