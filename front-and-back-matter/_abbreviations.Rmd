@@ -1,10 +1,16 @@
 <!-- \item[1-D, 2-D] One- or two-dimensional, referring **in this thesis** to spatial dimensions in an image. -->
 
-\item[HP, MP, LP] High-, Medium-, or Low-predictability
+\item[HP] High predictability
 
-\item[YA, OA] Younger, or Older adults
+\item[MP] Medium predictability
+
+\item[LP] Low predictability
 
 \item[ch] channels
 
+\item[DE] German
+
 \item[EN] English
+
+\item[PSOLA] Pitch synchronous overlap add technique
 

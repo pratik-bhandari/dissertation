@@ -14,6 +14,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 <!-- \chaptermark{Citations and cross-refs} -->
 
 # General statistical approach
+\chaptermark{Statistics}
 
 ## Linear regression
 
@@ -23,7 +24,7 @@ However, as early as 19XX, ABC ...CITE... had pointed out one problem in using A
 He pointed out that considering all items to have similar effect on the participants is indeed a fallacy.
 Although this helped understand that items are also as different as participants, it did not solve the problem inherent in ANOVA (CITE). -->
 In this thesis, we use binomial mixed effects logistic regression models with crossed random effects [@Baayen2008].
-These models are, simply speaking, extensions of logistic regression models.
+These models are, simply put, extensions of logistic regression models.
 A logistic regression models a dependent variable (or an *outcome*, or a *response* variable) as a function of one or more independent predictor variables (or *factors*, or *explanatory* variables).
 That is, an outcome $y$ is modeled as a function of explanatory variables $x_1, x_2, x_3..., x_n$, and an error term $\varepsilon$.
 
@@ -38,15 +39,15 @@ y =
 
 The intercept $\alpha$, and the regression coefficients $\beta_1, \beta_2,$ and $\beta_3$ for each explanatory variable are estimated to achieve the model that best fits the data.
 Analysis of Variance (ANOVA) is a special case of logistic regression [@Chatterjee2012; @Vasishth2022] that is one of the most common statistical tools in psychology and psycholinguistics.
-These linear regressions as shown above (Equation \ref{eq:linear_regression}) and ANOVAS however, are not well suited for categorical data like response to multiple choice questions or yes/no questions, confidence ratings, etc.
+These linear regressions as shown above (Equation \ref{eq:linear_regression}) and ANOVA however, are not well suited for categorical data like response to multiple choice questions or yes/no questions, confidence ratings, etc.
 For example, in all the experiments in the current thesis, the response variables are response accuracy, given binary correct/incorrect responses.
-Output of linear regression model ranges from $+\infty$ to $-\infty$ while accuracy (or probability) ranges from, 0 to 1.
+Output of linear regression model ranges from $+\infty$ to $-\infty$ while accuracy (or probability) ranges from 0 to 1.
 Additionally, simple regression models do not take into account the variability across individual participants and items.
 These problems in language sciences have been pointed out since as early as 1960s [@Coleman1964; @Clark1973]. <!-- ...CITE language as a fixed effects fallacy... ], and later [ ... ]. -->
 They are addressed to some extent by binomial logistic regression, and for our purpose by incorporating mixed effects model to binomial logistic regression [@Baayen2008].
 
 Below we briefly introduce binomial logistic regression and mixed effects model.
-Then we show a simple example of how binomial logistic mixed effects model is used in the experiments in this thesis.
+Then we show a simple example of how binomial logistic mixed effects model is used in our data analyses.
 
 ## Binomial logistic regression
 
@@ -59,9 +60,9 @@ As the name suggests, the output variable in a logistic regression model is in l
 The model therefore predicts logits of an outcome variable.
 Logits are $\log$ with base $e$, i.e. $\ln$.
 
-*Probability* ranges from 0 to 1 only while *odds* range from 0 to $+\infty$.
+*Probability* ranges from 0 to 1 only, while *odds* range from 0 to $+\infty$.
 Fitting a linear regression model with probability, or odds would assume the range to be between 0 and 1, or between 0 and $+\infty$ respectively.
-This restricts the range, and is incorrect for a linear model.
+This restricts the range, and is an incorrect assumption for a linear model.
 Therefore, in a binomial logistic regression model, log-odds are used which range from $-\infty$ to $+\infty$.
 
 A simple binomial logistic regression model is shown in Equation \ref{eq:simple_logistic}:
@@ -107,10 +108,10 @@ Some of the assumptions made for binomial logistic regression models are violate
 One of them being non-independence of observations, i.e., all data points are independent from one another.
 This assumption is violated in unbalanced design, and at times even for balanced design.
 Same participant responds to multiple trials of same experimental condition within an experiment.
-Although the design itself is balanced, after removal of outliers and/or trials which are not appropriate for comprehension measures (see section XXX for details), number of trials in analyses are unequal for each participant, item, and experimental condition.
+Although the design itself is balanced, after removal of outliers and/or trials which are not appropriate for comprehension measures, number of trials in analyses are unequal for each participant, item, and experimental condition.
 This introduces a bias in the model [@Jaeger2008].
 
-Another intrinsic property or feature of logistic regression is that it assumes a common mean for each predictors.
+Another intrinsic property or feature of logistic regression is that it assumes a common mean for each predictor.
 It has been shown that this is in fact not true: the effect of a predictor can vary depending on different random variables like participants, or items.
 To account for these variances, mixed effects models are used.
 In recent days, such statistical models are frequently used and advocated for by psycholingustis and statisticians [@Gries2015; @Meteyard2020]. 
@@ -120,7 +121,7 @@ In recent days, such statistical models are frequently used and advocated for by
 To overcome the limitations of logistic models, like violation of assumption of non-dependence of observations, and to account for the variability in the subject and/or item related parameter, mixed effects models are used.
 Mixed effects models contain 1) both linear and logistic regressions, and 2) *fixed effects* and *random effects*, hence the name *mixed effects*.
 Fixed effects term, e.g., levels of degradation assumes that all levels of degradation used in the experiment are independent from one another and they share a common residual variance.
-The random effects term with only varying intercept, e.g., subject as intercept, assumes that if there are 100 subjects then the mean accuracy of those 100 subjects are only a subset of possible global accuracies drawn from a set of population mean.
+The random effects term with only varying intercept, e.g., subject as intercept, assumes that if there are 100 subjects then the mean accuracy of those 100 subjects is only a subset of possible global accuracies drawn from a set of population mean.
 When a slope, e.g., levels of predictability, is included to the random effects structure in addition to the varying intercept (e.g., subjects), then the model assumes that the effect of predictability on response accuracy varies across subjects.
 
 ## Binomial logistic mixed effects modeling {#binomial-logistic-mixed-effects-model}
@@ -148,26 +149,27 @@ where,
 - $\boldsymbol{w} = \langle w_{\alpha}, w_{\beta_1}, w_{\beta_2}, ..., w_{\beta_n} \rangle$ : Varying intercept and slopes for random effect term like, *item*.
 
 
-In this thesis, statistically, we examine the effect of predictability, speech degradation and speech rate (see section X.X, X.X, X.X) on response accuracy.
-And hence we use these variables in the fixed effects term.
+In the next chapters of this thesis, we perform statistical analyses of the effect of predictability, speech degradation and speech rate on response accuracy.
+These variables are used in the fixed effects term.
 Subjects and items are used as random intercepts with by-subject and by-item slopes.
-The details of the models fitted to data from each experiment are given in Chapter X, X, X and X.
+The details of the models fitted to data from each experiment are given in Chapters 5, 6, and 7.
 
-We therefore use binomial logistic mixed effects model as our primary statistical analysis tool in all the experiments reported in this thesis. We primarily follow the recommendations of @Baayen2008, @Barr2013, and @Bates2015a.
+We therefore use binomial logistic mixed effects model as our main statistical analysis tool in all the experiments reported in this thesis.
+We follow the recommendations of @Baayen2008, @Barr2013, and @Bates2015a.
 
-## Running the model in R {#analysis-main}
+## Running mixed effects models in R {#analysis-main}
 
-Data preprocessing and analyses were performed in R-Studio (Version 3.6.1; R Core Team, 2019; ...).
+Data preprocessing and analyses were performed in R-Studio (Version 3.6.1; R Core Team, 2019; Version 3.6.3; R Core Team 2020).
 Accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lmerTest [@Kuznetsova2017] and lme4 [@Bates2015] packages.
-Binary responses (correct responses coded as 1 and incorrect responses coded as 0) for all participants were fit with a binomial logistic mixed-effects model.
+Binary responses (correct responses coded as 1 and incorrect responses coded as 0) for all participants were fit with a binomial logistic mixed effects model.
 <!-- Noise condition (categorical; 4-, 6-, and 8-bands), target word predictability (categorical; HP, MP, LP), global noise context (categorical; predictable channel context and unpredictable channel context), and the interaction of noise condition and target word predictability were included in the fixed effects. -->
 
-On the data in from each experiment, we fitted models with maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
-By-participant and by-item slopes included in the model are discussed in the Analysis sections of Chapter X, X, X.
+On the data from each experiment, we fitted models with maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
+By-participant and by-item slopes included in the model are discussed in the Analysis sections of Chapters 5, 6, and 7.
 <!-- To find the optimal model for the data, non-significant higher-order interactions were excluded from the fixed-effects structure (and from the random-effects structure) in a stepwise manner. -->
-Model selection was based on Akaike Information Criterion (AIC) [@Grueber2011; @Richards2011] unless otherwise stated.
-Random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization.
-This gave a more parsimonious model [@Bates2015a] which was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameter, and iii) both item- and participant-related correlation parameters.
+Model selection was based on Akaike Information Criterion [@Grueber2011; @Richards2011] unless otherwise stated.
+Random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization [@Bates2015a].
+This gave a more parsimonious model which was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameter, and iii) both item- and participant-related correlation parameters.
 The best fitting model among the parsimonious and extended models was then selected as the optimal model for our data.
 <!-- ## Bayesian statistical methods -->
  

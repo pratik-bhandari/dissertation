@@ -10,17 +10,11 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 citation: apa.csl
 ---
 
-```{block type='savequote', include=knitr::is_latex_output(), quote_author='(ref:james-quote)'}
-Everyone knows what attention is.
-
-```
-(ref:james-quote) --- William James [@James1890]
-
-
-# Experiment 1: Predictability effect of degraded speech are reduced as a function of attention
+# Predictability effects of degraded speech are reduced as a function of attention
+\chaptermark{Attention-prediction interplay}
 
 <!-- LaTeX normally does not indent the first line after a heading - however, it does so after the mini table of contents. You can manually tell it not to with \noindent -->
-\noindent
+<!-- \noindent -->
 <!--In adverse listening conditions, when the bottom-up perceptual input is degraded, listeners tend to rely upon the context information.
 They form top-down semantic predictions that facilitate comprehension of degraded speech.
 However, -->
@@ -69,7 +63,7 @@ Auditory attention allows a listener to focus on the speech signal of interest [
 For instance, it has been shown that a listener can attend to and derive information from one stream of sound among many competing streams as demonstrated in the well-known *cocktail party effect* [@Cherry1953; @Hafter2007].
 When a participant is instructed to attend to only one of the two or more competing speech streams in a diotic or dichotic presentation, response accuracy to the attended speech stream is higher than to the unattended speech [e.g., @Toth2020].
 Similarly, when a listener is presented with a stream of tones (e.g., musical notes varying in pitch, pure tones of different harmonics) but attends to any one of the tones appearing at a specified time point, this is reflected in a larger amplitude of N1 [e.g., @Lange2010; see also, @Sanders2008]
-which is the first negative going ERP^[ERP = Event Related Potential] component peaking around 100 ms post-stimulus considered as a marker of auditory selective attention [@Naatanen1987; @Thorton2007].
+which is the first negative going ERP^[ERP = Event Related Potential] component peaking around 100 ms post-stimulus considered as a marker of auditory selective attention [@Naatanen1987; @Thornton2007].
 Hence, listeners can draw attention to and process one among multiple competing speech streams.
 
 So far, most previous studies investigated listeners’ attention within a single speech stream by using acoustic cues like accentuation and prosodic emphasis.
@@ -87,7 +81,7 @@ We varied the task instructions to the listeners from Experiment 1 to Experiment
 We *hypothesized* that when listeners pay attention only to the contextually predicted target word, they do not form top-down predictions, i.e., there should not be a facilitatory effect of target word predictability.
 In contrast, when listeners attend to the whole sentence, they do form expectations such that the facilitatory effect of target word predictability will be observed.
 
-## Experiment 1
+## Experiment 1A
 
 This experiment was designed such that processing the context was not strictly necessary for the task.
 Listeners were asked to report the noun of the sentence that they heard which was in the final position of the sentence.
@@ -105,7 +99,7 @@ All participants received 6.20 Euro as monetary compensation for their participa
 The experiment was approximately 40 minutes long.
 The German Society for Language Science ethics committee approved the study and participants provided an informed consent in accordance with the declaration of Helsinki.
 
-### Stimuli
+### Materials
 
 Materials used in the experiment were created by the method described in Chapter 3.
 Thy consisted of 360 German sentences spoken by a female native German speaker in an unaccented normal rate of speech.
@@ -152,7 +146,7 @@ Aiming for model parsimony, the best fitting model among the parsimonious and ex
 We applied treatment contrast for number of channels (8 channels as a baseline) and sliding difference contrast for target word predictability (low predictability vs. medium predictability, and low predictability vs. high predictability sentences).
 We report the results from the optimal model, and are shown in Table X.X.X.
 
-## Results and Discussion
+## Results and discussion
 
 Mean response accuracies for all experimental conditions are shown in Table X.X.X and Figure X.X.X.
 It shows that accuracy increases with an increase in the number of noise vocoding channels, i.e., with the decrease in speech degradation.
@@ -170,7 +164,7 @@ These results suggest that the task instruction, which asked participants to onl
 However, to further test the hypothesis -- as mentioned in the beginning of this chapter -- that predictability effect is dependent on attentional effect, we conducted second experiment.
 In the second experiment, we changed the task instruction to draw participants attention on the entire sentence such that they would decode the whole sentence including the context.
 
-## Experiment 2
+## Experiment 1B
 
 Following up on Experiment 1, we conducted Experiment 2 on a separate group of participants with a different task instruction.
 This experiment was intended to test the hypothesis that facilitatory effect of top-down predictions is observed only when listeners attention is unrestricted such that context information is also included within the attentional focus of a listener.
@@ -195,7 +189,7 @@ The 1 channel noise vocoding condition was excluded from the analysis.
 We only considered the final words of the sentences (i.e., the target words) to be either correct or incorrect; accuracy of other preceding words were not considered in the analyses.
 Like Experiment 1, the results from the optimal model are reported.
 
-## Results and Discussion
+## Results and discussion
 
 Mean response accuracy for different conditions are shown in Table X.X.X. and are displayed in Figure X.X.X.
 It shows that the accuracy increased with an increase in both the number of noise vocoding channels, and the target word predictability.
@@ -218,7 +212,7 @@ The model summary is shown in Table X.X.X.
 The model revealed that the critical interaction between experimental manipulation and target word predictability was indeed statistically significant ($\beta$ = -.45, SE = .18, *z* (8566) = -2.55, *p* = .011);, i.e., the effect of predictability was larger in the group that was asked to type in the whole sentence.
 Together, these findings suggest that the change in task instruction, which draws attention either to the entire sentence or only to the final word, is critical for making use of the context information under degraded speech.
 
-## General Discussion
+## Conclusion
 
 The main goals of the present study were to investigate whether online semantic predictions are formed in comprehension of degraded speech when task instructions encourage attention to the processing of the context information, or only to the critical target word.
 The results of two experiments revealed that attentional processes clearly modulate the use of context information for predicting sentence endings when the speech signal is degraded. <!--moderately degraded.-->

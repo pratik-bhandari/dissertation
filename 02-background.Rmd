@@ -16,81 +16,80 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 
 In the previous chapter we outlined the research questions and goals of the studies in this dissertation.
 In so doing, we presented our motivation and relevant theoretical questions.
-To further elaborate on these motives, this chapter provides some background on the current understanding on the theoretical aspects of the research questions.
+To further elaborate on these motives, this chapter provides some background on the current understanding of the research questions.
 We introduce speech degradation, and predictive language processing in the context of speech degradation.
-In addition, we also provide a background on the effects of speech degradation, and the measurement of speech perception and language comprehension.
+In addition, we also provide a background on the effects of speech degradation, nature of predictability effects, and limits of predictive language processing.
 Understanding these fundamental concepts of top-down and bottom-up processes are essential for the chapters that follow.
 These concepts are briefly reiterated in the following chapters wherever relevant.
 
 ## Speech distortion and degradation
 
-In an ideal situation, spoken perception is a seamless process: a speaker produces an utterance, the speech signal transmits via some medium like air, and a listener perceives the signal as speech waves which enter her ears and start a cascade of mechanical-neural processes of hearing.
-However, speech perception is not so simple. <!-- hardly as simple as it is described in the preceding sentence.-->
-There are primarily three sources distortion.
+In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via some medium like air, and a listener perceives the signal as speech waves enter her ears and start a cascade of mechanical-neural processes of hearing.
+However, speech perception is hardly as smooth as it seems.<!-- hardly as simple as it is described in the preceding sentence.-->
+There are primarily three sources distortion:
 Speech can be distorted by variability in speakers’ production, like, accented speech, or soft and rapid speech.
 Distortion can arise from listener-related factors like, hearing loss, or auditory processing disorder.
 It can also be a result of noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
 All these sources of distortion make listening conditions adverse.
-In laboratory setup, the effects of speech distortion, and the mechanism of listening in adverse listening condition are studied using artificial distortion of speech.
+For controlled scientific study, the effects of speech distortion, and the mechanism of listening in adverse listening condition are investigated using artificial distortion of speech.
 <!--The use of such artificial distortion is also helps us understand the cognitive architecture of human speech-language processing.-->
 Different forms of distorted speech manipulate different properties of speech signal.
 For example, speeding or slowing a speech signal (i.e. speech compression or expansion) manipulates its temporal property.
 Similarly, noise vocoding manipulates its spectral property.
-Noise vocoding removes the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section X.X.X).
-This method of speech degradation was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line [@Dudley1939; @Vocoder1940] --- [Re-read this thoroughly].
-Shannon and colleagues later used the same technique as an analogue to cochlear implant [@Shannon1995; @Loizou1999; @Shannon2004] -- number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility [… cite probably Wagner et al. …].
-Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal graded manner, noise vocoding also is a method of distortion that helps us understand the speech perception and language comprehension in cochlear implantees.
+Noise vocoding removes the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section \@ref(noise-vocoding)).
+This method of speech degradation was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line [@Dudley1939; @Vocoder1940].
+Shannon and colleagues later used the same technique as an analogue to cochlear implant such that number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility [@Shannon1995; @Loizou1999; @Shannon2004].
+Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal in a graded manner, noise vocoding also is a method of distortion that helps us understand the speech perception and language comprehension in cochlear implantees.
 
 One of the main factors that determine the intelligibility of degraded speech is the number of noise vocoding channels.^[Throughout this thesis, speech distortion by noise vocoding is referred to as speech degradation, or spectral degradation of speech.]
 The higher the number of noise vocoding channels, the more is the frequency specific information available in the degraded speech,
 consequently, higher is the intelligibility compared to the speech that is degraded with lesser number of noise vocoding channels.
-For example, listeners rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech.
+For example, listeners rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech [e.g., @Sohoglu2012].
 
 ## Prediction and comprehension of degraded speech
 <!-- We have stated above that the quality of speech signal determines the speech intelligibility. -->
-Listeners do not just rely on the quality of speech signal to understand degraded speech.
-That is, it is not just the number of noise vocoding channels that determines how well a person understand degraded speech.
-In addition to the bottom-up signal, listeners rely also on the context information.
-Before discussing on the role of top-down predictive processes on the comprehension of degraded speech, we first review the role of predictions in language comprehension in general.
+<!--Listeners do not just rely on the quality of speech signal to understand degraded speech.
+That is, it is not just the number of noise vocoding channels that determines how well a person understand degraded speech.-->
+In addition to the quality of speech signal, listeners rely also on the context information and form top-down predictions to understand speech in adverse listening condition.
+Below, we first review the role of predictions in language comprehension in general,
+then we discuss the role of top-down predictive processes in comprehension of degraded speech in particular.
 
-### Predictive processing and language comprehension
+### Predictive language processing
 
-Research from various domains of cognitive (neuro)science, like emotion, vision, odor, and proprioception, has shown that perception and cognition primarily operates by predicting upcoming events [@Stadler2012; @Clark2013; @Seth2013; @Marques2018].
-Human language comprehension too has been claimed to be predictive in nature from as early as mid-twentieth century [e.g., @Miller1951; @Mccullough1958; @Morton1964]. <!-- @Bruce1958 for context in noise -->
-which in recent days has received overwhelming support from studies in psycholinguistics and cognitive neuroscience of language [@Delong2005; @Lupyan2015; @Pickering2018; cf. @Huettig2016].
-Empirical evidence from a number of studies suggests that readers and listeners predict upcoming words in a sentence when the words are predictable from the preceding context [for reviews @Staub2015; @Kuperberg2016; @Nieuwland2019].
-For instance, such words are read faster and are skipped compared to the words that are less predictable from the context [@Ehrlich1981; @Frisson2005; @Staub2011].
-Applying the visual world paradigm, several studies have demonstrated that individuals show anticipatory eye movements towards the picture of the word that is predictable from the sentence context [@Altmann1999; @Kamide2003; @Ankener2018].
-The sentence-final word in a highly constraining sentence (e.g., *"She dribbles a ball."*) elicits a smaller N400 amplitude -- a negative going EEG component that peaks around 400 ms post-stimulus and is considered as a neural marker of context-based semantic unexpectedness [@Kutas2011] -- than that in a less constraining sentence (e.g., *"She buys a ball."*; @Kutas1984; @Federmeier2007).
-Similarly, event-related words (e.g., *"luggage"*) elicited reduced N400 compared to event-unrelated words (e.g., *"vegetables"*) which were not predictable from the context (e.g., in an event of *"travel"*; @Metusalem2012).
+Research from various domains of cognitive (neuro)science, like emotion, vision, odor, and proprioception, has shown that perception and cognition primarily operate by predicting upcoming events [@Stadler2012; @Clark2013; @Seth2013; @Marques2018].
+Human language comprehension too has been claimed to be predictive in nature from as early as mid-twentieth century [e.g., @Miller1951; @Mccullough1958; @Morton1964]<!-- @Bruce1958 for context in noise -->
+which in recent days has received overwhelming support from studies in psycholinguistics and cognitive neuroscience of language [e.g., @Delong2005; @Lupyan2015; @Pickering2018].
+Empirical evidence from a number of studies suggests that readers and listeners predict upcoming words in a sentence when the words are predictable from the preceding context [for reviews, @Staub2015; @Kuperberg2016; @Nieuwland2019].
+For instance, predictable words are read faster and are skipped compared to the words that are less predictable from the context [@Ehrlich1981; @Frisson2005; @Staub2011].
+Applying the visual world paradigm, studies have demonstrated that individuals show anticipatory eye movements towards the picture of the word that is predictable from the sentence context [@Altmann1999; @Kamide2003; @Ankener2018].
+The sentence-final word in a highly constraining sentence (e.g., *"She dribbles a ball."*) elicits a smaller N400 amplitude --- a negative going EEG component that peaks around 400 ms post-stimulus and is considered as a neural marker of context-based semantic unexpectedness [@Kutas2011] --- than that in a less constraining sentence [e.g., *"She buys a ball."*, @Kutas1984; @Federmeier2007].
+Similarly, event-related words (e.g., *"luggage"*) elicited reduced N400 compared to event-unrelated words (e.g., *"vegetables"*) which were not predictable from the context [e.g., in an event of *"travel"*, @Metusalem2012].
 <!-- ALSO ADD PAPER BY MAIRE STAUDE ON GRADED PREDICTION, i think it was an EEG and eye-tracking paper in 2020/21. -->
 In sum, as the sentence context builds up, listeners make predictions about upcoming words in the sentence, and these in turn facilitate language comprehension.
 That is, individuals use the context available to them to generate predictions which aids understanding written and spoken language.
 
 **Limits of predictive language processing**:
-It is important to note, and acknowledge that the ubiquity and universality of predictive language processing has not gone unquestioned [@Huettig2016].
-Apart from the debate on the nature of prediction, which we will come to later in this chapter, there are compelling evidence that question if prediction is necessary, even present at all in language comprehension.
+It is important to note and acknowledge that the ubiquity and universality of predictive language processing has not gone unquestioned [@Huettig2016].
+Apart from the debate on the nature of prediction, which we will come to later in this chapter, there are compelling evidence that question the necessity of prediction in language comprehension.
 For example, @Mishra2012 showed that literacy is a key factor that limits listeners' prediction about upcoming word.
-In a visual word paradigm study, they found that individuals with low literacy score showed less anticipatory eye movements compared to the individuals with high literacy score.
-They bolstered their finding in a neuroimaging study claiming that learning to read fundamentally changes the neural circuitry.
-It is therefore plausible that such structural change in the brain is manifested in linguistic behavior too.
+In visual word paradigm, they found that individuals with lower literacy showed less anticipatory eye movements compared to the individuals with higher literacy.
+They bolstered their finding in a neuroimaging study claiming that learning to read fundamentally changes the neural circuitry [@Hervais2019].
+It is therefore plausible that such structural change in the brain is manifested in linguistic behavior.
 Similarly, cognitive aging has been shown to be a limiting factor in generating predictions.
-Smaller N400 amplitude and latency in older adults compared to younger adults have been shown as an evidence of inability of older adults in predictive processing in language processing.
-Among older adults, those with lower working working memory scores are shown to be further disadvantaged when it comes to the use of context information [@Federmeier2002; @Federmeier2010].
-A different line of argument that critiques the entire predictive processing domain comes from observations by @Huettig2019.
-They claim that most of the studies in support of predictions are *artificial* which encourage participants to predict in a laboratory setup which does not apply to a real life interactions.
-They analyzed XYZ number of eye tracking studies and found that XYZ did not even mention the preview time; ZYC presented speech at a slow rate.
-Despite these critiques, there are plenty of experiments that have been replicated in pre-registerd multi-lab replication studies.
-Computational modeling of language processing also support the claim that language processing is predictive in nature.
-We are, nonetheless, aware of the critiques.
-And, in this thesis, we will study other factors (e.g., auditory temporal attention) that can interact with, and potentially limit top-down semantic predictions.
+Smaller N400 amplitude and latency in older adults compared to younger adults have been shown as evidence of inability of older adults in predictive processing in language processing.
+Among older adults, those with lower working memory scores are shown to be further disadvantaged when it comes to the use of context information [@Federmeier2002; @Federmeier2010].
+Another line of argument that critiques the predictive processing comes from the observations of @Huettig2019 (see also, Fernandez et al., 2020). <!--[see also, @Fernandez2020].-->
+They analyzed participants' anticipatory eye movements in the visual world paradigm and showed that listeners predict the target word only in an *artificial* set-up of long preview time coupled with slow speech.
+Alongside these critiques, there are also experiments demonstrating predictability effects that have been partly or fully replicated [e.g., @Nieuwland2018; @Ankener2019].
+<!-- Computational modeling of language processing also supports predictive nature of language processing [e.g., @Heilbron2020]. -->
+In this thesis, we study other factors (e.g., auditory temporal attention, speed of information processing) that can interact with, and potentially limit top-down semantic predictions.
 
-### Predictive processing and comprehension of degraded speech
+### Facilitatory effect of predictability
 
 We have discussed above that individuals make predictions about not-yet-encountered linguistic unit based on available context information as the sentence unfolds:
 Top-down predictive and bottom-up perceptual processes interact dynamically in language comprehension.
-When the bottom-up perceptual input is less reliable, for example, in adverse listening conditions, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also @Corps2020].
-Obleser and colleagues [@Obleser2007; @Obleser2010; @Obleser2011], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also @Hunter2018].
+When the bottom-up perceptual input is less reliable, for example, in adverse listening conditions, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also, @Corps2020].
+Obleser and colleagues [@Obleser2007; @Obleser2010; -@Obleser2011], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also, @Hunter2018].
 They found that semantic predictability facilitated language comprehension only at moderate levels of speech degradation.
 That is, participants relied more on the sentence context when the speech signal was degraded but it was *intelligible enough* than when it was not degraded, or when it was highly degraded.
 At such moderate levels of speech degradation, accuracy of word recognition was found to be higher for words in high predictability sentences than the words in low predictability sentences [@Obleser2010].
@@ -99,7 +98,7 @@ the word recognition accuracy was similar across both levels of sentence predict
 @Sheldon2008b estimated that for both younger and older adults, the number of noise vocoding channels required to achieve 50\% accuracy varied as a function of sentence context.
 Compared to highly constraining sentences, a higher number of channels (i.e., more bottom-up information) was required in less constraining sentences to achieve the same level of accuracy.
 They also concluded that when speech is degraded, word recognition is facilitated by predictability and sentence context.
-Taken together, these studies conclude that at moderate levels of degradation, participants rely more on the top-down predictions generated by the sentence context and less on the bottom-up perceptual processing of unclear, less reliable and degraded speech signal [@Obleser2014].
+Taken together, these studies conclude that at moderate levels of degradation, participants rely more on the top-down predictions generated by the sentence context and less on the bottom-up perceptual processing of unclear, less reliable, and degraded speech signal [@Obleser2014].
 <!--Reliance on prediction results in higher word recognition accuracy for target words high cloze probability than for target words with low cloze probability.
 In the case of a heavily degraded speech signal, participants may not be able to understand the sentence context and, therefore, be unable to form predictions of the target word, or their cognitive resources may already be occupied by decoding the signal, leaving little room for making predictions.
 Thus, there is no differential effect of levels of sentence predictability.
@@ -107,8 +106,25 @@ On the other extreme, when the speech is clear and intelligible, participants re
 Hence, no differential effect of levels of predictability of target word can be expected.-->
 
 **Nature of prediction**:
-One of the many debates in the literature of predictive language processing pertains this question: Is prediction probabilistic or is it an all-or-nothing phenomenon?
-This is a longstanding debate in sentence processing, and *clear* speech comprehension.
+One of the debates in the literature of predictive language processing pertains this question: Is prediction probabilistic, or is it an all-or-nothing phenomenon?
+For instance, garden path phenomenon was explained as a parser's irreversible prediction about the sentence structure
+which if fails or turns out to be incorrect then the parser reanalyzes the sentence and reformulates another prediction [e.g., @Ferreira1986; see also, @Slattery2013].
+In recent days, the support for the probabilistic nature of prediction comes, for example, from ERP studies that show an inverse and graded relationship between the magnitude of N400 effect evoked by a word and its predictability measured by cloze probability [e.g., @Delong2005].
+The correlation between a word's *surprisal* in its linguistic context and the processing effort associated with it also demonstrates the probabilistic nature of prediction [e.g., @Hale2001; @Smith2008].
 
+These discussions come from reading studies and spoken language comprehension in clear speech.
+Although a few models of language processing speculated that language comprehension in adverse listening condition can be predictive [e.g., @Lowder2016; @Ryskin2018],
+so far, only @Strauss2013 have investigated the nature of prediction in degraded speech comprehension.
+They proposed an "expectancy searchlight model" which suggests that listeners form *narrowed expectations* from a restricted semantic space only when the sentence endings are highly predictable.
+They rule out the graded nature of predictability.
+In this thesis we take this theoretical account into consideration,
+and examine the nature of prediction in degraded speech comprehension.
 
-Whether the nature of prediction is similar in adverse listening condition has not come under theoretical questions among psycholinguists and cognitive scientists [cf. @Strauss2013; @Corps2020].
+## Summary
+
+In this chapter, we provided an overview of the concepts that will be repeated in the following chapters.
+We introduced the concept of speech distortion and degradation.
+Digital signal processing methods used in this process will be discussed in Section \@ref(speech-processing).
+Importantly, we provided an overview of how predictive language processing aids in language comprehension,
+as well as its limitations.
+In the next chapter we will discuss the methods that are common in all the experiments (Chapters 5, 6, and 7) in developing materials and collecting data.

@@ -13,9 +13,12 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 citation: apa.csl
 ---
 
-# Experiment 3: Comprehension of degraded speech is modulated by the rate of speech
+# Comprehension of degraded speech is modulated by the rate of speech
+\chaptermark{Speech rate and predictability effects}
 
 ## Introduction
+
+## Background
 
 Language comprehension depends on the features and quality of speech signal
 which is hampered in adverse listening conditions when speech is distorted, for example, due to change in rate of speech, and spectral degradation of speech.
@@ -117,7 +120,7 @@ Because the processing demand increases, and a limited time is to be available t
 However, for slow speech due to abundance of time to process the degraded speech and the context, and reduction in effortful processing [e.g., @Winn2021b], we expected contextual facilitation to be increased compared to normal speech (Experiment 3B).
 We expected that both increase and decrease in contextual facilitation will be primarily driven by the ease of processing high predictability sentences as compared to low predictability sentences [@Aydelott2004; @Goy2013].
 
-## Experiment 3A
+## Experiment 7A
 
 ## Methods
 
@@ -172,7 +175,7 @@ Both, by-participant and by-item random slopes were included for target word pre
 We applied treatment contrast for target word predictability (low predictability as a baseline; factor levels: low predictability, high predictability) and speed (normal speed as a baseline; factor levels: normal speed, fast speed).
 The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
 
-## Results and Discussion
+## Results and discussion
 
 Mean response accuracies across all conditions are presented in Table 2.
 We found a significant main effect of target word predictability ($\beta$ = 2.42, SE = .28, *z* = 8.55, *p* < .001) and a significant main effect of speech rate ($\beta$ = -0.98, SE = .24, *z* = 4.16, *p* < .001).
@@ -194,7 +197,7 @@ These findings align with previous studies conducted with clean speech that foun
 The results of the first experiment showed ease of processing high predictability sentences compared to low predictability sentences at moderately degraded fast speech.
 We conducted another experiment to examine if slowing down the speech rate eases processing of both low and high predictability sentences and increases the contextual facilitation in comprehension of moderately degraded speech.
 
-## Experiment 3B
+## Experiment 7B
 
 ## Methods
 
@@ -222,7 +225,7 @@ Target word predictability (categorical; low and high), speech rate, or speed (c
 Treatment contrast was applied to both target word predictability (low predictability as a baseline; factor levels: low predictability, high predictability) and speed (normal speed as a baseline; factor levels: normal speed, slow speed).
 The results from the maximal model are shown in Table X.X.X, and are reported below in the Results section.
 
-## Results and Discussion
+## Results and discussion
 
 Mean response accuracies for all experimental conditions are shown in Table 8.
 There was a significant main effect of target word predictability indicating that participants’ response accuracy was higher for the high predictability condition than for the low predictability condition ($\beta$ = 2.58, SE = .30, *z* = 8.65, *p* < .001).
@@ -244,7 +247,7 @@ In contrast to Experiment 1, the findings of Experiment 2 did not indicate diffe
 While the results of Experiment 1 showed that speeding up the speech rate significantly reduced the accuracy of low predictability sentences, such a reduction was not observed in Experiment 2 when the speech rate was slowed down.
 Although listeners’ response accuracy was reduced at both fast and slow speech rates as compared to normal speech rate, their ability to utilize context information was only impaired by fast speech. 
 
-## General Discussion
+## Conclusion
 
 The main goals of the present study were to examine if semantic predictability facilitates comprehension of moderately degraded speech at different speech rates given that the ease of processing the sentences varies with their predictability and speed.
 The results of the two experiments revealed that fast speech selectively impedes the comprehension of low predictability sentences, while slow speech has no effect on contextual facilitation at a moderate level of degradation.
@@ -286,4 +289,4 @@ When enough time is available to process information, i.e., at slow speech, cont
 However, at a time crunch of information processing, i.e., at fast speech, contextual facilitation is reduced such that the fast speech is detrimental to understanding words that are not easily predictable from the context. 
 
 
-## Conclusions
+<!-- ## Conclusions -->

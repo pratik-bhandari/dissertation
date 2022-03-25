@@ -10,7 +10,8 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 citation: apa.csl
 ---
   
-# Experiment 2: Semantic predictability facilitates comprehension of degraded speech in a graded manner
+# Semantic predictability facilitates comprehension of degraded speech in a graded manner
+\chaptermark{Graded effect of predictability}
 
 In the previous chapter we have shown that when listeners attend to the context, they gain facilitatory effect of predictability while listening to a degraded speech.
 However, there were a few lacunae in the study, which warrant further examination to bolster as well as extend this conclusion.
@@ -196,7 +197,7 @@ The best fitting model among the parsimonious and extended models, based on AIC,
 We applied treatment contrast for noise condition (8 channels as a baseline; factor levels: 8 channels, 4 channels, 6 channels) and sliding difference contrast for target word predictability (factor levels: MP, LP, HP) and channel context (factor levels: unpredictable, predictable).
 The results from the optimal model are shown in Table X.X.X, and are reported below in the Results section.
 
-## Results
+## Results and discussion
 
 In this experiment, we tested i) whether predictability facilitates language comprehension only at a moderate level of spectral degradation, and ii) whether adaptation to degraded speech influences language comprehension.
 We observed that the mean response accuracy increased with an increase in number of noise vocoding channels from 4 to 6 to 8, and with an increase in target word predictability from low to medium to high (see Figure X.X).
@@ -225,7 +226,7 @@ Then following the same procedure as above, we obtained an optimal model.
 We did not find a significant main effect of trial number indicating that the response accuracy did not change throughout the experiment ($\beta$ = -0.0004, SE = 0.01, *z* (6917) = -0.05, *p* = 0.97).
 It remained constant within each block in the predictable channel context ($\beta$ = -0.02, SE = 0.01, *z* (3291) = -1.43, *p* = 0.15) as well as in the unpredictable channel context ($\beta$ = 0.01 SE = 0.01, *z* (3291) = 1.05, *p* = 0.29).
 
-## Discussion
+## Conclusion
 
 The present study had three goals: i) to examine if previously reported facilitatory effect of semantic predictability  is restricted to only highly predictable sentence endings;
 ii) to assess the role of perceptual adaptation on the facilitation of language comprehension by sentence predictability; and
