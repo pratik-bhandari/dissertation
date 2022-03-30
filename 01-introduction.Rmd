@@ -67,7 +67,7 @@ Therefore, we study both top-down predictive as well as bottom-up auditory proce
 While doing so, we address the following challenges:
 
 (i)   **Replication crisis**\
-Almost all the disciplines of cognitive science --- anthropology, computer science, linguistics, neuroscience, and psychology --- are suffering the so-called replication crisis [e.g., @Sanderson2008; @OSC2015; @Ebersole2016; @Cockburn2020].
+Almost all the disciplines of cognitive science --- anthropology, computer science, linguistics, neuroscience, and psychology --- are suffering the so-called replication crisis [e.g., @Sanderson2008; @OSC2015; @Ebersole2016; @Cockburn2020; @Minocher2021].
 The results of an experiment do not hold up consistently when conducted again by another group of researchers.
 For example, in a multi-lab collaborative study, @Nieuwland2020a did not find the same N400 effect at English article (a/an) that @Delong2005 had reported 15 years earlier.
 <!-- Many PhD studies are founded on established findings taking them on face value, with little to no attempt on replication. -->

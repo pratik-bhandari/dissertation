@@ -12,5 +12,7 @@
 
 \item[EN] English
 
+\item[ERP] Event Related Potential
+
 \item[PSOLA] Pitch synchronous overlap add technique
 
