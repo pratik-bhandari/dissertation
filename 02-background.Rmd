@@ -12,7 +12,7 @@ documentclass: book
 bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
 ---
 
-# Background
+# Background {#chapter-background}
 
 In the previous chapter we outlined the research questions and goals of the studies in this dissertation.
 In so doing, we presented our motivation and relevant theoretical questions.
@@ -84,12 +84,12 @@ Alongside these critiques, there are also experiments demonstrating predictabili
 <!-- Computational modeling of language processing also supports predictive nature of language processing [e.g., @Heilbron2020]. -->
 In this thesis, we study other factors (e.g., auditory temporal attention, speed of information processing) that can interact with, and potentially limit top-down semantic predictions.
 
-### Facilitatory effect of predictability
+### Facilitatory effect of predictability {#background-facilitatory-effect}
 
 We have discussed above that individuals make predictions about not-yet-encountered linguistic unit based on available context information as the sentence unfolds:
 Top-down predictive and bottom-up perceptual processes interact dynamically in language comprehension.
 When the bottom-up perceptual input is less reliable, for example, in adverse listening conditions, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also, @Corps2020].
-Obleser and colleagues [@Obleser2007; @Obleser2010; -@Obleser2011], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also, @Hunter2018].
+Obleser and colleagues [@Obleser2007; @Obleser2010], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also, @Hunter2018].
 They found that semantic predictability facilitated language comprehension only at moderate levels of speech degradation.
 That is, participants relied more on the sentence context when the speech signal was degraded but it was *intelligible enough* than when it was not degraded, or when it was highly degraded.
 At such moderate levels of speech degradation, accuracy of word recognition was found to be higher for words in high predictability sentences than the words in low predictability sentences [@Obleser2010].

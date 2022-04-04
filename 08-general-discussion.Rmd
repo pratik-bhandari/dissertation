@@ -13,7 +13,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 <!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
 <!-- \chaptermark{Citations and cross-refs} -->
 
-# Discussion and conclusion
+# Discussion and conclusion {#chapter-conclusion}
 
 ## Summary of the main findings
 

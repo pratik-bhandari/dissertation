@@ -71,7 +71,7 @@ Almost all the disciplines of cognitive science --- anthropology, computer scien
 The results of an experiment do not hold up consistently when conducted again by another group of researchers.
 For example, in a multi-lab collaborative study, @Nieuwland2020a did not find the same N400 effect at English article (a/an) that @Delong2005 had reported 15 years earlier.
 <!-- Many PhD studies are founded on established findings taking them on face value, with little to no attempt on replication. -->
-This thesis attempts to test if predictability effect reported by Obleser and colleagues in degraded speech comprehension [@Obleser2007; @Obleser2010; @Obleser2011] is replicable.
+This thesis attempts to test if predictability effect reported by Obleser and colleagues in degraded speech comprehension [@Obleser2007; @Obleser2010] is replicable.
 <!--We argue that it is imperative to replicate an experiment before furthering its line of argument and testing the hypotheses which it builds upon.
  -->
 
@@ -167,21 +167,21 @@ This metric does not merely measure how many words are correctly identified.
 Rather, it considers the fact that in the study of effect of predictability, how well a context is recognized should also be taken into account.
 Thus it measures word recognition accuracy in the sentences in which context is correctly recognized.<!--in the first place.-->
 The use of such a metric improves interpretation of contextual facilitation across studies, which lacks in the extant literature.
-Goal 6 corresponds to this research contribution which is brought about by consistent use of this metric in Chapters 6 and 7.
+Goal 6 corresponds to this research contribution which is brought about by consistent use of this metric in [Chapters 6](#chapter-graded-prediction) and [7](#chapter-speech-rate).
 
 *   **Nature of prediction**\
 First, we replicate previous findings that predictability indeed facilitates comprehension of degraded speech at a moderate level of degradation.
 This is of great value given the discussion on replication crisis in psychology and psycholinguistics.
 <!-- Our evidence shows that such facilitatory effect of prediction is graded in nature; it is not an all-or-nothing phenomenon. -->
 In the existing debate between all-or-nothing vs graded prediction, our findings clearly show that prediction in degraded speech comprehension is graded in nature.
-Goals 1 and 2 correspond to this research contribution which is brought about by the experiment described in Chapter 6.
+Goals 1 and 2 correspond to this research contribution which is brought about by the experiment described in [Chapter 6](#chapter-graded-prediction).
 
 *   **Limitation in predictive language processing**\
 We show that predictive processing all by itself cannot explain how listeners understand degraded speech.
 Although top-down predictions facilitate comprehension, we show that attention to context is a prerequisite for such contextual facilitation.
 Only when listeners attend to the context information and form its meaning representation, then top-down predictions can facilitate comprehension of degraded speech.
 Without proper attention to the context, predictability effects cannot be observed.
-Goal 3 corresponds to this research contribution which is brought about by the experiment described in Chapter 5.
+Goal 3 corresponds to this research contribution which is brought about by the experiment described in [Chapter 5](#chapter-attention-prediction).
 
 *   **Variability in information flow and its effect on top-down prediction**\
 We show that different rates of information flow --- increase or decrease in rate of speech --- have different effects in language comprehension.
@@ -189,13 +189,13 @@ It is brought about primarily by the difficulty in processing sentences with les
 <!-- Although the increase in the speed of information flow makes it difficult to encode the context information resulting in impeded contextual facilitation,
 the decrease in the speed does not necessarily enhance encoding the context information while listening to moderately degraded speech. -->
 This is one of the very few studies highlighting the role of speed of flow of information in contextual facilitation of degraded speech.
-Goal 4 corresponds to this research contribution which is brought about by the experiment described in Chapter 7.
+Goal 4 corresponds to this research contribution which is brought about by the experiment described in [Chapter 7](#chapter-speech-rate).
 
 *   **Adaptation to degraded speech**\
 We show that listeners do not adapt to degraded speech which is in contrast with some findings of speech perception experiments from other labs.
 When listeners are engaged in a linguistic task in which the lexical cues vary on every trial, their cognitive resources are strained by lexical-semantic cues rather than acoustic-phonetic cues.
 Thus, they do not show any adaptation effect; every trial is effectively a novel trial for them.
-Goal 5 corresponds to this research contribution which is brought about by the experiment described mainly in Chapter 6, and continued in Chapter 7.
+Goal 5 corresponds to this research contribution which is brought about by the experiment described mainly in [Chapter 6](#chapter-graded-prediction), and continued in [Chapter 7](#chapter-speech-rate).
 
 
 ## Overview of the thesis
@@ -206,19 +206,19 @@ this thesis replicated such findings focusing on theoretical question of the nat
 The studies in this thesis examined the factors like attention and rate of information flow that modulate semantic prediction,
 and also found evidence against adaptation and learning effect.
 
-**Chapter 2** provides a background on the rest of the chapters.
+**[Chapter 2](#chapter-background)** provides a background on the rest of the chapters.
 It provides an overview of degraded speech comprehension, and predictive language processing.
 Current status of the debate on these topics is also presented.
 
-**Chapter 3** describes the stimuli used in all the experiments in this thesis.
+**[Chapter 3](#chapter-methods)** describes the stimuli used in all the experiments in this thesis.
 It describes the process of stimuli creation, speech processing, and also provies an overview of online data collection.
 
-**Chapter 4** provides a description of the statistical tests employed for data analyses.
+**[Chapter 4](#chapter-stats)** provides a description of the statistical tests employed for data analyses.
 Binomial logistic mixed effects modeling was performed on the data from all the experiments.
 This chapter provides a background on this statistical procedure,
 and how it is conducted on R.
 
-**Chapter 5** presents two experiments that address the first and the third research goal.
+**Chapter \@ref(chapter-attention-prediction)** presents two experiments that address the first and the third research goal.
 These experiments were conducted to test the role of attention in comprehension of degraded speech.
 Participants in both the experiments were presented with speech degraded at different levels of degradation,
 and sentences of different levels of predictability.
@@ -230,8 +230,8 @@ We discuss the limitation in the theories of predictive language processing, and
 We end this chapter with the note that the measurement of language comprehension can be further refined,
 and the nature of predictability effect tested.
 
-**Chapter 6** addresses the first, the second, the fifth, and the sixth research goals.
-The predictability effect that was partially replicated in Chapter 5 is further examined in this chapter.
+**[Chapter 6](#chapter-graded-prediction)** addresses the first, the second, the fifth, and the sixth research goals.
+The predictability effect that was partially replicated in [Chapter 5](#chapter-attention-prediction) is further examined in this chapter.
 We use a refined metric of measurement of language comprehension that takes into consideration whether listeners correctly identified the context.
 We observe predictability effects at a moderate level of speech degradation, thereby replicating the facilitatory effect of predictability.
 We find the predictability effects to be graded in nature,
@@ -239,10 +239,10 @@ and discuss it in the light of existing theories of predictive processing.
 We also show that whether or not the next-trial degradation level is certain, listeners do not adapt to degraded speech as its lexical-semantic property varies every trial.
 At the end of this chapter, we note the intrinsic difficulty of processing degraded speech, and open the question that the predictability effects could be further enhanced (or limited) with more (or less) time available to process the degraded speech.
 
-**Chapter 7** addresses the questions opened in Chapter 6.
+**[Chapter 7](#chapter-speech-rate)** addresses the questions opened in [Chapter 6](#chapter-graded-prediction).
 In two experiments, it addresses the fourth, the fifth, and this sixth research goals.
-We use the same metric of measurement of language comprehension as Chapter 6, which takes into account listeners' correct identification of the context.
-Listeners were presented with a moderately degraded speech at which we observed predictability effect in Chapter 6.
+We use the same metric of measurement of language comprehension as [Chapter 6](#chapter-graded-prediction), which takes into account listeners' correct identification of the context.
+Listeners were presented with a moderately degraded speech at which we observed predictability effect in [Chapter 6](#chapter-graded-prediction).
 In Experiment 7A, such degraded speech was presented at normal and fast speech rates.
 And in Experiment 7B, the speech rates were normal and slow.
 We show that although there is an overall decrease in intelligibility, predictability effects are not reduced for slow speech, i.e., when more time is available to process the incoming information.
@@ -250,11 +250,11 @@ For fast speech however both intelligibility as well as predictability effects w
 which were driven by the difficulty in processing words that were less predictable from the context.
 This chapter ends with the discussion on the limitations of predictive processing that are driven by the constrains in cognitive resources.
 
-**Chapter 9** summarizes the findings of all the studies.
+**[Chapter 8](#chapter-conclusion)** summarizes the findings of all the studies.
 It presents the theoretical implications of this thesis and the future direction it points to.
 General limitations of the studies are briefly discussed.
 
-**Chapter 10** presents ethical approval that was obtained to run the experiments on human subject.
+**[Chapter 9](#chapter-ethics)** presents ethical approval that was obtained to run the experiments on human subject.
 The source that provided funding to conduct the research presented in this thesis is disclosed.
 
 ## Dissimination of research findings

@@ -151,6 +151,7 @@ output:
     template: templates/template.tex
     keep_tex: true
     pandoc_args: "--lua-filter=scripts_and_filters/colour_and_highlight.lua"
+    latex_engine: xelatex # I added on 04/04/2022 when knitting started to throw UTF+08 error
   bookdown::bs4_book: 
     css: 
       - templates/bs4_style.css

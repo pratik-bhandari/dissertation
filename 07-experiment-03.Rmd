@@ -13,7 +13,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 citation: apa.csl
 ---
 
-# Comprehension of degraded speech is modulated by the rate of speech
+# Comprehension of degraded speech is modulated by the rate of speech {#chapter-speech-rate}
 \chaptermark{Speech rate and predictability effects}
 
 ## Introduction

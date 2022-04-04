@@ -10,7 +10,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 citation: apa.csl
 ---
 
-# Predictability effects of degraded speech are reduced as a function of attention
+# Predictability effects of degraded speech are reduced as a function of attention {#chapter-attention-prediction}
 \chaptermark{Attention-prediction interplay}
 
 <!--In adverse listening conditions, when the bottom-up perceptual input is degraded, listeners tend to rely upon the context information.
@@ -93,8 +93,7 @@ We recruited 50 participants online via Prolific Academic.
 One participant whose response accuracy was less than 50\% across all experimental conditions was removed from the analysis.
 Among the remaining 49 participants ($\bar{x}$ $\pm$ SD = 23.31 $\pm$ 3.53 years; age range = 18 — 30 years), 27 were male and 22 were female.
 They were all native speakers of German residing in Germany, and they did not have any speech-language disorder, hearing loss, or neurological disorder (all self-reported).
-All participants received 6.20 Euro as monetary compensation for their participation.
-The experiment was approximately 40 minutes long.
+<!-- All participants received 6.20 Euro as monetary compensation for their participation. -->
 
 ### Materials
 
@@ -112,18 +111,19 @@ The lists are presented in Appendix B.
 
 Participants were asked to use headphones or earphones.
 A sample of noise vocoded speech not used in the practice trial and the main experiment was provided so that the participants could adjust the loudness to a preferred level of comfort at the beginning of the experiment.
-The participants were instructed to listen to the sentences and to type in the target word (noun) by using the keyboard.
+They were instructed to listen to the sentences and to type in the target word (noun) by using the keyboard.
 The time for typing in the response was not limited.
 They were also informed at the beginning of the experiment that some of the sentences would be ‘noisy’ and not easy to understand, and in these cases, they were encouraged to guess what they might have heard.
 Eight practice trials with different levels of speech degradation were given to familiarize the participants with the task before presenting all 120 experimental trials with an inter-trial interval of 1000 ms.
+The experiment was approximately 40 minutes long.
 
 ## Analyses
 
-We preprocessed and analysed data in R-Studio (Version 3.6.3; R Core Team, 2020).
-At 1 channel, there were only 5 correct responses, one each from 5 participants among 49.
+<!-- We preprocessed and analysed data in R-Studio (Version 3.6.3; R Core Team, 2020). -->
+Out of XYZ trials from 49 participants, there were only 5 correct responses at 1 channel speech degradation condition.
 Therefore, the 1 channel speech degradation condition was excluded from the analysis.
 
-Response accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lme4 [@Bates2015] and lmerTest [@Kuznetsova2017] packages  following the procedure described in [Chapter 4](#analysis-main).
+Response accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) following the procedure described in [Chapter 4](#analysis-main).
 Binary responses (correct/incorrect) for all participants were fit with a [binomial logistic mixed-effects model](#binomial-logistic-mixed-effects-model) [@Jaeger2006; @Jaeger2008].
 Noise condition (categorical; 4, 6, and 8 channels noise vocoding), target word predictability (categorical; high, medium, and low), and the interaction of number of channels and target word predictability were included in the fixed effects.
 

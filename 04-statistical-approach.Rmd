@@ -13,7 +13,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 <!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
 <!-- \chaptermark{Citations and cross-refs} -->
 
-# General statistical approach
+# General statistical approach {#chapter-stats}
 \chaptermark{Statistics}
 
 ## Linear regression

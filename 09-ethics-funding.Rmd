@@ -18,7 +18,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 <!-- # Citations, cross-references, and collaboration {#cites-and-refs}  -->
 <!-- \chaptermark{Citations and cross-refs} -->
 
-# Ethics and funding
+# Ethics and funding {#chapter-ethics}
 
 \noindent 
 

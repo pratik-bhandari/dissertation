@@ -12,7 +12,11 @@
 
 \item[EN] English
 
+\item[MEG] Magnetoencephalography
+
 \item[ERP] Event Related Potential
+
+\item[SPIN] Speech In Noise
 
 \item[PSOLA] Pitch synchronous overlap add technique
 
