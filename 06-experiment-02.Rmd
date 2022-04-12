@@ -16,16 +16,16 @@ csl: 'apa7.csl'
 
 In the previous chapter we concluded that predictability facilitated comprehension of degraded speech only when listeners attended to the context,
 at least when the speech was not extremely degraded by 1 channel noise vocoding.
-A few lacunae in the study warrant further examination to strengthen the conclusion.
-Firstly, there was an implicit assumption that all the noun-correct responses were borne out of correct identification of the context evoking words (i.e., the verbs).
-In the given experimental design made to test the effect of attention to context vs attention only to the target word, and by the virtue of the instruction given to the participants,
+A few lacunae in the study in Chapter \@ref(chapter-attention-prediction) warrant further examination and exploration of its the conclusion.
+Firstly, there was an implicit assumption that all the noun-correct responses were borne out of correct identification of the context evoking words (i.e., verbs).
+Instructions to the participants and the experimental design were made to test the effect of attention to context vs attention only to the target word such that
 we could not test if participants identified the context correctly in [Experiment 1A](#experiment1a).
 <!-- To make a similar comparison, we only measured final-word accuracy in [Experiment 1B](#experiment1b) as well. -->
 <!-- We can overcome this limitation in the study reported in this chapter. -->
 Secondly, we also did not consider if listeners adapted to the degraded speech, and how such an adaptation, if present, could modulate or interact with contextual facilitation.
 And most importantly, we only showed that there is a difference between high and low predictability sentences ---
 the granularity of predictability was not tested
-as the theoretical question was focused on the role of attention to context rather than on the nature of prediction.
+The theoretical question was focused on the role of attention to context rather than on the nature of prediction.
 The aim of the study presented in this chapter is to address these limitations and examine if listeners form narrowed expectations or whether predictions are generated across a wide range of probable sentence endings in a graded manner.
 We also take into account the accuracy of context identification (not just the accuracy of target word identification) as well as the possible learning effect due to adaptation to degraded speech.
 The results showed that in contrast to the "narrowed expectations" view postulated for predictive processing of degraded speech,
@@ -39,7 +39,7 @@ In the literature of speech perception and sentence processing, studies have arg
 Very few studies have investigated such theoretical questions within the domain of adverse listening conditions, specifically in degraded speech comprehension [e.g. @Strauss2013; see also @Corps2020; @vanOs2021].
 @Strauss2013 posited that listeners cannot preactivate less predictable sentence endings in an adverse listening condition.
 They proposed that the facilitatory effect of predictability is limited to only highly predictable sentence endings at a moderate level of spectral degradation of speech.
-Although many studies support the general idea of Strauß and colleagues that predictability facilitates comprehension of degraded speech [e.g., @Sheldon2008a; @Obleser2010; @Hunter2018],
+Although many studies support the general idea of Strau{\ss} and colleagues that predictability facilitates comprehension of degraded speech [e.g., @Sheldon2008a; @Obleser2010; @Hunter2018],
 there have been no studies so far after Strauß and colleagues', to our knowledge, which examined the nature of predictability specifically in degraded speech comprehension.
 
 In this chapter, our main aim is to replicate the previous findings of these predictability effects,
@@ -113,8 +113,8 @@ There is a discrepancy across studies in how language comprehension in degraded 
 Some studies that reported contextual facilitation in degraded speech comprehension used proportion of correctly reported *final* words only [e.g., @Sheldon2008a; @Obleser2010; @Hunter2018].
 @Obleser2007 quantified language comprehension as the proportion of correctly identified key words in SPIN sentences.
 @Erb2013 and @Hakonen2017 used *report scores* [@Peelle2013] that measure proportion of correctly recognized words per sentence as an index of language comprehension.
-Such inconsistancy makes cross-study comparison difficult,
-and more importantly, none of these measures take into account if listeners have correctly identified the context [cf. @Amichetti2018; see also, @Marrufo2019]
+Such inconsistencies make cross-study comparison difficult.
+Additionally, none of these measures take into account if listeners have correctly identified the context [cf. @Amichetti2018; see also, @Marrufo2019]
 which should have been the most important factor to be considered in the first place.
 
 #### The present study
@@ -146,14 +146,14 @@ If participants do not understand the context and we only measure the recognitio
 ### Participants
 
 We recruited a group of participant via Prolific Academic and assigned them to the *predictable channel context* (n = 50; $\pm$ SD = 23.6 $\pm$ 3.2 years; age range = 18 -- 30 years; 14 females).
-We created *unpredictable channel context* group from participants (n = 48; $\bar{x}$  $\pm$ SD = 24.44 $\pm$ 3.5 years; age range = 18 -- 31 years; 16 females) from <!--[Experiment 1B](\@ref(experiment1b)).-->
+We created *unpredictable channel context* group from participants (n = 48; $\bar{x}$  $\pm$ SD = 24.44 $\pm$ 3.5 years; age range = 18 -- 31 years; 16 females) from [Experiment 1B](#experiment1b).
 All participants were native speakers of German residing in Germany.
 Exclusion criteria for participating in this study were self-reported hearing disorder, speech-language disorder, or any neurological disorder.
 
 
 ### Materials
 
-We used the same stimuli described in [Chapter 3](#experimental-materials).
+We used the same stimuli described in Chapter \@ref(chapter-methods) (Section \@ref(experimental-materials)).
 They were digital recordings of 360 German sentences spoken by a female native speaker of German in a normal rate of speech.
 All sentences were in present tense consisting of pronoun, verb, determiner, and object (noun) in the Subject-Verb-Object form.
 We used 120 sentences each for low predictability, medium predictability, and high predictability sentences that differed in the cloze probability of sentence final target words.
@@ -197,14 +197,14 @@ Therefore, we excluded 2469 out of 5760 trials in unpredictable channel context 
 The 1 channel noise vocoding condition was dropped from the analyses as there were no correct responses in any of the trials in this condition.
 
 <!-- We preprocessed and analysed data in R-Studio (Version 3.6.1; R Core Team, 2019) following the procedure described in [Chapter 4.4.4]{#analysis-main}. -->
-Following the procedure described in [Chapter 4](#analysis-main), response accuracy was analyzed with Generalized Linear Mixed Models (GLMMs).
-Binary responses (correct/incorrect) for all participants in both groups (predictable channel context and unpredictable channel context) were fit with a [binomial logistic mixed-effects model]{#binomial-logistic-mixed-effects-model}[@Jaeger2006; @Jaeger2008].
+We analyzed response accuracy with generalized linear mixed models following the procedure described in Chapter \@ref(chapter-stats) (Section \@ref(analysis-main)).
+Binary responses (correct/incorrect) for all participants in both groups (predictable channel context and unpredictable channel context) were fit with a [binomial logistic mixed-effects model]{#binomial-logistic-mixed-effects-model} [@Jaeger2006; @Jaeger2008].
 Noise condition (categorical; 4, 6, and 8 channels noise vocoding), target word predictability (categorical; high predictability, medium predictability, and low predictability), global channel context (categorical; predictable channel context and unpredictable channel context), and the interaction of noise condition and target word predictability were included in the fixed effects.
 
 We first fitted a model with maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
 Both, by-participant and by-item random slopes were included for noise condition, target word predictability and their interaction.
 To find the optimal model for the data, non-significant higher-order interactions were excluded from the fixed-effects structure (and from the random-effects structure) in a stepwise manner.
-Model selection was based on Akaike Information Criterion[@Grueber2011; @Richards2011].
+Model selection was based on Akaike Information Criterion [@Grueber2011; @Richards2011].
 <!--Random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization.
 This gave a more parsimonious model [@Bates2015a].
 Such a model was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameter, and iii) both item- and participant-related correlation parameters.
@@ -217,39 +217,39 @@ The results from the optimal model are shown in Table X.X.X, and are reported be
 
 <!--In this experiment, we tested i) whether predictability facilitates language comprehension only at a moderate level of spectral degradation, and ii) whether adaptation to degraded speech influences language comprehension.-->
 We observed that the mean response accuracy increased with an increase in number of noise vocoding channels from 4 to 6 to 8, and with an increase in target word predictability from low to medium to high (see Figure X.X).
-This trend is consistent across both the channel contexts;
+This trend was consistent across both the channel contexts;
 Figure X.X and Figure Y.Y show this trend for predictable channel context (i.e., blocked design) and unpredictable channel context (i.e., randomized design) respectively.
 Mean accuracies across all conditions are given in Table X and Y, and Figure X.X.
 
-These observations are confirmed by the results of statistical analyses.
+These observations are confirmed by the results of statistical analyses (Table XYZ).
 We found a significant main effect of channel condition indicating that the response accuracy was higher in the 8 channels
-than in the 4 channels ($\beta$ = -2.87, SE = 0.22, *z* (6917) = -13.1, *p* <.001) and
-6 channels ($\beta$ = -0.66, SE = 0.19, *z* (6917) = -3.42, *p* < .001).
+than in the 4 channels ($\beta$ = -2.87, SE = .22, *z* (6917) = -13.1, *p* <.001) and
+6 channels ($\beta$ = -.66, SE = .19, *z* (6917) = -3.42, *p* < .001).
 There was a significant main effect of target word predictability suggesting that response accuracy was lower at low predictability sentences
-than both high predictability sentences ($\beta$ = 2.18, SE = 0.3, *z* (6917) = 7.2, *p* < .001) and
-medium predictability sentences ($\beta$ = -0.52, SE = 0.27, *z* (6917) = -1.97, *p* = .049).
-We also found a significant interaction between channel condition and target word predictability ($\beta$ = -0.71, SE = 0.29, *z* (6917) = -2.44, *p* = .015).
+than both high predictability sentences ($\beta$ = 2.18, SE = .3, *z* (6917) = 7.2, *p* < .001) and
+medium predictability sentences ($\beta$ = -.52, SE = .27, *z* (6917) = -1.97, *p* = .049).
+We also found a significant interaction between channel condition and target word predictability ($\beta$ = -.71, SE = .29, *z* (6917) = -2.44, *p* = .015).
 
-We performed a subsequent subgroup analyses on each noise channel condition
+We performed a subgroup analyses on each noise channel condition
 <!-- The same procedure as described above was followed. -->
 which revealed that the interaction was driven by the effect of predictability at 4 channels:
-The accuracy at high predictability sentences was higher than medium predictability sentences ($\beta$ = 1.14, SE = 0.37, *z* (1608) = 3.1, p < .001),
-which in turn was also higher than low predictability sentences ($\beta$ = 1, SE = 0.24, *z* (1608) = 4.2, p < .001).
+The accuracy at high predictability sentences was higher than medium predictability sentences ($\beta$ = 1.14, SE = .37, *z* (1608) = 3.1, p < .001),
+which in turn was also higher than low predictability sentences ($\beta$ = 1, SE = .24, *z* (1608) = 4.2, p < .001).
 There was no significant difference in response accuracy between low predictability and high predictability sentences
-at both 6 channels ($\beta$ = 0.33, SE = 0.32, *z* (2590) = 1.04, *p* = .3)
-and 8 channels ($\beta$ = -0.014, SE = 0. 32, *z* (2719) = -0.04, *p* = .97).
-However, response accuracy was higher in high predictability than in medium predictability sentences
-at both 6 channels ($\beta$ = 1.83, SE = 0.65, *z* (2590) = 2.83, p < .005)
-and 8 channels ($\beta$ = 1.54, SE = 0.61, *z* (2719) = 2.54, *p* = .011).
+at both 6 channels ($\beta$ = .33, SE = .32, *z* (2590) = 1.04, *p* = .3)
+and 8 channels ($\beta$ = -.014, SE = .32, *z* (2719) = -.04, *p* = .97).
+<!--However, response accuracy was higher in high predictability than in medium predictability sentences
+at both 6 channels ($\beta$ = 1.83, SE = .65, *z* (2590) = 2.83, p < .005)
+and 8 channels ($\beta$ = 1.54, SE = 61, *z* (2719) = 2.54, *p* = .011).-->
 
-We also found a significant main effect of global channel context which showed that the response accuracy was higher in predictable channel context than in unpredictable channel context ($\beta$ = -0.27, SE = 0.14, *z* (6917) = -2.02, *p* = .04).
+We also found a significant main effect of global channel context which showed that the response accuracy was higher in predictable channel context than in unpredictable channel context ($\beta$ = -.27, SE = .14, *z* (6917) = -2.02, *p* = .04).
 
 Further, to test the effect of practice on adaptation to degraded speech, we added trial number as a fixed effect in the maximal model.
 Note that there were 30 trials in each block in the predictable channel context (i.e., blocked design).
-For comparability, we divided unpredictable channel context (i.e., randomized design) into four blocks.
+For comparability, we divided unpredictable channel context (i.e., randomized design) into four blocks in the analysis.
 <!-- Then following the same procedure as above, we obtained an optimal model. -->
-We did not find a significant main effect of trial number indicating that the response accuracy did not change throughout the experiment ($\beta$ = -0.0004, SE = 0.01, *z* (6917) = -0.05, *p* = 0.97).
-It remained constant within each block in the predictable channel context ($\beta$ = -0.02, SE = 0.01, *z* (3291) = -1.43, *p* = 0.15) as well as in the unpredictable channel context ($\beta$ = 0.01 SE = 0.01, *z* (3291) = 1.05, *p* = 0.29).
+We did not find a significant main effect of trial number indicating that the response accuracy did not change throughout the experiment ($\beta$ = -.0004, SE = .01, *z* (6917) = -.05, *p* = .97).
+It remained constant within each block in the predictable channel context ($\beta$ = -.02, SE = .01, *z* (3291) = -1.43, *p* = .15) as well as in the unpredictable channel context ($\beta$ = .01 SE = .01, *z* (3291) = 1.05, *p* = .29).
 
 ## Conclusion
 

@@ -20,7 +20,7 @@ title: |
   Comprehension of degraded speech: \
   Exploring the role of attention and speed of processing in top-down prediction
 author: Pratik Bhandari
-college: Department of 
+college: Department of Psychology
 university: Saarland University
 university-logo: templates/beltcrest.png
 university-logo-width: 5cm

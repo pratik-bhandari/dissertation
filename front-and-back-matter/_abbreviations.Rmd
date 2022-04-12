@@ -18,5 +18,7 @@
 
 \item[SPIN] Speech In Noise
 
+\item[SNR] Signal to Noise Ratio
+
 \item[PSOLA] Pitch synchronous overlap add technique
 
