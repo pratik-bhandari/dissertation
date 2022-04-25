@@ -14,57 +14,53 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 
 # Introduction {#chapter-introduction}
 
-<!--\minitoc  <!--this will include a mini table of contents-->
+One of the features that distinguishes us humans from other species is our ability to communicate using verbal language [@Lieberman2013]. We speak. We listen. We understand. This seemingly straight forward path of communication goes through plenty of hindrances. One of them is adverse listening condition. Human comprehenders rely on top-down predictive processes and bottom-up auditory processes to understand spoken language. Language comprehension in adverse listening conditions is aptly described and represented by the noisy channel model of communication [@Shannon1948; @Levy2008; @Gibson2013; @Gibson2019, see Figure \ref{fig:noisy-channel}, Equation \ref{eq:noisy-channel}] based on which we study the interaction between the top-down and bottom-up processes involved.
 
-<!-- # Introduction {.unnumbered}
+```{r noisy-channel, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Schematic representation of the noisy channel model of communication", out.width="90%"}
+
+knitr::include_graphics("figures/materials/noisy-channel.tiff")
+
+```
+
+The speaker produces an utterance $u_i$ with a meaning $m_i$ that she intends to send.
+The utterance is encoded into a signal and is sent through a channel of transmission.
+During transmission, noise disrupts the signal.
+The receiver (listener) perceives the signal as $u_p$ and decodes it to recover the meaning as $m_p$.
+<!-- For a successful communication to take place, the message recovered by the listener must be approximately equal to the message sent by the speaker. --> Human language comprehension system is assumed to be engaged in an optimal Bayesian decoding that uses all the sources of information (e.g., prior probability of plausible utterances, linguistic and world knowledge, context information) and infers the intended meaning of the speaker from the perceived meaning that it receives from a noisy channel of communication [e.g., @Levy2008; @Gibson2013].
+Given the perceived utterance $u_p$, the listeners assigns a probability, $P(u_i|u_p)$, to a the intended utterance $u_i$ which is not directly available to the listener.
+Using Bayes' rule, $P(u_i|u_p)$ can be re-written as:
 
 ```{=tex}
-\adjustmtc
-\markboth{Introduction}{}
+\begin{align} \label{eq:noisy-channel}
+P(u_i|u_p) \propto P(u_i) P_N(u_p|u_i)
+\end{align}
 ```
-For PDF output, include these two LaTeX commands after unnumbered chapter headings, otherwise the mini table of contents and the running header will show the previous chapter -->
+In Equation \ref{eq:noisy-channel}, $P(u_i)$ is the prior probability that a speaker intends to utter $u_i$.
+It represents the listener's knowledge about the world and language, and her context information.
+Similarly, $P_N(u_p|u_i)$ is the likelihood of $u_p$ given $u_i$.
+The likelihood term $P_N(u_p|u_i)$ represents the probability of $u_i$ being corrupted to $u_p$ in the noisy channel during the process of transmission.
 
-One of the features that distinguishes us humans from other species is our ability to communicate using verbal language.
-We speak. We listen. We understand.
-This seemingly straight forward path of communication goes through plenty of hindrances.
-One of them is adverse listening condition:
-There is noise in the background during a conversation;
-poor signal transmission via a Zoom call renders a speaker's speech distorted;
-a listener can have hearing loss, or he might be wearing hearing a prosthesis like cochlear implant or hearing aid.
-How does the cognitive system achieve the feat of understanding speech that is distorted by these internal and external factors?
-<!-- Despite any or all of these, the peripheral auditory processing system, and the central language processing system function well enough most of the times for us to understand what is being said. -->
-The answer lies in the 'tactics' that human language comprehenders use.
-We rely upon the preexisting linguistic knowledge, information about the world, and importantly, the context information to form predictions about linguistic events that are yet to be encountered.
+The channel of transmission can become a noisy channel due to factors like background noise present in a conversation;
+poor signal transmission in a phone call that distorts the speakers speech;
+hearing loss of a listener;
+hearing aid or cochlear implant wore by a listener; and so on.
+To understand speech in such a noisy channel of communication, a listener puts different weights to the distorted bottom-up auditory input $P(u_p|u_i)$ vs her top-down information $P(u_i)$ (e.g., knowledge about the world, context information, etc.).
+
+Studies in clean speech comprehension and reading comprehension have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events that are yet to be encountered.
 
 Let's take the following sentence, for example:
-    
+
 (1) The day was breezy so the boy went outside to fly ...
 
-Most readers would expect the final word to be *a kite* in this sentence [@Delong2005; cf. @Nieuwland2020a].
-Here, the words preceding the ellipses provide a context.
-A reader can utilize their knowledge about what a *boy* would ideally do *outside* when a day is *breezy*.
-It leads the reader to predict that the sentence continuation is most likely *a kite* and not any other word like *a rocket* .
-Similar results are observed in auditory domain as well.
-Listeners use context information from what they have heard, and form predictions about upcoming word [e.g., @Altmann2007; @Ankener2019].
+Most readers would expect the final word to be *a kite* in this sentence [@Delong2005; cf. @Nieuwland2020a]. Here, the words up to the final word of the sentence provide a context: A reader can utilize their knowledge about what a *boy* would ideally do *outside* when a day is *breezy*. It leads the reader to predict that the sentence continuation is most likely *a kite* and not any other word like *a rocket* . Similar results are observed in auditory domain as well. Listeners use context information from what they have heard, and form predictions about upcoming word [e.g., @Altmann2007; @Ankener2019].
+When the speech signal is degraded, i.e., in a noisy channel, listeners put more weight on the prior knowledge and context information than on the auditory information [@Sheldon2008a; @Obleser2007].
+They rely more on predictive processing.
 
-Availability and usage of context information, and top-down prediction aid spoken language comprehension in adverse listening condition, for example when the speech signal is degraded.
-Throughout this thesis, one of the main questions that we grapple with is, what is the nature of predictability effect and contextual facilitation at different levels of speech degradation?
-<!-- While listening to degraded speech, listeners can use the context information and form predictions. -->
-<!-- The nature of prediction in comprehension of speech that is degraded by noise vocoding is not a settled issue: -->
-Is prediction probabilistic, or is it an all-or-nothing phenomenon?
-Prior to this theoretical question, one may ask why study degraded speech comprehension in the first place --- we do not come across degraded speech *per se* in our day-to-day conversation after all.
-There are two facets to the answer of this question.
-First, we cannot fully understand how speech and language comprehension system in humans operates unless we study how it responds to novel sounds.
-If predictive processing is the fundamental mechanism of language comprehension which it is claimed to be, then it is imperative we examine the claim in different listening conditions, with novel auditory stimuli.
-<!-- After all, different paradigms have shown limits in predictive language processing accounts. -->
-The extent to which acoustic-phonetic cues (temporal and spectral properties) of different forms of distorted speech interact with lexical-semantic properties (top-down processes) provides an insight into the predictive nature of language comprehension. 
-Secondly, 35-40 adults per million inhabitants, and 10-12 children per 10000 newborns receive cochlear implant in Germany alone [@Deraeve2020].
-Degraded speech mimics the auditory input of cochlear implants.
-The study of degraded speech comprehension also provides an insight of language processing in this section of population;
-and of the difficulties (e.g., listening effort, constrains in cognitive resources) they face compared to normal hearing population.
-
-Therefore, we study both top-down predictive as well as bottom-up auditory processes, and their interactions in comprehension of degraded speech.
-While doing so, we address the following challenges:
+Inspired by the noisy channel model of communication, this thesis investigates the interaction between top-down predictive and bottom-up auditory processes.
+We investigate what the optimal level of noise in the signal is for the effect of top-down predictive processes to be most efficient or facilitatory to understand speech in a noisy channel.
+Similarly, by manipulating different factors of top-down as well as bottom-up processes (e.g., attention allocation to parts of speech stream, different speech rate),
+we examine the role that they play in aiding or interfering comprehension in a noisy channel.
+While doing so, we address the following challenges and research goals:
 
 (i)   **Replication crisis**\
 Almost all the disciplines of cognitive science --- anthropology, computer science, linguistics, neuroscience, and psychology --- are suffering the so-called replication crisis [e.g., @Sanderson2008; @OSC2015; @Ebersole2016; @Cockburn2020; @Minocher2021].

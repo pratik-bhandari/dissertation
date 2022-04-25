@@ -397,16 +397,41 @@ Pitch synchronous overlap add technique
 \hypertarget{chapter-introduction}{%
 \chapter{Introduction}\label{chapter-introduction}}
 
-One of the features that distinguishes us humans from other species is our ability to communicate using verbal language.
-We speak. We listen. We understand.
-This seemingly straight forward path of communication goes through plenty of hindrances.
-One of them is adverse listening condition:
-There is noise in the background during a conversation;
-poor signal transmission via a Zoom call renders a speaker's speech distorted;
-a listener can have hearing loss, or he might be wearing hearing a prosthesis like cochlear implant or hearing aid.
-How does the cognitive system achieve the feat of understanding speech that is distorted by these internal and external factors?
-The answer lies in the `tactics' that human language comprehenders use.
-We rely upon the preexisting linguistic knowledge, information about the world, and importantly, the context information to form predictions about linguistic events that are yet to be encountered.
+One of the features that distinguishes us humans from other species is our ability to communicate using verbal language (\protect\hyperlink{ref-Lieberman2013}{Lieberman, 2013}). We speak. We listen. We understand. This seemingly straight forward path of communication goes through plenty of hindrances. One of them is adverse listening condition. Human comprehenders rely on top-down predictive processes and bottom-up auditory processes to understand spoken language. Language comprehension in adverse listening conditions is aptly described and represented by the noisy channel model of communication (\protect\hyperlink{ref-Gibson2013}{Gibson et al., 2013}; \protect\hyperlink{ref-Gibson2019}{Gibson et al., 2019}, see Figure \ref{fig:noisy-channel}, Equation \ref{eq:noisy-channel}; \protect\hyperlink{ref-Levy2008}{Levy, 2008}; \protect\hyperlink{ref-Shannon1948}{C. E. Shannon, 1948}) based on which we study the interaction between the top-down and bottom-up processes involved.
+
+\begin{figure}[!htpb]
+
+{\centering \includegraphics[width=0.9\linewidth]{figures/materials/noisy-channel} 
+
+}
+
+\caption{Schematic representation of the noisy channel model of communication}\label{fig:noisy-channel}
+\end{figure}
+
+The speaker produces an utterance \(u_i\) with a meaning \(m_i\) that she intends to send.
+The utterance is encoded into a signal and is sent through a channel of transmission.
+During transmission, noise disrupts the signal.
+The receiver (listener) perceives the signal as \(u_p\) and decodes it to recover the meaning as \(m_p\).
+Human language comprehension system is assumed to be engaged in an optimal Bayesian decoding that uses all the sources of information (e.g., prior probability of plausible utterances, linguistic and world knowledge, context information) and infers the intended meaning of the speaker from the perceived meaning that it receives from a noisy channel of communication (\protect\hyperlink{ref-Gibson2013}{Gibson et al., 2013}; e.g., \protect\hyperlink{ref-Levy2008}{Levy, 2008}).
+Given the perceived utterance \(u_p\), the listeners assigns a probability, \(P(u_i|u_p)\), to a the intended utterance \(u_i\) which is not directly available to the listener.
+Using Bayes' rule, \(P(u_i|u_p)\) can be re-written as:
+
+\begin{align} \label{eq:noisy-channel}
+P(u_i|u_p) \propto P(u_i) P_N(u_p|u_i)
+\end{align}
+
+In Equation \ref{eq:noisy-channel}, \(P(u_i)\) is the prior probability that a speaker intends to utter \(u_i\).
+It represents the listener's knowledge about the world and language, and her context information.
+Similarly, \(P_N(u_p|u_i)\) is the likelihood of \(u_p\) given \(u_i\).
+The likelihood term \(P_N(u_p|u_i)\) represents the probability of \(u_i\) being corrupted to \(u_p\) in the noisy channel during the process of transmission.
+
+The channel of transmission can become a noisy channel due to factors like background noise present in a conversation;
+poor signal transmission in a phone call that distorts the speakers speech;
+hearing loss of a listener;
+hearing aid or cochlear implant wore by a listener; and so on.
+To understand speech in such a noisy channel of communication, a listener puts different weights to the distorted bottom-up auditory input \(P(u_p|u_i)\) vs her top-down information \(P(u_i)\) (e.g., knowledge about the world, context information, etc.).
+
+Studies in clean speech comprehension and reading comprehension have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events that are yet to be encountered.
 
 Let's take the following sentence, for example:
 
@@ -417,28 +442,15 @@ Let's take the following sentence, for example:
   The day was breezy so the boy went outside to fly \ldots{}
 \end{enumerate}
 
-Most readers would expect the final word to be \emph{a kite} in this sentence (\protect\hyperlink{ref-Delong2005}{DeLong et al., 2005}; cf. \protect\hyperlink{ref-Nieuwland2020a}{Nieuwland et al., 2020}).
-Here, the words preceding the ellipses provide a context.
-A reader can utilize their knowledge about what a \emph{boy} would ideally do \emph{outside} when a day is \emph{breezy}.
-It leads the reader to predict that the sentence continuation is most likely \emph{a kite} and not any other word like \emph{a rocket} .
-Similar results are observed in auditory domain as well.
-Listeners use context information from what they have heard, and form predictions about upcoming word (e.g., \protect\hyperlink{ref-Altmann2007}{Altmann \& Kamide, 2007}; \protect\hyperlink{ref-Ankener2019}{Ankener, 2019}).
+Most readers would expect the final word to be \emph{a kite} in this sentence (\protect\hyperlink{ref-Delong2005}{DeLong et al., 2005}; cf. \protect\hyperlink{ref-Nieuwland2020a}{Nieuwland et al., 2020}). Here, the words up to the final word of the sentence provide a context: A reader can utilize their knowledge about what a \emph{boy} would ideally do \emph{outside} when a day is \emph{breezy}. It leads the reader to predict that the sentence continuation is most likely \emph{a kite} and not any other word like \emph{a rocket} . Similar results are observed in auditory domain as well. Listeners use context information from what they have heard, and form predictions about upcoming word (e.g., \protect\hyperlink{ref-Altmann2007}{Altmann \& Kamide, 2007}; \protect\hyperlink{ref-Ankener2019}{Ankener, 2019}).
+When the speech signal is degraded, i.e., in a noisy channel, listeners put more weight on the prior knowledge and context information than on the auditory information (\protect\hyperlink{ref-Obleser2007}{Obleser et al., 2007}; \protect\hyperlink{ref-Sheldon2008a}{Sheldon et al., 2008a}).
+They rely more on predictive processing.
 
-Availability and usage of context information, and top-down prediction aid spoken language comprehension in adverse listening condition, for example when the speech signal is degraded.
-Throughout this thesis, one of the main questions that we grapple with is, what is the nature of predictability effect and contextual facilitation at different levels of speech degradation?
-Is prediction probabilistic, or is it an all-or-nothing phenomenon?
-Prior to this theoretical question, one may ask why study degraded speech comprehension in the first place --- we do not come across degraded speech \emph{per se} in our day-to-day conversation after all.
-There are two facets to the answer of this question.
-First, we cannot fully understand how speech and language comprehension system in humans operates unless we study how it responds to novel sounds.
-If predictive processing is the fundamental mechanism of language comprehension which it is claimed to be, then it is imperative we examine the claim in different listening conditions, with novel auditory stimuli.
-The extent to which acoustic-phonetic cues (temporal and spectral properties) of different forms of distorted speech interact with lexical-semantic properties (top-down processes) provides an insight into the predictive nature of language comprehension.
-Secondly, 35-40 adults per million inhabitants, and 10-12 children per 10000 newborns receive cochlear implant in Germany alone (\protect\hyperlink{ref-Deraeve2020}{De Raeve et al., 2020}).
-Degraded speech mimics the auditory input of cochlear implants.
-The study of degraded speech comprehension also provides an insight of language processing in this section of population;
-and of the difficulties (e.g., listening effort, constrains in cognitive resources) they face compared to normal hearing population.
-
-Therefore, we study both top-down predictive as well as bottom-up auditory processes, and their interactions in comprehension of degraded speech.
-While doing so, we address the following challenges:
+Inspired by the noisy channel model of communication, this thesis investigates the interaction between top-down predictive and bottom-up auditory processes.
+We investigate what the optimal level of noise in the signal is for the effect of top-down predictive processes to be most efficient or facilitatory to understand speech in a noisy channel.
+Similarly, by manipulating different factors of top-down as well as bottom-up processes (e.g., attention allocation to parts of speech stream, different speech rate),
+we examine the role that they play in aiding or interfering comprehension in a noisy channel.
+While doing so, we address the following challenges and research goals:
 
 \begin{enumerate}
 \def\labelenumi{(\roman{enumi})}
@@ -2182,9 +2194,6 @@ Darwin, C. (2005). \emph{Praat scripts for producing shannon AM speech}. \url{ht
 \leavevmode\vadjust pre{\hypertarget{ref-Davis2005}{}}%
 Davis, M. H., Johnsrude, I. S., Hervais-Adelman, A., Taylor, K., \& McGettigan, C. (2005). Lexical Information Drives Perceptual Learning of Distorted Speech: Evidence From the Comprehension of Noise-Vocoded Sentences. \emph{Journal of Experimental Psychology: General}, \emph{134}(2), 222--241. \url{https://doi.org/10.1037/0096-3445.134.2.222}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Deraeve2020}{}}%
-De Raeve, L., Archbold, S., Lehnhardt-Goriany, M., \& Kemp, T. (2020). {Prevalence of cochlear implants in Europe: Trend between 2010 and 2016}. \emph{Cochlear Implants International}, \emph{21}(5), 275--280. \url{https://doi.org/10.1080/14670100.2020.1771829}
-
 \leavevmode\vadjust pre{\hypertarget{ref-Delong2005}{}}%
 DeLong, K. A., Urbach, T. P., \& Kutas, M. (2005). Probabilistic word pre-activation during language comprehension inferred from electrical brain activity. \emph{Nature Neuroscience}, \emph{8}(8), 1117--1121. \url{https://doi.org/10.1038/nn1504}
 
@@ -2253,6 +2262,12 @@ Garrido, M. I., Dolan, R. J., \& Sahani, M. (2011). Surprise Leads to Noisier Pe
 
 \leavevmode\vadjust pre{\hypertarget{ref-Garvey1953}{}}%
 Garvey, W. D. (1953). {The intelligibility of speeded speech}. \emph{Journal of Experimental Psychology}, \emph{45}(2), 102--108. \url{https://doi.org/10.1037/h0054381}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Gibson2013}{}}%
+Gibson, E., Bergen, L., \& Piantadosi, S. T. (2013). Rational integration of noisy evidence and prior semantic expectations in sentence interpretation. \emph{Proceedings of the National Academy of Sciences}, \emph{110}(20), 8051--8056. \url{https://doi.org/10.1073/pnas.1216438110}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Gibson2019}{}}%
+Gibson, E., Futrell, R., Piantadosi, S. P., Dautriche, I., Mahowald, K., Bergen, L., \& Levy, R. (2019). How efficiency shapes human language. \emph{Trends in Cognitive Sciences}, \emph{23}(5), 389--407. \url{https://doi.org/10.1016/j.tics.2019.02.003}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Gordonsalant1995}{}}%
 Gordon-Salant, S., \& Fitzgibbons, P. J. (1995). {Recognition of multiply degraded speech by young and elderly listeners}. \emph{Journal of Speech and Hearing Research}, \emph{38}(5), 1150--1156.
@@ -2368,6 +2383,9 @@ Leensen, M. C. J., \& Dreschler, W. A. (2013). {Speech-in-noise screening tests 
 \leavevmode\vadjust pre{\hypertarget{ref-Lerner2014a}{}}%
 Lerner, Y., Honey, C. J., Katkov, M., \& Hasson, U. (2014). {Temporal scaling of neural responses to compressed and dilated natural speech}. \emph{Journal of Neurophysiology}, \emph{111}(12), 2433--2444. \url{https://doi.org/10.1152/jn.00497.2013}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Levy2008}{}}%
+Levy, R. (2008). Expectation-based syntactic comprehension. \emph{Cognition}, \emph{106}(3), 1126--1177. \url{https://doi.org/10.1016/j.cognition.2007.05.006}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Li2014}{}}%
 Li, J., Xia, R., Ying, D., Yan, Y., \& Akagi, M. (2014). {Investigation of objective measures for intelligibility prediction of noise-reduced speech for Chinese, Japanese, and English}. \emph{The Journal of the Acoustical Society of America}, \emph{136}(6), 3301--3312. \url{https://doi.org/10.1121/1.4901079}
 
@@ -2376,6 +2394,9 @@ Li, X., Zhang, Y., Li, L., Zhao, H., \& Du, X. (2017). {Attention is shaped by s
 
 \leavevmode\vadjust pre{\hypertarget{ref-Li2011}{}}%
 Li, Y., Zhang, G., Kang, H., Liu, S., Han, D., \& Fu, Q.-J. (2011). {Effects of speaking style on speech intelligibility for Mandarin-speaking cochlear implant users}. \emph{The Journal of the Acoustical Society of America}, \emph{129}(6), EL242--EL247. \url{https://doi.org/10.1121/1.3582148}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Lieberman2013}{}}%
+Lieberman, P. (2013). The unpredictable species. In \emph{The unpredictable species}. Princeton University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Liu2006}{}}%
 Liu, S., \& Zeng, F.-G. (2006). {Temporal properties in clear speech perception}. \emph{The Journal of the Acoustical Society of America}, \emph{120}(1), 424--432. \url{https://doi.org/10.1121/1.2208427}
@@ -2538,6 +2559,9 @@ Seow, T. X. F., \& Hauser, T. U. (2022). {Reliability of web-based affective aud
 
 \leavevmode\vadjust pre{\hypertarget{ref-Seth2013}{}}%
 Seth, A. K. (2013). Interoceptive inference, emotion, and the embodied self. \emph{Trends in Cognitive Sciences}, \emph{17}(11), 565--573. \url{https://doi.org/10.1016/j.tics.2013.09.007}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Shannon1948}{}}%
+Shannon, C. E. (1948). A Mathematical Theory of Communication. \emph{Bell System Technical Journal}, \emph{27}(4), 623--656. \url{https://doi.org/10.1002/j.1538-7305.1948.tb00917.x}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Shannon2004}{}}%
 Shannon, R. V., Fu, Q.-J., \& Galvin Iii, J. (2004). {The number of spectral channels required for speech recognition depends on the difficulty of the listening situation}. \emph{Acta Oto-Laryngologica}, \emph{124}(0), 50--54. \url{https://doi.org/10.1080/03655230410017562}
