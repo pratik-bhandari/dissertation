@@ -26,12 +26,16 @@ university-logo: templates/beltcrest.png
 university-logo-width: 5cm
 submitted-text: A thesis submitted for the degree of
 degree: Doctor of Philosophy
-degreedate: xxxx 2022
-abstract: |
-  `r paste(readLines("front-and-back-matter/_abstract.Rmd"), collapse = '\n  ')`
+degreedate: September 2022
+dedication: Dedicated to ...
 acknowledgements: |
   `r paste(readLines("front-and-back-matter/_acknowledgements.Rmd"), collapse = '\n  ')`
-dedication: Dedicated to ...
+show-acknowledgements-in-toc: false
+abstract-heading: "Abstract"
+abstract: |
+  `r paste(readLines("front-and-back-matter/_abstract.Rmd"), collapse = "\n  ")`
+show-abstract-in-toc: false
+# add a second abstract with abstract-second-heading: "Abstract two", and abstract-second: "My abstract"
 abbreviations: |
   `r paste(readLines("front-and-back-matter/_abbreviations.Rmd"), collapse = '\n  ')`
 
@@ -60,18 +64,26 @@ abbreviations-heading: List of Abbreviations
 
 
 ### citation and bibliography style ###
-bibliography-heading-in-pdf: Bibliography
+# heading title for the references section
+params:
+  insertReferencesHeadingInPDF: true
+  insertReferencesHeadingInOtherOutput: true
+  referenceHeading: "Bibliography"
 
-# biblatex options #
-# unless you run into 'biber' error messages, use biblatex as it lets you customise your bibliography directly
-use-biblatex: true
-bib-latex-options: "style=authoryear, sorting=nyt, backend=biber, maxcitenames=2, useprefix, doi=true, isbn=false, uniquename=false, dashed=false, url=false" #for science, you might want style=numeric-comp, sorting=none for numerical in-text citation with references in order of appearance
+# citation and reference options (pandoc) #
+csl: bibliography/apa.csl # try csl: bibliography/transactions-on-computer-human-interaction.csl for numerical citations
+refs-line-spacing: 6mm
+refs-space-between-entries: 1mm
 
-# natbib options #
-# natbib runs into fewer errors than biblatex, but to customise your bibliography you need to fiddle with .bst files
-use-natbib: false # to use natbib, set this to true, and change "output:bookdown::pdf_book:citation_package:" to "natbib"
-natbib-citation-style: authoryear #for science, you might want numbers,square
-natbib-bibliography-style: templates/ACM-Reference-Format.bst #e.g. "plainnat", unsrtnat, or path to a .bst file
+## biblatex options ##
+#use-biblatex: true # set to true, and set "output:bookdown::pdf_book: citation_package: biblatex"
+#bib-latex-options: "style=authoryear, sorting=nyt, backend=biber, maxcitenames=2, useprefix, doi=true, isbn=false, uniquename=false" #for science, you might want style=numeric-comp, sorting=none for numerical in-text citation with references in order of appearance
+
+## natbib options ##
+#use-natbib: true # set to true, and set "output:bookdown::pdf_book: citation_package: natbib"
+#natbib-citation-style: authoryear #for science, you might want numbers,square
+#natbib-bibliography-style: templates/ACM-Reference-Format.bst #e.g. "plainnat", unsrtnat, or path to a .bst file
+
 
 ### correction highlighting ###
 corrections: true
@@ -138,7 +150,7 @@ gap-after-crest: 25mm
 
 ### other stuff ###
 abstractseparate: false  # include front page w/ abstract for examination schools?
-includeline-num: false #show line numbering in PDF?
+includeline-num: false # show line numbering in PDF?
 line-wrapping-in-code: true #wrap overflowing lines in code blocks?
 
 
@@ -147,11 +159,10 @@ line-wrapping-in-code: true #wrap overflowing lines in code blocks?
 #####################
 output:
   bookdown::pdf_book:
-    citation_package: biblatex
     template: templates/template.tex
     keep_tex: true
     pandoc_args: "--lua-filter=scripts_and_filters/colour_and_highlight.lua"
-    latex_engine: xelatex # I added on 04/04/2022 when knitting started to throw UTF+08 error
+    latex_engine: xelatex
   bookdown::bs4_book: 
     css: 
       - templates/bs4_style.css
@@ -172,9 +183,6 @@ output:
 link-citations: true
 documentclass: book
 always_allow_html: true #this allows html stuff in word (.docx) output
-
-# params:
-#   other_path: "../xx-experiment-1/"
 ---
 
 

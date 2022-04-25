@@ -10,7 +10,6 @@ output:
     citation_package: biblatex
 documentclass: book
 bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
-citation: apa.csl
 ---
 
 # Comprehension of degraded speech is modulated by the rate of speech {#chapter-speech-rate}

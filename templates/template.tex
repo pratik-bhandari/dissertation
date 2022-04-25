@@ -76,7 +76,7 @@ $endif$
 \usepackage[normalem]{ulem}
 
 % use soul package for correction highlighting
-\usepackage{color, soul}
+\usepackage{color, soulutf8}
 \definecolor{correctioncolor}{HTML}{CCCCFF}
 \sethlcolor{correctioncolor}
 \newcommand{\ctext}[3][RGB]{%
@@ -87,6 +87,7 @@ $endif$
 }
 \soulregister\ref7
 \soulregister\cite7
+\soulregister\citet7
 \soulregister\autocite7
 \soulregister\textcite7
 \soulregister\pageref7
@@ -130,7 +131,6 @@ $endfor$
 \makeatletter
 \preto{\@verbatim}{\topsep=0pt \partopsep=0pt }
 \makeatother
-
 
 
 %%%%%%% PAGE HEADERS AND FOOTERS %%%%%%%%%
@@ -195,14 +195,44 @@ $endif$
 % If you're already a LaTeX pro and are used to natbib or something, modify as necessary.
 % Either way, you'll have to choose and configure an appropriate bibliography format...
 
+% this enables pandoc citations
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{$refs-space-between-entries$}
+  \setlength{\baselineskip}{$refs-line-spacing$}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+$endif$
 
 $if(use-biblatex)$
 \usepackage[$bib-latex-options$]{biblatex}
-\newcommand*{\bibtitle}{$bibliography-heading-in-pdf$}
 
 $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
+
+% This makes the bibliography left-aligned (not 'justified') and slightly smaller font.
+\renewcommand*{\bibfont}{\raggedright\small}
+
 $endif$
 
 $if(use-natbib)$
@@ -210,12 +240,14 @@ $if(use-natbib)$
 \setcitestyle{$natbib-citation-style$}
 \bibliographystyle{$natbib-bibliography-style$}
 \addto\captionsenglish{%
-  \renewcommand{\bibname}{$bibliography-heading-in-pdf$}
+  \renewcommand{\bibname}{}
+  \renewcommand{\bibsection}{}
 }
-$endif$
 
 % This makes the bibliography left-aligned (not 'justified') and slightly smaller font.
 \renewcommand*{\bibfont}{\raggedright\small}
+
+$endif$
 
 
 % Uncomment this if you want equation numbers per section (2.3.12), instead of per chapter (2.18):
@@ -276,7 +308,11 @@ $endif$
 %
 % Customise title page
 %
+$if(university-logo)$
 \def\crest{{\includegraphics[width=$university-logo-width$]{$university-logo$}}}
+$else$
+\def\crest{}
+$endif$
 \renewcommand{\university}{$university$}
 \renewcommand{\submittedtext}{$submitted-text$}
 \renewcommand{\thesistitlesize}{\fontsize{$title-size$}{$title-size-linespacing$}\selectfont}
@@ -320,26 +356,56 @@ $else$
 \maketitle
 $endif$
 
-%%%%% DEDICATION -- If you'd like one, un-comment the following.
+%%%%% DEDICATION
 $if(dedication)$
 \begin{dedication}
   $dedication$
 \end{dedication}
 $endif$
 
-%%%%% ACKNOWLEDGEMENTS -- Nothing to do here except comment out if you don't want it.
+%%%%% ACKNOWLEDGEMENTS
 $if(acknowledgements)$
+
+$if(show-acknowledgements-in-toc)$
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\renewcommand{\numberstyleacks}{plain}
+\renewcommand{\numberstyleabstract}{plain}
+$endif$
+
 \begin{acknowledgements}
  	$acknowledgements$
 \end{acknowledgements}
+
 $endif$
 
 
-%%%%% ABSTRACT -- Nothing to do here except comment out if you don't want it.
+%%%%% ABSTRACT
 $if(abstract)$
+
+$if(show-abstract-in-toc)$
+\addcontentsline{toc}{chapter}{$abstract-heading$}
+\renewcommand{\numberstyleabstract}{plain}
+$endif$
+
+\renewcommand{\abstracttitle}{$abstract-heading$}
 \begin{abstract}
 	$abstract$
 \end{abstract}
+
+$endif$
+
+$if(abstract-second)$
+
+$if(show-abstract-in-toc)$
+\addcontentsline{toc}{chapter}{$abstract-second-heading$}
+\renewcommand{\numberstyleabstract}{plain}
+$endif$
+
+\renewcommand{\abstractsecondtitle}{$abstract-second-heading$}
+\begin{abstractsecond}
+	$abstract-second$
+\end{abstractsecond}
+
 $endif$
 
 %%%%% MINI TABLES
@@ -398,17 +464,18 @@ $endif$
 % all your chapters and appendices will appear here
 $body$
 
-
 %%%%% REFERENCES
 $if(use-biblatex)$
 \setlength{\baselineskip}{0pt} % JEM: Single-space References
 
+% we are setting the title for the references section in front-and-back-matter/99-references_heading.Rmd
 {\renewcommand*\MakeUppercase[1]{#1}%
-\printbibliography[heading=bibintoc,title={\bibtitle}]}
+\printbibliography[heading=none]}
+
 $endif$
 
 $if(use-natbib)$
-\bibliography{$bibliography$}
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
 $endif$
 
 \end{document}

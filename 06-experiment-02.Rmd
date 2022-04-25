@@ -8,7 +8,6 @@ output:
     latex_engine: xelatex
 documentclass: book
 bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
-csl: 'apa7.csl'
 ---
   
 # Semantic predictability facilitates comprehension of degraded speech in a graded manner {#chapter-graded-prediction}
