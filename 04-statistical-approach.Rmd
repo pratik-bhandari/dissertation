@@ -28,7 +28,7 @@ These models are, simply put, extensions of logistic regression models.
 A logistic regression models a dependent variable (or an *outcome*, or a *response* variable) as a function of one or more independent predictor variables (or *factors*, or *explanatory* variables).
 That is, an outcome $y$ is modeled as a function of explanatory variables $x_1, x_2, x_3..., x_n$, and an error term $\varepsilon$.
 
-
+```{=tex}
 \begin{align} \label{eq:linear_regression}
 y =
 \alpha + 
@@ -36,6 +36,7 @@ y =
 \beta_{2}\cdot{x_2} + ... +
 \beta_{n}\cdot{x_n} + \varepsilon 
 \end{align}
+```
 
 The intercept $\alpha$, and the regression coefficients $\beta_1, \beta_2,$ and $\beta_3$ for each explanatory variable are estimated to achieve the model that best fits the data.
 Analysis of Variance (ANOVA) is a special case of logistic regression [@Chatterjee2012; @Vasishth2022] that is one of the most common statistical tools in psychology and psycholinguistics.
@@ -67,6 +68,7 @@ Therefore, in a binomial logistic regression model, log-odds are used which rang
 
 A simple binomial logistic regression model is shown in Equation \ref{eq:simple_logistic}:
 
+```{=tex}
 \begin{align} \label{eq:simple_logistic}
 \ln(\frac{p}{1-p}) =
 \alpha + 
@@ -74,9 +76,11 @@ A simple binomial logistic regression model is shown in Equation \ref{eq:simple_
 \beta_{2}\cdot{x_2} + ... +
 \beta_{n}\cdot{x_n} + \varepsilon
 \end{align}
+```
 
 This is equivalent to,
 
+```{=tex}
 \begin{align} \label{eq:logit-to-prob_long}
 p &=
 {\frac{exp(\alpha + 
@@ -89,13 +93,16 @@ p &=
 \beta_{n}\cdot{x_n} + \varepsilon)}}\\ \label{eq:logit-to-prob_short}
 &= {\frac{exp(\ln(\frac{p}{1-p}))}{1 + exp (\ln(\frac{p}{1-p}))}}
 \end{align}
+```
 
 where,
 
+```{=tex}
 \begin{align} \label{eq:logiteq}
 \ln(\frac{p}{1-p}) =
 {logit}(p)
 \end{align}
+```
 
 <!-- \begin{align} \label{eq:logit-to-prob} -->
 <!-- Pr(Y_i=1|X_i) = -->
@@ -127,19 +134,22 @@ When a slope, e.g., levels of predictability, is included to the random effects 
 ## Binomial logistic mixed effects modeling {#binomial-logistic-mixed-effects-model}
 
 A binomial logistic mixed effects model with varying intercepts and slopes for items and subjects is shown in Equation \ref{eq:mixed_effects} below.
-<!-- \begin{align} -->
-<!-- \ln (\frac{p}{1-p}) = \nonumber\\ -->
-<!-- \alpha + u_{\alpha} + w_{\alpha} + \nonumber\\ -->
-<!-- (\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\ -->
-<!-- (\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + ... + \nonumber\\ -->
-<!-- (\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n} -->
-<!-- \end{align} -->
+<!-- \begin{align} 
+\ln (\frac{p}{1-p}) = \nonumber\\
+\alpha + u_{\alpha} + w_{\alpha} + \nonumber\\
+(\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\
+(\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + ... + \nonumber\\
+(\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n}
+\end{align} -->
+
+```{=tex}
 \begin{align} \label{eq:mixed_effects}
 \ln (\frac{p}{1-p}) = \alpha + u_{\alpha} + w_{\alpha} +
                       (\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\
                       (\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + ... +
                       (\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n} 
 \end{align}
+```
 
 where,
 

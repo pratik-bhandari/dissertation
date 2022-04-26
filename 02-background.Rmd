@@ -22,7 +22,7 @@ In addition, we also provide a background on the effects of speech degradation, 
 Understanding these fundamental concepts of top-down and bottom-up processes are essential for the chapters that follow.
 These concepts are briefly reiterated in the following chapters wherever relevant.
 
-## Speech distortion and degradation
+## Speech distortion and degradation {#distortion-degradation}
 
 In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via some medium like air, and a listener perceives the signal as speech waves enter her ears and start a cascade of mechanical-neural processes of hearing.
 However, speech perception is hardly as smooth as it seems.<!-- hardly as simple as it is described in the preceding sentence.-->
@@ -54,7 +54,7 @@ In addition to the quality of speech signal, listeners rely also on the context 
 Below, we first review the role of predictions in language comprehension in general,
 then we discuss the role of top-down predictive processes in comprehension of degraded speech in particular.
 
-### Predictive language processing
+### Predictive language processing {#predictive-language-processing}
 
 Research from various domains of cognitive (neuro)science, like emotion, vision, odor, and proprioception, has shown that perception and cognition primarily operate by predicting upcoming events [@Stadler2012; @Clark2013; @Seth2013; @Marques2018].
 Human language comprehension too has been claimed to be predictive in nature from as early as mid-twentieth century [e.g., @Miller1951; @Mccullough1958; @Morton1964]<!-- @Bruce1958 for context in noise -->

@@ -92,6 +92,7 @@ knitr::include_graphics(rep(c("figures/materials/aufgabe_4bands.png",
 
 ```
 
+```{=tex}
 \begin{table}[H]
 \begin{center} 
 \caption{Boundary frequencies (in Hz) for 1, 4, 6 and 8 channels noise-vocoding conditions} 
@@ -112,6 +113,7 @@ Number of channels     &    Boundary frequencies \\
 \end{tabular} 
 \end{center} 
 \end{table}
+```
 
 #### Speech compression and expansion
 

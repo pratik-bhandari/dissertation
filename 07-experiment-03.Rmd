@@ -51,7 +51,7 @@ Understanding fast speech is more effortful compared to normal and slow speech, 
 The comprehension deficit in fast speech has been linked to speed of processing [@Gordonsalant1995; @Tun1998; see also, @Roennberg2013] given the limited time available to decode and understand the information in the fast speech.
 It has also been suggested that the decoding and identification of incoming information in the fast speech puts a high demand on available cognitive resources [e.g., @Rodero2016] such that processing rapidly flowing information exhausts the cognitive resource required for language processing [@Gordonsalant2004; @Janse2009].
 Hence, intelligibility and comprehension of fast speech is reduced compared to normal speech.
-In contrast, the central auditory-language comprehension system is shown to be flexible to process slow speech without reducing intelligibility [@Lerner2014a; see also, @Vagharchakian2012].
+In contrast, the central auditory-language comprehension system is shown to be flexible to process slow speech without reducing intelligibility [@Lerner2014; see also, @Vagharchakian2012].
 However, some earlier studies have casted doubt on the processing advantage of slow speech [e.g., @Nejime1998; @Kemper1999; see also, @Liu2006; @Love2009].
 In sum, compression and expansion of speech have differential effects on speech intelligibility and language comprehension.
 Intelligibility and comprehension of fast speech is reduced while that of slow speech is generally increased compared to normal speech.
