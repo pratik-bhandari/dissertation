@@ -20,6 +20,7 @@ $A = \argmax_a f(a)$
 ```
 <!-- https://stackoverflow.com/questions/36174987/how-to-typeset-argmin-and-argmax-in-markdown#36175474 -->
 
+```{=html}
 <!--
 It shows:
     -   the probability of inferring a meaning $m_p$ from a perceived utterance $u_p$ ($P(m_p | u_p)$)
@@ -28,10 +29,11 @@ It shows:
     -   the probability of the message $m_i$ being sent by a speaker ($P(m_i)$)
     -   prior information (e.g., top-down semantic knowledge), i.e., the joint probability of an utterance $u_i$ and its intended meaning by a speaker $m_i$ ($P(u_i,m_i)$)
 -->
+```
+@Wingfield2006
 
-git commit -m "
-- Removes Bayesian form equation and includes and elaborates A4 equation
-- Reformulates Goals, Contributions and Overview with the jargon of Noisy channel and some of PP
-- Solves citation problem with e.g. coming in the middle; solution is to cite alphabetically although it sorts automatically on compilation/knitting
-- Adds noindent in Research overview chapters paragraphs
-- 
+git commit -m "Edits intro of Chapter 2 Background with Noisy channel
+- Edits first paragraph
+- Adds noisy channel model jargon
+- Adds probability terms and refers to equation and figures to chapter 1
+- Adds a reference contradicting noise vocoding and cochlear implant

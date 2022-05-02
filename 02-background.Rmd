@@ -14,23 +14,27 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 
 # Background {#chapter-background}
 
-In the previous chapter we outlined the research questions and goals of the studies in this dissertation.
-In so doing, we presented our motivation and relevant theoretical questions.
-To further elaborate on these motives, this chapter provides some background on the current understanding of the research questions.
-We introduce speech degradation, and predictive language processing in the context of speech degradation.
-In addition, we also provide a background on the effects of speech degradation, nature of predictability effects, and limits of predictive language processing.
+In the previous chapter we outlined the theoretical background and the research goals of the studies in this dissertation.
+We stated that the central theme of this thesis is to investigage the interaction between top-down predictive processes and bottom-up auditory processes in language comprehension.
+Grounding on the noisy channel model of communication and predictive language processing,
+the studies in this thesis manipulate the auditory processes $P(u_p|u_i,N)$, and prior information $P(u_i,m_i)$ in the form of semantic context available in a sentence.
+In this chapter, we provide background on the noisy channel that was created and used to introduce variations in bottom-up processing in the studies in this thesis.
+We also elaborate on the predictive language processing in noisy channel, and the evidence on its limits and nature.
 Understanding these fundamental concepts of top-down and bottom-up processes are essential for the chapters that follow.
 These concepts are briefly reiterated in the following chapters wherever relevant.
 
 ## Speech distortion and degradation {#distortion-degradation}
 
-In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via some medium like air, and a listener perceives the signal as speech waves enter her ears and start a cascade of mechanical-neural processes of hearing.
-However, speech perception is hardly as smooth as it seems.<!-- hardly as simple as it is described in the preceding sentence.-->
+In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via some medium like air, and a listener perceives the signal as speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
+However, speech perception is hardly as smooth as it seems.
+As shown in Figure \@ref(fig:noisy-channel) and Equation \@ref(eq:noisy-channel3), in the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948],
+noise disrupts and distorts the speech signal $u_i$ uttered by a speaker.
+The listener then perceives it as $u_p$.
 There are primarily three sources distortion:
 Speech can be distorted by variability in speakers’ production, like, accented speech, or soft and rapid speech.
 Distortion can arise from listener-related factors like, hearing loss, or auditory processing disorder.
 It can also be a result of noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
-All these sources of distortion make listening conditions adverse.
+All these sources of distortion make the listening condition adverse.
 For controlled scientific study, the effects of speech distortion, and the mechanism of listening in adverse listening condition are investigated using artificial distortion of speech.
 <!--The use of such artificial distortion is also helps us understand the cognitive architecture of human speech-language processing.-->
 Different forms of distorted speech manipulate different properties of speech signal.
@@ -38,7 +42,7 @@ For example, speeding or slowing a speech signal (i.e. speech compression or exp
 Similarly, noise vocoding manipulates its spectral property.
 Noise vocoding removes the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section \@ref(noise-vocoding)).
 This method of speech degradation was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line [@Dudley1939; @Vocoder1940].
-Shannon and colleagues later used the same technique as an analogue to cochlear implant such that number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility [@Shannon1995; @Loizou1999; @Shannon2004].
+Shannon and colleagues later used the same technique as an analogue to cochlear implant such that number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility [@Shannon1995; @Loizou1999; @Shannon2004; cf. @Orena2021].
 Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal in a graded manner, noise vocoding also is a method of distortion that helps us understand the speech perception and language comprehension in cochlear implantees.
 
 One of the main factors that determine the intelligibility of degraded speech is the number of noise vocoding channels.^[Throughout this thesis, speech distortion by noise vocoding is referred to as speech degradation, or spectral degradation of speech.]
@@ -88,7 +92,7 @@ In this thesis, we study other factors (e.g., auditory temporal attention, speed
 
 We have discussed above that individuals make predictions about not-yet-encountered linguistic unit based on available context information as the sentence unfolds:
 Top-down predictive and bottom-up perceptual processes interact dynamically in language comprehension.
-When the bottom-up perceptual input is less reliable, for example, in adverse listening conditions, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also, @Corps2020].
+When the bottom-up perceptual input is less reliable, for example, in an adverse listening condition, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also, @Corps2020].
 Obleser and colleagues [@Obleser2007; @Obleser2010], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also, @Hunter2018].
 They found that semantic predictability facilitated language comprehension only at moderate levels of speech degradation.
 That is, participants relied more on the sentence context when the speech signal was degraded but it was *intelligible enough* than when it was not degraded, or when it was highly degraded.
