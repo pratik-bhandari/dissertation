@@ -15,7 +15,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 # Background {#chapter-background}
 
 In the previous chapter we outlined the theoretical background and the research goals of the studies in this dissertation.
-We stated that the central theme of this thesis is to investigage the interaction between top-down predictive processes and bottom-up auditory processes in language comprehension.
+We stated that the central theme of this thesis is to investigate the interaction between top-down predictive processes and bottom-up auditory processes in language comprehension.
 Grounding on the noisy channel model of communication and predictive language processing,
 the studies in this thesis manipulate the auditory processes $P(u_p|u_i,N)$, and prior information $P(u_i,m_i)$ in the form of semantic context available in a sentence.
 In this chapter, we provide background on the noisy channel that was created and used to introduce variations in bottom-up processing in the studies in this thesis.
@@ -25,30 +25,38 @@ These concepts are briefly reiterated in the following chapters wherever relevan
 
 ## Speech distortion and degradation {#distortion-degradation}
 
-In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via some medium like air, and a listener perceives the signal as speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
+In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via a medium like air, and a listener perceives the signal as the speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
 However, speech perception is hardly as smooth as it seems.
 As shown in Figure \@ref(fig:noisy-channel) and Equation \@ref(eq:noisy-channel3), in the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948],
-noise disrupts and distorts the speech signal $u_i$ uttered by a speaker.
-The listener then perceives it as $u_p$.
-There are primarily three sources distortion:
-Speech can be distorted by variability in speakers’ production, like, accented speech, or soft and rapid speech.
-Distortion can arise from listener-related factors like, hearing loss, or auditory processing disorder.
-It can also be a result of noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
-All these sources of distortion make the listening condition adverse.
-For controlled scientific study, the effects of speech distortion, and the mechanism of listening in adverse listening condition are investigated using artificial distortion of speech.
-<!--The use of such artificial distortion is also helps us understand the cognitive architecture of human speech-language processing.-->
-Different forms of distorted speech manipulate different properties of speech signal.
-For example, speeding or slowing a speech signal (i.e. speech compression or expansion) manipulates its temporal property.
-Similarly, noise vocoding manipulates its spectral property.
-Noise vocoding removes the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section \@ref(noise-vocoding)).
-This method of speech degradation was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line [@Dudley1939; @Vocoder1940].
-Shannon and colleagues later used the same technique as an analogue to cochlear implant such that number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility [@Shannon1995; @Loizou1999; @Shannon2004; cf. @Orena2021].
-Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal in a graded manner, noise vocoding also is a method of distortion that helps us understand the speech perception and language comprehension in cochlear implantees.
+noise disrupts and distorts the speech signal $u_i$ uttered by a speaker
+which the listener then perceives as $u_p$ and decodes into the message $m_p$.
+Distortion can occur at these three points or sources: encoding, transmission and decoding.
+Speech can be distorted while encoding the utterance $u_i$ due to the variability in speakers' production, like, accented speech, or soft and rapid speech.
+Distortion can arise while decoding the signal $u_p$ due to the listener-related factors like, hearing loss, or auditory processing disorder.
+It can also be a result of the noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
+All these sources of distortion make the listening condition adverse [@Mattys2012] by affecting the time and frequency related properties/cues of the speech signal, i.e., temporal envelope cues and spectral details of speech respectively.
+The temporal envelope cues are the slow variations in the amplitude of the speech signal over time [@Moon2014a; @Moon2014] while the spectral details are the frequency specific information about the speech.
+The temporal envelope cues reflect the prosodic information of the speech, and are used in the lexical-semantic and syntactic processing [@Greenberg1996; @Schneider2001; @Sheldon2008b].
+The spectral details provide information about the sound production reflecting the resonant properties of the vocal tract, frequency range of the speech signal, energy distribution across frequency bands etc. [@Roberts2011; @Shannon2004; @Shannon1995].
 
-One of the main factors that determine the intelligibility of degraded speech is the number of noise vocoding channels.^[Throughout this thesis, speech distortion by noise vocoding is referred to as speech degradation, or spectral degradation of speech.]
+In an experimental setup, a noisy channel can be created artificially by digital signal processing (see Section \@ref(speech-processing)) to investigate the response of the speech perception system to the distorted speech,
+and to study language comprehension in an adverse listening condition.
+For example, expansion or compression of speech signal acts upon the temporal property of the speech and makes it slow or fast, and an optimal level of speech expansion/compression does not distort the spectral property of speech (see Section \@ref(compression-expansion)).
+In addition to speech compression and expansion in Chapter \@ref(chapter-speech-rate),
+throughout the studies in this thesis, we implement noise vocoding to manipulate the spectral property of speech and create a noisy channel of communication.
+
+Noise vocoding removes the spectral details of the speech signal in a controlled manner only leaving its temporal and periodicity cues (see Section \@ref(noise-vocoding)).
+This method of speech degradation was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line [@Dudley1939; @Vocoder1940].
+Shannon and colleagues later modified and used this technique as an analogue to cochlear implant such that number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility [@Shannon1995; @Loizou1999; @Shannon2004; cf. @Orena2021].
+Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal in a graded manner,
+noise vocoding is also a method of distortion that is used to understand the speech perception and language comprehension in cochlear implantees [e.g., @Patro2020; @Shannon2004; @Winn2016]
+
+One of the main factors that determines the intelligibility of degraded speech is the number of noise vocoding channels.[^speech-degradation-footnote]
 The higher the number of noise vocoding channels, the more is the frequency specific information available in the degraded speech,
 consequently, higher is the intelligibility compared to the speech that is degraded with lesser number of noise vocoding channels.
-For example, listeners rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech [e.g., @Sohoglu2012].
+For example, listeners are shown to rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech [e.g., @Sohoglu2012].
+In our studies, we create noisy channel of different levels of degradation and intelligibility by noise vocoding the speech signal through 1, 4, 6 and 8 channels which are based on prior studies on similar paradigm using similar methods and materials.
+The details of the artificial distortions are described in Chapter \@ref(chapter-methods).
 
 ## Prediction and comprehension of degraded speech
 <!-- We have stated above that the quality of speech signal determines the speech intelligibility. -->
@@ -132,3 +140,5 @@ Digital signal processing methods used in this process will be discussed in Sect
 Importantly, we provided an overview of how predictive language processing aids in language comprehension,
 as well as its limitations.
 In the next chapter we will discuss the methods that are common in all the experiments (Chapters 5, 6, and 7) in developing materials and collecting data.
+
+[^speech-degradation-footnote]: Throughout this thesis, speech distortion by noise vocoding is referred to as speech degradation, or spectral degradation of speech.

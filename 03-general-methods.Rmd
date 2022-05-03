@@ -68,7 +68,7 @@ This makes the vocoded speech difficult to understand although temporal characte
 
 The spectral degradation conditions of 1, 4, 6, and 8 channels were achieved for each of the 360 recorded sentences using a customized script originally written by @Darwin2005 in Praat software.
 The speech signal was divided into 1, 4, 6, and 8 frequency bands between 70 and 9,000Hz.
-The boundary frequencies were approximately logarithmically spaced following cochlear-frequency position functions [@Greenwood1990; @Erb2014].
+The boundary frequencies were approximately logarithmically spaced following cochlear-frequency position functions [@Erb2014; @Greenwood1990; @Rosen1999].
 The amplitude envelope of each band was extracted and applied to band-pass filtered white noise in the same frequency ranges;
 the upper and lower bounds for band extraction are specified in Table \@ref(frequencies).
 Each of the modulated noise was then combined to produce degraded speech.
@@ -115,7 +115,7 @@ Number of channels     &    Boundary frequencies \\
 \end{table}
 ```
 
-#### Speech compression and expansion
+#### Speech compression and expansion {#compression-expansion}
 
 As early as the mid-twentieth century, investigators have reported that intelligibility does not drop significantly when speech is speeded up to 2 times the normal speech rate [e.g., @Garvey1953].
 Speech rate was increased by chopping physical tapes.

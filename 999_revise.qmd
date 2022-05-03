@@ -1,39 +1,10 @@
----
-output:
-  pdf_document:
-      toc: false
-      latex_engine: xelatex
-# header-includes:
-#     - \newcommand{\argmax}{\mathop{\mathrm{argmax}}\limits}
-bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
----
+Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal in a graded manner, noise vocoding also is also a method of distortion that is used to understand the speech perception and language comprehension in cochlear implantees [e.g., @Shannon2004; @Patro2020; @Winn2016]
+A sentence with footnote.[^speech-degradation-footnote]
 
-Some text.
+[^speech-degradation-footnote]: This is a footnote
 
-$A = \argmax_a f(a)$
-
-```{=tex}
-\begin{align} \label{eq:noisy-channel2}
-\hat{m_p} &= \argmax_{m_p} P(m_p | u_p, N)\\ \label{eq:eq:noisy-channel3}
-\hat{m_p} &= \argmax_{m_p} P(m_p | u_p) * P(u_p|u_i, N) * P(u_i | m_i) * P(m_i)
-\end{align}
-```
-<!-- https://stackoverflow.com/questions/36174987/how-to-typeset-argmin-and-argmax-in-markdown#36175474 -->
-
-```{=html}
-<!--
-It shows:
-    -   the probability of inferring a meaning $m_p$ from a perceived utterance $u_p$ ($P(m_p | u_p)$)
-    -   bottom-up auditory information, i.e., the probability of a listener hearing a particular utterance $u_p$ given that a speaker has uttered an utterance $u_i$ in a noisy channel $N$ ($P(u_p|u_i, N)$)
-  - utterance encoding, i.e., the likelihood of an utterance/signal given a message from the speaker ($P(u_i|m_i)$)
-    -   the probability of the message $m_i$ being sent by a speaker ($P(m_i)$)
-    -   prior information (e.g., top-down semantic knowledge), i.e., the joint probability of an utterance $u_i$ and its intended meaning by a speaker $m_i$ ($P(u_i,m_i)$)
--->
-```
-@Wingfield2006
-
-git commit -m "Edits intro of Chapter 2 Background with Noisy channel
-- Edits first paragraph
-- Adds noisy channel model jargon
-- Adds probability terms and refers to equation and figures to chapter 1
-- Adds a reference contradicting noise vocoding and cochlear implant
+git commit -m "Explains reasons of vocoding connecting it with noisy channel
+- Connects noisy channel with temporal spectral manipulation
+- Briefly explains envelope cue and fine spectral details
+- Edits how footnote is written, moves it to the bottom of the rmd file
+- Adds one citation Rosen1999 in Chapter 3 Methods

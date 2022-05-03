@@ -697,7 +697,7 @@ The list of presentations and publications that report on parts of the research 
 \chapter{Background}\label{chapter-background}}
 
 In the previous chapter we outlined the theoretical background and the research goals of the studies in this dissertation.
-We stated that the central theme of this thesis is to investigage the interaction between top-down predictive processes and bottom-up auditory processes in language comprehension.
+We stated that the central theme of this thesis is to investigate the interaction between top-down predictive processes and bottom-up auditory processes in language comprehension.
 Grounding on the noisy channel model of communication and predictive language processing,
 the studies in this thesis manipulate the auditory processes \(P(u_p|u_i,N)\), and prior information \(P(u_i,m_i)\) in the form of semantic context available in a sentence.
 In this chapter, we provide background on the noisy channel that was created and used to introduce variations in bottom-up processing in the studies in this thesis.
@@ -708,29 +708,38 @@ These concepts are briefly reiterated in the following chapters wherever relevan
 \hypertarget{distortion-degradation}{%
 \section{Speech distortion and degradation}\label{distortion-degradation}}
 
-In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via some medium like air, and a listener perceives the signal as speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
+In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via a medium like air, and a listener perceives the signal as the speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
 However, speech perception is hardly as smooth as it seems.
 As shown in Figure \ref{fig:noisy-channel} and Equation \eqref{eq:noisy-channel3}, in the noisy channel model of communication (\protect\hyperlink{ref-Gibson2013}{Gibson et al., 2013}, \protect\hyperlink{ref-Gibson2019}{2019}; \protect\hyperlink{ref-Levy2008}{Levy, 2008}; \protect\hyperlink{ref-Shannon1948}{C. E. Shannon, 1948}),
-noise disrupts and distorts the speech signal \(u_i\) uttered by a speaker.
-The listener then perceives it as \(u_p\).
-There are primarily three sources distortion:
-Speech can be distorted by variability in speakers' production, like, accented speech, or soft and rapid speech.
-Distortion can arise from listener-related factors like, hearing loss, or auditory processing disorder.
-It can also be a result of noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
-All these sources of distortion make the listening condition adverse.
-For controlled scientific study, the effects of speech distortion, and the mechanism of listening in adverse listening condition are investigated using artificial distortion of speech.
-Different forms of distorted speech manipulate different properties of speech signal.
-For example, speeding or slowing a speech signal (i.e.~speech compression or expansion) manipulates its temporal property.
-Similarly, noise vocoding manipulates its spectral property.
-Noise vocoding removes the spectral detail of the speech signal only leaving its temporal and periodicity cues (see Section \ref{noise-vocoding}).
-This method of speech degradation was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line (\protect\hyperlink{ref-Vocoder1940}{Clendeninn, 1940}; \protect\hyperlink{ref-Dudley1939}{Dudley, 1939}).
-Shannon and colleagues later used the same technique as an analogue to cochlear implant such that number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility (\protect\hyperlink{ref-Loizou1999}{Loizou et al., 1999}; \protect\hyperlink{ref-Shannon1995}{Shannon et al., 1995}; \protect\hyperlink{ref-Shannon2004}{Shannon et al., 2004}; cf. \protect\hyperlink{ref-Orena2021}{Orena \& Colby, 2021}).
-Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal in a graded manner, noise vocoding also is a method of distortion that helps us understand the speech perception and language comprehension in cochlear implantees.
+noise disrupts and distorts the speech signal \(u_i\) uttered by a speaker
+which the listener then perceives as \(u_p\) and decodes into the message \(m_p\).
+Distortion can occur at these three points or sources: encoding, transmission and decoding.
+Speech can be distorted while encoding the utterance \(u_i\) due to the variability in speakers' production, like, accented speech, or soft and rapid speech.
+Distortion can arise while decoding the signal \(u_p\) due to the listener-related factors like, hearing loss, or auditory processing disorder.
+It can also be a result of the noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
+All these sources of distortion make the listening condition adverse (\protect\hyperlink{ref-Mattys2012}{Mattys et al., 2012}) by affecting the time and frequency related properties/cues of the speech signal, i.e., temporal envelope cues and spectral details of speech respectively.
+The temporal envelope cues are the slow variations in the amplitude of the speech signal over time (\protect\hyperlink{ref-Moon2014}{Moon et al., 2014}; \protect\hyperlink{ref-Moon2014a}{Moon \& Hong, 2014}) while the spectral details are the frequency specific information about the speech.
+The temporal envelope cues reflect the prosodic information of the speech, and are used in the lexical-semantic and syntactic processing (\protect\hyperlink{ref-Greenberg1996}{Greenberg, 1996}; \protect\hyperlink{ref-Schneider2001}{Schneider \& Pichora-Fuller, 2001}; \protect\hyperlink{ref-Sheldon2008b}{Sheldon et al., 2008b}).
+The spectral details provide information about the sound production reflecting the resonant properties of the vocal tract, frequency range of the speech signal, energy distribution across frequency bands etc. (\protect\hyperlink{ref-Roberts2011}{Roberts et al., 2011}; \protect\hyperlink{ref-Shannon1995}{Shannon et al., 1995}; \protect\hyperlink{ref-Shannon2004}{Shannon et al., 2004}).
 
-One of the main factors that determine the intelligibility of degraded speech is the number of noise vocoding channels.\footnote{Throughout this thesis, speech distortion by noise vocoding is referred to as speech degradation, or spectral degradation of speech.}
+In an experimental setup, a noisy channel can be created artificially by digital signal processing (see Section \ref{speech-processing}) to investigate the response of the speech perception system to the distorted speech,
+and to study language comprehension in an adverse listening condition.
+For example, expansion or compression of speech signal acts upon the temporal property of the speech and makes it slow or fast, and an optimal level of speech expansion/compression does not distort the spectral property of speech (see Section \ref{compression-expansion}).
+In addition to speech compression and expansion in Chapter \ref{chapter-speech-rate},
+throughout the studies in this thesis, we implement noise vocoding to manipulate the spectral property of speech and create a noisy channel of communication.
+
+Noise vocoding removes the spectral details of the speech signal in a controlled manner only leaving its temporal and periodicity cues (see Section \ref{noise-vocoding}).
+This method of speech degradation was initially developed as a means to reduce the information in speech signal to be transmitted through the telephone line (\protect\hyperlink{ref-Vocoder1940}{Clendeninn, 1940}; \protect\hyperlink{ref-Dudley1939}{Dudley, 1939}).
+Shannon and colleagues later modified and used this technique as an analogue to cochlear implant such that number of channels used in a cochlear implant are similar to the number of noise vocoding channels in terms of their speech output and intelligibility (\protect\hyperlink{ref-Loizou1999}{Loizou et al., 1999}; \protect\hyperlink{ref-Shannon1995}{Shannon et al., 1995}; \protect\hyperlink{ref-Shannon2004}{Shannon et al., 2004}; cf. \protect\hyperlink{ref-Orena2021}{Orena \& Colby, 2021}).
+Therefore, in addition to being a method of speech distortion to parametrically vary and control the quality of speech signal in a graded manner,
+noise vocoding is also a method of distortion that is used to understand the speech perception and language comprehension in cochlear implantees (e.g., \protect\hyperlink{ref-Patro2020}{Patro \& Mendel, 2020}; \protect\hyperlink{ref-Shannon2004}{Shannon et al., 2004}; \protect\hyperlink{ref-Winn2016}{M. Winn, 2016})
+
+One of the main factors that determines the intelligibility of degraded speech is the number of noise vocoding channels.\footnote{Throughout this thesis, speech distortion by noise vocoding is referred to as speech degradation, or spectral degradation of speech.}
 The higher the number of noise vocoding channels, the more is the frequency specific information available in the degraded speech,
 consequently, higher is the intelligibility compared to the speech that is degraded with lesser number of noise vocoding channels.
-For example, listeners rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech (e.g., \protect\hyperlink{ref-Sohoglu2012}{Sohoglu et al., 2012}).
+For example, listeners are shown to rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech (e.g., \protect\hyperlink{ref-Sohoglu2012}{Sohoglu et al., 2012}).
+In our studies, we create noisy channel of different levels of degradation and intelligibility by noise vocoding the speech signal through 1, 4, 6 and 8 channels which are based on prior studies on similar paradigm using similar methods and materials.
+The details of the artificial distortions are described in Chapter \ref{chapter-methods}.
 
 \hypertarget{prediction-and-comprehension-of-degraded-speech}{%
 \section{Prediction and comprehension of degraded speech}\label{prediction-and-comprehension-of-degraded-speech}}
@@ -872,7 +881,7 @@ This makes the vocoded speech difficult to understand although temporal characte
 
 The spectral degradation conditions of 1, 4, 6, and 8 channels were achieved for each of the 360 recorded sentences using a customized script originally written by Darwin (\protect\hyperlink{ref-Darwin2005}{2005}) in Praat software.
 The speech signal was divided into 1, 4, 6, and 8 frequency bands between 70 and 9,000Hz.
-The boundary frequencies were approximately logarithmically spaced following cochlear-frequency position functions (\protect\hyperlink{ref-Erb2014}{Erb, 2014}; \protect\hyperlink{ref-Greenwood1990}{Greenwood, 1990}).
+The boundary frequencies were approximately logarithmically spaced following cochlear-frequency position functions (\protect\hyperlink{ref-Erb2014}{Erb, 2014}; \protect\hyperlink{ref-Greenwood1990}{Greenwood, 1990}; \protect\hyperlink{ref-Rosen1999}{Rosen et al., 1999}).
 The amplitude envelope of each band was extracted and applied to band-pass filtered white noise in the same frequency ranges;
 the upper and lower bounds for band extraction are specified in Table \ref{frequencies}.
 Each of the modulated noise was then combined to produce degraded speech.
@@ -911,8 +920,8 @@ Number of channels     &    Boundary frequencies \\
 \end{center} 
 \end{table}
 
-\hypertarget{speech-compression-and-expansion}{%
-\subsubsection{Speech compression and expansion}\label{speech-compression-and-expansion}}
+\hypertarget{compression-expansion}{%
+\subsubsection{Speech compression and expansion}\label{compression-expansion}}
 
 As early as the mid-twentieth century, investigators have reported that intelligibility does not drop significantly when speech is speeded up to 2 times the normal speech rate (e.g., \protect\hyperlink{ref-Garvey1953}{Garvey, 1953}).
 Speech rate was increased by chopping physical tapes.
@@ -1820,7 +1829,7 @@ when the speech is intelligible enough for the listeners to understand and form 
 \subsection{Comprehension of fast and slow speech}\label{comprehension-of-fast-and-slow-speech}}
 
 A change in speech rate manipulates the speech signal without producing any spectral degradation (\protect\hyperlink{ref-Charpentier1986}{Charpentier \& Stella, 1986}; \protect\hyperlink{ref-Moulines1990}{Moulines \& Charpentier, 1990}; \protect\hyperlink{ref-Schlueter2014}{Schlueter et al., 2014}).
-Understanding fast speech is more effortful compared to normal and slow speech, (e.g., \protect\hyperlink{ref-Mueller2019}{Müller et al., 2019}; \protect\hyperlink{ref-Winn2021b}{Winn \& Teece, 2021}; see also, \protect\hyperlink{ref-Simantiraki2020}{Simantiraki \& Cooke, 2020}), and its intelligibility and comprehension are reducec (\protect\hyperlink{ref-Fairbanks1957}{Fairbanks \& Kodman Jr., 1957}; \protect\hyperlink{ref-Peelle2005}{Peelle \& Wingfield, 2005}; \protect\hyperlink{ref-Schlueter2014}{Schlueter et al., 2014}).
+Understanding fast speech is more effortful compared to normal and slow speech, (e.g., \protect\hyperlink{ref-Mueller2019}{Müller et al., 2019}; \protect\hyperlink{ref-Winn2021b}{M. B. Winn \& Teece, 2021}; see also, \protect\hyperlink{ref-Simantiraki2020}{Simantiraki \& Cooke, 2020}), and its intelligibility and comprehension are reducec (\protect\hyperlink{ref-Fairbanks1957}{Fairbanks \& Kodman Jr., 1957}; \protect\hyperlink{ref-Peelle2005}{Peelle \& Wingfield, 2005}; \protect\hyperlink{ref-Schlueter2014}{Schlueter et al., 2014}).
 The comprehension deficit in fast speech has been linked to speed of processing (\protect\hyperlink{ref-Gordonsalant1995}{Gordon-Salant \& Fitzgibbons, 1995}; \protect\hyperlink{ref-Tun1998}{Tun, 1998}; see also, \protect\hyperlink{ref-Roennberg2013}{Rönnberg et al., 2013}) given the limited time available to decode and understand the information in the fast speech.
 It has also been suggested that the decoding and identification of incoming information in the fast speech puts a high demand on available cognitive resources (e.g., \protect\hyperlink{ref-Rodero2016}{Rodero, 2016}) such that processing rapidly flowing information exhausts the cognitive resource required for language processing (\protect\hyperlink{ref-Gordonsalant2004}{Gordon-Salant \& Fitzgibbons, 2004}; \protect\hyperlink{ref-Janse2009}{Janse, 2009}).
 Hence, intelligibility and comprehension of fast speech is reduced compared to normal speech.
@@ -1837,7 +1846,7 @@ They argued that the constrained sentence context was easy to process -- fast sp
 In contrast, the inhibition effect was reduced because there was less time to build up the representation of words in implausible sentence contexts so that less inhibition of the incongruent target word was needed.
 However, in a replication study of Aydelott \& Bates (\protect\hyperlink{ref-Aydelott2004}{2004}), Goy et al. (\protect\hyperlink{ref-Goy2013}{2013}) found that the facilitatory effect was reduced in fast speech compared to normal speech.
 They argued that the fast speech slowed down the activation of potential target words that matched the context, which effectively reduced the contextual facilitation.
-In a recent study, Winn \& Teece (\protect\hyperlink{ref-Winn2021b}{2021}) did not observe an increase in contextual facilitation for slow speech compared to normal speech, although the intelligibility was higher for slow speech.
+In a recent study, M. B. Winn \& Teece (\protect\hyperlink{ref-Winn2021b}{2021}) did not observe an increase in contextual facilitation for slow speech compared to normal speech, although the intelligibility was higher for slow speech.
 In another experiment, Koch \& Janse (\protect\hyperlink{ref-Koch2016a}{2016}) presented participants with a question-answer sequence of varying length across a wide range of normal and fast speech from Spoken Dutch Corpus (\protect\hyperlink{ref-Oostdijk2000}{Oostdijk, 2000}).
 They did not find any effect of predictability on word recognition. However, target word predictability and target word position in the sentences were not systematically controlled for in their study.
 
@@ -1849,7 +1858,7 @@ In the same study, however, when the fast presentation was followed by slow pres
 That is, increase in the flow of information did not always impair the ability to predict (see also, \protect\hyperlink{ref-Cole2020}{Cole, 2020}).
 They argued that once the brain is engaged in predictive comprehension mode, for example, first in the slow presentation rate, it can then continue to allocate resources in the same mode under faster presentation rate.
 
-In sum, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the speech rate (\protect\hyperlink{ref-Aydelott2004}{Aydelott \& Bates, 2004}; \protect\hyperlink{ref-Sharit2003}{Sharit et al., 2003}; \protect\hyperlink{ref-Winn2021b}{Winn \& Teece, 2021}; \protect\hyperlink{ref-Wlotko2015}{Wlotko \& Federmeier, 2015}).
+In sum, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the speech rate (\protect\hyperlink{ref-Aydelott2004}{Aydelott \& Bates, 2004}; \protect\hyperlink{ref-Sharit2003}{Sharit et al., 2003}; \protect\hyperlink{ref-Winn2021b}{M. B. Winn \& Teece, 2021}; \protect\hyperlink{ref-Wlotko2015}{Wlotko \& Federmeier, 2015}).
 Benefits of using context information is not only limited under varying speech rates, but also when it is degraded (\protect\hyperlink{ref-Bhandari2021}{Bhandari et al., 2021}; \protect\hyperlink{ref-Obleser2010}{Obleser \& Kotz, 2010}; \protect\hyperlink{ref-Sheldon2008a}{Sheldon et al., 2008a}, \protect\hyperlink{ref-Sheldon2008b}{2008b}).
 In the present study we will examine whether context information is still useful when the speech rate is fast (or slow) and degraded at the same time.
 
@@ -1891,7 +1900,7 @@ Speech rate was manipulated by compression (or expansion) of the moderately degr
 To achieve the goal, we conducted two experiments in which listeners were required to listen to the sentences and type in the entire sentence they hear.
 Sentence comprehension (word recognition accuracy) for high and low predictability sentences were assessed in fast speech (Experiment 1), and slow speech (Experiment 2).
 Because the processing demand increases, and a limited time is to be available to process the context and form predictions (e.g., \protect\hyperlink{ref-Aydelott2004}{Aydelott \& Bates, 2004}; \protect\hyperlink{ref-Wlotko2015}{Wlotko \& Federmeier, 2015}), we expected that the contextual facilitation (i.e., the difference between high and low predictability sentences) will be reduced for fast speech compared to normal speech (Experiment 3A).
-However, for slow speech due to abundance of time to process the degraded speech and the context, and reduction in effortful processing (e.g., \protect\hyperlink{ref-Winn2021b}{Winn \& Teece, 2021}), we expected contextual facilitation to be increased compared to normal speech (Experiment 3B).
+However, for slow speech due to abundance of time to process the degraded speech and the context, and reduction in effortful processing (e.g., \protect\hyperlink{ref-Winn2021b}{M. B. Winn \& Teece, 2021}), we expected contextual facilitation to be increased compared to normal speech (Experiment 3B).
 We expected that both increase and decrease in contextual facilitation will be primarily driven by the ease of processing high predictability sentences as compared to low predictability sentences (\protect\hyperlink{ref-Aydelott2004}{Aydelott \& Bates, 2004}; \protect\hyperlink{ref-Goy2013}{Goy et al., 2013}).
 
 \hypertarget{experiment-7a}{%
@@ -2059,7 +2068,7 @@ i.e., decrease in speech rate did not differentially affect the comprehension of
 As opposed to Experiment 1, we did not observe a significant change in contextual facilitation at slow speech rate at a moderate degradation level in Experiment 2.
 Slowing down the speech provides listeners more time to process the information, including the context that is important to generate predictions.
 However, our findings show that this ease of processing does not benefit intelligibility and comprehension of sentences with highly predictable target words any more than the sentences with less predictable target words.
-This claim is in line with the results of Winn \& Teece (\protect\hyperlink{ref-Winn2021b}{2021}){]} who reported that intelligibility does not increase when the speech is slowed down even though there is a difference in the intelligibility between high and low predictability sentences at both normal and slow speech rates.
+This claim is in line with the results of M. B. Winn \& Teece (\protect\hyperlink{ref-Winn2021b}{2021}){]} who reported that intelligibility does not increase when the speech is slowed down even though there is a difference in the intelligibility between high and low predictability sentences at both normal and slow speech rates.
 
 Accounts from speech perception, and predictive language processing point to a common expectation: contextual facilitation is enhanced when listeners have more time to process the incoming information {[}CITE{]}.
 Additionally, there are conflicting empirical evidence whether increase or decrease of speech rate provides benefit in intelligibility, comprehension, and contextual facilitation.
@@ -2317,6 +2326,9 @@ Gordon-Salant, S., \& Fitzgibbons, P. J. (2004). {Effects of stimulus and noise 
 \leavevmode\vadjust pre{\hypertarget{ref-Goy2013}{}}%
 Goy, H., Pelletier, M., Coletta, M., \& Pichora-Fuller, M. K. (2013). {The Effects of Semantic Context and the Type and Amount of Acoustic Distortion on Lexical Decision by Younger and Older Adults}. \emph{Journal of Speech, Language, and Hearing Research}, \emph{56}(6), 1715--1732. \url{https://doi.org/10.1044/1092-4388(2013/12-0053)}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Greenberg1996}{}}%
+Greenberg, S. (1996). Auditory processing of speech. In N. J. Lass (Ed.), \emph{Principles of experimental phonetics} (pp. 362--407). Mosby, St. Louis.
+
 \leavevmode\vadjust pre{\hypertarget{ref-Greenwood1990}{}}%
 Greenwood, D. D. (1990). {A cochlear frequency-position function for several species---29 years later}. \emph{Journal of the Acoustical Society of America}, \emph{87}(6), 2592--2605. \url{https://doi.org/10.1121/1.399052}
 
@@ -2494,6 +2506,12 @@ Minocher, R., Atmaca, S., Bavero, C., McElreath, R., \& Beheim, B. (2021). Estim
 \leavevmode\vadjust pre{\hypertarget{ref-Mishra2012}{}}%
 Mishra, R. K., Singh, N., Pandey, A., \& Huettig, F. (2012). {Spoken language-mediated anticipatory eye- movements are modulated by reading ability - Evidence from Indian low and high literates}. \emph{Journal of Eye Movement Research}, \emph{5}(1), 1--10. \url{https://doi.org/10.16910/jemr.5.1.3}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Moon2014a}{}}%
+Moon, I. J., \& Hong, S. H. (2014). What is temporal fine structure and why is it important? \emph{Korean Journal of Audiology}, \emph{18}(1), 1--7. \url{https://doi.org/10.7874/kja.2014.18.1.1}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Moon2014}{}}%
+Moon, I. J., Won, J. H., Park, M. H., Ives, D. T., Nie, K., Heinz, M. G., Lorenzi, C., \& Rubinstein, J. T. (2014). Optimal combination of neural temporal envelope and fine structure cues to explain speech identification in background noise. \emph{Journal of Neuroscience}, \emph{34}(36), 12145--12154. \url{https://doi.org/10.1523/JNEUROSCI.1025-14.2014}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Morton1964}{}}%
 Morton, J. (1964). {The effects of context on the visual duration threshold for words}. \emph{British Journal of Psychology}, \emph{55}(2), 165--180. \url{https://doi.org/10.1111/j.2044-8295.1964.tb02716.x}
 
@@ -2548,6 +2566,9 @@ Orena, A. J., \& Colby, S. (2021). \emph{Recognizing voices through a cochlear i
 \leavevmode\vadjust pre{\hypertarget{ref-vanOs2021}{}}%
 Os, M. van, Kray, J., \& Demberg, V. (2021). {Recognition of minipairs in (un)predictive sentence contexts in two types of noise}. \emph{Proceedings of the Annual Meeting of the Cognitive Science Society}, \emph{43}(43), 2943--2949.
 
+\leavevmode\vadjust pre{\hypertarget{ref-Patro2020}{}}%
+Patro, C., \& Mendel, L. L. (2020). Semantic influences on the perception of degraded speech by individuals with cochlear implants. \emph{The Journal of the Acoustical Society of America}, \emph{147}(3), 1778--1789. \url{https://doi.org/10.1121/10.0000934}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Peelle2013}{}}%
 Peelle, J. E. (2013). Cortical responses to degraded speech are modulated by linguistic predictions. \emph{Proceedings of Meetings on Acoustics Ica2013}, \emph{19}, 060108.
 
@@ -2578,6 +2599,9 @@ Reips, U.-D. (2021). Web-based research in psychology. \emph{Zeitschrift f{ü}r 
 \leavevmode\vadjust pre{\hypertarget{ref-Richards2011}{}}%
 Richards, S. A., Whittingham, M. J., \& Stephens, P. A. (2011). Model selection and model averaging in behavioural ecology: the utility of the IT-AIC framework. \emph{Behavioral Ecology and Sociobiology}, \emph{65}(1), 77--89. \url{https://doi.org/10.1007/s00265-010-1035-8}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Roberts2011}{}}%
+Roberts, B., Summers, R. J., \& Bailey, P. J. (2011). The intelligibility of noise-vocoded speech: Spectral information available from acrosschannel comparison of amplitude envelopes. \emph{Proceedings of the Royal Society B: Biological Sciences}, \emph{278}(1711), 1595--1600. \url{https://doi.org/10.1098/rspb.2010.1554}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Rodero2016}{}}%
 Rodero, E. (2016). {Influence of speech rate and information density on recognition: The moderate dynamic mechanism}. \emph{Media Psychology}, \emph{19}(2), 224--242. \url{https://doi.org/10.1080/15213269.2014.1002942}
 
@@ -2604,6 +2628,9 @@ Sanderson, S. K., \& Roberts, W. W. (2008). {The evolutionary forms of the relig
 
 \leavevmode\vadjust pre{\hypertarget{ref-Schlueter2014}{}}%
 Schlueter, A., Lemke, U., Kollmeier, B., \& Holube, I. (2014). {Intelligibility of time-compressed speech: The effect of uniform versus non-uniform time-compression algorithms}. \emph{The Journal of the Acoustical Society of America}, \emph{135}(3), 1541--1555. \url{https://doi.org/10.1121/1.4863654}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Schneider2001}{}}%
+Schneider, B. A., \& Pichora-Fuller, M. K. (2001). Age-related changes in temporal processing: Implications for listening comprehension. \emph{Seminars in Hearing}, \emph{22}(3), 227--239.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Seow2022}{}}%
 Seow, T. X. F., \& Hauser, T. U. (2022). {Reliability of web-based affective auditory stimulus presentation}. \emph{Behavior Research Methods}, \emph{54}(1), 378--392. \url{https://doi.org/10.3758/s13428-021-01643-0}
@@ -2700,6 +2727,9 @@ Whitmire, C. J., \& Stanley, G. B. (2016). {Rapid Sensory Adaptation Redux: A Ci
 
 \leavevmode\vadjust pre{\hypertarget{ref-Wild2012}{}}%
 Wild, C. J., Yusuf, A., Wilson, D. E., Peelle, J. E., Davis, M. H., \& Johnsrude, I. S. (2012). {Effortful listening: The processing of degraded speech depends critically on attention}. \emph{Journal of Neuroscience}, \emph{32}(40), 14010--14021. \url{https://doi.org/10.1523/JNEUROSCI.1528-12.2012}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Winn2016}{}}%
+Winn, M. (2016). Rapid release from listening effort resulting from semantic context, and effects of spectral degradation and cochlear implants. \emph{Trends in Hearing}, \emph{20}, 1--17. \url{https://doi.org/10.1177/2331216516669723}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Winn2021b}{}}%
 Winn, M. B., \& Teece, K. H. (2021). {Slower speaking rate reduces listening effort among listeners with cochlear implants}. \emph{Ear and Hearing}, \emph{42}(3), 584. \url{https://doi.org/10.1097/aud.0000000000000958}
