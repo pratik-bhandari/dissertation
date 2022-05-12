@@ -37,7 +37,7 @@ During transmission, noise disrupts the signal.
 The receiver (e.g., a listener) perceives the signal as $u_p$ and decodes it to recover the meaning as $m_p$.
 Human language comprehension system is assumed to be engaged in an optimal Bayesian decoding that uses all the sources of information
 (e.g., prior probability of plausible utterances, linguistic and world knowledge, context information)
-and infers the intended meaning from the perceived utterance that it receives from a noisy channel of communication [@Levy2008; @Gibson2013].
+and infers the intended meaning from the perceived utterance that it receives from a noisy channel of communication [@Levy2008; @Gibson2013; cf. @Markman2011].
 <!--Given the perceived utterance $u_p$, the listeners assigns a probability, $P(u_i|u_p)$, to a particular hypothesized utterance $u_i$. <!--which is not directly available to the listener.
 Using Bayes' rule, $P(u_i|u_p)$ can be re-written as:
 
