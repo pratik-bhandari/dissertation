@@ -18,45 +18,46 @@ However, -->
 In adverse listening conditions, when the bottom-up perceptual input is degraded, listeners tend to rely upon the context information, and form top-down semantic predictions.
 This provides contextual facilitation in understanding the degraded speech.
 Importantly, it is moderated by top-down attentional allocation to the context.
-The aim of this study was to examine the role of attention for understanding linguistic information in an adverse listening condition, i.e., when the speech was degraded.
+The aim of this study was to examine the role of attention in understanding linguistic information in an adverse listening condition, i.e., when the speech was degraded.
 To assess the role of attention we varied task instructions in two experiments in which participants were instructed to listen to short sentences and thereafter to type in the last word they have heard, or to type in the whole sentence.
 We were interested in how these task instructions influence the interplay between top-down prediction and bottom-up perceptual processes during language comprehension.
-As described in the previous chapter, these sentences varied in the degree of predictability (low, medium, high) as well as in the degree of speech degradation (1, 4, 6 and 8 noise vocoding channels).
-Results indicated better word recognition for highly predictable sentences at moderate levels of degradation only when attention was directed to the whole sentence.
-This underlines the important role of attention in language comprehension.
+The sentences varied in the degree of predictability (low, medium, high) as well as in the levels of speech degradation (1, 4, 6 and 8 channels noise vocoding).
+Results indicated better word recognition in high predictability sentences at moderate levels of degradation only when attention was directed to the whole sentence including the context information.
 
 
 ## Introduction
 
-In optimal listening conditions, understanding speech is highly automatized and seemingly easy.
+In an adverse listening condition when there is noise in the signal,
+listeners overcome the difficulty of understanding speech by using context information to support language comprehension.
+<!--In optimal listening conditions, understanding speech is highly automatized and seemingly easy.
 But conditions are often far from optimal in our day-to-day communication.
 As simple as a weak internet connection can create an adverse listening condition, for example, in an online meeting.
 Although the speech signal gets distorted or degraded at times, we do not frequently fail to understand such degraded speech.
-Listeners overcome the difficulty and successfully understand the speech by using context information.
-It contains information in a given situation about a topic of conversation, semantic and syntactic information of a sentence structure, world knowledge, visual information, etc.[@Kaiser2004; @Knoeferle2005; @Altmann2007; @Xiang2015; for reviews, @Ryskin2021; @Stilp2020].
-To utilize the context information, however, listeners must attend to it and build up a meaning representation of what has been said.
-Processing and comprehending degraded speech is more effortful and requires more attentional resources than that for clear speech [@Wild2012; @Eckert2016; @Peelle2018].
+Listeners overcome the difficulty and successfully understand the speech by using context information.-->
+The 'context information' can be an information in a given situation about a topic of conversation, semantic and syntactic information of a sentence structure, world knowledge, visual information, etc.[@Kaiser2004; @Knoeferle2005; @Altmann2007; @Xiang2015; for reviews, @Ryskin2021; @Stilp2020].
+To utilize the context information in a sentence, however, listeners must attend to it and build up a meaning representation of what has been said.
 
+Processing and comprehending degraded speech is more effortful and requires more attentional resources than clear speech [@Wild2012; @Eckert2016; @Peelle2018].
 In this chapter we examine how attention modulates the predictability effects brought about by contextual information at different levels of spectral degradation of speech.
-We address the existing unclarity in the literature regarding how listeners distribute their attentional resources in adverse listening conditions:
+We address the existing unclarity in the literature regarding the distribution of attentional resources in an adverse listening condition:
 On the one hand, listeners can attend throughout the whole stream of speech and may thereby profit from the context information to predict sentence endings.
 On the other hand, listeners can focus their attention on linguistic material at a particular time point in the speech stream and, as a result, miss critical parts of the sentence context.
 If the goal is to understand a specific word in an utterance, there is a trade-off between allocating attentional resources to the perception of that word vs. allocating resources also to the understanding of the linguistic context and generating predictions.
 
-This study reported in this chapter was conducted with an aim to investigate how the allocation of attentional resources induced by different task instructions influence language comprehension and, in particular, the use of context information under adverse listening conditions.
-To examine the role of attention on predictive processing under degraded speech, we ran two experiments in which we manipulated task instructions.
+The study reported in this chapter was conducted with an aim to investigate how the allocation of attentional resources induced by different task instructions influences language comprehension and, in particular, the use of context information in communication through a noisy channel, i.e., when the speech is degraded.
+To examine the role of attention on predictive processing under degraded speech, we ran two experiments in which we manipulated the task instructions.
 In [Experiment 1A](#experiment1a), participants were instructed to only repeat the final word of the sentence they heard,
 while in [Experiment 1B](#experiment1b), they were instructed to repeat the whole sentence, and by this drawing attention to the entire sentence including the context.
-In both experiments we varied the degree of predictability of sentence endings as well as the degree of speech degradation.
+In both experiments, we varied the degree of predictability of sentence endings as well as the degree of speech degradation.
 <!-- In the following, we first summarize findings of studies that have investigated predictive language processing in the comprehension of degraded speech, and then results on the role of attention and task instruction in speech perception.  -->
 
 ## Background
 
-As we have discussed earlier in [Chapter 1](#chapter-introduction) and [Chapter 2](#chapter-background), it is generally agreed upon that human language processing is predictive in nature, such that comprehenders generate expectations about upcoming linguistic materials based on context information [for reviews, see @Staub2015; @Kuperberg2016; @Pickering2018; @Nieuwland2019].
-When the bottom-up speech signal is less informative in an adverse listening condition, listeners rely more on the context information to support language comprehension [@Sheldon2008b; @Obleser2010; @Amichetti2018].
+As we have discussed earlier in [Chapter 1](#chapter-introduction) and [Chapter 2](#chapter-background), it is generally agreed upon that human language processing is predictive in nature, such that comprehenders generate expectations about upcoming linguistic materials based on context information [for reviews, @Kuperberg2016; @Nieuwland2019; @Pickering2018; @Staub2015].
+When the bottom-up speech signal is less informative in an adverse listening condition, listeners tend to rely more on the context information to support language comprehension [@Amichetti2018; @Obleser2010; @Sheldon2008b].
 However, it is not just the quality of speech signal that determines and influences the reliance and use of predictive processing;
-attention to auditory input is important as well.
-Auditory attention allows a listener to focus on the speech signal of interest [for reviews, see @Fritz2007; cf. @Lange2013].
+attention to the auditory input is important as well.
+Auditory attention allows a listener to focus on the speech signal of interest [for reviews, @Fritz2007; cf. @Lange2013].
 For instance, it has been shown that a listener can attend to and derive information from one stream of sound among many competing streams as demonstrated in the well-known *cocktail party effect* [@Cherry1953; @Hafter2007].
 When a participant is instructed to attend to only one of the two or more competing speech streams in a diotic or dichotic presentation, response accuracy to the attended speech stream is higher than to the unattended speech [e.g., @Toth2020].
 Similarly, when a listener is presented with a stream of tones (e.g., musical notes varying in pitch, pure tones of different harmonics) but attends to any one of the tones appearing at a specified time point, this is reflected in a larger amplitude of N1 [e.g., @Lange2010; see also, @Sanders2008]
@@ -64,19 +65,22 @@ which is the first negative going ERP component peaking around 100 ms post-stimu
 Hence, listeners can draw attention to and process one among multiple competing speech streams.
 
 So far, most previous studies have investigated listeners’ attention within a single speech stream by using acoustic cues like accentuation and prosodic emphasis.
-For example, @Li2014 examined whether the comprehension of critical words in a sentence context was influenced by a linguistic attention probe such as “ba” presented together with accented or de-accented critical word.
+For example, @Li2014 examined whether the comprehension of critical words in a sentence context was influenced by a linguistic attention probe such as “ba” presented together with an accented or a de-accented critical word.
 The N1 amplitude was larger for words with such attention probe than for words without a probe.
 These findings support the view that attention can be flexibly directed either by instructions towards a specific signal or by linguistic probes [@Li2017; see also, @Brunelliere2019].
-Thus, listeners are able to select a part or segment of stream of auditory stimuli to pay attention to.
+Thus, listeners are able to select a part or segment of stream of auditory stimuli to selectively allocate their attention to.
 
 The findings on the interplay of attention and prediction mentioned above come from studies most of which used a stream of clean speech or multiple streams of clean speech in their experiments.
 They cannot tell us about the attention-prediction interplay in degraded speech comprehension.
-Specifically, we do not know what role attention to a segment of speech stream plays in the contextual facilitation of degraded speech comprehension,
-although separate lines of research show that listeners attend to most informative portion of speech stream [e.g., @Astheimer2011], and semantic predictability facilitates comprehension of degraded speech [e.g., @Obleser2010].
+Specifically, we do not know what role attention to a segment of speech stream plays in the contextual facilitation of degraded speech comprehension.
+<!-- although separate lines of research show that listeners attend to most informative portion of speech stream [e.g., @Astheimer2011], and semantic predictability facilitates comprehension of degraded speech [e.g., @Obleser2010]. -->
+The studies that report predictability effects in degraded speech comprehension do not systematically examine the role of attention [e.g., @Amichetti2018; @Obleser2010; @Sheldon2008b].
+Their conclusions that *semantic predictability facilitates comprehension of degraded speech* are based on listeners' attention to the entire sentence
+which is not compared to any other experimental condition manipulating attentional allocation.
 In two experiments, we therefore examined whether context-based semantic predictions are automatic during effortful listening to degraded speech, when participants are instructed to report only the final word of the sentence, or the entire sentence.
 We varied the task instructions to the listeners from [Experiment 1A](#experiment1a) to [Experiment 1B](#experiment1b) which required them to differentially attend to the target word (not binding the context), or to the target word including the context.
 We hypothesized that when listeners pay attention only to the contextually predicted target word, they do not form top-down predictions, i.e., there should not be a facilitatory effect of target word predictability.
-In contrast, when listeners attend to the whole sentence, they do form expectations such that the facilitatory effect of target word predictability will be observed.
+In contrast, when listeners attend to the whole sentence, they do form expectations such that the facilitatory effect of target word predictability will be observed replicating the prior findings.
 
 ## Experiment 1A {#experiment1a}
 
@@ -90,7 +94,7 @@ This instruction did not require listeners to pay attention to the context which
 
 We recruited 50 participants online via Prolific Academic.
 One participant whose response accuracy was less than 50\% across all experimental conditions was removed from the analysis.
-Among the remaining 49 participants ($\bar{x}$ $\pm$ SD = 23.31 $\pm$ 3.53 years; age range = 18 - 30 years), 27 were male and 22 were female.
+Among the remaining 49 participants ($\bar{x}\pm SD=23.31\pm 3.53$ years; age range = $18-30$ years), 27 were male and 22 were female.
 They were all native speakers of German residing in Germany, and they did not have any speech-language disorder, hearing loss, or neurological disorder (all self-reported).
 <!-- All participants received 6.20 Euro as monetary compensation for their participation. -->
 
@@ -98,8 +102,8 @@ They were all native speakers of German residing in Germany, and they did not ha
 
 Materials used in the experiment were created by the method described in Chapter \@ref(chapter-methods) (Section \@ref(experimental-materials)).
 <!-- [Chapter 3](#experimental-materials). -->
-That is, there were 360 sentences with 120 sentences in each of these 3 categories: low predictability, medium predictability and high predictability.
-The mean cloze probabilities of target words for low, medium and high predictability sentences were 0.022 $\pm$ 0.027 ($\bar{x}$  $\pm$ SD; range = 0.00 - 0.09), 0.274 $\pm$ 0.134 ($\bar{x}$  $\pm$ SD; range = 0.1 - 0.55), and 0.752 $\pm$ 0.123 ($\bar{x}$  $\pm$ SD; range = 0.56 - 1.00) respectively.
+That is, there were 120 unique sentences in each of these 3 categories: low predictability, medium predictability and high predictability.
+The mean cloze probabilities of the target words for low, medium and high predictability sentences were $0.022\pm0.027$ ($\bar{x}\pm SD$; range = $0.00-0.09$), $0.274\pm0.134$ ($\bar{x}\pm SD$; range = $0.1-0.55$), and $0.752\pm0.123$ ($\bar{x}\pm SD$; range = $0.56-1.00$) respectively.
 All the 360 sentences were then noise vocoded through 1, 4, 6, and 8 channels to create degraded speech.
 
 Each participant was presented with 40 high predictability, 40 medium predictability, and 40 low predictability sentences.
@@ -120,30 +124,21 @@ The experiment was approximately 40 minutes long.
 ## Analyses
 
 <!-- We preprocessed and analysed data in R-Studio (Version 3.6.3; R Core Team, 2020). -->
-Out of XYZ trials from 49 participants, there were only 5 correct responses at 1 channel speech degradation condition.
-Therefore, the 1 channel speech degradation condition was excluded from the analysis.
+Out of 5880 trials from 49 participants, there were only 5 correct responses at 1 channel speech degradation condition.
+We excluded the trials from the 1 channel speech degradation condition from the analysis.
 
 Response accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) following the procedure described in Chapter \@ref(chapter-stats) (Section \@ref(analysis-main)).
 <!-- [Chapter 4](#analysis-main). -->
-Binary responses (correct/incorrect) for all participants were fit with a [binomial logistic mixed-effects model](#binomial-logistic-mixed-effects-model) [@Jaeger2006; @Jaeger2008].
+Binary responses (correct/incorrect) for all participants were fit with a [binomial logistic mixed-effects model](#binomial-logistic-mixed-effects-model).
 Noise condition (categorical; 4, 6, and 8 channels noise vocoding), target word predictability (categorical; high, medium, and low), and the interaction of number of channels and target word predictability were included in the fixed effects.
-
-We first fitted a model with maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
-Both, by-participant, and by-item random slopes were included for number of channels, target word predictability, and their interaction.
-Non-significant higher-order interactions were excluded from the fixed-effects structure and from the random-effects structure in a stepwise manner.
-Random effects not supported by the data that explained zero variance were excluded and a more parsimonious model was obtained [@Bates2015a].
-Such a model was then extended separately with i) item-related correlation parameters, ii) participant-related correlation parameters, and iii) both item- and participant-related correlation parameters when applicable.
-Aiming for model parsimony, the best fitting model among the parsimonious and extended models was then selected as the optimal model for our data. Model selection was based on AIC [@Burnham2002; @Grueber2011; @Richards2011].
-
 We applied treatment contrast for number of channels (8 channels as a baseline) and sliding difference contrast for target word predictability (low predictability vs. medium predictability, and low predictability vs. high predictability sentences).
-We report the results from the optimal model.
 
 ## Results and discussion
 
-Mean response accuracies for all experimental conditions are shown in Table \@ref(summary1a) and Figure \@ref(fig:figure1a).
+Mean response accuracies (in proportion scale, or percentage scale) for all experimental conditions aggregated across all participants and items are shown in Table \@ref(summary1a) and Figure \@ref(fig:figure1a).
 It shows that accuracy increases with an increase in the number of noise vocoding channels, i.e., with the decrease in speech degradation.
 However, accuracy does not increase with an increase in target word predictability.
-The results of statistical analyses confirmed these observations (Table \@ref(results1a)).
+These observations aligned with the results of the statistical analyses (Table \@ref(results1a)).
 
 \begin{longtable}[]{@{}llll@{}}
 \caption{Mean response accuracy across all levels of speech degradation
@@ -177,14 +172,14 @@ knitr::include_graphics("figures/results-fig/expt-1a.jpg")
 ```
 
 We found that there was a significant main effect of number of channels, indicating that response accuracy in the 8 channels noise vocoded speech was higher than in both 4 channels ($\beta$ = -3.49, SE = .23, *z* (4246) = -15.30, *p* < .001) and 6 channels noise vocoded speech ($\beta$ = -.69, SE = .22, *z* (4320) = -3.12, *p* = .002).
-That is, when the number of channels increased to 8, listeners made more correct responses (see Figure \@ref(fig:figure1a)).
+That is, when the number of channels increased to 8, listeners made more correct responses.
 However, there was no significant main effect of target word predictability ($\beta$ = -.07, SE = .17, *z* (4246) = -.42, *p* = .68, and $\beta$ = -.003, SE = .16, *z* (4246) = -.02, *p* = .98), and no significant interaction between number of noise vocoding channels and target word predictability (all *p*s > .05).
 
 The results of Experiment 1A indicated a decrease in response accuracy with an increase in speech degradation from 8 channels to 6 channels noise vocoding condition, and from 8 channels to 4 channels noise vocoding condition.
 However, response accuracy did not increase with an increase in target word predictability,
-and the interaction between number of noise vocoding channels and target word predictability was also absent, in contrast to previous findings [@Obleser2007; @Obleser2011; see also @Hunter2018].
+and the interaction between number of noise vocoding channels and target word predictability was also absent, in contrast to previous findings [e.g., @Obleser2007; @Obleser2011; see also @Hunter2018].
 These results suggest that the task instruction, which asked participants to only report the final word, indeed lead to neglecting the context, and therefore the facilitatory effect of prediction was not observed.
-However, to further test the hypothesis --- as mentioned in the beginning of this chapter --- that predictability effect is dependent on attentional effect, we conducted a second experiment.
+However, to further test the hypothesis --- as mentioned in the beginning of this chapter --- that predictability effect is dependent on attentional effect, we conducted another experiment.
 In the second experiment, we changed the task instruction to draw participants' attention to the entire sentence such that they could attend and decode the whole sentence including the context.
 
 \begin{longtable}[]{@{}lllll@{}}
@@ -213,14 +208,13 @@ Target word predictability (High-Low) & .003 & .16 & .02 & .98 \\
 ## Experiment 1B {#experiment1b}
 
 Following up on Experiment 1A, we conducted Experiment 1B on a separate group of participants with a different task instruction.
-This experiment was intended to test the hypothesis that facilitatory effect of top-down predictions is observed only when listeners attention is unrestricted such that context information is also included within the attentional focus of a listener.
+This experiment was intended to test the hypothesis that the facilitatory effect of top-down predictions is observed only when the listeners' attention is unrestricted such that the context information is also included within the attentional focus of a listener.
 
 ## Methods
 
 ### Participants and Materials
 
-We recruited 48 participants ($\bar{x}$ $\pm$ SD = 24.44 $\pm$ 3.5 years; age range = 18 - 31 years; 32 males) online via Prolific Academic.
-Same procedure as Experiment 1A was followed.
+We recruited 48 participants ($\bar{x}\pm SD = 24.44 \pm 3.5$ years; age range = $18-31$ years; 32 males) online via Prolific Academic.
 We used the same materials that were used in Experiment 1A.
 
 ### Procedure
@@ -233,8 +227,9 @@ Guessing was encouraged.
 
 We followed the same data analyses procedure as in Experiment 1A.
 The 1 channel noise vocoding condition was excluded from the analysis.
-We only considered the final words of the sentences (i.e., the target words) to be either correct or incorrect; accuracy of other preceding words were not considered in the analyses.
-Like Experiment 1A, the results from the optimal model are reported.
+For the results of this experiment to be comparable with Experiment 1A,
+we only considered the final words of the sentences (i.e., the target words) to be either correct or incorrect ---
+accuracy of other preceding words were not considered in the analyses.
 
 ## Results and discussion
 
@@ -272,8 +267,8 @@ error \\
 knitr::include_graphics("figures/results-fig/expt-1b.jpg")
 ```
 
-These observations are confirmed by the results of statistical analyses (Table \@ref(results1b)):
-We again found a main effect of number of noise vocoding channels such that response accuracy at 8 channels was higher than both 4 channels ($\beta$ = -3.49, SE = .23, *z* (4320) = -15.29, *p* < .001), and 6 channels noise vocoding ($\beta$ = -0.61, SE = .20, *z* (4320) = -3.07, *p* = .002).
+These observations aligned with the results of the statistical analyses (Table \@ref(results1b)).
+We again found a main effect of number of noise vocoding channels such that response accuracy at 8 channels noise vocoding condition was higher than both 4 channels ($\beta$ = -3.49, SE = .23, *z* (4320) = -15.29, *p* < .001), and 6 channels noise vocoding conditions ($\beta$ = -0.61, SE = .20, *z* (4320) = -3.07, *p* = .002).
 In contrast to Experiment 1A, there was also a main effect of target word predictability:
 Response accuracy in high predictability sentences was significantly higher than in low predictability sentences ($\beta$ = 1.25, SE = .28, *z* (4320) = 4.50, *p* < .001).
 We also found a statistically significant interaction between speech degradation and target word predictability ($\beta$ = -.95, SE = .30, *z* (4320) = -3.14, *p* = .002).
@@ -362,10 +357,14 @@ The results of two experiments revealed that attentional processes clearly modul
 
 In contrast to the first experiment, the results of the second experiment show an interaction between target word predictability and degraded speech.
 This is generally in line with existing studies that found a facilitatory effect of predictability at different levels of speech degradation when the participants were instructed to pay attention to the entire sentence [e.g., at 4 channels or 8 channels noise vocoded speech, @Obleser2007; @Obleser2010].
+Obleser and colleagues reported that at moderate levels of degradation, key word recognition was higher for high predictability sentences than for low predictability sentences.
+Listeners were required to attend to the entire sentence in those studies as well.
+Therefore, the findings of Experiment 1B replicate this facilitatory effect of predictability.
+
 The important new finding that our study adds to the present literature is that this predictability effect may be weakened or even lost, when listeners are instructed to report only the final word of the sentence that they heard, like in Experiment 1A.
-The lack of predictability effect and contextual facilitation can most likely be attributed to listeners not successfully decoding the meaning of the verb of the sentence, as the verb is the primary predictive cue for the target word (noun) in our stimuli.
-Hence, this small change in task instructions from Experiment 1A to Experiment 1B sheds light on the role of top-down regulation of attention on using context for language comprehension in adverse listening conditions.
-In adverse listening conditions, language comprehension is generally effortful so that focusing attention to only a part of the speech signal seems much beneficial in order to enhance stimulus decoding.
+The lack of predictability effect and contextual facilitation can most likely be attributed to listeners not successfully decoding the meaning of the verb of the sentence, as the verb is the primary predictive cue for the target word (noun) in our stimuli (e.g., Sie jongliert die Baelle).
+Hence, this small change in task instructions from Experiment 1A to Experiment 1B sheds light on the role of top-down regulation of attention on using context for language comprehension in a noisy channel.
+In a noisy channel when the listening conditions are adverse, language comprehension is generally effortful so that focusing attention to only a part of the speech signal seems much beneficial in order to enhance stimulus decoding.
 However, the results of this study also show that this comes at the cost of neglecting the context information that could be beneficial for language comprehension.
 Our findings hence demonstrate that there is a trade-off between the use of context for generating top-down predictions vs. focusing all attention on a target word.
 Specifically, the engagement in the use of context and generation of top-down predictions may change as a function of attention [see also, @Li2014].
@@ -382,8 +381,8 @@ This is in line with previous findings which show that predictability effects ca
 To summarize, our results indicate that there was a very strong difference in intelligibility between 4 and 6 channels, but that the difference in intelligibility between 6 and 8 channels was minimal.
 Note though that even for 8 channels, low predictability sentences were not always understood correctly.-->
 
-From most theoretical accounts of language processing that align with predictive language processing, one would expect that listeners automatically form top-down predictions about upcoming linguistic stimuli based on prior context [@Mcclelland1986; @Kuperberg2016; @Norris2016; @Pickering2018; @Friston2020].
-Also, when speech is degraded, top-down predictions render a benefit in word recognition and language comprehension [e.g., @Sheldon2008b; @Sheldon2008a].
+Considering the theoretical accounts of predictive language processing [@Mcclelland1986; @Kuperberg2016; @Norris2016; @Pickering2018; @Friston2020], one would expect that listeners automatically form top-down predictions about upcoming linguistic stimuli based on prior context.
+Also, when speech is degraded, top-down predictions render a benefit in word recognition and language comprehension [e.g., @Sheldon2008a; @Sheldon2008b].
 Results of our study revealed new theoretical insights by showing that this is not always the case.
 Top-down predictions are dependent on attentional processes [see also, @Kok2012], directed by task instructions, thus they are not *always* automatic, and predictability does not *always* facilitate language comprehension when speech is degraded.
 To this point, our findings shed light on the growing body of literature that indicate limitations of predictive language processing accounts [@Mishra2012; @Huettig2016; @Nieuwland2018; @Huettig2019].
@@ -400,3 +399,13 @@ In conclusion, this study provides a novel insight into the modulatory role of a
 We show that task instructions affect distribution of attention to the degraded speech signal.
 This, in turn, means that when insufficient attention is given to the context, top-down predictions cannot be generated, and the facilitatory effect of predictability is substantially reduced.
 The findings of this study indicate limitations to predictive processing accounts of language comprehension.
+
+## Summary
+
+This chapter replicated the previous finding that semantic predictability facilitates language comprehension at moderate levels of speech degradation.
+Examining the modulatory role of attention,
+we saw in this chapter that the facilitatory effect is observed only when the listeners attend to the entire sentence context.
+For equivalent comparison of results across two experiments,
+the recognition of context (in Experiment 2) was not taken into account in the data analysis.
+In the next chapter, this limitation is overcome.
+We also further examine the granularity of predictability effect, and examine the perceptual adaptation to degraded speech.

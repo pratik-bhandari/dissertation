@@ -146,11 +146,11 @@ We test if adaptation to bottom-up perceptual property of speech is influenced b
 
 (5)   **Speed of information processing**\
 Unlike visual scene which opens in spatial dimension, speech signal flows in temporal dimension.
-This poses a challenge to listeners to process information at different speed and timescales when
+This poses a challenge to the listeners to process information at different speed and timescales when
 more time is available to process the information in slow speech while less time is available for fast speech [@Lerner2014].
 Listeners build up the meaning representation as they process the speech to predict upcoming linguistic unit.
 The fifth goal of this thesis is to examine whether a change in information flow, i.e., speech rate, affects facilitatory effect of predictability.
-We test if an increase or decrease in speech rate impedes overall intelligibility of speech over a noisy channel,
+We test if an increase or decrease in speech rate impedes the intelligibility of speech over a noisy channel,
 and whether it impedes or further aids the predictability effect in the noisy channel.
 
 (6)   **Metric for measurement of language comprehension**\
@@ -248,8 +248,8 @@ and sentences of different levels of predictability.
 Participants in Experiment 1A are asked to type in only the final word of a sentence;
 this does not bind their attention to the sentence context.
 While the participants in the Experiment 1B are asked to type in the entire sentence that they heard which required them to attend to the sentence context as well.
-We replicate the previously reported predictability effects in noisy channel only when participants attended to the entire sentence including the context;
-It is observed at the moderate levels of speech degradation.
+We replicate the previously reported predictability effects in noisy channel only when participants attended to the entire sentence including the context.
+<!-- It is observed at the moderate levels of speech degradation. -->
 We show that at the moderate levels of degradation, top-down predictions cannot be generated when insufficient attention is given to context.
 We discuss the limitation in the theories of predictive language processing committing automaticity of prediction,
 and argue the importance of incorporating *attention* into current theories.
