@@ -104,7 +104,7 @@ Materials used in the experiment were created by the method described in Chapter
 <!-- [Chapter 3](#experimental-materials). -->
 That is, there were 120 unique sentences in each of these 3 categories: low predictability, medium predictability and high predictability.
 The mean cloze probabilities of the target words for low, medium and high predictability sentences were $0.022\pm0.027$ ($\bar{x}\pm SD$; range = $0.00-0.09$), $0.274\pm0.134$ ($\bar{x}\pm SD$; range = $0.1-0.55$), and $0.752\pm0.123$ ($\bar{x}\pm SD$; range = $0.56-1.00$) respectively.
-All the 360 sentences were then noise vocoded through 1, 4, 6, and 8 channels to create degraded speech.
+All 360 sentences were then noise vocoded through 1, 4, 6, and 8 channels to create degraded speech.
 
 Each participant was presented with 40 high predictability, 40 medium predictability, and 40 low predictability sentences.
 Levels of speech degradation were also balanced across each predictability level, so that for each of the three predictability conditions (high, medium and low predictability), ten 1 channel, ten 4 channels, ten 6 channels, and ten 8 channels noise vocoded sentences were presented, resulting in 12 experimental lists.
@@ -167,7 +167,7 @@ error \\
 \bottomrule
 \end{longtable}
 
-```{r figure1a, eval=TRUE, echo=FALSE, fig.align='center', fig.cap="Mean response accuracy across all conditions in Experiment 1A. Accuracy increased only with an increase in the number of noise vocoding channels. There is no change in accuracy with an increase or decrease in target-word predictability. Error bars represent standard error of the means.", out.width="95%"}
+```{r figure1a, eval=TRUE, echo=FALSE, fig.align='center', fig.cap="Mean response accuracy across all conditions in Experiment 1A. Accuracy increased only with an increase in the number of noise vocoding channels. There is no change in accuracy with an increase or decrease in target word predictability. Error bars represent standard error of the means.", out.width="95%"}
 knitr::include_graphics("figures/results-fig/expt-1a.jpg")
 ```
 
@@ -263,7 +263,7 @@ error \\
 \bottomrule
 \end{longtable}
 
-```{r figure1b, eval=TRUE, echo=FALSE, fig.align='center', fig.cap="Mean response accuracy across all conditions in Experiment 1B. Accuracy increased with an increase in number of noise vocoding channels and target-word predictability. Error bars represent standard error of the means.", out.width="95%"}
+```{r figure1b, eval=TRUE, echo=FALSE, fig.align='center', fig.cap="Mean response accuracy across all conditions in Experiment 1B. Accuracy increased with an increase in number of noise vocoding channels and target word predictability. Error bars represent standard error of the means.", out.width="95%"}
 knitr::include_graphics("figures/results-fig/expt-1b.jpg")
 ```
 
