@@ -25,16 +25,16 @@ And most importantly, we only showed that there is a difference between high and
 the granularity of predictability was not tested.
 <!-- The theoretical question in this chapter will be on the nature of prediction. -->
 Therefore, the aim of the study presented in this chapter is to address these limitations and examine if listeners form narrowed expectations or whether predictions are generated across a wide range of probable sentence endings in a graded manner.
-We also take into account the accuracy of context identification (not just the accuracy of target word identification) as well as the possible learning effect due to adaptation to degraded speech.
+We also take into account the accuracy of context identification (not just the accuracy of target word identification) as well as the possible learning effect due to an adaptation to the degraded speech.
 The results showed that in contrast to the "narrowed expectations" view postulated for predictive processing of degraded speech,
 listeners probabilistically preactivate upcoming words from a wide range of semantic space, not limiting only to highly probable sentence endings.
-We also did not find any learning effects.
+We also did not find any learning effect.
 We speculate that when there is a trial-by-trial variation in semantic feature (e.g., sentence predictability), listeners do not adapt to low-level perceptual property (e.g., speech quality).
 
 ## Introduction
 
 In the literature of speech perception and sentence processing, studies have argued that prediction is either probabilistic and graded, or it is an all-or-nothing phenomenon [see @Coltheart2004; @Kuperberg2016; @Luke2016].
-Very few studies have investigated such theoretical questions within the domain of adverse listening conditions, specifically in degraded speech comprehension [e.g. @Strauss2013; see also @Corps2020; @vanOs2021].
+Very few studies have investigated such theoretical questions within the domain of adverse listening conditions, specifically in degraded speech comprehension [e.g., @Strauss2013; see also @Corps2020; @vanOs2021].
 @Strauss2013 posited that listeners cannot preactivate less predictable sentence endings in an adverse listening condition.
 They proposed that the facilitatory effect of predictability is limited to only highly predictable sentence endings at a moderate level of spectral degradation of speech.
 Although many studies support the general idea of Strau{\ss} and colleagues that predictability facilitates comprehension of degraded speech [e.g., @Hunter2018; @Obleser2010; @Sheldon2008a],
@@ -136,7 +136,7 @@ To study this, we presented sentences of different levels of predictability bloc
 Based on previous findings, we expected that in the unpredictable channel context (i.e., when sentences are presented in a random order of spectral degradation) participants’ word recognition performance will be worse than in the predictable channel context [i.e., when the sentences are blocked by noise-vocoding, @Garrido2011; @Sommers1994; @Vaden2013].
 To further examine perceptual adaptation, we also considered the effect of trial number in the analyses.
 
-And third, we aimed at measuring language comprehension with a metric that reflects participants' correct or incorrect identification of the context.
+And third, we aimed at measuring language comprehension with a metric that reflects the participants' correct or incorrect identification of the context.
 If participants do not understand the context and we only measure the recognition of final word, this might not truly reflect the effect of contextual facilitation.
 
 ## Methods

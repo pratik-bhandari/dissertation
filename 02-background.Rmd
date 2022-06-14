@@ -14,13 +14,13 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 
 # Background {#chapter-background}
 
-In the previous chapter we outlined the theoretical background and the research goals of the studies in this dissertation.
+In the previous chapter, we outlined the theoretical background and the research goals of the studies in this dissertation.
 We stated that the central theme of this thesis is to investigate the interaction between top-down predictive processes and bottom-up auditory processes in language comprehension.
 Grounding on the noisy channel model of communication and predictive language processing,
 the studies in this thesis manipulate the auditory processes $P(u_p|u_i,N)$, and prior information $P(u_i,m_i)$ in the form of semantic context available in a sentence.
 In this chapter, we provide background on the noisy channel that was created and used to introduce variations in bottom-up processing in the studies in this thesis.
-We also elaborate on the predictive language processing in noisy channel, and the evidence on its limits and nature.
-Understanding these fundamental concepts of top-down and bottom-up processes are essential for the chapters that follow.
+We also elaborate on the predictive language processing in the noisy channel, and the evidence of its limits and nature.
+Understanding these fundamental concepts of top-down and bottom-up processes is essential for the chapters that follow.
 These concepts are briefly reiterated in the following chapters wherever relevant.
 
 ## Speech distortion and degradation {#distortion-degradation}
@@ -30,16 +30,16 @@ However, speech perception is hardly as smooth as it seems.
 As shown in Figure \@ref(fig:noisy-channel) and Equation \@ref(eq:noisy-channel3), in the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948],
 noise disrupts and distorts the speech signal $u_i$ uttered by a speaker
 which the listener then perceives as $u_p$ and decodes into the message $m_p$.
-Distortion can occur at these three points or sources: encoding, transmission and decoding.
-Speech can be distorted while encoding the utterance $u_i$ due to the variability in speakers' production, like, accented speech, or soft and rapid speech.
-Distortion can arise while decoding the signal $u_p$ due to the listener-related factors like, hearing loss, or auditory processing disorder.
+Distortion can occur at these three points or sources: encoding, transmission, and decoding.
+Speech can be distorted while encoding the utterance $u_i$ due to the variability in speakers' production, like accented speech, or soft and rapid speech.
+Distortion can arise while decoding the signal $u_p$ due to listener-related factors, like hearing loss, or auditory processing disorder.
 It can also be a result of the noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
 All these sources of distortion make the listening condition adverse [@Mattys2012] by affecting the time and frequency related properties/cues of the speech signal, i.e., temporal envelope cues and spectral details of speech respectively.
 The temporal envelope cues are the slow variations in the amplitude of the speech signal over time [@Moon2014a; @Moon2014] while the spectral details are the frequency specific information about the speech.
 The temporal envelope cues reflect the prosodic information of the speech, and are used in the lexical-semantic and syntactic processing [@Greenberg1996; @Schneider2001; @Sheldon2008b].
-The spectral details provide information about the sound production reflecting the resonant properties of the vocal tract, frequency range of the speech signal, energy distribution across frequency bands etc. [@Roberts2011; @Shannon2004; @Shannon1995].
+The spectral details provide information about the sound production reflecting the resonant properties of the vocal tract, frequency range of the speech signal, energy distribution across frequency bands, etc. [@Roberts2011; @Shannon2004; @Shannon1995].
 
-In an experimental setup, a noisy channel can be created artificially by digital signal processing (see Section \@ref(speech-processing)) to investigate the response of the speech perception system to the distorted speech,
+In an experimental setup, a noisy channel can be created artificially by digital signal processing (see Section \@ref(speech-processing)) to investigate the response of the speech perception system to the distorted speech
 and to study language comprehension in an adverse listening condition.
 For example, expansion or compression of speech signal acts upon the temporal property of the speech and makes it slow or fast, and an optimal level of speech expansion/compression does not distort the spectral property of speech (see Section \@ref(compression-expansion)).
 In addition to speech compression and expansion in Chapter \@ref(chapter-speech-rate),
@@ -98,7 +98,7 @@ In this thesis, we study other factors (e.g., auditory temporal attention, speed
 
 ### Facilitatory effect of predictability {#background-facilitatory-effect}
 
-We have discussed above that individuals make predictions about not-yet-encountered linguistic unit based on available context information as the sentence unfolds:
+We have discussed above that individuals make predictions about not-yet-encountered linguistic units based on available context information as the sentence unfolds:
 Top-down predictive and bottom-up perceptual processes interact dynamically in language comprehension.
 When the bottom-up perceptual input is less reliable, for example, in an adverse listening condition, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also, @Corps2020].
 Obleser and colleagues [@Obleser2007; @Obleser2010], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also, @Hunter2018].
@@ -118,9 +118,9 @@ On the other extreme, when the speech is clear and intelligible, participants re
 Hence, no differential effect of levels of predictability of target word can be expected.-->
 
 **Nature of prediction**:
-One of the debates in the literature of predictive language processing pertains this question: Is prediction probabilistic, or is it an all-or-nothing phenomenon?
+One of the debates in the literature of predictive language processing pertains to this question: Is prediction probabilistic, or is it an all-or-nothing phenomenon?
 For instance, garden path phenomenon was explained as a parser's irreversible prediction about the sentence structure
-which if fails or turns out to be incorrect then the parser reanalyzes the sentence and reformulates another prediction [e.g., @Ferreira1986; see also, @Slattery2013].
+which if fails or if turns out to be incorrect then the parser reanalyzes the sentence and reformulates another prediction [e.g., @Ferreira1986; see also, @Slattery2013].
 In recent days, the support for the probabilistic nature of prediction comes, for example, from ERP studies that show an inverse and graded relationship between the magnitude of N400 effect evoked by a word and its predictability measured by cloze probability [e.g., @Delong2005].
 The correlation between a word's *surprisal* in its linguistic context and the processing effort associated with it also demonstrates the probabilistic nature of prediction [e.g., @Hale2001; @Smith2008].
 
