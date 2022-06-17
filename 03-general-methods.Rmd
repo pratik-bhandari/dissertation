@@ -133,7 +133,7 @@ These 480 recordings were then passed through 4 channels noise vocoding to use a
 <!-- Spectrograms of clear speech, fast speech, slow speech, and noise vocoded fast and slow speech for the word *Aufgabe* are shown in Figure X.X. -->
 <!-- In Experiment 3, PSOLA algorithm in Praat software is used to increase the rate of speech by a factor of 0.65 before passing it through 4-channels noise-vocoding. -->
 
-## Data collection
+## Data collection on the web
 
 <!--- Write a few sentences about similarity and dissimilarity about online and lab data collection.
 - Cite the papers that have done such comparisons.
@@ -144,21 +144,23 @@ These 480 recordings were then passed through 4 channels noise vocoding to use a
 - Data colxn in lab and online
 - Online expt hosting platform
 - Recruiting participants online -->
-The first generation of online experiments on human cognition began in the mid 1990s [for reviews, @Musch2000] with the advent of the internet [@Bernerslee1992].
+Traditionally, behavioral experiments with human participants are conducted in a laboratory setup.
+In recent years, there has been a surge of experiments that are conducted on the web [@Reips2021].
+The first generation of online experiments to study human cognition began in the mid 1990s [for reviews, @Musch2000] with the advent of internet [@Bernerslee1992].
 @Welch1996 was the first online experiment that was conducted in 1995 as a part of tutorials in auditory perception [@Musch2000].
-In their survey of researchers, @Musch2000 discovered that until 2000, there were already at least 2 psycholinguistics experiments conducted online;
+In their survey of researchers, @Musch2000 discovered that until 2000, there were already at least 2 psycholinguistics experiments conducted online,
 one of which studied the effect of context in shallow vs. deep encoding of words.
 Despite the difficulty in conducting online experiments, and skepticism of journals towards publishing results of online experiments,
 @Musch2000 expressed optimism:
 
 >
 At the moment, the number of Web experiments is still small, but a rapid growth can be predicted on the basis of the present results.
-We would not be surprised if within the next few years, a fair proportion of psychological experiments will be conducted on the Web.
+We would not be surprised if within the next few years, a fair proportion of psychological experiments will be conducted on the Web. [@Musch2000, pp. 85]
 
 <!-- It will be interesting to see how the experiences of the early researchers shape this new direction in psychological research." -->
 And by 2021, there has been a significant growth in online experiments as technical and technological barriers are greatly reduced.
 There are many software and online platforms which psychologists and psycholinguists can use with minimal knowledge of computer programming
-to design, host and run their experiments, and get these data in a fairly structured format [@Peirce2019; @Anwylirvine2020; @Prolific; see also, @Anwylirvine2021; @Eyal2021].
+to design, host and run their experiments, and retrieve these data in a fairly structured format [@Peirce2019; @Anwylirvine2020; @Prolific; see also, @Anwylirvine2021; @Eyal2021].
 Online experiments have demonstrated advantages over laboratory experiments [@Gadiraju2017; @Johnson2021].
 For example, a large pool of participants is available online which is usually not possible in laboratory experiments.
 Similarly, the participants in online experiments are more diverse than those in laboratory experiments.
@@ -168,7 +170,7 @@ Since @Welch1996's auditory perception experiment, a number of experiments have 
 The experiments reported in this thesis were also conducted online.
 
 Initially, our experiments were designed to be conducted both in laboratory and online.
-As the laboratory was shut down due to covid-19 pandemic, we moved the laboratory experiments online too.
+As the laboratory was shut down due to covid-19 pandemic-related lockdown (M. Schmitt, personal communication, March 16, 2020), we moved the laboratory experiments to the online platform.
 We recruited participants online via Prolific Academic [@Prolific].
 We used Prolific's filters to recruit only native speakers of German residing in Germany
 who reported to not have had any hearing loss, speech-language disorder, and cognitive impairment.
