@@ -978,122 +978,32 @@ We report the details of each experiment in Chapters 5, 6, and 7.
 
 \chaptermark{Statistics}
 
-\hypertarget{linear-regression}{%
-\section{Linear regression}\label{linear-regression}}
+\hypertarget{linear-mixed-effects-models}{%
+\section{Linear mixed effects models}\label{linear-mixed-effects-models}}
 
-In this thesis, we use binomial mixed effects logistic regression models with crossed random effects (\protect\hyperlink{ref-Baayen2008}{Baayen et al., 2008}).
-These models are, simply put, extensions of logistic regression models.
-A logistic regression models a dependent variable (or an \emph{outcome}, or a \emph{response} variable) as a function of one or more independent predictor variables (or \emph{factors}, or \emph{explanatory} variables).
-That is, an outcome \(y\) is modeled as a function of explanatory variables \(x_1, x_2, x_3..., x_n\), and an error term \(\varepsilon\).
+Linear mixed effects model (LME), as the name suggests, is a linear regression model that consists of both fixed effects and random effects.
+It allows to model the underlying structure of the data which includes
+the standard fixed effects like the levels of speech degradation and the levels of target word predictability
+as well as random effects like items and participants.
+These random effects are assumed to be random samples drawn from the general population (\protect\hyperlink{ref-Baayen2008}{Baayen et al., 2008}).
+In this thesis, the dependent variable (or an \emph{outcome}, or a \emph{response} variable) is binary (correct vs incorrect response).
+So, we use binomial logistic mixed effects models with crossed random effects to model the data (\protect\hyperlink{ref-Baayen2008}{Baayen et al., 2008}).
 
-\begin{align} \label{eq:linear_regression}
-y =
-\alpha + 
-\beta_{1}\cdot{x_1} + 
-\beta_{2}\cdot{x_2} + ... +
-\beta_{n}\cdot{x_n} + \varepsilon 
-\end{align}
+A linear mixed effects model can be written as:
 
-The intercept \(\alpha\), and the regression coefficients \(\beta_1, \beta_2,\) and \(\beta_3\) for each explanatory variable are estimated to achieve the model that best fits the data.
-Analysis of Variance (ANOVA) is a special case of logistic regression (\protect\hyperlink{ref-Chatterjee2012}{Chatterjee \& Hadi, 2012}; \protect\hyperlink{ref-Vasishth2022}{Vasishth et al., 2022}) that is one of the most common statistical tools in psychology and psycholinguistics.
-These linear regressions as shown above (Equation \ref{eq:linear_regression}) and ANOVA however, are not well suited for categorical data like response to multiple choice questions or yes/no questions, confidence ratings, etc.
-For example, in all the experiments in the current thesis, the response variables are response accuracy, given binary correct/incorrect responses.
-Output of linear regression model ranges from \(+\infty\) to \(-\infty\) while accuracy (or probability) ranges from 0 to 1.
-Additionally, simple regression models do not take into account the variability across individual participants and items.
-These problems in language sciences have been pointed out since as early as 1960s (\protect\hyperlink{ref-Clark1973}{H. H. Clark, 1973}; \protect\hyperlink{ref-Coleman1964}{Coleman, 1964}).
-They are addressed to some extent by binomial logistic regression, and for our purpose by incorporating mixed effects model to binomial logistic regression (\protect\hyperlink{ref-Baayen2008}{Baayen et al., 2008}).
-
-Below we briefly introduce binomial logistic regression and mixed effects model.
-Then we show a simple example of how binomial logistic mixed effects model is used in our data analyses.
-
-\hypertarget{binomial-logistic-regression}{%
-\section{Binomial logistic regression}\label{binomial-logistic-regression}}
-
-The response variable in the experiments in this thesis are binary.
-Participants' written response to what they hear are coded as either correct or incorrect.
-A binomial logistic regression model is best suited for such a categorical data (\protect\hyperlink{ref-Jaeger2008}{Jaeger, 2008}).
-We use the term logistic regression model and binomial logistic regression model interchangeably henceforth.
-
-As the name suggests, the output variable in a logistic regression model is in logit scale.
-The model therefore predicts logits of an outcome variable.
-Logits are \(\log\) with base \(e\), i.e.~\(\ln\).
-
-\emph{Probability} ranges from 0 to 1 only, while \emph{odds} range from 0 to \(+\infty\).
-Fitting a linear regression model with probability, or odds would assume the range to be between 0 and 1, or between 0 and \(+\infty\) respectively.
-This restricts the range, and is an incorrect assumption for a linear model.
-Therefore, in a binomial logistic regression model, log-odds are used which range from \(-\infty\) to \(+\infty\).
-
-A simple binomial logistic regression model is shown in Equation \ref{eq:simple_logistic}:
-
-\begin{align} \label{eq:simple_logistic}
-\ln(\frac{p}{1-p}) =
-\alpha + 
-\beta_{1}\cdot{x_1} + 
-\beta_{2}\cdot{x_2} + ... +
-\beta_{n}\cdot{x_n} + \varepsilon
-\end{align}
-
-This is equivalent to,
-
-\begin{align} \label{eq:logit-to-prob_long}
-p &=
-{\frac{exp(\alpha + 
-\beta_{1}\cdot{x_1} + 
-\beta_{2}\cdot{x_2} + ... +
-\beta_{n}\cdot{x_n} + \varepsilon)}
-{1 + exp (\alpha + 
-\beta_{1}\cdot{x_1} + 
-\beta_{2}\cdot{x_2} + ... +
-\beta_{n}\cdot{x_n} + \varepsilon)}}\\ \label{eq:logit-to-prob_short}
-&= {\frac{exp(\ln(\frac{p}{1-p}))}{1 + exp (\ln(\frac{p}{1-p}))}}
-\end{align}
-
-where,
-
-\begin{align} \label{eq:logiteq}
-\ln(\frac{p}{1-p}) =
-{logit}(p)
-\end{align}
-
-Log-odds of correct response obtained from Equation \ref{eq:simple_logistic} can be transformed to probability of correct response. Equations \ref{eq:logit-to-prob_short}, and \ref{eq:logiteq} provide the relationship between probability, logit (or log-odds), and odds (\(\frac{p}{1-p}\)).
-
-Some of the assumptions made for binomial logistic regression models are violated in our data.
-One of them being non-independence of observations, i.e., all data points are independent from one another.
-This assumption is violated in unbalanced design, and at times even for balanced design.
-Same participant responds to multiple trials of same experimental condition within an experiment.
-Although the design itself is balanced, after removal of outliers and/or trials which are not appropriate for comprehension measures, number of trials in analyses are unequal for each participant, item, and experimental condition.
-This introduces a bias in the model (\protect\hyperlink{ref-Jaeger2008}{Jaeger, 2008}).
-
-Another intrinsic property or feature of logistic regression is that it assumes a common mean for each predictor.
-It has been shown that this is in fact not true: the effect of a predictor can vary depending on different random variables like participants, or items.
-To account for these variances, mixed effects models are used.
-In recent days, such statistical models are frequently used and advocated for by psycholingustis and statisticians (\protect\hyperlink{ref-Meteyard2020}{Meteyard \& Davies, 2020}; \protect\hyperlink{ref-Gries2015}{Th. Gries, 2015}).
-
-\hypertarget{mixed-effects-modeling}{%
-\section{Mixed effects modeling}\label{mixed-effects-modeling}}
-
-To overcome the limitations of logistic models, like violation of assumption of non-dependence of observations, and to account for the variability in the subject and/or item related parameter, mixed effects models are used.
-Mixed effects models contain 1) both linear and logistic regressions, and 2) \emph{fixed effects} and \emph{random effects}, hence the name \emph{mixed effects}.
-Fixed effects term, e.g., levels of degradation assumes that all levels of degradation used in the experiment are independent from one another and they share a common residual variance.
-The random effects term with only varying intercept, e.g., subject as intercept, assumes that if there are 100 subjects then the mean accuracy of those 100 subjects is only a subset of possible global accuracies drawn from a set of population mean.
-When a slope, e.g., levels of predictability, is included to the random effects structure in addition to the varying intercept (e.g., subjects), then the model assumes that the effect of predictability on response accuracy varies across subjects.
-
-\hypertarget{binomial-logistic-mixed-effects-model}{%
-\section{Binomial logistic mixed effects modeling}\label{binomial-logistic-mixed-effects-model}}
-
-A binomial logistic mixed effects model with varying intercepts and slopes for items and subjects is shown in Equation \ref{eq:mixed_effects} below.
-
-\begin{align} \label{eq:mixed_effects}
-\ln (\frac{p}{1-p}) = \alpha + u_{\alpha} + w_{\alpha} +
-                      (\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\
-                      (\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + ... +
-                      (\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n} 
+\begin{align} \label{eq:mixed-effects1}
+y = \alpha + u_{\alpha} + w_{\alpha} +
+    (\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\
+    (\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + ... + \nonumber\\
+    (\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n} 
 \end{align}
 
 where,
 
 \begin{itemize}
 \tightlist
+\item
+  \(y\) is the dependent variable, like participant's response (correct vs.~incorrect)
 \item
   \(\alpha\) is the Intercept.
 \item
@@ -1104,27 +1014,135 @@ where,
   \(\boldsymbol{w} = \langle w_{\alpha}, w_{\beta_1}, w_{\beta_2}, ..., w_{\beta_n} \rangle\) : Varying intercept and slopes for random effect term like, \emph{item}.
 \end{itemize}
 
-In the next chapters of this thesis, we perform statistical analyses of the effect of predictability, speech degradation and speech rate on response accuracy.
-These variables are used in the fixed effects term.
-Subjects and items are used as random intercepts with by-subject and by-item slopes.
-The details of the models fitted to data from each experiment are given in Chapters 5, 6, and 7.
+In contrast to linear regression models, mixed effects models allow to simultaneously account for the effects of two random variables, like item and participants.
+The variance in the categorical dependent variable is also preserved which would otherwise be eliminated by averaging in linear regression models.
+We discuss these issues and the motivation to use mixed effects model in this thesis in more detail below in this chapter.
 
-We therefore use binomial logistic mixed effects model as our main statistical analysis tool in all the experiments reported in this thesis.
-We follow the recommendations of Baayen et al. (\protect\hyperlink{ref-Baayen2008}{2008}), Barr et al. (\protect\hyperlink{ref-Barr2013}{2013}), and Bates, Kliegl, et al. (\protect\hyperlink{ref-Bates2015a}{2015}).
+\hypertarget{linear-regression-and-its-limitations}{%
+\subsection{Linear regression and its limitations}\label{linear-regression-and-its-limitations}}
+
+In linear regression, a dependent variable (or an \emph{outcome}) is modeled as a function of one or more independent predictor variables (or \emph{factors}, or \emph{explanatory} variables).
+That is, an outcome \(y\) is modeled as a function of explanatory variables \(x_1, x_2, x_3..., x_n\), and an error term \(\varepsilon\).
+
+\begin{align} \label{eq:linear-regression}
+y =
+\alpha + 
+\beta_{1}\cdot{x_1} + 
+\beta_{2}\cdot{x_2} + ... +
+\beta_{n}\cdot{x_n} + \varepsilon 
+\end{align}
+
+Analysis of Variance (ANOVA) which is also a form of linear regression (\protect\hyperlink{ref-Chatterjee2012}{Chatterjee \& Hadi, 2012}; \protect\hyperlink{ref-Vasishth2022}{Vasishth et al., 2022}) compares the means and variances of two or more conditions.
+As expressed in Equation \eqref{eq:linear-regression} regression models can only model fixed effects.
+Although ANOVA can take into account one random effect at a time, it still averages out the variance in the second random effect.
+These problems of using ANOVA in language sciences have been pointed out since as early as the 1960s (\protect\hyperlink{ref-Clark1973}{H. H. Clark, 1973}; \protect\hyperlink{ref-Coleman1964}{Coleman, 1964}).
+
+\hypertarget{modeling-two-random-effects-simultaneously-and-variability-in-the-data}{%
+\subsubsection{Modeling two random effects simultaneously, and Variability in the data}\label{modeling-two-random-effects-simultaneously-and-variability-in-the-data}}
+
+As mentioned above, simple regression model including, ANOVA, does not model the effect of two random effects simultaneously which a mixed effects model does.
+In traditional ANOVA approach, researchers often resort into running two separate regression models (\protect\hyperlink{ref-Lorch1990}{Lorch \& Myers, 1990}) by averaging raw data across participants, and items.
+Averaging further eliminates the variability in the data.
+Additionally, comparing the means of a categorical variable (correct vs.~incorrect responses) even when transformed into accuracy or proportion scale is hard to interpret in a sensibly as compared to a continuous variable like reaction time (for discussion see \protect\hyperlink{ref-Jaeger2008}{Jaeger, 2008}).
+The statistical remedy for these both problems is to apply mixed effects models to our data.
+
+\hypertarget{non-independence-of-observations}{%
+\subsubsection{Non-independence of observations}\label{non-independence-of-observations}}
+
+Some of the assumptions made for regression models are violated in our data.
+One of them being non-independence of observations, i.e., all data points are independent from one another.
+This assumption is violated in an unbalanced design, and at times even for a balanced design.
+Same participant responds to multiple trials of the same experimental condition within an experiment.
+Although the design itself is balanced, after removal of outliers and/or trials which are not appropriate for comprehension measures,
+the number of trials in an analysis are unequal for each participant, item, and experimental condition.
+This introduces a bias in the regression model (\protect\hyperlink{ref-Jaeger2008}{Jaeger, 2008}).
+A mixed effects model is best suited for such unbalanced data.
+
+\hypertarget{common-mean-for-each-predictor}{%
+\subsubsection{Common mean for each predictor}\label{common-mean-for-each-predictor}}
+
+An intrinsic property or feature of linear regression model is that it assumes a common mean for each predictor.
+It has been shown that this is in fact not true in real data:
+the effect of a predictor can vary depending on random variables like participant, or item.
+Mixed effects models take into account such inter-participant and inter-item variability present in the data.
+For example, in mixed effects models,
+the random effects term with only varying intercept, e.g., participant as an intercept, assumes that if there are 100 participants then the mean accuracy of those 100 participants is only a subset of possible global accuracies drawn from a set of population mean.
+When a slope, e.g., levels of predictability, is included to the random effects structure in addition to the varying intercept (e.g., participants), then the model assumes that the effect of predictability on response accuracy varies across participants.
+For such reasons, mixed models are used and advocated for by psycholingustis and statisticians (\protect\hyperlink{ref-Barr2013}{Barr et al., 2013}; \protect\hyperlink{ref-Meteyard2020}{Meteyard \& Davies, 2020}; \protect\hyperlink{ref-Gries2015}{Th. Gries, 2015}).
+
+\hypertarget{bounded-output-variable}{%
+\subsubsection{Bounded output variable}\label{bounded-output-variable}}
+
+Linear models assume an output variable to not be bounded within a narrow range, and to be in a continuous scale.
+In our data, the output variable is binary: correct or incorrect response.
+As the name suggests, the output variable \(y\) in the binomial \emph{logistic} mixed effects model is in the \emph{logit} scale; \(\log\) with base \(e\), i.e.~\(\ln\).
+The model therefore predicts logits of the outcome variable.
+The output variables are truncated in both \emph{probability} scale and in \emph{odds} scale which range from 0 to 1 and from 0 to \(-\infty\) respectively
+Therefore, in a binomial logistic regression model, log-odds (or \emph{logits}) are used which range from \(-\infty\) to \(+\infty\), and do not violate the model assumptions regarding the range of outcome variable.
+
+Thus, Equation \eqref{eq:mixed-effects1} can also be written as:
+
+\begin{align} \label{eq:mixed-effects2}
+\ln (\frac{p}{1-p}) = \alpha + u_{\alpha} + w_{\alpha} +
+                      (\beta_{1} + u_{\beta_{1}} + w_{\beta_{1}})\cdot {x_1} + \nonumber\\
+                      (\beta_{2} + u_{\beta_{2}} + w_{\beta_{2}})\cdot {x_2} + \nonumber\\
+                      ... + (\beta_{n} + u_{\beta_{n}} + w_{\beta_{n}})\cdot {x_n} 
+\end{align}
+
+This is equivalent to,
+
+\begin{align} \label{eq:logit-to-prob_short}
+p = {\frac{exp(\ln(\frac{p}{1-p}))}{1 + exp (\ln(\frac{p}{1-p}))}}
+\end{align}
+
+where,
+
+\begin{align} \label{eq:logiteq}
+\ln(\frac{p}{1-p}) =
+{logit}(p)
+\end{align}
+
+Log-odds of correct response obtained from Equation \eqref{eq:mixed-effects2} can also be transformed into probability of correct response.
+Equations @ref(eq:logit-to-prob\_short), and \eqref{eq:logiteq} provide the relationship between probability, logits (or log-odds), and odds (\(\frac{p}{1-p}\)).
+
+We have presented the advantages of mixed effects models over linear (regression) models.
+We use binomial logistic mixed effects model as our main statistical analysis tool in all experiments reported in this thesis.
+Below we discuss how the model that best fit for our data was selected.
 
 \hypertarget{analysis-main}{%
-\section{Running mixed effects models in R}\label{analysis-main}}
+\section{Model selection and Running mixed effects models in R}\label{analysis-main}}
 
-Data preprocessing and analyses were performed in R-Studio (Version 3.6.1; R Core Team, 2019; Version 3.6.3; R Core Team 2020).
+Underlying structure of given data can be explained by different approximate statistical models.
+We intend to select a model that best fits our data.
+`Best fit' can be objectively measured by Akaike Information Criterion , Bayesian Information Criterion, and Likelihood Ratio Test among others (\protect\hyperlink{ref-Akaike1973}{Akaike, 1973}; \protect\hyperlink{ref-Schwarz1978}{Schwarz, 1978}).
+
+In this thesis,
+we first build a complex (or maximal) model by including all predictors (target word predictability, speech degradation level, speech rate),
+their interactions, and co-variates (e.g., trial number) in the fixed effects (cf. \protect\hyperlink{ref-Bondell2010}{Bondell et al., 2010}).
+The model is fitted with a maximal random effects structure that included random intercepts for each participant and item (\protect\hyperlink{ref-Barr2013}{Barr et al., 2013}).
+By-participant and by-item slopes included in the model are discussed in the Analysis sections of Chapters 5, 6, and 7.
+
+Model selection was based on the backward-selection heuristics on the fixed effects (cf. \protect\hyperlink{ref-Matuschek2017}{Matuschek et al., 2017}).
+To find the best fitting model for the data,
+non-significant higher-order interactions were excluded from the fixed-effects structure in a stepwise manner.
+Similarly, random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization (\protect\hyperlink{ref-Bates2015a}{Bates, Kliegl, et al., 2015}).
+This gave a more parsimonious model which was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameter, and iii) both item- and participant-related correlation parameters.
+The best fitting model, selected based on Akaike Information Criterion (\protect\hyperlink{ref-Grueber2011}{Grueber et al., 2011}; \protect\hyperlink{ref-Richards2011}{Richards et al., 2011}), among the parsimonious and extended models was then selected as the best fitting model for our data.
+
+Data preprocessing and analyses were performed in R-Studio (Version 3.6.1; R Core Team, 2019; Version 3.6.3; R Core Team 2020; Version 4.1.3; R Core Team, 2022).
 Accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lmerTest (\protect\hyperlink{ref-Kuznetsova2017}{Kuznetsova et al., 2017}) and lme4 (\protect\hyperlink{ref-Bates2015}{Bates, Mächler, et al., 2015}) packages.
 Binary responses (correct responses coded as 1 and incorrect responses coded as 0) for all participants were fit with a binomial logistic mixed effects model.
+Contrast coding of each factors and the model description are presented in the chapters that follow.
 
-On the data from each experiment, we fitted models with maximal random effects structure that included random intercepts for each participant and item (\protect\hyperlink{ref-Barr2013}{Barr et al., 2013}).
-By-participant and by-item slopes included in the model are discussed in the Analysis sections of Chapters 5, 6, and 7.
-Model selection was based on Akaike Information Criterion (\protect\hyperlink{ref-Grueber2011}{Grueber et al., 2011}; \protect\hyperlink{ref-Richards2011}{Richards et al., 2011}) unless otherwise stated.
-Random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization (\protect\hyperlink{ref-Bates2015a}{Bates, Kliegl, et al., 2015}).
-This gave a more parsimonious model which was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameter, and iii) both item- and participant-related correlation parameters.
-The best fitting model among the parsimonious and extended models was then selected as the optimal model for our data.
+\hypertarget{summary-1}{%
+\section{Summary}\label{summary-1}}
+
+In this chapter, we introduced the statistical tool used in the data analyses in this thesis.
+We discussed the limitations in traditional linear regression based models including ANOVA.
+To capture the variability of our data without averaging it out across participant or item,
+and to account for the effect of two random effects --- participant and item --- simultaneously,
+we fitted mixed effects models to our data.\\
+Details of each dataset corresponding to each experiment is presented in the chapters that follow.
 
 \hypertarget{chapter-attention-prediction}{%
 \chapter{Predictability effects of degraded speech are reduced as a function of attention}\label{chapter-attention-prediction}}
@@ -1510,8 +1528,8 @@ We show that task instructions affect distribution of attention to the degraded 
 This, in turn, means that when insufficient attention is given to the context, top-down predictions cannot be generated, and the facilitatory effect of predictability is substantially reduced.
 The findings of this study indicate limitations to predictive processing accounts of language comprehension.
 
-\hypertarget{summary-1}{%
-\section{Summary}\label{summary-1}}
+\hypertarget{summary-2}{%
+\section{Summary}\label{summary-2}}
 
 This chapter replicated the previous finding that semantic predictability facilitates language comprehension at moderate levels of speech degradation.
 That is, when the channel of transmission \(N\) is noisy,
@@ -2132,6 +2150,9 @@ Adams, E. M., Gordon-Hickey, S., Morlas, H., \& Moore, R. (2012). {Effect of rat
 \leavevmode\vadjust pre{\hypertarget{ref-Adams2009}{}}%
 Adams, E. M., \& Moore, R. E. (2009). {Effects of speech rate, background noise, and simulated hearing loss on speech rate judgment and speech intelligibility in young listeners}. \emph{Journal of the American Academy of Audiology}, \emph{20}(1), 28--39. \url{https://doi.org/10.3766/jaaa.20.1.3}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Akaike1973}{}}%
+Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In B. N. Petrov \& F. Csaksi (Eds.), \emph{Proceedings of the 2nd international symposium on information theory} (pp. 267--281). Akademiai Kaido.
+
 \leavevmode\vadjust pre{\hypertarget{ref-Altmann1999}{}}%
 Altmann, G. T. M., \& Kamide, Y. (1999). Incremental interpretation at verbs: restricting the domain of subsequent reference. \emph{Cognition}, \emph{73}(3), 247--264. \url{https://doi.org/10.1016/s0010-0277(99)00059-1}
 
@@ -2176,6 +2197,9 @@ Berners-Lee, T., Cailliau, R., Groff, J. F., \& Pollermann, B. (1992). {World-wi
 
 \leavevmode\vadjust pre{\hypertarget{ref-Bhandari2021}{}}%
 Bhandari, P., Demberg, V., \& Kray, J. (2021). {Semantic predictability facilitates comprehension of degraded speech in a graded manner}. \emph{Frontiers in Psychology}, \emph{3769}. \url{https://doi.org/10.3389/fpsyg.2021.714485}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bondell2010}{}}%
+Bondell, H. D., Krishna, A., \& Ghosh, S. K. (2010). Joint variable selection for fixed and random effects in linear mixed-effects models. \emph{Biometrics}, \emph{66}(4), 1069--1077.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Bowers2012}{}}%
 Bowers, J. S., \& Davis, C. J. (2012). {Bayesian just-so stories in psychology and neuroscience}. \emph{Psychological Bulletin}, \emph{138}(3), 389--414. \url{https://doi.org/10.1037/a0026450}
@@ -2456,6 +2480,9 @@ Liu, S., \& Zeng, F.-G. (2006). {Temporal properties in clear speech perception}
 \leavevmode\vadjust pre{\hypertarget{ref-Loizou1999}{}}%
 Loizou, P. C., Dorman, M., \& Tu, Z. (1999). On the number of channels needed to understand speech. \emph{The Journal of the Acoustical Society of America}, \emph{106}(4), 2097--2103. \url{https://doi.org/10.1121/1.427954}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Lorch1990}{}}%
+Lorch, R. F., \& Myers, J. L. (1990). Regression analyses of repeated measures data in cognitive research. \emph{Journal of Experimental Psychology: Learning, Memory, and Cognition}, \emph{16}(1), 149.
+
 \leavevmode\vadjust pre{\hypertarget{ref-Love2009}{}}%
 Love, T., Walenski, M., \& Swinney, D. (2009). {Slowed speech input has a differential impact on on-line and off-line processing in children's comprehension of pronouns}. \emph{Journal of Psycholinguistic Research}, \emph{38}(3), 285--304. \url{https://doi.org/10.1007/s10936-009-9103-9}
 
@@ -2482,6 +2509,9 @@ Martin, D. W., Murphy, R. L., \& Meyer, A. (1956). {Articulation reduction by co
 
 \leavevmode\vadjust pre{\hypertarget{ref-Mattys2012}{}}%
 Mattys, S. L., Davis, M. H., Bradlow, A. R., \& Scott, S. K. (2012). {Speech recognition in adverse conditions: A review}. \emph{Language and Cognitive Processes}, \emph{27}(7-8), 953--978. \url{https://doi.org/10.1080/01690965.2012.705006}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Matuschek2017}{}}%
+Matuschek, H., Kliegl, R., Vasishth, S., Baayen, H., \& Bates, D. (2017). Balancing type i error and power in linear mixed models. \emph{Journal of Memory and Language}, \emph{94}, 305--315.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Mcclelland1986}{}}%
 McClelland, J. L., \& Elman, J. L. (1986). {The TRACE model of speech perception}. \emph{Cognitive Psychology}, \emph{18}(1), 1--86. \url{https://doi.org/10.1016/0010-0285(86)90015-0}
@@ -2635,6 +2665,9 @@ Schneider, B. A., \& Pichora-Fuller, M. K. (2001). Age-related changes in tempor
 
 \leavevmode\vadjust pre{\hypertarget{ref-Scholman2020}{}}%
 Scholman, M. C., Demberg, V., \& Sanders, T. J. (2020). Individual differences in expecting coherence relations: Exploring the variability in sensitivity to contextual signals in discourse. \emph{Discourse Processes}, \emph{57}(10), 844--861.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Schwarz1978}{}}%
+Schwarz, G. (1978). Estimating the dimension of a model. \emph{The Annals of Statistics}, 461--464.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Seow2022}{}}%
 Seow, T. X. F., \& Hauser, T. U. (2022). {Reliability of web-based affective auditory stimulus presentation}. \emph{Behavior Research Methods}, \emph{54}(1), 378--392. \url{https://doi.org/10.3758/s13428-021-01643-0}
