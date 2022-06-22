@@ -17,8 +17,8 @@ knit: (function(input, ...) {
 ## thesis metadata ##
 #####################
 title: |
-  Comprehension of degraded speech: \
-  Exploring the role of attention and speed of processing in top-down prediction
+  Degraded speech comprehension: \
+  The influence of predictability, attention and speech rate
 author: Pratik Bhandari
 college: Department of Psychology
 university: Saarland University
@@ -27,7 +27,7 @@ university-logo-width: 5cm
 submitted-text: A thesis submitted for the degree of
 degree: Doctor of Philosophy
 degreedate: September 2022
-dedication: Dedicated to ...
+dedication: Dedicated to Aama-Baa
 acknowledgements: |
   `r paste(readLines("front-and-back-matter/_acknowledgements.Rmd"), collapse = '\n  ')`
 show-acknowledgements-in-toc: false
