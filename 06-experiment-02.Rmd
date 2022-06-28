@@ -104,7 +104,7 @@ However, we cannot make a firm conclusion about perceptual adaptation *per se* f
 Similarly, Obleser and colleagues [@Obleser2007; @Obleser2010; @Hartwigsen2015] also presented listeners with noise vocoded sentences (ranging from 2 to 32 channels noise vocoding) in a pseudo-randomized order but did not report the presence or absence of perceptual adaptation.
 In the above-mentioned studies, the authors did not compare participants’ task performance in a blocked design against the presentation in a pseudo-randomized block of different degradation levels to make an inference about general adaptation to degraded speech at a longer timescale and adaptation at a shorter timescale on a trial-by-trial level.
 
-#### Measurement of language comprehension
+#### Measurement of language comprehension {#chapter-6-measurement}
 \noindent
 How we measure language comprehension has rarely been guided by any specific theoretical motive in the existing literature.
 There is a discrepancy across studies in how language comprehension in degraded speech in quantified.
