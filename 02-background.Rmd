@@ -55,7 +55,7 @@ noise vocoding is also a method of distortion that is used to understand the spe
 One of the main factors that determines the intelligibility of degraded speech is the number of noise vocoding channels.[^speech-degradation-footnote]
 The higher the number of noise vocoding channels, the more is the frequency specific information available in the degraded speech,
 consequently, higher is the intelligibility compared to the speech that is degraded with lesser number of noise vocoding channels.
-For example, listeners are shown to rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech [e.g., @Sohoglu2012].
+For example, listeners are shown to rate 8 channels noise vocoded speech to be more intelligible and less effortful compared to 2 channels noise vocoded speech [e.g., @Obleser2011; @Sohoglu2012].
 In our studies, we create noisy channel of different levels of degradation and intelligibility by noise vocoding the speech signal through 1, 4, 6 and 8 channels.<!-- which are based on prior studies on similar paradigm using similar methods and materials.-->
 The details of the artificial distortions are described in Chapter \@ref(chapter-methods).
 
@@ -71,10 +71,10 @@ then we discuss the role of top-down predictive processes in comprehension of de
 
 Research from various domains of cognitive (neuro)science, like emotion, vision, odor, and proprioception [the sensation of one's body position and movement, @Tuthill2018], has shown that perception and cognition can be described under the framework of predictive processing; they primarily operate by predicting upcoming events [@Stadler2012; @Clark2013; @Seth2013; @Marques2018; cf. @Bowers2012; @Jones2011; @Pierce1987].
 Human language comprehension too has been claimed to be predictive in nature from as early as mid-twentieth century [e.g., @Mccullough1958; @Miller1951; @Morton1964]<!-- @Bruce1958 for context in noise -->
-which in recent days has received an overwhelming support from studies in computational linguistics, psycholinguistics and cognitive neuroscience of language [e.g., @Delong2005; @Demberg2013; @Heyselaar2021; @Lupyan2015; @Pickering2018].
+which in recent days has received an overwhelming support from computational linguistics, psycholinguistics and cognitive neuroscience of language [e.g., @Delong2005; @Demberg2013; @Heyselaar2021; @Lupyan2015; @Pickering2018].
 Empirical evidence from a number of studies suggests that readers and listeners predict upcoming words in a sentence when the words are predictable from the preceding context [for reviews, @Staub2015; @Kuperberg2016; @Nieuwland2019].
-For instance, predictable words are read faster and are skipped compared to the words that are less predictable from the context [@Ehrlich1981; @Frisson2005; @Staub2011].
-Applying visual world paradigm, studies have demonstrated that individuals show anticipatory eye movements towards a picture of an object (e.g., *a cake*) that is predictable from the preceding sentence context (e.g., *The boy will eat ...*) even before hearing the final target word [@Altmann1999; @Kamide2003; @Ankener2018].
+For instance, predictable words are skipped and read faster compared to the words that are less predictable from the context [@Ehrlich1981; @Frisson2005; @Staub2011].
+Applying visual world paradigm, studies have demonstrated that individuals show anticipatory eye movements towards a picture of an object (e.g., *cake*) that is predictable from the preceding sentence context (e.g., *The boy will eat a...*) even before hearing the final target word [@Altmann1999; @Kamide2003; @Ankener2018].
 Similar results have been observed in virtual world set-up with naturalistic scenes [e.g., @Heyselaar2021].
 The sentence-final word in a highly constraining sentence (e.g., *"She dribbles a ball."*) elicits a smaller N400 amplitude[^n400-footnote] than a less constraining sentence [e.g., *"She buys a ball."*, @Federmeier2007; @Kutas1984].
 <!-- N400 is a negative-going EEG component that peaks around 400 ms post-stimulus, and it is considered as a neural marker of context-based semantic unexpectedness [@Kutas2011]. -->
@@ -87,7 +87,7 @@ That is, individuals use the context available to them to generate predictions w
 
 We have discussed above that individuals make predictions about not-yet-encountered linguistic units based on available context information as a sentence unfolds:
 Top-down predictive and bottom-up perceptual processes interact dynamically in language comprehension.
-When the bottom-up perceptual input is less reliable, for example, in an adverse listening condition, it has been shown that listeners rely more on top-down predictions by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also @Corps2020].
+When the bottom-up perceptual input is less reliable, for example, in an adverse listening condition, it has been shown that listeners rely more on top-down processes by narrowing down the predictions to smaller sets of semantic categories or words [e.g., @Strauss2013; see also @Corps2020].
 Obleser and colleagues [@Obleser2007; @Obleser2010], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signal by passing it through various numbers of noise vocoding channels ranging from 1 to 32 in a series of behavioral and neuroimaging studies [see also @Hunter2018].
 They found that semantic predictability facilitated language comprehension only at moderate levels of speech degradation.
 That is, participants relied more on sentence context when the speech signal was degraded though *intelligible enough*, than when it was not degraded, or when it was highly degraded.
@@ -97,7 +97,7 @@ the word recognition accuracy was similar across both levels of sentence predict
 @Sheldon2008b estimated that for both younger and older adults, the number of noise vocoding channels required to achieve 50\% accuracy varied as a function of sentence context.
 To achieve the same level of accuracy as highly constraining sentences, a higher number of channels (i.e., more bottom-up information) was required in less constraining sentences.
 They also concluded that when the speech is degraded, word recognition is facilitated by predictability and sentence context.
-Taken together, these studies conclude that at moderate levels of degradation, participants rely more on the top-down predictions generated by the sentence context and less on the bottom-up perceptual processing of unclear, less reliable, and degraded speech signal [@Obleser2014].
+Taken together, these studies conclude that at moderate levels of degradation, participants rely more on the top-down predictions generated by a sentence context and less on the bottom-up perceptual processing of unclear, less reliable, and degraded speech signal [@Obleser2014].
 <!--Reliance on prediction results in higher word recognition accuracy for target words high cloze probability than for target words with low cloze probability.
 In the case of a heavily degraded speech signal, participants may not be able to understand the sentence context and, therefore, be unable to form predictions of the target word, or their cognitive resources may already be occupied by decoding the signal, leaving little room for making predictions.
 Thus, there is no differential effect of levels of sentence predictability.
@@ -160,10 +160,12 @@ By manipulating listeners' attention allocation to parts of speech stream, we sh
 We manipulate listeners' attention to parts of speech stream,
 and show that listeners' do not form top-down predictions when attentional resources are not allocated to context information in a sentence.-->
 Similarly, from @Pickering2018's *prediction-by-production* account of predictive language processing,
-it follows that comprehenders make predictions at a slow presentation rate, but not at a fast presentation rate.
+it follows that comprehenders make predictions (about word-form) at a slow presentation rate, but not at a fast presentation rate.
 However, the findings on the influence of speech rate on the facilitatory effect of predictability has been equivocal both in clear speech comprehension as well as in degraded speech comprehension [e.g., @Aydelott2004; @Goy2013; @Iwasaki2002; @Winn2021b].
 In this thesis, we investigate the effect of both fast and slow speech on the predictability effect in degraded speech comprehension.
-We propose that @Pickering2018's prediction-by-production account can be enriched by incorporating the instances of varying predictability effects at fast and slow speech rate in degraded speech comprehension.
+We demonstrate that there is a scope for current theories of predictive language processing to` incorporate
+the instances of varying predictability effects at fast and slow speech rate,
+and the effects of attention in degraded speech comprehension.
 
 ## Adaptation to degraded speech {#background-adaptation}
 
@@ -196,13 +198,13 @@ Similarly, Obleser and colleagues [@Obleser2007; @Obleser2010; @Hartwigsen2015] 
 <!-- In the above-mentioned studies, the authors did not compare participants’ task performance in a blocked design against the presentation in a pseudo-randomized block of different degradation levels to make an inference about general adaptation to degraded speech at a longer timescale and adaptation at a shorter timescale on a trial-by-trial level. -->
 On the one hand, repeated exposure is shown to lead to perceptual adaptation to degraded speech.
 On the other hand, uncertainty about the speech quality is speculated to impair word recognition.
-Additionally, word-form predictions --- that the listeners make in the experiments reported in this thesis --- are shown to be inefficient in facilitating adaptation to degraded speech [@Corps2020].
+Additionally, word-form predictions --- that the listeners are encouraged to make in the experiments reported in this thesis [^word-form-prediction] --- are shown to be inefficient in facilitating adaptation to degraded speech [@Corps2020].
 Therefore, we investigate the role of certainty about next-trial speech degradation level and its semantic property (i.e., target word predictability) in perceptual adaptation.
 <!--Although higher level lexical-semantic property of speech is assumed to drive perceptual adaptation,
 the effect of the change in semantic property, namely predictability, on adaptation is unclear.
 Chapter 5 addresses this question, and examines the role of (un)certainty about next-trial speech quality and its semantic feature in perceptual adaptation.-->
 We argue that a trial-by-trial variation in higher level semantic feature of speech hinders listeners' perceptual system to retune itself to adapt to the lower level auditory features of the degraded speech [cf. @Nahum2008].
-In contrast to prior studies, we show that listeners do not adapt to degraded when despite a repeated exposure to the same degraded speech
+In contrast to prior studies, we show that listeners do not adapt to degraded despite a repeated exposure to the same degraded speech
 as long as its semantic predictability is uncertain.
 
 ## Summary
@@ -210,7 +212,7 @@ as long as its semantic predictability is uncertain.
 In this chapter, we provided an overview of the concepts that will be repeated in the following chapters.
 We introduced the concept of speech distortion and degradation.
 Digital signal processing methods used in this process will be discussed in Chapter \@ref(chapter-methods) (Section \@ref(speech-processing)).
-Importantly, we provided an overview of how predictive language processing aids in language comprehension,
+Importantly, we provided an overview of how predictive language processing aids language comprehension,
 as well as its limitations.
 We discussed perceptual adaptation to degraded speech, and the role of uncertainty about next-trial in adaptation.
 At each step, we presented the motivation behind the studies in this thesis,
@@ -220,3 +222,4 @@ In the next chapter, we will discuss the methods that are common in all the expe
 [^speech-degradation-footnote]: Throughout this thesis, speech distortion by noise vocoding is referred to as speech degradation, or spectral degradation of speech.
 [^n400-footnote]: N400 is a negative-going EEG component that peaks around 400 ms post-stimulus, and it is considered as a neural marker of context-based semantic unexpectedness [@Kutas2011].
 [^surprisal-footnote]: Surprisal is a measure of the change in probability mass (or simply put, the change in expectation) as predictions are proven wrong with an encounter of new words in a sentence, discourse, etc. [@Hale2001].
+[^word-form-prediction]: The possibility of the absence of word-form prediction in the experiments in this thesis is discussed in Chapter \@ref(chapter-speech-rate).

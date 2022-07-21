@@ -19,7 +19,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 One of the features that distinguishes us, humans, from other species is our ability to communicate using verbal language [@Hauser2002; @Pinker2005a; @Lieberman2013].
 We speak. We listen. We understand.
 This seemingly straightforward path of communication goes through plenty of hindrances.
-One of them is an adverse listening condition.
+One of them is an adverse listening condition caused by background noise and speech distortion [e.g., @Chen2011; @Fontan2015].
 Human comprehenders rely on top-down predictive processes and bottom-up auditory processes to understand spoken language.
 Language comprehension in adverse listening conditions is aptly described by the noisy channel model of communication [@Shannon1948; @Levy2008; @Gibson2013; @Gibson2019]
 <!--based on which we study the interaction between the top-down and bottom-up processes involved.-->
@@ -94,7 +94,7 @@ That is, human language comprehension is predictive in nature such that listener
 In a noisy channel, listeners' engagement in predictive processing is influenced by the noise in the signal [@Sheldon2008a; @Obleser2007].
 <!-- They put different weight on the prior knowledge and context information, and on the auditory information [@Sheldon2008a; @Obleser2007]. -->
 
-Based on the theoretical accounts of the noisy channel model of communication and the predictive language processing [@Hale2001; @Levy2008; @Mcclelland1986; @Friston2020; @Norris2016; @Pickering2018],
+Based on the theoretical accounts of the noisy channel model of communication and the predictive language processing [@Christiansen2015; @Ferreira2016; @Friston2020; @Hale2001; @Levy2008; @Mcclelland1986; @Norris2016; @Pickering2018],
 this thesis investigates the interaction between top-down predictive and bottom-up auditory processes.
 We examine how top-down predictive processes facilitate language comprehension in a noisy channel that is created by [acoustic degradation of speech](#speech-processing). <!-- by [digital signal processing](#speech-processing).-->
 We examine the nature of predictability effects in a noisy channel.
@@ -304,7 +304,7 @@ The list of presentations and publications that report on parts of the research 
 
 *   Bhandari, P., Demberg, V., & Kray, J. (2022). Predictability effects are reduced as a function of attention. *Annual Convention of American Psychological Association*, 2022-05-25–2022-05-28.
 
-*   Bhandari, P., Demberg, V., & Kray, J. (2021). Semantic predictability facilitates comprehension of degraded speech in a graded manner. *Frontiers in Psychology*, 3769.
+*   Bhandari, P., Demberg, V., & Kray, J. (2021). Semantic predictability facilitates comprehension of degraded speech in a graded manner. *Frontiers in Psychology*, *12*, 714485.
 
 *   Bhandari, P., Demberg, V., & Kray, J. (2021). Predictability facilitates comprehension but not adaptation to degraded speech in a graded manner. *Conference of the Society for the Neurobiology of Language*, 2021-10-05–2021-10-08.
 
