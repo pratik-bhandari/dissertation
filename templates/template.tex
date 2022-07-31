@@ -35,6 +35,8 @@
 %%%%% ADDING LATEX PACKAGES
 % add hyperref package with options from YAML %
 \usepackage[pdfpagelabels]{hyperref}
+% handle long urls
+\usepackage{xurl}
 % change the default coloring of links to something sensible
 \usepackage{xcolor}
 
@@ -151,17 +153,6 @@ $endif$
 \fancy$ordinary-page-number-foot-or-head$[$ordinary-page-number-position$]{\emph{\thepage}} %regular pages
 \fancypagestyle{plain}{\fancyhf{}\fancy$chapter-page-number-foot-or-head$[$chapter-page-number-position$]{\emph{\thepage}}} %chapter pages
 
-% JEM fix header on cleared pages for openright
-\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
-   \hbox{}
-   \fancy$ordinary-page-number-foot-or-head$[$ordinary-page-number-position$]{}
-   \newpage
-   \if@twocolumn\hbox{}\newpage
-   \fi
-   \fancy$running-header-foot-or-head$[$running-header-position-leftmark$]{\emph{\leftmark}} 
-   \fancy$running-header-foot-or-head$[$running-header-position-rightmark$]{\emph{\rightmark}} 
-   \fi\fi}
-
 
 %%%%% SELECT YOUR DRAFT OPTIONS
 % This adds a "DRAFT" footer to every normal page.  (The first page of each chapter is not a "normal" page.)
@@ -177,8 +168,9 @@ $endif$
 
 % for line wrapping in code blocks
 $if(line-wrapping-in-code)$
+\usepackage{fancyvrb}
 \usepackage{fvextra}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true, breakanywhere=true, commandchars=\\\{\}}
 $endif$
 
 % This highlights (in blue) corrections marked with (for words) \mccorrect{blah} or (for whole
