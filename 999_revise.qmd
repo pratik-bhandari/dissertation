@@ -1,0 +1,23 @@
+Predictability facilitates comprehension of degraded speech.
+But degraded speech is effortful to understand, and it drains attentional resources.
+Listeners can follow external linguistic cue and attend to a part of speech stream as it unfolds.
+In degraded speech comprehension, there is a trade-off:
+	Attend to the entire sentence, and form predictions about target word
+	Attend only to the target word
+	
+***
+[phd thesis of @Kaufeld2021]:
+As Martin (2016) points out, this optional capacity to make predictions can be implemented within a framework of cue integration. Bottom-up activity cor- responds to integrated cues and their reliabilities, which are compared against top-down predictive activations.
+The predictive activation itself acts as a cue for further processing and is therefore associated with a specific cue reliability (and thus weight) of its own, which is normalised against the reliability of all other available and relevant cues. Crucially, predictive activation does not necessarily have to occur: If the available lower-level cues to base predictions on are not reliable enough, or simply too sparse, no anticipatory language processing will be initiated.
+
+***
+
+Read @Lerner2014
+
+Add Vera's explanation
+
+Find the citation for prediction is time consuming
+
+***
+@Aydelott2004:
+> Further, almost all on-line measures of the effects of perceptual degradation on semantic priming have been conducted in the visual modality, and have focused on degradations of the target word as opposed to the context (e.g., Durgunoglu, 1988; Stanovich & West, 1983; Stolz & Neely, 1995).

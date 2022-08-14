@@ -27,57 +27,79 @@ schematically represented in Figure \ref{fig:noisy-channel} below.
 
 ```{r noisy-channel, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Schematic representation of the noisy channel model of communication", out.width="90%"}
 
-knitr::include_graphics("figures/materials/noisy-channel.tiff")
+knitr::include_graphics("figures/materials/noisy-channel.pdf")
 
 ```
 
 The speaker produces an utterance $u_i$ with a meaning $m_i$ that she intends to send.
 The utterance is encoded into a signal and is sent through a channel of transmission.
-During transmission, noise disrupts the signal.
+During transmission, some external noise disrupts the signal.
 The receiver (e.g., a listener) perceives the signal as $u_p$ and decodes it to recover the meaning as $m_p$.
-The human language comprehension system is assumed to be engaged in optimal Bayesian decoding that uses all the sources of information
-(e.g., a prior probability of plausible utterances, linguistic and world knowledge, context information)
+The human language comprehension system is assumed to be engaged in an optimal Bayesian decoding that uses all the sources of information
+(e.g., a prior semantic knowledge, context information, world knowledge, etc.)
 and infers the intended meaning from the perceived utterance that it receives from a noisy channel of communication [@Levy2008; @Gibson2013; cf. @Markman2011].
-<!--Given the perceived utterance $u_p$, the listeners assigns a probability, $P(u_i|u_p)$, to a particular hypothesized utterance $u_i$. <!--which is not directly available to the listener.
-Using Bayes' rule, $P(u_i|u_p)$ can be re-written as:
-
+<!--
 ```{=tex}
 \begin{align} \label{eq:noisy-channel1}
 P(u_i|u_p) \propto P(u_i) P_N(u_p|u_i)
 \end{align}
 ```
-
 In Equation \ref{eq:noisy-channel1}, $P(u_i)$ is the prior probability that a speaker intends to utter $u_i$.
 It represents the listener's knowledge about the world and language, and her context information.
 Similarly, $P_N(u_p|u_i)$ is the likelihood of $u_p$ given $u_i$.
 The likelihood term $P_N(u_p|u_i)$ represents the probability of $u_i$ being corrupted to $u_p$ in the noisy channel during the process of transmission.-->
-For successful communication to take place, the message recovered by the listener ($m_p$) must be approximately equal to the message intended to be sent by the speaker ($m_i$).
-Therefore, the goal of the listener is to identify the message from the perceived utterance [@Demberg2018].
-<!-- The listener can maximize the estimate of the correct identification of the message by taking into account the noise in the signal as well as the prior probability of the speaker uttering the signal $u_i$. -->
-This corresponds to estimating the likelihood of identifying the message ($m_p$) from the perceived signal/utterance ($u_p$) given the noisy channel ($N$).
-In this thesis, we approximate this likelihood to be:
+
+For successful communication to take place, the message recovered by the listener must be approximately equal to the message intended to be sent by the speaker.
+Let's take an example.
+X sees a spherical object flying towards Y.
+So, she intends to warn him about it: a "spherical object which is played by two teams of 11 players each in a big playground" is about to hit Y.
+To convey this message, X utters BALL.
+Due to an external noise, X's (i.e., the speaker's) utterance is distorted, so Y (i.e., the listener) perceives the utterance as HALL.
+The listener then interprets that the speaker's message is intended to point him to the "building where lectures take place in their university" which they were trying to find.
+(In this case of unsuccessful communication, or due to the listener wrongly identifying the intended message of the speaker, Y gets hit by a ball.)
+
+We assume that the goal of a listener is to identify the message $m_i$ that is most likely from the perceived utterance $u_p$, taking into account the external noise ($N$), and the prior likelihood of the speaker uttering $u_i$.
+This can be formally expressed as:
 
 \begin{align} \label{eq:noisy-channel2}
-\hat{m_p} &= \argmax_{m_p} P(m_p | u_p, N)
+\hat{m_p} &= \argmax_{m_p} P(m_p,u_p,N,u_i,m_i)
 \end{align}
 
-From Equation \@ref(eq:noisy-channel2), we can derive the following Equation \@ref(eq:noisy-channel3).
+These sequence of events from the intended message $m_i$ to the perceived message $m_p$ can be graphically represented in a Bayesian network [@Darwiche2010; @Bruineberg2021; @Pearl1985] in Figure \ref{fig:bayesian-network} (cf. Figure \ref{fig:noisy-channel}).
+
+```{r bayesian-network, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Bayesian network representation of the noisy channel model of communication", out.width="90%"}
+
+knitr::include_graphics("figures/materials/bayesian-network.pdf")
+
+```
+
+Figure \ref{fig:bayesian-network} models the dependencies among the events,
+which shows that the external noise and the speaker's utterance are *independent*,
+however, the listener's perception of the uttered message is also dependent on the noise.
+The communication in the noisy channel, represented as a Bayesian network, can now be expressed as:
+
+<!--\begin{align} \label{eq:noisy-channel3}
+\hat{m_p} &= \argmax_{m_p} P(m_p,u_p,N,u_i,m_i) \nonumber\\ 
+          &= \argmax_{m_p} P(m_p | u_p) * P(u_p|u_i, N) * P(u_i | m_i) * P(m_i)
+\end{align}-->
 
 \begin{align} \label{eq:noisy-channel3}
-\hat{m_p} &= \argmax_{m_p} P(m_p | u_p) * P(u_p | u_i, N) * P(u_i , m_i)
+\hat{m_p} &= \argmax_{m_p} P(m_p | u_p) * P(u_p|u_i, N) * P(u_i | m_i) * P(m_i)
 \end{align}
+
+Equation \@ref(eq:noisy-channel3) can be interpreted easily from its corresponding representation in Figure \ref{fig:bayesian-network}.
 
 It shows:
 
-  - $P(m_p | u_p)$: the probability of inferring the meaning $m_p$ from the perceived utterance $u_p$
-  - $P(u_p|u_i, N)$: bottom-up auditory information, i.e., the probability of the listener hearing a particular utterance $u_p$ given that the speaker has uttered an utterance $u_i$ in the noisy channel $N$
-  - $P(u_i,m_i)$: prior information (e.g., top-down semantic knowledge), i.e., the joint probability of the utterance $u_i$ and its intended meaning $m_i$ by the speaker
+  - $P(m_p | u_p)$: the probability of inferring a meaning $m_p$ (e.g., a building where lectures take place) from a perceived utterance $u_p$ (e.g. /hall/)
+  - $P(u_p|u_i, N)$: bottom-up auditory information, i.e., the probability of the listener hearing a particular utterance $u_p$ (e.g., /hall/) given that the speaker has uttered an utterance $u_i$ (e.g., /ball/) in the noisy channel $N$ (e.g., background noise, signal distortion, etc.)
+  - $P(u_i|m_i)P(m_i)$: prior information (e.g., top-down semantic knowledge, information about the speaker, etc.), i.e., the probability of a speaker uttering $u_i$ with an intended message $m_i$ with the probability that the intended message is $m_i$
 
 The channel of transmission can become noisy due to factors like background noise present in a conversation,
 a poor signal transmission of a telephone call that distorts the speaker's speech,
 hearing loss of a listener,
 hearing aid or cochlear implant worn by a listener, and so on.
-To understand speech in such a noisy channel of communication, a listener puts different weights on the distorted bottom-up auditory input $P(u_p|u_i, N)$ vs her prior information $P(u_i, m_i)$ (e.g., knowledge about the world, context information, etc.).
+To understand speech in such a noisy channel of communication, a listener puts different weights on the distorted bottom-up auditory input $P(u_p|u_i, N)$ vs her prior information $P(u_i|m_i)P(m_i)$ (e.g., knowledge about the speaker, world, context information, etc.).
 
 Studies in clean speech comprehension and reading comprehension have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events that are yet to be encountered.
 
@@ -117,8 +139,8 @@ will help garner evidence in the favor of this *effect of interest*.
 It will also provide a reliable foundation to test if (and how) other factors (e.g., speed of information processing) influence and interact with the facilitatory effect of predictability.
 
 (2)   **Nature of prediction**\
-There are at least two schools of thought which argue that prediction is either all-or-nothing or probabilistic in nature [see @Coltheart2004; @Kuperberg2016; @Luke2016].
-These debates are, however, centered on reading comprehension and clean speech comprehension.
+There are at least two schools of thought which argue that prediction is either all-or-nothing or probabilistic in nature [@Coltheart2004; @Kuperberg2016; @Luke2016].
+These debates are, however, centered around reading comprehension and clean speech comprehension.
 The discussion about the nature of prediction in a noisy channel like degraded speech is sparse.
 Specifically, in degraded speech comprehension, only one study has empirically investigated the theoretical postulation that prediction is restricted only for highly predictable sentence endings [@Strauss2013].
 <!-- A limited number of studies have attempted to examine the form vs word level prediction, and only one study has postulated the nature of prediction (e.g., graded vs all-or-nothing) with empirical support [@Corps2020; @Strauss2013]. -->
@@ -295,29 +317,34 @@ The source that provided funding to conduct the research presented in this thesi
 Some of the findings reported in this thesis are presented and published, in part, elsewhere as a means of dissemination of scientific findings.
 The list of presentations and publications that report on parts of the research described in this thesis is outlined below.
 
+-   Bhandari, P., Demberg, V., & Kray, J.
+    (*in preparation*) Speaking fast and slow: How speech rate affects contextual facilitation in degraded speech comprehension.
 
-*   Bhandari, P., Demberg, V., & Kray, J. (*in preparation*) Speaking fast and slow: How speech rate affects contextual facilitation in degraded speech comprehension.
+-   Bhandari, P., Demberg, V., & Kray, J.
+    (*under review*) Predictability effects in degraded speech comprehension are reduced as a function of attention.
 
-*   Bhandari, P., Demberg, V., & Kray, J. (*under review*) Predictability effects in degraded speech comprehension are reduced as a function of attention.
+-   Bhandari, P., Demberg, V., & Kray, J.
+    (2022).
+    The effect of speech rate in comprehension of degraded speech.
+    *International Max Planck Research School (IMPRS) Conference*, 2022-06-01--2022-06-03.
 
-*   Bhandari, P., Demberg, V., & Kray, J. (2022). The effect of speech rate in comprehension of degraded speech. *International Max Planck Research School (IMPRS) Conference*, 2022-06-01–2022-06-03.
+-   Bhandari, P., Demberg, V., & Kray, J.
+    (2022).
+    Predictability effects are reduced as a function of attention.
+    *Annual Convention of American Psychological Association*, 2022-05-25--2022-05-28.
 
-*   Bhandari, P., Demberg, V., & Kray, J. (2022). Predictability effects are reduced as a function of attention. *Annual Convention of American Psychological Association*, 2022-05-25–2022-05-28.
+-   Bhandari, P., Demberg, V., & Kray, J.
+    (2021).
+    Semantic predictability facilitates comprehension of degraded speech in a graded manner.
+    *Frontiers in Psychology*, *12*, 714485.
 
-*   Bhandari, P., Demberg, V., & Kray, J. (2021). Semantic predictability facilitates comprehension of degraded speech in a graded manner. *Frontiers in Psychology*, *12*, 714485.
-
-*   Bhandari, P., Demberg, V., & Kray, J. (2021). Predictability facilitates comprehension but not adaptation to degraded speech in a graded manner. *Conference of the Society for the Neurobiology of Language*, 2021-10-05–2021-10-08.
+-   Bhandari, P., Demberg, V., & Kray, J.
+    (2021).
+    Predictability facilitates comprehension but not adaptation to degraded speech in a graded manner.
+    *Conference of the Society for the Neurobiology of Language*, 2021-10-05--2021-10-08.
 
 <!-- *   Bhandari, P., Demberg, V., & Kray, J. (2021). Older adults make equal use of predictability in comprehension of degraded speech as younger adults do. *6th Annual Conference Aging and Cognition*, Online (Poster) -->
 
-*   Bhandari, P., Demberg, V., & Kray, J. (2021). Predictability facilitates comprehension of degraded speech in a graded manner. *Annual Meeting of Cognitive Neuroscience Society*, 2021-03-13–2021-03-16.
+-   Bhandari, P., Demberg, V., & Kray, J. (2021). Predictability facilitates comprehension of degraded speech in a graded manner. *Annual Meeting of Cognitive Neuroscience Society*, 2021-03-13--2021-03-16.
 
 <!--*   Bhandari, P., Demberg, V., & Kray, J. (2019). Age differences in language comprehension: Older adults ‘predict more’ in a challenging listening condition. *Rational Approaches in Language Science*, Saarbrücken, Germany (Poster)-->
-
-<!--
-The goal of the listener is to estimate $\hat{m_p}$ which is the meaning of the perceived utterance that is highly likely (denoted by the $argmax$ function in Equations \ref{eq:noisy-channel2} and \ref{eq:noisy-channel3}) given the perceived signal and the noisy channel.
-
-\begin{align} \label{eq:noisy-channel2}
-\hat{m_p} &= \argmax_{m_p} P(m_p | u_p, N)\\ \label{eq:noisy-channel3}
-\hat{m_p} &= \argmax_{m_p} P(m_p | u_p) * P(u_p|u_i, N) * P(u_i | m_i) * P(m_i)
-\end{align}
