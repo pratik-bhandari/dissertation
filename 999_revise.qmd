@@ -21,3 +21,10 @@ Find the citation for prediction is time consuming
 ***
 @Aydelott2004:
 > Further, almost all on-line measures of the effects of perceptual degradation on semantic priming have been conducted in the visual modality, and have focused on degradations of the target word as opposed to the context (e.g., Durgunoglu, 1988; Stanovich & West, 1983; Stolz & Neely, 1995).
+
+***
+Phoneme restoration : Use of top-down in adverse listening condition; see Samuel2011
+
+***
+
+Are 'LP, fast speech' failed predictions? Failed predictions are costly. @Husband2020. @VanPenteen2012
