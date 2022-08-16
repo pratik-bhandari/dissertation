@@ -126,7 +126,7 @@ By manipulating different factors of top-down as well as bottom-up processes (e.
 we examine their role in aiding (or interfering) the comprehension of degraded speech.
 While doing so, we address the following research goals.
 
-## Research goals
+## Research goals {#research-goals}
 
 (1)   **Replication of the predictability effect in a noisy channel**\
 Almost all the disciplines of cognitive science --- anthropology, computer science, linguistics, neuroscience, and psychology --- are suffering the so-called replication crisis [@Sanderson2008; @OSC2015; @Ebersole2016; @Cockburn2020; @Minocher2021].

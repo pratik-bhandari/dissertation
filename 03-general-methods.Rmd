@@ -38,11 +38,31 @@ All sentences were in present tense consisting of pronoun, verb, determiner, and
 These sentences were in Subject-Verb-Object form (e.g., *Er fängt den Ball*. EN: He catches the ball.).
 Some of these sentences were taken from @Obleser2010.
 For each sentence, cloze probability ratings were collected from a group of young adults (n = 60; age range = 18 – 30 years).
-Mean cloze probabilities were 0.022 (SD = 0.027; range = 0.00 – 0.09) for low-predictability sentences,
-0.274 (SD = 0.134; range = 0.1 – 0.55) for medium-predictability sentences,
-and 0.752 (SD = 0.123; range = 0.56 – 1.00) for high-predictability sentences.
-The distribution of cloze probability across low-, medium-, and high-predictability sentences is shown in Figure \@ref(fig:cloze-distribution),
-and the cloze probability for individual sentence is shown in Appendix A.
+Mean cloze probabilities of low, medium, and high probability sentences are shown in Table \@ref(cloze-table) and
+<!--Mean cloze probabilities were 0.022 (SD = 0.027; range = 0.00 – 0.09) for low predictability sentences,
+0.274 (SD = 0.134; range = 0.1 – 0.55) for medium predictability sentences,
+and 0.752 (SD = 0.123; range = 0.56 – 1.00) for high predictability sentences.-->
+the distribution of cloze probability across low, medium, and high predictability sentences is shown in Figure \@ref(fig:cloze-distribution).
+The cloze probabilities of the target words in each sentence is shown in Appendix A.
+
+\begin{table}[ht]
+\begin{center}
+\caption{Cloze probabilities of high, medium and low predictability sentences} 
+\label{cloze-table} 
+\vskip 0.12in
+\begin{tabular}{c c c}
+\toprule
+ & \multicolumn{2}{c}{Cloze probability} \\
+\cmidrule(l){2-3}
+Predictability & Mean $\pm$ SD & Range \\
+\midrule
+Low & 0.022 $\pm$ 0.027 & 0.00 – 0.09 \\
+Medium & 0.274 $\pm$ 0.134 & 0.1 – 0.55 \\
+High & 0.752 $\pm$ 0.123 & 0.56 – 1.00 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
 
 ```{r cloze-distribution, eval=TRUE, echo=FALSE, fig.align='center', fig.cap="Distribution of cloze probability ratings of target words in low, medium and high predictability sentences", out.width="90%"}
 knitr::include_graphics("figures/materials/cloze-distribution.jpg")
@@ -66,7 +86,7 @@ The frequency bands are analogous to the electrodes of cochlear implant [@Shanno
 The amplitude envelope, i.e., the fluctuations of amplitude, within each frequency band is extracted and the spectral information within it is replaced by noise.
 This makes the vocoded speech difficult to understand although temporal characteristics and periodicity of perceptual cues are preserved [@Rosen1999].
 
-The spectral degradation conditions of 1, 4, 6, and 8 channels were achieved for each of the 360 recorded sentences using a customized script originally written by @Darwin2005 in Praat software.
+The spectral degradation conditions of 1, 4, 6, and 8 channels were achieved for each of the 360 recorded sentences using a customized script originally written by @Darwin2005 in Praat software [@Praat2001].
 The speech signal was divided into 1, 4, 6, and 8 frequency bands between 70 and 9,000Hz.
 The boundary frequencies were approximately logarithmically spaced following cochlear-frequency position functions [@Erb2014; @Greenwood1990; @Rosen1999].
 The amplitude envelope of each band was extracted and applied to band-pass filtered white noise in the same frequency ranges;
@@ -94,7 +114,8 @@ knitr::include_graphics(rep(c("figures/materials/aufgabe_4bands.png",
 
 ```{=tex}
 \begin{table}[H]
-\begin{center} 
+\begin{center}
+\tiny
 \caption{Boundary frequencies (in Hz) for 1, 4, 6 and 8 channels noise-vocoding conditions} 
 \label{frequencies} 
 \vskip 0.12in
@@ -115,22 +136,44 @@ Number of channels     &    Boundary frequencies \\
 \end{table}
 ```
 
+The main motivation to degrade speech signal by noise-vocoding is two fold:
+On the practical side, noise-vocoding simulates the frequency selectivity with cochlear implant or sensory-neural hearing loss.
+This provides an insight to the speech perception and language comprehension in special population (older adults with hearing loss, patients with cochlear implants).
+On the experimental side, noise-vocoding preserves the temporal periodicity cues of the speech;
+we can investigate the importance of specific suprasegmental cues in speech perception.
+Noise-vocoding reduces the fine structure cues that carry the pitch-related suprasegmental information,
+and allows the study of temporal amplitude envelope cues, which carry the suprasegmental information involved in lexical processing;
+noise-vocoding preserves these cues.
+Most importantly, it allows a fine-grained control over speech intelligibility by varying the number of vocoder channels.
+
 #### Speech compression and expansion {#compression-expansion}
 
+Temporal compression and expansion is used as a method to simulate fast and slow speech,
+to study the effect of acoustic degradation (which is the change in speech rate) and increase or decrease in information flow.
 As early as the mid-twentieth century, investigators have reported that intelligibility does not drop significantly when speech is speeded up to 2 times the normal speech rate [e.g., @Garvey1953].
 Speech rate was increased by chopping physical tapes.
-Digital algorithms like pitch-synchronous overlap-add technique [PSOLA, @Charpentier1986; @Moulines1990] developed in the 1980s and later [overlap-add technique based on waveform similarity, @Verhelst1993] now allow us to speed up and slow down the speech rate in a controlled fashion.
-
+Digital algorithms like pitch-synchronous overlap-add technique [PSOLA, @Charpentier1986; @Moulines1990] developed in the 1980s and later [e.g., @Verhelst1993] now allow us to speed up and slow down the speech rate in a controlled fashion.
 In Chapter 7, we used Praat software that utilizes uniform time-compression algorithm (PSOLA) to create slow and fast speech with the compression factor of 1.35 and 0.65 respectively.
-PSOLA analyzes the pitch of an auditory signal in the time domain of its digital waveform to set pitch marks, and then segments the signal into successive analysis windows centered around those pitch marks.
-To create synthesized speech (i.e., fast or slow speech), a new set of pitch marks are calculated, and the analysis windows are rearranged.
-Depending on the time-compression factor, some analysis windows are deleted, and the remaining windows are concatenated by superimposing and averaging the neighboring analysis windows.
-<!-- Hence the resulting speech signal is compressed, i.e., it is perceived to be faster than the original speech [e.g., CITE ] -->
-The distortion of phonemic properties of speech signals are minimal when accelerating and slowing down within the range of factor 2 or below [@Moulines1990].
+Schematic representation of waveforms of different speech rates --- normal, slow and fast --- is shown in Figure \@ref(fig:speech-rate).
 
-In Chapter 7, we created fast and slow versions of 120 high-predictability sentences and 120 low-predictability sentences, but did not use medium-predictability sentences.
-These 480 recordings were then passed through 4 channels noise vocoding to use as experimental materials.
-<!-- Spectrograms of clear speech, fast speech, slow speech, and noise vocoded fast and slow speech for the word *Aufgabe* are shown in Figure X.X. -->
+```{r speech-rate, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Schematic representation of waveforms of fast, normal, and slow speech rates for the sentence `Er löest die Aufgabe' with the duration of each speech rates in second. Note the circled portion of the waveform, which examplifies that PSOLA eliminates and duplicates the parts of the original waveform to create fast and slow speech respectively.", out.width="90%"}
+
+knitr::include_graphics("figures/materials/aufgabe_fast.png")
+knitr::include_graphics("figures/materials/aufgabe_normal.png")
+knitr::include_graphics("figures/materials/aufgabe_slow.png")
+
+```
+
+PSOLA creates fast or slow speech in three steps: analysis, modification, and synthesis [@Charpentier1986; @Taleb2020]
+In the analysis step, it first sets pitch marks in an audio file, then creates segments of it
+(i.e., it segments the signal into successive analysis windows centered around those pitch marks).
+Then in the modification step, depending on the time-compression/expansion factor, it deletes (or duplicates) those segments and sets a new set of pitch marks.
+Finally, in the synthesis step, it adds the new segments back to the audio file (i.e., it rearranges the analysis window) and creates the fast or slow speech as required.
+The distortion of phonemic properties of speech signals are minimal when accelerating and slowing down within the range of factor 2 or below [@Moulines1990; cf. @Longster2003].
+
+We create fast and slow versions of 120 high and 120 low predictability sentences.
+These 480 recordings are then passed through 4 channels noise vocoding to use as experimental materials.
+As discussed [earlier](#research-goals), the main aim of the manipulation of this bottom-up process is to investigate the effect of change in the rate of information flow (i.e., change in the speech rate), on the top-down processes of contextual facilitation in degraded speech comprehension.
 <!-- In Experiment 3, PSOLA algorithm in Praat software is used to increase the rate of speech by a factor of 0.65 before passing it through 4-channels noise-vocoding. -->
 
 ## Data collection on the web
@@ -155,7 +198,9 @@ Despite the difficulty in conducting online experiments, and skepticism of journ
 
 >
 At the moment, the number of Web experiments is still small, but a rapid growth can be predicted on the basis of the present results.
-We would not be surprised if within the next few years, a fair proportion of psychological experiments will be conducted on the Web. [@Musch2000, pp. 85]
+We would not be surprised if within the next few years, a fair proportion of psychological experiments will be conducted on the Web. (p. 85)
+<!-- > -->
+<!-- > `r tufte::quote_footer('--- Musch & Reips, 2000, p. 85')` -->
 
 <!-- It will be interesting to see how the experiences of the early researchers shape this new direction in psychological research." -->
 And by 2021, there has been a significant growth in online experiments as technical and technological barriers are greatly reduced.

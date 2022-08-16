@@ -1,14 +1,20 @@
-Predictability facilitates comprehension of degraded speech.
-But degraded speech is effortful to understand, and it drains attentional resources.
-Listeners can follow external linguistic cue and attend to a part of speech stream as it unfolds.
-In degraded speech comprehension, there is a trade-off:
-	Attend to the entire sentence, and form predictions about target word
-	Attend only to the target word
-	
+@Brungart2007 @Nejime1998; @Fu2001; @Adams2012 for speech rate
+@Goldstone1998 for adaptation
+@Kennedy-Higgins2020 for everything: vocoding, adaptation; in discussion why individual diff. is necessary; vocab is not a predictor etc.
+@Rönnberg2013 for attention
+@Hunter2018 for defn of contx facilitation
+@Aydelott2006 Can be used to argue in favor of predictability effects in 6- 8-bands in the attention-prediction manuscript.
+@Gordon-Salant1007 for defn of puase
+
+
+***
+@Pichora-Fuller2003: To utilize the context information, it's processing must be fast enough [cite this paper here] such that the next linguistic unit can be predicted before it arrives as a new sensory input in an ongoing conversation [cite Rönnberg here].
 ***
 [phd thesis of @Kaufeld2021]:
-As Martin (2016) points out, this optional capacity to make predictions can be implemented within a framework of cue integration. Bottom-up activity cor- responds to integrated cues and their reliabilities, which are compared against top-down predictive activations.
+As Martin (2016) points out, this optional capacity to make predictions can be implemented within a framework of cue integration. Bottom-up activity corresponds to integrated cues and their reliabilities, which are compared against top-down predictive activations.
 The predictive activation itself acts as a cue for further processing and is therefore associated with a specific cue reliability (and thus weight) of its own, which is normalised against the reliability of all other available and relevant cues. Crucially, predictive activation does not necessarily have to occur: If the available lower-level cues to base predictions on are not reliable enough, or simply too sparse, no anticipatory language processing will be initiated.
+
+"Several models of spoken language comprehension posit that knowledge-based cues “outweigh” signal-based cues (e.g., Mattys et al., 2005)"
 
 ***
 
@@ -22,9 +28,58 @@ Find the citation for prediction is time consuming
 @Aydelott2004:
 > Further, almost all on-line measures of the effects of perceptual degradation on semantic priming have been conducted in the visual modality, and have focused on degradations of the target word as opposed to the context (e.g., Durgunoglu, 1988; Stanovich & West, 1983; Stolz & Neely, 1995).
 
+Check @Kuperberg2016; @Strauss2013 for priming vs prediction
+For linear vs logarithmic @Brothers2021
+@Frade2022 for second-best prediction
+
 ***
 Phoneme restoration : Use of top-down in adverse listening condition; see Samuel2011
 
 ***
 
 Are 'LP, fast speech' failed predictions? Failed predictions are costly. @Husband2020. @VanPenteen2012
+
+## Limitations
+
+### Cloze probability
+
+@Cole2020: Additionally, the cloze probability only provides an estimation of, on average, whether listeners will consider a given word as a potential outcome in a sentence context. It does not indicate whether a specific individual actually predicted or considered that word in that particular instance. Specifically, individual differences in linguistic experiences can lead individuals to predict different words in the same context. It is important to consider a specific individuals’ predictions and how they affect processing because this difference in prediction is related to response times to target words (Verhagen, Mos, Bakis, & Schilperoord, 2018). Graded responses to words of varying cloze probability therefore may not necessarily reflect differences in individual prediction, especially in sentences that are less predictable.
+
+
+### Prediction by production/associaiton in speech rate paper
+
+According to @Ito2016: "then they might be unable to predict both meaning and form in Experiment 1, in part because of the relatively short time-lag and in part because comprehen- sion would be rendered difficult by having to integrate all the words in the prior context. In contrast, we hypoth- esized that they would be able to predict both meaning and form in Experiment 2, given the longer SOA."
+If this is how it works, then prediction is basically integration: integrate all the words in the prior context. But we oppose this; we even find that the results are explained by forward prediction better than backward integration.
+
+
+---
+
+Discussion section of attention prediction chapter
+
+Participants hear the context, but do not process it;
+or put it precisely, shallow processing of the context occurs.
+In a loose sense, this is similar to good-enough processing account of Ferreira.
+They proporse that readers ignore the mistake in non-canonical sentences (e.g., The man bit the dog) and infer an appropriate meaning (i.e., the man was bitten by the dog, and not the other way around) despite the implausible text.
+Our findings reveal that listeners infer the meaning with a strategic control of attention:
+where to allocate attention based on task demand,
+and do a shallow processing of the speech stram that is irrelevant.
+Their account would benefit from incorporating our results, i.e., listeners' not only perform good-enough processing, but their processing is rational too.
+
+## Maths but incomplete
+
+@Ryskin2018
+Understanding, at
+a more fine-grained level, which noise corruptions comprehenders find more or less
+probable is a critical step in developing computational models of noisy-channel sentence
+comprehension and a goal of the current work. It seems parsimonious to assume that the
+same noise model is at play during implicit and explicit corrections. Thus, we probe the
+noise model directly by asking readers to reverse whichever corruption they find most
+plausible given a sentence
+--- In terms of everyday language use, the results reported here suggest
+that, when meeting an L2 speaker of English with an idiosyncratic pattern of errors (e.g.,
+omitting articles or inverting word order), listeners do not simply assume that the speaker
+is more likely to make errors across the board. Rather, listeners learn what kinds of errors
+the speaker is prone to and fine-tune their inferences about the intended meaning of the
+speaker’s utterances to account for those specific errors.
+
+And try to rewrite the equations from Ryskin and van Os.

@@ -21,3 +21,5 @@
 \item[SNR] Signal to Noise Ratio
 
 \item[PSOLA] Pitch synchronous overlap add technique
+
+\item[SD] Standard deviation

@@ -26,12 +26,12 @@ Additionally, in this chapter we outline the gaps in previous research that this
 
 ## Speech distortion and degradation {#distortion-degradation}
 
-In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via a medium like air, and a listener perceives the signal as the speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
-However, speech perception is hardly as smooth as it seems.
-As shown earlier in Figure \@ref(fig:noisy-channel) and \@ref(fig:bayesian-network) in the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948],
-due to the noise,
-the speech signal uttered by the speaker gets disrupted and distorted
-($u_i\rightarrow u_p\leftarrow N$).
+Most of the existing frameworks of spoken language comprehension are inspired from the experiments that are conducted with clean speech,
+the condition of "artificial normalcy" [@Mattys2012].
+However, spoken language communication generally takes place outside the artificial normalcy, alongside different sources of noise and disruption.
+<!-- In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via a medium like air, and a listener perceives the signal as the speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
+However, speech perception is hardly as smooth as it seems. -->
+Probabilistic models of language comprehension, like the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948; see Figure \@ref(fig:noisy-channel) and \@ref(fig:bayesian-network)], show that the speech signal uttered by the speaker gets disrupted and distorted due to the noise ($u_i\rightarrow u_p\leftarrow N$) .
 <!--The major theories of speech *perception*, like Motor Theory, Direct Realist Theory, and General Auditory Framework focus on how listeners extract information from speech,
 without considering the fact that there is noise in the signal.
 For example, under the influential Motor Theory (MT), it is assumed that the components of speech perception are speech articulations (or articulatory events) instead of auditory or acoustic events.
@@ -43,11 +43,6 @@ Distortion can occur at these three points or sources: encoding, transmission, a
 Speech can be distorted while encoding the utterance $u_i$ due to the variability in speakers' production, like accented speech or slow and fast speech.
 Distortion can arise while decoding the signal $u_p$ due to the listener-related factors, like hearing loss or auditory processing disorder.
 It can also be a result of an external noise that appears during the transmission, like ambient noise, or poor medium of transmission (e.g., distortion in the telephone line).
-
-Most of the existing theories of speech perception and language processing are inspired from the experiments that are conducted with clean speech,
-the condition of "artificial normalcy" [@Mattys2012].
-However, spoken language communication generally takes place outside the artificial normalcy:
-in addition to the clean-sounding speaker's utterance, there are several sources of distortion we've outlined above.
 These different sources of distortion make a listening condition adverse by affecting the time and frequency related properties/cues of the speech signal, i.e., temporal envelope cues and spectral details of speech respectively.
 The temporal envelope cues are the slow variations in the amplitude of the speech signal over time [@Moon2014a; @Moon2014] while the spectral details are the frequency specific information about the speech.
 The temporal envelope cues reflect the prosodic information of the speech, and are used in the lexical-semantic and syntactic processing [@Greenberg1996; @Schneider2001; @Sheldon2008b].
@@ -55,7 +50,7 @@ The spectral details provide information about the sound production reflecting t
 
 In an experimental setup, a noisy channel can be created artificially by digital signal processing (see Section \@ref(speech-processing)) to investigate the response of the speech perception system to the distorted speech
 and to study language comprehension in an adverse listening condition.
-For example, expansion or compression of speech signal acts upon the temporal property of the speech and makes it slow or fast, and an optimal level of speech expansion/compression does not distort the spectral property of speech (see Section \@ref(compression-expansion)).
+For example, expansion or compression of speech signal acts upon the temporal property of the speech and makes it slow or fast (i.e., change its speed), and an optimal level of speech expansion/compression does not distort the spectral property of speech (see Section \@ref(compression-expansion)).
 In addition to speech compression and expansion in Chapter \@ref(chapter-speech-rate),
 throughout the studies in this thesis, we implement noise vocoding to manipulate the spectral property of speech and create a noisy channel of communication.
 
@@ -114,19 +109,19 @@ They could form prediction about only the semantic feature of the next word or t
 
 In reading studies and clean speech comprehension,
 there are opposing views, whether comprehenders predictively pre-activate the upcoming linguistic unit solely based on the top-down information (i.e., predictive *pre-activation*)
-or whether they wait for the bottom-up information to activate the representation (e.g., phonological, or semantic representation) of the new information and its neighbors,
+or whether they wait for the bottom-up information to activate the representation (e.g., phonological, or semantic representation) of the new information and its neighbors[^neighborhood-activation-model],
 then use the top-down information to select the best representation.
 To clarify it further,
 let's take the example sentence *(1)* presented in Chapter \@ref(chapter-introduction) on page \pageref{kite}:
 *The day was breezy so the boy went outside to fly a*___.
 Upon listening this context, the listeners can form a high degree of belief that the next word will be 'kite'.
 Before even hearing it, listeners preactivate the representation of "kite" in their mental lexicon.
-Alternatively, they could wait until they hear the auditory input "kite", which activates "kite" and its phonological and semantic neighbors in the mental lexicon,
+Alternatively, they could wait until they hear the auditory input "kite", which activates "kite" and its phonological (and/or semantic) neighbors in the mental lexicon,
 then use the top-down information to select the the most likely word that completes the sentence.
 Either way, top-down processes facilitate comprehension.
 
 While listening in an adverse listening condition, it is unlikely that a listener follows the latter strategy of waiting for the bottom-up input to activate the representations and then select the most likely one based on the top-down information [@Kuperberg2016].
-When speech is distorted, it is difficult to form the context representation in the first place.
+When speech is distorted, it is difficult to form the context representation in the first place [cf. cue based retreival, @Kaufeld2021; @Martin2016].
 Once a listener has formed a meaning representation of the context,
 she cannot afford to again wait for the bottom-up input to activate phonological and/or semantic representations of upcoming words;
 the uncertainty about the bottom-up information is persistent (see the phoneme restoration effect [@Warren1970], the McGurk effect [@McGurk1976], and the Ganong effect [@Ganong1980] in speech perception).
@@ -170,7 +165,7 @@ However, these studies are agnostic about the nature of prediction, i.e., if it 
 A debate in the literature of predictive language processing pertains to this question: Is prediction probabilistic, or is it an all-or-nothing phenomenon?
 For instance, garden path phenomenon was explained as a parser's irreversible prediction about the sentence structure
 which if fails (or, if it turns out to be incorrect), then the parser reanalyzes the sentence, and reformulates another prediction [e.g., @Ferreira1986; see also @Demberg2013; @Slattery2013].
-In recent days, the support for the probabilistic nature of prediction comes, for example, from ERP studies that show an inverse and graded relationship between the magnitude of N400 effect evoked by a word and its predictability measured by cloze probability[^cloze-footnote] [e.g., @Delong2005; @Federmeier2007b], or *surprisal*[^surprisal-footnote] [@Frank2015].
+In recent days, the support for the probabilistic nature of prediction comes, for example, from ERP studies that show an inverse and graded relationship between the magnitude of N400 effect evoked by a word and its predictability measured by cloze probability[^cloze-footnote] [e.g., @Delong2005; @Federmeier2007b], or *surprisal*[^surprisal-footnote] [@Frank2015; cf. @Brothers2015].
 
 These discussions come from reading studies and spoken language comprehension in clear speech.
 Although a few frameworks of language processing speculate that language comprehension in adverse listening condition can be predictive [e.g., @Lowder2016; @Ryskin2018],
@@ -287,3 +282,4 @@ In the next chapter, we will discuss the methods that are common in all the expe
 [^cloze-footnote]: Cloze probability of a word is the proportion of participants who provide that word as the next word of a sentence, in an offline norming task, given the preceding words of the sentence [@Taylor1953; @Staub2015a] . It's value ranges from 0 to 1.
 [^prediction-synonym]: Henceforth, we use the word expectation and prediction interchangeably.
 <!-- [^word-form-prediction]: The possibility of the absence of word-form prediction in the experiments in this thesis is discussed in Chapter \@ref(chapter-speech-rate). -->
+[^neighborhood-activation-model]: The Neighborhood Activation Model of @Luce1998 proposes that an auditory input of a word activates its neighborhood words, which can be similar acoustically. The neighborhood density is supposed to be dependent on the word frequency as well.
