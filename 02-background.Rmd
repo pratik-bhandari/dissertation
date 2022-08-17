@@ -31,7 +31,7 @@ the condition of "artificial normalcy" [@Mattys2012].
 However, spoken language communication generally takes place outside the artificial normalcy, alongside different sources of noise and disruption.
 <!-- In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via a medium like air, and a listener perceives the signal as the speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
 However, speech perception is hardly as smooth as it seems. -->
-Probabilistic models of language comprehension, like the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948; see Figure \@ref(fig:noisy-channel) and \@ref(fig:bayesian-network)], show that the speech signal uttered by the speaker gets disrupted and distorted due to the noise ($u_i\rightarrow u_p\leftarrow N$) .
+Probabilistic models of language comprehension, like the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948] in Figures \@ref(fig:noisy-channel) and \@ref(fig:bayesian-network)] shows that the speech signal uttered by the speaker gets disrupted and distorted due to the noise ($u_i\rightarrow u_p\leftarrow N$) .
 <!--The major theories of speech *perception*, like Motor Theory, Direct Realist Theory, and General Auditory Framework focus on how listeners extract information from speech,
 without considering the fact that there is noise in the signal.
 For example, under the influential Motor Theory (MT), it is assumed that the components of speech perception are speech articulations (or articulatory events) instead of auditory or acoustic events.

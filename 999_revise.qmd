@@ -83,3 +83,9 @@ the speaker is prone to and fine-tune their inferences about the intended meanin
 speaker’s utterances to account for those specific errors.
 
 And try to rewrite the equations from Ryskin and van Os.
+
+---
+
+Figure 2.1. Scheme of four-band noise-vocoding. The clear representation of the acoustic signal, in this case the sentence (left) “Gewöhnlich nutzen wir die Räder” [Normally we use the bikes] is divided into four approximately logarithmically spaced adjacent frequency bands spanning 70 to 9000 Hz. The envelope of each frequency band is extracted and reapplied to bandpass-filtered noise carriers with matched cut-off frequencies, thereby effectively smearing the spectral information within a frequency band. The frequency bands are added up again, resulting in a spectrally severely degraded “noise-vocoded” speech signal (left; modified after Davis et al., 2005).
+
+how to interpret a spectrogram in phonetics

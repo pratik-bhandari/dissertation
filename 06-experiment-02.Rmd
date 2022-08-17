@@ -93,7 +93,7 @@ Thus, when multiple levels of degraded speech signals are presented in a block i
 If such multiple levels of degradation are due to the presentation of multiple channels of noise vocoded speech, then the global channel context is unpredictable or uncertain.
 This can render perceptual adaptation totally absent with the change in the auditory features of the speech signal throughout the experiment [@Mattys2012].
 Additionally, such trial-by-trial variability in the characteristics of speech signal can also impair word recognition [@Sommers1994; see also, @Dahan2006].
-Very few studies have examined the influence of (un)certaintly about nex-trial speech quality, and semantic feature in perceptual adaptation.
+Very few studies have examined the influence of (un)certaintly about next-trial speech quality, and semantic feature in perceptual adaptation.
 For example, @Vaden2013 presented participants words in background noise at +3dB SNR and +10dB SNR, instead of a degraded speech, in a pseudo-random order.
 They argued that an adaptive control system is involved to optimize task performance when there is an uncertainty about next trial.
 Obleser and colleagues [@Obleser2007; @Obleser2010; @Hartwigsen2015] presented listeners with multiple noise-vocoded speech (ranging from 2 to 32 channels noise vocoding) in a pseudo-random order, but they did not report presence or absence of perceptual adaptation.
