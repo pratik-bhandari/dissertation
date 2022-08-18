@@ -20,7 +20,7 @@ One of the features that distinguishes us, humans, from other species is our abi
 We speak. We listen. We understand.
 This seemingly straightforward path of communication goes through plenty of hindrances.
 One of them is an adverse listening condition caused by background noise and speech distortion [e.g., @Chen2011; @Fontan2015].
-Human comprehenders rely on top-down predictive processes and bottom-up auditory processes to understand spoken language.
+Human comprehenders rely on top-down predictive and bottom-up auditory processes to understand spoken language.
 Language comprehension in adverse listening conditions is aptly described by the noisy channel model of communication [@Shannon1948; @Levy2008; @Gibson2013; @Gibson2019]
 <!--based on which we study the interaction between the top-down and bottom-up processes involved.-->
 schematically represented in Figure \ref{fig:noisy-channel} below.
@@ -32,11 +32,11 @@ knitr::include_graphics("figures/materials/noisy-channel.pdf")
 ```
 
 The speaker produces an utterance $u_i$ with a meaning $m_i$ that she intends to send.
-The utterance is encoded into a signal and is sent through a channel of transmission.
+The utterance is encoded into a signal and sent through a channel of transmission.
 During transmission, some external noise disrupts the signal.
 The receiver (e.g., a listener) perceives the signal as $u_p$ and decodes it to recover the meaning as $m_p$.
-The human language comprehension system is assumed to be engaged in an optimal Bayesian decoding that uses all the sources of information
-(e.g., a prior semantic knowledge, context information, world knowledge, etc.)
+The human language comprehension system is assumed to be engaged in optimal Bayesian decoding that uses all the sources of information
+(e.g., prior semantic knowledge, context information, world knowledge, etc.)
 and infers the intended meaning from the perceived utterance that it receives from a noisy channel of communication [@Levy2008; @Gibson2013; cf. @Markman2011].
 <!--
 ```{=tex}
@@ -49,23 +49,23 @@ It represents the listener's knowledge about the world and language, and her con
 Similarly, $P_N(u_p|u_i)$ is the likelihood of $u_p$ given $u_i$.
 The likelihood term $P_N(u_p|u_i)$ represents the probability of $u_i$ being corrupted to $u_p$ in the noisy channel during the process of transmission.-->
 
-For successful communication to take place, the message recovered by the listener must be approximately equal to the message intended to be sent by the speaker.
+For successful communication to occur, the message recovered by the listener must be approximately equal to the message intended to be sent by the speaker.
 Let's take an example.
 X sees a spherical object flying towards Y.
 So, she intends to warn him about it: a "spherical object which is played by two teams of 11 players each in a big playground" is about to hit Y.
 To convey this message, X utters BALL.
-Due to an external noise, X's (i.e., the speaker's) utterance is distorted, so Y (i.e., the listener) perceives the utterance as HALL.
-The listener then interprets that the speaker's message is intended to point him to the "building where lectures take place in their university" which they were trying to find.
-(In this case of unsuccessful communication, or due to the listener wrongly identifying the intended message of the speaker, Y gets hit by a ball.)
+Due to external noise, X's (i.e., the speaker's) utterance is distorted, so Y (i.e., the listener) perceives the utterance as HALL.
+The listener then interprets that the speaker's message is intended to point him to the "building where lectures take place in their university" they were trying to find.
+(In this case of unsuccessful communication, or due to the listener wrongly identifying the speaker's intended message, Y gets hit by a ball.)
 
-We assume that the goal of a listener is to identify the message $m_i$ that is most likely from the perceived utterance $u_p$, taking into account the external noise ($N$), and the prior likelihood of the speaker uttering $u_i$.
-This can be formally expressed as:
+We assume that the goal of a listener is to identify the message $m_i$ that is most likely from the perceived utterance $u_p$, taking into account the external noise ($N$) and the prior likelihood of the speaker uttering $u_i$.
+This can be expressed formally as:
 
 \begin{align} \label{eq:noisy-channel2}
 \hat{m_p} &= \argmax_{m_p} P(m_p,u_p,N,u_i,m_i)
 \end{align}
 
-These sequence of events from the intended message $m_i$ to the perceived message $m_p$ can be graphically represented in a Bayesian network [@Darwiche2010; @Bruineberg2021; @Pearl1985] in Figure \ref{fig:bayesian-network} (cf. Figure \ref{fig:noisy-channel}).
+This sequence of events from the intended message $m_i$ to the perceived message $m_p$ can be graphically represented in a Bayesian network [@Darwiche2010; @Bruineberg2021; @Pearl1985] in Figure \ref{fig:bayesian-network} (cf. Figure \ref{fig:noisy-channel}).
 
 ```{r bayesian-network, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Bayesian network representation of the noisy channel model of communication", out.width="90%"}
 
@@ -74,7 +74,7 @@ knitr::include_graphics("figures/materials/bayesian-network.pdf")
 ```
 
 Figure \ref{fig:bayesian-network} models the dependencies among the events,
-which shows that the external noise and the speaker's utterance are *independent*,
+which shows that the external noise and the speaker's utterance are *independent*;
 however, the listener's perception of the uttered message is also dependent on the noise.
 The communication in the noisy channel, represented as a Bayesian network, can now be expressed as:
 
@@ -91,8 +91,8 @@ Equation \@ref(eq:noisy-channel3) can be interpreted easily from its correspondi
 
 It shows:
 
-  - $P(m_p | u_p)$: the probability of inferring a meaning $m_p$ (e.g., a building where lectures take place) from a perceived utterance $u_p$ (e.g. /hall/)
-  - $P(u_p|u_i, N)$: bottom-up auditory information, i.e., the probability of the listener hearing a particular utterance $u_p$ (e.g., /hall/) given that the speaker has uttered an utterance $u_i$ (e.g., /ball/) in the noisy channel $N$ (e.g., background noise, signal distortion, etc.)
+  - $P(m_p | u_p)$: the probability of inferring a meaning $m_p$ (e.g., a building where lectures take place) from a perceived utterance $u_p$ (e.g., hall)
+  - $P(u_p|u_i, N)$: bottom-up auditory information, i.e., the probability of the listener hearing a particular utterance $u_p$ (e.g., hall) given that the speaker has uttered an utterance $u_i$ (e.g., ball) in the noisy channel $N$ (e.g., background noise, signal distortion, etc.)
   - $P(u_i|m_i)P(m_i)$: prior information (e.g., top-down semantic knowledge, information about the speaker, etc.), i.e., the probability of a speaker uttering $u_i$ with an intended message $m_i$ with the probability that the intended message is $m_i$
 
 The channel of transmission can become noisy due to factors like background noise present in a conversation,
@@ -101,24 +101,24 @@ hearing loss of a listener,
 hearing aid or cochlear implant worn by a listener, and so on.
 To understand speech in such a noisy channel of communication, a listener puts different weights on the distorted bottom-up auditory input $P(u_p|u_i, N)$ vs her prior information $P(u_i|m_i)P(m_i)$ (e.g., knowledge about the speaker, world, context information, etc.).
 
-Studies in clean speech comprehension and reading comprehension have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events that are yet to be encountered.
+Studies in clean speech and reading comprehension have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events yet to be encountered.
 
 Let's take the following sentence, for example:
 
-(1) The day was breezy so the boy went outside to fly ...\label{kite}
+(1) The day was breezy so the boy went outside to fly a ___\label{kite}
 
-Most readers would expect the final words to be *a kite* in this sentence [@Delong2005; cf. @Nieuwland2020a]. Here, the words up to the final word of the sentence provide a context:
+Most readers would expect the final word to be *kite* in this sentence [@Delong2005; cf. @Nieuwland2020a]. Here, the words up to the final word of the sentence provide a context:
 A reader can utilize their knowledge about what a *boy* would ideally do *outside* on a *breezy* day.
-It leads the reader to predict that the sentence continuation is most likely *a kite* and not some improbable words like *a rocket*.
+It leads the reader to predict that the sentence continuation is most likely *kite* and not an improbable word like *rocket*.
 Similar results are observed in the auditory domain as well.
-Listeners use context information from what they have heard, and form predictions about an upcoming word [e.g., @Altmann2007; @Ankener2019].
-That is, human language comprehension is predictive in nature such that listeners engage in predictive language processing [Section \@ref(predictive-language-processing), @Kuperberg2016; @Pickering2018].
+Listeners use context information from what they have heard and form predictions about an upcoming word [e.g., @Altmann2007; @Ankener2019].
+That is, human language comprehension is predictive in nature, such that listeners engage in predictive language processing [Section \@ref(predictive-language-processing), @Kuperberg2016; @Pickering2018].
 In a noisy channel, listeners' engagement in predictive processing is influenced by the noise in the signal [@Sheldon2008a; @Obleser2007].
 <!-- They put different weight on the prior knowledge and context information, and on the auditory information [@Sheldon2008a; @Obleser2007]. -->
 
 Based on the theoretical accounts of the noisy channel model of communication and the predictive language processing [@Christiansen2015; @Ferreira2016; @Friston2020; @Hale2001; @Levy2008; @Mcclelland1986; @Norris2016; @Pickering2018],
 this thesis investigates the interaction between top-down predictive and bottom-up auditory processes.
-We examine how top-down predictive processes facilitate language comprehension in a noisy channel that is created by [acoustic degradation of speech](#speech-processing). <!-- by [digital signal processing](#speech-processing).-->
+We examine how top-down predictive processes facilitate language comprehension in a noisy channel created by [acoustic degradation of speech](#speech-processing). <!-- by [digital signal processing](#speech-processing).-->
 We examine the nature of predictability effects in a noisy channel.
 We investigate what the optimal level of noise in the signal is, i.e., the optimal level of speech degradation,
 for the effect of top-down predictive processes to be most efficient or facilitatory for language comprehension.
@@ -130,33 +130,33 @@ While doing so, we address the following research goals.
 
 (1)   **Replication of the predictability effect in a noisy channel**\
 Almost all the disciplines of cognitive science --- anthropology, computer science, linguistics, neuroscience, and psychology --- are suffering the so-called replication crisis [@Sanderson2008; @OSC2015; @Ebersole2016; @Cockburn2020; @Minocher2021].
-The results of an experiment do not hold up consistently when conducted again by another group of researchers.
-For example, in a multi-lab collaborative study, @Nieuwland2020a did not find the same N400 effect at English articles (a/an) that @Delong2005 had reported 15 years earlier.
+The results of an experiment do not hold up consistently when another group of researchers conduct it again.
+For example, in a multi-lab collaborative study, @Nieuwland2020a did not find the same N400 effect in English articles (a/an) that @Delong2005 had reported 15 years earlier.
 The first goal of this thesis is to test if we can replicate the facilitatory effect of semantic predictability in language comprehension in a noisy channel [e.g., @Obleser2007; @Sheldon2008a].
 <!-- We adapt some of the experimental materials from similar prior studies [@Obleser2007; @Obleser2010]. -->
 Replication of the predictability effect in comprehension of degraded speech
-will help gather evidence in the favor of this *effect of interest*.
+will help gather evidence in favour of this *effect of interest*.
 It will also provide a reliable foundation to test if (and how) other factors (e.g., speed of information processing) influence and interact with the facilitatory effect of predictability.
 
 (2)   **Nature of prediction**\
-There are at least two schools of thought which argue that prediction is either all-or-nothing or probabilistic in nature [@Coltheart2004; @Kuperberg2016; @Luke2016].
-These debates are generally centered around reading comprehension and clean speech comprehension.
+There are at least two schools of thought which argue that prediction is either all-or-nothing or probabilistic [@Coltheart2004; @Kuperberg2016; @Luke2016].
+These debates generally centre around reading comprehension and clean speech comprehension.
 The discussion about the nature of prediction in a noisy channel like degraded speech is sparse.
-Specifically, in degraded speech comprehension, only one study has empirically investigated the theoretical postulation that prediction is restricted only for highly predictable sentence endings [@Strauss2013].
+Specifically, in degraded speech comprehension, only one study has empirically investigated the theoretical postulation that prediction is restricted only to highly predictable sentence endings [@Strauss2013].
 <!-- A limited number of studies have attempted to examine the form vs word level prediction, and only one study has postulated the nature of prediction (e.g., graded vs all-or-nothing) with empirical support [@Corps2020; @Strauss2013]. -->
 Therefore, the second goal of this thesis is to examine the nature of the predictability effect.
 With carefully designed experiments and materials, this thesis aims to test the distinction between all-or-nothing and probabilistic predictions in degraded speech comprehension.
 
 (3)   **Boundary conditions of predictive language processing**\
-Several authors claim that predictive processing is the fundamental nature of human cognition, and thus, by definition, also of language processing [@Clark2013; @Lupyan2015; @Kuperberg2020; @Friston2020; @Friston2020b].
-At the same time, an increasing number of studies are showing boundary conditions as well as prerequisite conditions for predictive language processing [@Federmeier2010; @Mishra2012; @Huettig2016; @Huettig2019].
+Several authors claim that predictive processing is the fundamental nature of human cognition and, thus, by definition, also of language processing [@Clark2013; @Lupyan2015; @Kuperberg2020; @Friston2020; @Friston2020b].
+At the same time, an increasing number of studies are showing boundary conditions and prerequisite conditions for predictive language processing [@Federmeier2010; @Mishra2012; @Huettig2016; @Huettig2019].
 For example, attention can reverse the effect of predictability in non-speech auditory perception [cf. @Kok2012].
-In a noisy channel (i.e., degraded speech), attention to a part or parts of a speech stream can modulate or that can limit the predictability effect as different parts of the speech stream contain different linguistic units;
+In a noisy channel (i.e., degraded speech), attention to a part or parts of a speech stream can modulate, or that can limit the predictability effect as different parts of the speech stream contain different linguistic units;
 each linguist unit (e.g., each word in a sentence) carries its own meaning that serves the entire message (e.g., the entire sentence).
 <!-- In this thesis, the role of attention to speech stream is of interest, as we know from non-speech auditory perception literature that attention can modulate and limit predictability effects [@Kok2012]. -->
-Therefore, the third goal of this thesis is to examine the role of auditory attention that can act as a prerequisite for semantic predictions,
+Therefore, the third goal of this thesis is to examine the role of auditory attention that can act as a prerequisite for semantic predictions
 or limit the automaticity of predictive processing in degraded speech comprehension.\
-This thesis aims to test whether attention to different parts of degraded speech stream aids, or hampers facilitatory effects of top-down predictions.
+This thesis aims to test whether attention to different parts of degraded speech stream aids or hampers facilitatory effects of top-down predictions.
 
 (4)   **Adaptation to degraded speech**\
 Despite the difficulty in understanding speech in a noisy channel,
@@ -167,79 +167,78 @@ The fourth goal of this thesis is to examine if listeners adapt to degraded spee
 We test if an adaptation to the bottom-up perceptual property of speech is influenced by its top-down semantic property.
 
 (5)   **Speed of information processing**\
-Unlike visual scene which opens in spatial dimension, speech signal flows in temporal dimension.
-This poses a challenge to the listeners to process information at different speed and timescales;
-more time is available to process the information in slow speech while less time is available for fast speech [@Lerner2014].
-Listeners build up the meaning representation as they process the speech to predict upcoming linguistic unit.
-The fifth goal of this thesis is to examine whether a change in information flow, i.e., speech rate, affects facilitatory effect of predictability.
-We test if an increase or decrease in speech rate impedes the intelligibility of speech over a noisy channel,
+Unlike the visual scene that opens in the spatial dimension, speech signal flows in the temporal dimension.
+This challenges the listeners to process information at different speeds and timescales;
+more time is available to process the information in slow speech, while less time is available for fast speech [@Lerner2014].
+Listeners build up the meaning representation as they process the speech to predict upcoming linguistic units.
+The fifth goal of this thesis is to examine whether a change in information flow, i.e., speech rate, affects the facilitatory effect of predictability.
+We test if an increase or decrease in speech rate impedes the intelligibility of speech over a noisy channel
 and whether it impedes or further aids the predictability effect in the noisy channel.
 
 (6)   **Metric for measurement of language comprehension**\
-In the study of speech perception and language comprehension, different researchers have used different measurement metrics [@Obleser2007; @Sheldon2008a; @Peelle2013; @Amichetti2018].
-The measurement is inconsistent across studies which becomes a problem especially when the effect of context in comprehension is under discussion:
+Different researchers have used different measurement metrics in the study of speech perception and language comprehension [@Obleser2007; @Sheldon2008a; @Peelle2013; @Amichetti2018].
+The measurement is inconsistent across studies which becomes a problem, especially when the effect of context in comprehension is under discussion:
 cross-study comparison does not give a clear picture of the predictability effect in this case.
 Therefore, the sixth goal of this thesis is to establish and consistently use a sensitive metric for the measurement of language comprehension that takes into account whether participants (in)correctly use the context-evoking word in a sentence. <!--to measure language comprehension or word recognition accuracy.-->
 
-Studies addressing the research goals outlined above will primarily contribute to elaborating and developing the existing theories of predictive language processing, and furthering the understanding of spoken language comprehension in a noisy channel, especially degraded speech comprehension.
+Studies addressing the research goals outlined above will primarily contribute to elaborating and developing the existing theories of predictive language processing and furthering the understanding of spoken language comprehension in a noisy channel, especially degraded speech comprehension.
 Below we present the contributions of the research presented in this thesis.
 
 ## Research contributions
 
 The research reported in this thesis examines theoretical questions of predictive language processing and its boundary conditions when spoken language comprehension takes place through a noisy channel. <!--bottom-up auditory input is compromised.-->
-It contributes to the studies of speech perception, language comprehension, predictive coding, language science, audiology, psycholinguistics, psychology, and broadly to cognitive science.
+It contributes to the studies of speech perception, language comprehension, predictive coding, language science, audiology, psycholinguistics, psychology, and, broadly, cognitive science.
 <!-- The studies in this thesis helps us understand the processing and comprehension of novel speech that humans do not generally encounter day-to-day.
 It opens a window towards understanding how human auditory and language processing mechanism work to help us comprehend speech in adverse listening conditions.-->
 In an applied setup, this informs translational/clinical researchers about language comprehension in [cochlear implantees](#distortion-degradation).
 
 *   **Graded effect of predictability**\
 We replicate the previous finding of the predictability effect showing that predictability facilitates comprehension of degraded speech at moderate levels of degradation [e.g., @Obleser2007].
-Additionally, in the existing debate of all-or-nothing vs graded prediction, our findings indicate that prediction across the noisy channel of degraded speech is graded in nature
+Additionally, in the current debate of all-or-nothing vs graded prediction, our findings indicate that prediction across the noisy channel of degraded speech is graded in nature
 rather than being restricted to a narrow space of highly predictable sentence endings.
-Goals 1 and 2 correspond to this research contribution which is brought about by the experiments described in Chapters \@ref(chapter-attention-prediction) and \@ref(chapter-graded-prediction).
+Goals 1 and 2 correspond to this research contribution brought about by the experiments described in Chapters \@ref(chapter-attention-prediction) and \@ref(chapter-graded-prediction).
 
 *   **Attention in predictive language processing**\
-We show that predictive processing is not always automatic and it cannot all by itself cannot explain how listeners understand speech in a noisy channel.
+We show that predictive processing is not always automatic, and it cannot all by itself explain how listeners understand speech in a noisy channel.
 Although top-down predictions facilitate comprehension, we show that attention to the context is a prerequisite for such contextual facilitation.
-Only when listeners attend to the context information and form its meaning representation, then the top-down predictions can facilitate comprehension of degraded speech.
+Only when listeners attend to the context information and form its meaning representation can the top-down predictions facilitate comprehension of degraded speech.
 Without proper attention to the context, predictability effects cannot be observed.
-Goal 3 corresponds to this research contribution which is brought about by the experiment described in Chapter \@ref(chapter-attention-prediction).
+Goal 3 corresponds to this research contribution brought about by the experiment described in Chapter \@ref(chapter-attention-prediction).
 
 *   **Absence of perceptual adaptation**\
 We show that listeners do not adapt to degraded speech when lexical-semantic cues are taken into consideration.
-This is in contrast with the previous findings of speech perception experiments some of which disregard the trial-by-trial variation in sentence context [e.g., @Davis2005; @Erb2013]. 
+This is in contrast with the previous findings of speech perception experiments, some of which disregard the trial-by-trial variation in sentence context [e.g., @Davis2005; @Erb2013]. 
 When listeners are engaged in a linguistic task in which the lexical cues vary on every trial,
 their cognitive resources are strained by lexical-semantic cues rather than acoustic-phonetic cues.
 Thus, they do not show any adaptation effect;
 every trial is effectively a novel trial for them.
-Goal 4 corresponds to this research contribution which is brought about by the experiments described mainly in Chapters \@ref(chapter-graded-prediction) and \@ref(chapter-speech-rate).
+Goal 4 corresponds to this research contribution brought about by the experiments described mainly in Chapters \@ref(chapter-graded-prediction) and \@ref(chapter-speech-rate).
 
 *   **Change in information flow and its effect on top-down prediction**\
 We show that different rates of information flow --- increase or decrease in the rate of speech --- have different effects on language comprehension.
 Intelligibility of speech decreases with both increase and decrease of speech rate.
-But the increase in speech rate is particularly detrimental to comprehension of degraded speech as it increases the difficulty in processing sentences with less predictable endings.
+However, the increase in speech rate is particularly detrimental to comprehension of degraded speech as it increases the difficulty in processing sentences with less predictable endings.
 <!-- Although the increase in the speed of information flow makes it difficult to encode the context information resulting in impeded contextual facilitation,
 the decrease in the speed does not necessarily enhance encoding the context information while listening to moderately degraded speech. -->
 This is one of the few studies highlighting the role of speed of flow of information in the contextual facilitation of degraded speech.
-Goal 5 corresponds to this research contribution which is brought about by the experiment described in Chapter \@ref(chapter-speech-rate).
+Goal 5 corresponds to this research contribution brought about by the experiment described in Chapter \@ref(chapter-speech-rate).
 
 *   **A metric of language comprehension**\
 We propose and successfully use a metric of language comprehension that reflects listeners' use of context information.
 This metric does not merely measure how many words are correctly identified.
-Rather, it considers the fact that in the study of effect of predictability, how well a context is recognized should also be taken into account.
+Instead, it considers the fact that in the study of the effect of predictability, how well a context is recognized should also be taken into account.
 Thus it measures word recognition accuracy in the sentences in which context is correctly recognized.<!--in the first place.-->
-The use of such a metric improves interpretation of contextual facilitation across studies, which lacks in the extant literature.
-Goal 6 corresponds to this research contribution which is brought about by consistent use of this metric in Chapters \@ref(chapter-graded-prediction) and \@ref(chapter-speech-rate).
+Using such a metric improves the interpretation of contextual facilitation across studies, which is lacking in the extant literature.
+Goal 6 corresponds to this research contribution brought about by consistent use of this metric in Chapters \@ref(chapter-graded-prediction) and \@ref(chapter-speech-rate).
 
 ## Overview of the thesis
 
 <!-- The central theme of this thesis is the study of the interaction between top-down predictions and bottom-up auditory processes in degraded speech comprehension. -->
-The central theme of this thesis is the study of predictive processing in the process of language comprehension across a noisy channel.
+The central theme of this thesis is the study of predictive processing in language comprehension across a noisy channel.
 On the grounds of predictive language processing and the noisy channel model of communication,
 we investigate how and to what extent listeners use context information while listening to degraded speech.
-We replicate and extend prior findings, which claim that at the moderate levels of speech degradation,
-predictability facilitates language comprehension.
-We further examine the boundary conditions of predictive processing and examine how different rates of information flow moderate predictability effects.
+We replicate and extend prior findings, which claim that predictability facilitates language comprehension at moderate levels of speech degradation.
+Furthermore, the boundary conditions of predictive processing are tested, examining the effect of different rates of information flow in the predictability effect.
 We test for the presence of perceptual adaptation and find evidence against the learning effect and adaptation to degraded speech.
 <!-- Although there are studies showing reliance on prediction at a moderate level of speech degradation,
 this thesis replicated such findings focusing on theoretical question of the nature of such predictive processing.
@@ -253,29 +252,29 @@ The current status of the debate on these topics is also presented.
 
 \noindent
 **Chapter \@ref(chapter-methods)** describes the stimuli used in all the experiments in this thesis.
-It describes the process of stimuli creation, and speech processing, and also provides an overview of online data collection.
+It describes the process of stimuli creation and speech processing, and provides an overview of online data collection.
 
 \noindent
 **Chapter \@ref(chapter-stats)** describes the statistical tests employed for data analyses.
-Binomial logistic mixed effects modeling is performed on the data from all the experiments.
-This chapter provides a background on this statistical procedure,
+Binomial logistic mixed effects modelling is performed on the data from all the experiments.
+This chapter provides a background on this statistical procedure
 and how it is operated on the statistical software `R`.
 
 \noindent
 **Chapter \@ref(chapter-attention-prediction)** presents two experiments that address the first and the third research goal.
-These experiments are conducted to examine the predictability effect in degraded speech comprehension,
-and the role of auditory attention in it.
+These experiments are conducted to examine the predictability effect in degraded speech comprehension
+and the role of auditory attention.
 Participants in both experiments are presented with the speech degraded at different levels of degradation
 and sentences of different levels of predictability.
 Participants in Experiment 1A are asked to type in only the final word of a sentence;
 this did not bind their attention to the sentence context.
-While the participants in Experiment 1B are asked to type in the entire sentence that they heard which required them to attend to the sentence context as well.
-We replicate the previously reported predictability effects in the noisy channel only when participants attended to the entire sentence including the context.
+In contrast, the participants in Experiment 1B are asked to type in the entire sentence that they heard, which required them to attend to the sentence context as well.
+We replicate the previously reported predictability effects in the noisy channel only when participants attended to the entire sentence, including the context.
 <!-- It is observed at the moderate levels of speech degradation. -->
-We show that at moderate levels of degradation, top-down predictions cannot be generated when insufficient attention is given to context.
+We show that top-down predictions cannot be generated at moderate levels of degradation when insufficient attention is given to context. 
 We discuss the limitation in the existing theories of predictive language processing, which commit to the automaticity of prediction.
 We show the importance of *attention* in language comprehension.
-We end this chapter with the note that the measurement of language comprehension can be further refined,
+We end this chapter with the note that the measurement of language comprehension can be further refined
 and the nature of the predictability effect tested.
 
 \noindent
@@ -283,11 +282,11 @@ and the nature of the predictability effect tested.
 The predictability effect partially replicated in Chapter \@ref(chapter-attention-prediction) is further examined in this chapter.
 We use a refined metric of measurement of language comprehension that takes into consideration whether listeners correctly identified the context.
 We observe predictability effects at a moderate level of speech degradation, thereby consistently replicating the facilitatory effect of predictability.
-We find the predictability effects to be graded in nature,
+We find the predictability effects to be graded in nature
 and discuss it in the light of existing theories of predictive processing.
 We also show that regardless of the certainty about the next-trial degradation level,
 listeners do not adapt to degraded speech when its lexical-semantic property varies every trial.
-At the end of this chapter, we note the intrinsic difficulty of processing degraded speech, and open the question that the predictability effects could be further enhanced (or limited) with more (or less) time available to process the degraded speech.
+At the end of this chapter, we note the intrinsic difficulty of processing degraded speech and open the question that the predictability effects could be further enhanced (or limited) with more (or less) time available to process the degraded speech.
 
 \noindent
 **Chapter \@ref(chapter-speech-rate)** addresses the questions opened in Chapter \@ref(chapter-graded-prediction).
@@ -295,13 +294,13 @@ In two experiments, it addresses the fourth, the fifth, and the sixth research g
 We use the same metric of measurement of language comprehension as Chapter \@ref(chapter-graded-prediction), which takes into account listeners' correct identification of the context.
 Listeners are presented with a moderately degraded speech at which the predictability effect is observed in Chapter \@ref(chapter-graded-prediction).
 In Experiment 7A, the moderately degraded speech is presented at normal and fast speech rates.
-And in Experiment 7B, the speech rates are normal and slow.
-For fast speech, however, both intelligibility, as well as the predictability effect, are reduced which is driven by the difficulty in processing words that are less predictable from the context.
-And although more time is available to process the context of the degraded speech at a slow speech rate,
+In Experiment 7B, the speech rates are normal and slow.
+For fast speech, however, both intelligibility and the predictability effect are reduced, driven by the difficulty in processing words that are less predictable from the context.
+Although more time is available to process the context of the degraded speech at a slow speech rate,
 there is no increase in the facilitatory effect of predictability with a reduced speech rate;
 instead, intelligibility is reduced in slow speech compared to normal speech.
 <!-- We show that although there is an overall decrease in intelligibility, predictability effects are not reduced for slow speech, i.e., when more time is available to process the incoming information. -->
-This chapter ends with a discussion on the limitations of predictive processing that are driven by the constraints in cognitive resources.
+This chapter discusses on the limitations of predictive processing driven by the constraints in cognitive resources.
 
 \noindent
 **Chapter \@ref(chapter-conclusion)** summarizes the findings of all the studies.
@@ -309,13 +308,13 @@ It presents the theoretical implications of this thesis and the future direction
 The general limitations of the studies are briefly discussed.
 
 \noindent
-**Chapter \@ref(chapter-ethics)** presents ethical approval that was obtained to run the experiments on the human subjects.
+**Chapter \@ref(chapter-ethics)** presents ethical approval that was obtained to run the experiments on human subjects.
 The source that provided funding to conduct the research presented in this thesis is disclosed.
 
-## Dissimination of research findings
+## Dissemination of research findings
 
-Some of the findings reported in this thesis are presented and published, in part, elsewhere as means of dissemination of scientific findings.
-The list of presentations and publications that report on parts of the research described in this thesis is outlined below.
+Some of the findings reported in this thesis are presented and published elsewhere to disseminate scientific findings to a broader audience.
+The presentations and publications that report on parts of the research described in this thesis are outlined below.
 
 -   Bhandari, P., Demberg, V., & Kray, J.
     (2022).

@@ -15,35 +15,35 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 # General methods {#chapter-methods}
 \chaptermark{Methods}
 
-In this chapter we provide an overview of the experimental materials that are used in the experiments described in Chapters 5, 6, and 7.
-Sentences used as experimental material were common to all the experiments,
+This chapter provides an overview of the experimental materials used in the experiments described in Chapters 5, 6, and 7.
+Sentences used as experimental material were common in all the experiments,
 and the signal processing method was also common.
 Here, we also present an overview of online data collection.
 
 ## Experimental materials {#experimental-materials}
 
 As a part of a study in the research project A4 of SFB1102, sentences of different levels of predictability were created.
-Digital recordings of the sentences were degraded by noise vocoding and used in all experiments reported in this thesis.
-Speech was also distorted by its compression and expansion.
-<!-- In all the experiments in this thesis, we used spoken sentences which were degraded by noise vocoding. -->
+Digital recordings of the sentences were degraded by noise-vocoding and used in all experiments reported in this thesis.
+The speech was also distorted by its compression and expansion.
+<!-- In all the experiments in this thesis, we used spoken sentences which were degraded by noise-vocoding. -->
 <!-- We processed those spoken sentences to create different versions of distorted speech. -->
-Below we briefly describe how the sentences of different levels of predictability were obtained,
+Below we briefly describe how the sentences of different levels of predictability were obtained
 and what methodology was used to create distorted versions of the speech.
 
 ### Stimulus sentences
 
-With an aim to create sentences of three levels of predictability (low, medium, and high), a triplet of 120 sentences --- total of 360 sentences --- were created from 120 nouns.
+With an aim to create sentences of three levels of predictability (low, medium, and high), a triplet of 120 sentences --- a total of 360 sentences --- were created from 120 nouns.
 Out of 120 nouns, 6 were repeated.
 All sentences were in present tense consisting of pronoun, verb, determiner, and object.
 These sentences were in Subject-Verb-Object form (e.g., *Er fängt den Ball*. EN: He catches the ball.).
 Some of these sentences were taken from @Obleser2010.
 For each sentence, cloze probability ratings were collected from a group of young adults (n = 60; age range = 18 – 30 years).
-Mean cloze probabilities of low, medium, and high probability sentences are shown in Table \@ref(cloze-table) and
+Mean cloze probabilities of low, medium and high probability sentences are shown in Table \@ref(cloze-table) and
 <!--Mean cloze probabilities were 0.022 (SD = 0.027; range = 0.00 – 0.09) for low predictability sentences,
 0.274 (SD = 0.134; range = 0.1 – 0.55) for medium predictability sentences,
 and 0.752 (SD = 0.123; range = 0.56 – 1.00) for high predictability sentences.-->
 the distribution of cloze probability across low, medium, and high predictability sentences is shown in Figure \@ref(fig:cloze-distribution).
-The cloze probabilities of the target words in each sentence is shown in Appendix A.
+The cloze probabilities of the target words in each sentence are shown in Appendix A.
 
 \begin{table}[ht]
 \begin{center}
@@ -71,36 +71,36 @@ knitr::include_graphics("figures/materials/cloze-distribution.jpg")
 
 ### Speech processing {#speech-processing}
 
-All 360 sentence were spoken by a female native speaker of German at a normal rate.
+All 360 sentences were spoken by a female native speaker of German at a normal rate.
 The recordings were digitized at 44.1kHz with 32-bit linear encoding.
-Spoken sentences used in Chapter 5, 6, 7, and 8 were degraded by noise vocoding.
-In addition to degradation by noise vocoding, the sentences were distorted by compression and expansion of speech signal in Chapter 7.
+Spoken sentences used in Chapters 5, 6, 7, and 8 were degraded by noise-vocoding.
+In addition to degradation by noise-vocoding, the sentences were distorted by compression and expansion of speech signal in Chapter 7.
 
 #### Noise-vocoding {#noise-vocoding}
 
 <!-- If the cut-off frequencies of the bandwidth of the speech signal (i.e., the analysis band) and the bandwidth of the noise do not match then the resulting noise-vocoded speech becomes spectrally shifted [e.g., @Faulkner2012]. -->
-Noise vocoding is used to parametrically vary and control the quality of speech signal in a graded manner.
+Noise-vocoding is used to parametrically vary and control the speech quality in a graded manner.
 <!-- It largely removes the spectral details of the speech signal but preserves the temporal and preiodicity cues [@Rosen1999]. -->
 It distorts a speech signal by dividing it into specific frequency bands corresponding to the number of vocoder channels.
-The frequency bands are analogous to the electrodes of cochlear implant [@Shannon1995; @Loizou1999; @Shannon2004].
-The amplitude envelope, i.e., the fluctuations of amplitude, within each frequency band is extracted and the spectral information within it is replaced by noise.
-This makes the vocoded speech difficult to understand although temporal characteristics and periodicity of perceptual cues are preserved [@Rosen1999].
+The frequency bands are analogous to the electrodes of a cochlear implant [@Shannon1995; @Loizou1999; @Shannon2004].
+The amplitude envelope, i.e., the fluctuations of amplitude within each frequency band, is extracted, and the spectral information within it is replaced by noise.
+This noise-filtering makes the vocoded speech difficult to understand, although its temporal characteristics and periodicity of perceptual cues are preserved [@Rosen1999].
 
 The spectral degradation conditions of 1, 4, 6, and 8 channels were achieved for each of the 360 recorded sentences using a customized script originally written by @Darwin2005 in Praat software [@Praat2001].
 The speech signal was divided into 1, 4, 6, and 8 frequency bands between 70 and 9,000Hz.
 The boundary frequencies were approximately logarithmically spaced following cochlear-frequency position functions [@Erb2014; @Greenwood1990; @Rosen1999].
 The amplitude envelope of each band was extracted and applied to band-pass filtered white noise in the same frequency ranges;
 the upper and lower bounds for band extraction are specified in Table \@ref(frequencies).
-Each of the modulated noise was then combined to produce degraded speech.
+Modulated noise bands were then combined to produce a degraded speech.
 Scaling was performed to equate the root-mean-square value of the original undistorted speech and the final degraded speech.
-This resulted into four levels of degradation: 1, 4, 6, and 8 channels noise vocoded speech.
+This resulted in four levels of degradation: 1-, 4-, 6-, and 8-channel noise-vocoded speech.
 <!-- The 1-channel noise-vocoding provides a baseline condition as speech encoded with only one frequency band is least to non-intelligible. -->
 <!--However, speech vocoded through four or more channels has been shown to be well intelligible – Ueda and Nakajima (2017) derived from the factor analysis of spectral fluctuations in eight languages, including German, that four channels are sufficient, and they also identified the optimal boundary frequencies for 4 channels vocoding.
 These are similar, although not identical, to the cochlear-frequency position function-based boundary frequencies chosen in the current study.-->
 
-Spectrograms of clear speech and noise-vocoded speech for the sentence *Er löest die Aufgabe* are shown in Figure \@ref(fig:vocoding-spectrogram). It shows that with a decrease in the number of noise vocoding channels, the information in speech signal reduces and becomes noise-like.
+Spectrograms of clear speech and noise-vocoded speech for the sentence *Er löest die Aufgabe* are shown in Figure \@ref(fig:vocoding-spectrogram). It shows that with a decrease in the number of noise-vocoding channels, the information in speech signal reduces and becomes noise-like.
 
-```{r vocoding-spectrogram, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Spectrograms of clear speech, and degraded speech arranged with a decreasing number of noise vocoding channels (8, 6, 4 and 1 band) for the sentence `Er löest die Aufgabe.' ", out.width="90%"}
+```{r vocoding-spectrogram, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Spectrograms of clear speech, and degraded speech arranged with a decreasing number of noise-vocoding channels (8, 6, 4 and 1 band) for the sentence `Er löest die Aufgabe.' ", out.width="90%"}
 
 knitr::include_graphics("figures/materials/aufgabe_clear.png")
 
@@ -136,25 +136,25 @@ Number of channels     &    Boundary frequencies \\
 \end{table}
 ```
 
-The main motivation to degrade speech signal by noise-vocoding is two fold:
-On the practical side, noise-vocoding simulates the frequency selectivity with cochlear implant or sensory-neural hearing loss.
-This provides an insight to the speech perception and language comprehension in special population (older adults with hearing loss, patients with cochlear implants).
+The primary motivation to degrade speech signals by noise-vocoding is twofold:
+On the practical side, noise-vocoding simulates the frequency selectivity with a cochlear implant or sensory-neural hearing loss.
+This provides insight into speech perception and language comprehension in special populations (older adults with hearing loss, patients with cochlear implants).
 On the experimental side, noise-vocoding preserves the temporal periodicity cues of the speech;
 we can investigate the importance of specific suprasegmental cues in speech perception.
-Noise-vocoding reduces the fine structure cues that carry the pitch-related suprasegmental information,
+Noise-vocoding reduces the fine structure cues that carry the pitch-related suprasegmental information
 and allows the study of temporal amplitude envelope cues, which carry the suprasegmental information involved in lexical processing;
 noise-vocoding preserves these cues.
-Most importantly, it allows a fine-grained control over speech intelligibility by varying the number of vocoder channels.
+Most importantly, it allows fine-grained control over speech intelligibility by varying the number of vocoder channels.
 
 #### Speech compression and expansion {#compression-expansion}
 
-Temporal compression and expansion is used as a method to simulate fast and slow speech,
+Temporal compression and expansion are used as a method to simulate fast and slow speech and
 to study the effect of acoustic degradation (which is the change in speech rate) and increase or decrease in information flow.
 As early as the mid-twentieth century, investigators have reported that intelligibility does not drop significantly when speech is speeded up to 2 times the normal speech rate [e.g., @Garvey1953].
 Speech rate was increased by chopping physical tapes.
-Digital algorithms like pitch-synchronous overlap-add technique [PSOLA, @Charpentier1986; @Moulines1990] developed in the 1980s and later [e.g., @Verhelst1993] now allow us to speed up and slow down the speech rate in a controlled fashion.
-In Chapter 7, we used Praat software that utilizes uniform time-compression algorithm (PSOLA) to create slow and fast speech with the compression factor of 1.35 and 0.65 respectively.
-Schematic representation of waveforms of different speech rates --- normal, slow and fast --- is shown in Figure \@ref(fig:speech-rate).
+Digital algorithms like the pitch-synchronous overlap-add technique [PSOLA, @Charpentier1986; @Moulines1990] developed in the 1980s and later [e.g., @Verhelst1993] now allow us to speed up and slow down the speech rate in a controlled fashion.
+In Chapter 7, we used Praat software that utilizes a uniform time-compression algorithm (PSOLA) to create slow and fast speech with the compression factor of 1.35 and 0.65, respectively.
+A schematic representation of waveforms of different speech rates --- normal, slow and fast --- is shown in Figure \@ref(fig:speech-rate).
 
 ```{r speech-rate, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Schematic representation of waveforms of fast, normal, and slow speech rates for the sentence `Er löest die Aufgabe' with the duration of each speech rates in second. Note the circled portion of the waveform, which examplifies that PSOLA eliminates and duplicates the parts of the original waveform to create fast and slow speech respectively.", out.width="90%"}
 
@@ -164,16 +164,16 @@ knitr::include_graphics("figures/materials/aufgabe_slow.png")
 
 ```
 
-PSOLA creates fast or slow speech in three steps: analysis, modification, and synthesis [@Charpentier1986; @Taleb2020]
-In the analysis step, it first sets pitch marks in an audio file, then creates segments of it
-(i.e., it segments the signal into successive analysis windows centered around those pitch marks).
+PSOLA creates fast or slow speech in three steps: analysis, modification, and synthesis [@Charpentier1986; @Taleb2020].
+In the analysis step, it first sets pitch marks in an audio file and then creates segments of it
+(i.e., it segments the signal into successive analysis windows centred around those pitch marks).
 Then in the modification step, depending on the time-compression/expansion factor, it deletes (or duplicates) those segments and sets a new set of pitch marks.
-Finally, in the synthesis step, it adds the new segments back to the audio file (i.e., it rearranges the analysis window) and creates the fast or slow speech as required.
+Finally, in the synthesis step, it adds the new segments back to the audio file (i.e., it rearranges the analysis window) and creates fast or slow speech as required.
 The distortion of phonemic properties of speech signals are minimal when accelerating and slowing down within the range of factor 2 or below [@Moulines1990; cf. @Longster2003].
 
 We create fast and slow versions of 120 high and 120 low predictability sentences.
-These 480 recordings are then passed through 4 channels noise vocoding to use as experimental materials.
-As discussed [earlier](#research-goals), the main aim of the manipulation of this bottom-up process is to investigate the effect of change in the rate of information flow (i.e., change in the speech rate), on the top-down processes of contextual facilitation in degraded speech comprehension.
+These 480 recordings are then passed through 4 channels noise-vocoding to use as experimental materials.
+As discussed [earlier](#research-goals), the main aim of manipulating this bottom-up process is to investigate the effect of change in the rate of information flow (i.e., change in the speech rate) on the top-down processes of contextual facilitation in degraded speech comprehension.
 <!-- In Experiment 3, PSOLA algorithm in Praat software is used to increase the rate of speech by a factor of 0.65 before passing it through 4-channels noise-vocoding. -->
 
 ## Data collection on the web
@@ -187,13 +187,13 @@ As discussed [earlier](#research-goals), the main aim of the manipulation of thi
 - Data colxn in lab and online
 - Online expt hosting platform
 - Recruiting participants online -->
-Traditionally, behavioral experiments with human participants are conducted in a laboratory setup.
+Traditionally, behavioural experiments with human participants are conducted in a laboratory setup.
 In recent years, there has been a surge of experiments that are conducted on the web [@Reips2021].
-The first generation of online experiments to study human cognition began in the mid 1990s [for reviews, @Musch2000] with the advent of internet [@Bernerslee1992].
+The first generation of online experiments to study human cognition began in the mid-1990s [for reviews, @Musch2000] with the advent of the internet [@Bernerslee1992].
 @Welch1996 was the first online experiment that was conducted in 1995 as a part of tutorials in auditory perception [@Musch2000].
-In their survey of researchers, @Musch2000 discovered that until 2000, there were already at least 2 psycholinguistics experiments conducted online,
-one of which studied the effect of context in shallow vs. deep encoding of words.
-Despite the difficulty in conducting online experiments, and skepticism of journals towards publishing results of online experiments,
+In their survey of researchers, @Musch2000 discovered that until 2000, there were already at least two psycholinguistics experiments conducted online,
+one of which studied the effect of context in shallow vs deep encoding of words.
+Despite the difficulty in conducting online experiments and scepticism of journals towards publishing results of online experiments,
 @Musch2000 expressed optimism:
 
 >
@@ -203,22 +203,22 @@ We would not be surprised if within the next few years, a fair proportion of psy
 <!-- > `r tufte::quote_footer('--- Musch & Reips, 2000, p. 85')` -->
 
 <!-- It will be interesting to see how the experiences of the early researchers shape this new direction in psychological research." -->
-And by 2021, there has been a significant growth in online experiments as technical and technological barriers are greatly reduced.
+By 2022, there has been significant growth in online experiments as technical and technological barriers are greatly reduced.
 There are many software and online platforms which psychologists and psycholinguists can use with minimal knowledge of computer programming
-to design, host and run their experiments, and retrieve these data in a fairly structured format [@Peirce2019; @Anwylirvine2020; @Prolific; see also, @Anwylirvine2021; @Eyal2021].
+to design, host and run their experiments and retrieve these data in a fairly structured format [@Peirce2019; @Anwylirvine2020; @Prolific; see also, @Anwylirvine2021; @Eyal2021].
 Online experiments have demonstrated advantages over laboratory experiments [@Gadiraju2017; @Johnson2021].
-For example, a large pool of participants is available online which is usually not possible in laboratory experiments.
-Similarly, the participants in online experiments are more diverse than those in laboratory experiments.
-Taking these advantages into consideration, psychologists and psycholinguists have conducted online experiments for almost 3 decades now.
-Scientists who only conducted laboratory experiments, or who conducted online experiments only occasionally were forced to conduct their experiments almost exclusively on the web due to the restrictions imposed by covid-19 lockdown [@Gagne2021; @Reips2021].
-Since @Welch1996's auditory perception experiment, a number of experiments have been conducted online in auditory domain [@Leensen2013; @Woods2017; @vanOs2021; @Seow2022] replicating laboratory findings [e.g., @Cooke2021].
+For example, a large pool of participants is available online, which is usually not possible in laboratory experiments.
+Similarly, the participants in online experiments are more diverse than in laboratory experiments.
+Considering these advantages, psychologists and psycholinguists have conducted online experiments for almost three decades.
+Scientists who only conducted laboratory experiments and occasional online experiments were forced to conduct their experiments almost exclusively on the web due to the restrictions imposed by covid-19 lockdown [@Gagne2021; @Reips2021].
+Since @Welch1996's auditory perception experiment, a number of experiments have been conducted online in the auditory domain [@Leensen2013; @Woods2017; @vanOs2021; @Seow2022] replicating laboratory findings [e.g., @Cooke2021].
 The experiments reported in this thesis were also conducted online.
 
-Initially, our experiments were designed to be conducted both in laboratory and online.
+Initially, our experiments were designed to be conducted both in the laboratory and online.
 As the laboratory was shut down due to covid-19 pandemic-related lockdown (M. Schmitt, personal communication, March 16, 2020), we moved the laboratory experiments to the online platform.
 We recruited participants online via Prolific Academic [@Prolific].
 We used Prolific's filters to recruit only native speakers of German residing in Germany
-who reported to not have had any hearing loss, speech-language disorder, and cognitive impairment.
+who reported not having any hearing loss, speech-language disorder, or cognitive impairment.
 Participants were redirected to the experiments that were designed and hosted in Lingoturk [@Pusse2016].
 Lingoturk is a local hosting platform that manages crowdsourcing experiments --- it runs the experiments and stores the data.
 We report the details of each experiment in Chapters 5, 6, and 7.

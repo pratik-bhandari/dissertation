@@ -89,3 +89,7 @@ And try to rewrite the equations from Ryskin and van Os.
 Figure 2.1. Scheme of four-band noise-vocoding. The clear representation of the acoustic signal, in this case the sentence (left) “Gewöhnlich nutzen wir die Räder” [Normally we use the bikes] is divided into four approximately logarithmically spaced adjacent frequency bands spanning 70 to 9000 Hz. The envelope of each frequency band is extracted and reapplied to bandpass-filtered noise carriers with matched cut-off frequencies, thereby effectively smearing the spectral information within a frequency band. The frequency bands are added up again, resulting in a spectrally severely degraded “noise-vocoded” speech signal (left; modified after Davis et al., 2005).
 
 how to interpret a spectrogram in phonetics
+
+A generalized linear mixed effects model brings about such transformation with a canonical logit link function (Malik et al., 2020).
+
+A wide angle color photograph of an old Nepali model, wearing "Daura Suruwal", catwalking on Mars, inspired from the "Avatar"
