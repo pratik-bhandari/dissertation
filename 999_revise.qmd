@@ -92,4 +92,18 @@ how to interpret a spectrogram in phonetics
 
 A generalized linear mixed effects model brings about such transformation with a canonical logit link function (Malik et al., 2020).
 
-A wide angle color photograph of an old Nepali model, wearing "Daura Suruwal", catwalking on Mars, inspired from the "Avatar"
+
+analysis of incorrect responses
+
+Limitations: About optimal model vs. maximal model; honest reporting; journal's requirement vs subscription to a school of thought
+
+Preface: Changes in my pov about prediction
+
+Multiple comparision correction
+
+Elaborate vanOs critique
+
+
+As proposed by the *reverse hierarchy theory* for auditory perception [@Ahissar2009; @Nasum2008], listeners cannot access the lower level features of an auditory stimulus (e.g., acoustic phonetic cues) when they are involved in comprehension task.
+Therefore, it is likely that attentional weight cannot be assigned to the acoustic-phonetic dimension of a speech signal,
+when an experimental task requires participants to focus on the semantics.

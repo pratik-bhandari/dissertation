@@ -102,3 +102,5 @@ Don't say what you think, say what the data speaks.
 22:57 9. Don't underclaim and don't overclaim
 25:29 10. Don't rely on the examiner's benevolence
 
+
+Previously reported facilitatory effect of semantic predictability comes from studies conducted in laboratory setups. The current experiment was conducted online. There is a possibility that different participants used different hearing devices. Such variability in hearing devices could not be controlled for in our experiment although the participants were restricted to using only desktop/laptop computers. However, we have no reason to believe that these variance sources are systematically correlated with our between-group manipulation (global channel context) and the effects are constant within subjects. Moreover, the main finding of this study, i.e., the graded effect of semantic predictability, is observed in both the groups.

@@ -26,8 +26,8 @@ university-logo: templates/beltcrest.png
 university-logo-width: 5cm
 submitted-text: A thesis submitted for the degree of
 degree: Doctor of Philosophy
-degreedate: September 2022
-dedication: Dedicated to Aama-Baa
+degreedate: January 2023
+dedication: बा-आमा प्रति समर्पित 
 acknowledgements: |
   `r paste(readLines("front-and-back-matter/_acknowledgements.Rmd"), collapse = '\n  ')`
 show-acknowledgements-in-toc: false
