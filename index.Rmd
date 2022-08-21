@@ -20,20 +20,36 @@ title: |
   Degraded speech comprehension: \
   The influence of predictability, attention and speech rate
 author: Pratik Bhandari
-college: Department of Psychology
-university: Saarland University
+# college: Department of Psychology
+# university: Saarland University
 university-logo: templates/beltcrest.png
-university-logo-width: 5cm
-submitted-text: A thesis submitted for the degree of
-degree: Doctor of Philosophy
-degreedate: January 2023
+university-logo-width: 2.2cm
+
+dissertationasis: Dissertation
+erlangung: zur Erlangung des akademischen Grades
+doktor: eines Doktors der Philosophie
+fakultat: der Fakultät HW
+bereich: Bereich Empirische Humanwissenschaften
+uds: der Universität des Saarlandes
+submitted-text: vorgelegt von
+address: aus Bhadrapur, Nepal
+
+# degree: Doctor of Philosophy
+degreedate: |
+    Saarbrücken, 2023
 dedication: बा-आमा प्रति समर्पित 
 acknowledgements: |
   `r paste(readLines("front-and-back-matter/_acknowledgements.Rmd"), collapse = '\n  ')`
 show-acknowledgements-in-toc: false
+preface: |
+  `r paste(readLines("front-and-back-matter/_preface.Rmd"), collapse = '\n  ')`
+show-preface-in-toc: false
 abstract-heading: "Abstract"
 abstract: |
   `r paste(readLines("front-and-back-matter/_abstract.Rmd"), collapse = "\n  ")`
+abstract-second-heading: "Zusammenfassung"
+abstract-second: |
+  `r paste(readLines("front-and-back-matter/_abstractDE.Rmd"), collapse = "\n  ")`
 show-abstract-in-toc: false
 # add a second abstract with abstract-second-heading: "Abstract two", and abstract-second: "My abstract"
 abbreviations: |

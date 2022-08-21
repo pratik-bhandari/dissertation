@@ -107,3 +107,5 @@ Elaborate vanOs critique
 As proposed by the *reverse hierarchy theory* for auditory perception [@Ahissar2009; @Nasum2008], listeners cannot access the lower level features of an auditory stimulus (e.g., acoustic phonetic cues) when they are involved in comprehension task.
 Therefore, it is likely that attentional weight cannot be assigned to the acoustic-phonetic dimension of a speech signal,
 when an experimental task requires participants to focus on the semantics.
+
+No. of trials excluded in fast vs N and slow vs N and fast v slow

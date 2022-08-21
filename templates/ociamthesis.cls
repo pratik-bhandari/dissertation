@@ -65,6 +65,18 @@
 \def\degree#1{\gdef\@degree{#1}}
 % The name of your Oxford college (eg Christ Church, Pembroke)
 \def\college#1{\gdef\@college{#1}}
+
+% Define the following macros to add line-by-line declaration of Disseration: from faculty and department (PB, 21 Aug, 2022).
+
+\def\dissertationasis#1{\gdef\@dissertationasis{#1}}
+\def\erlangung#1{\gdef\@erlangung{#1}}
+\def\doktor#1{\gdef\@doktor{#1}}
+\def\fakultat#1{\gdef\@fakultat{#1}}
+\def\bereich#1{\gdef\@bereich{#1}}
+\def\uds#1{\gdef\@uds{#1}}
+\def\address#1{\gdef\@address{#1}}
+
+
 % Your candidate number (ie for master's submissions)
 \def\candidateno#1{\gdef\@candidateno{#1}}
 % Your word count (for master's submissions)
@@ -205,26 +217,57 @@
 \vspace*{2ex}
     {\@degreedate}}
   \end{center}
+% \else
+%   \begin{center}
+%     { \thesistitlesize {\bfseries {\@title}} \par}
+% {\large \vspace*{\gapbeforecrest} {\crest \par} \vspace*{\gapaftercrest}}
+%     {{\Large \@author} \par}
+% {\large \vspace*{1ex}
+%     {{\@college} \par}
+% \vspace*{1ex}
+%     {\university \par}
+% \vspace*{20mm}
+%     {{\submittedtext} \par}
+% \vspace*{1ex}
+%     {\it {\@degree} \par}
+% \vspace*{2ex}
+%     {\@degreedate}}
+%   \end{center}
+% \fi
+%   \vfill\null
+% \end{alwayssingle}}
+% 
+% First six lines will declare your dissertation type (phil or nar.net), department, faculty and UdS's name.
+% Author name and address and date of submission will go in the bottom.
 \else
   \begin{center}
     { \thesistitlesize {\bfseries {\@title}} \par}
 {\large \vspace*{\gapbeforecrest} {\crest \par} \vspace*{\gapaftercrest}}
-    {{\Large \@author} \par}
+    {{\large \@dissertationasis} \par}
 {\large \vspace*{1ex}
-    {{\@college} \par}
+    {{\@erlangung} \par}
 \vspace*{1ex}
-    {\university \par}
-\vspace*{20mm}
+    {{\@doktor} \par}
+\vspace*{1ex}
+    {{\@fakultat} \par}
+\vspace*{1ex}
+    {{\@bereich} \par}
+\vspace*{1ex}
+    {{\@uds} \par}
+
+\vspace*{15mm}
+
     {{\submittedtext} \par}
 \vspace*{1ex}
-    {\it {\@degree} \par}
+    {{\Large \@author} \par}
+\vspace*{1ex}
+    {{\@address} \par}
 \vspace*{2ex}
     {\@degreedate}}
   \end{center}
 \fi
   \vfill\null
 \end{alwayssingle}}
-
 
 
 % DEDICATION
@@ -255,6 +298,17 @@
 }
 {\end{alwayssingle}}
 
+
+% PREFACE % added by PB
+% all the features are identical to Acknowledgements
+% 
+\newenvironment{preface}%
+{ \begin{alwayssingle}\chapter*{Preface}
+  \thispagestyle{\numberstyleacks}
+	\pagestyle{\numberstyleacks}
+	\setlength{\baselineskip}{\frontmatterbaselineskip}
+}
+{\end{alwayssingle}}
 
 %ABSTRACT
 %

@@ -250,7 +250,14 @@ $endif$
 % Everybody needs to complete the following:
 \title{$title$}
 \author{$author$}
-\college{$college$}
+% \college{$college$}
+\dissertationasis{$dissertationasis$}
+\erlangung{$erlangung$}
+\doktor{$doktor$}
+\fakultat{$fakultat$}
+\bereich{$bereich$}
+\uds{$uds$}
+\address{$address$}
 
 % Master's candidates who require the alternate title page (with candidate number and word count)
 % must also un-comment and complete the following three lines:
@@ -367,6 +374,22 @@ $endif$
 \begin{acknowledgements}
  	$acknowledgements$
 \end{acknowledgements}
+
+$endif$
+
+
+%%%%% PREFACE
+$if(preface)$
+
+$if(show-preface-in-toc)$
+\addcontentsline{toc}{chapter}{Preface}
+\renewcommand{\numberstyleacks}{plain}
+\renewcommand{\numberstyleabstract}{plain}
+$endif$
+
+\begin{preface}
+ 	$preface$
+\end{preface}
 
 $endif$
 
