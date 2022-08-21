@@ -91,9 +91,9 @@ This experiment was designed such that processing the context was not strictly n
 Listeners were asked to report the noun of the sentence that they heard, which was in the final position of the sentence.
 This instruction did not require listeners to pay attention to the context which preceded the target word.
 
-## Methods
+### Methods
 
-### Participants
+#### Participants
 
 We recruited 50 participants online via Prolific Academic [@Prolific].
 One participant whose response accuracy was less than 50\% across all experimental conditions was removed.
@@ -101,7 +101,7 @@ Among the remaining 49 participants ($M$ age $\pm SD=23.31\pm 3.53$ years; age r
 All participants were native speakers of German and did not have any speech-language disorder, hearing loss, or neurological disorder (all self-reported).
 All participants received 6.20 Euro as monetary compensation for their participation in the approximately 40 minutes long experiment.
 
-### Materials
+#### Materials
 
 Materials used in the experiment were created by the method described in Chapter \@ref(chapter-methods) (Section \@ref(experimental-materials)).
 <!-- [Chapter 3](#experimental-materials). -->
@@ -109,7 +109,7 @@ That is, there were 120 unique sentences in each of these three categories: low 
 Mean cloze probabilities of the target words of low, medium and high predictability sentences were $0.022\pm0.027$ ($M\pm SD$; range = $0.00-0.09$), $0.274\pm0.134$ ($M\pm SD$; range = $0.1-0.55$), and $0.752\pm0.123$ ($M\pm SD$; range = $0.56-1.00$) respectively.
 All 360 sentences were then noise-vocoded through 1, 4, 6, and 8 channels to create degraded speech.
 
-### Procedure
+#### Procedure
 
 Participants were asked to use headphones or earphones.
 A sample of vocoded speech not used in the practice trial or the main experiment was provided so that the participants could adjust the volume to their preferred level of comfort at the beginning of the experiment.
@@ -126,7 +126,7 @@ Levels of speech degradation were also balanced across each predictability level
 The sentences in each list were pseudo-randomized so that no more than three sentences of the same degradation and predictability condition appeared consecutively.
 The lists are presented in Appendix B.
 
-## Analyses
+### Analyses
 
 <!-- We preprocessed and analysed data in R-Studio (Version 3.6.3; R Core Team, 2020).-->
 Out of 5880 trials from 49 participants, there were only five correct responses, one each from 5 participants at 1-channel.
@@ -138,14 +138,14 @@ Correct responses were coded as 1, and incorrect responses were coded as 0.
 Number of channels (categorical: 4-channel, 6-channel, and 8-channel noise-vocoding), target word predictability (categorical: high predictability sentences, medium predictability sentences, low predictability sentences), and the interaction of number of channels and target word predictability were included in the fixed effects.
 <!--We applied treatment contrast for number of channels (8 channels as a baseline) and sliding difference contrast for target word predictability (low predictability vs medium predictability, and low predictability vs high predictability sentences).-->
 
-We first fitted a model with a maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
+We fitted a model with a maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
 Both by-participant and by-item random slopes were included for number of channels, target word predictability, and their interaction,
 which was supported by the experiment design.
 Based on the previous findings on perceptual adaptation [e.g., @Cooke2022; @Davis2005; @Erb2013], we further added trial number (centred) in the fixed effect structure to control for whether the listeners adapted to the degraded speech.
 <!-- We report the results of the model that includes trial number as fixed effects. -->
 We applied treatment contrast for number of channels (8-channel as a baseline) and sliding difference contrast for target word predictability (low predictability vs medium predictability and low predictability vs high predictability).
 
-## Results and discussion
+### Results and discussion
 
 Mean response accuracies (in percentage) for all experimental conditions aggregated across all participants and items are shown in Table \@ref(summary1a) and Figure \@ref(fig:figure1a).
 It shows that accuracy increases with an increase in the number of noise-vocoding channels, i.e., with the decrease in speech degradation.
@@ -245,14 +245,14 @@ Trial number & .001 & .002 & .48 & .63 \\
 Following up on Experiment 1, we conducted Experiment 2 on a separate group of participants with a different task instruction.
 This experiment was intended to test the hypothesis that the facilitatory effect of top-down predictions is observed only when the listeners' attention is unrestricted so that the context information is also included within the listener's attentional focus.
 
-## Methods
+### Methods
 
-### Participants and Materials
+#### Participants and Materials
 
 We recruited a new group of 48 participants ($M$ age $\pm SD = 24.44 \pm 3.5$ years; age range = 18-31 years; 32 males) online via Prolific Academic.
 The same stimuli were used as in Experiment 1.
 
-### Procedure
+#### Procedure
 
 Participants were presented with sentences at a comfortable volume level.
 They were asked to use headphones or earphones, and a prompt was presented before the experiment began to adjust the volume to their level of comfort.
@@ -260,7 +260,7 @@ Eight practice trials were presented, followed by 120 experimental trials.
 In contrast to Experiment 1, the participants were instructed to report the entire sentence, instead of reporting only the sentence-final word, by typing in what they heard.
 We did not limit the response time.
 
-## Analyses
+### Analyses
 
 We followed the same data analysis procedure as in Experiment 1.
 The 1-channel speech degradation condition was excluded from the analysis.
@@ -269,7 +269,7 @@ we did not consider whether listeners reported other words in a sentence correct
 only the final words of the sentences (target words) were considered as either correct or incorrect responses.
 As in Experiment 1, we report the results from the maximal model supported by the design.
 
-## Results and discussion
+### Results and discussion
 
 Mean response accuracy for different conditions is shown in Table \@ref(summary1b) and Figure \@ref(fig:figure1b).
 We found that accuracy increased when the number of noise-vocoding channels increased, as well as when the target word predictability increased.

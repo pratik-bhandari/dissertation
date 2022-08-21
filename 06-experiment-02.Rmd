@@ -30,7 +30,7 @@ We speculate that when there is a trial-by-trial variation in semantic feature (
 ## Introduction
 
 In the literature of speech perception and sentence processing, studies have argued that prediction is either probabilistic and graded, or it is an all-or-nothing phenomenon [e.g., @Coltheart2004; @Kuperberg2016; @Luke2016].
-Very few studies have investigated such theoretical questions within the domain of adverse listening conditions, specifically in degraded speech comprehension [e.g., @Strauss2013; @Corps2020; cf. @vanOs2021].
+Very few studies have investigated such theoretical questions within the domain of adverse listening conditions, specifically in degraded speech comprehension [e.g., @Corps2020; @Strauss2013; cf. @vanOs2021].
 @Strauss2013 posited that listeners cannot preactivate less predictable sentence endings in an adverse listening condition.
 They proposed that the facilitatory effect of predictability is limited to only highly predictable sentence endings at a moderate level of spectral degradation of speech.
 Although many studies support the general idea of Strau\ss\ and colleagues that predictability facilitates comprehension of degraded speech [e.g., @Hunter2018; @Obleser2010; @Sheldon2008a],
@@ -46,8 +46,8 @@ We set a metric of measurement of language comprehension that considers whether 
 
 ## Background
 
-#### Predictability effects in degraded speech perception
-\noindent
+### Predictability effects in degraded speech perception
+
 We discussed in Chapter \@ref(chapter-background) (Section \@ref(background-facilitatory-effect))
 that some studies [@Obleser2007; @Obleser2010; @Sheldon2008a; see also @Hunter2018] have already shown the facilitatory effect of predictability in comprehension of degraded speech.
 For example, Obleser and colleagues compared high and low predictability sentences and observed contextual facilitation, in terms of the difference in response accuracy between high and low predictability sentences, at 8 channels and 4 channels noise-vocoded speech in their [-@Obleser2007] and [-@Obleser2010] studies respectively.
@@ -69,8 +69,8 @@ However, when put in perspective with our research question, these studies were 
 And the ones that examined degraded speech comprehension used only two levels of semantic predictability (high and low).
 The granularity and the nature of prediction remain to be tested in degraded speech comprehension.
 
-#### Adaptation to degraded speech
-\noindent
+### Adaptation to degraded speech
+
 We discussed in Chpater \@ref(chapter-background) that studies have shown evidence for perceptual adaptation to artificially distorted speech.
 When exposed to noise-vocoded speech, listeners’ word recognition accuracy is shown to increase over the course of experiment.
 @Davis2005 and @Erb2013 presented participants with 4- and 6-channel noise-vocoded speech, respectively in a single block.
@@ -104,8 +104,8 @@ On the one hand, repeated exposure to degraded speech leads to perceptual adapta
 On the other hand, uncertainty about next-trial speech quality is detrimental to word recognition.
 
 
-#### Measurement of language comprehension {#chapter-6-measurement}
-\noindent
+### Measurement of language comprehension {#chapter-6-measurement}
+
 How we measure language comprehension has rarely been guided by any specific theoretical motive in the existing literature [cf. @Amichetti2018].
 There is a discrepancy across studies in how language comprehension in degraded speech in quantified.
 Some studies that reported contextual facilitation in degraded speech comprehension used proportion of correctly reported *final* words only [e.g., @Hunter2018; @Obleser2010; @Sheldon2008a].
@@ -115,8 +115,8 @@ Such inconsistencies make cross-study comparison difficult.
 None of the metrics outlined here take into account if listeners have correctly identified the context, which should be the most important factor to be considered in the first place.
 It is clear that if the context is misidentified, then the listeners are highly likely to misidentify the succeeding words [@Marrufo2019].
 
-#### The present study
-\noindent
+### The present study
+
 Stemming from the results of Chapter \@ref(chapter-attention-prediction), and from the motivations outlined in the beginning of this chapter, the goals of the present study were threefold:
 The first goal was to attemnt to replicate the facilitatory effect of predictability examining the nature of predictability, i.e., to test if listeners form narrowed expectations.
 Obleser and colleagues [e.g., @Obleser2007; @Obleser2010] have shown predictability effects (or contextual facilitation) to appear only at a moderate level of speech degradation by using only two levels of predictability (low and high).
@@ -176,22 +176,12 @@ This confirmed there was a certainty of next-trial speech quality (within each b
 ### Procedure
 
 Participants were asked to use earphones or headphones.
-A prompt to adjust loudness was displayed at the beginning of the experiment:
-A noise-vocoded sound not used in the main experiment was presented, and participants were asked to adjust the loudness at their level of comfort.
-One spoken sentence was presented in each trial with an inter-trial interval of 1000ms.
-Eight practice trials were presented before presenting 120 experimental trials.
-They were asked to enter what they had heard (i.e., to type in the entire sentence).
-Guessing was encouraged.
-The response was not timed.<!-- Time limit to respond was not imposed on the participants.-->
-The experiment was about 40 minutes long.
-
-Participants were asked to use headphones or earphones.
-A sample of vocoded speech not used in the practice trial or the main experiment was provided for the participants to adjust the volume to their preferred level of comfort at the beginning of the experiment.
+A sample of vocoded speech not used in the practice trial or the main experiment was presented to adjust the volume to their preferred level of comfort at the beginning of the experiment.
 The participants were instructed to listen and report the entire sentences by typing in the everything they heard using the keyboard.
 The time for typing in the response was not limited.
 They were informed at the beginning of the experiment that some of the sentences would be ‘noisy’ and not easy to understand.
 In these cases, guessing was encouraged.
-Eight practice trials with different levels of speech degradation were given to familiarize the participants with the task before presenting all 120 experimental trials with an intertrial interval of 1,000 ms.
+Eight practice trials with different levels of speech degradation were provided to the participants to familiarize them with the task before presenting all 120 experimental trials with an intertrial interval of 1,000 ms.
 
 Each participant were presented with 40 high predictability, 40 medium predictability, and 40 low predictability sentences and the levels of speech degradation were balanced across each predictability level.
 For each of the three predictability conditions (high, medium, and low predictability), ten 1-channel, ten 4-channel, ten 6-channel, and ten 8-channel noise-vocoded sentences were presented, resulting in a total of 30 sentences at each degradation level.
@@ -288,7 +278,6 @@ error \\
 knitr::include_graphics("figures/results-fig/expt-2.jpg")
 ```
 
-
 We found a significant main effect of number of channels.
 The response accuracy at 8-channel was higher than for both 4-channel
 ($\beta$ = -2.87, SE = .22, *z*(6917) = -13.1, *p* <.001),
@@ -329,7 +318,6 @@ Global channel context $\times$ & -..27 & .14 & -2.02 & .043 \\
 \end{tabular} 
 \end{center} 
 \end{table}
-
 
 We also found a significant interaction between number of channels and target word predictability
 ($\beta$ = -.71, SE = .29, *z*(6917) = -2.44, *p* = .015).
@@ -431,11 +419,13 @@ The experiment reported here provides a novel insight into predictive language p
 We showed that while processing a moderately degraded speech, listeners form top-down predictions across a wide range of semantic space that is not restricted within highly predictable sentence endings.
 In contrast to the *narrowed expectations* view, comprehension of words ranging from low- to high-cloze probability, including the medium-cloze probability, is facilitated in a graded manner.
 This contextual facilitation is observed while listening to a moderately degraded speech.
-Regardless of (un)certainty about the next-trial speech quality, we found that listeners do not adapt to degraded speech when semantic predictability constantly varies,
-i.e., higher level semantic features interfere with the lower level perceptual properties.
+Regardless of (un)certainty about the next-trial speech quality, we found that listeners do not adapt to degraded speech when semantic predictability varies constantly,
+i.e., higher level semantic features interfere with the lower-level perceptual properties.
 In the next chapter,
 we investigate the effect of changes in the lower-level bottom-up processing on top-down semantic predictions.
-Specifically, we examine how the change in speech rate moderates semantic predictions at a moderate level of speech degradation.
-
+Specifically, we examine how the change in speech rate moderates semantic predictions at the moderate level of speech degradation.
+The findings from the experiments reported in this chapter and the preceding chapter show that when listeners attend to the sentence context, predictability facilitates comprehension of moderately degraded speech.
+In the next chapter, we ask the question:
+Does an increase or decrease in the effortful perception of degraded speech along with an increase or decrease in the rate of information flow further increases or decreases the contextual facilitation?
 
 [^replication-failure]: However, Nieuwland et al. (2018) could not replicate DeLong et al. (2005)'s finding that comprehenders predict word-form. The N400 effect at the English articles *a/an* were not replicable.

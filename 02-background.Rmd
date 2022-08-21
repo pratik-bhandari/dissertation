@@ -220,7 +220,7 @@ and show that listeners' do not form top-down predictions when attentional resou
 <!--Similarly, from @Pickering2018's *prediction-by-production* account of predictive language processing,
 it follows that comprehenders make predictions (about word-form) at a slow presentation rate, but not at a fast presentation rate.-->
 We also investigate the effect of bottom-up processes, like speech rate, on top-down processes (i.e., predictability effect in degraded speech comprehension).
-The extant findings on the effects of speech rate on the facilitatory effect of predictability have been mixed both in clear and degraded speech comprehension [e.g., @Aydelott2004; @Goy2013; @Iwasaki2002; @Winn2021b].
+The extant findings on the effects of speech rate on the facilitatory effect of predictability have been mixed both in clear and degraded speech comprehension [e.g., @Aydelott2004; @Goy2013; @Iwasaki2002; @Winn2021].
 We demonstrate a scope for current theories of predictive language processing to incorporate
 the instances of varying predictability effects at fast and slow speech rates and the effects of attention on degraded speech comprehension.
 
