@@ -421,11 +421,12 @@ In contrast to the *narrowed expectations* view, comprehension of words ranging 
 This contextual facilitation is observed while listening to a moderately degraded speech.
 Regardless of (un)certainty about the next-trial speech quality, we found that listeners do not adapt to degraded speech when semantic predictability varies constantly,
 i.e., higher level semantic features interfere with the lower-level perceptual properties.
-In the next chapter,
-we investigate the effect of changes in the lower-level bottom-up processing on top-down semantic predictions.
-Specifically, we examine how the change in speech rate moderates semantic predictions at the moderate level of speech degradation.
 The findings from the experiments reported in this chapter and the preceding chapter show that when listeners attend to the sentence context, predictability facilitates comprehension of moderately degraded speech.
-In the next chapter, we ask the question:
+All in all, these findings revealed that the bottom-up perceptual property of speech (i.e., speech quality) interacts with the top-down predictive processes.
+In the next chapter,
+we investigate the effect of further changes in the lower-level bottom-up processing on the top-down semantic predictions.
+Specifically, we examine how the change in speech rate moderates semantic predictions at the moderate level of speech degradation.
+We ask the question:
 Does an increase or decrease in the effortful perception of degraded speech along with an increase or decrease in the rate of information flow further increases or decreases the contextual facilitation?
 
 [^replication-failure]: However, Nieuwland et al. (2018) could not replicate DeLong et al. (2005)'s finding that comprehenders predict word-form. The N400 effect at the English articles *a/an* were not replicable.
