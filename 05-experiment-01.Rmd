@@ -106,7 +106,7 @@ All participants received 6.20 Euro as monetary compensation for their participa
 Materials used in the experiment were created by the method described in Chapter \@ref(chapter-methods) (Section \@ref(experimental-materials)).
 <!-- [Chapter 3](#experimental-materials). -->
 That is, there were 120 unique sentences in each of these three categories: low predictability, medium predictability and high predictability.
-Mean cloze probabilities of the target words of low, medium and high predictability sentences were $0.022\pm0.027$ ($M\pm SD$; range = $0.00-0.09$), $0.274\pm0.134$ ($M\pm SD$; range = $0.1-0.55$), and $0.752\pm0.123$ ($M\pm SD$; range = $0.56-1.00$) respectively.
+Mean cloze probabilities of the target words of low, medium and high predictability sentences were $0.022\pm0.027$ ($M\pm SD$; range = 0.00-0.09), $0.274\pm0.134$ ($M\pm SD$; range = 0.1-0.55), and $0.752\pm0.123$ ($M\pm SD$; range = 0.56-1.00) respectively.
 All 360 sentences were then noise-vocoded through 1, 4, 6, and 8 channels to create degraded speech.
 
 #### Procedure
