@@ -99,9 +99,11 @@ The channel of transmission can become noisy due to factors like background nois
 a poor signal transmission of a telephone call that distorts the speaker's speech,
 hearing loss of a listener,
 hearing aid or cochlear implant worn by a listener, and so on.
-To understand speech in such a noisy channel of communication, a listener puts different weights on the distorted bottom-up auditory input $P(u_p|u_i, N)$ vs her prior information $P(u_i|m_i)P(m_i)$ (e.g., knowledge about the speaker, world, context information, etc.).
+To understand speech in such a noisy channel of communication, a listener puts different weights on the distorted bottom-up auditory input $P(u_p|u_i, N)$ vs the prior information $P(u_i|m_i)P(m_i)$ (e.g., context information).
+This weighing of top-down and bottom-up processes is considered as a rational process by the models of probabilistic language processing in reading comprehension [@Levy2008; @Ryskin2018; see also @vanOs2021].
+In this thesis, we also investigate to what extent listeners use their priors from the context information when the signal is distorted at different levels.
 
-Studies in clean speech and reading comprehension have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events yet to be encountered.
+Clean speech and reading comprehension studies have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events yet to be encountered.
 
 Let's take the following sentence, for example:
 
@@ -266,9 +268,9 @@ These experiments are conducted to examine the predictability effect in degraded
 and the role of auditory attention.
 Participants in both experiments are presented with the speech degraded at different levels of degradation
 and sentences of different levels of predictability.
-Participants in Experiment 1A are asked to type in only the final word of a sentence;
+Participants in Experiment 1 are asked to type in only the final word of a sentence;
 this did not bind their attention to the sentence context.
-In contrast, the participants in Experiment 1B are asked to type in the entire sentence that they heard, which required them to attend to the sentence context as well.
+In contrast, the participants in Experiment 2 are asked to type in the entire sentence that they heard, which required them to attend to the sentence context as well.
 We replicate the previously reported predictability effects in the noisy channel only when participants attended to the entire sentence, including the context.
 <!-- It is observed at the moderate levels of speech degradation. -->
 We show that top-down predictions cannot be generated at moderate levels of degradation when insufficient attention is given to context. 
@@ -293,8 +295,8 @@ At the end of this chapter, we note the intrinsic difficulty of processing degra
 In two experiments, it addresses the fourth, the fifth, and the sixth research goals.
 We use the same metric of measurement of language comprehension as Chapter \@ref(chapter-graded-prediction), which takes into account listeners' correct identification of the context.
 Listeners are presented with a moderately degraded speech at which the predictability effect is observed in Chapter \@ref(chapter-graded-prediction).
-In Experiment 7A, the moderately degraded speech is presented at normal and fast speech rates.
-In Experiment 7B, the speech rates are normal and slow.
+In Experiment 1, the moderately degraded speech is presented at normal and fast speech rates.
+In Experiment 2, the speech rates are normal and slow.
 For fast speech, however, both intelligibility and the predictability effect are reduced, driven by the difficulty in processing words that are less predictable from the context.
 Although more time is available to process the context of the degraded speech at a slow speech rate,
 there is no increase in the facilitatory effect of predictability with a reduced speech rate;
@@ -305,7 +307,7 @@ This chapter discusses on the limitations of predictive processing driven by the
 \noindent
 **Chapter \@ref(chapter-conclusion)** summarizes the findings of all the studies.
 It presents the theoretical implications of this thesis and the future direction it points to.
-The general limitations of the studies are briefly discussed.
+The general limitations of the studies are also discussed.
 
 \noindent
 **Chapter \@ref(chapter-ethics)** presents ethical approval that was obtained to run the experiments on human subjects.
@@ -347,7 +349,7 @@ The presentations and publications that report on parts of the research describe
 -   Bhandari, P., Demberg, V., & Kray, J.
     (2021).
     Semantic predictability facilitates comprehension of degraded speech in a graded manner.
-    *Frontiers in Psychology*, 12:714485. doi: 10.3389/fpsyg.2021.714485
+    *Frontiers in Psychology*, 12:714485. doi:10.3389/fpsyg.2021.714485
 
 -   Bhandari, P., Demberg, V., & Kray, J.
     (2021).

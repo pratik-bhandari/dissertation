@@ -1,42 +1,42 @@
-Listening to someone talk and understand them seems pretty easy.
-But our day-to-day communication takes place in adverse listening conditions:
-multiple people talking at the same time,
-background noise from different sound sources,
-distortion of the speech in a phone call, and so on.
-Despite these adversities, most of the times, we communicate successfully.
-One of the significant contributors in our ability to understand language in such adverse listening condition is *predictive language processing*.
+It seems pretty easy to listen to and understand someone speaking.
+However, our day-to-day conversations occur under adverse listening conditions.
+For example, background noise comes from different sound sources, multiple people talk simultaneously (e.g., in a café), a poor signal connection distorts the voice of a person talking on the other end of a telephone call, and the list goes on.
+Despite these adversities, most of the time, we communicate successfully.
+One of the significant contributors to our ability to understand language in adverse listening conditions is *predictive language processing*.
 
-Humans are not passive consumers of language: we use the information available to us from a context and predict the not-yet-encountered, upcoming linguistic events.
-We do not wait for speech to unfold completely to decode its meaning.
+Humans are not passive consumers of language:
+we use the information available to us from a context and predict the not-yet-encountered, upcoming linguistic events.
+We do not wait for a speech signal to unfold completely to decode its meaning.
 This feature of human language processing is critical in understanding speech in adverse listening conditions.
 
-In this thesis, we investigate the extent to which listeners can use context information and form predictions while they are listening to speech at different levels of degradation.
-The central theme of the thesis is the investigation of the interactions between top-down semantic predictions and bottom-up auditory processing in adverse listening conditions, under the theoretical framework of predictive processing and the noisy channel model of communication.
-There are numerous methods by which context information and speech degradation (adverse listening condition) can be created and manipulated in an experimental setup.
-For the purposes of this thesis, the context information is manipulated by an creating short Subject-Verb-Object sentences in German in which the verb of a sentence is predictive of its noun.
-In addition to the context information, we also examine the effect of strategic attention allocation as a top-down process.
-Speech is degraded by noise-vocoding of clean speech.
-In addition to noise-vocoding, we examine the effect of changes in the speech rate as bottom-up processes.
+In this thesis, we investigated how listeners can use context information and form predictions while listening to a speech at different levels of degradation.
+The central theme of the thesis is the investigation of the interactions between top-down semantic predictions and bottom-up auditory processing in adverse listening conditions under the theoretical framework of predictive processing and the noisy channel model of communication.
+There are numerous methods by which context information and speech degradation (adverse listening conditions) can be created and manipulated in an experimental setup.
+We manipulated the context information by creating short Subject-Verb-Object sentences in German in which the verb of a sentence was predictive of its noun.
+In addition to the context information, we examined the effect of strategic attention allocation as a top-down process.
+Speech was degraded by noise-vocoding of clean speech.
+In addition to noise-vocoding, we examined the effect of changes in the speech rate as another factor that influences the bottom-up processes.
 
-In Chapter \@ref(chapter-attention-prediction), we first investigate the role of top-down attention regulation in listeners' ability to use the context information.
-The question we ask is whether the attention to the context is strictly necessary, regardless of the comprehenders *hearing* it, to generate predictions about an upcoming word in a sentence at different levels of degradation.
-We show that only when listeners attend to the context information, can semantic predictability of a sentence facilitate degraded speech comprehension.
-Moreover, such facilitation is absent at severe degradation levels.
-We further examine these findings in Chapter \@ref(chapter-graded-prediction) and found that
-the facilitatory effect of predictability is observed only at a moderate level of speech degradation.
-We tested the nature of predictability effect and found that it is graded in nature and not all-or-nothing.
-In other words, we found that listeners' prediction about an upcoming word is not restricted to only highly constraining sentence context,
-instead listeners predict the upcoming word depending on its probability of occurance (e.g., cloze probability).
-Finally, in Chapter \@ref(chapter-speech-rate), we examined if a change in speech rate --- which changes the processing time --- amplifies or reduces the contextual facilitation that was observed in Chapter \@ref(chapter-graded-prediction).
-The results show that listeners' comprehension of the moderately degraded speech is at its best at the normal speech rate:
-Slowing down does not amplify the contextual facilitation.
-However, on increasing the speech rate, processing of low, but not high, predictability sentences is impaired.
-In the restriced processing time, activation of target words in less constraining sentence context is more difficult than in highly constraining sentence context.
+In Chapter \@ref(chapter-attention-prediction), we first investigated the role of top-down attention regulation in listeners’ ability to use the context information.
+Our research question was whether the attention to the context is strictly necessary, regardless of the comprehenders hearing it, to generate predictions about an upcoming word in a sentence at different levels of degradation.
+We showed that only when listeners attend to the context information can the semantic predictability of a sentence facilitate degraded speech comprehension.
+Moreover, such facilitation was absent at severe degradation levels.
+We further examined these findings in Chapter \@ref(chapter-graded-prediction) and found that the facilitatory effect of predictability is observed only at a moderate level of speech degradation.
+We tested the nature of the predictability effect and found that it is graded in nature and not all-or-nothing.
+In other words, we found that listeners’ prediction about an upcoming word is not restricted to only highly constraining sentence context;
+instead, listeners predict the upcoming word depending on its probability of occurrence in a given context (e.g., cloze probability).
+Finally, in Chapter \@ref(chapter-speech-rate), we examined if a change in speech rate --- which changes the processing time --- amplifies or reduces the contextual facilitation observed in Chapter \@ref(chapter-graded-prediction).
+The results showed that listeners’ comprehension of the moderately degraded speech is at its best at the normal speech rate:
+Slowing down did not amplify the contextual facilitation.
+However, on increasing the speech rate, processing of low but not high predictability sentences was impaired.
+In the restricted processing time, the activation of target words in a less constraining sentence context was more difficult than in a highly constraining sentence context.
 
-All these experiments conducted with German stimuli in native German speaking young adults reveal that comprehension of degraded speech is predictive in nature: language processing in a noisy channel is probabilistic and rational.
-Depending on what is necessary to understand the speech, listeners weigh in top-down processes (lexical-semantic cues) or bottom-up auditory processes (acoustic-phonetic cues).
+All these experiments conducted with German stimuli in native German-speaking young adults revealed that comprehension of degraded speech is predictive in nature:
+language processing in a noisy channel is probabilistic and rational.
+Listeners weigh top-down processes (lexical-semantic cues) and bottom-up auditory processes (acoustic-phonetic cues).
+<!-- depending on the task at hand, and the adversity of the listening condition. -->
 When the speech degradation is not severe, they can rely on the bottom-up input of an upcoming word (i.e., what they actually heard), regardless of the context information available to them.
-When the speech is moderately degraded and it is intelligible enough, they generate predictions about the upcoming word from the context information.
-In addition, the weighing in of lexical-semantic and acoustic-phonetic cues are also modulated by attention regulation and speech rate.
+When the speech is moderately degraded but intelligible enough, they generate predictions about the upcoming word from the context information.
+In addition, the *weighing* of lexical-semantic and acoustic-phonetic cues is also modulated by attention regulation and speech rate.
 
-Therefore, this thesis reveals the interaction between top-down and and bottom-up processes in degraded speech comprehension. It is a replication and extension of prior findings with a significant contribution in examining the nature of predictability effect, its boundary conditions, and the effect of speech rate.
+Taken together, this thesis contributes to the nuanced understanding of the dynamic interaction between top-down and bottom-up processes in degraded speech comprehension.

@@ -45,6 +45,14 @@ Are 'LP, fast speech' failed predictions? Failed predictions are costly. @Husban
 
 @Cole2020: Additionally, the cloze probability only provides an estimation of, on average, whether listeners will consider a given word as a potential outcome in a sentence context. It does not indicate whether a specific individual actually predicted or considered that word in that particular instance. Specifically, individual differences in linguistic experiences can lead individuals to predict different words in the same context. It is important to consider a specific individuals’ predictions and how they affect processing because this difference in prediction is related to response times to target words (Verhagen, Mos, Bakis, & Schilperoord, 2018). Graded responses to words of varying cloze probability therefore may not necessarily reflect differences in individual prediction, especially in sentences that are less predictable.
 
+----
+
+New section: Counterarguments or Limitations or ... what could've been done ... alternative analyses/explanations/... 
+- Alternative exp: If they understand the context correct, they could also understand the noun. They're not predicting; it is just like 8ch; simply following bottom-up. COUNTER: If so, then why effect of pred.?
+
+Why not run a single expt with fast, slow, N?
+Coz there would be an extra switching cost F-S-N-F-S-N...
+
 
 ### Prediction by production/associaiton in speech rate paper
 
@@ -101,11 +109,8 @@ Preface: Changes in my pov about prediction
 
 Multiple comparision correction
 
-Elaborate vanOs critique
-
-
-As proposed by the *reverse hierarchy theory* for auditory perception [@Ahissar2009; @Nasum2008], listeners cannot access the lower level features of an auditory stimulus (e.g., acoustic phonetic cues) when they are involved in comprehension task.
-Therefore, it is likely that attentional weight cannot be assigned to the acoustic-phonetic dimension of a speech signal,
-when an experimental task requires participants to focus on the semantics.
 
 No. of trials excluded in fast vs N and slow vs N and fast v slow
+
+
+For example, DeLong, Urbach, and Kutas (2005) found it was easier for readers to process the function word ‘an’ while anticipating a pho- nologically congruent continuation like ‘airplane’as opposed to a phonologically incongruent one like ‘kite’.

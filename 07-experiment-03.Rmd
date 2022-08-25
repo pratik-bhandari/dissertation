@@ -42,7 +42,7 @@ However, the evidence of enhanced contextual facilitation in slow speech is mixe
 Specifically for degraded speech, there is no clear evidence on how different speech rates affect the facilitatory effect (contextual facilitation) at a moderate level of degradation [@Iwasaki2002; @Meng2019; @Winn2021].
 
 Degraded speech is intrinsically effortful to listen to [@Eckert2016; @Wild2012].
-An increase (or decrease) in listening effort by a change in speech rate limits the cognitive resources available to encode the context information and form predictions [cf. @Huettig2016].
+An increase (or decrease) in listening effort by a change in speech rate limits the cognitive resources available to encode the context information and form predictions [cf. @Huettig2016a].
 Therefore, the present study aimed to investigate the effect of a change in speech rate on listeners' ability to generate predictions while listening to a moderately degraded speech.
 One line of studies shows that at a moderate level of degradation (e.g., 4-channel noise-vocoding), semantic predictions facilitate language comprehension [e.g., @Obleser2007].
 Another line of studies shows that an increase or decrease in speech rate modulates the predictability effect, i.e., contextual facilitation [e.g., @Aydelott2004; @Goy2013].
@@ -70,7 +70,7 @@ Beyond a certain maximum speed of speech rate, the processing of fast speech bec
 In contrast, the central auditory-language comprehension system is shown to be flexible in processing slow speech without reducing its intelligibility to a certain lower limit of its rescaling capacity [@Lerner2014].
 So, it can be expected that slow speech does not limit cognitive resources, and therefore processing context information to generate predictions in slow speech is not different from normal speech.
 Alternatively, slow speech provides more time to buffer the auditory information at the lower level of the information processing hierarchy [@Ghitza2009; @Vagharchakian2012] and consequently provides more time for the central auditory-language comprehension system to use the context information and form predictions.
-Studies from Visual World Paradigm also support this claim that slow speech provides more time for speech processing and semantic predictions [@Fernandez2020; @Huettig2016].
+Studies from Visual World Paradigm also support this claim that slow speech provides more time for speech processing and semantic predictions [@Fernandez2020; @Huettig2016a].
 However, some studies have cast doubt on the processing advantage of slow speech, arguing that slow speech is perceived as overly artificial and demands high working memory [e.g., @Kemper1999; @Nejime1998; see also @Liu2006; @Love2009].
 In both younger and older adults, @Sommers2020 found that slow speech does not render additional benefit in a sentence comprehension task in noise, even when supported by a visual context.
 Therefore, given these competing accounts, it is unclear whether the effect of predictability increases in slow speech compared to normal speech.
@@ -121,7 +121,7 @@ Similar to the studies conducted with clean speech, these studies also indicate 
 
 Taken together, the utility of semantic predictability in comprehension of degraded speech is fairly established.
 However, the findings about the effect of speech rate on predictability effect in degraded speech comprehension are inconsistent.
-Similarly, prediction itself is a time- and resource-consuming mechanism [@Pickering2018] which is affected by a comprehender’s processing speed [e.g., @Huettig2016].
+Similarly, prediction itself is a time- and resource-consuming mechanism [@Pickering2018] which is affected by a comprehender’s processing speed [e.g., @Huettig2016a].
 However, the role of the speed of incoming information (i.e., speech rate of a degraded speech) on a listener’s ability to form predictions, and hence its interplay with the facilitatory effect of semantic predictability at a moderately degraded speech, remains unclear.
 It can be speculated from the findings of the abovementioned studies that fast speech reduces the availability of time and resources to process the speech signal and generate predictions, in addition to the effortful listening of degraded speech.
 It can similarly be speculated that slow speech provides listeners more time than normal speech to process the words and form a representation of context information, in addition to reducing the effortful listening of degraded speech.

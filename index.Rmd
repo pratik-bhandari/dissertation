@@ -18,7 +18,7 @@ knit: (function(input, ...) {
 #####################
 title: |
   Degraded speech comprehension: \
-  The influence of predictability, attention and speech rate
+  Interaction of top-down and bottom-up processes
 author: Pratik Bhandari
 # college: Department of Psychology
 # university: Saarland University
@@ -36,8 +36,10 @@ address: aus Bhadrapur, Nepal
 
 # degree: Doctor of Philosophy
 degreedate: |
-    Saarbrücken, 2023
-dedication: बा-आमा प्रति समर्पित 
+    Saarbrücken, 2022
+dedication: |
+    To baa-aamaa \
+    बा-आमाप्रति समर्पित 
 acknowledgements: |
   `r paste(readLines("front-and-back-matter/_acknowledgements.Rmd"), collapse = '\n  ')`
 show-acknowledgements-in-toc: false
