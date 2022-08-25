@@ -421,7 +421,7 @@ However, in a low predictability sentence, the range of probable sentence ending
 When the processing time is short, it further reduces the activation of likely sentence endings, especially when the context is less constraining [@Aydelott2004].  
 
 An alternative explanation of our findings of contextual facilitation could be that the listeners first identified the noun (e.g., Bälle), then integrated it with the verb (e.g., jongliert) instead of first identifying the verb and predicting the noun.
-Therefore, we conducted a set of complementary analyses (see the Supplementary Material) that supports the prediction-based explanation.
+To rule this out, we conducted an additional analysis, the results of which supported the prediction-based explanation.
 We compared the effect (estimates) of forward-predictability (from the verb to noun) with that of backward integration (identifying the verb from the correct identification of the noun).
 In both experiments, the forward predictability effect was larger than the backward integration.
 This finding favours the explanation that the contextual facilitation we observed is due mainly to predictability rather than guessing or backward integration.

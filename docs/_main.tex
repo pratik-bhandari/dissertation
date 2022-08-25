@@ -367,7 +367,7 @@ we use the information available to us from a context and predict the not-yet-en
 We do not wait for a speech signal to unfold completely to decode its meaning.
 This feature of human language processing is critical in understanding speech in adverse listening conditions.
 
-In this thesis, we investigated how listeners can use context information and form predictions while listening to a speech at different levels of degradation.
+In this thesis, we investigated how listeners can use context information and form predictions while listening to speech at different levels of degradation.
 The central theme of the thesis is the investigation of the interactions between top-down semantic predictions and bottom-up auditory processing in adverse listening conditions under the theoretical framework of predictive processing and the noisy channel model of communication.
 There are numerous methods by which context information and speech degradation (adverse listening conditions) can be created and manipulated in an experimental setup.
 We manipulated the context information by creating short Subject-Verb-Object sentences in German in which the verb of a sentence was predictive of its noun.
@@ -396,7 +396,7 @@ When the speech degradation is not severe, they can rely on the bottom-up input 
 When the speech is moderately degraded but intelligible enough, they generate predictions about the upcoming word from the context information.
 In addition, the \emph{weighing} of lexical-semantic and acoustic-phonetic cues is also modulated by attention regulation and speech rate.
 
-Taken together, this thesis contributes to the nuanced understanding of the dynamic interaction between top-down and bottom-up processes in degraded speech comprehension.
+Taken together, this thesis contributes to the nuanced understanding of the dynamic interaction between top-down and bottom-up processes in speech comprehension.
 \end{abstract}
 
 
@@ -642,7 +642,7 @@ a poor signal transmission of a telephone call that distorts the speaker's speec
 hearing loss of a listener,
 hearing aid or cochlear implant worn by a listener, and so on.
 To understand speech in such a noisy channel of communication, a listener puts different weights on the distorted bottom-up auditory input \(P(u_p|u_i, N)\) vs the prior information \(P(u_i|m_i)P(m_i)\) (e.g., context information).
-This weighing of top-down and bottom-up processes is considered as a rational process by the models of probabilistic language processing in reading comprehension (\protect\hyperlink{ref-Levy2008}{Levy, 2008}; \protect\hyperlink{ref-Ryskin2018}{Ryskin et al., 2018}; see also \protect\hyperlink{ref-vanOs2021}{van Os et al., 2021}).
+This weighing of top-down and bottom-up processes is considered as a rational process in the models of probabilistic language processing in reading comprehension (\protect\hyperlink{ref-Levy2008}{Levy, 2008}; \protect\hyperlink{ref-Ryskin2018}{Ryskin et al., 2018}; see also \protect\hyperlink{ref-vanOs2021}{van Os et al., 2021} for an implementation of the rational approach in language comprehension in background noise).
 In this thesis, we also investigate to what extent listeners use their priors from the context information when the signal is distorted at different levels.
 
 Clean speech and reading comprehension studies have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events yet to be encountered.
@@ -662,14 +662,13 @@ It leads the reader to predict that the sentence continuation is most likely \em
 Similar results are observed in the auditory domain as well.
 Listeners use context information from what they have heard and form predictions about an upcoming word (e.g., \protect\hyperlink{ref-Altmann2007}{Altmann \& Kamide, 2007}; \protect\hyperlink{ref-Ankener2019}{Ankener, 2019}).
 That is, human language comprehension is predictive in nature, such that listeners engage in predictive language processing (Section \ref{predictive-language-processing}, \protect\hyperlink{ref-Kuperberg2016}{Kuperberg \& Jaeger, 2016}; \protect\hyperlink{ref-Pickering2018}{Pickering \& Gambi, 2018}).
-In a noisy channel, listeners' engagement in predictive processing is influenced by the noise in the signal (\protect\hyperlink{ref-Obleser2007}{Obleser et al., 2007}; \protect\hyperlink{ref-Sheldon2008a}{Sheldon et al., 2008a}).
 
+In a noisy channel, listeners' engagement in predictive processing is influenced by the noise in the signal (\protect\hyperlink{ref-Obleser2007}{Obleser et al., 2007}; \protect\hyperlink{ref-Sheldon2008a}{Sheldon et al., 2008a}).
 Based on the theoretical accounts of the noisy channel model of communication and the predictive language processing (\protect\hyperlink{ref-Christiansen2015}{Christiansen \& Chater, 2015}; \protect\hyperlink{ref-Ferreira2016}{Ferreira \& Lowder, 2016}; \protect\hyperlink{ref-Friston2020}{K. J. Friston, Parr, et al., 2020}; \protect\hyperlink{ref-Hale2001}{Hale, 2001}; \protect\hyperlink{ref-Levy2008}{Levy, 2008}; \protect\hyperlink{ref-Mcclelland1986}{McClelland \& Elman, 1986}; \protect\hyperlink{ref-Norris2016}{Norris et al., 2016}; \protect\hyperlink{ref-Pickering2018}{Pickering \& Gambi, 2018}),
 this thesis investigates the interaction between top-down predictive and bottom-up auditory processes.
-We examine how top-down predictive processes facilitate language comprehension in a noisy channel created by \protect\hyperlink{speech-processing}{acoustic degradation of speech}.
-We examine the nature of predictability effects in a noisy channel.
-We investigate what the optimal level of noise in the signal is, i.e., the optimal level of speech degradation,
-for the effect of top-down predictive processes to be most efficient or facilitatory for language comprehension.
+We examine how top-down predictive processes facilitate language comprehension in a noisy channel created by \protect\hyperlink{speech-processing}{acoustic degradation of speech},
+and what the nature of such a facilitation is (e.g., probabilistic, deterministic).
+We investigate the levels of noise in the signal for the effect of top-down predictive processes to be most efficient or facilitatory for language comprehension.
 By manipulating different factors of top-down as well as bottom-up processes (e.g., speech rates, attention allocation to different parts of the speech stream),
 we examine their role in aiding (or interfering) the comprehension of degraded speech.
 While doing so, we address the following research goals.
@@ -680,16 +679,17 @@ While doing so, we address the following research goals.
 \begin{enumerate}
 \def\labelenumi{(\arabic{enumi})}
 \item
-  \textbf{Replication of the predictability effect in a noisy channel}\\
+  \textbf{To replicate the predictability effect in a noisy channel}\\
   Almost all the disciplines of cognitive science --- anthropology, computer science, linguistics, neuroscience, and psychology --- are suffering the so-called replication crisis (\protect\hyperlink{ref-OSC2015}{Aarts et al., 2015}; \protect\hyperlink{ref-Cockburn2020}{Cockburn et al., 2020}; \protect\hyperlink{ref-Ebersole2016}{Ebersole et al., 2016}; \protect\hyperlink{ref-Minocher2021}{Minocher et al., 2021}; \protect\hyperlink{ref-Sanderson2008}{Sanderson \& Roberts, 2008}).
-  The results of an experiment do not hold up consistently when another group of researchers conduct it again.
-  For example, in a multi-lab collaborative study, Nieuwland et al. (\protect\hyperlink{ref-Nieuwland2020a}{2020}) did not find the same N400 effect in English articles (a/an) that DeLong et al. (\protect\hyperlink{ref-Delong2005}{2005}) had reported 15 years earlier.
+  The results of an experiment do not hold up consistently when another group of researchers conduct it again:
+  For example, DeLong et al. (\protect\hyperlink{ref-Delong2005}{2005}) found that it was easier to process the article `an' when readers anticipated a phonologically congruent word `airplane' than when they anticipanted a phonologically incongruent word `kite'.
+  But this effect was not replicated in a recent multi-lab collaborative study by Nieuwland et al. (\protect\hyperlink{ref-Nieuwland2020a}{2020}).
   The first goal of this thesis is to test if we can replicate the facilitatory effect of semantic predictability in language comprehension in a noisy channel (e.g., \protect\hyperlink{ref-Obleser2007}{Obleser et al., 2007}; \protect\hyperlink{ref-Sheldon2008a}{Sheldon et al., 2008a}).
   Replication of the predictability effect in comprehension of degraded speech
   will help gather evidence in favour of this \emph{effect of interest}.
   It will also provide a reliable foundation to test if (and how) other factors (e.g., speed of information processing) influence and interact with the facilitatory effect of predictability.
 \item
-  \textbf{Nature of prediction}\\
+  \textbf{To examine the nature of prediction}\\
   There are at least two schools of thought which argue that prediction is either all-or-nothing or probabilistic (\protect\hyperlink{ref-Coltheart2004}{Coltheart, 2004}; \protect\hyperlink{ref-Kuperberg2016}{Kuperberg \& Jaeger, 2016}; \protect\hyperlink{ref-Luke2016}{Luke \& Christianson, 2016}).
   These debates generally centre around reading comprehension and clean speech comprehension.
   The discussion about the nature of prediction in a noisy channel like degraded speech is sparse.
@@ -697,25 +697,26 @@ While doing so, we address the following research goals.
   Therefore, the second goal of this thesis is to examine the nature of the predictability effect.
   With carefully designed experiments and materials, this thesis aims to test the distinction between all-or-nothing and probabilistic predictions in degraded speech comprehension.
 \item
-  \textbf{Boundary conditions of predictive language processing}\\
+  \textbf{To assess the boundary conditions of predictive language processing}\\
   Several authors claim that predictive processing is the fundamental nature of human cognition and, thus, by definition, also of language processing (\protect\hyperlink{ref-Clark2013}{A. Clark, 2013}; \protect\hyperlink{ref-Friston2020}{K. J. Friston, Parr, et al., 2020}; \protect\hyperlink{ref-Friston2020b}{K. J. Friston, Sajid, et al., 2020}; \protect\hyperlink{ref-Kuperberg2020}{Kuperberg, 2021}; \protect\hyperlink{ref-Lupyan2015}{Lupyan \& Clark, 2015}).
   At the same time, an increasing number of studies are showing boundary conditions and prerequisite conditions for predictive language processing (\protect\hyperlink{ref-Federmeier2010}{K. D. Federmeier et al., 2010}; \protect\hyperlink{ref-Huettig2019}{Huettig \& Guerra, 2019}; \protect\hyperlink{ref-Huettig2016}{Huettig \& Mani, 2016}; \protect\hyperlink{ref-Mishra2012}{Mishra et al., 2012}).
-  For example, attention can reverse the effect of predictability in non-speech auditory perception (cf. \protect\hyperlink{ref-Kok2012}{Kok et al., 2012}).
-  In a noisy channel (i.e., degraded speech), attention to a part or parts of a speech stream can modulate, or that can limit the predictability effect as different parts of the speech stream contain different linguistic units;
-  each linguist unit (e.g., each word in a sentence) carries its own meaning that serves the entire message (e.g., the entire sentence).
+  For example, prediction can have different effects on unattended stimuli and attended stimuli (cf. \protect\hyperlink{ref-Kok2012}{Kok et al., 2012}).
+  In a noisy channel (i.e., degraded speech), attention to a part of a speech stream can modulate or limit the predictability effect as different parts of the speech stream contain different linguistic units;
+  each linguistic unit (e.g., each word in a sentence) carries its own meaning that serves the entire message (e.g., words serve in building the meaning of the entire sentence).
   Therefore, the third goal of this thesis is to examine the role of auditory attention that can act as a prerequisite for semantic predictions
   or limit the automaticity of predictive processing in degraded speech comprehension.\\
   This thesis aims to test whether attention to different parts of degraded speech stream aids or hampers facilitatory effects of top-down predictions.
 \item
-  \textbf{Adaptation to degraded speech}\\
+  \textbf{To test for the adaptation to degraded speech}\\
   Despite the difficulty in understanding speech in a noisy channel,
-  listeners rapidly adapt to degraded speech (\protect\hyperlink{ref-Rosen1999}{Rosen et al., 1999}).
+  listeners rapidly adapt to degraded speech (\protect\hyperlink{ref-Rosen1999}{Rosen et al., 1999}):
+  Their performance improves over the course of the experiment.
   When the properties of speech vary in the dimension of both acoustic-phonetic cues as well as lexical-semantic cues,
   adaptation can be difficult.
   The fourth goal of this thesis is to examine if listeners adapt to degraded speech when both degradation level and predictability of speech are varied.
   We test if an adaptation to the bottom-up perceptual property of speech is influenced by its top-down semantic property.
 \item
-  \textbf{Speed of information processing}\\
+  \textbf{To examine the effect of speed speech rate}\\
   Unlike the visual scene that opens in the spatial dimension, speech signal flows in the temporal dimension.
   This challenges the listeners to process information at different speeds and timescales;
   more time is available to process the information in slow speech, while less time is available for fast speech (\protect\hyperlink{ref-Lerner2014}{Lerner et al., 2014}).
@@ -724,7 +725,7 @@ While doing so, we address the following research goals.
   We test if an increase or decrease in speech rate impedes the intelligibility of speech over a noisy channel
   and whether it impedes or further aids the predictability effect in the noisy channel.
 \item
-  \textbf{Metric for measurement of language comprehension}\\
+  \textbf{To assess language comprehension considering the context}\\
   Different researchers have used different measurement metrics in the study of speech perception and language comprehension (\protect\hyperlink{ref-Amichetti2018}{Amichetti et al., 2018}; \protect\hyperlink{ref-Obleser2007}{Obleser et al., 2007}; \protect\hyperlink{ref-Peelle2013}{Peelle, 2013}; \protect\hyperlink{ref-Sheldon2008a}{Sheldon et al., 2008a}).
   The measurement is inconsistent across studies which becomes a problem, especially when the effect of context in comprehension is under discussion:
   cross-study comparison does not give a clear picture of the predictability effect in this case.
@@ -739,7 +740,7 @@ Below we present the contributions of the research presented in this thesis.
 
 The research reported in this thesis examines theoretical questions of predictive language processing and its boundary conditions when spoken language comprehension takes place through a noisy channel.
 It contributes to the studies of speech perception, language comprehension, predictive coding, language science, audiology, psycholinguistics, psychology, and, broadly, cognitive science.
-In an applied setup, this informs translational/clinical researchers about language comprehension in \protect\hyperlink{distortion-degradation}{cochlear implantees}.
+In an applied setting, this informs translational/clinical researchers about language comprehension in \protect\hyperlink{distortion-degradation}{cochlear implantees}.
 
 \begin{itemize}
 \item
@@ -834,22 +835,21 @@ listeners do not adapt to degraded speech when its lexical-semantic property var
 At the end of this chapter, we note the intrinsic difficulty of processing degraded speech and open the question that the predictability effects could be further enhanced (or limited) with more (or less) time available to process the degraded speech.
 
 \noindent
-\textbf{Chapter \ref{chapter-speech-rate}} addresses the questions opened in Chapter \ref{chapter-graded-prediction}.
+\textbf{Chapter \ref{chapter-speech-rate}} addresses the questions raised in Chapter \ref{chapter-graded-prediction}.
 In two experiments, it addresses the fourth, the fifth, and the sixth research goals.
 We use the same metric of measurement of language comprehension as Chapter \ref{chapter-graded-prediction}, which takes into account listeners' correct identification of the context.
-Listeners are presented with a moderately degraded speech at which the predictability effect is observed in Chapter \ref{chapter-graded-prediction}.
+Listeners are presented with the moderately degraded speech at which the predictability effect is observed in Chapter \ref{chapter-graded-prediction}.
 In Experiment 1, the moderately degraded speech is presented at normal and fast speech rates.
 In Experiment 2, the speech rates are normal and slow.
-For fast speech, however, both intelligibility and the predictability effect are reduced, driven by the difficulty in processing words that are less predictable from the context.
+For fast speech, both intelligibility and the predictability effect are reduced, driven by the difficulty in processing words that are less predictable from the context.
 Although more time is available to process the context of the degraded speech at a slow speech rate,
 there is no increase in the facilitatory effect of predictability with a reduced speech rate;
 instead, intelligibility is reduced in slow speech compared to normal speech.
-This chapter discusses on the limitations of predictive processing driven by the constraints in cognitive resources.
+This chapter reflects on the limitations of predictive processing driven by the constraints in cognitive resources.
 
 \noindent
 \textbf{Chapter \ref{chapter-conclusion}} summarizes the findings of all the studies.
-It presents the theoretical implications of this thesis and the future direction it points to.
-The general limitations of the studies are also discussed.
+It concludes with the closing remarks on the limitations of the the studies, theoretical and practical implications, and the direction for future research.
 
 \noindent
 \textbf{Chapter \ref{chapter-ethics}} presents ethical approval that was obtained to run the experiments on human subjects.
@@ -860,6 +860,26 @@ The source that provided funding to conduct the research presented in this thesi
 
 Some of the findings reported in this thesis are presented and published elsewhere to disseminate scientific findings to a broader audience.
 The presentations and publications that report on parts of the research described in this thesis are outlined below.
+
+\textbf{Research articles}:
+
+\begin{itemize}
+\item
+  Bhandari, P., Demberg, V., \& Kray, J.
+  (\emph{under review}) Speaking fast and slow: How speech rate affects contextual facilitation in degraded speech comprehension.
+\item
+  Bhandari, P., Demberg, V., \& Kray, J.
+  (2022).
+  Predictability effects in degraded speech comprehension are reduced as a function of attention.
+  \emph{Language and Cognition}, 1-18. \url{doi:10.1017/langcog.2022.16}
+\item
+  Bhandari, P., Demberg, V., \& Kray, J.
+  (2021).
+  Semantic predictability facilitates comprehension of degraded speech in a graded manner.
+  \emph{Frontiers in Psychology}, 12:714485. \url{doi:10.3389/fpsyg.2021.714485}
+\end{itemize}
+
+\textbf{Conference presentations}:
 
 \begin{itemize}
 \item
@@ -874,14 +894,6 @@ The presentations and publications that report on parts of the research describe
   \emph{Architectures and Mechanisms for Language Processing}, 2022-09-07--2022-09-09.
 \item
   Bhandari, P., Demberg, V., \& Kray, J.
-  (\emph{under review}) Speaking fast and slow: How speech rate affects contextual facilitation in degraded speech comprehension.
-\item
-  Bhandari, P., Demberg, V., \& Kray, J.
-  (2022).
-  Predictability effects in degraded speech comprehension are reduced as a function of attention.
-  \emph{Language and Cognition}, 1-18. \url{doi:10.1017/langcog.2022.16}
-\item
-  Bhandari, P., Demberg, V., \& Kray, J.
   (2022).
   The effect of speech rate in comprehension of degraded speech.
   \emph{International Max Planck Research School (IMPRS) Conference}, 2022-06-01--2022-06-03.
@@ -890,11 +902,6 @@ The presentations and publications that report on parts of the research describe
   (2022).
   Predictability effects are reduced as a function of attention.
   \emph{Annual Convention of American Psychological Association}, 2022-05-25--2022-05-28.
-\item
-  Bhandari, P., Demberg, V., \& Kray, J.
-  (2021).
-  Semantic predictability facilitates comprehension of degraded speech in a graded manner.
-  \emph{Frontiers in Psychology}, 12:714485. \url{doi:10.3389/fpsyg.2021.714485}
 \item
   Bhandari, P., Demberg, V., \& Kray, J.
   (2021).
@@ -913,9 +920,9 @@ The presentations and publications that report on parts of the research describe
 
 In the previous chapter, we outlined the theoretical background and the research goals of the studies in this dissertation.
 We stated that the central theme of this thesis is to investigate the interaction between top-down predictive and bottom-up auditory processes in language comprehension.
-Grounding on the noisy channel model of communication and predictive language processing,
+Building on the noisy channel model of communication and predictive language processing,
 the studies in this thesis manipulate the auditory processes \(P(u_p|u_i,N)\), and prior information \(P(u_i,m_i)\) in the form of semantic context available in a sentence.
-In this chapter, we provide background on the noisy channel created and used to introduce variations in bottom-up processing in the studies presented in this thesis.
+In this chapter, we provide background on the noisy channel that was created and used to introduce variations in the bottom-up processing in the studies presented in this thesis.
 We also elaborate on the predictive language processing in the noisy channel and the evidence of its limits and nature.
 Understanding these fundamental concepts of top-down and bottom-up processes is essential for the chapters that follow;
 these concepts are briefly reiterated in the following chapters wherever relevant.
@@ -952,7 +959,7 @@ noise-vocoding is also a method of distortion that is used to understand the spe
 One of the main factors that determine the intelligibility of degraded speech is the number of noise-vocoding channels.\footnote{Throughout this thesis, speech distortion by noise-vocoding is referred to as speech degradation, or spectral degradation of speech.}
 The higher the number of noise-vocoding channels, the more the frequency-specific information available in the degraded speech,
 and the higher the intelligibility compared to the speech that is degraded with a lesser number of noise-vocoding channels.
-For example, listeners are shown to rate 8-channel noise-vocoded speech to be more intelligible and less effortful than 2 channels noise-vocoded speech (e.g., \protect\hyperlink{ref-Obleser2011}{Obleser \& Kotz, 2011}; \protect\hyperlink{ref-Sohoglu2012}{Sohoglu et al., 2012}).
+For example, listeners have been shown shown to rate 8-channel noise-vocoded speech to be more intelligible and less effortful than 2 channels noise-vocoded speech (e.g., \protect\hyperlink{ref-Obleser2011}{Obleser \& Kotz, 2011}; \protect\hyperlink{ref-Sohoglu2012}{Sohoglu et al., 2012}).
 In our studies, we create a noisy channel with different degradation levels and intelligibility by noise-vocoding the speech signal through 1, 4, 6 and 8 channels.
 The details of the artificial distortions are described in Chapter \ref{chapter-methods}.
 
@@ -1070,12 +1077,11 @@ For example, Mishra et al. (\protect\hyperlink{ref-Mishra2012}{2012}) showed tha
 In a visual world paradigm study, they found that individuals with lower literacy showed less anticipatory eye movements than those with higher literacy.
 They bolstered their finding in a neuroimaging study claiming that learning to read fundamentally changes the neural circuitry (\protect\hyperlink{ref-Hervais2019}{Hervais-Adelman et al., 2019}).
 It is, therefore, plausible that such structural change in the brain manifests in linguistic behaviour.
-Similarly, Scholman et al. (\protect\hyperlink{ref-Scholman2020}{2020}) demonstrated that literacy is predictive of readers' sensitivity to discourse signals available in the context for predictiong upcoming content.
-Cognitive ageing is also reported as a limiting factor in generating predictions.
-Smaller N400 amplitude and latency in older adults compared to younger adults have been shown as evidence of the inability of older adults to engage in predictive language processing (\protect\hyperlink{ref-Federmeier2002}{K. Federmeier et al., 2002}).
-Furthermore, among older adults, those with lower working memory scores are shown to be further disadvantaged when using context information (\protect\hyperlink{ref-Federmeier2010}{K. D. Federmeier et al., 2010}).
+Similarly, Scholman et al. (\protect\hyperlink{ref-Scholman2020}{2020}) demonstrated that reading experience is predictive of readers' sensitivity to discourse signals available in the context for predictiong upcoming content.
+Cognitive ageing is also reported as a limiting factor in generating predictions (\protect\hyperlink{ref-Federmeier2002}{K. Federmeier et al., 2002}; \protect\hyperlink{ref-Federmeier2010}{K. D. Federmeier et al., 2010}).
 Another line of argument that critiques predictive processing comes from the observations of Huettig \& Guerra (\protect\hyperlink{ref-Huettig2019}{2019}).
-They analyzed participants' anticipatory eye movements in the visual world paradigm and showed that listeners predict the target word only in an \emph{artificial} setup of long preview time coupled with slow speech (cf. \protect\hyperlink{ref-Fernandez2020}{Fernandez et al., 2020}; \protect\hyperlink{ref-Heyselaar2021}{Heyselaar et al., 2021}).
+They analyzed participants' anticipatory eye movements in the visual world paradigm and showed that listeners predict the target word only in an artificial setup --- long preview time (4000ms) and slow speech (cf. \protect\hyperlink{ref-Fernandez2020}{Fernandez et al., 2020}; \protect\hyperlink{ref-Heyselaar2021}{Heyselaar et al., 2021}).
+When presented with a short preview time (1000ms), such anticipatory eye movements were not significant towards the picture of the target word.
 
 In this thesis, we study additional top-down and bottom-up processes that can interact with and potentially limit the facilitatory effect of predictability.
 For example, current theories of predictive processing are poor in explaining the role of \emph{attention} in semantic prediction (e.g., \protect\hyperlink{ref-Christiansen2015}{Christiansen \& Chater, 2015}; \protect\hyperlink{ref-Ferreira2016}{Ferreira \& Lowder, 2016}; \protect\hyperlink{ref-Friston2020b}{K. J. Friston, Sajid, et al., 2020}; \protect\hyperlink{ref-Kuperberg2016}{Kuperberg \& Jaeger, 2016}; \protect\hyperlink{ref-Pickering2018}{Pickering \& Gambi, 2018}).
@@ -1094,13 +1100,13 @@ the instances of varying predictability effects at fast and slow speech rates an
 \section{Adaptation to degraded speech}\label{background-adaptation}}
 
 Listeners quickly adapt to novel speech with artificial acoustic distortions (\protect\hyperlink{ref-Dupoux1997}{Dupoux \& Green, 1997}).
-Repeated exposure to distorted speech, improves listeners' comprehension improves over time (\protect\hyperlink{ref-Guediche2014}{Guediche et al., 2014}; for reviews, see \protect\hyperlink{ref-Samuel2009}{Samuel \& Kraljic, 2009}).
+Repeated exposure to distorted speech improves listeners' comprehension improves over time (\protect\hyperlink{ref-Guediche2014}{Guediche et al., 2014}; for reviews, see \protect\hyperlink{ref-Samuel2009}{Samuel \& Kraljic, 2009}).
 When the noise condition, like speech degradation level, is constant throughout the experiment, listeners adapt to it, and the performance (e.g., word recognition) improves with as little as 20 minutes of exposure (\protect\hyperlink{ref-Rosen1999}{Rosen et al., 1999}).
 For example, Davis et al. (\protect\hyperlink{ref-Davis2005}{2005})\protect\hyperlink{experiment-1}{Experiment 1} presented listeners with 6 channels noise-vocoded speech and found an increase in the proportion of correctly reported words over the course of the experiment.
 Similarly, Erb et al. (\protect\hyperlink{ref-Erb2013}{2013}) presented participants with 4 channels noise-vocoded speech and reached a similar conclusion.
 In these experiments, only one speech degradation level (6- or 4-channel noise-vocoded speech) was presented in one block.
 There was no uncertainty about the next-trial speech degradation from the participants' perspective.
-Additionally, semantic feature (i.e., target word predictability) was not varied.
+In contrast to our study, semantic feature (i.e., target word predictability) was not varied.
 When multiple types or levels of degraded speech signals are presented in a (pseudo-)randomized order within a block, a listener is uncertain about the signal quality of any upcoming trial.
 This can influence perceptual adaptation such that
 it might be totally absent with the change in the characteristics of the auditory signals throughout an experiment (\protect\hyperlink{ref-Mattys2012}{Mattys et al., 2012}).
@@ -1108,9 +1114,10 @@ In addition, trial-by-trial variability in the characteristics of distorted spee
 Only a limited number of studies have looked at how the (un)certainty about next-trial speech quality and semantic features influence adaptation.
 For example, in a word-recognition task, Vaden et al. (\protect\hyperlink{ref-Vaden2013}{2013}) presented words at +3dB SNR and +10dB SNR in a pseudo-random order;
 the goal was to minimize the certainty about the noise level within the block.
-They proposed that an adaptive control system might be involved to optimize the task performance when the listeners are uncertain about an upcoming trial (\protect\hyperlink{ref-Eckert2016}{Eckert et al., 2016}; \protect\hyperlink{ref-Vaden2016}{Vaden Jr et al., 2016}; \protect\hyperlink{ref-Vaden2015}{Vaden et al., 2015}).
-However, we cannot make a firm conclusion about perceptual adaptation \emph{per se} from their studies as they do not report the performance change throughout the experiment.
+They report that the magnitude and coherence of the activity in the cingulo-opercular network facilitated comprehension of noisy speech in a subsequent trial,
+however, we cannot make a firm conclusion about perceptual adaptation \emph{per se} from their studies as they do not report the performance change throughout the experiment.
 Similarly, Obleser and colleagues (\protect\hyperlink{ref-Hartwigsen2015}{Hartwigsen et al., 2015}; \protect\hyperlink{ref-Obleser2007}{Obleser et al., 2007}; \protect\hyperlink{ref-Obleser2010}{Obleser \& Kotz, 2010}) also presented listeners with noise-vocoded sentences (ranging from 2 to 32 channels noise-vocoding) in a pseudo-randomized order but did not report the presence or absence of perceptual adaptation.
+Their findings are primarily focused on the interaction of lexical-semantic and acoustic-phonetic cues in speech perception.
 On the one hand, repeated exposure is shown to lead to perceptual adaptation to degraded speech.
 On the other hand, uncertainty about speech quality is speculated to impair word recognition.
 We argue that a trial-by-trial variation in a higher-level semantic feature of speech hinders listeners' perceptual system from retuning itself to adapt to the lower-level auditory features of the degraded speech (cf. \protect\hyperlink{ref-Nahum2008}{Nahum et al., 2008}).
@@ -1257,7 +1264,7 @@ we can investigate the importance of specific suprasegmental cues in speech perc
 Noise-vocoding reduces the fine structure cues that carry the pitch-related suprasegmental information
 and allows the study of temporal amplitude envelope cues, which carry the suprasegmental information involved in lexical processing;
 noise-vocoding preserves these cues.
-Most importantly, it allows fine-grained control over speech intelligibility by varying the number of vocoder channels.
+It also provides a control over speech intelligibility by varying the number of vocoder channels.
 
 \hypertarget{compression-expansion}{%
 \subsubsection{Speech compression and expansion}\label{compression-expansion}}
@@ -1499,7 +1506,7 @@ In this chapter, we introduced the statistical tool used for data analysis in th
 We discussed the limitations of traditional linear regression-based models like ANOVA
 and outlined the motivations for using mixed effects models.
 To capture the variability of our data without averaging out across participants or items,
-and to account for the effect of two random effects --- participant and item --- simultaneously,
+and to account for the effect of two (or more) random effects --- participant and item --- simultaneously,
 we fit mixed effects models to our data.\\
 Details of each dataset corresponding to each experiment are presented in Chapters 5, 6, and 7.
 
@@ -2380,7 +2387,7 @@ One could argue that the participants in our experiment ``guessed'' the verb aft
 To rule out this possible explanation of our findings, we conducted an additional analysis comparing the \emph{forward predictability effect} (from verb to noun) to the size of the \emph{backward predictability effect} (correct identification of the noun based on the final verb).
 If the observed effect is a guessing phenomenon, then we would expect that both forward and backward predictability effects are similar in size.
 If, on the other hand, understanding the verb helps to shape the predictions of the upcoming noun, and this helps intelligibility, then the forward prediction effect should be larger.
-The results of this complementary analysis (Table \ref{results2integration}) support the findings of the main analysis reported in the Results section.
+The results of this complementary analysis support the findings of the main analysis reported in the Results section.
 In the backward predictability analysis, there was no graded effect of predictability, and the backward effect of ``guessing'' the verb \emph{jongliert} after recognizing the noun \emph{Bälle}, if present at all, was smaller than the forward effect of predicting the noun after recognizing the verb in the sentence \emph{Sie jongliert die Bälle}.
 This further corroborates our argument that the listeners, in fact, made use of the verb-evoked context to form predictions about the upcoming noun, not the other way around, in a graded manner when the speech was moderately degraded.
 
@@ -2874,7 +2881,7 @@ However, in a low predictability sentence, the range of probable sentence ending
 When the processing time is short, it further reduces the activation of likely sentence endings, especially when the context is less constraining (\protect\hyperlink{ref-Aydelott2004}{Aydelott \& Bates, 2004}).
 
 An alternative explanation of our findings of contextual facilitation could be that the listeners first identified the noun (e.g., Bälle), then integrated it with the verb (e.g., jongliert) instead of first identifying the verb and predicting the noun.
-Therefore, we conducted a set of complementary analyses (see the Supplementary Material) that supports the prediction-based explanation.
+To rule this out, we conducted an additional analysis, the results of which supported the prediction-based explanation.
 We compared the effect (estimates) of forward-predictability (from the verb to noun) with that of backward integration (identifying the verb from the correct identification of the noun).
 In both experiments, the forward predictability effect was larger than the backward integration.
 This finding favours the explanation that the contextual facilitation we observed is due mainly to predictability rather than guessing or backward integration.
@@ -2915,9 +2922,9 @@ We discuss the limitations of the studies, their generalization, and future outl
 
 In this chapter, we present an overview of the experimental findings reported in the preceding chapters, and
 their conclusions are discussed in the broader context of probabilistic accounts of language processing.
-The noisy channel model of communication (see Chapter \ref{chapter-introduction} for elaborate discussion) is revisited and discussed in relation to the findings of the our studies.
-We also discuss the implications, limitations, and the outlook and considerations for the future research.
-Finally, we conclude with the closing remarks on the interaction of top-down predictive and bottom-up auditory processes in the comprehension of degraded speech,
+The noisy channel model of communication (see Chapter \ref{chapter-introduction} for elaborate discussion) is revisited and discussed concerning the findings of our studies.
+We also discuss the implications, limitations, outlook and considerations for future research.
+Finally, we conclude with the closing remarks on the interaction of top-down predictive and bottom-up auditory processes in the comprehension of degraded speech
 and the status of the thesis in the research domain of predictive language processing.
 
 \hypertarget{overview-of-the-main-findings}{%
@@ -2927,56 +2934,56 @@ A prominent view in the field of language science is that readers and listeners 
 which is akin to the view that humans are \emph{prediction machines} constantly generating predictions about upcoming events (\protect\hyperlink{ref-Clark2013}{A. Clark, 2013}).
 Studies have shown that it is not always the case in language processing,
 to the extent that some even question the necessity of prediction (e.g., \protect\hyperlink{ref-Huettig2016}{Huettig \& Mani, 2016}).
-For example, differences in age and literacy have been shown to limit listeners ability to form linguistic predictions (e.g., \protect\hyperlink{ref-Federmeier2010}{K. D. Federmeier et al., 2010}; \protect\hyperlink{ref-Mishra2012}{Mishra et al., 2012}; \protect\hyperlink{ref-Sheldon2008b}{Sheldon et al., 2008b}).
-In Chapter \ref{chapter-attention-prediction}, we showed that prediction does not always occur in language comprehension.
-While listening to degraded speech, when listeners attended only to the sentence-final target word, but not the preceding context, the facilitatory effect of predictability was absent.
+For example, differences in age and literacy have been shown to limit listeners' ability to form linguistic predictions (e.g., \protect\hyperlink{ref-Federmeier2010}{K. D. Federmeier et al., 2010}; \protect\hyperlink{ref-Mishra2012}{Mishra et al., 2012}; \protect\hyperlink{ref-Sheldon2008b}{Sheldon et al., 2008b}).
+Chapter \ref{chapter-attention-prediction} showed that prediction does not always occur in language comprehension.
+While listening to degraded speech, when listeners attended only to the sentence-final target word but not the preceding context, the facilitatory effect of predictability was absent.
 However, when the sentence context was attended to, it facilitated the comprehension of the degraded speech.
-These results showed that attention (or lack thereof) can limit predictability effect in degraded speech comprehension: \emph{no attention, no prediction}.
+These results showed that attention (or lack thereof) can limit the predictability effect in degraded speech comprehension: \emph{no attention, no prediction}.
 We also replicated prior findings that when the bottom-up input is less reliable due to degradation,
 listeners rely more on the lexical-semantic cues (e.g., \protect\hyperlink{ref-Obleser2010}{Obleser \& Kotz, 2010}).
 
 In Chapter \ref{chapter-graded-prediction}, we further examined the effect of predictability and its nature (all-or-nothing vs graded).
-Since we already showed in Chapter \ref{chapter-attention-prediction} that attention to the context is necessary for predictability effect,
-our instruction did not restrict participants' attention to only the target-word (and away from the context) in the studies reported in Chapter 6.
+Since we already showed in Chapter \ref{chapter-attention-prediction} that attention to the context is necessary for the contextual facilitation,
+our instruction did not restrict participants' attention to only the target word (and away from the context) in the studies reported in Chapter 6.
 Participants, thus, attended to the context and formed its meaning representation.
 This chapter revealed that predictability facilitates language comprehension in a graded manner when the speech is moderately degraded at 4-channel noise-vocoding.
-At the extremes, listeners did either not utilize the context (unintelligible at 1-channel),
-or, the context and target word were clearly intelligible ---
-in the latter case, listeners identified the target word based on the bottom-up information rather than only the context.
+At the extremes, listeners either did not utilize the context (unintelligible at 1-channel noise-vocoding),
+or the context and target word were clearly intelligible (least degradation at 8-channel noise-vocoding) ---
+in the latter case, listeners identified the target word based on the bottom-up information rather than the context.
 That is, listeners processed the language \emph{rationally} at different levels of speech degradation (see \protect\hyperlink{ref-Ryskin2018}{Ryskin et al., 2018} for a similar argument).
 These findings also refute the claim of the \emph{narrowed expectations} framework proposed by Strauß et al. (\protect\hyperlink{ref-Strauss2013}{2013}).
 Contrary to their claim that predictions are made only for highly predictable sentence endings,
-we found that listeners predict target words across a wide range of semantic space including the sentence endings in the low and medium predictability sentences.
+we found that listeners predict target words across a wide range of semantic space, including the sentence endings in the low and medium predictability sentences.
 
 After we showed in Chapter \ref{chapter-graded-prediction} that predictability effects are observed at the moderate degradation level,
 our goal in Chapter \ref{chapter-speech-rate} was to examine if a change in speech rate at 4-channel noise-vocoding
 further increases or decreases the predictability effect.
-In two experiments, we performed the manipulation of the bottom-up processes by changing the speech rates:
+In two experiments, we manipulated the bottom-up processes by changing the speech rates:
 We compared the contextual facilitation at the moderate degradation level in normal and fast speech rates,
 then in normal and slow speech rates.
-The findings of the experiments presented in this chapter showed that slow speech does not amplify the contextual facilitation initially observed in normal speech rate.
+The experiments presented in this chapter showed that slow speech does not amplify the contextual facilitation that is observed in normal the speech rate.
 Listeners already performed at their optimal level in normal speech rate;
 slowing down the speech rate did not necessarily benefit the contextual facilitation.
 On the contrary, fast speech impaired the processing of low predictability sentences.
 These findings showed that with a restricted time in the processing of fast speech,
 lexical access and activation of target words in less constraining sentence contexts are difficult.
 
-Findings from Chapters \ref{chapter-attention-prediction} and \ref{chapter-graded-prediction} also showed that regardless of (un)certainty about the quality of subsequent trials,
+Chapters \ref{chapter-attention-prediction} and \ref{chapter-graded-prediction} also showed that regardless of (un)certainty about the quality of subsequent trials,
 listeners do not adapt to degraded speech across all levels of speech degradation;
 their performance did not improve over the course of the experiment.
 We reasoned that a constant trial-by-trial variability in the higher-level feature of the speech stimuli (e.g., predictability)
 interferes with the perceptual retuning of the auditory system to the sensory properties of the speech stimuli.
 Hence, the identification of words did not improve throughout the experiment.
-In Chapters 6 and 7, we argued for a new approach to calculate response accuracy that takes into account a listener's context identification instead of other word recognition scores (e.g., proportion of correctly identified words per sentence)
+In Chapters 6 and 7, we argued for a new approach to calculate response accuracy that takes into account a listener's context identification instead of other word recognition scores (e.g., the proportion of correctly identified words per sentence)
 that do not consider whether listeners correctly identified the context.
 In our analyses, we included only those trials in which the context-evoking words were identified correctly.
 
-Taken together, the contribution of this thesis can be stated as:
+Taken together, the contribution of this thesis can be stated as follows:
 
 \begin{quote}
 When a listener attends to a sentence context, semantic predictability facilitates language comprehension at a moderate level of spectral degradation in a \emph{graded manner} as opposed to being an all-or-nothing phenomenon.
-Such a contextual facilitation is optimal at a normal speech rate, which is not necessarily amplified by slowing down the speech.
-However, increasng the speech rate reduces the contextual facilitation by restricting the lexical access in the less predictable sentence endings.
+Such contextual facilitation is optimal at a normal speech rate, which is not necessarily amplified by slowing down the speech.
+However, increasing the speech rate reduces contextual facilitation by restricting lexical access in the less predictable sentence endings.
 \end{quote}
 
 \hypertarget{implications-of-the-findings}{%
@@ -2987,71 +2994,71 @@ However, increasng the speech rate reduces the contextual facilitation by restri
 
 The studies in this thesis were based on the theoretical accounts of predictive language processing and the noisy channel model of communication.
 Speech degradation by noise-vocoding created a noisy communication channel that interfered with a listener's perception and understanding of a speaker's utterance
-(schematically represented in Figure \ref{fig:noisy-channel})
+(schematically represented in Figure \ref{fig:noisy-channel}),
 which was formalized in Equation \eqref{eq:noisy-channel3} in Chapter \ref{chapter-introduction} as:
 
 \begin{align*} 
 \hat{m_p} &= \mathop{\mathrm{argmax}}\limits_{m_p} P(m_p | u_p) * P(u_p|u_i, N) * P(u_i | m_i) * P(m_i)
 \end{align*}
 
-The results of the experiments presented in this thesis as outlined above suggest that listeners are \emph{rational} comprehenders:
+Thus, the experiments presented in this thesis suggest that listeners are \emph{rational} comprehenders:
 They weigh the top-down (\(P(u_i | m_i) * P(m_i)\)) and bottom-up processes (\(P(u_p|u_i, N)\)) to comprehend a degraded speech.
 When the distribution of \(P(u_p|u_i, N)\) is relatively flat, i.e.,
-when the speech signal is degraded and listeners have difficulty understanding an utterance,
+when the speech signal is degraded, and listeners have difficulty understanding an utterance,
 they rely more on the context (e.g., at 4-channel noise-vocoded speech in Chapter \ref{chapter-graded-prediction}).
 On the contrary, when this bottom-up information is reliable, i.e.,
-when the speech signal is least degraded and listeners understand an utterance,
+when the speech signal is least degraded, and listeners understand an utterance,
 they do not necessarily rely on the top-down information.
-Regardless of what their predictions from the context are
-their comprehension is a result of what they actually perceive (e.g., at 8-channel noise-vocoded speech in Chapter \ref{chapter-graded-prediction}).
+Regardless of their predictions from the context
+the listeners' comprehension results from what they actually perceive (e.g., at 8-channel noise-vocoded speech in Chapter \ref{chapter-graded-prediction}).
 
-Under the rational account, this thesis showed that listeners' predict an upcoming word based on its probability of occurrence in a given context.
-We did not find prediction to be restrictive or deterministic as reported in Strauß et al. (\protect\hyperlink{ref-Strauss2013}{2013}) in degraded speech comprehension.
-Instead, our findings are in line with the probabilistic accounts of predictive language processing (\protect\hyperlink{ref-Delong2005}{DeLong et al., 2005}; \protect\hyperlink{ref-Kuperberg2016}{Kuperberg \& Jaeger, 2016}; cf. \protect\hyperlink{ref-Nieuwland2018}{Nieuwland et al., 2018}) proposed in the literature of speech perception and reading studies.
-To our knowledge, the empirical evidence presented in this thesis is the only one since Strauß et al. (\protect\hyperlink{ref-Strauss2013}{2013}) to examine the nature of predictability effect in degraded speech comprehension.
+Under the rational account, this thesis showed that listeners predict an upcoming word based on its probability of occurrence in a given context.
+To our knowledge, the empirical evidence presented in this thesis is the only one since Strauß et al. (\protect\hyperlink{ref-Strauss2013}{2013}) to examine the nature of the predictability effect in degraded speech comprehension.
+We did not find prediction to be restrictive or deterministic, as reported in Strauß et al. (\protect\hyperlink{ref-Strauss2013}{2013}) in degraded speech comprehension.
+Instead, our findings are in line with the probabilistic accounts of predictive language processing (\protect\hyperlink{ref-Delong2005}{DeLong et al., 2005}; \protect\hyperlink{ref-Kuperberg2016}{Kuperberg \& Jaeger, 2016}; cf. \protect\hyperlink{ref-Nieuwland2018}{Nieuwland et al., 2018}) proposed in the literature on speech perception and reading studies.
 
 \hypertarget{attention-and-prediction}{%
 \subsection{Attention and prediction}\label{attention-and-prediction}}
 
-Our findings reported in Chapter \ref{chapter-attention-prediction} showed that attention and prediction can operate independently (i.e., they are two separate processes) in predictive processing of degraded speech (see also \protect\hyperlink{ref-Astheimer2011}{Astheimer \& Sanders, 2011}; \protect\hyperlink{ref-Li2017}{X. Li et al., 2017}).
+Chapter \ref{chapter-attention-prediction} showed that attention and prediction can operate independently (i.e., they are two separate processes) in the predictive processing of degraded speech (see also \protect\hyperlink{ref-Astheimer2011}{Astheimer \& Sanders, 2011}; \protect\hyperlink{ref-Li2017}{X. Li et al., 2017}).
 When we restricted listeners' attention to the contextually predicted target word, the facilitatory effect of predictability was absent.
-Only attention to the context provided a contextual facilitation.
+Only attention to the context provided contextual facilitation.
 This role of attention is not fully addressed in the current frameworks of predictive language processing.
 
-In their \emph{good enough processing} framework, Ferreira \& Lowder (\protect\hyperlink{ref-Ferreira2016}{2016}) speculated that a comprehender can focus and process one part of sentence ``deeper'' and other parts can be ignored or processed at a ``shallow'' level.
-However, their proposal is not clear on how attention to different parts of a speech stream can be strategically allocated,
-and how it in turn moderates contextual facilitation.
+In their \emph{good enough processing} framework, Ferreira \& Lowder (\protect\hyperlink{ref-Ferreira2016}{2016}) speculated that a comprehender can focus and process one part of a sentence ``deeper'',
+and other parts can be ignored or processed at a ``shallow'' level.
+However, their proposal is unclear on how attention to different parts of a speech stream can be strategically allocated
+and how it moderates contextual facilitation.
 Another influential account of predictive language processing proposed by Pickering \& Gambi (\protect\hyperlink{ref-Pickering2018}{2018}) states that prediction involves speech production mechanism,
 i.e., listeners simulate the production of the perceived speech to predict upcoming linguistic units.
-It is supposed that listeners ideally have an access to all the stages of lexical processing.
-But their account of does not include the role of attention at any stage of lexical processing in speech production, comprehension, and prediction.
+It is supposed that listeners ideally have access to all the stages of lexical processing.
+However, their account does not include the role of attention at any stage of lexical processing in speech production, comprehension, and prediction.
 
 In an fMRI study of visual perception, Kok et al. (\protect\hyperlink{ref-Kok2012}{2012}) found a significant difference in the amplitude of the BOLD signal between predicted and unpredicted stimuli location in the visual field even when the participants did not attend to the stimuli.
 This relationship between prediction and attention in visual perception is accounted for in predictive coding models (e.g., \protect\hyperlink{ref-Friston2009}{K. Friston, 2009}).
-Therefore, an elaborate and explanatory theory of predictive language processing should also account for attention regulation that modulates the effects of prediction in language comprehension.
+Therefore, an elaborate and explanatory theory of predictive language processing should also account for attention regulation that modulates the predictability effects in language comprehension.
 
 \hypertarget{speech-rate}{%
 \subsection{Speech rate}\label{speech-rate}}
 
-We showed that sentence context facilitates comprehension of degraded speech at the normal speech rate.
-Contrary to common wisdom and previous findings (e.g., \protect\hyperlink{ref-Dambacher2012}{Dambacher et al., 2012}; \protect\hyperlink{ref-Wlotko2015}{Wlotko \& Federmeier, 2015}), slowing down the speech rate did not improve contextual facilitation (cf. \protect\hyperlink{ref-Winn2021}{M. B. Winn \& Teece, 2021}).
-Our results from younger adults did not show any benefit of slow speech either.
-Participants in our study were neither able to better understand the degraded speech at a slow speed,
+We showed that sentence context facilitates comprehension of degraded speech presented at the normal speed.
+Contrary to common wisdom and previous findings (e.g., \protect\hyperlink{ref-Dambacher2012}{Dambacher et al., 2012}; \protect\hyperlink{ref-Wlotko2015}{Wlotko \& Federmeier, 2015}), slowing the speech rate did not improve contextual facilitation (cf. \protect\hyperlink{ref-Winn2021}{M. B. Winn \& Teece, 2021}).
+Our results from younger adults showed no benefit of slow speech either.
+Participants in our study were neither able to better understand the degraded speech at a slow speed
 nor did the slow speech help to better process the context and facilitate comprehension compared to the speech presented at a normal rate.
 In contrast, fast speech selectively impaired the processing of low predictability sentences.
 The activation of target words in low constraining sentences was difficult.
 These findings have some practical implications.
-The speech that the people with sensory neural hearing loss and cochlear implants perceive is spectrally degraded (\protect\hyperlink{ref-Parida2022}{Parida \& Heinz, 2022}; \protect\hyperlink{ref-Shannon1998}{Shannon et al., 1998}; \protect\hyperlink{ref-Shannon2004}{Shannon et al., 2004}).
-The findings from our study can inform the clinical and rehabilitative set up:
-We don't find an evidence that speaking slow benefits degraded speech comprehension,
-while we provide an evidence that speaking fast is detrimental to processing sentences that are not easily predictable from the context.
-Therefore, in a rehabilitative set up, auditory-verbal training to the cochlear implantees can likely benefit with normal speech rate,
-than the exaggerated slowing down of the speech.
+The speech that people with sensory neural hearing loss and cochlear implants perceive is spectrally degraded (\protect\hyperlink{ref-Parida2022}{Parida \& Heinz, 2022}; \protect\hyperlink{ref-Shannon1998}{Shannon et al., 1998}; \protect\hyperlink{ref-Shannon2004}{Shannon et al., 2004}).
+The findings from our study can inform the clinical and rehabilitative setup:
+We do not find evidence that speaking slow benefits degraded speech comprehension.
+At the same time, we provide evidence that speaking fast is detrimental to processing sentences that are not easily predictable from the context.
+Therefore, in a rehabilitative setup, auditory-verbal training for the cochlear implantees can likely benefit from a normal speech rate than the exaggerated slowing down of the speech.
 Other studies have also shown that listeners do not prefer slow speech (e.g., \protect\hyperlink{ref-Sutton1995}{Sutton et al., 1995}; cf. \protect\hyperlink{ref-Winn2021}{M. B. Winn \& Teece, 2021}).
 On the scientific aspect,
-our findings inform the theories of predictive language processing which take into account the speed of lexical processing.
-For example, Pickering \& Gambi (\protect\hyperlink{ref-Pickering2018}{2018})'s account of predictive language processing posits that comprehenders have an access to word-form at the late stage of lexical processing.
-Our findings indicate that at a fast speech rate, when the speech is degraded, processing of the less predictable words do not reach the late stage in contrast to the highly predictable words.
+our findings inform the theories of predictive language processing, which take into account the speed of lexical processing.
+For example, Pickering \& Gambi (\protect\hyperlink{ref-Pickering2018}{2018})'s account of predictive language processing posits that comprehenders have access to word-form at the late stage of lexical processing.
+Our findings indicate that at a fast speech rate when the speech is degraded, processing of the less predictable words does not reach the late stage in contrast to the highly predictable words.
 Replication and extension of these findings measuring the time-course of lexical processing at different speech rates can further test the predictions of these accounts of language processing.
 
 \hypertarget{limitations-and-scope-for-future-studies}{%
@@ -3067,22 +3074,23 @@ However, some argue that it is not the best metric to measure the predictability
 The cloze probability is an aggregated estimate of whether a group of participants will consider a particular word as a continuation of a sentence given a context.
 For example, if 40 out of 50 participants in a cloze norming study may respond that \emph{balloon} is the most likely ending of the truncated sentence \emph{The child went out to fly a red} \_\_\_,
 then ``balloon'' is considered to be the highly predictable word in this context with the cloze probability value of 0.80.
-However, it is also likely that another group of 50 participant would respond ``kite'' as the most likely ending of the same sentence.
+However, it is also likely that another group of 50 participants would respond with ``kite'' as the most likely ending of the same sentence.
 This example illustrates that a cloze-based measure is an inconsistent estimate of predictability.
 
-In the recent years, alternatives to the cloze-based measures have been proposed.
+In recent years, alternatives to cloze-based measures have been proposed.
 For example, Lopukhina et al. (\protect\hyperlink{ref-Lopukhina2021}{2021}) demonstrated that corpus-based measures of word probability are better predictors of linguistic predictability than the cloze-based measures calculated from a small group of participants in norming studies (see also \protect\hyperlink{ref-Michaelov2022}{Michaelov et al., 2022}).
-Similarly, Hofmann et al. (\protect\hyperlink{ref-Hofmann2021}{2021}) demonstrated that surprisal-based measures estimated from Large Language Models (e.g., GPT-2, GPT-3, etc.) explain N400 effects and reading times better than cloze-based measures (see \protect\hyperlink{ref-Heilbron2022}{Heilbron et al., 2022} for an implementation of surprisal calculated from GPT-2).
-As the growing number of studies show that the values other than cloze probability are better estimates of predictability,
-it is not an overstatement to say that these measures can replace cloze probability that tends to be inconsistent.
+Similarly, Hofmann et al. (\protect\hyperlink{ref-Hofmann2021}{2021}) demonstrated that surprisal-based measures estimated from Large Language Models (e.g., GPT-2, GPT-3) explain N400 effects and reading times better than cloze-based measures (see \protect\hyperlink{ref-Heilbron2022}{Heilbron et al., 2022} for an implementation of surprisal calculated from GPT-2).
+As growing number of studies show that values other than cloze probability are better estimates of predictability,
+it is not an overstatement to say that these measures can replace cloze probability which tends to be inconsistent.
 Studies in the domain of probabilistic language processing that we reported in this thesis can benefit from multiple predictability estimates from language models and corpus.
 
 \hypertarget{individual-differences}{%
 \subsection{Individual differences}\label{individual-differences}}
 
 It is evident that language processing is not the same across all participants.
-For example, working memory capacity, processing speed, literacy, and language experience vary across participants and these factors result in the differences among individuals' language processing and the use lexical-semantic cues (\protect\hyperlink{ref-Federmeier2010}{K. D. Federmeier et al., 2010}; \protect\hyperlink{ref-Mishra2012}{Mishra et al., 2012}; \protect\hyperlink{ref-Rommers2015}{Rommers et al., 2015}; \protect\hyperlink{ref-Scholman2020}{Scholman et al., 2020}).
-However, the general conclusions about the top-down--bottom-up interactions presented in this thesis are based on the mean estimates of predictability (in terms of the response accuracy) across all participants.
+For example, working memory capacity, processing speed, literacy, and language experience vary in a group of participants,
+which results in a difference in language processing and the use of lexical-semantic cues among participants (\protect\hyperlink{ref-Federmeier2010}{K. D. Federmeier et al., 2010}; \protect\hyperlink{ref-Mishra2012}{Mishra et al., 2012}; \protect\hyperlink{ref-Rommers2015}{Rommers et al., 2015}; \protect\hyperlink{ref-Scholman2020}{Scholman et al., 2020}).
+However, the general conclusions about the top-down--bottom-up interactions presented in this thesis are based on the mean estimates of predictability (in terms of response accuracy) across all participants.
 Although we controlled for variability among participants in the mixed model analysis,
 the individual differences measures could inform how the top-down--bottom-up interactions vary among the participants.
 For example, it can be speculated that participants with faster processing speed benefit more from the semantic context when the speech rate is fast in Chapter \ref{chapter-speech-rate} (e.g., \protect\hyperlink{ref-Huettig2016a}{Huettig \& Janse, 2016}).
@@ -3091,58 +3099,58 @@ Therefore, it is recommended that the extension of the studies presented in this
 \hypertarget{sentence-structure-and-context-information}{%
 \subsection{Sentence structure and context information}\label{sentence-structure-and-context-information}}
 
-One of the goals of the thesis was to replicate the predictability effects in degraded speech comprehension as showed in Obleser et al. (\protect\hyperlink{ref-Obleser2007}{2007}) and Obleser \& Kotz (\protect\hyperlink{ref-Obleser2010}{2010}).
-Therefore, we created short Subject--Verb--Object sentences which were similar to Obleser \& Kotz (\protect\hyperlink{ref-Obleser2010}{2010})'s stimuli.
-In these sentences the verb was predictive of the noun.
-However, in daily conversations, the utterances a speaker produces are not structured in this short format in which only one preceding word provides a context to predict a succeeding word.
-Instead, different sources of information like the knowledge about the speaker, topic, or discourse build the context information and are jointly predictive of the upcoming linguistic units.
-Similarly, the speaker indicates important words or concepts via pitch contours, stress, or intonation patters,
-which then direct the attention of a listener.
+One of the goals of the thesis was to replicate the predictability effects in degraded speech comprehension, as shown in Obleser et al. (\protect\hyperlink{ref-Obleser2007}{2007}) and Obleser \& Kotz (\protect\hyperlink{ref-Obleser2010}{2010}).
+Therefore, we created short Subject--Verb--Object sentences similar to Obleser \& Kotz (\protect\hyperlink{ref-Obleser2010}{2010})'s stimuli.
+In these sentences, the verb was predictive of the noun.
+However, in daily conversations, a speaker's utterances are not structured in this short format in which only one preceding word provides a context to predict the next word.
+Instead, different sources of information, like the knowledge about the speaker, topic, or discourse, build the context information and are jointly predictive of the upcoming linguistic units.
+Similarly, the speaker indicates important words or concepts via pitch contours, stress, or intonation patterns,
+which then direct the listener's attention.
 Hence, one could argue that the generalization of the findings beyond the stimuli used here is restricted or limited.
-Therefore, the next step is to extend these findings using longer utterances in which a discourse provides the context information about an upcoming word in a sentence in the discourse (e.g., \protect\hyperlink{ref-Brothers2015}{Brothers et al., 2015}),
+Therefore, the next step is to extend these findings using longer utterances in which a discourse provides the context information about an upcoming word in a sentence in the discourse (e.g., \protect\hyperlink{ref-Brothers2015}{Brothers et al., 2015})
 and the information about the speaker (e.g., \protect\hyperlink{ref-Bhandari2020}{Bhandari et al., 2020}).
 
-\hypertarget{the-nature-of-predictability-effect}{%
-\subsection{The nature of predictability effect}\label{the-nature-of-predictability-effect}}
+\hypertarget{the-nature-of-the-predictability-effect}{%
+\subsection{The nature of the predictability effect}\label{the-nature-of-the-predictability-effect}}
 
-Strauß et al. (\protect\hyperlink{ref-Strauss2013}{2013}) formulated their ``narrowed expectations'' framework based on the results of an EEG study measuring the latency and amplitude of the N400 component.
-We did not find a support for their claims;
+Strauß et al. (\protect\hyperlink{ref-Strauss2013}{2013}) formulated their ``narrowed expectations'' framework based on an EEG study measuring the latency and amplitude of the N400 component.
+We did not find support for their claims;
 instead, we demonstrated that the effect of predictability in degraded speech comprehension is \emph{graded} in nature.
 A replication and extension of our findings in an EEG experiment would corroborate our claims.
-It can be expected that the N400 amplitude of the target word in the low predictability sentences will be larger than in the medium predictability sentences which in turn will be larger than in the high predictability sentences.
+It can be expected that the N400 amplitude of the target word in the low predictability sentences will be larger than in the medium predictability sentences, which in turn, will be larger than in the high predictability sentences.
 Furthermore, these differences will be significantly larger in the moderately degraded speech (4-channel noise-vocoding) compared to the least degraded speech (8-channel noise-vocoding).
-We note that the EEG experiment proposed here was planned to be conducted as a part of this thesis,
-but due to the closure of the electrophysiology lab during the covid-19 lockdown, the experiment was not conducted.
+We note that the EEG experiment proposed here was initially planned as a part of this thesis.
+However, due to the closure of the electrophysiology lab during the covid-19 lockdown, the experiment was not conducted.
 
 \hypertarget{concluding-remark}{%
 \section{Concluding remark}\label{concluding-remark}}
 
 At the outset of this thesis, we outlined some goals:
 to replicate the predictability effects in degraded speech comprehension,
-to investigate whether the nature of predictability effect is graded,
+to investigate whether the nature of the predictability effect is graded,
 to examine if attention and speech rate limit or moderate contextual facilitation,
-and if listeners' adaptation to degraded speech is influenced by lexical-semantic properties of the speech.
+and if lexical-semantic properties of the speech influence listeners' adaptation to degraded speech.
 We have largely achieved these goals.
-In the experiments presented in Chapters \ref{chapter-attention-prediction}, \ref{chapter-graded-prediction}, and \ref{chapter-speech-rate} we have shown that the interaction between top-down and bottom-up processes in the comprehension of degraded speech is dynamic:
+In the experiments presented in Chapters \ref{chapter-attention-prediction}, \ref{chapter-graded-prediction}, and \ref{chapter-speech-rate}, we have shown that the interaction between top-down and bottom-up processes in the comprehension of degraded speech is dynamic:
 Probabilistic language prediction is graded in nature at the moderate level of speech degradation while the listeners attend to the context information.
-It was also revealed that an increase in speech rate is detrimental to the processing of low predictability sentence
-We argued for the use of a metric of language comprehension measure that takes into account whether listeners' identification of context information.
+It was also revealed that an increase in speech rate is detrimental to processing low predictability sentences.
+We argued for using a metric of language comprehension that considers listeners' identification of context information.
 
-Despite these findings, this thesis does not answer all the questions about predictive language processing, especially about prediction in adverse listening condition.
+Despite these findings, this thesis does not answer all the questions about predictive language processing, especially about prediction in adverse listening conditions.
 The research domain of predictive language processing is grapples with the problems like disentangling prediction from integration (e.g., \protect\hyperlink{ref-Mantegna2019}{Mantegna et al., 2019}) and
-parallel vs sequential prediction (see \protect\hyperlink{ref-Gibson2000}{Gibson \& Pearlmutter, 2000} for discussion)
+parallel vs sequential prediction (see \protect\hyperlink{ref-Gibson2000}{Gibson \& Pearlmutter, 2000} for discussion).
 These questions are beyond the scope of this thesis to be addressed.
 It would be an overstatement to claim that our findings are definitive answers to the question of graded vs deterministic prediction in degraded speech comprehension.
 Nevertheless, the evidence from our experiments lines up with the existing findings supporting the account of graded prediction.
-We hold a similar position with regards to our evidence on the limitations of contextual facilitation (in Chapter \ref{chapter-attention-prediction}):
+We hold a similar position regarding our evidence on the limitations of contextual facilitation (in Chapter \ref{chapter-attention-prediction}):
 Our findings align with the growing body of literature that question the automaticity of predictions (see \protect\hyperlink{ref-Huettig2016}{Huettig \& Mani, 2016} for discussion).
 Based on these, we speculate that although prediction undoubtedly facilitates language comprehension,
 it is not a ubiquitous process in language comprehension.
 Listeners can strategically deploy other top-down processes that limit or moderate linguistic predictions.
 
-We discussed the limitations of the experiments presented in this thesis and of the widely used methods and metrics (e.g., cloze probability, key word recognition accuracy)
+We discussed the limitations of our experiments, widely used methods and metrics (e.g., cloze probability, key word recognition accuracy),
 and provided avenues for future research (individual differences, replication with EEG experiments, context information in a discourse).
-Building on the findings of this thesis, and addressing these recommendations in the future research,
+Building on the findings of this thesis and addressing these recommendations in future research,
 we will get a better understanding of the nuanced nature language comprehension in adverse listening conditions,
 and an elaborate and comprehensive theory of predictive language processing can be built.
 
@@ -3925,12 +3933,6 @@ Tóth, B., Honbolygó, F., Szalárdy, O., Orosz, G., Farkas, D., \& Winkler, I. 
 
 \leavevmode\vadjust pre{\hypertarget{ref-Tuthill2018}{}}%
 Tuthill, J. C., \& Azim, E. (2018). Proprioception. \emph{Current Biology}, \emph{28}(5), R194--R203.
-
-\leavevmode\vadjust pre{\hypertarget{ref-Vaden2016}{}}%
-Vaden Jr, K. I., Kuchinsky, S. E., Ahlstrom, J. B., Teubner-Rhodes, S. E., Dubno, J. R., \& Eckert, M. A. (2016). Cingulo-opercular function during word recognition in noise for older adults with hearing loss. \emph{Experimental Aging Research}, \emph{42}(1), 67--82.
-
-\leavevmode\vadjust pre{\hypertarget{ref-Vaden2015}{}}%
-Vaden, K. I., Kuchinsky, S. E., Ahlstrom, J. B., Dubno, J. R., \& Eckert, M. A. (2015). Cortical activity predicts which older adults recognize speech in noise and when. \emph{Journal of Neuroscience}, \emph{35}(9), 3929--3937.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Vaden2013}{}}%
 Vaden, K. I., Kuchinsky, S. E., Cute, S. L., Ahlstrom, J. B., Dubno, J. R., \& Eckert, M. A. (2013). {The cingulo-opercular network provides word-recognition benefit}. \emph{Journal of Neuroscience}, \emph{33}(48), 18979--18986. \url{https://doi.org/10.1523/JNEUROSCI.1417-13.2013}

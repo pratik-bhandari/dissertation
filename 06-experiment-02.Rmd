@@ -364,7 +364,7 @@ One could argue that the participants in our experiment “guessed” the verb a
 To rule out this possible explanation of our findings, we conducted an additional analysis comparing the *forward predictability effect* (from verb to noun) to the size of the *backward predictability effect* (correct identification of the noun based on the final verb).
 If the observed effect is a guessing phenomenon, then we would expect that both forward and backward predictability effects are similar in size.
 If, on the other hand, understanding the verb helps to shape the predictions of the upcoming noun, and this helps intelligibility, then the forward prediction effect should be larger.
-The results of this complementary analysis (Table \@ref(results2integration)) support the findings of the main analysis reported in the Results section.
+The results of this complementary analysis <!--(Table \@ref(results2integration))--> support the findings of the main analysis reported in the Results section.
 In the backward predictability analysis, there was no graded effect of predictability, and the backward effect of “guessing” the verb *jongliert* after recognizing the noun *Bälle*, if present at all, was smaller than the forward effect of predicting the noun after recognizing the verb in the sentence *Sie jongliert die Bälle*.
 This further corroborates our argument that the listeners, in fact, made use of the verb-evoked context to form predictions about the upcoming noun, not the other way around, in a graded manner when the speech was moderately degraded.
 

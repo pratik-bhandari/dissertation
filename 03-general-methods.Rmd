@@ -144,7 +144,7 @@ we can investigate the importance of specific suprasegmental cues in speech perc
 Noise-vocoding reduces the fine structure cues that carry the pitch-related suprasegmental information
 and allows the study of temporal amplitude envelope cues, which carry the suprasegmental information involved in lexical processing;
 noise-vocoding preserves these cues.
-Most importantly, it allows fine-grained control over speech intelligibility by varying the number of vocoder channels.
+It also provides a control over speech intelligibility by varying the number of vocoder channels.
 
 #### Speech compression and expansion {#compression-expansion}
 

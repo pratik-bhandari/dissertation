@@ -9,7 +9,7 @@ we use the information available to us from a context and predict the not-yet-en
 We do not wait for a speech signal to unfold completely to decode its meaning.
 This feature of human language processing is critical in understanding speech in adverse listening conditions.
 
-In this thesis, we investigated how listeners can use context information and form predictions while listening to a speech at different levels of degradation.
+In this thesis, we investigated how listeners can use context information and form predictions while listening to speech at different levels of degradation.
 The central theme of the thesis is the investigation of the interactions between top-down semantic predictions and bottom-up auditory processing in adverse listening conditions under the theoretical framework of predictive processing and the noisy channel model of communication.
 There are numerous methods by which context information and speech degradation (adverse listening conditions) can be created and manipulated in an experimental setup.
 We manipulated the context information by creating short Subject-Verb-Object sentences in German in which the verb of a sentence was predictive of its noun.
@@ -39,4 +39,4 @@ When the speech degradation is not severe, they can rely on the bottom-up input 
 When the speech is moderately degraded but intelligible enough, they generate predictions about the upcoming word from the context information.
 In addition, the *weighing* of lexical-semantic and acoustic-phonetic cues is also modulated by attention regulation and speech rate.
 
-Taken together, this thesis contributes to the nuanced understanding of the dynamic interaction between top-down and bottom-up processes in degraded speech comprehension.
+Taken together, this thesis contributes to the nuanced understanding of the dynamic interaction between top-down and bottom-up processes in speech comprehension.

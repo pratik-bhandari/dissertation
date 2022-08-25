@@ -201,7 +201,7 @@ In this chapter, we introduced the statistical tool used for data analysis in th
 We discussed the limitations of traditional linear regression-based models like ANOVA
 and outlined the motivations for using mixed effects models.
 To capture the variability of our data without averaging out across participants or items,
-and to account for the effect of two random effects --- participant and item --- simultaneously,
+and to account for the effect of two (or more) random effects --- participant and item --- simultaneously,
 we fit mixed effects models to our data.  
 Details of each dataset corresponding to each experiment are presented in Chapters 5, 6, and 7.  
 
