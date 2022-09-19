@@ -5,14 +5,27 @@
 <!-- If you feel it necessary to include an appendix, it goes here. The first appendix should include the commands above. -->
 
 
-# Experimental items
+# Experimental items 1
 
-This is a list of high, medium and low predictability sentences used in all the experiments mentioned in Chapters 5, 6, and 7.
+Experimental items used in the experiments presented in Chapters \@ref(chapter-attention-prediction) and \@ref(chapter-graded-prediction).
 
---> Insert table here <--
+<!--https://stackoverflow.com/questions/41690802/convert-csv-file-contents-to-markdown
+https://www.convertcsv.com/csv-to-markdown.htm-->
 
-https://stackoverflow.com/questions/41690802/convert-csv-file-contents-to-markdown
-https://www.convertcsv.com/csv-to-markdown.htm
+# Experimental items 2
+
+Experimental items used in the experiments presented in Chapter \@ref(chapter-speech-rate)
 
 
-<!-- ** Second Appendix, just in case ** -->
+# Forward prediction vs Backward guessin in Chapter 6
+
+Results of the complementary analysis performed in Chapter \@ref(chapter-graded-prediction):
+
+# Forward prediction vs Backward guessin in Chapter 7
+
+Results of the complementary analysis performed in Chapter \@ref(chapter-speech-rate):
+
+
+# Data analysis
+
+Example of GLMM in `R`:

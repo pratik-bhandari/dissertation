@@ -17,8 +17,7 @@ knit: (function(input, ...) {
 ## thesis metadata ##
 #####################
 title: |
-  Degraded speech comprehension: \
-  Interaction of top-down and bottom-up processes
+  Interaction of top-down and bottom-up processes in degraded speech comprehension
 author: Pratik Bhandari
 # college: Department of Psychology
 # university: Saarland University

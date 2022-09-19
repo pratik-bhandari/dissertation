@@ -230,8 +230,8 @@ the instances of varying predictability effects at fast and slow speech rates an
 Listeners quickly adapt to novel speech with artificial acoustic distortions [@Dupoux1997]. 
 Repeated exposure to distorted speech improves listeners' comprehension improves over time [for reviews, see @Samuel2009; @Guediche2014].
 When the noise condition, like speech degradation level, is constant throughout the experiment, listeners adapt to it, and the performance (e.g., word recognition) improves with as little as 20 minutes of exposure [@Rosen1999].
-For example, @Davis2005[Experiment 1] presented listeners with 6 channels noise-vocoded speech and found an increase in the proportion of correctly reported words over the course of the experiment.
-Similarly, @Erb2013 presented participants with 4 channels noise-vocoded speech and reached a similar conclusion.
+For example, @Davis2005 presented listeners with 6-channel noise-vocoded speech and found an increase in the proportion of correctly reported words over the course of the experiment.
+Similarly, @Erb2013 presented participants with 4-channel noise-vocoded speech and reached a similar conclusion.
 In these experiments, only one speech degradation level (6- or 4-channel noise-vocoded speech) was presented in one block.
 There was no uncertainty about the next-trial speech degradation <!--within a block-->from the participants' perspective.
 <!-- i.e., the *global channel context* was certain or predictable. -->
