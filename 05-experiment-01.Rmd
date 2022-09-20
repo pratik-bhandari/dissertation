@@ -318,8 +318,8 @@ In contrast to Experiment 1, there was also a main effect of target word predict
 We also found a statistically significant interaction between speech degradation and target word predictability
 ($\beta$ = -1.14, SE = .50, *z*(4,320) = -2.30, *p* = .02).
 Subsequent subgroup analyses of each channel condition showed that the interaction was driven by the difference in response accuracy between high predictability sentences and low predictability sentences
-in the 8-channel ($\beta$ = 1.42, SE = .62, *z*(1,440) = 2.30, *p* = 0.02)
-and 6-channel noise-vocoding conditions ($\beta$ = 1.14, SE = 0.34, *z*(1,440) = 3.31, *p* < .001);
+in the 8-channel ($\beta$ = 1.42, SE = .62, *z*(1,440) = 2.30, *p* = .02)
+and 6-channel noise-vocoding conditions ($\beta$ = 1.14, SE = .34, *z*(1,440) = 3.31, *p* < .001);
 at 4 channel, the difference in response accuracy between high and low predictability sentences was not significant
 ($\beta$ = .28, SE = .18, *z*(1,440) = 1.59, *p* = .11).
 

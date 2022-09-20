@@ -144,7 +144,7 @@ However, their account does not include the role of attention at any stage of le
 
 In an fMRI study of visual perception, @Kok2012 found a significant difference in the amplitude of the BOLD signal between predicted and unpredicted stimuli location in the visual field even when the participants did not attend to the stimuli.
 This relationship between prediction and attention in visual perception is accounted for in predictive coding models [e.g., @Friston2009].
-Therefore, an elaborate and explanatory theory of predictive language processing should also account for attention regulation that modulates the predictability effects in language comprehension.
+Therefore, an elaborate and explanatory theory of predictive language processing should also consider attention regulation that modulates the predictability effects in language comprehension.
 
 ### Speech rate
 
@@ -169,7 +169,7 @@ For example, @Pickering2018's account of predictive language processing posits t
 Our findings indicate that at a fast speech rate when the speech is degraded, processing of the less predictable words does not reach the late stage in contrast to the highly predictable words.
 Replication and extension of these findings measuring the time-course of lexical processing at different speech rates can further test the predictions of these accounts of language processing.
 
-## Limitations and scope for future studies
+## Limitations and outlook on future studies
 
 ### Measurement of predictability
 
@@ -192,17 +192,6 @@ As growing number of studies show that values other than cloze probability are b
 it is not an overstatement to say that these measures can replace cloze probability which tends to be inconsistent.
 Studies in the domain of probabilistic language processing that we reported in this thesis can benefit from multiple predictability estimates from language models and corpus.
 <!-- N400 -->
-
-### Individual differences
-
-It is evident that language processing is not the same across all participants.
-For example, working memory capacity, processing speed, literacy, and language experience vary in a group of participants,
-which results in a difference in language processing and the use of lexical-semantic cues among participants [@Mishra2012; @Rommers2015; @Scholman2020; @Federmeier2010].
-However, the general conclusions about the top-down--bottom-up interactions presented in this thesis are based on the mean estimates of predictability (in terms of response accuracy) across all participants.
-Although we controlled for variability among participants in the mixed model analysis,
-the individual differences measures could inform how the top-down--bottom-up interactions vary among the participants.
-For example, it can be speculated that participants with faster processing speed benefit more from the semantic context when the speech rate is fast in Chapter \@ref(chapter-speech-rate) [e.g., @Huettig2016a].
-Therefore, it is recommended that the extension of the studies presented in this thesis include individual differences measures that can moderate linguistic predictions in adverse listening conditions.
 
 ### Sentence structure and context information
 
@@ -244,6 +233,49 @@ Furthermore, these differences will be significantly larger in the moderately de
 We note that the EEG experiment proposed here was initially planned as a part of this thesis.
 However, due to the closure of the electrophysiology lab during the covid-19 lockdown, the experiment was not conducted.
 
+### Individual differences
+
+It is evident that language processing is not the same across all participants.
+For example, working memory capacity, processing speed, literacy, and language experience vary in a group of participants,
+which results in a difference in language processing and the use of lexical-semantic cues among participants [@Mishra2012; @Rommers2015; @Scholman2020; @Federmeier2010].
+However, the general conclusions about the top-down--bottom-up interactions presented in this thesis are based on the mean estimates of predictability (in terms of response accuracy) across all participants.
+Although we controlled for variability among participants in the mixed model analysis,
+the individual differences measures could inform how the top-down--bottom-up interactions vary among the participants.
+For example, it can be speculated that participants with faster processing speed benefit more from the semantic context when the speech rate is fast in Chapter \@ref(chapter-speech-rate) [e.g., @Huettig2016a].
+Therefore, it is recommended that the extension of the studies presented in this thesis include individual differences measures that can moderate linguistic predictions in adverse listening conditions.
+
+### Online study with auditory stimuli
+
+The experiments presented in this thesis were conducted on the web.
+This poses a few methodological challenges which in turn can limit the generalizations of the findings.
+Firstly, the participants listened to the auditory stimuli at their comfort, in their computer using their own headset.
+This setup is different than a controlled laboratory set up in which all participants use the same device and listen through the same headset that has a standard spectral resolution with a known loudness level.
+In our experiments, the variability of spectral responses and intensity of the sound presented through the headsets of the participants was unknown[^headset-footnote].
+Similarly, the possiblity that participants used their computer's loudspeakers instead of headphones could not be entirely ruled out although it has been shown that participants in Prolific are attentive and honest to the instructions [@Eyal2022].
+In future experiments, one could follow @Woods2017's proposed *headphone test* to confirm that streo headphones are used, not loudspeakers.
+
+Similarly, hearing acuity correlates with the effort required to perceive words in adverse listening condition [@Cahana2016; @McCoy2005].
+Therefore, we recruited only those participants who reported to not have any hearing-related problem by using Prolific's filter.
+However, an objective measure of the participants' hearing acuity could not be obtained (e.g., by audiometric assessment) over the web.
+<!-- But, because the experiments were conducted online, audiometric assessment could not be perfomed to objectively measure participants' hearing threshold. -->
+<!-- although any frequency specific hearing loss could not be detected. -->
+Since the participants in our experiments were young adults, the contribution of hearing acuity on listening effort and word recognition is not significant [@Benichov2012].
+Nonetheless, future studies should consider replicating our findings in controlled laboratory setup assessing participants' audiometric hearing threshold and correlating it with their performance in the word recognition task.
+
+It is important to note that after decades of the first psycholinguistic experiment with auditory material (discussed in Chapter \@ref(chapter-methods), Section \@ref(online-experiment)),
+the doubt about the validity of online experiments still persists.
+@Cooke2021 proposed that speech recognition experiments can be conducted over the web in the same way as in the lab;
+they replicated the findings of the speech perception experiments from their lab in online experiments controlling for participant-related differences.
+They used masked speech, distorted speech, and enhanced speech.
+Validating online studies using different speech materials, like noise-vocoded speech, background noise, reverberated speech, etc. in different experimental paradigms could help strengthen the conclusions of our findings,
+and restrict the limitations of online studies.
+<!--The general conclusion of the online experiments reported in this thesis regarding the facilitatory effect of semantic predictability is line with the findings from laboratory experiments.
+It is yet to be seen if other findings reported here (e.g., modulatory role of attention, effect of speech rate) replicates in similar experiments online as well as in laboratory setup.-->
+
+### Generalization of the findings
+
+
+
 ## Concluding remark
 
 At the outset of this thesis, we outlined some goals:
@@ -274,3 +306,6 @@ and provided avenues for future research (individual differences, replication wi
 Building on the findings of this thesis and addressing these recommendations in future research,
 we will get a better understanding of the nuanced nature language comprehension in adverse listening conditions,
 and an elaborate and comprehensive theory of predictive language processing can be built.
+
+[^headset-footnote]: The type of device that they used may differ among the participants in each experimental group in Chapters \@ref(chapter-attention-prediction), \@ref(chapter-graded-prediction), and \@ref(chapter-speech-rate).
+Nonetheless, it is unlikely that there was any systematic difference between the participants in two groups that were compared in each experiment.
