@@ -171,6 +171,19 @@ Replication and extension of these findings measuring the time-course of lexical
 
 ## Limitations and outlook on future studies
 
+### Statistical power and sample size
+
+The statistical inference made in the studies presented in this thesis stem from the interpretation of statistical significance (or lack thereof) of the effect size of interest in terms of beta estimates from the mixed effects model.
+There was no a priori expectation about the estimated effect size of the main effect of predictability, the main effect of noise-vocoding channels, or their interactions which could be used to determine the sample size necessary to detect those effects
+[see @Meteyard2020 for the discussion on the complexity of power analysis in mixed model designs].
+Therefore, we determined our sample size to be approximately equal to that of other studies that examined language comprehension in adverse listening conditions [e.g., @Erb2013; @Hunter2018; @Obleser2007; @Obleser2010; @Sheldon2008a; @Sheldon2008b; @Sommers2020; @Strauss2013].
+This approach of sample size determination left a possibility of our experiments being underpowered.
+Given this possibility, we follow the advice of the statisticians:
+avoid making strong claims and “accept uncertainty” [@McShane2019; @Vasishth2021].
+Statistically significant findings from a potentially underpowered experiment are not inherently wrong, as long as the claims are not big [see @Vasishth2021 for discussion].
+Our findings are suggestive, and provide a direction:
+The solution we recommend for future studies is to conduct an a priori power analysis and determine the sample size.
+
 ### Measurement of predictability
 
 Our interpretation of the experimental results to support the probabilistic and graded nature of predictability is that listeners form expectations about an upcoming word based on the likelihood of its occurrence given the context.
@@ -259,7 +272,7 @@ Therefore, we recruited only those participants who reported to not have any hea
 However, an objective measure of the participants' hearing acuity could not be obtained (e.g., by audiometric assessment) over the web.
 <!-- But, because the experiments were conducted online, audiometric assessment could not be perfomed to objectively measure participants' hearing threshold. -->
 <!-- although any frequency specific hearing loss could not be detected. -->
-Since the participants in our experiments were young adults, the contribution of hearing acuity on listening effort and word recognition is not significant [@Benichov2012].
+Since the participants in our experiments were young adults, the contribution of hearing acuity on listening effort and word recognition is not significant [@Benichov2012; cf. @Hunter2018].
 Nonetheless, future studies should consider replicating our findings in controlled laboratory setup assessing participants' audiometric hearing threshold and correlating it with their performance in the word recognition task.
 
 It is important to note that after decades of the first psycholinguistic experiment with auditory material (discussed in Chapter \@ref(chapter-methods), Section \@ref(online-experiment)),
@@ -274,7 +287,22 @@ It is yet to be seen if other findings reported here (e.g., modulatory role of a
 
 ### Generalization of the findings
 
-
+It follows from the discussion above that the extent to which our findings generalise across different population and experimental setup is limited.
+The experiments presented in this thesis were conducted among young adults aged 18-31 years.
+<!-- This narrow age range limits the generalizability of the findings: -->
+With age, linguistic and world knowledge increases while hearing acuity decreases.
+Thus, older and younger adults use lexical-semantic and acoustic-phonetic cues differently [e.g., @Sheldon2008a; @Sheldon2008b].
+We can speculate that we would also observe an age difference in the facilitatory effect of predictability when the speech is degraded;
+older adults would likely rely on semantic context more than younger adults [cf. @vanOs2021a].
+However, the restricted age range of the participants does not permit us to generalise the findings of our studies across a wide age range, including older adults.
+As a next step, it is recommended that the current study be conducted on older adults, considering the effects of cognitive ageing and auditory threshold
+on the interaction of top-down and bottom-up processes in speech comprehension in adverse listening conditions.
+<!--Similarly, the translational value of our study is also limited.
+Although noise-vocoded speech has long been used to simulate the hearing of cochlear implantees,
+the generalizability of the findings from normal hearing adults using noise-vocoded speech is limited
+unless it is directly compared with the findings from cochlear implantees.
+As a next step for the generalization and clinical translation of our findings,
+a study with cochlear implantees is necessary, using the materials and design similar to the current study.-->
 
 ## Concluding remark
 
@@ -304,7 +332,7 @@ Listeners can strategically deploy other top-down processes that limit or modera
 We discussed the limitations of our experiments, widely used methods and metrics (e.g., cloze probability, key word recognition accuracy),
 and provided avenues for future research (individual differences, replication with EEG experiments, context information in a discourse).
 Building on the findings of this thesis and addressing these recommendations in future research,
-we will get a better understanding of the nuanced nature language comprehension in adverse listening conditions,
+we will get a better understanding of the nuanced nature of language comprehension in adverse listening conditions,
 and an elaborate and comprehensive theory of predictive language processing can be built.
 
 [^headset-footnote]: The type of device that they used may differ among the participants in each experimental group in Chapters \@ref(chapter-attention-prediction), \@ref(chapter-graded-prediction), and \@ref(chapter-speech-rate).
