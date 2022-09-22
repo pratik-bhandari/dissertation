@@ -59,7 +59,7 @@ The listener then interprets that the speaker's message is intended to point him
 (In this case of unsuccessful communication, or due to the listener wrongly identifying the speaker's intended message, Y gets hit by a ball.)
 
 We assume that the goal of a listener is to identify the message $m_i$ that is most likely from the perceived utterance $u_p$, taking into account the external noise ($N$) and the prior likelihood of the speaker uttering $u_i$.
-This can be expressed formally as:
+This can be expressed formally as[^formalization-footnote]:
 
 \begin{align} \label{eq:noisy-channel2}
 \hat{m_p} &= \argmax_{m_p} P(m_p,u_p,N,u_i,m_i)
@@ -94,13 +94,17 @@ It shows:
   - $P(m_p | u_p)$: the probability of inferring a meaning $m_p$ (e.g., a building where lectures take place) from a perceived utterance $u_p$ (e.g., hall)
   - $P(u_p|u_i, N)$: bottom-up auditory information, i.e., the probability of the listener hearing a particular utterance $u_p$ (e.g., hall) given that the speaker has uttered an utterance $u_i$ (e.g., ball) in the noisy channel $N$ (e.g., background noise, signal distortion, etc.)
   - $P(u_i|m_i)P(m_i)$: prior information (e.g., top-down semantic knowledge, information about the speaker, etc.), i.e., the probability of a speaker uttering $u_i$ with an intended message $m_i$ with the probability that the intended message is $m_i$
+  - $P(m_i)$: speaker model, i.e., the probability that the speaker intends to send a particular message
+
+In this thesis, we investigate in the interaction of bottom-up $P(u_p|u_i, N)$ and top-down $P(u_i|m_i)P(m_i)$ processes.
+Henceforth, we focus our discussion on these two components.
 
 The channel of transmission can become noisy due to factors like background noise present in a conversation,
 a poor signal transmission of a telephone call that distorts the speaker's speech,
 hearing loss of a listener,
 hearing aid or cochlear implant worn by a listener, and so on.
 To understand speech in such a noisy channel of communication, a listener puts different weights on the distorted bottom-up auditory input $P(u_p|u_i, N)$ vs the prior information $P(u_i|m_i)P(m_i)$ (e.g., context information).
-This weighing of top-down and bottom-up processes is considered as a rational process in the models of probabilistic language processing in reading comprehension [@Levy2008; @Ryskin2018; see also @vanOs2021 for an implementation of the rational approach in language comprehension in background noise].
+This weighing of top-down and bottom-up processes is considered as a rational process in the models of probabilistic language processing in reading comprehension [@Levy2008; @Ryskin2018; see also @vanOs2021 for an implementation of the rational approach in spoken language comprehension in background noise].
 In this thesis, we also investigate to what extent listeners use their priors from the context information when the signal is distorted at different levels.
 
 Clean speech and reading comprehension studies have demonstrated that listeners and readers use prior knowledge and context information to form semantic predictions about the linguistic events yet to be encountered.
@@ -369,3 +373,7 @@ The presentations and publications that report on parts of the research describe
 -   Bhandari, P., Demberg, V., & Kray, J. (2021). Predictability facilitates comprehension of degraded speech in a graded manner. *Annual Meeting of Cognitive Neuroscience Society*, 2021-03-13--2021-03-16.
 
 <!--*   Bhandari, P., Demberg, V., & Kray, J. (2019). Age differences in language comprehension: Older adults ‘predict more’ in a challenging listening condition. *Rational Approaches in Language Science*, Saarbrücken, Germany (Poster)-->
+
+[^formalization-footnote]: The mathematical formalisation presented in this thesis is intended to introduce and conceptually clarify the noisy channel model of communication and not to simulate or model the communication that occurs in a noisy channel.
+A verbal expression could also serve the purpose, but a mathematical formalisation and potential computational modelling [e.g., @Chingacham2021]  pave the way towards quantifying and predicting unobserved future events and a better theory building [@Guest2020].
+<!-- , see Chapter \@ref(chapter-conclusion) for further discussion]. -->

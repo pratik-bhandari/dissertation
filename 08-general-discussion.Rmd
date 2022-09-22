@@ -91,7 +91,7 @@ In Chapters 6 and 7, we argued for a new approach to calculate response accuracy
 that do not consider whether listeners correctly identified the context.
 In our analyses, we included only those trials in which the context-evoking words were identified correctly.
 
-Taken together, the contribution of this thesis can be stated as follows:
+Taken together, the conclusion of the empirical findings from this thesis can be summarised as follows:
 
 > When a listener attends to a sentence context, semantic predictability facilitates language comprehension at a moderate level of spectral degradation in a *graded manner* as opposed to being an all-or-nothing phenomenon.
 Such contextual facilitation is optimal at a normal speech rate, which is not necessarily amplified by slowing down the speech.
@@ -103,25 +103,25 @@ However, increasing the speech rate reduces contextual facilitation by restricti
 
 The studies in this thesis were based on the theoretical accounts of predictive language processing and the noisy channel model of communication.
 Speech degradation by noise-vocoding created a noisy communication channel that interfered with a listener's perception and understanding of a speaker's utterance
-(schematically represented in Figure \ref{fig:noisy-channel}),
-which was formalized in Equation \@ref(eq:noisy-channel3) in Chapter \@ref(chapter-introduction) as:
+(schematically represented in Figure \ref{fig:noisy-channel} and
+formalized in Equation \@ref(eq:noisy-channel3) in Chapter \@ref(chapter-introduction)) <!--as:
 
 \begin{align*} 
 \hat{m_p} &= \argmax_{m_p} P(m_p | u_p) * P(u_p|u_i, N) * P(u_i | m_i) * P(m_i)
 \end{align*}
-
-Thus, the experiments presented in this thesis suggest that listeners are *rational* comprehenders:
-They weigh the top-down ($P(u_i | m_i) * P(m_i)$) and bottom-up processes ($P(u_p|u_i, N)$) to comprehend a degraded speech.
-When the distribution of $P(u_p|u_i, N)$ is relatively flat, i.e.,
-when the speech signal is degraded, and listeners have difficulty understanding an utterance,
-they rely more on the context (e.g., at 4-channel noise-vocoded speech in Chapter \@ref(chapter-graded-prediction)).
+-->
+The results of the experiments presented in this thesis suggest that listeners are *rational* comprehenders:
+They weigh the top-down and bottom-up processes to comprehend a degraded speech.
+<!-- When the distribution of $P(u_p|u_i, N)$ is relatively flat, i.e., -->
+When the speech signal is degraded, and listeners have difficulty understanding an utterance,
+they rely more on the context (e.g., 4-channel noise-vocoded speech in Chapter \@ref(chapter-graded-prediction)).
 On the contrary, when this bottom-up information is reliable, i.e.,
 when the speech signal is least degraded, and listeners understand an utterance,
 they do not necessarily rely on the top-down information.
 Regardless of their predictions from the context
-the listeners' comprehension results from what they actually perceive (e.g., at 8-channel noise-vocoded speech in Chapter \@ref(chapter-graded-prediction)).
+the listeners' comprehension results from what they actually perceive (e.g., 8-channel noise-vocoded speech in Chapter \@ref(chapter-graded-prediction)).
 
-Under the rational account, this thesis showed that listeners predict an upcoming word based on its probability of occurrence in a given context.
+Under this rational account, the present thesis showed that listeners predict an upcoming word based on its probability of occurrence in a given context.
 To our knowledge, the empirical evidence presented in this thesis is the only one since @Strauss2013 to examine the nature of the predictability effect in degraded speech comprehension.
 We did not find prediction to be restrictive or deterministic, as reported in @Strauss2013 in degraded speech comprehension.
 Instead, our findings are in line with the probabilistic accounts of predictive language processing [@Delong2005; @Kuperberg2016; cf. @Nieuwland2018] proposed in the literature on speech perception and reading studies.
