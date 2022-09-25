@@ -10,8 +10,8 @@
 High, Medium, and Low predictability sentences were used in Chapters \@ref(chapter-attention-prediction) and \@ref(chapter-graded-prediction).
 In Chapter \@ref(chapter-speech-rate), only High and Low predictability sentences were used.
 
-The following table presents all the sentences with the cloze probability of the target word (noun) in each of those sentences
-and the source of the sentences as mentioned in Chapter \@ref(chapter-methods) (Section \@ref(experimental-materials)).
+<!--The following table presents all the sentences with the cloze probability of the target word (noun) in each of those sentences
+and the source of the sentences as mentioned in Chapter \@ref(chapter-methods) (Section \@ref(experimental-materials)).-->
 <!--https://stackoverflow.com/questions/41690802/convert-csv-file-contents-to-markdown
 https://www.convertcsv.com/csv-to-markdown.htm-->
 
@@ -378,26 +378,149 @@ https://www.convertcsv.com/csv-to-markdown.htm-->
 | 359 | Low             | Er bevorzugt das Zimmer         | 0.08                          | O      |
 | 360 | Low             | Er erwischt den Zug             | 0.07                          | O      |
 
-```{=tex}
+: Sentences with cloze probability of the target word (noun) the source of the sentences as mentioned in Chapter 5
+
+\noindent Sources: O=Obleser and Kotz(2010); S=SFB 1102, Project A4
+
+<!--```{=tex}
 \vspace{-1.5em}
-\tiny \noindent{Sources: O = Obleser and Kotz (2010); S = SFB 1102, Project A4}
+\tiny \noindent{Sources: O=Obleser and Kotz(2010); S=SFB 1102, Project A4}
 \small 
 ```
+-->
 
+<!-- ---------------------------------------------------------------------------------------------------------- -->
 
-<!--# Experimental items 2
+# Forward prediction vs Backward guessing in Chapter 6 {#appendix-B}
 
-Experimental items used in the experiments presented in Chapter \@ref(chapter-speech-rate)-->
+<!-- Results of the complementary analysis performed in Chapter \@ref(chapter-graded-prediction): -->
+Complementary analyses were performed on verb-accuracy in the noun-correct trials to examine the backward guessing effect.
+The complementary analyses showed that the main effects of target word predictability, channel condition and their interactions were significant.
+However, subsequent subgroup analyses showed that when listeners identified nouns correctly at 4 channels condition,
+their response accuracy (of verb recognition) in high predictability sentences was not different than in medium predictability sentences ($\beta$ = 0.19, SE = 0.29, *z*(1878) = 0.66, *p* = .51).
+There was only a significant difference in accuracy between low predictability and medium predictability sentences ($\beta$ = 0.56, SE = 0.28, *z*(1878) = 2.01, *p* = .04).
+Compared to the model estimates of accuracy in verb-correct trials (estimates $\beta$ = 1.14 and $\beta$ = 1.01),
+the accuracy for noun-correct trials ($\beta$ = 0.19 and $\beta$ = 0.56) were smaller (see Results and Conclusions of Chapter \@ref(chapter-graded-prediction)).
 
+\begin{table}[h]
+\begin{center}
+\caption{Estimated effects of the best-fitting model accounting for the correct verb-recognition in noun-correct trials}
+\label{gradedcomplementary1} 
+\vskip 0.12in
+\begin{tabular}[]{@{}lrrrr@{}}
+\toprule
+Fixed effects & Estimate & Std. Error & \emph{z} value & \emph{p}
+value \\
+\midrule
+Intercept & 3.28 & .14 & 23.51 & \textless.001 \\
+\\
+Noise condition (4-channel) & -2.13 & .13 & -15.76 & \textless.001 \\
+\\
+Noise condition (6-channel) & -.35 & .14 & -2.55 & .011 \\
+\\
+Target word predictability (Low-Medium) & -.72 & .28 & -2.57 & .01 \\
+\\
+Target word predictability (High-Low) & .27 & .28 & .97 & .33 \\
+\\
+Noise condition (4-channel) $\times$ & .04 & .34 & .14 & .89 \\
+Target word predictability (Low-Medium) \\
+\\
+Noise condition (6-channel) $\times$ & .66 & .31 & 2.15 & .03 \\
+Target word predictability (Low-Medium) \\
+\\
+Noise condition (4-channel) $\times$ & .61 & .31 & 1.95 & .05 \\
+Target word predictability (High-Low) \\
+\\
+Noise condition (6-channel) $\times$ & .35 & .33 & 1.05 & .29 \\
+Target word predictability (High-Low) \\
+\\
+Global channel context $\times$ & -.37 & .13 & -2.80 & .005 \\
+(Unpredictable - Predictable) \\
+\bottomrule
+\end{tabular} 
+\end{center} 
+\end{table}
+<!-- ------------------------------------------------ -->
+\begin{table}[h]
+\begin{center}
+\caption{Estimated effects of the best-fitting model accounting for the correct verb-recognition in noun-correct trials in 4-channel condition}
+\label{gradedcomplementary2} 
+\vskip 0.12in
+\begin{tabular}[]{@{}lrrrr@{}}
+\toprule
+Fixed effects & Estimate & Std. Error & \emph{z} value & \emph{p}
+value \\
+\midrule
+Intercept & 1.17 & .13 & 8.90 & \textless.001 \\
+\\
+Target word predictability (Medium-Low) & .56 & .28 & 2.01 & .04 \\
+\\
+Target word predictability (High-Medium) & .19 & .29 & .66 & .51 \\
+\\
+Global channel context $\times$ & -.42 & .14 & -2.94 & .003 \\
+(Unpredictable - Predictable) \\
+\bottomrule
+\end{tabular} 
+\end{center} 
+\end{table}
 
-# Forward prediction vs Backward guessin in Chapter 6
+<!-- ---------------------------------------------------------------------------------------------------------- -->
 
-Results of the complementary analysis performed in Chapter \@ref(chapter-graded-prediction):
+# Forward prediction vs Backward guessing in Chapter 7 {#appendix-C}
 
-# Forward prediction vs Backward guessin in Chapter 7
+Results of the complementary analysis discussed in the Conclusion section of Chapter \@ref(chapter-speech-rate):
 
-Results of the complementary analysis performed in Chapter \@ref(chapter-speech-rate):
+We performed complementry analyses on noun-correct trials to compare the estimate of backward guessing effect and the forward prediction.
+The results showed that in both Experiments 1 (fast speech vs normal speech rate) and 2 (slow speech vs normal speech rate),
+the main effects of target word predictability and speech rate were significant while the interaction of the latter two was not significant (see Tables \@ref(fastcomplementary) and \@ref(slowcomplementary)).
+These model estimates, i.e., the effect of noun-correct trials ($\beta_{{noun}_{Exp1}}$ = .73 and $\beta_{{noun}_{Exp2}}$ = .78) are smaller than the model estimates of verb-correct trials presented in Chapter \@ref(chapter-speech-rate) ($\beta_{{verb}_{Exp1}}$ = 2.42 and $\beta_{{verb}_{Exp2}}$ = 2.58).
+This supports the interpretation of forward-prediction much strongly than backward guessing.
 
+\begin{table}[h]
+\begin{center}
+\caption{Estimated effects of the best-fitting model accounting for the correct verb-recognition in noun-correct trials Experiment 1}
+\label{fastcomplementary} 
+\vskip 0.12in
+\begin{tabular}[]{@{}lrrrr@{}}
+\toprule
+Fixed effects & Estimate & Std. Error & \emph{z} value & \emph{p}
+value \\
+\midrule
+Intercept & .55 & .18 & 3.00 & .003 \\
+\\
+Speech rate (Fast) & -.89 & .15 & -6.12 & \textless.001 \\
+\\
+Target word predictability (High) & .73 & .23 & 3.19 & .001 \\
+\\
+Speech rate $\times$ Target word predictability & .09 & .21 & .45 & .65 \\
+\bottomrule
+\end{tabular} 
+\end{center} 
+\end{table}
+<!-- ------------------------------------------------ -->
+\begin{table}[H]
+\begin{center}
+\caption{Estimated effects of the best-fitting model accounting for the correct verb-recognition in noun-correct trials in Experiment 2}
+\label{slowcomplementary} 
+\vskip 0.12in
+\begin{tabular}[]{@{}lrrrr@{}}
+\toprule
+Fixed effects & Estimate & Std. Error & \emph{z} value & \emph{p}
+value \\
+\midrule
+Intercept & .89 & .19 & 4.71 & \textless.001 \\
+\\
+Speech rate (Slow) & -.20 & .11 & -1.82 & .07 \\
+\\
+Target word predictability (High) & .78 & .24 & 3.23 & .001 \\
+\\
+Speech rate $\times$ Target word predictability & .22 & .16 & 1.413 & .15 \\
+\bottomrule
+\end{tabular} 
+\end{center} 
+\end{table}
+
+<!-- ---------------------------------------------------------------------------------------------------------- -->
 
 # Data analysis
 

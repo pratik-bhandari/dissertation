@@ -190,7 +190,8 @@ A total of four lists were constructed (see Appendix D).
 
 We have already shown in the previous chapters that predictability effects, i.e., contextual facilitation in language comprehension can be rightfully measured only if we consider the trials in which participants accurately identify the context.
 Verbs are predictive of the nouns in our stimuli (e.g., *Sie jongliert die Bälle*).
-Therefore, we discarded the trials in which verbs were identified incorrectly, which were XXXX out of XXXX trials.
+Therefore, we discarded the trials in which verbs were identified incorrectly.
+<!-- , which were XXXX out of XXXX trials. -->
 <!-- Morphological inflections and typos were considered as correct. -->
 <!-- We preprocessed and analysed data in R-Studio (Version 4.1.1; R Core Team, 2021) following the procedure described in [Chapter 4.4.4]{#analysis-main}. -->
 
@@ -250,7 +251,7 @@ Speech rate (Fast) & -.98 & .24 & -4.16 & \textless.001 \\
 \\
 Target word predictability (High) & 2.42 & .28 & 8.55 & \textless.001 \\
 \\
-Speech rate $times$ Target word predictability & 1.06 & .42 & 2.50 & .012 \\
+Speech rate $\times$ Target word predictability & 1.06 & .42 & 2.50 & .012 \\
 \bottomrule
 \end{tabular} 
 \end{center} 
@@ -353,11 +354,11 @@ value \\
 \midrule
 Intercept & 1.41 & .23 & 6.20 & \textless.001 \\
 \\
-Speech rate (Slow) & -.08 & .14 & -57 & .568 \\
+Speech rate (Slow) & -.08 & .14 & -.57 & .568 \\
 \\
 Target word predictability (High) & 2.58 & .30 & 8.65 & \textless.001 \\
 \\
-Speech rate $times$ Target word predictability & .44 & .27 & 1.65 & .099 \\
+Speech rate $\times$ Target word predictability & .44 & .27 & 1.65 & .099 \\
 \bottomrule
 \end{tabular} 
 \end{center} 
@@ -424,7 +425,7 @@ An alternative explanation of our findings of contextual facilitation could be t
 To rule this out, we conducted an additional analysis, the results of which supported the prediction-based explanation.
 We compared the effect (estimates) of forward-predictability (from the verb to noun) with that of backward integration (identifying the verb from the correct identification of the noun).
 In both experiments, the forward predictability effect was larger than the backward integration.
-This finding favours the explanation that the contextual facilitation we observed is due mainly to predictability rather than guessing or backward integration.
+The results of these complementary analyses (see Appendix \@ref(appendix-C)) favours the explanation that the contextual facilitation we observed is due mainly to predictability rather than guessing or backward integration.
 
 Of note, the generalization of our results is limited. First, we tested only with one expansion factor of 1.35 and one compression factor of 0.65.
 It can be speculated that an increase in facilitatory effect could be observed when the speech is expanded to different levels by including other expansion factors.

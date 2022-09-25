@@ -304,7 +304,7 @@ Target word predictability (High-Low) & 2.18 & .30 & 7.21 & \textless.001 \\
 Noise condition (4-channel) $\times$ & -.71 & .29 & -2.44 & .015 \\
 Target word predictability (Low-Medium) \\
 \\
-Global channel context $\times$ & -..27 & .14 & -2.02 & .043 \\
+Global channel context $\times$ & -.27 & .14 & -2.02 & .043 \\
 (Unpredictable - Predictable) \\
 \bottomrule
 \end{tabular} 
@@ -316,7 +316,7 @@ We also found a significant interaction between number of channels and target wo
 The interaction was driven by the effect of predictability at 4-channel condition:
 The accuracy in high predictability sentences was higher than in medium predictability sentences
 ($\beta$ = 1.14, SE = .37, *z*(1608) = 3.1, *p* < .001) which in turn was higher than low predictability sentences
-($\beta$ = 1, SE = .24, *z*(1608) = 4.2, *p* < .001).
+($\beta$ = 1.01, SE = .24, *z*(1608) = 4.2, *p* < .001).
 There was no significant difference in response accuracy between low predictability and high predictability sentences
 at both 6-channel ($\beta$ = .33, SE = .32, *z*(2590) = 1.04, *p* = .3)
 and 8-channel ($\beta$ = -.014, SE = .32, *z*(2719) = -.04, *p* = .97) conditions.
@@ -364,7 +364,7 @@ One could argue that the participants in our experiment “guessed” the verb a
 To rule out this possible explanation of our findings, we conducted an additional analysis comparing the *forward predictability effect* (from verb to noun) to the size of the *backward predictability effect* (correct identification of the noun based on the final verb).
 If the observed effect is a guessing phenomenon, then we would expect that both forward and backward predictability effects are similar in size.
 If, on the other hand, understanding the verb helps to shape the predictions of the upcoming noun, and this helps intelligibility, then the forward prediction effect should be larger.
-The results of this complementary analysis <!--(Table \@ref(results2integration))--> support the findings of the main analysis reported in the Results section.
+The results of this complementary analysis (see Appendix \@ref(appendix-B)) support the findings of the main analysis reported in the Results section.
 In the backward predictability analysis, there was no graded effect of predictability, and the backward effect of “guessing” the verb *jongliert* after recognizing the noun *Bälle*, if present at all, was smaller than the forward effect of predicting the noun after recognizing the verb in the sentence *Sie jongliert die Bälle*.
 This further corroborates our argument that the listeners, in fact, made use of the verb-evoked context to form predictions about the upcoming noun, not the other way around, in a graded manner when the speech was moderately degraded.
 
