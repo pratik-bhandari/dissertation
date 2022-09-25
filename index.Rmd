@@ -38,6 +38,8 @@ degreedate: |
     Saarbrücken, 2022
 dedication: |
     To baa-aamaa \
+    who always supported me \
+    never really knew what I was doing \
     बा-आमाप्रति समर्पित 
 acknowledgements: |
   `r paste(readLines("front-and-back-matter/_acknowledgements.Rmd"), collapse = '\n  ')`

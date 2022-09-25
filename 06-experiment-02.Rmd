@@ -344,7 +344,7 @@ Results of our study showed the expected interaction between predictability and 
 Language comprehension was better for high-cloze than for low-cloze target words when the speech signal was moderately degraded by noise-vocoding through 4 channels, while the effect of predictability was absent when speech was not intelligible by noise-vocoding through 1 channel.
 Listeners could not even identify the context at this severe degradation level.
 These results align with @Obleser2010;
-we partly included identical sentences from their study in the present study (see Appendix A).
+we partly included identical sentences from their study in the present study (see Appendix \@ref(appendix-A)).
 Importantly, in contrast to their study, we also created sentences with medium-cloze target words (which were intermediate between high-cloze and low-cloze target words).
 We found that the effect of predictability was also significant when comparing sentences with medium-cloze target words against the sentences with low-cloze and high-cloze target words in 4-channel noise-vocoding condition.
 Recognition of a target word was dependent on its level of predictability (measured by cloze probability), and correct recognition was not just limited to high-cloze target words.

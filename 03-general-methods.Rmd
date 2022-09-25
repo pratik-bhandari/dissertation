@@ -43,7 +43,7 @@ Mean cloze probabilities of low, medium and high probability sentences are shown
 0.274 (SD = 0.134; range = 0.1 – 0.55) for medium predictability sentences,
 and 0.752 (SD = 0.123; range = 0.56 – 1.00) for high predictability sentences.-->
 the distribution of cloze probability across low, medium, and high predictability sentences is shown in Figure \@ref(fig:cloze-distribution).
-The cloze probabilities of the target words in each sentence are shown in Appendix A.
+The cloze probabilities of the target words in each sentence are shown in Appendix \@ref(appendix-A).
 
 \begin{table}[ht]
 \begin{center}
