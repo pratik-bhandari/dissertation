@@ -182,7 +182,7 @@ In the first block, all sentences were 8-channel noise-vocoded, followed by the 
 Within each block, 10 low predictability, 10 medium predictability and 10 high predictability sentences were presented.
 All the sentences were pseudo-randomized so that not more than three sentences of the same predictability condition appeared consecutively in each block.
 This confirmed the certainty of next-trial speech quality (within each block) and uncertainty of next-trial sentence predictability across all four blocks.
-The lists of both unpredictable and predictable channel contexts are presented in Appendix B and C.
+<!-- The lists of both unpredictable and predictable channel contexts are presented in Appendix B and C. -->
 
 ## Analyses
 

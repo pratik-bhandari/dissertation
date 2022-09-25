@@ -183,8 +183,7 @@ Each participant had to listen to 60 high and 60 low predictability sentences.
 Speech rate was also balanced across each predictability condition.
 For each predictability condition, 30 sentences with fast speech and 30 with normal speech were presented.
 Sentences were pseudo-randomized so that no more than three sentences of the same predictability level or speech rate appeared consecutively.
-A total of four lists were constructed (see Appendix D).
-
+A total of four lists were constructed.<!--(see Appendix D).-->
 
 ### Analyses
 
@@ -299,7 +298,7 @@ Same procedure was followed as Experiment 1.
 Participants were asked to use earphones or headphones.
 They were instructed to report the entire sentence by typing in what they heard.
 
-Four experimental lists were constructed to present each participant with 60 high and 60 low predictability sentences (see Appendix D).
+Four experimental lists were constructed to present each participant with 60 high and 60 low predictability sentences.<!--(see Appendix D).-->
 Speech rate was also balanced across each predictability condition in each list. For each predictability condition, 30 sentences with slow speech and 30 with normal speech were presented.
 Sentences were pseudo-randomized so that no more than three sentences of the same predictability level or speech rate appeared consecutively.
 

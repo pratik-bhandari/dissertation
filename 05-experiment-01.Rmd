@@ -124,7 +124,7 @@ Eight practice trials with different levels of speech degradation were given to 
 Each participant had to listen to 40 high predictability, 40 medium predictability, and 40 low predictability sentences.
 Levels of speech degradation were also balanced across each predictability level so that for each of the three predictability conditions (high, medium, and low predictability), ten 1-channel, ten 4-channel, ten 6-channel, and ten 8-channel noise-vocoded sentences were presented, resulting in 12 experimental lists.
 The sentences in each list were pseudo-randomized so that no more than three sentences of the same degradation and predictability condition appeared consecutively.
-The lists are presented in Appendix B.
+<!-- The lists are presented in Appendix B. -->
 
 ### Analyses
 
