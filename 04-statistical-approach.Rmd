@@ -86,18 +86,24 @@ In the traditional ANOVA approach, researchers often run two separate regression
 <!-- This further complicates the results. -->
 Averaging eliminates the variability in the data.
 Additionally, comparing the means of a categorical variable (correct vs incorrect responses) even when transformed into accuracy or proportion scale is hard to interpret sensibly compared to a continuous variable like reaction time [for discussion, see @Bolker2009; @Jaeger2008].
-The statistical remedy for these problems in analyzing the data of our experiments is to apply mixed effects models.
+The statistical remedy for these problems in analysing the data of our experiments is to apply mixed effects models.
 
-#### Non-independence of observations
+#### Unbalanced data sets
 
-Some of the assumptions made for regression models are violated in our data.
+In our studies, the data sets are unbalanced.
+The experimental design is intended to result in a balanced data set.
+However, after the removal of outliers and the trials that do not meet the inclusion criteria (for details, see Section \@ref(chapter-6-measurement)), the final data sets become unbalanced,
+which introduces a bias in a regression model [@Jaeger2008].
+A mixed effects model is best suited for such unbalanced data [@Baayen2008].
+
+<!--Some of the assumptions made for regression models are violated in our data.
 One of them is the non-independence of observations, i.e., all data points are independent of one another.
 This assumption is violated in an unbalanced design, and sometimes even for a balanced design.
 The same participant responds to multiple trials of the same experimental condition within an experiment.
 Although the design itself is balanced, after the removal of outliers and trials which are not appropriate for comprehension measures (for details, see Section \@ref(chapter-6-measurement)),
 the number of trials in the analysis is unequal for each participant, item, and experimental condition.
 This inequality or unbalance introduces a bias in the regression model [@Jaeger2008].
-A mixed effects model is best suited for such unbalanced data.
+A mixed effects model is best suited for such unbalanced data.-->
 
 #### Common mean for each predictor
 
@@ -113,16 +119,32 @@ Such variance across participants (or across items) is present in the real data
 and can be modelled in a mixed effects model but not in a linear regression model.
 <!-- For such reasons, mixed models are used and advocated for by psycholingustis and statisticians [@Barr2013; @Gries2015; @Meteyard2020]. -->
 
-#### Bounded output variable
+#### Bounded output variable and homogenity of variance
 
-Linear models assume an output variable to not be bounded within a narrow range and to be on a continuous scale.
-In our data, the output variable (correct vs incorrect response) has bounded outcomes on $[0,1]$.
-To fit a linear model, it can be transformed into a proportion scale.
+Linear models assume an output variable to be on a continuous scale and not be restricted in a narrow range.
+In our data, the output variable has a binomially distributed binary outcome (correct or incorrect response) bounded on $[0,1]$.
+For every trial, there is a probability $p$ (that ranges from 0 to 1) that the response will be correct, i.e. 1 (and a probability $1-p$ that the response will be incorrect, i.e. 0).
+
+The variance of sample proportion is a function of $p$, which is shown below.
+
+\begin{align} \label{eq:variance}
+\sigma^2_p = \frac{p(1-p)}{n}
+\end{align}
+
+That is, the variance of the sample proportions is highest at $p=0.5$;
+it decreases symmetrically as $p$ approaches to 0 or 1.
+Thus, for two samples with the proportions $p_1$ and $p_2$, the variances are similar if $p_1$ and $p_2$ are equidistant from 0.5.
+Moreover, the further away $p_1$ and $p_2$ are from 0.5, the more dissimilar the variances will be, and the more it matters.
+Critically, we do not know *a priori* what the value of $p$ is for different samples under consideration in our experiments.
+
+In a linear model (like ANOVA), binary outcomes [0,1] can be transformed into a proportion scale across participants or across items.
 Even though it is a continuous variable, the proportion scale (i.e., response accuracy) has a range (0,1).
-Additionally, the transformation of discrete variables brings a host of problems that we have already discussed above (e.g., loss of variability by averaging raw data).
+Additionally, such a transformation of discrete variables brings a host of problems that we have already discussed above (e.g., loss of variability by averaging raw data).
+
 Binomial logistic mixed effects models, on the other hand, transform[^logit-link-footnote] the output variable into a *logit* scale, $\log$ with base $e$, i.e. $\ln$, with a range $(-\infty, +\infty)$.
 <!-- where logit is equal to *log-odd* (see Equation \ref{eq:logiteq}). -->
 Therefore, these mixed effects models do not violate the model assumptions regarding the range of the outcome variables.
+In addition, this transformation in the logistic model also capture the fact that the closer the sample proportions are to the 0.5 the less they matter [@Jaeger2008].
 
 Thus, Equation \@ref(eq:mixed-effects1) <!--Equation \ref{eq:mixed-effects2}--> can also be written as: 
 
@@ -135,7 +157,7 @@ Thus, Equation \@ref(eq:mixed-effects1) <!--Equation \ref{eq:mixed-effects2}--> 
 \end{align}
   
 
-This is equivalent to,
+This is equivalent to:
 
   
 \begin{align} \label{eq:logit-to-prob}
@@ -156,7 +178,7 @@ Log-odds of correct response obtained from Equation \@ref(eq:mixed-effects2) can
 Equations \@ref(eq:logit-to-prob) and \@ref(eq:logiteq) provide the relationship between probability, logits (or log-odds), and odds ($\frac{p}{1-p}$).  
 
 We have presented the advantages of mixed effects models over linear (regression) models.
-We use the binomial logistic mixed effects model as the statistical analysis tool in all experiments reported in this thesis.
+Hence, we used the binomial logistic mixed effects model as the statistical analysis tool in all experiments reported in this thesis.
 Below we discuss how the model that best fits our data was selected.  
 
 <!--In the next chapters of this thesis, we perform statistical analyses of the effect of predictability, speech degradation and speech rate on response accuracy.
@@ -168,26 +190,26 @@ We follow the recommendations of @Baayen2008, @Barr2013, and @Bates2015a.-->
 
 ## Model selection and Running mixed effects models in R {#analysis-main}
 
-The underlying structure of given data can be explained by different approximate statistical models.
+The underlying structure of given data can be modelled by different approximate statistical models.
 We intend to select a model that best fits our data.
 'Best fit' can be objectively measured by Akaike Information Criterion, Bayesian Information Criterion, and Likelihood Ratio Test, among others [@Schwarz1978; @Akaike1973].
 
-In this thesis,
-we first build a complex (or maximal) model by including all predictors (target word predictability, speech degradation level, speech rate),
-their interactions, and co-variates (e.g., trial number) in the fixed effects [cf. @Bondell2010].
+In this thesis, we first build a complex (or maximal) model
+(e.g., by including all predictors, like target word predictability, speech degradation level, speech rate, their interactions, and co-variates, like trial number in the fixed effects)
+that is justified by the experimental design. [cf. @Bondell2010].
 The model is fitted with a maximal random effects structure that includes random intercepts for each participant and item [@Barr2013].
 By-participant and by-item slopes included in the model are discussed in the Analysis sections of Chapters 5, 6, and 7.  
 
 Model selection was based on the backward-selection heuristics on the fixed effects [cf. @Matuschek2017].
 To find the best fitting model for the data,
 non-significant higher-order interactions were excluded from the fixed-effects structure in a stepwise manner.
-Similarly, random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterization [@Bates2015a].
+Similarly, random effects not supported by the data that explained zero variance according to singular value decomposition were excluded to prevent overparameterisation [@Bates2015a].
 This gave a more parsimonious model, which was then extended separately with: i) item-related correlation parameters, ii) participant-related correlation parameters, and iii) both item- and participant-related correlation parameters.
 Among the parsimonious model and extended models,
 the model with the smallest AIC was selected as the best fitting model for our data [@Grueber2011; @Richards2011].  
 
 Data preprocessing and analyses were performed in R-Studio (Version 3.6.1; R Core Team, 2019; Version 3.6.3; R Core Team 2020; Version 4.1.3; R Core Team, 2022).
-Accuracy was analyzed with Generalized Linear Mixed Models (GLMMs) with lmerTest [@Kuznetsova2017] and lme4 [@Bates2015] packages.
+Accuracy was analysed with Generalized Linear Mixed Models (GLMMs) with lmerTest [@Kuznetsova2017] and lme4 [@Bates2015] packages.
 Binary responses (correct responses coded as 1 and incorrect responses coded as 0) for all participants were fit with a binomial logistic mixed effects model.
 Contrast coding of each factor and the model description are presented in the Analysis section of the chapters that follow.
 <!-- Noise condition (categorical; 4-, 6-, and 8-bands), target word predictability (categorical; HP, MP, LP), global noise context (categorical; predictable channel context and unpredictable channel context), and the interaction of noise condition and target word predictability were included in the fixed effects. -->
@@ -203,7 +225,7 @@ and outlined the motivations for using mixed effects models.
 To capture the variability of our data without averaging out across participants or items,
 and to account for the effect of two (or more) random effects --- participant and item --- simultaneously,
 we fit mixed effects models to our data.  
-Details of each dataset corresponding to each experiment are presented in Chapters 5, 6, and 7.  
+Details of each data set corresponding to each experiment are presented in Chapters 5, 6, and 7.  
 
 <!--
 \begin{align} \label{eq:logit-to-prob_long}
@@ -220,4 +242,4 @@ p &=
 \end{align}
 -->
 
-[^logit-link-footnote]: Such transformation is brought about by a generalized linear mixed effects model with a canonical logit link function [@Malik2020].  
+[^logit-link-footnote]: Such transformation is brought about in a generalized linear mixed effects model with a canonical logit link function [see @Malik2020 for discussion].  

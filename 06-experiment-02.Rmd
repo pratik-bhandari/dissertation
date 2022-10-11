@@ -18,14 +18,14 @@ We also pointed out a few limitations of the study.
 In Experiment [2](#experiment1b) of Chapter \@ref(chapter-attention-prediction), there was an implicit assumption that all the noun-correct responses were borne out of correctly identifying the context-evoking words (i.e., verbs).
 For a comparable analysis and results between Experiments 1 and 2, we only considered the accuracy of noun identification.
 In this chapter, we take into account listeners' identification of context (i.e., a verb that precedes the noun) while calculating the response accuracy.
-Importantly, we replicated the predictability effects in degraded speech comprehension reported in the previous chapter, showing a difference between comprehension of high and low predictability sentences.
+Importantly, we replicate the predictability effects in degraded speech comprehension reported in the previous chapter, showing a difference between comprehension of high and low predictability sentences.
 In this chapter, we extend it further and examine if the predictability is graded or all-or-nothing.
 We only showed that listeners do not adapt to degraded speech when there is a trial-by-trial variability in speech degradation.
 Here we report two experiments investigating if listeners' adaptation to degraded speech is affected by such variability by comparing it against another condition in which speech degradation is kept constant.
 The results showed that in contrast to the "narrowed expectations" view postulated for the predictive processing of degraded speech,
 listeners probabilistically preactivate upcoming words from a wide range of semantic space, not limiting only to the highly probable sentence endings.
 We also did not find any learning effect on repeated exposure to degraded speech.
-We speculate that when there is a trial-by-trial variation in semantic feature (e.g., sentence predictability), listeners do not adapt to low-level perceptual property (e.g., speech quality) regardless of the certainty about the degradation level.
+<!--We speculate that when there is a trial-by-trial variation in semantic feature (e.g., sentence predictability), listeners do not adapt to low-level perceptual property (e.g., speech quality) regardless of the certainty about the degradation level.-->
 
 ## Introduction
 
@@ -38,8 +38,8 @@ there have been no studies so far after Strau\ss\ and colleagues, to our knowled
 
 In this chapter, our main aim is to attempt a replication of the previous findings of these predictability effects
 and extend them further by testing if listeners form narrowed expectations while listening to moderately degraded speech.
-In line with @Strauss2013's argument, listeners can form predictions that are restricted to only highly probable sentence endings.
-On the opposite, listeners can generate expectations about an upcoming word based on how likely the word is to appear in the given context
+In line with @Strauss2013's argument, it is possible that listeners form predictions that are restricted to only highly probable sentence endings.
+On the opposite, listeners might generate expectations about an upcoming word based on how likely the word is to appear in the given context
 and hence form a probabilistic prediction.
 We also test the presence of perceptual adaptation and its interplay with contextual facilitation.
 We set a metric of measurement of language comprehension that considers whether listeners correctly identified the context information.
@@ -83,18 +83,18 @@ Listeners gradually map the representation of degraded lexicons around their "tr
 With repeated exposure, the representation of degraded input comes closer to the exemplar, thereby improving the performance.
 This feature-mapping mechanism proposes that the listeners map the whole feature of the sensory input.
 <!-- However, this proposed feature mapping mechanism of perceptual adaptation does not specify what features of speech listeners have to focus on to map the degraded speech to the ideal exemplar. -->
-However, the higher level features of a speech (e.g., semantic property, like predictability) can also influence the acoustic realization of a degraded word,
+However, the higher level features of a speech (e.g., semantic property, like predictability) can also influence the acoustic realisation of a degraded word,
 i.e., bottom-up processing of the degraded speech and perceptual adaptation [@Goldstone1998; @Gold2010; cf. @Nahum2008].
 Listeners can assign weight to different dimensions of speech stimuli (acoustic-phonetic and lexical-semantic).
 Performance improves over time when listeners give more attentional weight to the acoustic-phonetic dimension [cf. @Haider1996].
 
-Thus, when multiple levels of degraded speech signals are presented in a (pseudo-)randomized order, then the listener is uncertain about the speech quality of any upcoming trial, i.e., the *global channel context* is certain or predictable.
+Thus, when multiple levels of degraded speech signals are presented in a (pseudo-)randomised order, then the listener is uncertain about the speech quality of any upcoming trial, i.e., the *global channel context* is certain or predictable.
 <!-- If such multiple levels of degradation are due to the presentation of multiple channels of noise-vocoded speech, then the global channel context is unpredictable or uncertain. -->
 Such changes in the auditory features of the speech signal throughout the experiment are likely to render the perceptual adaptation totally absent [@Mattys2012].
 Additionally, the trial-by-trial variability in the characteristics of speech signals can also impair word recognition [@Sommers1994; see also @Dahan2006].
 Very few studies have tried to study the influence of (un)certainty about next-trial speech quality and semantic feature in perceptual adaptation.
 For example, in a study by @Vaden2013, participants were presented with words in background noise at +3dB SNR and +10dB SNR in a pseudo-random order.
-They argued that an adaptive control system is involved to optimize task performance when there is uncertainty about the next trial.
+They argued that an adaptive control system is involved to optimise task performance when there is uncertainty about the next trial.
 Similarly, Obleser and colleagues [@Obleser2007; @Obleser2010; @Hartwigsen2015] also presented listeners with multiple noise-vocoded speech (ranging from 2 to 32 channels noise-vocoding) in a pseudo-random order.
 However, none of these studies reported a change in listeners' performance over the course of the experiment.
 So, we cannot derive a conclusion from these studies about the effect of (un)certainty of the *global channel context* in perceptual adaptation and contextual facilitation.
@@ -110,10 +110,10 @@ How we measure language comprehension has rarely been guided by any specific the
 There is a discrepancy across studies in how language comprehension in degraded speech is quantified.
 Some studies that reported contextual facilitation in degraded speech comprehension used the proportion of correctly reported *final* words only [e.g., @Hunter2018; @Obleser2010; @Sheldon2008a].
 @Obleser2007 quantified language comprehension as the proportion of correctly identified *key words* in SPIN sentences.
-@Erb2013 and @Hakonen2017 used *report scores* [@Peelle2013] that measure the proportion of correctly recognized *words per sentence* as an index of language comprehension.
+@Erb2013 and @Hakonen2017 used *report scores* [@Peelle2013] that measure the proportion of correctly recognised *words per sentence* as an index of language comprehension.
 Such inconsistencies make cross-study comparison difficult.
-None of the metrics outlined here take into account if listeners have correctly identified the context, which should be the most important factor to be considered in the first place.
-It is clear that if the context is misidentified, then the listeners are highly likely to misidentify the succeeding words [@Marrufo2019].
+None of the metrics outlined here take into account if listeners have correctly identified the context, which should be the most important factor to be considered in the first place:
+If the context is misidentified, then the listeners are highly likely to misidentify the succeeding words [@Marrufo2019].
 
 ### The present study
 
@@ -132,9 +132,9 @@ In contrast to prior studies [e.g., @Obleser2010], the inclusion of sentences wi
 
 There is a variation in the sentences we use, i.e., they are low, medium and high predictability sentences, and they are degraded at different levels of spectral degradation.
 So our second goal was to investigate the role of uncertainty about the next-trial speech features on perceptual adaptation by varying the global channel context on the comprehension of degraded speech.
-To study this, we presented sentences randomized across all levels of predictability but
+To study this, we presented sentences randomised across all levels of predictability but
 i) blocked by each noise-vocoding channel, i.e. spectral degradation (*predictable channel context*) and
-ii) pseudo-randomized across all noise-vocoding channels (*unpredictable channel context*).
+ii) pseudo-randomised across all noise-vocoding channels (*unpredictable channel context*).
 Based on the previous findings, we expected that in the unpredictable channel context (i.e., when sentences are presented in a random order of spectral degradation), participants’ word recognition performance would be worse than in the predictable channel context [i.e., when the sentences are blocked by noise-vocoding, @Garrido2011; @Sommers1994; @Vaden2013].
 To further examine perceptual adaptation, we also considered the effect of trial number in the analyses.
 
@@ -165,14 +165,14 @@ The participants were instructed to listen and report the entire sentences by ty
 The time for typing in the response was not limited.
 They were informed at the beginning of the experiment that some of the sentences would be ‘noisy’ and not easy to understand.
 In these cases, guessing was encouraged.
-Eight practice trials with different levels of speech degradation were provided to the participants to familiarize them with the task before presenting all 120 experimental trials with an intertrial interval of 1,000 ms.
+Eight practice trials with different levels of speech degradation were provided to the participants to familiarise them with the task before presenting all 120 experimental trials with an intertrial interval of 1,000 ms.
 
 Each participant was presented in the *unpredictable channel context* with 120 unique sentences: 40 low predictability, 40 medium predictability, and 40 high predictability sentences.
 Degradation level was also balanced across each sentence type, i.e., in each of the low, medium, and high predictability sentences, 10 sentences passed through each noise-vocoding channels --- 1, 4, 6, and 8 --- were presented.
 This resulted in 12 experimental lists.
-The sentences in each list were pseudo-randomized.
+The sentences in each list were pseudo-randomised.
 No more than three sentences of the same degradation and predictability condition appeared consecutively.
-This randomization confirmed the uncertainty of next-trial speech quality (or degradation) in the global context of the experiment.
+This randomisation confirmed the uncertainty of next-trial speech quality (or degradation) in the global context of the experiment.
 
 The same set of stimuli and experimental lists were used in the *predictable channel context*.
 Each participant was presented with 120 unique sentences blocked by degradation level, i.e., by noise-vocoding channels.
@@ -180,9 +180,11 @@ There were four blocks of stimuli, one for each degradation level.
 Thirty sentences were presented in each of the 4 blocks.
 In the first block, all sentences were 8-channel noise-vocoded, followed by the blocks of 6-, 4-, and 1-channel noise-vocoded speech consecutively [@Sheldon2008a].
 Within each block, 10 low predictability, 10 medium predictability and 10 high predictability sentences were presented.
-All the sentences were pseudo-randomized so that not more than three sentences of the same predictability condition appeared consecutively in each block.
+All the sentences were pseudo-randomised so that not more than three sentences of the same predictability condition appeared consecutively in each block.
 This confirmed the certainty of next-trial speech quality (within each block) and uncertainty of next-trial sentence predictability across all four blocks.
 <!-- The lists of both unpredictable and predictable channel contexts are presented in Appendix B and C. -->
+
+For the present study, the data for the unpredictable channel context was the same as the data from Experiment [2](#experiment1a) of Chapter \@ref(chapter-attention-prediction), while the data for the predictable channel context was newly collected.
 
 ## Analyses
 
@@ -191,10 +193,10 @@ Therefore, the effect of predictability (evoked by the verb) on language compreh
 Verb-correct trials were considered as the sentence in which participants identified the context independent of the succeeding words.
 Morphological inflections and typos were considered as correct.
 We first filtered out those trials in which verbs were not identified correctly, i.e., trials with incorrect verbs.
-Therefore, we excluded 2469 out of 5760 trials in unpredictable channel context and 2374 out of 6000 trials in predictable channel context from the analyses.
+<!-- Therefore, we excluded 2469 out of 5760 trials in unpredictable channel context and 2374 out of 6000 trials in predictable channel context from the analyses. -->
 The 1-channel noise-vocoding condition was dropped from the analyses as there were no correct responses in any of the remaining trials in this condition.
 
-Accuracy was analyzed using Generalized Linear Mixed Models (GLMMs) with lmerTest [@Kuznetsova2017] and lme4 [@Bates2015] packages.
+Accuracy was analysed using Generalized Linear Mixed Models (GLMMs) with lmerTest [@Kuznetsova2017] and lme4 [@Bates2015] packages.
 Binary responses (categorical: correct and incorrect) for all participants in both groups (predictable and unpredictable channel contexts) were fit with a [binomial linear mixed-effects model](#binomial-logistic-mixed-effects-model).
 Correct responses were coded as 1, and incorrect responses were coded as 0.
 Number of channels (categorical: 4-channel, 6-channel, and 8-channel noise-vocoding), target word predictability (categorical: high predictability, medium predictability, and low predictability), global channel context (categorical: predictable channel context and unpredictable channel context) and the interaction of number of channels and target word predictability were included in the fixed effects.
@@ -203,7 +205,7 @@ Separately for each group (i.e., for predictable and unpredictable channel conte
 Both by-participant and by-item random slopes were included for number of channels, target word predictability, and their interaction,
 which was supported by the experiment design.
 Following the procedure described in Chapter \@ref(chapter-stats) (Section \@ref(analysis-main)),
-we selected the optimal model that best fit our data, not necessarily the maximal one.
+we selected the optimal model that best fit our data.<!--, not necessarily the maximal one.-->
 <!-- The same procedure was followed with all the subgroup analyses and post-hoc analyses reported in the *Results and discussion* section below. -->
 We applied treatment contrast for number of channels (8-channel as a baseline; factor levels: 8-channel, 4-channel, 6-channel) and sliding difference contrast for target word predictability (low vs medium predictability and low vs high predictability) and channel context (factor levels: unpredictable vs predictable).
 
@@ -329,7 +331,7 @@ There was a significant main effect of global channel context which showed that 
 
 To further address the question of perceptual adaptation, following the findings of Chapter \@ref(chapter-attention-prediction), we also added trial number in the fixed effect.
 Note that there were 30 trials in each block in the predictable channel context (i.e., blocked design).
-For comparability, we divided unpredictable channel context (i.e., randomized design) into four blocks in the analysis.
+For comparability, we divided unpredictable channel context (i.e., randomised design) into four blocks in the analysis.
 <!-- Then following the same procedure as above, we obtained an optimal model. -->
 We did not find a significant main effect of trial number indicating that the response accuracy did not change throughout the experiment ($\beta$ = -.0004, SE = .01, *z*(6917) = -.05, *p* = .97).
 It remained constant within each block in the predictable channel context ($\beta$ = -.02, SE = .01, *z*(3291) = -1.43, *p* = .15) as well as in the unpredictable channel context ($\beta$ = .01 SE = .01, *z*(3291) = 1.05, *p* = .29).
@@ -360,13 +362,14 @@ The effect of target word predictability on comprehension is not sharply focused
 Rather, it is spread across a wide range, including low- and medium-cloze target words.
 As the cloze probability of the target words decreases from high to low, the focus of the searchlight becomes less precise.
 
-One could argue that the participants in our experiment “guessed” the verb after first correctly identifying the noun in a sentence.
-To rule out this possible explanation of our findings, we conducted an additional analysis comparing the *forward predictability effect* (from verb to noun) to the size of the *backward predictability effect* (correct identification of the noun based on the final verb).
-If the observed effect is a guessing phenomenon, then we would expect that both forward and backward predictability effects are similar in size.
+One could argue that the participants in our experiment “guessed” the verb after first correctly identifying the noun in a sentence,
+i.e., instead of forward prediction (*Bälle* from *jongliert*), participants guessed backwards (*jongliert* from *Bälle*).
+To rule out this possible explanation of our findings, we conducted an additional analysis comparing the *forward predictability effect* (from verb to noun) to the size of the *backward guessing effect* (correct identification of the verb based on the final noun).
+If the observed effect is a guessing phenomenon, then we would expect that both forward predictability and backward guessing effects are similar in size.
 If, on the other hand, understanding the verb helps to shape the predictions of the upcoming noun, and this helps intelligibility, then the forward prediction effect should be larger.
 The results of this complementary analysis (see Appendix \@ref(appendix-B)) support the findings of the main analysis reported in the Results section.
-In the backward predictability analysis, there was no graded effect of predictability, and the backward effect of “guessing” the verb *jongliert* after recognizing the noun *Bälle*, if present at all, was smaller than the forward effect of predicting the noun after recognizing the verb in the sentence *Sie jongliert die Bälle*.
-This further corroborates our argument that the listeners, in fact, made use of the verb-evoked context to form predictions about the upcoming noun, not the other way around, in a graded manner when the speech was moderately degraded.
+In the backward guessing analysis, there was no graded effect of predictability, and the backward effect of “guessing” the verb *jongliert* after recognising the noun *Bälle*, if present at all, was smaller than the forward effect of predicting the noun after recognising the verb in the sentence *Sie jongliert die Bälle*.
+This further corroborates our argument that the listeners, in fact, made use of the verb-evoked context to form predictions about the upcoming noun, not the other way around, and did so in a graded manner when the speech was moderately degraded.
 
 <!-- ## Conclusion -->
 
@@ -388,7 +391,7 @@ This is contrary to previous studies showing that listeners adapt to degraded sp
 However, the crucial difference between those studies and the study reported here is the manipulation of target word predictability.
 For example, @Erb2013 presented sentences with only low predictability target words from the G-SPIN test.
 We, on the contrary, parametrically varied target word predictability from low to medium and high.
-Note that we presented target words in a randomized order in both channel contexts.
+Note that we presented target words in a randomised order in both channel contexts.
 This alone introduces trial-by-trial uncertainty in the predictable channel context and possibly hinders trial-by-trial perceptual adaptation.
 As Goldstone notes, “one way in which perception becomes adapted to tasks and environments is by increasing the attention paid to perceptual dimensions and features that are important, and/or by decreasing attention to irrelevant [perceptual] dimensions and features” [@Goldstone1998, p. 588; see also @Gold2010].
 A similar prediction is made by the Reverse Hierarchy Theory on auditory perception [@Ahissar2009; @Nahum2008].
@@ -400,12 +403,19 @@ We speculate this might have resulted in the absence of trial- by-trial perceptu
 Therefore, in both predictable and unpredictable channel contexts, perceptual learning of the degraded speech was hindered by trial-by-trial variation of either one (target word predictability) or both properties (target word predictability and spectral degradation level) of the speech stimuli.
 
 We also argue that for the examination of semantic predictability effects during language comprehension, the analyses of response accuracy should be based on the trials in which context evoking words are correctly identified in the first place to make sure that listeners make use of the contextual cues instead of analyzing general word recognition scores.
-Use of crude word recognition score, or key-word recognition score do not reflect whether the a comprehender formed a representation of the available context information.
-The experimental paradigm in which sentence context is presented visually on a screen could likely circumvent the problem of misidentifying the context.
+Use of crude word recognition score, or key-word recognition score do not reflect whether a comprehender formed a representation of the available context information.
+<!--The experimental paradigm in which sentence context is presented visually on a screen could likely circumvent the problem of misidentifying the context.
 In such a paradigm, one could use the word recognition score without considering the context recognition [e.g., @vanOs2021].
 However, such a paradigm introduces a confound:
 linguistic materials are processed differently in the brain when presented auditorily vs visually [e.g., @Robinson2018],
-and listeners do not necessarily identify the visually presented context [e.g., visual half-field recognition superiority, @McKeever1977]
+and listeners do not necessarily identify the visually presented context [e.g., visual half-field recognition superiority, @McKeever1977].-->
+
+To conclude, we show the interaction between top-down predictive and bottom-up auditory processes:
+Only when the speech is moderately degraded, predictability facilitates language comprehension,
+and the nature of such predictability effect is *graded*.
+We also show that listeners do not adapt to degraded speech on a trial-by-trial basis even when the quality of next-trial speech signal is certain,
+which is likely due to the interference from the higher-level semantic features (e.g., predictability).
+We propose and argue for the consideration of the context use/identification in the metric of language comprehension.
 
 ## Summary
 
@@ -425,9 +435,3 @@ We ask the question:
 Does an increase or decrease in the speech rate further increase or decrease the contextual facilitation?
 
 [^replication-failure]: However, Nieuwland et al. (2018) could not replicate DeLong et al. (2005)'s finding that comprehenders predict word-form. The N400 effect at the English articles *a/an* were not replicable.
-
-The experiment reported here provides a novel insight into predictive language processing when bottom-up signal quality is compromised and uncertain: We showed that while processing a moderately degraded speech, listeners form top-down predictions across a wide range of semantic space that is not restricted within highly predictable sentence endings. 
-These findings also showed that predictability facilitates comprehension of moderately degraded speech, similar to the results of the preceding chapter, when listeners attend to the sentence context
-Here we observed that in contrast to the narrowed expectations view, comprehension of words ranging from low- to high-cloze probability, including the medium-cloze probability, is facilitated in a graded manner.
-This contextual facilitation is observed while listening to a moderately degraded speech.
-Regardless of (un)certainty about the next-trial speech quality, we found that listeners do not adapt to degraded speech when semantic predictability constantly varies, i.e., higher-level semantic features interfere with the lower-level perceptual properties. 

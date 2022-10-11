@@ -48,7 +48,7 @@ Since we already showed in Chapter \@ref(chapter-attention-prediction) that atte
 our instruction did not restrict participants' attention to only the target word (and away from the context) in the studies reported in Chapter 6.
 Participants, thus, attended to the context and formed its meaning representation.
 This chapter revealed that predictability facilitates language comprehension in a graded manner when the speech is moderately degraded at 4-channel noise-vocoding.
-At the extremes, listeners either did not utilize the context (unintelligible at 1-channel noise-vocoding),
+At the extremes, listeners either did not utilise the context (unintelligible at 1-channel noise-vocoding),
 or the context and target word were clearly intelligible (least degradation at 8-channel noise-vocoding) ---
 in the latter case, listeners identified the target word based on the bottom-up information rather than the context.
 That is, listeners processed the language *rationally* at different levels of speech degradation [see @Ryskin2018 for a similar argument].
@@ -62,7 +62,7 @@ The primary reason for this discrepancy is the difference in the metric of langu
 In Chapter \@ref(chapter-attention-prediction), only the identification of the sentence-final target word was considered.
 On the other hand, in Chapter \@ref(chapter-graded-prediction), context identification was also considered prior to identifying the target word.
 In addition, there was no inherent qualitative difference in the data in these two experiments:
-the data for one group of participants in Chapter \@ref(chapter-graded-prediction) (in the randomized design) was taken from the group of participants instructed to report the entire sentence in Chapter \@ref(chapter-attention-prediction).
+the data for one group of participants in Chapter \@ref(chapter-graded-prediction) (in the randomised design) was taken from the group of participants instructed to report the entire sentence in Chapter \@ref(chapter-attention-prediction).
 Hence, on closer inspection, the findings from Chapter \@ref(chapter-graded-prediction) and Chapter \@ref(chapter-attention-prediction) support our general conclusions rather than contradict each other.
 
 After we showed in Chapter \@ref(chapter-graded-prediction) that predictability effects are observed at the moderate degradation level,
@@ -104,7 +104,7 @@ However, increasing the speech rate reduces contextual facilitation by restricti
 The studies in this thesis were based on the theoretical accounts of predictive language processing and the noisy channel model of communication.
 Speech degradation by noise-vocoding created a noisy communication channel that interfered with a listener's perception and understanding of a speaker's utterance
 (schematically represented in Figure \ref{fig:noisy-channel} and
-formalized in Equation \@ref(eq:noisy-channel3) in Chapter \@ref(chapter-introduction)) <!--as:
+formalised in Equation \@ref(eq:noisy-channel3) in Chapter \@ref(chapter-introduction)) <!--as:
 
 \begin{align*} 
 \hat{m_p} &= \argmax_{m_p} P(m_p | u_p) * P(u_p|u_i, N) * P(u_i | m_i) * P(m_i)
@@ -153,7 +153,7 @@ However, their account does not include the role of attention at any stage of le
 
 In an fMRI study of visual perception, @Kok2012 found a significant difference in the amplitude of the BOLD signal between predicted and unpredicted stimuli location in the visual field even when the participants did not attend to the stimuli.
 This relationship between prediction and attention in visual perception is accounted for in predictive coding models [e.g., @Friston2009].
-Therefore, an elaborate and explanatory theory of predictive language processing should also consider attention regulation that modulates the predictability effects in language comprehension.
+We argue that an elaborate and explanatory theory of predictive language processing should also consider attention regulation that modulates the predictability effects in language comprehension.
 
 ### Speech rate
 
@@ -182,16 +182,17 @@ Replication and extension of these findings measuring the time-course of lexical
 
 ### Statistical power and sample size
 
-The statistical inference made in the studies presented in this thesis stem from the interpretation of statistical significance (or lack thereof) of the effect size of interest in terms of beta estimates from the mixed effects model.
+The statistical inference made in the studies presented in this thesis stem from the interpretation of statistical significance (or lack thereof) of the effect size of interest in terms of beta estimates and standard error from the mixed effects model.
 There was no a priori expectation about the estimated effect size of the main effect of predictability, the main effect of noise-vocoding channels, or their interactions which could be used to determine the sample size necessary to detect those effects
 [see @Meteyard2020 for the discussion on the complexity of power analysis in mixed model designs].
-Therefore, we determined our sample size to be approximately equal to that of other studies that examined language comprehension in adverse listening conditions [e.g., @Erb2013; @Hunter2018; @Obleser2007; @Obleser2010; @Sheldon2008a; @Sheldon2008b; @Sommers2020; @Strauss2013].
-This approach of sample size determination left a possibility of our experiments being underpowered.
+Therefore, we determined our sample size to be approximately equal to that of other studies that examined similar phenomenon like ours, which was language comprehension in different types of adverse listening conditions [e.g., @Erb2013; @Hunter2018; @Obleser2007; @Obleser2010; @Sheldon2008a; @Sheldon2008b; @Sommers2020; @Strauss2013].
+Although, in hindsight, a priori power analysis and sample size determination seem to be a more robust approach,
+the current sample size determination method left a possibility of our experiments being underpowered[^power-footnote].
 Given this possibility, we follow the advice of the statisticians:
 avoid making strong claims and “accept uncertainty” [@McShane2019; @Vasishth2021].
 Statistically significant findings from a potentially underpowered experiment are not inherently wrong, as long as the claims are not big [see @Vasishth2021 for discussion].
-Our findings are suggestive, and provide a direction:
-The solution we recommend for future studies is to conduct an a priori power analysis and determine the sample size that can detect the effects of interest.
+Our findings are suggestive, and provide directions for future research.
+<!-- The solution we recommend for future studies is to conduct an a priori power analysis and determine the sample size that can detect the effects of interest. -->
 
 ### Measurement of predictability
 
@@ -201,18 +202,20 @@ which is widely used in sentence comprehension studies [see @Staub2015a for disc
 However, some argue that it is not the best metric to measure the predictability of a word [e.g., @Smith2011; @Verhagen2018]:
 The cloze probability is an aggregated estimate of whether a group of participants will consider a particular word as a continuation of a sentence given a context.
 <!-- It does not indicate the likelihood of the word that an individual participant will consider to be a continuation of the a given sentence. -->
-For example, if 40 out of 50 participants in a cloze norming study may respond that *balloon* is the most likely ending of the truncated sentence *The child went out to fly a red* ___,
+For example, if 40 out of 50 participants in a cloze norming study respond that *balloon* is the most likely ending of the truncated sentence *The child went out to fly a red* ___,
 then "balloon" is considered to be the highly predictable word in this context with the cloze probability value of 0.80.
 However, it is also likely that another group of 50 participants would respond with "kite" as the most likely ending of the same sentence.
-This example illustrates that a cloze-based measure is an inconsistent estimate of predictability.
+This example illustrates that a cloze-based measure is prone to be an inconsistent estimate of predictability,
+nonetheless, it is still the primary measure of predictability.
 
 In recent years, alternatives to cloze-based measures have been proposed.
 For example, @Lopukhina2021 demonstrated that corpus-based measures of word probability are better predictors of linguistic predictability than the cloze-based measures calculated from a small group of participants in norming studies [see also @Michaelov2022].
 Similarly,  @Hofmann2021 demonstrated that surprisal-based measures estimated from Large Language Models (e.g., GPT-2, GPT-3) explain N400 effects and reading times better than cloze-based measures [see @Heilbron2022 for an implementation of surprisal calculated from GPT-2].
 <!-- Therefore, our findings are based only on cloze probability. -->
-As growing number of studies show that values other than cloze probability are better estimates of predictability,
-it is not an overstatement to say that these measures can replace cloze probability which tends to be inconsistent.
-Studies in the domain of probabilistic language processing that we reported in this thesis can benefit from multiple predictability estimates from language models and corpus.
+However, these alternatives are still being explored and developed.
+As growing number of studies show that values other than cloze probability are good estimates of predictability,
+these measures can also be used alongside the established measure like cloze probability.
+Studies in the domain of probabilistic language processing that we reported in this thesis can benefit from multiple predictability estimates from language models and corpora in addition to the cloze based measures.
 <!-- N400 -->
 
 ### Sentence structure and context information
@@ -224,7 +227,7 @@ However, in daily conversations, a speaker's utterances are not structured in th
 Instead, different sources of information, like the knowledge about the speaker, topic, or discourse, build the context information and are jointly predictive of the upcoming linguistic units.
 Similarly, the speaker indicates important words or concepts via pitch contours, stress, or intonation patterns,
 which then direct the listener's attention.
-Hence, one could argue that the generalization of the findings beyond the stimuli used here is restricted or limited.
+Hence, one could argue that the generalisation of the findings beyond the stimuli used here is restricted or limited.
 Therefore, the next step is to extend these findings using longer utterances in which a discourse provides the context information about an upcoming word in a sentence in the discourse [e.g., @Brothers2015]
 and the information about the speaker [e.g., @Bhandari2020].
 <!-- A replication of the findings reported in this thesis in different designs and paradigms
@@ -263,26 +266,26 @@ which results in a difference in language processing and the use of lexical-sema
 However, the general conclusions about the top-down--bottom-up interactions presented in this thesis are based on the mean estimates of predictability (in terms of response accuracy) across all participants.
 Although we controlled for variability among participants in the mixed model analysis,
 the individual differences measures could inform how the top-down--bottom-up interactions vary among the participants.
-For example, it can be speculated that participants with faster processing speed benefit more from the semantic context when the speech rate is fast in Chapter \@ref(chapter-speech-rate) [e.g., @Huettig2016a].
+For example, it can be speculated that participants with faster processing speed benefit more from the semantic context when the speech rate is fast as it was in the experiment in Chapter \@ref(chapter-speech-rate) [e.g., @Huettig2016a].
 Therefore, it is recommended that the extension of the studies presented in this thesis include individual differences measures that can moderate linguistic predictions in adverse listening conditions.
 
 ### Online study with auditory stimuli
 
 The experiments presented in this thesis were conducted on the web.
-This poses a few methodological challenges which in turn can limit the generalizations of the findings.
+This poses a few methodological challenges which in turn can limit the generalisations of the findings.
 Firstly, the participants listened to the auditory stimuli at their comfort, in their computer using their own headset.
-This setup is different than a controlled laboratory set up in which all participants use the same device and listen through the same headset that has a standard spectral resolution with a known loudness level.
+This setup is different than a controlled laboratory setup in which all participants use the same device and listen through the same headset that has a standard spectral resolution with a known loudness level.
 In our experiments, the variability of spectral responses and intensity of the sound presented through the headsets of the participants was unknown[^headset-footnote].
 Similarly, the possiblity that participants used their computer's loudspeakers instead of headphones could not be entirely ruled out although it has been shown that participants in Prolific are attentive and honest to the instructions [@Eyal2022].
-In future experiments, one could follow @Woods2017's proposed *headphone test* to confirm that streo headphones are used, not loudspeakers.
+In future experiments, one could follow @Woods2017's proposed *headphone test* to confirm that stereo headphones are used, not loudspeakers.
 
-Similarly, hearing acuity correlates with the effort required to perceive words in adverse listening condition [@Cahana2016; @McCoy2005].
+Similarly, hearing acuity correlates with the effort required to perceive words in adverse listening conditions [@Cahana2016; @McCoy2005].
 Therefore, we recruited only those participants who reported to not have any hearing-related problem by using Prolific's filter.
 However, an objective measure of the participants' hearing acuity could not be obtained (e.g., by audiometric assessment) over the web.
 <!-- But, because the experiments were conducted online, audiometric assessment could not be perfomed to objectively measure participants' hearing threshold. -->
 <!-- although any frequency specific hearing loss could not be detected. -->
 Since the participants in our experiments were young adults, the contribution of hearing acuity on listening effort and word recognition is not significant [@Benichov2012; cf. @Hunter2018].
-Nonetheless, future studies should consider replicating our findings in controlled laboratory setup assessing participants' audiometric hearing threshold and correlating it with their performance in the word recognition task.
+Nonetheless, future studies should consider replicating our findings in a controlled laboratory setup assessing participants' audiometric hearing threshold and correlating it with their performance in the word recognition task.
 
 It is important to note that after decades of the first psycholinguistic experiment with auditory material (discussed in Chapter \@ref(chapter-methods), Section \@ref(online-experiment)),
 the doubt about the validity of online experiments still persists.
@@ -294,7 +297,7 @@ and restrict the limitations of online studies.
 <!--The general conclusion of the online experiments reported in this thesis regarding the facilitatory effect of semantic predictability is line with the findings from laboratory experiments.
 It is yet to be seen if other findings reported here (e.g., modulatory role of attention, effect of speech rate) replicates in similar experiments online as well as in laboratory setup.-->
 
-### Generalization of the findings
+### Generalisation of the findings
 
 It follows from the discussion above that the extent to which our findings generalise across different population and experimental setup is limited.
 The experiments presented in this thesis were conducted among young adults aged 18-31 years.
@@ -310,7 +313,7 @@ on the interaction of top-down and bottom-up processes in speech comprehension i
 Although noise-vocoded speech has long been used to simulate the hearing of cochlear implantees,
 the generalizability of the findings from normal hearing adults using noise-vocoded speech is limited
 unless it is directly compared with the findings from cochlear implantees.
-As a next step for the generalization and clinical translation of our findings,
+As a next step for the generalisation and clinical translation of our findings,
 a study with cochlear implantees is necessary, using the materials and design similar to the current study.-->
 
 ## Concluding remark
@@ -327,8 +330,8 @@ It was also revealed that an increase in speech rate is detrimental to processin
 We argued for using a metric of language comprehension that considers listeners' identification of context information.
 
 Despite these findings, this thesis does not answer all the questions about predictive language processing, especially about prediction in adverse listening conditions.
-The research domain of predictive language processing is grapples with the problems like disentangling prediction from integration [e.g., @Mantegna2019] and
-parallel vs sequential prediction [see @Gibson2000 for discussion].
+The research domain of predictive language processing grapples with the problems like disentangling prediction from integration [e.g., @Mantegna2019] and
+parallel from sequential prediction [see @Gibson2000 for discussion].
 These questions are beyond the scope of this thesis to be addressed.
 It would be an overstatement to claim that our findings are definitive answers to the question of graded vs deterministic prediction in degraded speech comprehension.
 Nevertheless, the evidence from our experiments lines up with the existing findings supporting the account of graded prediction.
@@ -345,4 +348,5 @@ we will get a better understanding of the nuanced nature of language comprehensi
 and an elaborate and comprehensive theory of predictive language processing can be built.
 
 [^headset-footnote]: The type of device that they used may differ among the participants in each experimental group in Chapters \@ref(chapter-attention-prediction), \@ref(chapter-graded-prediction), and \@ref(chapter-speech-rate).
-Nonetheless, it is unlikely that there was any systematic difference between the participants in two groups that were compared in each experiment.
+Nonetheless, it is unlikely that there was any systematic difference between the participants in two groups that were compared in each experiment. The participants in both the groups were recruited following the same procedure in the same recruitment platform from the same geographical region. The exclusion criteria was also identical, and the age range of the participants in both groups was also similar.
+[^power-footnote]: However, note that in the experiments in Chapter \@ref(chapter-speech-rate), we collected data from a large group of participants (n=101 in each experiment) compared to relatively smaller sample size in the preceding Chapters \@ref(chapter-attention-prediction) (n=50 in Experiment 1 and n=48 in Experiment 2) and \@ref(chapter-graded-prediction) (n=50 in the *predictable channel context* and n=48 in the *unpredictable channel context*).

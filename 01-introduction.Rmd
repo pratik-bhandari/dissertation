@@ -52,14 +52,14 @@ The likelihood term $P_N(u_p|u_i)$ represents the probability of $u_i$ being cor
 For successful communication to occur, the message recovered by the listener must be approximately equal to the message intended to be sent by the speaker.
 Let's take an example.
 X sees a spherical object flying towards Y.
-So, she intends to warn him about it: a "spherical object which is played by two teams of 11 players each in a big playground" is about to hit Y.
-To convey this message, X utters BALL.
-Due to external noise, X's (i.e., the speaker's) utterance is distorted, so Y (i.e., the listener) perceives the utterance as HALL.
-The listener then interprets that the speaker's message is intended to point him to the "building where lectures take place in their university" they were trying to find.
+So, X intends to warn Y about the spherical object which is about to hit him.
+To convey this message, X utters "Ball!".
+Due to external noise, X's (i.e., the speaker's) utterance is distorted, so Y (i.e., the listener) perceives the utterance as "Hall!".
+The listener then interprets that the speaker's message is intended to point him to a "building where lectures take place".
 (In this case of unsuccessful communication, or due to the listener wrongly identifying the speaker's intended message, Y gets hit by a ball.)
 
 We assume that the goal of a listener is to identify the message $m_i$ that is most likely from the perceived utterance $u_p$, taking into account the external noise ($N$) and the prior likelihood of the speaker uttering $u_i$.
-This can be expressed formally as[^formalization-footnote]:
+This can be expressed formally as[^formalisation-footnote]:
 
 \begin{align} \label{eq:noisy-channel2}
 \hat{m_p} &= \argmax_{m_p} P(m_p,u_p,N,u_i,m_i)
@@ -114,7 +114,7 @@ Let's take the following sentence, for example:
 (1) The day was breezy so the boy went outside to fly a ___\label{kite}
 
 Most readers would expect the final word to be *kite* in this sentence [@Delong2005; cf. @Nieuwland2020a]. Here, the words up to the final word of the sentence provide a context:
-A reader can utilize their knowledge about what a *boy* would ideally do *outside* on a *breezy* day.
+A reader can utilise their knowledge about what a *boy* would ideally do *outside* on a *breezy* day.
 It leads the reader to predict that the sentence continuation is most likely *kite* and not an improbable word like *rocket*.
 Similar results are observed in the auditory domain as well.
 Listeners use context information from what they have heard and form predictions about an upcoming word [e.g., @Altmann2007; @Ankener2019].
@@ -147,7 +147,7 @@ will help gather evidence in favour of this *effect of interest*.
 It will also provide a reliable foundation to test if (and how) other factors (e.g., speed of information processing) influence and interact with the facilitatory effect of predictability.
 
 (2)   **To examine the nature of prediction**\
-There are at least two schools of thought which argue that prediction is either all-or-nothing or probabilistic [@Coltheart2004; @Kuperberg2016; @Luke2016].
+There are at least two schools of thought which argue that prediction is either all-or-nothing [e.g., @Ferreira1986] or probabilistic and graded [e.g., @Luke2016].
 These debates generally centre around reading comprehension and clean speech comprehension.
 The discussion about the nature of prediction in a noisy channel like degraded speech is sparse.
 Specifically, in degraded speech comprehension, only one study has empirically investigated the theoretical postulation that prediction is restricted only to highly predictable sentence endings [@Strauss2013].
@@ -235,8 +235,8 @@ Goal 5 corresponds to this research contribution brought about by the experiment
 *   **A metric of language comprehension**\
 We propose and successfully use a metric of language comprehension that reflects listeners' use of context information.
 This metric does not merely measure how many words are correctly identified.
-Instead, it considers the fact that in the study of the effect of predictability, how well a context is recognized should also be taken into account.
-Thus it measures word recognition accuracy in the sentences in which context is correctly recognized.<!--in the first place.-->
+Instead, it considers the fact that in the study of the effect of predictability, how well a context is recognised should also be taken into account.
+Thus, it measures word recognition accuracy in the sentences in which context is correctly recognised.<!--in the first place.-->
 Using such a metric improves the interpretation of contextual facilitation across studies, which is lacking in the extant literature.
 Goal 6 corresponds to this research contribution brought about by consistent use of this metric in Chapters \@ref(chapter-graded-prediction) and \@ref(chapter-speech-rate).
 
@@ -312,7 +312,7 @@ instead, intelligibility is reduced in slow speech compared to normal speech.
 This chapter reflects on the limitations of predictive processing driven by the constraints in cognitive resources.
 
 \noindent
-**Chapter \@ref(chapter-conclusion)** summarizes the findings of all the studies.
+**Chapter \@ref(chapter-conclusion)** summarises the findings of all the studies.
 <!-- It presents the theoretical implications of this thesis and the future direction it points to.
 The general limitations of the studies are also discussed. -->
 It concludes with the closing remarks on the limitations of the the studies, theoretical and practical implications, and the direction for future research.
@@ -374,6 +374,6 @@ The presentations and publications that report on parts of the research describe
 
 <!--*   Bhandari, P., Demberg, V., & Kray, J. (2019). Age differences in language comprehension: Older adults ‘predict more’ in a challenging listening condition. *Rational Approaches in Language Science*, Saarbrücken, Germany (Poster)-->
 
-[^formalization-footnote]: The mathematical formalisation presented in this thesis is intended to introduce and conceptually clarify the noisy channel model of communication and not to simulate or model the communication that occurs in a noisy channel.
+[^formalisation-footnote]: The mathematical formalisation presented in this thesis is intended to introduce and conceptually clarify the noisy channel model of communication and not to simulate or model the communication that occurs in a noisy channel.
 A verbal expression could also serve the purpose, but a mathematical formalisation and potential computational modelling [e.g., @Chingacham2021]  pave the way towards quantifying and predicting unobserved future events and a better theory building [@Guest2020].
 <!-- , see Chapter \@ref(chapter-conclusion) for further discussion]. -->
