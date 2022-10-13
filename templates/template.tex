@@ -362,38 +362,6 @@ $if(dedication)$
 \end{dedication}
 $endif$
 
-%%%%% ACKNOWLEDGEMENTS
-$if(acknowledgements)$
-
-$if(show-acknowledgements-in-toc)$
-\addcontentsline{toc}{chapter}{Acknowledgements}
-\renewcommand{\numberstyleacks}{plain}
-\renewcommand{\numberstyleabstract}{plain}
-$endif$
-
-\begin{acknowledgements}
- 	$acknowledgements$
-\end{acknowledgements}
-
-$endif$
-
-
-%%%%% PREFACE
-$if(preface)$
-
-$if(show-preface-in-toc)$
-\addcontentsline{toc}{chapter}{Preface}
-\renewcommand{\numberstyleacks}{plain}
-\renewcommand{\numberstyleabstract}{plain}
-$endif$
-
-\begin{preface}
- 	$preface$
-\end{preface}
-
-$endif$
-
-
 %%%%% ABSTRACT
 $if(abstract)$
 
@@ -422,6 +390,37 @@ $endif$
 \end{abstractsecond}
 
 $endif$
+
+%%%%% ACKNOWLEDGEMENTS
+$if(acknowledgements)$
+
+$if(show-acknowledgements-in-toc)$
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\renewcommand{\numberstyleacks}{plain}
+\renewcommand{\numberstyleabstract}{plain}
+$endif$
+
+\begin{acknowledgements}
+ 	$acknowledgements$
+\end{acknowledgements}
+
+$endif$
+
+
+% %%%%% PREFACE
+% $if(preface)$
+% 
+% $if(show-preface-in-toc)$
+% \addcontentsline{toc}{chapter}{Preface}
+% \renewcommand{\numberstyleacks}{plain}
+% \renewcommand{\numberstyleabstract}{plain}
+% $endif$
+% 
+% \begin{preface}
+%  	$preface$
+% \end{preface}
+% 
+% $endif$
 
 %%%%% MINI TABLES
 % This lays the groundwork for per-chapter, mini tables of contents.  Comment the following line

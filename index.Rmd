@@ -41,12 +41,10 @@ dedication: |
     who always supported me \
     never really knew what I was doing \
     बा-आमाप्रति समर्पित 
+alternative-title-page: front-and-back-matter/uds-title-page.tex
 acknowledgements: |
   `r paste(readLines("front-and-back-matter/_acknowledgements.Rmd"), collapse = '\n  ')`
 show-acknowledgements-in-toc: false
-preface: |
-  `r paste(readLines("front-and-back-matter/_preface.Rmd"), collapse = '\n  ')`
-show-preface-in-toc: false
 abstract-heading: "Abstract"
 abstract: |
   `r paste(readLines("front-and-back-matter/_abstract.Rmd"), collapse = "\n  ")`

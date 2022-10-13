@@ -175,8 +175,8 @@ They proposed an "expectancy searchlight model", which suggests that listeners f
 They rule out the graded nature of predictability.
 <!--In this thesis, we take this theoretical account into consideration,
 and examine the nature of prediction in degraded speech comprehension.-->
-However, their approach to predictability was confounded by verb-noun association<!--rather than predictability *per se*.-->
-(discussed in Chapter \@ref(chapter-graded-prediction)).
+<!--However, their approach to predictability was confounded by verb-noun association [rather than predictability *per se*.]
+(discussed in Chapter \@ref(chapter-graded-prediction)).-->
 In contrast to their study, we systematically vary the predictability of the target word
 and examine the graded vs probabilistic nature of prediction in degraded speech comprehension.
 We argue that the facilitatory effect of predictability is graded in nature;

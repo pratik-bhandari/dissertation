@@ -299,16 +299,16 @@
 {\end{alwayssingle}}
 
 
-% PREFACE % added by PB
-% all the features are identical to Acknowledgements
-% 
-\newenvironment{preface}%
-{ \begin{alwayssingle}\chapter*{Preface}
-  \thispagestyle{\numberstyleacks}
-	\pagestyle{\numberstyleacks}
-	\setlength{\baselineskip}{\frontmatterbaselineskip}
-}
-{\end{alwayssingle}}
+% % PREFACE % added by PB
+% % all the features are identical to Acknowledgements
+% % 
+% \newenvironment{preface}%
+% { \begin{alwayssingle}\chapter*{Preface}
+%   \thispagestyle{\numberstyleacks}
+% 	\pagestyle{\numberstyleacks}
+% 	\setlength{\baselineskip}{\frontmatterbaselineskip}
+% }
+% {\end{alwayssingle}}
 
 %ABSTRACT
 %

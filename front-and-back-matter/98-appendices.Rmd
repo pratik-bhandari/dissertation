@@ -524,7 +524,4 @@ Speech rate $\times$ Target word predictability & .22 & .16 & 1.413 & .15 \\
 
 # Data and code {#appendix-D}
 
-All the code, data, and experimental lists used in the studies presented in this thesis, are available in the following publicly accessible repository: https://osf.io/rtsz3/,
-and the web version of this thesis is available online on the following website:
-https://www.pratikb.com/projects/phd.html.
-<!--Example of GLMM in `R`:-->
+All the code, data, and experimental lists used in the studies presented in this thesis, are available in the following publicly accessible repository: https://osf.io/rtsz3/.
