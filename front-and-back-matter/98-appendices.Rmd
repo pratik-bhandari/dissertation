@@ -525,3 +525,15 @@ Speech rate $\times$ Target word predictability & .22 & .16 & 1.413 & .15 \\
 # Data and code {#appendix-D}
 
 All the code, data, and experimental lists used in the studies presented in this thesis, are available in the following publicly accessible repository: https://osf.io/rtsz3/.
+
+
+# Ethics and funding {#appendix-E}
+
+\noindent 
+
+**Ethics**: The studies presented in this thesis involved human subjects.
+All subjects were recruited following the recommendations of the American Psychological Association.
+All subjects provided an informed consent in accordance with the Declaration of Helsinki.
+The ethics committee of the Deutsche Gesellschaft für Sprache (DGfS; EN: German Society for Language Science) provided ethical approval for the experiments conducted.
+
+**Funding**: The research presented in this thesis was funded by the Deutsche Forschungsgemeinschaft (DFG; EN: German Research Foundation) under the research grant SFB1102 (Sonderforschungsbereiche; EN: Collaborative Research Center), Project ID 232722074.

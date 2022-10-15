@@ -6,8 +6,6 @@
 
 \item[LP] Low Predictability
 
-\item[DE] German
-
 \item[EN] English
 
 \item[MEG] Magnetoencephalography
