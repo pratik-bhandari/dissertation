@@ -23,9 +23,9 @@ To this end, we conducted two experiments:
 In Experiment 1, we compared participants’ word recognition in a sentence while they listened to the moderately degraded speech presented at a normal and fast speech rates (compressed by a factor of 0.65).
 In Experiment 2, we compared a separate group of participants’ word recognition in a moderately degraded speech presented at a normal and slow speech rates (expanded by a factor of 1.35).
 The sentences varied in the degree of predictability of the sentence-final target word (high and low predictability).
-Results of this study demonstrate that fast speech limits the time for lexical processing.
+Results of this study demonstrated that fast speech limits the time for lexical processing.
 This time constraint interferes with the lexical processing of words disproportionately affecting the low predictability sentences on top of effortful listening of the moderately degraded speech
-In contrast, slow speech does not amplify the contextual facilitation --- we found the lexical processing, context representation, and semantic predictions to be optimal at the normal speech rate when the speech is moderately degraded.
+In contrast, slow speech does not amplify the contextual facilitation --- we found the lexical processing, context representation, and semantic predictions to be optimal at the normal speech rate when the speech was moderately degraded.
 
 ## Introduction
 
@@ -70,7 +70,7 @@ Beyond a certain maximum speed of speech rate, the processing of fast speech bec
 In contrast, the central auditory-language comprehension system is shown to be flexible in processing slow speech without reducing its intelligibility to a certain lower limit of its rescaling capacity [@Lerner2014].
 So, it can be expected that slow speech does not limit cognitive resources, and therefore processing context information to generate predictions in slow speech is not different from normal speech.
 Alternatively, slow speech provides more time to buffer the auditory information at the lower level of the information processing hierarchy [@Ghitza2009; @Vagharchakian2012] and consequently provides more time for the central auditory-language comprehension system to use the context information and form predictions.
-Studies from Visual World Paradigm also support this claim that slow speech provides more time for speech processing and semantic predictions [@Fernandez2020; @Huettig2016a].
+Studies from the visual world paradigm also support this claim that slow speech provides more time for speech processing and semantic predictions [@Fernandez2020; @Huettig2016a].
 However, some studies have cast doubt on the processing advantage of slow speech, arguing that slow speech is perceived as overly artificial and demands high working memory [e.g., @Kemper1999; @Nejime1998; see also @Liu2006; @Love2009].
 In both younger and older adults, @Sommers2020 found that slow speech does not render additional benefit in a sentence comprehension task in noise, even when supported by a visual context.
 Therefore, given these competing accounts, it is unclear whether the effect of predictability increases in slow speech compared to normal speech.
@@ -99,7 +99,7 @@ That is, an increase in the flow of information did not always impair the abilit
 They argued that once the brain is engaged in predictive comprehension mode, for example, first in the slow presentation rate, it then continues to allocate resources in the same mode under a faster presentation rate.
 @Dambacher2012 also showed that the N400 effect was delayed and smaller at a fast presentation rate compared to slow presentation rates.
 
-To summarise, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the speech rate [@Aydelott2004; @Dambacher2012; @Ito2016; @Sharit2003; @Winn2021; @Wlotko2015].
+To summarise, there is already some evidence from studies applying various paradigms that the predictability of the sentence context interacts with the presentation rate of incoming information [@Aydelott2004; @Dambacher2012; @Ito2016; @Sharit2003; @Winn2021; @Wlotko2015].
 The predictability effect is generally reduced for fast speech, while the findings are inconsistent in the case of slow speech. Fast speech interferes with the lexical processing and activation of words that match the context, as limited time would be available to form expectations about an upcoming word [@Dambacher2012; @Goy2013].
 In contrast, slow speech can provide more time for listeners to form a rich context representation and generate a prediction about an upcoming word than a normal speech rate [cf. @Huettig2019].
 
@@ -116,7 +116,7 @@ To achieve the same level of accuracy, listeners required degraded speech to be 
 Among cochlear implantees whose speech input is spectrally degraded [@Shannon2004], @Iwasaki2002 found that a change in speech rate from slow to fast reduced word recognition accuracy.
 Their speech perception was impaired with an increased speech rate, and it was improved when the speech rate was decreased [e.g.,@Dincer2018].
 @Winn2021's study showed no significant difference in the facilitatory effect of semantic predictability between slow and normal speech rates.
-This was attributed to listeners' “repair” strategy at normal speech rate such that they made sensible guesses about the words that fit the given context.
+This was attributed to listeners' "repair" strategy at normal speech rate such that they made sensible guesses about the words that fit the given context.
 Similar to the studies conducted with clean speech, these studies also indicate that an increase in the speed of degraded speech is detrimental to its intelligibility, while its intelligibility increases with a decrease in speech rate.
 
 Taken together, the utility of semantic predictability in comprehension of degraded speech is fairly established.
@@ -127,7 +127,7 @@ It can be speculated from the findings of the abovementioned studies that fast s
 It can similarly be speculated that slow speech provides listeners more time than normal speech to process the words and form a representation of context information, in addition to reducing the effortful listening of degraded speech.
 
 
-### The present studies
+### The present study
 
 Semantic predictability has been shown to facilitate degraded speech comprehension when the degradation level is moderate at normal speech rate.
 The aim of this study was to investigate whether an increase (and decrease) in speech rate reduces (and amplifies) the facilitatory effect of semantic predictability.
@@ -143,7 +143,7 @@ Therefore, we expected that the contextual facilitation (i.e., the increase in w
 However, for slow speech, due to an abundance of time to process the degraded speech and the context and reduced listening effort [e.g., @Winn2021], we expected contextual facilitation to be increased compared to normal speech (Experiment 2).
 We expected that both increase and decrease in contextual facilitation would be primarily driven by the ease of processing high predictability sentences compared to low predictability sentences [@Aydelott2004; @Goy2013].
 
-## Experiment 1
+## Experiment 1: Normal vs fast speech
 
 This experiment was conducted to investigate the effect of an increase in speech rate on predictability effect in the comprehension of the 4-channel noise-vocoded speech.
 We examined if the facilitatory effect of predictability decreased as the speech sped up by a compression factor of 0.65.
@@ -152,7 +152,7 @@ We examined if the facilitatory effect of predictability decreased as the speech
 
 #### Participants
 
-We recruited one group of participant (n=101; ($M$ age $\pm SD=23.14\pm 3.31$ years; age range = 18-31 years; 66 females, 1 preferred not to say) online via Prolific Academic.
+We recruited one group of participant (n=101; ($M$ age $\pm SD=23.14\pm 3.31$ years; age range = 18-31 years; 66 females, 1 preferred not to say) online via Prolific Academic [@Prolific].
 All participants were native speakers of German and did not have any speech-language disorder, hearing loss, or neurological disorder (all self-reported).
 All participants received 6.20 Euro as monetary compensation for their participation in the approximately 40 minutes long experiment.
 
@@ -176,10 +176,10 @@ A sample of vocoded speech not used in the main experiment and the practice tria
 The participants were instructed to listen and report the entire sentences by typing in the everything they heard using the keyboard.
 The time for typing in the response was not limited.
 They were informed at the beginning of the experiment that some of the sentences would be ‘noisy’ and not easy to understand.
-In these cases, guessing was encouraged.
+Guessing was encouraged.
 To familiarise the participants with the task, eight practice trials with different levels of speech degradation were provided before presenting all 120 experimental trials with an intertrial interval of 1,000 ms.
 
-Each participant had to listen to 60 high and 60 low predictability sentences.
+Each participant was presented 60 high and 60 low predictability sentences.
 Speech rate was also balanced across each predictability condition.
 For each predictability condition, 30 sentences with fast speech and 30 with normal speech were presented.
 Sentences were pseudo-randomised so that no more than three sentences of the same predictability level or speech rate appeared consecutively.
@@ -197,7 +197,7 @@ Therefore, we discarded the trials in which verbs were identified incorrectly.
 Accuracy was analysed using Generalized Linear Mixed Models (GLMMs) following the procedure described in Chapter \@ref(chapter-stats) (Section \@ref(analysis-main)) similar to the preceding chapters.
 Binary responses (categorical: correct and incorrect) for all participants were fit with a [binomial linear mixed-effects model](#binomial-logistic-mixed-effects-model).
 Correct responses were coded as 1, and incorrect responses were coded as 0.
-Speech rate (categorical: fast speech and slow speech), target word predictability (categorical: high predictability sentences and low predictability sentences), and the interaction of speech rate (i.e., speed) and target word predictability were included in the fixed effects.
+Speech rate (categorical: fast speech and slow speech), target word predictability (categorical: high predictability sentences and low predictability sentences), and their interaction were included in the fixed effects.
 We fitted a model with a maximal random effects structure that included random intercepts for each participant and item [@Barr2013].
 Both by-participant and by-item random slopes were included for speech rate, target word predictability, and their interaction,
 which was supported by the experiment design.
@@ -270,14 +270,14 @@ Separate planned analyses of each speech rate revealed that there was significan
 but the effect appeared to be higher for fast speech ($\beta$ = 2.67) than for normal speech ($\beta$ = 1.98).
 This resulted from a significant drop in accuracy at the low predictability condition rather than a rise in accuracy at high predictability condition in the fast speech.
 
-These results indicated an increase in response accuracy with an increase in target word predictability only at a normal speech rate.
+These results indicated an increase in response accuracy with an increase in target word predictability only at the normal speech rate.
 Fast speech rate significantly reduced the accuracy in the low predictability condition.
 It suggests that fast speech incurs a cost in processing the low predictability sentences and reduces the contextual facilitation in degraded speech comprehension.
 These findings also align with previous studies conducted with clean speech, which reported that fast speech reduces contextual facilitation [e.g., @Aydelott2004].
 
 We conducted another experiment to examine if slowing down the speech rate eases the processing of both low and high predictability sentences and increases the contextual facilitation in comprehension of moderately degraded speech.
 
-## Experiment 2
+## Experiment 2: Normal vs slow speech
 
 Following up on Experiment 1, we conducted Experiment 2 on a separate group of participants to investigate the effect of a decrease in speech rate on predictability effect in the comprehension of the 4-channel noise-vocoded speech.
 We examined if the facilitatory effect of predictability increased as the speech slowed down by an expansion factor of 1.65.
@@ -286,7 +286,7 @@ We examined if the facilitatory effect of predictability increased as the speech
 
 #### Participants and Materials
 
-We recruited another group of participant (n=101; ($M$ age $\pm SD=23.49\pm 3.26$ years; age range = 18-30 years; 60 females, 1 preferred not to say) online via Prolific Academic.
+We recruited another group of participant (n=101; $M$ age $\pm SD=23.49\pm 3.26$ years; age range = 18-30 years; 60 females, 1 preferred not to say) online via Prolific Academic [@Prolific].
 The same sentences were used as stimuli as in Experiment 1.
 Instead of compression, the auditory recordings were expanded by a factor of 1.35 to create slow speech.
 The rest of the procedure, including the noise-vocoding through 4 channels, to create stimuli were the same as in Experiment 1.
@@ -413,7 +413,7 @@ Thus, no increased facilitatory effect is observed at the slow speech rate.
 In contrast, increasing the speech rate adds more cognitive load on top of the effort required to listen to the degraded speech.
 This results in difficulty processing and understanding the rapidly unfolding sentences; this difficulty further increases when the target words are not easily predictable. 
 
-Similarly, in the “narrowed expectations” framework of degraded speech comprehension, @Strauss2013 argue that lexico-semantic cues are more robust to degradation and the target words can be processed faster and relatively more easily in a highly constraining context than in a less constraining context.
+Similarly, in the “narrowed expectations” framework of degraded speech comprehension, @Strauss2013 argue that lexical-semantic cues are more robust to degradation and the target words can be processed faster and relatively more easily in a highly constraining context than in a less constraining context.
 They posit that listeners can activate a narrow range of most likely target words from the context in a high predictability sentence.
 Our results show that when the moderately degraded speech is sped up, the context is still robust:
 There is enough processing time available in the fast speech to process the context and generate a small range of lexical predictions about an upcoming target word in a high predictability sentence.
@@ -423,9 +423,9 @@ When the processing time is short, it further reduces the activation of likely s
 
 An alternative explanation of our findings of contextual facilitation could be that the listeners first identified the noun (e.g., Bälle), then integrated it with the verb (e.g., jongliert) instead of first identifying the verb and predicting the noun.
 To rule this out, we conducted an additional analysis, the results of which supported the prediction-based explanation.
-We compared the effect (estimates) of forward-predictability (from the verb to noun) with that of backward integration (identifying the verb from the correct identification of the noun).
-In both experiments, the forward predictability effect was larger than the backward integration.
-The results of these complementary analyses (see Appendix \@ref(appendix-C)) favours the explanation that the contextual facilitation we observed is due mainly to predictability rather than guessing or backward integration.
+We compared the effect (estimates) of forward-predictability (from the verb to noun) with that of backward guessing (identifying the verb from the correct identification of the noun).
+In both experiments, the forward predictability effect was larger than the backward guessing.
+The results of these complementary analyses (see Appendix \@ref(appendix-C)) favour the explanation that the contextual facilitation we observed is due mainly to predictability rather than backward guessing (or backward integration).
 
 Of note, the generalisation of our results is limited. First, we tested only with one expansion factor of 1.35 and one compression factor of 0.65.
 It can be speculated that an increase in facilitatory effect could be observed when the speech is expanded to different levels by including other expansion factors.

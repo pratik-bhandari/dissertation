@@ -17,7 +17,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 In the previous chapter, we outlined the theoretical background and the research goals of the studies in this dissertation.
 We stated that the central theme of this thesis is to investigate the interaction between top-down predictive and bottom-up auditory processes in language comprehension.
 Building on the noisy channel model of communication and predictive language processing,
-the studies in this thesis manipulate the auditory processes $P(u_p|u_i,N)$, and prior information $P(u_i,m_i)$ in the form of semantic context available in a sentence.
+the studies in this thesis manipulate the auditory processes and prior information (in the form of semantic context available in a sentence).
 In this chapter, we provide background on the noisy channel that was created and used to introduce variations in the bottom-up processing in the studies presented in this thesis.
 We also elaborate on the predictive language processing in the noisy channel and the evidence of its limits and nature.
 Understanding these fundamental concepts of top-down and bottom-up processes is essential for the chapters that follow;
@@ -31,7 +31,7 @@ the condition of "artificial normalcy" [@Mattys2012].
 However, spoken language communication generally occurs outside the artificial normalcy, alongside different sources of noise and disruption.
 <!-- In an ideal situation, speech perception is a seamless process: a speaker produces an utterance, the speech signal transmits via a medium like air, and a listener perceives the signal as the speech waves enter her ears initiating a cascade of mechanical-neural processes of audition.
 However, speech perception is hardly as smooth as it seems. -->
-Probabilistic models of language comprehension, like the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948] in Figures \@ref(fig:noisy-channel) and \@ref(fig:bayesian-network) show that the speech signal uttered by the speaker gets disrupted and distorted due to the noise ($u_i\rightarrow u_p\leftarrow N$) .
+Probabilistic models of language comprehension, like the noisy channel model of communication [@Gibson2013; @Gibson2019; @Levy2008; @Shannon1948] in Figures \@ref(fig:noisy-channel) and \@ref(fig:bayesian-network) show that the speech signal uttered by a speaker gets disrupted and distorted due to noise ($u_i\rightarrow u_p\leftarrow N$).
 <!--The major theories of speech *perception*, like Motor Theory, Direct Realist Theory, and General Auditory Framework focus on how listeners extract information from speech,
 without considering the fact that there is noise in the signal.
 For example, under the influential Motor Theory (MT), it is assumed that the components of speech perception are speech articulations (or articulatory events) instead of auditory or acoustic events.
@@ -40,8 +40,8 @@ According to the MT, humans' speech perception ability is not due to general aud
 rather it is due to the specialized neurobiological makeup for language.
 Other theories also suffer from similar shortcomings insofar describing speech perception in noise.-->
 Distortion can occur at these three points or sources: encoding, transmission, and decoding [@Mattys2012].
-Speech can be distorted while encoding the utterance $u_i$ due to the variability in speakers' production, like accented or slow and fast speech.
-Distortion can arise while decoding the signal $u_p$ due to listener-related factors, like hearing loss or auditory processing disorder.
+Speech can be distorted while encoding an utterance/signal due to the variability in speakers' production, like accented or slow and fast speech.
+Distortion can arise while decoding the perceived signal due to listener-related factors, like hearing loss or auditory processing disorder.
 It can also result from an external noise that appears during the transmission, like ambient noise or poor transmission medium (e.g., distortion in the telephone line).
 These different sources of distortion make a listening condition adverse by affecting the time and frequency-related properties/cues of the speech signal, i.e., temporal envelope cues and spectral details of speech, respectively.
 The temporal envelope cues are the slow variations in the amplitude of the speech signal over time [@Moon2014a; @Moon2014], while the spectral details are the frequency-specific information about the speech.
@@ -61,9 +61,9 @@ Therefore, in addition to being a method of speech distortion to parametrically 
 noise-vocoding is also a method of distortion that is used to understand the speech perception and language comprehension in cochlear implantees [e.g., @Patro2020; @Shannon2004; @Winn2016]
 
 One of the main factors that determine the intelligibility of degraded speech is the number of noise-vocoding channels.[^speech-degradation-footnote]
-The higher the number of noise-vocoding channels, the more the frequency-specific information available in the degraded speech,
-and the higher the intelligibility compared to the speech that is degraded with a lesser number of noise-vocoding channels.
-For example, listeners have been shown shown to rate 8-channel noise-vocoded speech to be more intelligible and less effortful than 2 channels noise-vocoded speech [e.g., @Obleser2011; @Sohoglu2012].
+The higher the number of noise-vocoding channels, the more is the frequency-specific information available in the degraded speech,
+and the higher is the intelligibility compared to the speech that is degraded with a lesser number of noise-vocoding channels.
+For example, listeners have been shown shown to rate 8-channel noise-vocoded speech to be more intelligible and less effortful than 2-channel noise-vocoded speech [e.g., @Obleser2011; @Sohoglu2012].
 In our studies, we create a noisy channel with different degradation levels and intelligibility by noise-vocoding the speech signal through 1, 4, 6 and 8 channels.<!-- which are based on prior studies on similar paradigm using similar methods and materials.-->
 The details of the artificial distortions are described in Chapter \@ref(chapter-methods).
 
@@ -83,7 +83,7 @@ human language comprehension too has been claimed to be predictive in nature fro
 which in recent days has received overwhelming support from computational linguistics, psycholinguistics and cognitive neuroscience of language [e.g., @Delong2005; @Demberg2013; @Heyselaar2021; @Lupyan2015; @Pickering2018].
 Empirical evidence from several studies suggests that readers and listeners predict upcoming words in a sentence when the words are predictable from the preceding context [for reviews, @Staub2015; @Kuperberg2016; @Nieuwland2019].
 For instance, predictable words are skipped and read faster than the words that are less predictable from the context [@Ehrlich1981; @Frisson2005; @Staub2011].
-Applying the visual world paradigm, studies have demonstrated that individuals show anticipatory eye movements towards a picture of an object (e.g., *cake*) that is predictable from the preceding sentence context (e.g., *The boy will eat a...*) even before hearing the final target word [@Altmann1999; @Kamide2003; @Ankener2018].
+In the visual world paradigm, studies have demonstrated that individuals show anticipatory eye movements towards a picture of an object (e.g., *cake*) that is predictable from the preceding sentence context (e.g., *The boy will eat a...*) even before hearing the final target word [@Altmann1999; @Kamide2003; @Ankener2018].
 Similar results have been observed in a virtual world setup with naturalistic scenes [e.g., @Heyselaar2021].
 The sentence-final word in a highly constraining sentence (e.g., *"She dribbles a ball."*) elicits a smaller N400 amplitude[^n400-footnote] than a less constraining sentence [e.g., *"She buys a ball."*, @Federmeier2007; @Kutas1984].
 <!-- N400 is a negative-going EEG component that peaks around 400 ms post-stimulus, and it is considered as a neural marker of context-based semantic unexpectedness [@Kutas2011]. -->
@@ -115,7 +115,7 @@ then use the top-down information to select the best representation.
 To clarify it further,
 let's take the example sentence *(1)* presented in Chapter \@ref(chapter-introduction) on page \pageref{kite}:
 *The day was breezy so the boy went outside to fly a*___.
-Upon listening to this context, the listeners can form a high degree of belief that the next word will be 'kite'.
+Upon listening to this context, the listeners can form a high degree of belief that the next word will be "kite".
 Before even hearing it, listeners preactivate the representation of "kite" in their mental lexicon.
 Alternatively, they could wait until they hear the auditory input "kite", which activates "kite" and its phonological (and semantic) neighbours in the mental lexicon,
 then use the top-down information to select the most likely word that completes the sentence.
@@ -143,8 +143,8 @@ Top-down predictive and bottom-up perceptual processes interact dynamically in l
 When the bottom-up perceptual input is less reliable, for example, in an adverse listening condition, it has been shown that listeners rely more on top-down processes by narrowing down the predictions to smaller sets of semantic categories or words [@Corps2020; @Strauss2013].
 Obleser and colleagues [@Obleser2007; @Obleser2010], for instance, used sentences of two levels of semantic predictability (high and low) and systematically degraded speech signals by passing them through various numbers of noise-vocoding channels ranging from 1 to 32 in a series of behavioural and neuroimaging studies [see also @Hunter2018].
 They found that semantic predictability facilitated language comprehension only at moderate levels of speech degradation.
-That is, participants relied more on sentence context when the speech signal was degraded though *intelligible enough* than when it was not degraded or highly degraded.
-At such moderate levels of speech degradation, word recognition accuracy was found to be higher for words in high predictability sentences than the words in low predictability sentences [@Obleser2010].
+That is, participants relied more on the sentence context when the speech signal was degraded though *intelligible enough* than when it was not degraded or highly degraded.
+At such moderate levels of speech degradation, word recognition accuracy was found to be higher for the words in high predictability sentences than the words in low predictability sentences [@Obleser2010].
 For the extremes, i.e., when the speech signal was highly degraded (making the speech almost entirely unintelligible) or when it was the least degraded (rendering the speech intelligible),
 the word recognition accuracy was similar across both levels of sentence predictability, meaning that predictability did not facilitate language comprehension.
 @Sheldon2008b estimated that for both younger and older adults, the number of noise-vocoding channels required to achieve 50\% accuracy varied as a function of sentence context.
@@ -279,7 +279,7 @@ and the gaps in the literature these studies fill in.
 In the next chapter, we will discuss the methods that are common in all the experiments (Chapters 5, 6, and 7) in developing materials and collecting data.
 
 [^speech-degradation-footnote]: Throughout this thesis, speech distortion by noise-vocoding is referred to as speech degradation, or spectral degradation of speech.
-[^n400-footnote]: N400 is a negative-going EEG component that peaks around 400 ms post-stimulus and is considered a neural marker of context-based semantic unexpectedness [@Kutas2011].
+[^n400-footnote]: N400 is a negative-going ERP component that peaks around 400 ms post-stimulus and is considered a neural marker of context-based semantic unexpectedness [@Kutas2011].
 [^surprisal-footnote]: Surprisal is a measure of the change in probability mass (or simply put, the change in expectation) as predictions are proven wrong with an encounter of new words in a sentence, discourse, etc. [@Hale2001; @Smith2008].
 [^cloze-footnote]: Cloze probability of a word is the proportion of participants who provide that word as the next word of a sentence, in an offline norming task, given the preceding words of the sentence [@Taylor1953; @Staub2015a]. Its value ranges from 0 to 1.
 [^prediction-synonym]: Henceforth, we use the word expectation and prediction interchangeably.

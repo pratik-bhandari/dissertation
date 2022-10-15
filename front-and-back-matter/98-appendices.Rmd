@@ -378,7 +378,7 @@ https://www.convertcsv.com/csv-to-markdown.htm-->
 | 359 | Low             | Er bevorzugt das Zimmer         | 0.08                          | O      |
 | 360 | Low             | Er erwischt den Zug             | 0.07                          | O      |
 
-: Sentences with cloze probability of the target word (noun) the source of the sentences as mentioned in Chapter 5
+: Sentences with cloze probability of the target word (noun) and the source of the sentences as mentioned in Chapter 5
 
 \noindent Sources: O=Obleser and Kotz(2010); S=SFB 1102, Project A4
 
@@ -478,7 +478,7 @@ Thus, these findings supported the interpretation of forward-prediction much mor
 
 \begin{table}[h]
 \begin{center}
-\caption{Estimated effects of the best-fitting model accounting for the correct verb-recognition in noun-correct trials Experiment 1}
+\caption{Estimated effects of the best-fitting model accounting for the correct verb-recognition in noun-correct trials in Experiment 1}
 \label{fastcomplementary} 
 \vskip 0.12in
 \begin{tabular}[]{@{}lrrrr@{}}

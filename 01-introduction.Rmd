@@ -74,8 +74,8 @@ knitr::include_graphics("figures/materials/bayesian-network.pdf")
 ```
 
 Figure \ref{fig:bayesian-network} models the dependencies among the events,
-which shows that the external noise and the speaker's utterance are *independent*;
-however, the listener's perception of the uttered message is also dependent on the noise.
+which shows that the external noise and the speaker's utterance are *independent*.
+However, the listener's perception of the uttered message is dependent also on the noise.
 The communication in the noisy channel, represented as a Bayesian network, can now be expressed as:
 
 <!--\begin{align} \label{eq:noisy-channel3}
@@ -143,7 +143,7 @@ But this effect was not replicated in a recent multi-lab collaborative study by 
 The first goal of this thesis is to test if we can replicate the facilitatory effect of semantic predictability in language comprehension in a noisy channel [e.g., @Obleser2007; @Sheldon2008a].
 <!-- We adapt some of the experimental materials from similar prior studies [@Obleser2007; @Obleser2010]. -->
 Replication of the predictability effect in comprehension of degraded speech
-will help gather evidence in favour of this *effect of interest*.
+will help gather evidence in favour of (or against) this *effect of interest*.
 It will also provide a reliable foundation to test if (and how) other factors (e.g., speed of information processing) influence and interact with the facilitatory effect of predictability.
 
 (2)   **To examine the nature of prediction**\
@@ -175,7 +175,7 @@ adaptation can be difficult.
 The fourth goal of this thesis is to examine if listeners adapt to degraded speech when both degradation level and predictability of speech are varied.
 We test if an adaptation to the bottom-up perceptual property of speech is influenced by its top-down semantic property.
 
-(5)   **To examine the effect of speed speech rate**\
+(5)   **To examine the effect of speech rate**\
 Unlike the visual scene that opens in the spatial dimension, speech signal flows in the temporal dimension.
 This challenges the listeners to process information at different speeds and timescales;
 more time is available to process the information in slow speech, while less time is available for fast speech [@Lerner2014].
@@ -300,7 +300,7 @@ At the end of this chapter, we note the intrinsic difficulty of processing degra
 \noindent
 **Chapter \@ref(chapter-speech-rate)** addresses the questions raised in Chapter \@ref(chapter-graded-prediction).
 In two experiments, it addresses the fourth, the fifth, and the sixth research goals.
-We use the same metric of measurement of language comprehension as Chapter \@ref(chapter-graded-prediction), which takes into account listeners' correct identification of the context.
+We use the same metric of measurement of language comprehension as the one used in Chapter \@ref(chapter-graded-prediction), which takes into account listeners' correct identification of the context.
 Listeners are presented with the moderately degraded speech at which the predictability effect is observed in Chapter \@ref(chapter-graded-prediction).
 In Experiment 1, the moderately degraded speech is presented at normal and fast speech rates.
 In Experiment 2, the speech rates are normal and slow.
@@ -361,7 +361,7 @@ The presentations and publications that report on parts of the research describe
 -   Bhandari, P., Demberg, V., & Kray, J.
     (2022).
     Predictability effects are reduced as a function of attention.
-    *Annual Convention of American Psychological Association*, 2022-05-25--2022-05-28.
+    *Annual Convention of Association for Psychological Science*, 2022-05-25--2022-05-28.
 
 -   Bhandari, P., Demberg, V., & Kray, J.
     (2021).

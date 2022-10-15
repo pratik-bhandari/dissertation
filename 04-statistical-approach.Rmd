@@ -119,7 +119,7 @@ Such variance across participants (or across items) is present in the real data
 and can be modelled in a mixed effects model but not in a linear regression model.
 <!-- For such reasons, mixed models are used and advocated for by psycholingustis and statisticians [@Barr2013; @Gries2015; @Meteyard2020]. -->
 
-#### Bounded output variable and homogenity of variance
+#### Bounded output variable, and Homogenity of variance
 
 Linear models assume an output variable to be on a continuous scale and not be restricted in a narrow range.
 In our data, the output variable has a binomially distributed binary outcome (correct or incorrect response) bounded on $[0,1]$.
@@ -196,9 +196,9 @@ We intend to select a model that best fits our data.
 
 In this thesis, we first build a complex (or maximal) model
 (e.g., by including all predictors, like target word predictability, speech degradation level, speech rate, their interactions, and co-variates, like trial number in the fixed effects)
-that is justified by the experimental design. [cf. @Bondell2010].
+that is justified by the experimental design [cf. @Bondell2010].
 The model is fitted with a maximal random effects structure that includes random intercepts for each participant and item [@Barr2013].
-By-participant and by-item slopes included in the model are discussed in the Analysis sections of Chapters 5, 6, and 7.  
+By-participant and by-item slopes included in the model are discussed in the Analyses sections of Chapters 5, 6, and 7.  
 
 Model selection was based on the backward-selection heuristics on the fixed effects [cf. @Matuschek2017].
 To find the best fitting model for the data,
@@ -208,10 +208,10 @@ This gave a more parsimonious model, which was then extended separately with: i)
 Among the parsimonious model and extended models,
 the model with the smallest AIC was selected as the best fitting model for our data [@Grueber2011; @Richards2011].  
 
-Data preprocessing and analyses were performed in R-Studio (Version 3.6.1; R Core Team, 2019; Version 3.6.3; R Core Team 2020; Version 4.1.3; R Core Team, 2022).
+Data preprocessing and analyses were performed in R [@R2018] using R-Studio (Version 3.6.1, Version 3.6.3, and Version 4.1.3 at different time points).
 Accuracy was analysed with Generalized Linear Mixed Models (GLMMs) with lmerTest [@Kuznetsova2017] and lme4 [@Bates2015] packages.
 Binary responses (correct responses coded as 1 and incorrect responses coded as 0) for all participants were fit with a binomial logistic mixed effects model.
-Contrast coding of each factor and the model description are presented in the Analysis section of the chapters that follow.
+Contrast coding of each factor and the model description are presented in the Analyses section of the chapters that follow.
 <!-- Noise condition (categorical; 4-, 6-, and 8-bands), target word predictability (categorical; HP, MP, LP), global noise context (categorical; predictable channel context and unpredictable channel context), and the interaction of noise condition and target word predictability were included in the fixed effects. -->
 <!-- ## Bayesian statistical methods -->
  <!-- \ref{eq:logit-to-prob} -->

@@ -37,7 +37,7 @@ Out of 120 nouns, 6 were repeated.
 All sentences were in present tense consisting of pronoun, verb, determiner, and object.
 These sentences were in Subject-Verb-Object form (e.g., *Er fängt den Ball*. EN: He catches the ball.).
 Some of these sentences were taken from @Obleser2010.
-For each sentence, cloze probability ratings were collected from a group of young adults (n = 60; age range = 18 – 30 years).
+For each sentence, cloze probability ratings were collected from a group of young adults (n = 60; age range = 18–30 years).
 Mean cloze probabilities of low, medium and high probability sentences are shown in Table \@ref(cloze-table) and
 <!--Mean cloze probabilities were 0.022 (SD = 0.027; range = 0.00 – 0.09) for low predictability sentences,
 0.274 (SD = 0.134; range = 0.1 – 0.55) for medium predictability sentences,
@@ -47,7 +47,7 @@ The cloze probabilities of the target words in each sentence are shown in Append
 
 \begin{table}[ht]
 \begin{center}
-\caption{Cloze probabilities of high, medium and low predictability sentences} 
+\caption{Cloze probabilities of low, medium and high predictability sentences} 
 \label{cloze-table} 
 \vskip 0.12in
 \begin{tabular}{c c c}
@@ -73,7 +73,7 @@ knitr::include_graphics("figures/materials/cloze-distribution.jpg")
 
 All 360 sentences were spoken by a female native speaker of German at a normal rate.
 The recordings were digitized at 44.1kHz with 32-bit linear encoding.
-Spoken sentences used in Chapters 5, 6, 7, and 8 were degraded by noise-vocoding.
+Spoken sentences used in Chapters 5, 6, and 7 were degraded by noise-vocoding.
 In addition to degradation by noise-vocoding, the sentences were distorted by compression and expansion of speech signal in Chapter 7.
 
 #### Noise-vocoding {#noise-vocoding}
@@ -87,7 +87,7 @@ The amplitude envelope, i.e., the fluctuations of amplitude within each frequenc
 This noise-filtering makes the vocoded speech difficult to understand, although its temporal characteristics and periodicity of perceptual cues are preserved [@Rosen1999].
 
 The spectral degradation conditions of 1, 4, 6, and 8 channels were achieved for each of the 360 recorded sentences using a customized script originally written by @Darwin2005 in Praat software [@Praat2001].
-The speech signal was divided into 1, 4, 6, and 8 frequency bands between 70 and 9,000Hz.
+The speech signal was divided into 1, 4, 6, and 8 frequency bands between 70Hz and 9,000Hz.
 The boundary frequencies were approximately logarithmically spaced following cochlear-frequency position functions [@Erb2014; @Greenwood1990; @Rosen1999].
 The amplitude envelope of each band was extracted and applied to band-pass filtered white noise in the same frequency ranges;
 the upper and lower bounds for band extraction are specified in Table \@ref(frequencies).
@@ -148,12 +148,12 @@ It also provides a control over speech intelligibility by varying the number of 
 
 #### Speech compression and expansion {#compression-expansion}
 
-Temporal compression and expansion are used as a method to simulate fast and slow speech and
-to study the effect of acoustic degradation (which is the change in speech rate) and increase or decrease in information flow.
-As early as the mid-twentieth century, investigators have reported that intelligibility does not drop significantly when speech is speeded up to 2 times the normal speech rate [e.g., @Garvey1953].
+Temporal compression and expansion are used as a method to simulate fast and slow speech, and
+to study the effect of acoustic degradation (which is the change in speech rate) and the effect of increase or decrease in information flow.
+As early as the mid-twentieth century, investigators reported that intelligibility does not drop significantly when speech is speeded up to 2 times the normal speech rate [e.g., @Garvey1953].
 Speech rate was increased by chopping physical tapes.
-Digital algorithms like the pitch-synchronous overlap-add technique [PSOLA, @Charpentier1986; @Moulines1990] developed in the 1980s and later [e.g., @Verhelst1993] now allow us to speed up and slow down the speech rate in a controlled fashion.
-In Chapter 7, we used Praat software that utilizes a uniform time-compression algorithm (PSOLA) to create slow and fast speech with the compression factor of 1.35 and 0.65, respectively.
+Digital algorithms like PSOLA [@Charpentier1986; @Moulines1990] developed in the 1980s and later [e.g., @Verhelst1993] now allow us to speed up and slow down the speech rate in a controlled fashion.
+In Chapter 7, we used Praat software that utilises a uniform time-compression algorithm (PSOLA) to create slow and fast speech with the compression factor of 1.35 and 0.65, respectively.
 A schematic representation of waveforms of different speech rates --- normal, slow and fast --- is shown in Figure \@ref(fig:speech-rate).
 
 ```{r speech-rate, eval=TRUE, echo=FALSE, fig.show='hold', fig.pos="!htpb", fig.sep='\\par', fig.align='center', fig.cap="Schematic representation of waveforms of fast, normal, and slow speech rates for the sentence `Er löest die Aufgabe' with the duration of each speech rates in second. Note the circled portion of the waveform, which examplifies that PSOLA eliminates and duplicates the parts of the original waveform to create fast and slow speech respectively.", out.width="90%"}
@@ -191,7 +191,7 @@ Traditionally, behavioural experiments with human participants are conducted in 
 In recent years, there has been a surge of experiments that are conducted on the web [@Reips2021].
 The first generation of online experiments to study human cognition began in the mid-1990s [for reviews, @Musch2000] with the advent of the internet [@Bernerslee1992].
 @Welch1996 was the first online experiment that was conducted in 1995 as a part of tutorials in auditory perception [@Musch2000].
-In their survey of researchers, @Musch2000 discovered that until 2000, there were already at least two psycholinguistics experiments conducted online,
+In their survey of researchers, @Musch2000 discovered that until 2000, there were already at least two psycholinguistic experiments conducted online,
 one of which studied the effect of context in shallow vs deep encoding of words.
 Despite the difficulty in conducting online experiments and scepticism of journals towards publishing results of online experiments,
 @Musch2000 expressed optimism:
@@ -205,7 +205,7 @@ We would not be surprised if within the next few years, a fair proportion of psy
 <!-- It will be interesting to see how the experiences of the early researchers shape this new direction in psychological research." -->
 By 2022, there has been significant growth in online experiments as technical and technological barriers are greatly reduced.
 There are many software and online platforms which psychologists and psycholinguists can use with minimal knowledge of computer programming
-to design, host and run their experiments and retrieve these data in a fairly structured format [@Peirce2019; @Anwylirvine2020; @Prolific; see also, @Anwylirvine2021; @Eyal2022].
+to design, host and run their experiments and retrieve the data in a fairly structured format [@Peirce2019; @Anwylirvine2020; @Prolific; see also, @Anwylirvine2021; @Eyal2022].
 Online experiments have demonstrated advantages over laboratory experiments [@Gadiraju2017; @Johnson2021].
 For example, a large pool of participants is available online, which is usually not possible in laboratory experiments.
 Similarly, the participants in online experiments are more diverse than in laboratory experiments.
@@ -214,7 +214,7 @@ Scientists who only conducted laboratory experiments and occasional online exper
 Since @Welch1996's auditory perception experiment, a number of experiments have been conducted online in the auditory domain [@Leensen2013; @Woods2017; @vanOs2021; @Seow2022] replicating laboratory findings [e.g., @Cooke2021].
 The experiments reported in this thesis were also conducted online.
 
-Initially, our experiments were designed to be conducted both in the laboratory and online.
+Initially, our experiments were designed to be conducted both in the laboratory and on the web.
 As the laboratory was shut down due to covid-19 pandemic-related lockdown (M. Schmitt, personal communication, March 16, 2020), we moved the laboratory experiments to the online platform.
 We recruited participants online via Prolific Academic [@Prolific].
 We used Prolific's filters to recruit only native speakers of German residing in Germany

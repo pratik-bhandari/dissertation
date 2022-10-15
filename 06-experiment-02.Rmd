@@ -15,12 +15,12 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 
 In the previous chapter, we concluded that in a noisy channel, predictability facilitates comprehension of degraded speech only when listeners attend to the context.
 We also pointed out a few limitations of the study.
-In Experiment [2](#experiment1b) of Chapter \@ref(chapter-attention-prediction), there was an implicit assumption that all the noun-correct responses were borne out of correctly identifying the context-evoking words (i.e., verbs).
-For a comparable analysis and results between Experiments 1 and 2, we only considered the accuracy of noun identification.
-In this chapter, we take into account listeners' identification of context (i.e., a verb that precedes the noun) while calculating the response accuracy.
+In Experiment [2](#experiment1b) ("Attention to context") of Chapter \@ref(chapter-attention-prediction), there was an implicit assumption that all the noun-correct responses were borne out of correctly identifying the context-evoking words (i.e., verbs).
+For a comparable analysis and results between Experiment 1 ("Attention to target word") and Experiment 2 ("Attention to context"), we only considered the accuracy of noun identification.
+In this chapter, we take into account listeners' identification of context (i.e., the verb that precedes the noun) while calculating the response accuracy.
 Importantly, we replicate the predictability effects in degraded speech comprehension reported in the previous chapter, showing a difference between comprehension of high and low predictability sentences.
 In this chapter, we extend it further and examine if the predictability is graded or all-or-nothing.
-We only showed that listeners do not adapt to degraded speech when there is a trial-by-trial variability in speech degradation.
+Previously, we only showed that listeners do not adapt to degraded speech when there is a trial-by-trial variability in speech degradation.
 Here we report two experiments investigating if listeners' adaptation to degraded speech is affected by such variability by comparing it against another condition in which speech degradation is kept constant.
 The results showed that in contrast to the "narrowed expectations" view postulated for the predictive processing of degraded speech,
 listeners probabilistically preactivate upcoming words from a wide range of semantic space, not limiting only to the highly probable sentence endings.
@@ -29,7 +29,7 @@ We also did not find any learning effect on repeated exposure to degraded speech
 
 ## Introduction
 
-In the literature on speech perception and sentence processing, studies have argued that prediction is either probabilistic and graded or all-or-nothing [e.g., @Coltheart2004; @Kuperberg2016; @Luke2016].
+In the literature on speech perception and sentence processing, studies have argued that prediction is either probabilistic and graded or all-or-nothing [e.g., @Ferreira1986; @Kuperberg2016; @Luke2016].
 Few studies have investigated such theoretical questions within the domain of adverse listening conditions, specifically in degraded speech comprehension [e.g., @Corps2020; @Strauss2013; cf. @vanOs2021].
 @Strauss2013 posit that listeners cannot preactivate less predictable sentence endings in an adverse listening condition.
 They propose that the facilitatory effect of predictability is limited to only highly predictable sentence endings at a moderate level of spectral degradation of speech.
@@ -63,7 +63,7 @@ Their model posits that when the sentence endings are less predictable, listener
 It is similar to the earlier observations made by @Rayner2006 [see @Brothers2021 for discussion], who found that reading times at low and medium predictability words were shorter than high predictability words,
 but it is contrary to the view that readers and listeners form a probabilistic prediction of an upcoming word in a sentence.
 For example, @Nieuwland2018[^replication-failure] showed in a large-scale replication study of @Delong2005 that the N400 amplitude at the sentence-final noun is directly proportional to its cloze probability across a range of high- and low-cloze words [see also @Kochari2019; @Nicenboim2020].
-@Heilbron2022 also showed that a probabilistic prediction model outperforms a constrained guessing model in predicting listeners' neural activities (MEG and EEG recordings).
+@Heilbron2022 also showed that a probabilistic prediction model outperforms a constrained guessing model in predicting listeners' neural activities in MEG and EEG.
 They suggested that linguistic prediction is probabilistic, and it is not limited only to the highly predictable sentence endings, but operates broadly in a wide range of probable sentence endings.
 However, when put in perspective with our research question, these studies were conducted in conditions without noise or degraded speech.
 Furthermore, the ones that examined degraded speech comprehension used only two levels of semantic predictability (high and low).
@@ -120,7 +120,7 @@ If the context is misidentified, then the listeners are highly likely to misiden
 Stemming from the results of Chapter \@ref(chapter-attention-prediction) and the motivations outlined at the beginning of this chapter, the goals of the present study were threefold:
 The first goal was to attempt to replicate the facilitatory effect of predictability examining the nature of predictability, i.e., to test if listeners form narrowed expectations.
 Obleser and colleagues [e.g., @Obleser2007; @Obleser2010] have shown predictability effects (or contextual facilitation) to appear only at a moderate level of speech degradation by using only two levels of predictability (low and high).
-Using of three levels of target word predictability (low, medium and high) will let us test the narrowed expectations view [@Strauss2013] by also taking into account the accuracy of context.
+The use of three levels of target word predictability (low, medium and high) will let us test the narrowed expectations view [@Strauss2013] by also taking into account the accuracy of context.
 If the listeners form narrowed predictions only for the target words with high cloze probability, then the facilitatory effect of semantic prediction will be observed only at these highly predictable sentence endings.
 Listeners’ response to the target words with medium and low cloze probability would be quite similar since these two fall out of the range of narrow prediction.
 However, if the listeners’ predictions are not restricted to highly predictable target words, then they form predictions across a wide context proportional to the probability of occurrence of the target word.
@@ -164,7 +164,7 @@ A sample of vocoded speech not used in the practice trial or the main experiment
 The participants were instructed to listen and report the entire sentences by typing in everything they heard using the keyboard.
 The time for typing in the response was not limited.
 They were informed at the beginning of the experiment that some of the sentences would be ‘noisy’ and not easy to understand.
-In these cases, guessing was encouraged.
+Guessing was encouraged.
 Eight practice trials with different levels of speech degradation were provided to the participants to familiarise them with the task before presenting all 120 experimental trials with an intertrial interval of 1,000 ms.
 
 Each participant was presented in the *unpredictable channel context* with 120 unique sentences: 40 low predictability, 40 medium predictability, and 40 high predictability sentences.
@@ -356,7 +356,7 @@ This is in line with the findings from other experimental paradigms, including b
 
 The interpretation of the observed graded effect of semantic predictability at the moderate level of spectral degradation provides a novel insight into how listeners form predictions when the bottom-up input is compromised.
 That is, in an adverse listening condition, listeners rely more on top-down semantic prediction than bottom-up acoustic-phonetic cues.
-However, such a reliance on top-down prediction is not an all-or-nothing phenomenon.
+Notably, such a reliance on top-down prediction is not an all-or-nothing phenomenon.
 Instead, listeners form a probabilistic prediction about the target word.
 The effect of target word predictability on comprehension is not sharply focused solely on high-cloze target words like a ‘searchlight’ as proposed by Strau\ss\ and colleagues.
 Rather, it is spread across a wide range, including low- and medium-cloze target words.
@@ -365,8 +365,8 @@ As the cloze probability of the target words decreases from high to low, the foc
 One could argue that the participants in our experiment “guessed” the verb after first correctly identifying the noun in a sentence,
 i.e., instead of forward prediction (*Bälle* from *jongliert*), participants guessed backwards (*jongliert* from *Bälle*).
 To rule out this possible explanation of our findings, we conducted an additional analysis comparing the *forward predictability effect* (from verb to noun) to the size of the *backward guessing effect* (correct identification of the verb based on the final noun).
-If the observed effect is a guessing phenomenon, then we would expect that both forward predictability and backward guessing effects are similar in size.
-If, on the other hand, understanding the verb helps to shape the predictions of the upcoming noun, and this helps intelligibility, then the forward prediction effect should be larger.
+If the observed effect is a guessing phenomenon, then we would expect the backward guessing effect to be larger than the effect of predictability.
+If, on the other hand, understanding the verb helps to shape the predictions of the upcoming noun, and this helps intelligibility, then the forward prediction effect should be larger than the effect of guessing.
 The results of this complementary analysis (see Appendix \@ref(appendix-B)) support the findings of the main analysis reported in the Results section.
 In the backward guessing analysis, there was no graded effect of predictability, and the backward effect of “guessing” the verb *jongliert* after recognising the noun *Bälle*, if present at all, was smaller than the forward effect of predicting the noun after recognising the verb in the sentence *Sie jongliert die Bälle*.
 This further corroborates our argument that the listeners, in fact, made use of the verb-evoked context to form predictions about the upcoming noun, not the other way around, and did so in a graded manner when the speech was moderately degraded.

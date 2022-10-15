@@ -27,10 +27,10 @@ We also addressed the debate on the nature of predictability effect (graded vs a
 
 The studies in this thesis concluded that comprehension of degraded speech is predictive in nature:
 language processing in a noisy channel is probabilistic and rational.
-Listeners weigh top-down processes (lexical-semantic cues) and bottom-up auditory processes (acoustic-phonetic cues).
+Listeners weigh top-down predictive (lexical-semantic cues) and bottom-up auditory (acoustic-phonetic cues) processes.
 <!-- depending on the task at hand, and the adversity of the listening condition. -->
 When the speech degradation is not severe, they can rely on the bottom-up input of an upcoming word (i.e., what they actually heard), regardless of the context information available to them.
 When the speech is moderately degraded but intelligible enough, they generate predictions about the upcoming word from the context information.
 In addition, the *weighing* of lexical-semantic and acoustic-phonetic cues is also modulated by attention regulation and speech rate.
 
-Taken together, this thesis contributes to the nuanced understanding of the dynamic interaction between top-down and bottom-up processes in speech comprehension.
+Taken together, this thesis contributes to a better understanding of the dynamic interaction between top-down and bottom-up processes in speech comprehension.
