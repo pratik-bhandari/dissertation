@@ -1,0 +1,40 @@
+\babel@toc {english}{}\relax 
+\contentsline {xchapter}{}{{\fontencoding {T1}\selectfont xii}}{chapter*.5}%
+\contentsline {xchapter}{}{{\fontencoding {T1}\selectfont xiii}}{chapter*.6}%
+\contentsline {xchapter}{}{{\fontencoding {T1}\selectfont xiv}}{chapter*.7}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Introduction}{1}{chapter.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Schematic representation of the noisy channel model of communication\relax }}{1}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Bayesian network representation of the noisy channel model of communication\relax }}{3}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Background}{15}{chapter.2}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{General methods}{27}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of cloze probability ratings of target words in low, medium and high predictability sentences\relax }}{28}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Spectrograms of clear speech, and degraded speech arranged with a decreasing number of noise-vocoding channels (8, 6, 4 and 1 band) for the sentence `Er löest die Aufgabe.' \relax }}{30}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic representation of waveforms of fast, normal, and slow speech rates for the sentence `Er löest die Aufgabe' with the duration of each speech rates in second. Note the circled portion of the waveform, which examplifies that PSOLA eliminates and duplicates the parts of the original waveform to create fast and slow speech respectively.\relax }}{32}{figure.caption.14}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{General statistical approach}{35}{chapter.4}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Predictability effects of degraded speech are reduced as a function of attention}{42}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mean response accuracy across all conditions in Experiment 1. Accuracy increased only with an increase in the number of noise-vocoding channels. There is no change in accuracy with an increase or decrease in target word predictability. Error bars represent the standard error of the means.\relax }}{49}{figure.caption.15}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Mean response accuracy across all conditions in Experiment 2. Accuracy increased with an increase in number of noise-vocoding channels and target word predictability. Error bars represent the standard error of the means.\relax }}{53}{figure.caption.17}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Semantic predictability facilitates comprehension of degraded speech in a graded manner}{61}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Mean response accuracy across all conditions in Experiment 2. Accuracy increased only with an increase in the number of noise-vocoding channels in both channel contexts. Only in the unpredictable global channel context, at the 4-channel noise-vocoding condition, a graded effect of prediction is observed. Error bars represent the standard error of the means.\relax }}{72}{figure.caption.20}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Comprehension of degraded speech is modulated by the rate of speech}{80}{chapter.7}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Mean response accuracy across all conditions in Experiment 1. Accuracy increased only with an increase in the target-word predictability and a decrease in speech rate. Error bars represent the standard error of the means.\relax }}{92}{figure.caption.22}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Mean response accuracy across all conditions in Experiment 2. Accuracy increased only with an increase in the target-word predictability, but a change in speech rate had no significant effect on accuracy. Error bars represent the standard error of the means.\relax }}{95}{figure.caption.24}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Discussion and conclusion}{102}{chapter.8}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Experimental items}{117}{appendix.A}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Forward prediction vs Backward guessing in Chapter 6}{127}{appendix.B}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Forward prediction vs Backward guessing in Chapter 7}{129}{appendix.C}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Data and code}{131}{appendix.D}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Ethics and funding}{132}{appendix.E}%

@@ -1,0 +1,35 @@
+<!-- \item[1-D, 2-D] One- or two-dimensional, referring **in this thesis** to spatial dimensions in an image. -->
+
+\item[HP] High Predictability
+
+\item[MP] Medium Predictability
+
+\item[LP] Low Predictability
+
+\item[EN] English
+
+\item[MEG] Magnetoencephalography
+
+\item[EEG] Electroencephalography
+
+\item[ERP] Event Related Potential
+
+\item[SPIN] Speech In Noise
+
+\item[G-SPIN] German Speech In Noise
+
+\item[SNR] Signal to Noise Ratio
+
+\item[PSOLA] Pitch Synchronous Overlap Add technique
+
+\item[M] Mean
+
+\item[SD] Standard Deviation
+
+\item[BOLD] Blood Oxygen Level Dependent
+
+\item[GPT-2] Generative Pre-trained Transformer 2
+
+\item[GPT-3] Generative Pre-trained Transformer 3
+
+
